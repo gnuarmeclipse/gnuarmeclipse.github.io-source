@@ -1,0 +1,15 @@
+[submodule "_site"]
+	path = _site
+	url = https://github.com/gnuarmeclipse/gnuarmeclipse.github.io.git
+[submodule "windows-build-tools.wiki"]
+	path = windows-build-tools.wiki
+	url = https://github.com/gnuarmeclipse/windows-build-tools.wiki.git
+[submodule "gnuarmeclipse.wiki"]
+	path = gnuarmeclipse.wiki
+	url = https://github.com/gnuarmeclipse/gnuarmeclipse.wiki.git
+[submodule "openocd.wiki"]
+	path = openocd.wiki
+	url = https://github.com/gnuarmeclipse/openocd.wiki.git
+[submodule "qemu.wiki"]
+	path = qemu.wiki
+	url = https://github.com/gnuarmeclipse/qemu.wiki.git
