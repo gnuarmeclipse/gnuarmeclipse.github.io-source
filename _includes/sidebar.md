@@ -55,9 +55,9 @@
 * The QEMU plug-in
 * The peripheral registers view (CMSIS)
 
-#### [GNU ARM QEMU](qemu/)
+#### [GNU ARM QEMU](/qemu)
 
-* [Overview](qemu/)
+* [Overview](/qemu/)
 * Install
 * The QEMU plug-in
 
@@ -91,5 +91,7 @@
 * GNU ARM Eclipse: open source tools with (experimental) CMSIS Pack support
 
 #### [About]()
+
+- - -
 
 This site uses the Architect theme by [Jason Long](https://twitter.com/jasonlong).
