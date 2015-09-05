@@ -1,9 +1,9 @@
 
 #### [Home](/)
 
-#### [Features](http://gnuarmeclipse.livius.net/blog/features/)
+#### [Features](Features)
 
-#### [Downloads](x)
+#### Downloads
 
 * Overview
 * Plug-ins
@@ -11,7 +11,7 @@
 * QEMU
 * OpenOCD
 
-#### [Install]()
+#### Install
 
 * Overview
 * Eclipse plug-ins install
@@ -23,31 +23,31 @@
   * OpenOCD install
   * QEMU install
 
-#### [Important]()
+#### Important
 
 * Workspace preferences
 * Toolchain path
 * Project portability
 
-#### [Tutorials]()
+#### Tutorials
 
 * Create a Blinky ARM test project
 * Create a Hello ARM test project
 
-#### [How to use]()
+#### How to use
 
 * The managed build plug-in
 * The packs manager (CMSIS)
 * Assign a device
 
-#### [Templates]()
+#### Templates
 
 * Overview
 * Cortex-M template
 * STM32Fxx templates
 * Freescale KLxx templates
 
-#### [Debugging]()
+#### Debugging
 
 * Overview
 * The SEGGER J-Link plug-in
@@ -55,39 +55,39 @@
 * The QEMU plug-in
 * The peripheral registers view (CMSIS)
 
-#### [GNU ARM QEMU](/qemu)
+#### GNU ARM QEMU
 
 * [Overview](/qemu/)
 * Install
 * The QEMU plug-in
 
-#### [GNU ARM OpenOCD]()
+#### GNU ARM OpenOCD
 
 * Overview
 * Install
 * The OpenOCD plug-in
 
-#### [Windows Build Tools]()
+#### Windows Build Tools
 
 * Overview
 
-#### [Advanced]()
+#### Advanced
 
 * Headless builds
 
-#### [Support]()
+#### Support
 
 * Known issues
 * FAQ
 * SourceForge tickets
 
-#### [Developer]()
+#### Developer
 
 * Wiki
 * Change log
 * Contribute
 
-#### [Articles]()
+#### Articles
 * GNU ARM Eclipse: open source tools with (experimental) CMSIS Pack support
 
 #### [About]()
