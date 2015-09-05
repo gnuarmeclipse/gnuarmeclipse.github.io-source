@@ -1,0 +1,27 @@
+# Site settings
+title: GNU ARM Eclipse
+description: A family of Eclipse CDT extensions and tools for GNU ARM development
+email: il@livius.net
+
+destination: _site
+exclude: [gnuarmeclipse.wiki, openocd.wiki, qemu.wiki, windows-build-tools.wiki]
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+timezone: Europe/Bucharest
+encoding: utf-8
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+# Custom defs
+github-username:  ilg-ul
+
+github-project-url: http://github.com/gnuarmeclipse
+sourceforge-project-url: http://sourceforge.net/projects/gnuarmeclipse
+
+google-analytics-id: UA-16767008-16

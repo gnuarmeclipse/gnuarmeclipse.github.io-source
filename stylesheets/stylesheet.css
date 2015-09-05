@@ -671,7 +671,7 @@ form {
   text-indent: 3px;
 }
 
-h4:before {
+#main-content h4:before {
   padding-right: 0.3em;
   margin-left: -2.8em;
   content: "////";
@@ -685,7 +685,7 @@ h4:before {
   color: #474747;
   text-indent: 3px;
 }
-h5:before {
+#main-content h5:before {
   padding-right: 0.3em;
   margin-left: -3.2em;
   content: "/////";
@@ -699,7 +699,7 @@ h5:before {
   color: #474747;
   text-indent: 3px;
 }
-h6:before {
+#main-content h6:before {
   padding-right: 0.3em;
   margin-left: -3.7em;
   content: "//////";
