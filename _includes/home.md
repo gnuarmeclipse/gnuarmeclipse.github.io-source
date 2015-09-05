@@ -15,17 +15,17 @@ In short, the GNU ARM Eclipse plug-ins allow to create, build, debug and in gene
 
 Apart from the main Eclipse plug-ins, this project also includes several additional tools, distributed as separate packages.
 
-#### GNU ARM Eclipse Windows Build Tools
+* **GNU ARM Eclipse Windows Build Tools**
 
-The **GNU ARM Eclipse Windows Build Tools** subproject includes the additional tools required on Windows (**make** & **rm**).
+  The **GNU ARM Eclipse Windows Build Tools** subproject includes the additional tools required on Windows (**make** & **rm**).
 
-#### GNU ARM Eclipse OpenOCD
+* **GNU ARM Eclipse OpenOCD**
 
-The **GNU ARM Eclipse OpenOCD** subproject is a new distribution of [OpenOCD](http://openocd.sourceforge.net/), customised for a better/more convenient integration with the **GNU ARM OpenOCD Debugging** plug-in.
+  The **GNU ARM Eclipse OpenOCD** subproject is a new distribution of [OpenOCD](http://openocd.sourceforge.net/), customised for a better/more convenient integration with the **GNU ARM OpenOCD Debugging** plug-in.
 
-#### GNU ARM Eclipse QEMU
+* **GNU ARM Eclipse QEMU**
 
-The **GNU ARM Eclipse QEMU** subproject is a fork of [QEMU](http://wiki.qemu.org/Main_Page) (an open source machine emulator), intended to provide support for Cortex-M emulation in GNU ARM Eclipse.
+  The **GNU ARM Eclipse QEMU** subproject is a fork of [QEMU](http://wiki.qemu.org/Main_Page) (an open source machine emulator), intended to provide support for Cortex-M emulation in GNU ARM Eclipse.
 
   ![The STM32F4-Discovery 4 LEDs.](images/stm32f4-discovery-leds.png)
 
