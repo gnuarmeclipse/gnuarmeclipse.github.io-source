@@ -21,3 +21,4 @@ module Jekyll
   end
 end
 Liquid::Template.register_tag('markdown', Jekyll::MarkdownTag)
+

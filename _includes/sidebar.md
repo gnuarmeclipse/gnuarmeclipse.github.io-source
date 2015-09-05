@@ -1,4 +1,6 @@
 
+#### [Home](/)
+
 #### [Features](http://gnuarmeclipse.livius.net/blog/features/)
 
 #### [Downloads](x)
@@ -53,9 +55,9 @@
 * The QEMU plug-in
 * The peripheral registers view (CMSIS)
 
-#### [GNU ARM QEMU]()
+#### [GNU ARM QEMU](qemu/)
 
-* Overview
+* [Overview](qemu/)
 * Install
 * The QEMU plug-in
 
