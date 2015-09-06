@@ -60,7 +60,7 @@
 * [Overview]({{ site.baseurl }}/qemu/overview/) (read me first!)
 * [QEMU Install]({{ site.baseurl }}/qemu/install/)
 * Eclipse plug-in
-* [How to build](http://localhost:4000/qemu/how-to-build)
+* [How to build]({{ site.baseurl }}/qemu/how-to-build)
 * [Releases]({{ site.baseurl }}/qemu/#releases)
 * [Support](https://github.com/gnuarmeclipse/qemu/issues/1)
 
