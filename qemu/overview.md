@@ -13,19 +13,19 @@ If you already know the general facts about QEMU, you can directly skip to:
 
 ## Contents
 
-1. [Why QEMU?](#why-qemu)
-1. [Why GNU ARM Eclipse QEMU?](#why-gnu-arm-eclipse-qemu)
-1. [Overview](#overview)
-1. [Benefits](#benefits)
-1. [Supported boards and MCUs](#supported-boards-and-mcus)
-1. [Limitations](#limitations)
-1. [Documentation](#documentation)
-1. [Download](#download)
-1. [Install](#install)
-1. [Testing](#testing)
-1. [Updates](#updates)
-1. [Change log](#change-log)
-1. [Build details](#build-details)
+* [Why QEMU?](#why-qemu)
+* [Why GNU ARM Eclipse QEMU?](#why-gnu-arm-eclipse-qemu)
+* [Overview](#overview)
+* [Benefits](#benefits)
+* [Supported boards and MCUs](#supported-boards-and-mcus)
+* [Limitations](#limitations)
+* [Documentation](#documentation)
+* [Download](#download)
+* [Install](#install)
+* [Testing](#testing)
+* [Updates](#updates)
+* [Change log](#change-log)
+* [Build details](#build-details)
 
 ## Why QEMU?
 

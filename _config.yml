@@ -12,6 +12,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 timezone: Europe/Bucharest
 encoding: utf-8
 
+# Default permalink used for posts
+permalink: /:year/:month/:day/:title/
+
 # Build settings
 markdown: kramdown
 

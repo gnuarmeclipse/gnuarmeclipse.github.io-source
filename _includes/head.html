@@ -7,6 +7,20 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+
+{% if page.title %}
+  <meta property="og:title" content="{{ page.title }}">{% endif %}
+{% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date: "%F" }}">{% endif %}
+{% if page.modified %}
+  <meta property="article:modified_time" content="{{ page.modified | date: "%F" }}">{% endif %}
+{% for item in page.categories %}
+  <meta property="article:section" content="{{ item | downcase }}" />{% endfor %}
+{% for item in page.tags %}
+  <meta property="article:tag" content="{{ item | downcase }}" />{% endfor %}
+
   <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
   
   <link rel="stylesheet" type="text/css" href="{{ "/stylesheets/stylesheet.css" | prepend: site.baseurl }}" media="screen">

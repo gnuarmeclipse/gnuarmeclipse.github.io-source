@@ -8,10 +8,10 @@ The [GNU ARM Eclipse QEMU]({{ site.baseurl }}/qemu) subproject is a fork of [QEM
 
 ## How to use
 
-* [Overview]({{ site.baseurl }}/qemu/overview)
-* [Install]({{ site.baseurl }}/qemu/install)
-* The QEMU debugging plug-in
-* [Support](https://github.com/gnuarmeclipse/qemu/issues/1)
+* [Overview]({{ site.baseurl }}/qemu/overview) (read me first!)
+* [QEMU Install]({{ site.baseurl }}/qemu/install)
+* Eclipse plug-in
+* [Support](https://github.com/gnuarmeclipse/qemu/issues/1) (using the GitHub Issues)
 
 ## How to build
 
