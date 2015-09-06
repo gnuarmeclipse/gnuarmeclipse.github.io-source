@@ -1,7 +1,7 @@
 
-#### [Home](/)
+#### [GNU ARM Eclipse Home]({{ site.baseurl }}/)
 
-#### [Features](Features)
+#### [Features](features)
 
 #### Downloads
 
@@ -55,11 +55,13 @@
 * The QEMU plug-in
 * The peripheral registers view (CMSIS)
 
-#### GNU ARM QEMU
+#### [GNU ARM QEMU]({{ site.baseurl }}/qemu/)
 
-* [Overview](/qemu/)
-* Install
-* The QEMU plug-in
+* [Overview]({{ site.baseurl }}/qemu/overview/)
+* [Install]({{ site.baseurl }}/qemu/install/)
+* Eclipse plug-in
+* [Support](https://github.com/gnuarmeclipse/qemu/issues/1)
+* [How to build](http://localhost:4000/qemu/how-to-build)
 
 #### GNU ARM OpenOCD
 
