@@ -21,6 +21,9 @@
 {% for item in page.tags %}
   <meta property="article:tag" content="{{ item | downcase }}" />{% endfor %}
 
+{% if site.google-site-verification %}
+  <meta name="google-site-verification" content="{{ site.google-site-verification }}" />{% endif %}
+
   <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
   
   <link rel="stylesheet" type="text/css" href="{{ "/stylesheets/stylesheet.css" | prepend: site.baseurl }}" media="screen">
