@@ -1,3 +1,9 @@
+---
+layout: default
+permalink: /
+title: Welcome to GNU ARM Eclipse!
+author: Liviu Ionescu
+---
 
 ## Welcome to GNU ARM Eclipse! (Work-in-progress! [Old site](http://gnuarmeclipse.livius.net/blog/))
 
