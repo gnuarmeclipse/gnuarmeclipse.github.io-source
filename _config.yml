@@ -7,7 +7,9 @@ destination: _site
 exclude: [gnuarmeclipse.wiki, openocd.wiki, qemu.wiki, windows-build-tools.wiki]
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Used in sitemap.xml
+url: "http://gnuarmeclipse.github.io" # the base hostname & protocol for your site
 
 timezone: Europe/Bucharest
 encoding: utf-8
