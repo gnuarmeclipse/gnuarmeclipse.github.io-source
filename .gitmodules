@@ -10,6 +10,3 @@
 [submodule "openocd.wiki"]
 	path = openocd.wiki
 	url = https://github.com/gnuarmeclipse/openocd.wiki.git
-[submodule "qemu.wiki"]
-	path = qemu.wiki
-	url = https://github.com/gnuarmeclipse/qemu.wiki.git
