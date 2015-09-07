@@ -2,6 +2,7 @@
 layout: page
 title: How to build the QEMU binaries
 permalink: /qemu/how-to-build/
+last_modified_at: 2015-09-07 21:31:00
 ---
 
 The latest version of the build script is a single run, multi-platform build, generating the Windows 32, Windows 64, GNU/Linux 32, GNU/Linux 64 and OS X distribution packages at once.

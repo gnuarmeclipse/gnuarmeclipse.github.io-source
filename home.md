@@ -3,6 +3,10 @@ layout: default
 permalink: /
 title: Welcome to GNU ARM Eclipse!
 author: Liviu Ionescu
+
+date: 2015-09-07 18:31:00
+last_modified_at: 2015-09-07 21:31:00
+
 ---
 
 ## Welcome to GNU ARM Eclipse! (Work-in-progress! [Old site](http://gnuarmeclipse.livius.net/blog/))
