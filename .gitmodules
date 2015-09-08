@@ -1,9 +1,6 @@
 [submodule "_site"]
 	path = _site
 	url = https://github.com/gnuarmeclipse/gnuarmeclipse.github.io.git
-[submodule "windows-build-tools.wiki"]
-	path = windows-build-tools.wiki
-	url = https://github.com/gnuarmeclipse/windows-build-tools.wiki.git
 [submodule "gnuarmeclipse.wiki"]
 	path = gnuarmeclipse.wiki
 	url = https://github.com/gnuarmeclipse/gnuarmeclipse.wiki.git
