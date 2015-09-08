@@ -97,6 +97,10 @@
 #### Articles
 * GNU ARM Eclipse: open source tools with (experimental) CMSIS Pack support
 
+#### Licenses
+* [Eclipse plug-ins]({{ site.baseurl }}/licenses/plug-ins/)
+* Tools
+
 #### [About]()
 
 - - -
