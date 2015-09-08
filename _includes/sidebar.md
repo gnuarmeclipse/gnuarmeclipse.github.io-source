@@ -64,13 +64,13 @@
 * [Releases]({{ site.baseurl }}/qemu/#releases)
 * [Support](https://github.com/gnuarmeclipse/qemu/issues/1)
 
-#### GNU ARM OpenOCD
+#### GNU ARM OpenOCD Home
 
 * Overview
 * Install
 * The OpenOCD plug-in
 
-#### [Windows Build Tools]({{ site.baseurl }}/windows-build-tools/)
+#### [Windows Build Tools Home]({{ site.baseurl }}/windows-build-tools/)
 
 * [Overview]({{ site.baseurl }}/windows-build-tools/overview/) (read me first!)
 * [Windows Build Tools Install]({{ site.baseurl }}/windows-build-tools/install/)
