@@ -70,9 +70,13 @@
 * Install
 * The OpenOCD plug-in
 
-#### Windows Build Tools
+#### [Windows Build Tools]({{ site.baseurl }}/windows-build-tools/)
 
-* Overview
+* [Overview]({{ site.baseurl }}/windows-build-tools/overview/) (read me first!)
+* [Windows Build Tools Install]({{ site.baseurl }}/windows-build-tools/install/)
+* [How to build]({{ site.baseurl }}/windows-build-tools/how-to-build)
+* [Releases]({{ site.baseurl }}/windows-build-tools/#releases)
+* [Support](https://github.com/gnuarmeclipse/windows-build-tools/issues/1)
 
 #### Advanced
 
