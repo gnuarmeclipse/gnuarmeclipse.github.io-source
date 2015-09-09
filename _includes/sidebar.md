@@ -1,5 +1,14 @@
 
-#### [GNU ARM Eclipse Home]({{ site.baseurl }}/)
+#### [Latest News]({{ site.baseurl }}/news)
+
+
+{% for post in site.posts limit:5 %}* [{{ post.title }}]({{ post.url }})
+{% endfor %}
+
+---
+
+#### [GNU ARM Eclipse Home]({{ site.baseurl }}/) 
+
 
 #### [Features](features)
 
