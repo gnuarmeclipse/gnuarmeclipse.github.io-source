@@ -5,7 +5,7 @@ title: The GNU ARM Eclipse plug-ins license
 author: Liviu Ionescu
 
 date: 2015-09-08 23:25:00
-last_modified_at: 2015-09-09 00:52:00
+last_modified_at: 2015-09-09 11:30:00
 ---
 
 ## Copyright owner
@@ -18,11 +18,11 @@ As the sole copyright owner, Liviu Ionescu released the GNU ARM Eclipse plug-ins
 
 ## Commercial Contributors
 
-For a sustainable project development, Commercial Contributors are welcomed to share part of the development costs by means of commercial contracts (for maintenance, integration support or developing new features) and/or by sponsorships/donations (generally compensating for pre-exisiting work included in their derivative work). Sponsors might also benefit from better rates for commercial contracts.
+For a sustainable project development, Commercial Contributors are welcomed to share part of the development costs by means of commercial contracts (for maintenance, integration support or developing new features) and/or by sponsorships/donations (generally compensating for pre-exisiting work included in their derivative work). 
 
 ## Dual license?
 
-If Commercial Contributors will not be generous enough to compensate for pre-existing work, future versions might be released with dual license, the Eclipse Public License for all Recipients excluding subsequent Commercial Contributors, and a commercial license, where the license fee will no longer be waived.
+If Commercial Contributors will not be generous enough to compensate at least in good part for existing work, future versions might be released under dual license, the Eclipse Public License for all Recipients excluding subsequent Commercial Contributors, and a commercial license, where the license fee will no longer be waived.
 
 ## What does the license mean in plain English?
 
@@ -46,7 +46,7 @@ An example of such a notice is:
 
 #### Source file changes
 
-If the derived work implies any change in the source code, or in the procedures used to build the program, in addition to preserving the copyright notice, the modified source files or procedures must be also made public.
+If the derived work implies any change in the source code, or in the procedures used to build the program, in addition to preserving the copyright notice, the modified source files or procedures must also be made public.
 
 #### License fees
 
