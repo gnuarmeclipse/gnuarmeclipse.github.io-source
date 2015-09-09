@@ -16,9 +16,13 @@ The copyright owner for all the **GNU ARM Eclipse plug-ins** is Liviu Ionescu an
 
 As the sole copyright owner, Liviu Ionescu released the GNU ARM Eclipse plug-ins for public use under the terms of the [Eclipse Public License v1.0](https://www.eclipse.org/legal/epl-v10.html).
 
-## Commercial contributors
+## Commercial Contributors
 
-For a sustainable project development, commercial contributors are welcomed to share part of the development costs by means of commercial contracts (for maintenance, integration support or developing new features) and/or by sponsorships/donations (generally compensating for pre-exisiting work included in their derivative work). Sponsors might also benefit from better rates for commercial contracts.
+For a sustainable project development, Commercial Contributors are welcomed to share part of the development costs by means of commercial contracts (for maintenance, integration support or developing new features) and/or by sponsorships/donations (generally compensating for pre-exisiting work included in their derivative work). Sponsors might also benefit from better rates for commercial contracts.
+
+## Dual license?
+
+If Commercial Contributors will not be generous enough to compensate for pre-existing work, future versions might be released with dual license, the Eclipse Public License for all Recipients excluding subsequent Commercial Contributors, and a commercial license, where the license fee will no longer be waived.
 
 ## What does the license mean in plain English?
 
