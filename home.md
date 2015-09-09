@@ -41,5 +41,5 @@ Apart from the main Eclipse plug-ins, this project also includes several additio
 
 ### Enjoy!
 
-If you successfully installed and used this project, we’d be honoured to receive your **Thumbs up**, and eventually a short review in the main [SourceForge Project page](http://sourceforge.net/projects/gnuarmeclipse).
+If you successfully installed and used this project, we’d be honoured to receive your **[GitHub Stars](https://github.com/gnuarmeclipse/gnuarmeclipse/stargazers)**, and eventually a short review in the main [SourceForge Project page](http://sourceforge.net/projects/gnuarmeclipse).
 
