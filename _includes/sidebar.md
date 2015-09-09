@@ -101,6 +101,9 @@
 * [Eclipse plug-ins]({{ site.baseurl }}/licenses/plug-ins/)
 * Tools
 
+#### Finance
+* [Sponsorship]({{ site.baseurl }}/finance/sponsorship/)
+
 #### [About]()
 
 - - -
