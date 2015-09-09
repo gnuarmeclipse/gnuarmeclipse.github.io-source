@@ -4,6 +4,3 @@
 [submodule "gnuarmeclipse.wiki"]
 	path = gnuarmeclipse.wiki
 	url = https://github.com/gnuarmeclipse/gnuarmeclipse.wiki.git
-[submodule "openocd.wiki"]
-	path = openocd.wiki
-	url = https://github.com/gnuarmeclipse/openocd.wiki.git
