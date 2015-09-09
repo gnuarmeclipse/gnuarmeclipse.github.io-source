@@ -2,6 +2,7 @@
 layout: page
 title: The 2015 QEMU Change Log
 permalink: /qemu/change-log/
+
 last_modified_at: 2015-09-07 21:31:00
 ---
 

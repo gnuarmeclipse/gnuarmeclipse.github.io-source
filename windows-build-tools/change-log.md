@@ -2,6 +2,7 @@
 layout: page
 title: The 2015 Windows Build Tools Change Log 
 permalink: /windows-build-tools/change-log/
+
 last_modified_at: 2015-09-08 13:10:00
 ---
 

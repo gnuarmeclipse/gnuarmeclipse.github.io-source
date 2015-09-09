@@ -2,6 +2,7 @@
 layout: page
 title: How to build the Windows Build Tools binaries
 permalink: /windows-build-tools/how-to-build/
+
 last_modified_at: 2015-09-08 13:20:00
 ---
 

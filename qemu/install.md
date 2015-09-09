@@ -1,8 +1,9 @@
 ---
 layout: page
-title: QEMU Install
+title: How to install the QEMU binaries
 permalink: /qemu/install/
-last_modified_at: 2015-09-07 21:31:00
+
+last_modified_at: 2015-09-09 19:43:00
 ---
 
 ## Overview
@@ -111,6 +112,3 @@ For usual Cortex-M emulation, there are no special UDEV definitions or drivers r
 
 The QEMU debugging **plug-ins are not included** in these packages, and need to be installed as usual.
 
-## Next
-
-How to use the QEMU debugging Eclipse plug-in

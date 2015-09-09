@@ -2,15 +2,9 @@
 layout: page
 title: The GNU ARM Eclipse QEMU
 permalink: /qemu/overview/
+
 last_modified_at: 2015-09-07 21:31:00
 ---
-
-## Quicklinks
-
-If you already know the general facts about QEMU, you can directly skip to:
-
-* [QEMU install]({{ site.baseurl }}/qemu/install)
-* [QEMU debugging plug-in](http://gnuarmeclipse.livius.net/blog/qemu-debugging/#QEMU_plug-in_usage)
 
 ## Contents
 
@@ -27,6 +21,13 @@ If you already know the general facts about QEMU, you can directly skip to:
 * [Updates](#updates)
 * [Change log](#change-log)
 * [Build details](#build-details)
+
+## Quicklinks
+
+If you already know the general facts about QEMU, you can directly skip to:
+
+* [QEMU install]({{ site.baseurl }}/qemu/install)
+* [QEMU debugging plug-in](http://gnuarmeclipse.livius.net/blog/qemu-debugging/#QEMU_plug-in_usage)
 
 ## Why QEMU?
 
