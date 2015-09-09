@@ -5,7 +5,7 @@ title: Welcome to GNU ARM Eclipse!
 author: Liviu Ionescu
 
 date: 2015-09-07 18:31:00
-last_modified_at: 2015-09-07 21:31:00
+last_modified_at: 2015-09-09 22:25:00
 
 ---
 
@@ -19,7 +19,7 @@ These plug-ins provide Eclipse CDT (C/C++ Development Tooling) extensions for GN
 
 In short, the GNU ARM Eclipse plug-ins allow to create, build, debug and in general to **manage ARM and AArch64 projects** (executables and static/shared libraries, in both 32 and 64-bit versions) with the Eclipse framework (currently tested up to Eclipse 4.4 Luna). The plug-ins run on Windows, GNU/Linux and Mac OS X. For more details please visit the [Features](http://gnuarmeclipse.livius.net/blog/features/) page.
 
-  ![Create new STM32F4 C++ project](images/intro-new-f4-project.png)
+  ![Create new STM32F4 C++ project]({{ site.baseurl }}/images/2015/intro-new-f4-project.png)
 
 ### Additional tools
 
@@ -31,15 +31,15 @@ Apart from the main Eclipse plug-ins, this project also includes several additio
 
 * **GNU ARM Eclipse OpenOCD**
 
-  The **GNU ARM Eclipse OpenOCD** subproject is a new distribution of [OpenOCD](http://openocd.sourceforge.net/), customised for a better/more convenient integration with the **GNU ARM OpenOCD Debugging** plug-in.
+  The **GNU ARM Eclipse OpenOCD** subproject is a new distribution of [OpenOCD](http://openocd.org/), customised for a better/more convenient integration with the **GNU ARM OpenOCD Debugging** plug-in.
 
 * **GNU ARM Eclipse QEMU**
 
   The **GNU ARM Eclipse QEMU** subproject is a fork of [QEMU](http://wiki.qemu.org/Main_Page) (an open source machine emulator), intended to provide support for Cortex-M emulation in GNU ARM Eclipse.
 
-  ![The STM32F4-Discovery 4 LEDs.](images/stm32f4-discovery-leds.png)
+  ![The STM32F4-Discovery 4 LEDs.]({{ site.baseurl }}/images/stm32f4-discovery-leds.png)
 
 ### Enjoy!
 
-If you successfully installed and used this project, we’d be honoured to receive your **[GitHub Stars](https://github.com/gnuarmeclipse/gnuarmeclipse/stargazers)**, and eventually a short review in the main [SourceForge Project page](http://sourceforge.net/projects/gnuarmeclipse).
+If you successfully installed and used this project, we’d be honoured to receive your **[GitHub Stars](https://github.com/gnuarmeclipse/gnuarmeclipse/stargazers)**, and eventually a short review in the main [SourceForge Project](http://sourceforge.net/projects/gnuarmeclipse) page.
 
