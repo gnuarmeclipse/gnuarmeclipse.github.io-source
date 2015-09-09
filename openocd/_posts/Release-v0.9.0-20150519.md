@@ -1,0 +1,42 @@
+---
+layout: post
+title:  GNU ARM Eclipse OpenOCD 0.9.0-20150519* released
+download_url: https://github.com/gnuarmeclipse/openocd/releases/tag/gae-0.9.0-20150519
+
+author: Liviu Ionescu
+
+date:   2015-05-19 12:00:00
+last_modified_at: 2015-09-09 18:48:00
+
+categories:
+  - releases
+  - openocd
+tags:
+  - 0.9.0
+  - GNU ARM Eclipse
+  - OpenOCD
+---
+
+The just released stable version of OpenOCD (**0.9.0**) is now also available as ready to install, platform specific, binary files.
+
+[Binary files »]({{ page.download_url }})
+
+Install the proper package, and then update the path in **Preferences** → **Run/Debug** → **OpenOCD** to the new folder. If installed in the default location, the **Restore Defaults** button should automatically configure the proper path.
+
+The MD5 sums of the files are:
+
+	2cf7c6cc044b65076b9cbd2fc035b1c1  
+	gnuarmeclipse-openocd-debian32-0.9.0-201505190955.tgz
+	
+	6e017261cfbe4f7ad95b496c5bdeb851  
+	gnuarmeclipse-openocd-debian64-0.9.0-201505190955.tgz
+	
+	2cc1d7a582e3edc1c9c926be3d1abcd0  
+	gnuarmeclipse-openocd-osx-0.9.0-201505191024.pkg
+	
+	1f6e85e096068d622b3d88bc64afb1a1  
+	gnuarmeclipse-openocd-win32-0.9.0-201505190955-setup.exe
+	
+	83aa34e4c1a79eb30839bf4ddf9ddb34  
+	gnuarmeclipse-openocd-win64-0.9.0-201505190955-setup.exe
+

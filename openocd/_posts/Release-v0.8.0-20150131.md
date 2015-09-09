@@ -1,0 +1,34 @@
+---
+layout: post
+title:  GNU ARM Eclipse OpenOCD 0.8.0-20150131* released
+download_url: https://github.com/gnuarmeclipse/openocd/releases/tag/gae-0.8.0-20150131
+
+author: Liviu Ionescu
+
+date:   2015-01-31 12:00:00
+last_modified_at: 2015-09-09 18:41:00
+
+categories:
+  - releases
+  - openocd
+tags:
+  - build tools
+  - cmd.exe
+  - make
+  - posix
+  - windows
+---
+
+For a better integrations with the GNU ARM Eclipse debug plug-ins, a new distribution of OpenOCD was added as a subproject named **GNU ARM Eclipse OpenOCD**.
+
+[Binary files »]({{ page.download_url }})
+
+The first benefit of using this distribution is **user convenience**, on Windows and OS X the program is packed as a Setup package.
+
+![The OpenOCD Windows Setup.]({{ site.baseurl }}/images/2015/openocd-setup-wizard.png)
+
+The current stable release of OpenOCD is 0.8.0; although a bit old, GNU ARM Eclipse follows this version, with no functional changes.
+
+A new release to include the latest development version from the project Git is planned in the near future.
+
+For more details, please read the [GNU ARM Eclipse OpenOCD]({{ site.baseurl }}/openocd/) page.
