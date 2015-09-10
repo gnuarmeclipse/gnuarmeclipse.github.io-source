@@ -5,7 +5,7 @@ title: The GNU ARM Eclipse plug-ins license
 author: Liviu Ionescu
 
 date: 2015-09-08 23:25:00
-last_modified_at: 2015-09-09 11:30:00
+last_modified_at: 2015-09-10 23:12:00
 ---
 
 ## Copyright owner
@@ -22,13 +22,13 @@ For a sustainable project development, Commercial Contributors are welcomed to s
 
 ## Dual license?
 
-If Commercial Contributors will not be generous enough to compensate at least in good part for existing work, future versions might be released under dual license, the Eclipse Public License for all Recipients excluding subsequent Commercial Contributors, and a commercial license, where the license fee will no longer be waived.
+We considered the opportunity of released future versions under dual license, the Eclipse Public License for all Recipients excluding subsequent Commercial Contributors, and a commercial license, where the license fee will no longer be waived.
 
 ## What does the license mean in plain English?
 
 ### For end-users
 
-GNU ARM Eclipse end-users are generally software developers; for them the license means two things:
+The GNU ARM Eclipse end-users are generally software developers; for them the license means two things:
 
 * it guarantees they can use the plug-ins for free, to develop any type of applications they want, private or commercial, without any limitations;
 * the plug-ins are provided on an _as is_ basis, without warrantees or conditions of any kind.
@@ -57,6 +57,8 @@ Well... if you plan to never contact us (for support or anything else), as long 
 Whether this is fair or not, is highly debatable (we consider it greatly unfair).
 
 However, if you plan to contact us for any reason, please take note that having the quality of project sponsor/donor will grant you higher priority in processing requests and possibly better rates for commercial contracts.
+
+In other words, consider the sponsorship scheme as a warranty that you'll not have to pay license fees for future versions.
 
 #### Commercial contracts
 
