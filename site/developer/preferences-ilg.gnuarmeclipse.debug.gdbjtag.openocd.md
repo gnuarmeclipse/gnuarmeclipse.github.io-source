@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /developer/preferences-ilg.gnuarmeclipse.debug.gdbjtag.openocd/
+permalink: /developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.openocd/
 title: ilg.gnuarmeclipse.debug.gdbjtag.openocd - persistent values
 author: Liviu Ionescu
 
 date: 2015-09-10 21:03:00
-last_modified_at: 2015-09-10 21:03:00
+last_modified_at: 2015-09-10 22:54:00
 
 ---
 

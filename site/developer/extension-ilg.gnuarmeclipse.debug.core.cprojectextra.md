@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /developer/extension-ilg.gnuarmeclipse.debug.core.cprojectextra/
+permalink: /developer/extension/ilg.gnuarmeclipse.debug.core.cprojectextra/
 title: The ilg.gnuarmeclipse.debug.core.cprojectExtra extension point
 author: Liviu Ionescu
 
 date: 2015-09-10 20:57:00
-last_modified_at: 2015-09-10 20:57:00
+last_modified_at: 2015-09-10 22:53:00
 
 ---
 

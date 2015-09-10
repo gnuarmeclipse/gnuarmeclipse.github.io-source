@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /developer/eclipse-tips-tricks/
-title: GNU ARM Eclipse Developer page
+permalink: /developer/eclipse/tips-tricks/
+title: Eclipse tips & tricks
 author: Liviu Ionescu
 
 date: 2015-09-10 20:54:00
-last_modified_at: 2015-09-10 20:54:00
+last_modified_at: 2015-09-10 22:58:00
 
 ---
 

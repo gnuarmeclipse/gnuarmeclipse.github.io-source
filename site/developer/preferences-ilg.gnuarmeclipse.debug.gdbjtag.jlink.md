@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /developer/preferences-ilg.gnuarmeclipse.debug.gdbjtag.jlink/
+permalink: /developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.jlink/
 title: ilg.gnuarmeclipse.debug.gdbjtag.jlink - persistent values
 author: Liviu Ionescu
 
 date: 2015-09-10 21:02:00
-last_modified_at: 2015-09-10 21:02:00
+last_modified_at: 2015-09-10 22:54:00
 
 ---
 

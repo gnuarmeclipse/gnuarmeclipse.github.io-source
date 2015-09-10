@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /developer/extension-ilg.gnuarmeclipse.debug.core.svdpath/
+permalink: /developer/extension/ilg.gnuarmeclipse.debug.core.svdpath/
 title: The ilg.gnuarmeclipse.debug.core.svdPath extension point
 author: Liviu Ionescu
 
 date: 2015-09-10 20:58:00
-last_modified_at: 2015-09-10 20:58:00
+last_modified_at: 2015-09-10 22:53:00
 
 ---
 

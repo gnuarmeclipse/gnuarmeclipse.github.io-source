@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /developer/preferences-ilg.gnuarmeclipse.managedbuild.cross/
+permalink: /developer/preferences/ilg.gnuarmeclipse.managedbuild.cross/
 title: ilg.gnuarmeclipse.managedbuild.cross - persistent values & toolchain ids
 author: Liviu Ionescu
 
 date: 2015-09-10 21:06:00
-last_modified_at: 2015-09-10 21:06:00
+last_modified_at: 2015-09-10 22:54:00
 
 ---
 

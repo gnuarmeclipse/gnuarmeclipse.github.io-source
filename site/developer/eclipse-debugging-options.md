@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /developer/eclipse-debugging-options/
+permalink: /developer/eclipse/debugging-options/
 title: Eclipse debugging options
 author: Liviu Ionescu
 
 date: 2015-09-10 18:33:00
-last_modified_at: 2015-09-10 18:33:00
+last_modified_at: 2015-09-10 22:51:00
 
 ---
 
