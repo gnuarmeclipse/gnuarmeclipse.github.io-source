@@ -10,15 +10,15 @@
 #### [GNU ARM Eclipse Home]({{ site.baseurl }}/) 
 
 
-#### [Features](features)
+#### [Features]({{ site.baseurl }}/features)
 
 #### Downloads
 
-* Overview
-* Plug-ins
-* Windows Build Tools
-* QEMU
-* OpenOCD
+* [Overview]({{ site.baseurl }}/downloads)
+* Plug-ins ([releases]({{ site.baseurl }}/releases))
+* Windows Build Tools ([releases]({{ site.baseurl }}/windows-build-tools/releases))
+* QEMU ([releases]({{ site.baseurl }}/qemu/releases))
+* OpenOCD ([releases]({{ site.baseurl }}/openocd/releases))
 
 #### Install
 
@@ -69,7 +69,7 @@
 * [Overview]({{ site.baseurl }}/qemu/overview) (read me first!)
 * [QEMU Install]({{ site.baseurl }}/qemu/install)
 * Eclipse plug-in
-* [How to build]({{ site.baseurl }}/qemu/how-to-build)
+* [How to build]({{ site.baseurl }}/qemu/build-procedure)
 * [Releases]({{ site.baseurl }}/qemu/releases)
 * [Support](https://github.com/gnuarmeclipse/qemu/issues/1)
 
@@ -78,7 +78,7 @@
 * [Overview]({{ site.baseurl }}/openocd/overview) (read me first!)
 * [OpenOCD Install]({{ site.baseurl }}/openocd/install)
 * The OpenOCD plug-in
-* [How to build]({{ site.baseurl }}/openocd/how-to-build)
+* [How to build]({{ site.baseurl }}/openocd/build-procedure)
 * [Releases]({{ site.baseurl }}/openocd/releases)
 * [Support](https://github.com/gnuarmeclipse/openocd/issues/1)
 
@@ -86,7 +86,7 @@
 
 * [Overview]({{ site.baseurl }}/windows-build-tools/overview) (read me first!)
 * [Windows Build Tools Install]({{ site.baseurl }}/windows-build-tools/install)
-* [How to build]({{ site.baseurl }}/windows-build-tools/how-to-build)
+* [How to build]({{ site.baseurl }}/windows-build-tools/build-procedure)
 * [Releases]({{ site.baseurl }}/windows-build-tools/releases)
 * [Support](https://github.com/gnuarmeclipse/windows-build-tools/issues/1)
 
@@ -100,7 +100,7 @@
 * FAQ
 * SourceForge tickets
 
-#### Developer
+#### [Developer]({{ site.baseurl }}/developer)
 
 * Wiki
 * Change log
@@ -116,7 +116,7 @@
 #### Finance
 * [Sponsorship]({{ site.baseurl }}/finance/sponsorship)
 
-#### [About]()
+#### [About]({{ site.baseurl }}/about)
 
 - - -
 
