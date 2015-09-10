@@ -1,9 +1,10 @@
 ---
 layout: page
 title: How to build the Windows Build Tools binaries
-permalink: /windows-build-tools/how-to-build/
+permalink: /windows-build-tools/build-procedure/
 
-last_modified_at: 2015-09-08 13:20:00
+last_modified_at: 2015-09-10 19:37:00
+
 ---
 
 The latest version of the build script is a single run, multi-platform build, generating the Windows 32, Windows 64 distribution packages at once.
