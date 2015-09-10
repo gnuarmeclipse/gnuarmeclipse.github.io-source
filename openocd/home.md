@@ -24,12 +24,5 @@ Other links:
 
 * [Docker images](https://registry.hub.docker.com/u/ilegeul/)
 
-## Releases
+## [Releases]({{ site.baseurl }}/openocd/releases)
 
-* [GNU ARM Eclipse OpenOCD 0.9.0-20150519*](https://github.com/gnuarmeclipse/openocd/wiki/Release-v0.9.0-20150519) ([download](https://github.com/gnuarmeclipse/openocd/releases/tag/gae-0.9.0-20150519))
-* GNU ARM Eclipse OpenOCD 0.8.0-20150324* ([download](https://github.com/gnuarmeclipse/openocd/releases/tag/gae-0.8.0-20150324))
-* GNU ARM Eclipse OpenOCD 0.9.0-20150324*-dev ([download](https://github.com/gnuarmeclipse/openocd/releases/tag/gae-0.9.0-20150324))
-* GNU ARM Eclipse OpenOCD 0.8.0-20150320* ([download](https://github.com/gnuarmeclipse/openocd/releases/tag/gae-0.8.0-20150320))
-* [GNU ARM Eclipse OpenOCD 0.9.0-20150320*-dev](https://github.com/gnuarmeclipse/openocd/wiki/Release-v0.9.0-20150320) ([download](https://github.com/gnuarmeclipse/openocd/releases/tag/gae-0.9.0-20150320))
-* [GNU ARM Eclipse OpenOCD 0.8.0-20150131*](https://github.com/gnuarmeclipse/openocd/wiki/Release-v0.8.0-20150131) ([download](https://github.com/gnuarmeclipse/openocd/releases/tag/gae-0.8.0-20150131))
-* GNU ARM Eclipse OpenOCD 0.8.0-20150119* ([download](https://github.com/gnuarmeclipse/openocd/releases/tag/gae-0.8.0-20150119))

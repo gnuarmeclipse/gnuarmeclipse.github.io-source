@@ -23,12 +23,5 @@ Other links:
 
 * [Docker images](https://registry.hub.docker.com/u/ilegeul/)
 
-## Releases
+## [Releases]({{ site.baseurl }}/windows-build-tools/releases)
 
-* [GNU ARM Eclipse Windows Build Tools v2.6-201507152002](https://github.com/gnuarmeclipse/windows-build-tools/wiki/Release-v2.6-20150715) [(download)](https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/v2.6)
-* [GNU ARM Eclipse Windows Build Tools v2.4-201503242026](https://github.com/gnuarmeclipse/windows-build-tools/wiki/Release-v2.3-20150124) [(download)](https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/v2.4b)
-* [GNU ARM Eclipse Windows Build Tools v2.4-201503212005](https://github.com/gnuarmeclipse/windows-build-tools/wiki/Release-v2.4-20150321) [(download)](https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/v2.4)
-* [GNU ARM Eclipse Windows Build Tools v2.3-201501242223](https://github.com/gnuarmeclipse/windows-build-tools/wiki/Release-v2.3-20150124) [(download)](https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/v2.3)
-* [GNU ARM Eclipse Windows Build Tools v2.2-201501232303](https://github.com/gnuarmeclipse/windows-build-tools/wiki/Release-v2.2-20150123) [(download)](https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/v2.2)
-* [GNU ARM Eclipse Windows Build Tools v2.1-201501221704](https://github.com/gnuarmeclipse/windows-build-tools/wiki/Release-v2.1-20150121) [(download)](https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/v2.1)
-* [Build Tools repacked as Setup v2.0-20141202154847](https://github.com/gnuarmeclipse/windows-build-tools/wiki/Release-v2.0-20141202) [(download)](https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/v2.0)

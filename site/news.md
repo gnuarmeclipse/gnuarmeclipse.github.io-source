@@ -13,6 +13,5 @@ last_modified_at: 2015-09-09 23:29:00
 ## {{ post.title }}
 
 {{ post.excerpt }}
-
 <a class="post-smaller" href="{{ post.url }}">Continue reading »</a>
 {% endfor %}
