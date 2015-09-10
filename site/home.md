@@ -37,7 +37,7 @@ Apart from the main Eclipse plug-ins, this project also includes several additio
 
   The **GNU ARM Eclipse QEMU** subproject is a fork of [QEMU](http://wiki.qemu.org/Main_Page) (an open source machine emulator), intended to provide support for Cortex-M emulation in GNU ARM Eclipse.
 
-  ![The STM32F4-Discovery 4 LEDs.]({{ site.baseurl }}/images/stm32f4-discovery-leds.png)
+  ![The STM32F4-Discovery 4 LEDs.]({{ site.baseurl }}/images/2015/stm32f4-discovery-leds.png)
 
 ### Enjoy!
 
