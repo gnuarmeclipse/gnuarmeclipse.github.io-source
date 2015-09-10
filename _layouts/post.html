@@ -14,10 +14,9 @@ layout: default
 
 <hr/>
 <p class="post-footer">
-This entry was posted in
+{% if page.categories.size > 0 %}This entry was posted in
 {% assign add_separator = false %}
-{% for item in page.categories %}{% if add_separator %}, {% else %}{% assign add_separator = true %}{% endif %}<strong>{{ item | downcase }}</strong>{% endfor %}
-and tagged
+{% for item in page.categories %}{% if add_separator %}, {% else %}{% assign add_separator = true%}{% endif %}<strong>{{ item | downcase }}</strong>{% endfor %}{% if page.tags.size > 0 %} and tagged
 {% assign add_separator = false %}
-{% for item in page.tags %}{% if add_separator %}, {% else %}{% assign add_separator = true %}{% endif %}<strong>{{ item | downcase }}</strong>{% endfor %}.
+{% for item in page.tags %}{% if add_separator %}, {% else %}{% assign add_separator = true %}{% endif %}<strong>{{ item | downcase }}</strong>{% endfor %}{% endif %}.{% endif %}
 </p>
