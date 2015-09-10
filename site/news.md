@@ -12,5 +12,5 @@ last_modified_at: 2015-09-09 23:29:00
 {% for post in site.posts %}
 ## [{{ post.title }}]({{ post.url }})
 
-{{ post.date | date: "%b %-d, %Y" }}. {{ post.excerpt | replace:'<p>','' | replace:'</p>','' }}
+_{{ post.date | date: "%b %-d, %Y" }}._ {{ post.excerpt | replace:'<p>','' | replace:'</p>','' }}
 {% endfor %}
