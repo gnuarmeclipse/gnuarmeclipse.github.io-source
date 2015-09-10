@@ -10,8 +10,7 @@ last_modified_at: 2015-09-09 23:29:00
 ---
 
 {% for post in site.posts %}
-## {{ post.title }}
+## [{{ post.title }}]({{ post.url }})
 
 {{ post.excerpt }}
-<a class="post-smaller" href="{{ post.url }}">Continue reading »</a>
 {% endfor %}
