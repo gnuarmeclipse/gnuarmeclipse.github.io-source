@@ -94,11 +94,14 @@
 
 * [Headless builds]({{ site.baseurl }}/advanced/headless-builds/)
 
-#### Support
+#### [Support]({{ site.baseurl }}/support/overview/)
 
+* [Overview]({{ site.baseurl }}/support/overview/)
 * [Known issues]({{ site.baseurl }}/support/known-issues/)
 * [FAQ]({{ site.baseurl }}/support/faq/)
 * [SourceForge tickets]({{ site.baseurl }}/support/sourceforge/)
+* [Add new plug-ins Issue](https://github.com/gnuarmeclipse/gnuarmeclipse/issues/1)
+
 
 #### [Developer]({{ site.baseurl }}/developer/)
 

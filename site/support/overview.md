@@ -1,0 +1,62 @@
+---
+layout: page
+permalink: /support/overview/
+title: How to get support
+author: Liviu Ionescu
+
+date: 2015-09-12 13:43:00
+last_modified_at: 2015-09-12 15:15:00
+
+---
+
+## Plug-ins issues
+
+In case you encounter problems while using the plug-ins, please consider the following:
+
+* read the documentation pages
+* check the [Known issues]({{ site.baseurl }}/support/known-issues/)
+* check the [FAQ]({{ site.baseurl }}/support/faq/)
+* scan the [SourceForge tickets]({{ site.baseurl }}/support/ for similar problemssourceforge/)
+* check the GitHub Issues
+
+If you still could not find a solution, follow the recommendations in the GitHub Issues [tracker](https://github.com/gnuarmeclipse/gnuarmeclipse/issues/1) and add a new ticket.
+
+![GNU ARM Eclipse Issues.]({{ site.baseurl }}/images/2015/github-gae-issues-welcome-new.png)
+
+The issues can be labeled as:
+
+* **bug** - use it for bug reports
+* **enhancement** - use it for feature requests
+* **help wanted**
+* **question** - use them for support requests
+
+![Issue Labels]({{ site.baseurl }}/images/2015/github-gae-issues-welcome-labels.png)
+
+### Bugs
+
+If, while using the plug-in, you encounter any bugs, please let us know about them.
+
+### Feature requests
+
+As for any open source project, feature requests will be more quickly processed if accompanied by patches.
+
+### Support requests
+
+For all other issues you have, that are not related to bugs or feature requests, you can use label your request as 'help wanted' or 'question'. 
+
+## Tools issues
+
+Similarly, each tool project has a separate GitHub Issue tracker.
+
+* [QEMU Issues](https://github.com/gnuarmeclipse/qemu/issues/1/)
+* [OpenOCD Issues](https://github.com/gnuarmeclipse/openocd/issues/1/)
+* [Windows Build Tools Issues](https://github.com/gnuarmeclipse/windows-build-tools/issues/1/)
+ 
+Please note that these trackers are mostly intended to the GNU ARM Eclipse specifics of these tools (like packing, or specific changes), and for issues affecting the core functionality, the user will most probably be asked to refer to the tools trackers. 
+
+
+## Web pages issues
+
+If you discover problems in the content of these pages (typos, wrong phrasing, etc), or you have suggestions on how to improve them, you can use the [Web Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io/issues/1) tracker.
+
+> Note: the migration from WordPress/MediaWiki to GitHub Pages involved quite significant changes to the web pages, including conversion to [markdown](http://daringfireball.net/projects/markdown/syntax), which was done partly with scripts, partly manually; we are aware that it is very likely that lots of mistakes are still present in the pages; we would appreciate any help in fixing them. 
