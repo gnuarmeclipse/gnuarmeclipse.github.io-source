@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /features/
+permalink: /plugins/features/
 title: GNU ARM Eclipse Plug-ins Features
 author: Liviu Ionescu
 
 date: 2015-09-10 19:59:00
-last_modified_at: 2015-09-10 19:59:00
+last_modified_at: 2015-09-12 13:08:00
 
 ---
 

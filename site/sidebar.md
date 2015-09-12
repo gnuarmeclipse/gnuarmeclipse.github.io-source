@@ -10,7 +10,7 @@
 #### [GNU ARM Eclipse Home]({{ site.baseurl }}/) 
 
 
-#### [Features]({{ site.baseurl }}/features/)
+#### [Features]({{ site.baseurl }}/plugins/features/)
 
 #### Downloads
 
@@ -105,7 +105,7 @@
 * [How to build]({{ site.baseurl }}/developer/build-procedure)
 * [How to publish]({{ site.baseurl }}/developer/publish-procedure)
 * [Change log]({{ site.baseurl }}/developer/change-log)
-* [Contribute]({{ site.baseurl }}/contribute/)
+* [Contribute]({{ site.baseurl }}/developer/contribute/)
 
 #### Articles
 * [GNU ARM Eclipse: open source tools with (experimental) CMSIS Pack support]({{ site.baseurl }}/articles/arm-com-2014-07/)

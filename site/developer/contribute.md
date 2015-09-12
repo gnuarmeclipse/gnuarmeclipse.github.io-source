@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /contribute/
+permalink: /developer/contribute/
 title: Contribute
 author: Liviu Ionescu
 
 date: 2015-09-11 19:38:00
-last_modified_at: 2015-09-11 19:38:00
+last_modified_at: 2015-09-12 13:07:00
 
 ---
 
