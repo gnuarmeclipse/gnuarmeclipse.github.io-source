@@ -59,4 +59,30 @@ This folder is configured as a submodule, linked to the [gnuarmeclipse.github.io
 
 To publish, just commit this Git and the new site will be automatically updated.
 
+## Folder structure
+
+### Posts
+
+For grouping purposes, posts were stored in dedicated folders:
+
+* plugins/_posts/releases/
+* qemu/_posts/releases/
+* openocd/_posts/releases/
+* windows-build-tools/_posts/releases/
+* _posts/
+
+Although I could not find the behaviour documented, it seems the parent folder names are used as default categories.
+
+### Pages
+
+Most of the web pages are in the `site` folder, with specific pages in `qemu`, `openocd` and `windows-build-tools`.
+
+## 'last\_modified\_at:'
+
+To maintain sitelink.xml usefulness, while maintaining pages and posts, it is necessary to keep this variable up-to-date.
+
+## Timezone
+
+As per `_config.yml`, the default timezone is Europe/Bucharest. For other timezones, set it explicitly as offset (+0300)
+
 
