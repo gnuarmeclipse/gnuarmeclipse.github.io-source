@@ -26,7 +26,7 @@
 * [Eclipse plug-ins install]({{ site.baseurl }}/plugins/install/)
 * [Toolchain(s) install]({{ site.baseurl }}/toolchain/install/)
 * [Windows build tools (make & rm) install]({{ site.baseurl }}/windows-build-tools/install/)
-* Debugging tools install
+* Debugging components
   * [Overview]({{ site.baseurl }}/debug/install/)
   * [SEGGER J-Link install]({{ site.baseurl }}/debug/install/jlink/)
   * [OpenOCD install]({{ site.baseurl }}/openocd/install/)
@@ -71,7 +71,7 @@
 * [Eclipse plug-in]({{ site.baseurl }}/debug/qemu/)
 * [How to build]({{ site.baseurl }}/qemu/build-procedure/)
 * [Releases]({{ site.baseurl }}/qemu/releases/)
-* [Support](https://github.com/gnuarmeclipse/qemu/issues/1/)
+* [Support](https://github.com/gnuarmeclipse/qemu/issues/1/) (report issue)
 
 #### [GNU ARM OpenOCD Home]({{ site.baseurl }}/openocd/)
 
@@ -80,7 +80,7 @@
 * [The OpenOCD plug-in]({{ site.baseurl }}/debug/openocd/)
 * [How to build]({{ site.baseurl }}/openocd/build-procedure/)
 * [Releases]({{ site.baseurl }}/openocd/releases/)
-* [Support](https://github.com/gnuarmeclipse/openocd/issues/1/)
+* [Support](https://github.com/gnuarmeclipse/openocd/issues/1/)  (report issue)
 
 #### [Windows Build Tools Home]({{ site.baseurl }}/windows-build-tools/)
 
@@ -88,7 +88,7 @@
 * [Windows Build Tools Install]({{ site.baseurl }}/windows-build-tools/install/)
 * [How to build]({{ site.baseurl }}/windows-build-tools/build-procedure/)
 * [Releases]({{ site.baseurl }}/windows-build-tools/releases/)
-* [Support](https://github.com/gnuarmeclipse/windows-build-tools/issues/1/)
+* [Support](https://github.com/gnuarmeclipse/windows-build-tools/issues/1/) (report issue)
 
 #### Advanced
 
@@ -100,7 +100,7 @@
 * [Known issues]({{ site.baseurl }}/support/known-issues/)
 * [FAQ]({{ site.baseurl }}/support/faq/)
 * [SourceForge tickets]({{ site.baseurl }}/support/sourceforge/)
-* [Add new plug-ins Issue](https://github.com/gnuarmeclipse/gnuarmeclipse/issues/1)
+* [Report plug-ins issue](https://github.com/gnuarmeclipse/gnuarmeclipse/issues/1)
 
 
 #### [Developer]({{ site.baseurl }}/developer/)

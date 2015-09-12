@@ -5,7 +5,7 @@ title: Toolchain path management
 author: Liviu Ionescu
 
 date: 2015-09-11 23:00:00
-last_modified_at: 2015-09-11 23:00:00
+last_modified_at: 2015-09-12 17:50:00
 
 ---
 
@@ -93,4 +93,4 @@ The page to setup this is the project **Properties** → **C/C++ Build** → *
 
 If you used an unfriendly installer, which already updated the system path without asking, you should manually fix this situation, and **remove the toolchain path from the system path**.
 
- [1]: /blog/project-portability/ "Project portability"
+ [1]: {{ site.baseurl }}/eclipse/project/portability/ "Project portability"

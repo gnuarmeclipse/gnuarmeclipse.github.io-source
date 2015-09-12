@@ -3,7 +3,9 @@ layout: page
 title: The GNU ARM Eclipse QEMU
 permalink: /qemu/overview/
 
-last_modified_at: 2015-09-07 21:31:00
+date: 2015-09-07 21:31:00
+last_modified_at: 2015-09-12 18:55:00
+
 ---
 
 ## Contents
@@ -27,7 +29,7 @@ last_modified_at: 2015-09-07 21:31:00
 If you already know the general facts about QEMU, you can directly skip to:
 
 * [QEMU install]({{ site.baseurl }}/qemu/install)
-* [QEMU debugging plug-in](http://gnuarmeclipse.livius.net/blog/qemu-debugging/#QEMU_plug-in_usage)
+* [QEMU debugging plug-in]({{ site.baseurl }}/debug/qemu/#qemu-plug-in-usage)
 
 ## Why QEMU?
 
@@ -145,7 +147,7 @@ The details of installing the **GNU ARM Eclipse QEMU** on various platforms are
 
 ## Testing
 
-The recommended method to test QEMU is using the new QEMU Debugging plug-in; create a test project using the [blinky](http://gnuarmeclipse.livius.net/blog/blinky-project/) **STM32F4xx C/C++ Project** template or even the **Hello World ARM Cortex-M C/C++ Project** template and run it as explained in the [QEMU debugging Eclipse plug-in](http://gnuarmeclipse.livius.net/blog/qemu-debugging/) page.
+The recommended method to test QEMU is using the new QEMU Debugging plug-in; create a test project using the [blinky]({{ site.baseurl }}/tutorials/blinky-arm/) **STM32F4xx C/C++ Project** template or even the **Hello World ARM Cortex-M C/C++ Project** template and run it as explained in the [QEMU debugging Eclipse plug-in]({{ site.baseurl }}/debug/qemu/) page.
 
 ## Updates
 

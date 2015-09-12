@@ -5,7 +5,7 @@ title: The peripherals registers view
 author: Liviu Ionescu
 
 date: 2015-09-11 22:00:00
-last_modified_at: 2015-09-12 00:05:00
+last_modified_at: 2015-09-12 18:38:00
 
 ---
 
@@ -117,7 +117,7 @@ Note: In the initial release the functionality behind this menu needs more polis
 
 The first question some people might raise is _"why so many peripherals have zero values?"_. Well, most probably because they are not enabled, so reading them leads usually to zeroes. Or because they do not exist for the actual device, and are present there because the silicon vendor provides a single file for the entire family.
 
-### "No devices avaible, install packs first"
+### "No devices available, install packs first"
 
 If your devices window is empty, you did not read carefully the above steps. You need to update the list of available packages, then install the ones you need.
 
@@ -131,6 +131,7 @@ If you have problems with the actual registers/fields definitions, well, there i
 
 The use of a memory monitor to view peripheral registers, and the look and feel of the interface was inspired by the (now defunct) **Red Suite 5** by **Code Red** (acquired by NXP). Many thanks for providing the inspiration!
 
- [1]: /blog/jlink-debugging/ "The J-Link hardware debugging Eclipse plug-in"
- [2]: /blog/packs-manager/ "Packs manager"
- [3]: /blog/assign-device-project/ "Associate a device to the project"
+ [1]: {{ site.baseurl }}/debug/jlink/ "The J-Link hardware debugging Eclipse plug-in"
+ [2]: {{ site.baseurl }}/plugins/packs-manager/ "Packs manager"
+ [3]: {{ site.baseurl }}/eclipse/project/assign-device/ "Associate a device to the project"
+

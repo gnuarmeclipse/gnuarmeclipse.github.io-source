@@ -3,7 +3,9 @@ layout: page
 title: How to install the OpenOCD binaries
 permalink: /openocd/install/
 
-last_modified_at: 2015-09-09 19:43:00
+date: 2015-09-09 19:43:00
+last_modified_at: 2015-09-12 19:08:00
+
 ---
 
 ## Contents
@@ -115,7 +117,7 @@ The GNU/Linux versions of **GNU ARM Eclipse OpenOCD** are packed as TGZ archi
 
 As the name implies, these are Debian **tar.gz** archives, but can be executed on most recent GNU/Linux distributions (they were tested on Debian, Ubuntu, Manjaro, SuSE and Fedora). Select the debian64 file for 64-bit machines and the debian32 file for 32-bit machines.
 
-In case you use an older distribution and encounter difficulties to run **GNU ARM Eclipse OpenOCD**, you can also try to build it from sources on your machine. A special script was developed for this; with minor changes it should run on all GNU/Linux distributions. Details about this script are available in the <a href="http://gnuarmeclipse.livius.net/wiki/Main_Page#OpenOCD" target="_blank">project wiki</a>. As a last resort, if your distribution includes an OpenOCD package, you can install it using the specific tools.
+In case you use an older distribution and encounter difficulties to run **GNU ARM Eclipse OpenOCD**, you can also try to build it from sources on your machine. As a last resort, if your distribution includes an OpenOCD package, you can install it using the specific tools.
 
 To install this package, unpack the archive and copy it to:
 

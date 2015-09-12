@@ -5,7 +5,7 @@ title: Downloads
 author: Liviu Ionescu
 
 date: 2015-09-11 20:07:00
-last_modified_at: 2015-09-11 23:53:00
+last_modified_at: 2015-09-12 19:17:00
 
 ---
 
@@ -23,7 +23,7 @@ Also please note that not all plug-in versions run on all Eclipse versions, and 
 
 Once you start using this plug-in, further updates are available via the Eclipse standard install/update mechanism, using the following URL:
 
-<pre style="padding-left: 30px;">http://gnuarmeclipse.sourceforge.net/updates</pre>
+`http://gnuarmeclipse.sourceforge.net/updates`
 
 If after selecting the update site the Eclipse does not present any plug-in, you have to disable the **Group items by category**, and the **GNU ARM C/C++ Development Support** is shown.
 
@@ -31,7 +31,7 @@ If after selecting the update site the Eclipse does not present any plug-in, you
 
 For previews, experimental releases are posted to a separate update site:
 
-<pre>http://gnuarmeclipse.sourceforge.net/updates-test</pre>
+`http://gnuarmeclipse.sourceforge.net/updates-test`
 
 Sometimes you can use this site to test some features that are not completely implemented, or that might change before a final version is released.
 
@@ -40,3 +40,4 @@ This site is not always updated; use it carefully, back up your workspace, and d
 ### Rate and Review
 
 If you successfully installed and used this plug-in, we'd be honoured to receive ratings (in the main [Project page](http://sourceforge.net/projects/gnuarmeclipse)), and eventually a short review (in the main [Write a Review](http://sourceforge.net/projects/gnuarmeclipse/reviews/new) page).
+

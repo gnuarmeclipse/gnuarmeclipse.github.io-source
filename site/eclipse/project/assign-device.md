@@ -5,7 +5,7 @@ title: Associate a device to the project
 author: Liviu Ionescu
 
 date: 2015-09-11 19:00:00
-last_modified_at: 2015-09-11 23:42:00
+last_modified_at: 2015-09-12 18:34:00
 
 ---    
 
@@ -19,9 +19,9 @@ One of the advantages of using the new packs technology is that the extra meta
 
 For the device list to be populated, it is required that the Packs plug-ins are first installed. To check this, use the **About Eclipse** menu and click the **Installation Details** button.
 
-<a style="color: #11598f;" href="http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/10/PacksFeature.png"><img class="size-full wp-image-1426" src="http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/10/PacksFeature.png" alt="Check the presence of the Packs plug-ins." width="915" height="631" /></a>
+![Check the presence of the Packs plug-ins.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/10/PacksFeature.png)
 
-If not present, it is recommended to first read the [Packs manager](http://gnuarmeclipse.livius.net/blog/packs-manager/) documentation page where installation details are also provided.
+If not present, it is recommended to first read the [Packs manager]({{ site.baseurl }}/plugins/packs-manager/) documentation page where installation details are also provided.
 
 ### Install required packs
 
@@ -58,3 +58,4 @@ The benefits of assigning a device to the project are:
 An even better packs integration (planned for the future release), will make this setting even more convenient, by starting the projects templates with this selection; it is also planned to use this extra data to automatically set the build ARM family.
 
 Accompanying the device there is also a set of definition for the memory map, which will be used in a future release to automatically generate the linker scripts.
+

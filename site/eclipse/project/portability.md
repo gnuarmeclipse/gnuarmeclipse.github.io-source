@@ -5,7 +5,7 @@ title: Project portability
 author: Liviu Ionescu
 
 date: 2015-09-11 22:12:00
-last_modified_at: 2015-09-11 23:51:00
+last_modified_at: 2015-09-12 18:31:00
 
 ---
 
@@ -72,4 +72,5 @@ Definitions are similar to the ones explained above for the location of the link
 
 The Eclipse debugging system can be configured to store the debug launch configurations either in a common place in workspace, or in each project. In the later case, special care must be considered to avoid using non-portable definitions, like GDB Server name, command line options, etc.
 
- [1]: /blog/toolchain-path/ "Toolchain path management"
+ [1]: {{ site.baseurl }}/toolchain/path/ "Toolchain path management"
+

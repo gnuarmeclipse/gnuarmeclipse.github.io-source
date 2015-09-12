@@ -5,7 +5,7 @@ title: How to use the managed build plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 23:07:00
-last_modified_at: 2015-09-11 23:07:00
+last_modified_at: 2015-09-12 18:21:00
 
 ---
 
@@ -151,5 +151,6 @@ This feature is useful mainly to larger systems, that support shared libraries, 
 
  [1]: http://launchpad.net/gcc-arm-embedded
  [2]: http://launchpad.net/gcc-linaro
- [3]: /blog/build-tools-windows/ "Build tools (make & rm) on Windows"
- [4]: /blog/test-project/ "Create a test project tutorial"
+ [3]: {{ site.baseurl }}/windows-build-tools/overview/ "Build tools (make & rm) on Windows"
+ [4]: {{ site.baseurl }}/tutorials/hello-arm/ "Create a test project tutorial"
+

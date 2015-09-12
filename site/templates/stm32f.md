@@ -5,7 +5,7 @@ title: STM32Fxx templates
 author: Liviu Ionescu
 
 date: 2015-09-11 22:27:00
-last_modified_at: 2015-09-11 22:27:00
+last_modified_at: 2015-09-12 18:15:00
 
 ---
 
@@ -54,7 +54,7 @@ The generated project has the following structure:
 Future releases of the wizard will this automatically but for now it is recommended to do it manually.
 
 
-For more details, please visit the [separate page](http://gnuarmeclipse.livius.net/blog/assign-device-project/).
+For more details, please visit the [separate page]({{ site.baseurl }}/eclipse/project/assign-device/).
 
 
 
@@ -88,4 +88,4 @@ The usual sources for build failures are:
 * a wrong or missing toolchain path; go to the project properties, C/C++ Build → Setting → the Toolchains tab and define the correct path;
 * missing build tools (make & rm) on Windows; install the build tools.
 
- [1]: /blog/debugging/ "Debugging"
+ [1]: {{ site.baseurl }}/debug/overview/ "Debugging"

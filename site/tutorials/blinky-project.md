@@ -5,7 +5,7 @@ title: 'Tutorial: Create a Blinky ARM test project'
 author: Liviu Ionescu
 
 date: 2015-09-11 19:25:00
-last_modified_at: 2015-09-12 00:02:00
+last_modified_at: 2015-09-12 17:48:00
 
 ---
 
@@ -17,7 +17,7 @@ Note2: this tutorial requires a recent version of the STM32F4 template, not olde
 
 ## Prerequisites
 
-Before creating a new project, please be sure you checked all prerequisites described in the [How to use](/blog/use/) page, especially the need to install the [build tools](/blog/build-tools-windows/) if you use Windows as your development platform.
+Before creating a new project, please be sure you checked all prerequisites described in the [How to use]({{ site.baseurl }}/plugins/mbs/) page, especially the need to install the [build tools]({{ site.baseurl }}/windows-build-tools/install/) if you use Windows as your development platform.
 
 It is also recommended to [set the workspace preferences][1].
 
@@ -116,7 +116,8 @@ To assign the board and device:
 * select **STM32F407VG**
 * click **OK**
 
-[<img class="aligncenter size-full wp-image-1951" src="http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2015/08/BlinkyAssignDevice.png" alt="BlinkyAssignDevice" width="922" height="881" />][3]
+![BlinkyAssignDevice](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2015/08/BlinkyAssignDevice.png)
+
 
 ## **Run the test with QEMU**
 
@@ -171,13 +172,12 @@ Set the toolchain path for all projects and workspaces.
     
 ## Support
     
-If something went wrong and you cannot build the project, please check the [How to use](/blog/use/), the [FAQ](/blog/faq/) and the [Known issues](/blog/known-problems/) pages. If you do not find the answer to your question, please read the [Support](/blog/support/) page on how to record a support request in the Support tracker. Do not post comments on this page unless they are related to the text (the phrasing is not correct, you discovered typos, etc).
+If something went wrong and you cannot build the project, please check the [How to use]({{ site.baseurl }}/plugins/mbs/), the [FAQ]({{ site.baseurl }}/support/faq/) and the [Known issues]({{ site.baseurl }}/support/known-issues/) pages. If you do not find the answer to your question, please read the [Support]({{ site.baseurl }}/support/overview/) page on how to record a support request in the Support tracker. Do not post comments on this page unless they are related to the text (the phrasing is not correct, you discovered typos, etc).
 
- [1]: blog/workspace-preferences/ "Workspace preferences"
- [2]: /blog/packs-manager/ "Packs manager"
- [3]: http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2015/08/BlinkyAssignDevice.png
- [4]: http://gnuarmeclipse.livius.net/blog/qemu-debugging/ "The QEMU debugging Eclipse plug-in"
- [5]: blog/stm32f-template/ "STM32Fxx templates"
- [6]: blog/klxx-template/ "KLxx template"
- [7]: blog/cortexm-template/ "Generic Cortex-M template"
- [8]: /blog/build-tools-windows/ "Build tools (make & rm) for Windows"
+ [1]: {{ site.baseurl }}/eclipse/workspace/preferences/ "Workspace preferences"
+ [2]: {{ site.baseurl }}/plugins/packs-manager/ "Packs manager"
+ [4]: {{ site.baseurl }}/debug/qemu/ "The QEMU debugging Eclipse plug-in"
+ [5]: {{ site.baseurl }}/templates/stm32f/ "STM32Fxx templates"
+ [6]: {{ site.baseurl }}/templates/klxx/ "KLxx template"
+ [7]: {{ site.baseurl }}/templates/cortexm/ "Generic Cortex-M template"
+ [8]: {{ site.baseurl }}/windows-build-tools/overview/ "Build tools (make & rm) for Windows"

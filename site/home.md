@@ -5,7 +5,7 @@ title: Welcome to GNU ARM Eclipse!
 author: Liviu Ionescu
 
 date: 2015-09-07 18:31:00
-last_modified_at: 2015-09-09 22:25:00
+last_modified_at: 2015-09-12 18:30:00
 
 ---
 
@@ -17,7 +17,7 @@ This site is dedicated to the **GNU ARM Eclipse** family of plug-ins and tools f
 
 These plug-ins provide Eclipse CDT (C/C++ Development Tooling) extensions for GNU ARM toolchains like **GNU Tools for ARM Embedded Processors**, **Linaro**, etc.
 
-In short, the GNU ARM Eclipse plug-ins allow to create, build, debug and in general to **manage ARM and AArch64 projects** (executables and static/shared libraries, in both 32 and 64-bit versions) with the Eclipse framework (currently tested up to Eclipse 4.4 Luna). The plug-ins run on Windows, GNU/Linux and Mac OS X. For more details please visit the [Features](http://gnuarmeclipse.livius.net/blog/features/) page.
+In short, the GNU ARM Eclipse plug-ins allow to create, build, debug and in general to **manage ARM and AArch64 projects** (executables and static/shared libraries, in both 32 and 64-bit versions) with the Eclipse framework (currently tested up to Eclipse 4.4 Luna). The plug-ins run on Windows, GNU/Linux and Mac OS X. For more details please visit the [Features]({{ site.baseurl }}/plugins/features/) page.
 
   ![Create new STM32F4 C++ project]({{ site.baseurl }}/images/2015/intro-new-f4-project.png)
 

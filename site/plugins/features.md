@@ -5,7 +5,7 @@ title: GNU ARM Eclipse Plug-ins Features
 author: Liviu Ionescu
 
 date: 2015-09-10 19:59:00
-last_modified_at: 2015-09-12 13:08:00
+last_modified_at: 2015-09-12 18:29:00
 
 ---
 
@@ -172,7 +172,8 @@ To open the individual documents, double click their names and specific viewers 
  [1]: http://launchpad.net/gcc-arm-embedded
  [2]: http://launchpad.net/gcc-linaro
  [3]: http://launchpad.net/linaro-toolchain-binaries
- [4]: /blog/toolchain-path/ "Toolchain path management"
- [5]: /blog/project-portability/ "Project portability"
- [6]: /blog/test-project/
- [7]: /blog/jlink-debugging/ "The J-Link hardware debugging Eclipse plug-in"
+ [4]: {{ site.baseurl }}/toolchain/path/ "Toolchain path management"
+ [5]: {{ site.baseurl }}/eclipse/project/portability/ "Project portability"
+ [6]: {{ site.baseurl }}/tutorials/hello-arm/
+ [7]: {{ site.baseurl }}/debug/jlink/ "The J-Link hardware debugging Eclipse plug-in"
+

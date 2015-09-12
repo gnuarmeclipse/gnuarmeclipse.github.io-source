@@ -5,7 +5,7 @@ title: The QEMU debugging Eclipse plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 22:15:00
-last_modified_at: 2015-09-11 23:49:00
+last_modified_at: 2015-09-12 18:37:00
 
 ---
 
@@ -55,7 +55,7 @@ By default, the GDB server is defined as **${qemu\_path}/${qemu\_executable}**;
     
 Although not absolutely mandatory, it is recommended to associate a device to the project, so that creating the debugger launch configuration will automatically fill-in the device name.
     
-[![Assigning a device to the project.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2013/10/Devices.png)][3] 
+![Assigning a device to the project.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2013/10/Devices.png)
  
 Follow the steps in the separate page [Associate a device to the project][4] and return to this page to continue.
     
@@ -200,7 +200,7 @@ Click the **Resume** button and execution will resume. Watch the console. After
     
 You can experiment with the first argument, which controls the number of iterations in the main loop; edit it to 7 and rerun the application.
     
- [1]: /blog/qemu-install/ "QEMU Install"
- [2]: /blog/qemu-debugging/#QEMU_plug-in_usage
- [3]: http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2013/10/Devices.png
- [4]: /blog/assign-device-project/
+ [1]: {{ site.baseurl }}/qemu/install/ "QEMU Install"
+ [2]: {{ site.baseurl }}/debug/qemu/#qemu-plug-in-usage
+ [4]: {{ site.baseurl }}/eclipse/project/assign-device/
+

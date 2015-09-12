@@ -5,10 +5,9 @@ title: SEGGER J-Link install
 author: Liviu Ionescu
 
 date: 2015-09-11 20:50:00
-last_modified_at: 2015-09-11 23:47:00
+last_modified_at: 2015-09-12 18:47:00
 
 ---
-
 
 ## Why J-Link?
 
@@ -144,4 +143,5 @@ In all cases, the result should be similar to the one obtained on OS X.
 
 If you successfully installed SEGGER binaries, you can proceed to the page documenting how to use the GNU ARM Eclipse [J-Link debugging plug-in][1].
 
- [1]: /blog/jlink-debugging/ "The J-Link hardware debugging Eclipse plug-in"
+ [1]: {{ site.baseurl }}/debug/jlink/ "The J-Link hardware debugging Eclipse plug-in"
+

@@ -5,7 +5,7 @@ title: Templates
 author: Liviu Ionescu
 
 date: 2015-09-11 22:35:00
-last_modified_at: 2015-09-12 00:00:00
+last_modified_at: 2015-09-12 18:13:00
 
 ---
 
@@ -91,7 +91,7 @@ Various libraries are grouped in the **system** folder. According to ARM specif
 * STM32F1xx template
 * STM32F2xx template
 * STM32F3xx template
-* [STM32F4xx template][4]
+* [STM32F4xx template][2]
 
 ### Freescale templates
 
@@ -106,7 +106,6 @@ If you use a processor that has no template yet, and want to contribute to this 
 
 If you have such a project, you can register a new feature request and attach your project to the request, for us to review and eventually use as a base for a new template.
 
- [1]: /blog/cortexm-template/ "Generic Cortex-M template"
- [2]: /blog/stm32f-template/ "STM32Fxx templates"
- [3]: /blog/klxx-template/ "KLxx template"
- [4]: http://gnuarmeclipse.livius.net/blog/stm32f-template/ "STM32Fxx templates"
+ [1]: {{ site.baseurl }}/templates/cortexm/ "Generic Cortex-M template"
+ [2]: {{ site.baseurl }}/templates/stm32f/ "STM32Fxx templates"
+ [3]: {{ site.baseurl }}/templates/klxx/ "KLxx template"

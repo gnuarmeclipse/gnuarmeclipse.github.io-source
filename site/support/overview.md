@@ -5,7 +5,7 @@ title: How to get support
 author: Liviu Ionescu
 
 date: 2015-09-12 13:43:00
-last_modified_at: 2015-09-12 15:15:00
+last_modified_at: 2015-09-12 19:14:00
 
 ---
 
@@ -16,7 +16,7 @@ In case you encounter problems while using the plug-ins, please consider the fol
 * read the documentation pages
 * check the [Known issues]({{ site.baseurl }}/support/known-issues/)
 * check the [FAQ]({{ site.baseurl }}/support/faq/)
-* scan the [SourceForge tickets]({{ site.baseurl }}/support/ for similar problemssourceforge/)
+* scan the [SourceForge tickets]({{ site.baseurl }}/support/sourceforge/) for similar problems
 * check the GitHub Issues
 
 If you still could not find a solution, follow the recommendations in the GitHub Issues [tracker](https://github.com/gnuarmeclipse/gnuarmeclipse/issues/1) and add a new ticket.

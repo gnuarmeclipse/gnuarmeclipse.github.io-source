@@ -5,10 +5,9 @@ title: Debugging
 author: Liviu Ionescu
 
 date: 2015-09-11 19:59:00
-last_modified_at: 2015-09-11 19:59:00
+last_modified_at: 2015-09-12 18:42:00
 
 ---
-
 
 ## Quicklinks
 
@@ -16,10 +15,10 @@ If you know all about debugging, and all you need is how to install/configure/us
 
 In short, for bare metal embedded development, we highly recommend solutions that can be used on all major platforms (Windows, OS X and GNU/Linux), with hardware probes that implement the SWD protocol and support tracing via the SWO pin. The preferred probes that match the above requirements are [J-Link EDU](http://www.segger.com/j-link-edu.html)/[J-Link](http://www.segger.com/jlink_base.html), from [SEGGER](http://www.segger.com/).
 
-* [J-Link install](/blog/jlink-install/)
-* [J-Link plug-in usage](/blog/jlink-debugging/)
-* [OpenOCD install](/blog/openocd-install/)
-* [OpenOCD plug-in usage](/blog/openocd-debugging/)
+* [J-Link install]({{ site.baseurl }}/debug/install/jlink/)
+* [J-Link plug-in usage]({{ site.baseurl }}/debug/jlink/)
+* [OpenOCD install]({{ site.baseurl }}/openocd/install/)
+* [OpenOCD plug-in usage]({{ site.baseurl }}/debug/openocd/)
 * [QEMU install][1]
 * [QEMU plug-in usage][2]
 * [The Peripherals registers view][3]
@@ -53,6 +52,7 @@ Recognising the importance of these methods, the designers of the ARM families a
 
 TODO: add more content
 
- [1]: /blog/qemu-install/ "QEMU Install"
- [2]: /blog/qemu-debugging/ "The QEMU debugging Eclipse plug-in"
- [3]: /blog/peripheral-registers/ "Peripheral registers view"
+ [1]: {{ site.baseurl }}/qemu/install/ "QEMU Install"
+ [2]: {{ site.baseurl }}/debug/qemu/ "The QEMU debugging Eclipse plug-in"
+ [3]: {{ site.baseurl }}/debug/peripheral-registers/ "Peripheral registers view"
+

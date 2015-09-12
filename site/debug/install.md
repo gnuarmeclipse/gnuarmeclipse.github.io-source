@@ -1,14 +1,13 @@
 ---
 layout: page
 permalink: /debug/install/
-title: Debugger install
+title: How to install the debugging components
 author: Liviu Ionescu
 
 date: 2015-09-11 19:55:00
-last_modified_at: 2015-09-11 23:46:00
+last_modified_at: 2015-09-12 19:21:00
 
 ---
-
 
 ## Quicklinks
 
@@ -100,13 +99,14 @@ To save you time, we compiled a list of other GDB servers, with some of their fe
 
 Another interesting solution is Freescale's **OpenSDA** debug/programming interface. For the Kinetis L based Freedom Development Boards, SEGGER provides a high performance [OpenSDA](http://www.segger.com/opensda.html) implementation fully compatible with the J-Link Lite, so the J-Link plug-in can be successfully used for these evaluation boards without having a physical J-Link probe. More details on installing OpenSDA can be found on [MCU on Eclipse](http://mcuoneclipse.com/2013/05/16/freedom-board-with-segger-opensda-debug-firmware/).
 
- [1]: /blog/jlink-install/ "SEGGER J-Link Install"
- [2]: /blog/openocd-install/ "OpenOCD install"
- [3]: /blog/qemu-install/ "QEMU Install"
- [4]: /blog/qemu/ "The GNU ARM Eclipse QEMU"
- [5]: /blog/jlink-debugging/ "The J-Link hardware debugging Eclipse plug-in"
- [6]: /blog/plugins-install/ "Plug-ins install"
- [7]: http://gnuarmeclipse.livius.net/blog/jlink-debugging/ "The J-Link hardware debugging Eclipse plug-in"
- [8]: http://gnuarmeclipse.livius.net/blog/qemu-debugging/ "The QEMU debugging Eclipse plug-in"
+ [1]: {{ site.baseurl }}/debug/install/jlink/ "SEGGER J-Link Install"
+ [2]: {{ site.baseurl }}/openocd/install/ "OpenOCD install"
+ [3]: {{ site.baseurl }}/qemu/install/ "QEMU Install"
+ [4]: {{ site.baseurl }}/qemu/overview/ "The GNU ARM Eclipse QEMU"
+ [5]: {{ site.baseurl }}/debug/jlink/ "The J-Link hardware debugging Eclipse plug-in"
+ [6]: {{ site.baseurl }}/plugins/install/ "Plug-ins install"
+ [7]: {{ site.baseurl }}/debug/jlink/ "The J-Link hardware debugging Eclipse plug-in"
+ [8]: {{ site.baseurl }}/debug/qemu/ "The QEMU debugging Eclipse plug-in"
  [9]: http://www.st.com/web/en/catalog/tools/PF258168
  [10]: https://github.com/texane/stlink
+

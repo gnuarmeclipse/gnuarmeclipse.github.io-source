@@ -5,10 +5,9 @@ title: Toolchain install
 author: Liviu Ionescu
 
 date: 2015-09-11 22:49:00
-last_modified_at: 2015-09-12 00:01:00
+last_modified_at: 2015-09-12 17:52:00
 
 ---
-
 
 ## Overview
 
@@ -62,7 +61,7 @@ Note: It is highly recommended to **do not to change the install path**, since t
 	C:\Users\Liviu Ionescu&gt;"C:\Program Files\GNU Tools ARM Embedded\4.8 2014q2\bin\arm-none-eabi-gcc.exe" --version
 	arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]
 
-For Windows, the next step would be to install the [build tools (make & rm)](/blog/build-tools-windows/).
+For Windows, the next step would be to install the [build tools (make & rm)]({{ site.baseurl }}/windows-build-tools/overview/).
 
 The complete toolchain documentation is available in the `...\share\doc\pdf\` folder.
 
@@ -149,4 +148,4 @@ The GNU ARM Eclipse plug-in has an advanced [toolchain path management][3] (pre
 
  [1]: http://launchpad.net/gcc-arm-embedded
  [2]: http://www.linaro.org/downloads/
- [3]: /blog/toolchain-path/ "Toolchain path management"
+ [3]: {{ site.baseurl }}/toolchain/path/ "Toolchain path management"

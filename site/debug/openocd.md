@@ -5,7 +5,7 @@ title: The OpenOCD debugging Eclipse plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 21:41:00
-last_modified_at: 2015-09-11 23:49:00
+last_modified_at: 2015-09-12 18:43:00
 
 ---
 
@@ -231,5 +231,6 @@ If the GDB Hardware Debugging plug-in works and the GDB OpenOCD debugging plug-
 
 Although the plug-in takes care of most of the configuration options, and provides reasonable defaults for the usual cases, it is recommended to read the OpenOCD manuals, available in the **doc** folder of your install location.
 
- [1]: /blog/openocd/ "The GNU ARM Eclipse OpenOCD"
- [2]: /blog/openocd-install/ "OpenOCD install"
+ [1]: {{ site.baseurl }}/openocd/overview/ "The GNU ARM Eclipse OpenOCD"
+ [2]: {{ site.baseurl }}/openocd/install/ "OpenOCD install"
+

@@ -5,10 +5,9 @@ title: The J-Link debugging Eclipse plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 21:15:00
-last_modified_at: 2015-09-12 00:04:00
+last_modified_at: 2015-09-12 18:45:00
 
 ---
-
 
 ## Quicklinks
 
@@ -275,7 +274,8 @@ Another reason for not being able to start the debug session is that your proje
     
 Although the plug-in takes care of most of the configuration options, and provides reasonable defaults for the usual cases, it is recommended to read the SEGGER manuals, available from the Doc folder in the installation location or directly from the [SEGGER J-Link page](http://www.segger.com/jlink-software.html).
 
- [1]: /blog/jlink-install/ "SEGGER J-Link install"
- [2]: /blog/jlink-debugging/#J-Link_plug-in_use
- [3]: /blog/jlink-install/ "J-Link install"
- [4]: http://gnuarmeclipse.livius.net/blog/assign-device-project/ "Associate a device to the project"
+ [1]: {{ site.baseurl }}/debug/install/jlink/ "SEGGER J-Link install"
+ [2]: {{ site.baseurl }}/debug/jlink/#J-Link_plug-in_use
+ [3]: {{ site.baseurl }}/debug/install/jlink/ "J-Link install"
+ [4]: {{ site.baseurl }}/eclipse/project/assign-device/ "Associate a device to the project"
+

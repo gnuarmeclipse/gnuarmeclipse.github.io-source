@@ -6,7 +6,7 @@ author: Liviu Ionescu
 layout: page
 
 date: 2015-09-11 21:55:00
-last_modified_at: 2015-09-11 23:55:00
+last_modified_at: 2015-09-12 18:23:00
 
 ---
 
@@ -151,7 +151,7 @@ With right click, you can copy one or more examples to separate local folders. 
 Well, for the moment, packs support is work in progress. But the importance of the packs technology is amazing, there are many useful details available in the packs, that can and will be used in future version of the plug-ins. Currently, apart from inspecting the content of the packs, you can also use the packs content to:
 
 * assign a device/board, together with the memory map, to a build configuration; this will allow to automatically fill in the J-Link device name when creating debug configurations;
-* examine/modify the peripheral registers during debug sessions, using the [peripherals registers view](/blog/peripheral-registers/);
+* examine/modify the peripheral registers during debug sessions, using the [peripherals registers view]({{ site.baseurl }}/plugins/packs-manager/);
 * access the documentation made available for the device by the silicon vendor, using the Documents view in the C/C++ perspective.
 
 The next features planned to use the packs content are:
@@ -161,3 +161,5 @@ The next features planned to use the packs content are:
 * the vendor CMSIS headers and source files will be used in the future version of the project template.
 
 And, in the mid-term future, the templates will be fully replaced with component based projects, allowing an easy update and advanced configurability for projects.
+
+
