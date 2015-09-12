@@ -4,7 +4,9 @@ description: A family of Eclipse CDT extensions and tools for GNU ARM developmen
 email: il@livius.net
 
 destination: _site
-exclude: [README.md, gnuarmeclipse.wiki, openocd.wiki, qemu.wiki, windows-build-tools.wiki]
+exclude:
+  - README.md
+  - site/sidebar.md
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 
