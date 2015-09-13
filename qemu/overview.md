@@ -4,7 +4,7 @@ title: The GNU ARM Eclipse QEMU
 permalink: /qemu/overview/
 
 date: 2015-09-07 21:31:00
-last_modified_at: 2015-09-12 18:55:00
+last_modified_at: 2015-09-13 22:37:00
 
 ---
 
@@ -159,5 +159,4 @@ The change log is available as a separate [Change log]({{ site.baseurl }}/qemu/c
 
 ## Build details
 
-For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/qemu/how-to-build) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).
-
+For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/qemu/build-procedure) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).

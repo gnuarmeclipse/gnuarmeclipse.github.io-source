@@ -5,7 +5,7 @@ title: How to publish
 author: Liviu Ionescu
 
 date: 2015-09-10 21:07:00
-last_modified_at: 2015-09-10 21:07:00
+last_modified_at: 2015-09-13 22:39:00
 
 ---
 
@@ -111,7 +111,7 @@ Test if the new build can be used as an update site, by installing from updates-
 
 ## Update the Change log
 
-Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/developer/change_log), grouped by days.
+Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/developer/change-log/), grouped by days.
 
     git log --pretty='%cd * %s' --since 2015-06-24 --reverse --date=short >~/Desktop/ChangeLog.txt
 
@@ -196,8 +196,8 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 ## Create a new GitHub release
 
 *   go to the [GitHub Releases](https://github.com/gnuarmeclipse/gnuarmeclipse/releases) page
-*   click **Draft a new release** 
-* name the tag like **v2.9.3-201508190739** 
+*   click **Draft a new release**
+* name the tag like **v2.9.3-201508190739**
 * select the commit
 * name the release like **GNU ARM Eclipse plug-ins v2.9.3-201508190739**
 * as description, copy the first paragraph from the Wiki page

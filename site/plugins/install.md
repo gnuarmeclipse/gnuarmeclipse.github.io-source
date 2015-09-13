@@ -116,8 +116,8 @@ If this still fails, the alternative method is to manually download the latest
 
 If, for any reason, you need to install a specific version of the plug-in, the solution is to download the archive from [SourceForge Files](http://sourceforge.net/projects/gnuarmeclipse/files/Current%20Releases/) and to point the Eclipse update mechanism to the local archive: In the* Eclipse* menu: **Help** → **Install New Software...**
 
-* in the *Install* window, click the **Add...** button 
-* in the *Add Repository* window, click the **Archive...** button 
+* in the *Install* window, click the **Add...** button
+* in the *Add Repository* window, click the **Archive...** button
           * in the *Repository archive* window, select the downloaded .zip archive
           * click the **OK** button
 * click the OK button
@@ -179,4 +179,3 @@ If you encountered any problems when installing the plug-ins, pleas refer to the
  [6]: {{ site.baseurl }}/debug/peripheral-registers/ "The peripherals registers view"
  [7]: {{ site.baseurl }}/tutorials/hello-arm/ "Tutorial: Create a test project"
  [8]: {{ site.baseurl }}/support/overview/
-

@@ -3,7 +3,7 @@ layout: page
 title: Welcome to GNU ARM Eclipse OpenOCD!
 permalink: /openocd/
 
-last_modified_at: 2015-09-09 18:53:00
+last_modified_at: 2015-09-13 23:53:00
 ---
 
 The **GNU ARM Eclipse OpenOCD** is a new distribution of [OpenOCD](http://openocd.org), customised for a better/more convenient integration with the **GNU ARM OpenOCD Debugging** plug-in.
@@ -17,7 +17,7 @@ The **GNU ARM Eclipse OpenOCD** is a new distribution of [OpenOCD](http://openoc
 
 ## How to build
 
-* [How to build]({{ site.baseurl }}/openocd/how-to-build) (using Docker containers)
+* [How to build]({{ site.baseurl }}/openocd/build-procedure) (using Docker containers)
 * [Change log]({{ site.baseurl }}/openocd/change-log)
 
 Other links:
@@ -25,4 +25,3 @@ Other links:
 * [Docker images](https://registry.hub.docker.com/u/ilegeul/)
 
 ## [Releases]({{ site.baseurl }}/openocd/releases)
-

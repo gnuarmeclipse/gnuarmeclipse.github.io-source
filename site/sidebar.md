@@ -7,7 +7,7 @@
 
 ---
 
-#### [GNU ARM Eclipse Home]({{ site.baseurl }}/) 
+#### [GNU ARM Eclipse Home]({{ site.baseurl }}/)
 
 
 #### [Features]({{ site.baseurl }}/plugins/features/)

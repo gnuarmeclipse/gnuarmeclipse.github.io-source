@@ -5,7 +5,7 @@ title: GNU ARM Eclipse Developer page
 author: Liviu Ionescu
 
 date: 2015-09-10 18:31:00
-last_modified_at: 2015-09-10 22:54:00
+last_modified_at: 2015-09-13 23:54:00
 
 ---
 
@@ -15,7 +15,7 @@ last_modified_at: 2015-09-10 22:54:00
 
 * [How Eclipse runtime preferences and defaults work]({{ site.baseurl }}/developer/eclipse/runtime-preferences)
 * [ilg.gnuarmeclipse.managedbuild.cross]({{ site.baseurl }}/developer/preferences/ilg.gnuarmeclipse.managedbuild.cross) persistent values & toolchain ids
-* [ilg.gnuarmeclipse.debug.gdbjtag.jlink]({{ site.baseurl }}/developer/references/ilg.gnuarmeclipse.debug.gdbjtag.jlink) persistent values (workspace)
+* [ilg.gnuarmeclipse.debug.gdbjtag.jlink]({{ site.baseurl }}/developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.jlink) persistent values (workspace)
 * [ilg.gnuarmeclipse.debug.gdbjtag.openocd]({{ site.baseurl }}/developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.openocd) persistent values (workspace)
 * [ilg.gnuarmeclipse.debug.gdbjtag.qemu]({{ site.baseurl }}/developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.qemu) persistent values (workspace)
 
@@ -80,6 +80,5 @@ How to build the plug-ins from sources and publish them.
 
 ## Releases
 
-* [latest release](Release-v2.9.3-201508190739) [(download)](https://github.com/gnuarmeclipse/gnuarmeclipse/releases/tag/v2.9.3-201508190739)
+* [latest release]({{ site.baseurl }}/2015/08/19/plugins-v2.9.3-201508190739-released/) [(download)](https://github.com/gnuarmeclipse/gnuarmeclipse/releases/tag/v2.9.3-201508190739)
 * [older releases]({{ site.baseurl }}/developer/releases)
-

@@ -123,6 +123,3 @@ The linker **.map** and the assembler **.lst** files are not removed when runnin
 * CDT bug [392416](https://bugs.eclipse.org/bugs/show_bug.cgi?id=392416), fixed in Kepler 4.3 SR2: changing compiler options did not automatically re-trigger a discovery process to get the new default compiler macros. Although most options do not change the default compiler macros, some (like **-std=**) do, and not updating the index can be the source of very annoying situations. If you run older Eclipses, you need to manually clear the discovered entries.
 
 ![Clear discovered paths and symbols.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2013/10/ClearSettings.png)
-
-
-

@@ -3,7 +3,7 @@ layout: page
 title: The GNU ARM Eclipse Windows Build Tools
 permalink: /windows-build-tools/overview/
 
-last_modified_at: 2015-09-08 12:58:00
+last_modified_at: 2015-09-13 22:38:00
 ---
 
 ## Contents
@@ -63,4 +63,4 @@ The change log is available as a separate [Change log]({{ site.baseurl }}/window
 
 ## Build details
 
-For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/windows-build-tools/how-to-build) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).
+For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/windows-build-tools/build-procedure) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).

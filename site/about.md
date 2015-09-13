@@ -5,7 +5,7 @@ title: About
 author: Liviu Ionescu
 
 date: 2015-09-10 19:45:00
-last_modified_at: 2015-09-10 19:58:00
+last_modified_at: 2015-09-13 22:39:00
 
 ---
 
@@ -45,7 +45,7 @@ In July 2014, the experimental version of the Packs plug-in was published, provi
 
 In August 2015 the project was migrated to [GitHub](https://github.com/gnuarmeclipse) and restructured as separate sub-projects. For a more stability over time, the blog and wiki sites hosted on the private livius.net server were migrate to the public GitHub Pages.
 
-With this migration also the name was reduced to **GNU ARM Eclipse**. 
+With this migration also the name was reduced to **GNU ARM Eclipse**.
 
 ## PAD file
 
@@ -72,10 +72,10 @@ In October 2013, the project documentation was moved to an external [WordPress](
 
 The developer specific pages were also moved to an external MediaWiki site. The original URL was http://gnuarmeclipse.livius.net/wiki.
 
-In Aug 2015 those two sites were first migrated to GitHub Wiki, with content split between multiple projects. Then the entire project pages was migrated to a GitHub Pages site, located at [http://gnuarmeclipse.github.io/](http://gnuarmeclipse.github.io/). 
+In Aug 2015 those two sites were first migrated to GitHub Wiki, with content split between multiple projects. Then the entire project pages was migrated to a GitHub Pages site, located at [http://gnuarmeclipse.github.io/](http://gnuarmeclipse.github.io/).
 
 ## The author
 
 This plug-in is currently maintained by **Liviu Ionescu**, a senior IT engineer, with expertise in operating systems, compilers, embedded systems and Internet technologies.
 
-He can be reached at [ilg@livius.net](mailto:ilg@livius.net) (this email address is given for courtesy, for all correspondence related to this plug-in please use the project [Tickets](Support) pages).
+He can be reached at [ilg@livius.net](mailto:ilg@livius.net) (this email address is given for courtesy, for all correspondence related to this plug-in please use the project [Support]({{ site.baseurl }}/support/overview/) pages).

@@ -3,7 +3,7 @@ layout: page
 title: The GNU ARM Eclipse OpenOCD
 permalink: /openocd/overview/
 
-last_modified_at: 2015-09-09 19:41:00
+last_modified_at: 2015-09-13 22:36:00
 ---
 
 ## Contents
@@ -65,5 +65,4 @@ The change log is available as a separate [Change log]({{ site.baseurl }}/openoc
 
 ## Build details
 
-For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/openocd/how-to-build) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).
-
+For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/openocd/build-procedure) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).

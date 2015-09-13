@@ -3,10 +3,10 @@ layout: page
 title: Welcome to GNU ARM Eclipse QEMU!
 permalink: /qemu/
 
-last_modified_at: 2015-09-09 09:03:00
+last_modified_at: 2015-09-13 22:35:00
 ---
 
-The [GNU ARM Eclipse QEMU]({{ site.baseurl }}/qemu) subproject is a fork of [QEMU](http://wiki.qemu.org/Main_Page) (an open source machine emulator), intended to provide support for Cortex-M emulation in GNU ARM Eclipse. The source code is part of the **GNU ARM Eclipse** project, and is available from [GitHub](https://github.com/gnuarmeclipse/qemu). Binary packages are available from [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases). 
+The [GNU ARM Eclipse QEMU]({{ site.baseurl }}/qemu) subproject is a fork of [QEMU](http://wiki.qemu.org/Main_Page) (an open source machine emulator), intended to provide support for Cortex-M emulation in GNU ARM Eclipse. The source code is part of the **GNU ARM Eclipse** project, and is available from [GitHub](https://github.com/gnuarmeclipse/qemu). Binary packages are available from [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases).
 
 ## How to use
 
@@ -17,7 +17,7 @@ The [GNU ARM Eclipse QEMU]({{ site.baseurl }}/qemu) subproject is a fork of [QEM
 
 ## How to build
 
-* [How to build]({{ site.baseurl }}/qemu/how-to-build) (using Docker containers)
+* [How to build]({{ site.baseurl }}/qemu/build-procedure) (using Docker containers)
 * [Change log]({{ site.baseurl }}/qemu/change-log) ([2014]({{ site.baseurl }}/qemu/change-log/2014))
 
 Other links:
@@ -27,4 +27,3 @@ Other links:
 * [Docker images](https://registry.hub.docker.com/u/ilegeul/)
 
 ## [Releases]({{ site.baseurl }}/qemu/releases)
-
