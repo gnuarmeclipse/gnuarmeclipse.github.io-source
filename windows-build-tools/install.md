@@ -3,7 +3,9 @@ layout: page
 title: How to install the Windows Build Tools
 permalink: /windows-build-tools/install/
 
+date: 2015-09-04 12:00:00
 last_modified_at: 2015-09-08 13:20:00
+
 ---
 
 ## Contents
@@ -36,7 +38,7 @@ So, if you use the CodeBench Lite (not recommended anyway), although you already
 
 ## Download the Windows Build Tools setup
 
-Otherwise, if you use other toolchains, like the recommended [**GNU Tools for ARM Embedded Processors**](http://launchpad.net/gcc-arm-embedded), for your convenience we prepared a small package with the required build tools; just download the most recent **gnuarmeclipse-build-tools-win32-2.\*-\*-setup.exe** file from the <a href="https://sourceforge.net/projects/gnuarmeclipse/files/Build Tools/" target="_blank">SourceForge download area</a> and proceed with the setup.
+Otherwise, if you use other toolchains, like the recommended [**GNU Tools for ARM Embedded Processors**](http://launchpad.net/gcc-arm-embedded), for your convenience we prepared a small package with the required build tools; just download the most recent **gnuarmeclipse-build-tools-win32-2.\*-\*-setup.exe** file from the [SourceForge download area](https://sourceforge.net/projects/gnuarmeclipse/files/Build Tools/) and proceed with the setup.
 
 ## Run the setup
 
@@ -52,12 +54,12 @@ By default this will install the programs in the `C:\Program Files\GNU ARM Ecli
 
 Check if the tool is functional; go to the folder where you installed the tools and run `make --version`.
 
-	C:\Program Files\GNU ARM Eclipse\Build Tools\bin>make --version 
-	GNU Make 4.1 
-	Built for i686-w64-mingw32 
-	Copyright (C) 1988-2014 Free Software Foundation, Inc. 
-	License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html> 
-	This is free software: you are free to change and redistribute it. 
+	C:\Program Files\GNU ARM Eclipse\Build Tools\bin>make --version
+	GNU Make 4.1
+	Built for i686-w64-mingw32
+	Copyright (C) 1988-2014 Free Software Foundation, Inc.
+	License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+	This is free software: you are free to change and redistribute it.
 	There is NO WARRANTY, to the extent permitted by law.
 
 ## Check the global tools path
@@ -85,4 +87,3 @@ If needed, you can completely remove the package from your system by running the
 ## The echo command
 
 The package also contains an executable for the **echo** command. It is not mandatory for the build to succeed, but it is recommended to have it in the build path, to avoid an annoying CDT bug, that triggers an error during the first build of a new project, claiming that _Program "gcc" not found in PATH_.
-

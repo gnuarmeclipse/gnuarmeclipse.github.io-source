@@ -5,7 +5,7 @@ title: GNU ARM Eclipse Plug-ins Features
 author: Liviu Ionescu
 
 date: 2015-09-10 19:59:00
-last_modified_at: 2015-09-12 18:29:00
+last_modified_at: 2015-09-14 11:43:00
 
 ---
 
@@ -56,8 +56,8 @@ The build plug-in supports most existing toolchains currently available for both
 * **[Linaro][2] **ARMv7 **big-endian bare-metal EABI** (armeb-none-eabi-*)
 * **[Linaro][2] **ARMv7 **Linux GNU EABI HF** (arm-linux-gnueabihf-*)
 * **[Linaro][2] **ARMv7 **big-endian Linux GNU EABI HF** (armeb-linux-gnueabihf-*)
-* <a href="http://www.mentor.com/embedded-software/sourcery-tools/sourcery-codebench/editions/lite-edition/" target="_blank"><strong>Mentor Sourcery CodeBench Lite</strong></a> for **ARM EABI** (arm-none-eabi-*)
-* <a href="http://www.mentor.com/embedded-software/sourcery-tools/sourcery-codebench/editions/lite-edition/" target="_blank"><strong>Mentor Sourcery CodeBench Lite</strong></a> for **ARM GNU/Linux** (arm-none-linux-gnueabi-*)
+* **[Mentor Sourcery CodeBench Lite](http://www.mentor.com/embedded-software/sourcery-tools/sourcery-codebench/editions/lite-edition/)** for **ARM EABI** (arm-none-eabi-*)
+* **[Mentor Sourcery CodeBench Lite](http://www.mentor.com/embedded-software/sourcery-tools/sourcery-codebench/editions/lite-edition/)** for **ARM GNU/Linux** (arm-none-linux-gnueabi-*)
 * devkit **ARM EABI** (arm-eabi-*) (obsolete, no longer maintained)
 * Yagarto, Summon, etc. **ARM EABI** (arm-none-eabi-*) (obsolete, no longer maintained)
 
@@ -176,4 +176,3 @@ To open the individual documents, double click their names and specific viewers 
  [5]: {{ site.baseurl }}/eclipse/project/portability/ "Project portability"
  [6]: {{ site.baseurl }}/tutorials/hello-arm/
  [7]: {{ site.baseurl }}/debug/jlink/ "The J-Link hardware debugging Eclipse plug-in"
-
