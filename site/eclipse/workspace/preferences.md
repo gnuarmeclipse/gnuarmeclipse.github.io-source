@@ -5,7 +5,7 @@ title: Workspace preferences
 author: Liviu Ionescu
 
 date: 2015-09-11 23:16:00
-last_modified_at: 2015-09-11 23:52:00
+last_modified_at: 2015-09-14 12:30:00
 
 ---
 
@@ -87,7 +87,7 @@ Eclipse CDT has a very useful feature allowing to automatically reformat a piece
 * go to the Eclipse menu **Preferences...** → **C/C++** → **Code Style** → **Formatter**
 * in the **Active profile:** field, select **GNU [built-in]**
 
-[![](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesFormatter1.png)][1]
+![](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesFormatter1.png)
 
 Except very special company policies, it is generally recommended to NOT change the individual formatter style, and to apply the GNU format to all source files in a project before committing to the repository.
 
@@ -149,5 +149,3 @@ To change this setting:
 * select **Always launch the previously launched application** in the **Launch Operation** section.
 
 ![Launch previously used application.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/LaunchPrevious.png)
-
- [1]: http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesFormatter1.png
