@@ -5,7 +5,7 @@ title: Workspace preferences
 author: Liviu Ionescu
 
 date: 2015-09-11 23:16:00
-last_modified_at: 2015-09-14 12:30:00
+last_modified_at: 2015-09-14 12:54:00
 
 ---
 
@@ -34,7 +34,7 @@ When you're done:
 
 * click the **Apply** button
 
-![Preferences: Save automatically](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesSave.png)
+![Preferences: Save automatically]({{ site.baseurl }}/images/2014/06/PreferencesSave.png)
 
 ## Use active build configuration for indexing
 
@@ -44,7 +44,7 @@ Eclipse CDT has a very powerful indexer, which parses the source code on the fly
 * enable **Use active build configuration**
 * click the **Apply** button
 
-![Indexer: Use active build configuration](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesIndexer.png)
+![Indexer: Use active build configuration]({{ site.baseurl }}/images/2014/06/PreferencesIndexer.png)
 
 ## Show line numbers
 
@@ -56,7 +56,7 @@ Although not critical, while editing source files, it is useful to see the line 
 * set the **Print margin column** at 80
 * click the **Apply** button
 
-![Editor preferences](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesLineNumbers.png)
+![Editor preferences]({{ site.baseurl }}/images/2014/06/PreferencesLineNumbers.png)
 
 ## Editor folding
 
@@ -66,7 +66,7 @@ To better view the entire content of the source files, it is recommended to disa
 * disable **Header Comments** (in fact it is recommended to disable all foldings)
 * click the **Apply** button
 
-![Disable folding](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesFolding.png)
+![Disable folding]({{ site.baseurl }}/images/2014/06/PreferencesFolding.png)
 
 ## Insert spaces for tabs
 
@@ -74,11 +74,11 @@ Using real tabs has the big disadvantage that the text appearance depends on the
 
 To avoid all these, it is recommended to avoid using tabs, ad replace them with spaces.
 
-![Insert spaces for tabs.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesSpaces.png)
+![Insert spaces for tabs.]({{ site.baseurl }}/images/2014/06/PreferencesSpaces.png)
 
 To check if the text indeed has spaces and not tabs, enable the **Show Whitespace Characters**:
 
-![Show whitespace characters.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/Show_white_spaces.png)
+![Show whitespace characters.]({{ site.baseurl }}/images/2014/06/Show_white_spaces.png)
 
 ## Code formatter
 
@@ -87,7 +87,7 @@ Eclipse CDT has a very useful feature allowing to automatically reformat a piece
 * go to the Eclipse menu **Preferences...** → **C/C++** → **Code Style** → **Formatter**
 * in the **Active profile:** field, select **GNU [built-in]**
 
-![](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesFormatter1.png)
+![]({{ site.baseurl }}/images/2014/06/PreferencesFormatter1.png)
 
 Except very special company policies, it is generally recommended to NOT change the individual formatter style, and to apply the GNU format to all source files in a project before committing to the repository.
 
@@ -95,7 +95,7 @@ However, there is one detail that need to be changed, and this is the tab proces
 
 For this, click the **Edit...** button.
 
-![Change the tab policy to use spaces only.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/Style_GNU_with_spacs.png)
+![Change the tab policy to use spaces only.]({{ site.baseurl }}/images/2014/06/Style_GNU_with_spacs.png)
 
 Change the tab policy to **Spaces only**, and the **indentation** and **tab size** to 2.
 
@@ -122,7 +122,7 @@ The CDT defaults need some tweaks, to increase the number of lines and to make t
 * increase the **Limit console output:** field, for example from 500 to 5000 lines
 * click the **Apply** button
 
-![Build console preferences.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/PreferencesBuildConsole.png)
+![Build console preferences.]({{ site.baseurl }}/images/2014/06/PreferencesBuildConsole.png)
 
 When all settings are done, click the **OK** button.
 
@@ -137,7 +137,7 @@ This will allow, for example, auto-completion for Doxygen comments, you can type
 
 Note: currently only JavaDoc style comments are supported, i.e. with /** comments and @ commands.
 
-![Enable Doxygen support.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/Doxygen.png)
+![Enable Doxygen support.]({{ site.baseurl }}/images/2014/06/Doxygen.png)
 
 ## Debug previous application
 
@@ -148,4 +148,4 @@ To change this setting:
 * go to the Eclipse menu **Preferences...** → **Run/Debug** → **Launching**
 * select **Always launch the previously launched application** in the **Launch Operation** section.
 
-![Launch previously used application.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/06/LaunchPrevious.png)
+![Launch previously used application.]({{ site.baseurl }}/images/2014/06/LaunchPrevious.png)

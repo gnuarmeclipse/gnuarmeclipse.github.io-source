@@ -5,7 +5,7 @@ title: How to use the managed build plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 23:07:00
-last_modified_at: 2015-09-12 18:21:00
+last_modified_at: 2015-09-14 12:54:00
 
 ---
 
@@ -54,7 +54,7 @@ Probably the main purpose of this plug-in is to built executable applications, m
 
 To create a new project, go to *Eclipse* menu, **File** → **New** (or the button in the upper left corner), and select **C Project** or **C++ Project**:
 
-![NewCProject](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2013/10/NewCProject.png)
+![NewCProject]({{ site.baseurl }}/images/2013/10/NewCProject.png)
 
 For more details on creating projects, please see the **[Create test project tutorial][4]** separate page.
 
@@ -62,7 +62,7 @@ For more details on creating projects, please see the **[Create test project tut
 
 To benefit from the additional information made available by the new packs technology, it is recommended to assign a a device name to the project, in fact to each build configuration.
 
-![Assigning a device to the project.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2013/10/Devices.png)
+![Assigning a device to the project.]({{ site.baseurl }}/images/2013/10/Devices.png)
 
 ### Configure the target processor
 
@@ -70,7 +70,7 @@ By default, new projects are configured to generate code for the ARM Cortex-M3 p
 
 When using other processors, it is necessary to inform the plug-in of the details, in the Target Processor settings page.
 
-![Setting the target processor.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2013/10/TargetProcessor.png)
+![Setting the target processor.]({{ site.baseurl }}/images/2013/10/TargetProcessor.png)
 
 In addition to the ARM family, various other configuration details can be set here, like floating point and unaligned access.
 
@@ -80,7 +80,7 @@ When selecting AArch64 processors in the toolchain setting page, the ARM configu
 
 When the new projects are created with the GNU ARM Eclipse templates, the toolchain path is already configured. Only when importing projects into a fresh workspace, the toolchain path needs to be configured manually for the first build.
 
-![Toolchain properties.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/02/ToolchainsProperties.png)
+![Toolchain properties.]({{ site.baseurl }}/images/2014/02/ToolchainsProperties.png)
 
 Since this setting refer to the global toolchain path, it will be remembered for all projects using the same toolchain.
 
@@ -129,7 +129,7 @@ To create a new project, go to *Eclipse* menu, **File** → **New** (or th
 * in the *Toolchains:* section select **Cross ARM GCC**
 * click the **Next >** button
 
-![Create a static library C project.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2013/10/StaticCLib.png)
+![Create a static library C project.]({{ site.baseurl }}/images/2013/10/StaticCLib.png)
 
 In the *Select Configurations* page
 
@@ -139,7 +139,7 @@ In the *Select Configurations* page
 
 When building static libraries, after all source files are compiled, instead of the link step, the make process calls the archiver to pack all objects together.
 
-![Configure the archiver.](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2013/10/ConfigureArchiver.png)
+![Configure the archiver.]({{ site.baseurl }}/images/2013/10/ConfigureArchiver.png)
 
 Due to the specifics of building libraries, there are no secondary targets (no binary, listing or size).
 

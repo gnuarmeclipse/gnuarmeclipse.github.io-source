@@ -5,7 +5,7 @@ title: Generic Cortex-M template
 author: Liviu Ionescu
 
 date: 2015-09-11 19:44:00
-last_modified_at: 2015-09-11 19:44:00
+last_modified_at: 2015-09-14 12:54:00
 
 ---
 
@@ -33,33 +33,33 @@ The template can create both C and C++ projects. To create a new C++ project:
 * in the *Eclipse* menu, go to **File** → **New → C++ Project**
 * in the *Executables* group, select the **Hello ARM Cortex-M C/C++ Project**
 
-![New Cortex-M project](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/04/NewCMProject.png)
+![New Cortex-M project]({{ site.baseurl }}/images/2014/04/NewCMProject.png)
 
 
 Select the core type and various project settings:
 
-![Define target core and project settings ](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/04/CMTarget.png)
+![Define target core and project settings ]({{ site.baseurl }}/images/2014/04/CMTarget.png)
 
 
 All the above setting can be changes later, either in the project settings, or as different preprocessor definitions.
 
 Define the names of the destination folders:
 
-![Define destination folders names](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/04/CMFolders.png)
+![Define destination folders names]({{ site.baseurl }}/images/2014/04/CMFolders.png)
 
 Instead of DEVICE, it is recommended to use the actual name suggested by the vendor, for example stm32f4-stdperiph.
 
 Accept the default configuration names:
 
-![Build configurations](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/04/Configurations.png)
+![Build configurations]({{ site.baseurl }}/images/2014/04/Configurations.png)
 
 Define the toolchain name and path:
 
-![Toolchain path](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/04/Toolchain.png)
+![Toolchain path]({{ site.baseurl }}/images/2014/04/Toolchain.png)
 
 The generated project has the following structure:
 
-![Project structure](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/04/CMProject.png)
+![Project structure]({{ site.baseurl }}/images/2014/04/CMProject.png)
 
 ## Copy vendor specific files
 

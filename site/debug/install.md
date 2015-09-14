@@ -5,7 +5,7 @@ title: How to install the debugging components
 author: Liviu Ionescu
 
 date: 2015-09-11 19:55:00
-last_modified_at: 2015-09-12 19:21:00
+last_modified_at: 2015-09-14 12:54:00
 
 ---
 
@@ -47,7 +47,7 @@ For an explanation why the SEGGER J-Link was selected, please go to the [J-Link 
 
 If you recently installed the GNU ARM Eclipse plug-ins (version 2.x or higher), you probably already have the debugging plug-ins. If not, go to the [plug-ins install][6] page and be sure you enable the entries named **GNU ARM C/C++ J-Link Debugging**, **GNU ARM C/C++ OpenOCD Debugging** and **GNU ARM C/C++ QEMU Debugging**.
 
-![](http://gnuarmeclipse.livius.net/blog/wp-content/uploads/2014/01/DebuggingPluginsInstall1.png)
+![]({{ site.baseurl }}/images/2014/01/DebuggingPluginsInstall1.png)
 
 
 Specific plug-in install documentation is available from separate pages:
