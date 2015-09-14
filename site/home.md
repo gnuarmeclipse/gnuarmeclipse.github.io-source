@@ -5,7 +5,7 @@ title: Welcome to GNU ARM Eclipse!
 author: Liviu Ionescu
 
 date: 2015-09-07 18:31:00
-last_modified_at: 2015-09-14 15:37:00
+last_modified_at: 2015-09-14 19:11:00
 
 ---
 
@@ -41,4 +41,4 @@ Apart from the main Eclipse plug-ins, this project also includes several additio
 
 ## Enjoy!
 
-If you successfully installed and used this project, we’d be honoured to receive your **[GitHub Stars](https://github.com/gnuarmeclipse/gnuarmeclipse/stargazers)**, and eventually a short review in the main [SourceForge Project](http://sourceforge.net/projects/gnuarmeclipse) page.
+If you successfully installed and used this project, we’d be honoured to receive your **[GitHub Stars](https://github.com/gnuarmeclipse/plug-ins/stargazers)**, and eventually a short review in the main [SourceForge Project](http://sourceforge.net/projects/gnuarmeclipse) page.

@@ -5,7 +5,7 @@ title: GNU ARM Eclipse Developer page
 author: Liviu Ionescu
 
 date: 2015-09-10 18:31:00
-last_modified_at: 2015-09-13 23:54:00
+last_modified_at: 2015-09-14 19:13:00
 
 ---
 
@@ -80,5 +80,5 @@ How to build the plug-ins from sources and publish them.
 
 ## Releases
 
-* [latest release]({{ site.baseurl }}/2015/08/19/plugins-v2.9.3-201508190739-released/) [(download)](https://github.com/gnuarmeclipse/gnuarmeclipse/releases/tag/v2.9.3-201508190739)
+* [latest release]({{ site.baseurl }}/2015/08/19/plugins-v2.9.3-201508190739-released/) [(download)](https://github.com/gnuarmeclipse/plug-ins/releases/tag/v2.9.3-201508190739)
 * [older releases]({{ site.baseurl }}/developer/releases)

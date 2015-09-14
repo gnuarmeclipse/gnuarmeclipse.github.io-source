@@ -19,4 +19,3 @@ Based on the continuously increasing interest in using the **GNU ARM Eclipse Pl
 The technical articles will continue to be hosted on the project Wiki, but news and announcements will be posted on this site.
 
 We'll be glad to know your opinions about the new look of our project web, together with your comments and suggestions.
-

@@ -5,11 +5,11 @@ title: How to publish
 author: Liviu Ionescu
 
 date: 2015-09-10 21:07:00
-last_modified_at: 2015-09-13 22:39:00
+last_modified_at: 2015-09-14 19:14:00
 
 ---
 
-The plug-ins are published both as update sites (on SourceForge, as an Eclipse update site, with multiple mirrors) and as archives (on GitHub as [Releases](https://github.com/gnuarmeclipse/gnuarmeclipse/releases)).
+The plug-ins are published both as update sites (on SourceForge, as an Eclipse update site, with multiple mirrors) and as archives (on GitHub as [Releases](https://github.com/gnuarmeclipse/plug-ins/releases)).
 
 The reason SourceForge is still used is that GitHub does not provide a convenient way to publish an Eclipse update site.
 
@@ -134,9 +134,9 @@ The structure of the post should contain:
 * ## Other changes
 * ## Known problems
 
-An example would be the [2.9.1](https://github.com/gnuarmeclipse/gnuarmeclipse/wiki/Release-v2.9.1-201508011813) announcement.
+An example would be the [2.9.1](https://github.com/gnuarmeclipse/plug-ins/wiki/Release-v2.9.1-201508011813) announcement.
 
-Scan the [GitHub Issues](https://github.com/gnuarmeclipse/gnuarmeclipse/issues) and the [SourceForge trackers](https://sourceforge.net/p/gnuarmeclipse/_list/tickets) and add references to all tracked issues.
+Scan the [GitHub Issues](https://github.com/gnuarmeclipse/plug-ins/issues) and the [SourceForge trackers](https://sourceforge.net/p/gnuarmeclipse/_list/tickets) and add references to all tracked issues.
 
 Close issues on the way. Refer to them as **[Issue:#22]**. For SourceForge, refer to them as **[bugs:#98]**, **[feature-requests:#60]**, **[support-requests:#81]**.
 
@@ -195,7 +195,7 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 
 ## Create a new GitHub release
 
-*   go to the [GitHub Releases](https://github.com/gnuarmeclipse/gnuarmeclipse/releases) page
+*   go to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page
 *   click **Draft a new release**
 * name the tag like **v2.9.3-201508190739**
 * select the commit
@@ -209,8 +209,8 @@ Note: at this moment the system should send a notification to all clients watchi
 
 ## Update the Wiki page
 
-Go to the Wiki [Releases](https://github.com/gnuarmeclipse/gnuarmeclipse/wiki/Releases) and update the page to include the link to the new Release.
+Go to the Wiki [Releases](https://github.com/gnuarmeclipse/plug-ins/wiki/Releases) and update the page to include the link to the new Release.
 
 ## Update the _latest release_ link
 
-In the [main Wiki](https://github.com/gnuarmeclipse/gnuarmeclipse/wiki) page, go to the Releases section and update the **latest release** link to point to the newly added Wiki page and release.
+In the [main Wiki](https://github.com/gnuarmeclipse/plug-ins/wiki) page, go to the Releases section and update the **latest release** link to point to the newly added Wiki page and release.

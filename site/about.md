@@ -5,7 +5,7 @@ title: About
 author: Liviu Ionescu
 
 date: 2015-09-10 19:45:00
-last_modified_at: 2015-09-13 22:39:00
+last_modified_at: 2015-09-14 19:12:00
 
 ---
 
@@ -49,7 +49,7 @@ With this migration also the name was reduced to **GNU ARM Eclipse**.
 
 ## PAD file
 
-The project [PAD file](http://en.wikipedia.org/wiki/Portable_Application_Description) is publically available [here](https://github.com/gnuarmeclipse/gnuarmeclipse/blob/develop/info/GNU_ARM_Eclipse_pad.xml).
+The project [PAD file](http://en.wikipedia.org/wiki/Portable_Application_Description) is publically available [here](https://github.com/gnuarmeclipse/plug-ins/blob/develop/info/GNU_ARM_Eclipse_pad.xml).
 
 Note: the current limitation of 120 characters for URLs prevents the GitHub release URLs to be published in PAD files.
 

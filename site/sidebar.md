@@ -100,7 +100,7 @@
 * [Known issues]({{ site.baseurl }}/support/known-issues/)
 * [FAQ]({{ site.baseurl }}/support/faq/)
 * [SourceForge tickets]({{ site.baseurl }}/support/sourceforge/)
-* [Report plug-ins issue](https://github.com/gnuarmeclipse/gnuarmeclipse/issues/1)
+* [Report plug-ins issue](https://github.com/gnuarmeclipse/plug-ins/issues/1)
 
 
 #### [Developer]({{ site.baseurl }}/developer/)

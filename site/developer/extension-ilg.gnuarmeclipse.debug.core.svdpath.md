@@ -5,7 +5,7 @@ title: The ilg.gnuarmeclipse.debug.core.svdPath extension point
 author: Liviu Ionescu
 
 date: 2015-09-10 20:58:00
-last_modified_at: 2015-09-10 22:53:00
+last_modified_at: 2015-09-14 19:13:00
 
 ---
 
@@ -17,11 +17,11 @@ It must be implemented by distributions that include SVD files managed outside C
 
 ## Definition
 
-The Eclipse definition of this extension point is in [ilg.gnuarmeclipse.debug.core/schema/svd_path.exsd](https://github.com/gnuarmeclipse/gnuarmeclipse/blob/develop/ilg.gnuarmeclipse.debug.core/schema/svd_path.exsd).
+The Eclipse definition of this extension point is in [ilg.gnuarmeclipse.debug.core/schema/svd_path.exsd](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnuarmeclipse.debug.core/schema/svd_path.exsd).
 
 ## API
 
-The extension point refers to a factory that creates a class that must implement [ISVDPathManager](https://github.com/gnuarmeclipse/gnuarmeclipse/blob/develop/ilg.gnuarmeclipse.debug.core/src/ilg/gnuarmeclipse/debug/core/data/ISVDPathManager.java).
+The extension point refers to a factory that creates a class that must implement [ISVDPathManager](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnuarmeclipse.debug.core/src/ilg/gnuarmeclipse/debug/core/data/ISVDPathManager.java).
 
 The only function required is:
 
@@ -29,7 +29,7 @@ The only function required is:
 
 ## Where is this extension point used?
 
-The svdPath extension point is used in [ilg.gnuarmeclipse.debug.gdbjtag.data/SVDPathManagerProxy.java](https://github.com/gnuarmeclipse/gnuarmeclipse/blob/develop/ilg.gnuarmeclipse.debug.gdbjtag/src/ilg/gnuarmeclipse/debug/gdbjtag/data/SVDPathManagerProxy.java), called from `SVDUtils.getTree(String deviceVendorId, String deviceName)`:
+The svdPath extension point is used in [ilg.gnuarmeclipse.debug.gdbjtag.data/SVDPathManagerProxy.java](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnuarmeclipse.debug.gdbjtag/src/ilg/gnuarmeclipse/debug/gdbjtag/data/SVDPathManagerProxy.java), called from `SVDUtils.getTree(String deviceVendorId, String deviceName)`:
 
     // Try to get the SVD from a custom provider, like in DAVE.
     SVDPathManagerProxy pathManager = SVDPathManagerProxy.getInstance();

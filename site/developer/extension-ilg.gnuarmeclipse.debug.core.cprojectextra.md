@@ -5,7 +5,7 @@ title: The ilg.gnuarmeclipse.debug.core.cprojectExtra extension point
 author: Liviu Ionescu
 
 date: 2015-09-10 20:57:00
-last_modified_at: 2015-09-10 22:53:00
+last_modified_at: 2015-09-14 19:13:00
 
 ---
 
@@ -17,11 +17,11 @@ It must be implemented by distributions that have their own method of storing ex
 
 ## Definition
 
-The Eclipse definition of this extension point is in [ilg.gnuarmeclipse.debug.core/schema/cproject_extra_data.exsd](https://github.com/gnuarmeclipse/gnuarmeclipse/blob/develop/ilg.gnuarmeclipse.debug.core/schema/cproject_extra_data.exsd).
+The Eclipse definition of this extension point is in [ilg.gnuarmeclipse.debug.core/schema/cproject_extra_data.exsd](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnuarmeclipse.debug.core/schema/cproject_extra_data.exsd).
 
 ## API
 
-The extension point refers to a factory that creates a class that must implement [ICProjectExtraDataManager](https://github.com/gnuarmeclipse/gnuarmeclipse/blob/develop/ilg.gnuarmeclipse.debug.core/src/ilg/gnuarmeclipse/debug/core/data/ICProjectExtraDataManager.java).
+The extension point refers to a factory that creates a class that must implement [ICProjectExtraDataManager](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnuarmeclipse.debug.core/src/ilg/gnuarmeclipse/debug/core/data/ICProjectExtraDataManager.java).
 
 The only function required is:
 
@@ -29,7 +29,7 @@ The only function required is:
 
 ## Where is this extension point used?
 
-The [ilg.gnuarmeclipse.debug.gdbjtag.data/CProjectExtraDataManagerProxy.java](https://github.com/gnuarmeclipse/gnuarmeclipse/blob/develop/ilg.gnuarmeclipse.debug.gdbjtag/src/ilg/gnuarmeclipse/debug/gdbjtag/data/CProjectExtraDataManagerProxy.java) class enumerates all **cprojectExtra** extension points and returns the first one that can provide data for the requested configuration.
+The [ilg.gnuarmeclipse.debug.gdbjtag.data/CProjectExtraDataManagerProxy.java](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnuarmeclipse.debug.gdbjtag/src/ilg/gnuarmeclipse/debug/gdbjtag/data/CProjectExtraDataManagerProxy.java) class enumerates all **cprojectExtra** extension points and returns the first one that can provide data for the requested configuration.
 
 This `CProjectExtraDataManagerProxy.getExtraProperties(config)` is called from `PeripheralsService.etPeripherals(IContainerDMContext containerDMContext, DataRequestMonitor<IPeripheralDMContext[]> drm)`:
 
@@ -82,7 +82,7 @@ This extension point is implemented one in **ilg.gnuarmeclipse.managedbuild.cros
           </factory>
        </extension>
 
-The data manager created by this factory is [ilg.gnuarmeclipse.managedbuild.cross.xpi/CProjectExtraDataManager.java](https://github.com/gnuarmeclipse/gnuarmeclipse/blob/develop/ilg.gnuarmeclipse.managedbuild.cross/src/ilg/gnuarmeclipse/managedbuild/cross/xpi/CProjectExtraDataManager.java) which returns the entire map of extra properties associated with GNU ARM Eclipse projects, stored in .cproject:
+The data manager created by this factory is [ilg.gnuarmeclipse.managedbuild.cross.xpi/CProjectExtraDataManager.java](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnuarmeclipse.managedbuild.cross/src/ilg/gnuarmeclipse/managedbuild/cross/xpi/CProjectExtraDataManager.java) which returns the entire map of extra properties associated with GNU ARM Eclipse projects, stored in .cproject:
 
         <storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs">
             <option id="cmsis.device.name" value="STM32F407VG"/>
