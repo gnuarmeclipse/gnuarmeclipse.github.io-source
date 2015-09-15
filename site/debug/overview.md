@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /debug/overview/
+permalink: /debug/
 title: Debugging
 author: Liviu Ionescu
 
 date: 2015-09-11 19:59:00
-last_modified_at: 2015-09-12 18:42:00
+last_modified_at: 2015-09-15 13:18:00
 
 ---
 
@@ -55,4 +55,3 @@ TODO: add more content
  [1]: {{ site.baseurl }}/qemu/install/ "QEMU Install"
  [2]: {{ site.baseurl }}/debug/qemu/ "The QEMU debugging Eclipse plug-in"
  [3]: {{ site.baseurl }}/debug/peripheral-registers/ "Peripheral registers view"
-

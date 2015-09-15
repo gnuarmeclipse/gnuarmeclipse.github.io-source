@@ -5,7 +5,7 @@ title: STM32Fxx templates
 author: Liviu Ionescu
 
 date: 2015-09-11 22:27:00
-last_modified_at: 2015-09-14 12:54:00
+last_modified_at: 2015-09-15 13:19:00
 
 ---
 
@@ -88,4 +88,4 @@ The usual sources for build failures are:
 * a wrong or missing toolchain path; go to the project properties, C/C++ Build → Setting → the Toolchains tab and define the correct path;
 * missing build tools (make & rm) on Windows; install the build tools.
 
- [1]: {{ site.baseurl }}/debug/overview/ "Debugging"
+ [1]: {{ site.baseurl }}/debug/ "Debugging"

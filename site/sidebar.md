@@ -49,16 +49,16 @@
 * [The packs manager (CMSIS)]({{ site.baseurl }}/plugins/packs-manager/)
 * [Assign a device]({{ site.baseurl }}/eclipse/project/assign-device/)
 
-#### Templates
+#### [Templates]({{ site.baseurl }}/templates/)
 
-* [Overview]({{ site.baseurl }}/templates/overview/)
+* [Overview]({{ site.baseurl }}/templates/)
 * [Cortex-M template]({{ site.baseurl }}/templates/cortexm/)
 * [STM32Fxx template]({{ site.baseurl }}/templates/stm32f/)
 * [Freescale KLxx templates]({{ site.baseurl }}/templates/klxx/)
 
-#### Debugging
+#### [Debugging]({{ site.baseurl }}/debug/)
 
-* [Overview]({{ site.baseurl }}/debug/overview/)
+* [Overview]({{ site.baseurl }}/debug/)
 * [The SEGGER J-Link plug-in]({{ site.baseurl }}/debug/jlink/)
 * [The OpenOCD plug-in]({{ site.baseurl }}/debug/openocd/)
 * [The QEMU plug-in]({{ site.baseurl }}/debug/qemu/)
