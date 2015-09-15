@@ -1,19 +1,17 @@
 ---
 layout: page
 permalink: /redirected/
-title: Welcome to GNU ARM Eclipse new Web!
+title: Ooops! You have been redirected!
 author: Liviu Ionescu
 
 date: 2015-09-15 14:07:00
-last_modified_at: 2015-09-15 14:07:00
+last_modified_at: 2015-09-15 14:54:00
 
 ---
 
-## You have been redirected
+## Why? What happened?
 
-In Sep 2015 the GNU ARM Eclipse project was migrated from SourceForge to Github.
-
-The old WordPress & MediaWiki sites were also migrated to a new GitHub Pages static site.
+In Sep 2015, the old documentation sites were migrated from WordPress & MediaWiki to a new GitHub Pages static site, as part of the project migration from SourceForge to Github.
 
 ## What to do?
 
@@ -21,4 +19,4 @@ The old WordPress & MediaWiki sites were also migrated to a new GitHub Pages sta
 
 Then notify the site that brought you here to update the links.
 
-If you cannot find the desired page, please let us know, using the [GitHub Issues] tracker, and we'll investigate.
+If you cannot find the desired page, please let us know, using the [GitHub Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io/issues/1) tracker, and we'll investigate. Be sure you copy the last part of the current URL, after the `?`, since this is the offending URL.
