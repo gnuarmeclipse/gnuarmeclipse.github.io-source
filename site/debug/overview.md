@@ -5,7 +5,7 @@ title: Debugging
 author: Liviu Ionescu
 
 date: 2015-09-11 19:59:00
-last_modified_at: 2015-09-15 13:18:00
+last_modified_at: 2015-09-15 13:51:00
 
 ---
 
@@ -15,7 +15,7 @@ If you know all about debugging, and all you need is how to install/configure/us
 
 In short, for bare metal embedded development, we highly recommend solutions that can be used on all major platforms (Windows, OS X and GNU/Linux), with hardware probes that implement the SWD protocol and support tracing via the SWO pin. The preferred probes that match the above requirements are [J-Link EDU](http://www.segger.com/j-link-edu.html)/[J-Link](http://www.segger.com/jlink_base.html), from [SEGGER](http://www.segger.com/).
 
-* [J-Link install]({{ site.baseurl }}/debug/install/jlink/)
+* [J-Link install]({{ site.baseurl }}/debug/jlink/install/)
 * [J-Link plug-in usage]({{ site.baseurl }}/debug/jlink/)
 * [OpenOCD install]({{ site.baseurl }}/openocd/install/)
 * [OpenOCD plug-in usage]({{ site.baseurl }}/debug/openocd/)

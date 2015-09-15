@@ -28,7 +28,7 @@
 * [Windows build tools (make & rm) install]({{ site.baseurl }}/windows-build-tools/install/)
 * Debugging components
   * [Overview]({{ site.baseurl }}/debug/install/)
-  * [SEGGER J-Link install]({{ site.baseurl }}/debug/install/jlink/)
+  * [SEGGER J-Link install]({{ site.baseurl }}/debug/jlink/install/)
   * [OpenOCD install]({{ site.baseurl }}/openocd/install/)
   * [QEMU install]({{ site.baseurl }}/qemu/install/)
 

@@ -5,7 +5,7 @@ title: How to install the debugging components
 author: Liviu Ionescu
 
 date: 2015-09-11 19:55:00
-last_modified_at: 2015-09-15 13:36:00
+last_modified_at: 2015-09-15 13:51:00
 
 ---
 
@@ -99,7 +99,7 @@ To save you time, we compiled a list of other GDB servers, with some of their fe
 
 Another interesting solution is Freescale's **OpenSDA** debug/programming interface. For the Kinetis L based Freedom Development Boards, SEGGER provides a high performance [OpenSDA](http://www.segger.com/opensda.html) implementation fully compatible with the J-Link Lite, so the J-Link plug-in can be successfully used for these evaluation boards without having a physical J-Link probe. More details on installing OpenSDA can be found on [MCU on Eclipse](http://mcuoneclipse.com/2013/05/16/freedom-board-with-segger-opensda-debug-firmware/).
 
- [1]: {{ site.baseurl }}/debug/install/jlink/ "SEGGER J-Link Install"
+ [1]: {{ site.baseurl }}/debug/jlink/install/ "SEGGER J-Link Install"
  [2]: {{ site.baseurl }}/openocd/install/ "OpenOCD install"
  [3]: {{ site.baseurl }}/qemu/install/ "QEMU Install"
  [4]: {{ site.baseurl }}/qemu/ "The GNU ARM Eclipse QEMU"
