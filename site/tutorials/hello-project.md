@@ -5,7 +5,7 @@ title: 'Tutorial: Create a Hello ARM test project'
 author: Liviu Ionescu
 
 date: 2015-09-11 22:43:00
-last_modified_at: 2015-09-14 12:54:00
+last_modified_at: 2015-09-15 09:51:00
 
 ---
 
@@ -116,15 +116,15 @@ Once you checked the development environment to be functional, proceed with crea
 
 The usual sources for build failures are:
 
-* a wrong or missing toolchain path; go to the project properties, C/C++ Build → Setting → the Toolchains tab and define the correct path; 
-    
+* a wrong or missing toolchain path; go to the project properties, C/C++ Build → Setting → the Toolchains tab and define the correct path;
+
 ![Global Tools Paths.]({{ site.baseurl }}/images/2015/02/GlobalToolsPaths.png)
-          
-* missing build tools (make & rm) on Windows; install the [build tools][7]. 
-    
+
+* missing build tools (make & rm) on Windows; install the [build tools][7].
+
 ## Support
-    
-If something went wrong and you cannot build the project, please check the [How to use]({{ site.baseurl }}/plugins/mbs/), the [FAQ]({{ site.baseurl }}/support/faq/) and the [Known issues]({{ site.baseurl }}/support/known-issues/) pages. If you do not find the answer to your question, please read the [Support]({{ site.baseurl }}/support/overview/) page on how to record a support request in the Support tracker. Do not post comments on this page unless they are related to the text (the phrasing is not correct, you discovered typos, etc).
+
+If something went wrong and you cannot build the project, please check the [How to use]({{ site.baseurl }}/plugins/mbs/), the [FAQ]({{ site.baseurl }}/support/faq/) and the [Known issues]({{ site.baseurl }}/support/known-issues/) pages. If you do not find the answer to your question, please read the [Support]({{ site.baseurl }}/support/) page on how to record a support request in the Support tracker. Do not post comments on this page unless they are related to the text (the phrasing is not correct, you discovered typos, etc).
 
  [1]: {{ site.baseurl }}/tutorials/blinky-arm/ "Tutorial: Create a Blinky ARM test project"
  [2]: {{ site.baseurl }}/eclipse/workspace/preferences/ "Workspace preferences"

@@ -94,9 +94,9 @@
 
 * [Headless builds]({{ site.baseurl }}/advanced/headless-builds/)
 
-#### [Support]({{ site.baseurl }}/support/overview/)
+#### [Support]({{ site.baseurl }}/support/)
 
-* [Overview]({{ site.baseurl }}/support/overview/)
+* [Overview]({{ site.baseurl }}/support/)
 * [Known issues]({{ site.baseurl }}/support/known-issues/)
 * [FAQ]({{ site.baseurl }}/support/faq/)
 * [SourceForge tickets]({{ site.baseurl }}/support/sourceforge/)

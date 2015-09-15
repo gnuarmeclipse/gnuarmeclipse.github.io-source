@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /support/overview/
+permalink: /support/
 title: How to get support
 author: Liviu Ionescu
 
 date: 2015-09-12 13:43:00
-last_modified_at: 2015-09-14 19:10:00
+last_modified_at: 2015-09-15 09:50:00
 
 ---
 

@@ -5,7 +5,7 @@ title: About
 author: Liviu Ionescu
 
 date: 2015-09-10 19:45:00
-last_modified_at: 2015-09-14 19:12:00
+last_modified_at: 2015-09-15 09:51:00
 
 ---
 
@@ -78,4 +78,4 @@ In Aug 2015 those two sites were first migrated to GitHub Wiki, with content spl
 
 This plug-in is currently maintained by **Liviu Ionescu**, a senior IT engineer, with expertise in operating systems, compilers, embedded systems and Internet technologies.
 
-He can be reached at [ilg@livius.net](mailto:ilg@livius.net) (this email address is given for courtesy, for all correspondence related to this plug-in please use the project [Support]({{ site.baseurl }}/support/overview/) pages).
+He can be reached at [ilg@livius.net](mailto:ilg@livius.net) (this email address is given for courtesy, for all correspondence related to this plug-in please use the project [Support]({{ site.baseurl }}/support/) pages).
