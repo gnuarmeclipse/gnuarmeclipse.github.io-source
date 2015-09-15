@@ -5,7 +5,7 @@ title: Toolchain install
 author: Liviu Ionescu
 
 date: 2015-09-11 22:49:00
-last_modified_at: 2015-09-14 12:54:00
+last_modified_at: 2015-09-15 13:36:00
 
 ---
 
@@ -61,7 +61,7 @@ Note: It is highly recommended to **do not to change the install path**, since t
 	C:\Users\Liviu Ionescu&gt;"C:\Program Files\GNU Tools ARM Embedded\4.8 2014q2\bin\arm-none-eabi-gcc.exe" --version
 	arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]
 
-For Windows, the next step would be to install the [build tools (make & rm)]({{ site.baseurl }}/windows-build-tools/overview/).
+For Windows, the next step would be to install the [build tools (make & rm)]({{ site.baseurl }}/windows-build-tools/).
 
 The complete toolchain documentation is available in the `...\share\doc\pdf\` folder.
 

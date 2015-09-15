@@ -1,16 +1,18 @@
 ---
 layout: page
 title: Welcome to the GNU ARM Eclipse Windows Build Tools!
-permalink: /windows-build-tools/
+permalink: /windows-build-tools/home/
 
-last_modified_at: 2015-09-13 22:38:00
+date: 2015-09-04 17:02:00
+last_modified_at: 2015-09-15 13:33:00
+
 ---
 
 The **GNU ARM Eclipse Windows Build Tools** subproject is a Windows specific package, customised for the requirements of the Eclipse CDT managed build projects. It includes a recent version of **GNU make** and a recent version of **BusyBox**, which provides a convenient implementation for sh/rm/echo.
 
 ## How to use
 
-* [Overview]({{ site.baseurl }}/windows-build-tools/overview)  (read me first!)
+* [Overview]({{ site.baseurl }}/windows-build-tools)  (read me first!)
 * [Windows Build Tools Install]({{ site.baseurl }}/windows-build-tools/install)
 * [Support](https://github.com/gnuarmeclipse/windows-build-tools/issues/1)  (using the GitHub Issues)
 

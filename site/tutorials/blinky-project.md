@@ -5,7 +5,7 @@ title: 'Tutorial: Create a Blinky ARM test project'
 author: Liviu Ionescu
 
 date: 2015-09-11 19:25:00
-last_modified_at: 2015-09-15 09:51:00
+last_modified_at: 2015-09-15 13:33:00
 
 ---
 
@@ -180,4 +180,4 @@ If something went wrong and you cannot build the project, please check the [How
  [5]: {{ site.baseurl }}/templates/stm32f/ "STM32Fxx templates"
  [6]: {{ site.baseurl }}/templates/klxx/ "KLxx template"
  [7]: {{ site.baseurl }}/templates/cortexm/ "Generic Cortex-M template"
- [8]: {{ site.baseurl }}/windows-build-tools/overview/ "Build tools (make & rm) for Windows"
+ [8]: {{ site.baseurl }}/windows-build-tools/ "Build tools (make & rm) for Windows"

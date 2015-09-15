@@ -1,9 +1,11 @@
 ---
 layout: page
 title: The GNU ARM Eclipse OpenOCD
-permalink: /openocd/overview/
+permalink: /openocd/
 
-last_modified_at: 2015-09-13 22:36:00
+date: 2015-09-04 17:02:00
+last_modified_at: 2015-09-15 13:36:00
+
 ---
 
 ## Contents

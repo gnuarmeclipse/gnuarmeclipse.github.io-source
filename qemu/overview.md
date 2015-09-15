@@ -1,10 +1,10 @@
 ---
 layout: page
 title: The GNU ARM Eclipse QEMU
-permalink: /qemu/overview/
+permalink: /qemu/
 
 date: 2015-09-07 21:31:00
-last_modified_at: 2015-09-13 22:37:00
+last_modified_at: 2015-09-15 13:36:00
 
 ---
 

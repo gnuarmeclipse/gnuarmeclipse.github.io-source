@@ -5,7 +5,7 @@ title: The OpenOCD debugging Eclipse plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 21:41:00
-last_modified_at: 2015-09-14 12:54:00
+last_modified_at: 2015-09-15 13:36:00
 
 ---
 
@@ -79,7 +79,7 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 
 ![The OpenOCD Startup tab.]({{ site.baseurl }}/images/2013/12/OpenOCDStartupTab.png)
 
-* the order of sections/fields reflect the order commands are sent to GDB; for example the above generates: 
+* the order of sections/fields reflect the order commands are sent to GDB; for example the above generates:
 
 
 	monitor reset init
@@ -231,6 +231,5 @@ If the GDB Hardware Debugging plug-in works and the GDB OpenOCD debugging plug-
 
 Although the plug-in takes care of most of the configuration options, and provides reasonable defaults for the usual cases, it is recommended to read the OpenOCD manuals, available in the **doc** folder of your install location.
 
- [1]: {{ site.baseurl }}/openocd/overview/ "The GNU ARM Eclipse OpenOCD"
+ [1]: {{ site.baseurl }}/openocd/ "The GNU ARM Eclipse OpenOCD"
  [2]: {{ site.baseurl }}/openocd/install/ "OpenOCD install"
-

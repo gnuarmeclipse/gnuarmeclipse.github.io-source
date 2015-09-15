@@ -5,7 +5,7 @@ title: FAQ
 author: Liviu Ionescu
 
 date: 2015-09-11 20:28:00
-last_modified_at: 2015-09-14 12:54:00
+last_modified_at: 2015-09-15 13:36:00
 
 ---
 
@@ -188,6 +188,6 @@ Fixed in 1.1.5.
 
 -/-
 
- [1]: {{ site.baseurl }}/windows-build-tools/overview/ "Build tools (make & rm) on Windows"
+ [1]: {{ site.baseurl }}/windows-build-tools/ "Build tools (make & rm) on Windows"
  [2]: {{ site.baseurl }}/support/known-issues/ "Known problems"
  [3]: https://sourceforge.net/projects/gnuarmeclipse/

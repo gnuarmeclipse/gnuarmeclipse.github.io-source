@@ -1,9 +1,10 @@
 ---
 layout: page
 title: The GNU ARM Eclipse Windows Build Tools
-permalink: /windows-build-tools/overview/
+permalink: /windows-build-tools/
 
-last_modified_at: 2015-09-13 22:38:00
+date: 2015-09-04 17:02:00
+last_modified_at: 2015-09-15 13:38:00
 ---
 
 ## Contents

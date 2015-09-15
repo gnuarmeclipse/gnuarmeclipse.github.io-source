@@ -5,7 +5,7 @@ title: How to install the GNU ARM Eclipse plug-ins
 author: Liviu Ionescu
 
 date: 2015-09-11 22:06:00
-last_modified_at: 2015-09-15 13:19:00
+last_modified_at: 2015-09-15 13:36:00
 
 ---
 
@@ -173,7 +173,7 @@ If you encountered any problems when installing the plug-ins, pleas refer to the
 
  [1]: {{ site.baseurl }}/eclipse/workspace/preferences/ "Workspace preferences"
  [2]: {{ site.baseurl }}/toolchain/install/ "Toolchain install"
- [3]: {{ site.baseurl }}/windows-build-tools/overview/ "Build tools (make & rm) on Windows"
+ [3]: {{ site.baseurl }}/windows-build-tools/ "Build tools (make & rm) on Windows"
  [4]: {{ site.baseurl }}/debug/ "Debugging"
  [5]: {{ site.baseurl }}/plugins/packs-manager/ "Packs manager"
  [6]: {{ site.baseurl }}/debug/peripheral-registers/ "The peripherals registers view"

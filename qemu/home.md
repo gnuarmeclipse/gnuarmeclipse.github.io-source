@@ -1,16 +1,18 @@
 ---
 layout: page
 title: Welcome to GNU ARM Eclipse QEMU!
-permalink: /qemu/
+permalink: /qemu/home/
 
-last_modified_at: 2015-09-13 22:35:00
+date: 2015-09-04 17:03:00
+last_modified_at: 2015-09-15 13:32:00
+
 ---
 
 The [GNU ARM Eclipse QEMU]({{ site.baseurl }}/qemu) subproject is a fork of [QEMU](http://wiki.qemu.org/Main_Page) (an open source machine emulator), intended to provide support for Cortex-M emulation in GNU ARM Eclipse. The source code is part of the **GNU ARM Eclipse** project, and is available from [GitHub](https://github.com/gnuarmeclipse/qemu). Binary packages are available from [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases).
 
 ## How to use
 
-* [Overview]({{ site.baseurl }}/qemu/overview) (read me first!)
+* [Overview]({{ site.baseurl }}/qemu) (read me first!)
 * [QEMU Install]({{ site.baseurl }}/qemu/install)
 * Eclipse plug-in
 * [Support](https://github.com/gnuarmeclipse/qemu/issues/1) (using the GitHub Issues)
