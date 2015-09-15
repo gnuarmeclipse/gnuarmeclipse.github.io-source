@@ -6,7 +6,7 @@ title: The GNU ARM Eclipse project has a new home and a new look
 author: Liviu Ionescu
 
 date: 2015-09-14 13:41:00
-last_modified_at: 2015-09-15 19:42:00
+last_modified_at: 2015-09-15 22:43:00
 
 categories:
   - news
@@ -58,11 +58,11 @@ In the past, release notifications were handled by a WordPress plug-in, by subsc
 
 Currently the only GitHub equivalent is to Watch projects, which will enable a notification for each project release.
 
-It might be possible that the old email distribution list to be migrated to a notification service, but details are not yet known.
-
-For those interested in receiving notifications, the recommandation is to subscribe to GitHub, by clicking the **Watch** button and selecting **Watching**).
+For those interested in receiving notifications, the recommendation is to subscribe to GitHub, by clicking the **Watch** button and selecting **Watching**).
 
 ![GNU ARM Eclipse GitHub Releases]({{ site.baseurl }}/images/2015/github-gae-releases.png)
+
+Be sure you subscribe to **Watch** the **gnuarmeclipse/gnuarmeclipse.github.io** project to receive notifications for Web posts.
 
 ## The Web has a new look
 
