@@ -4,19 +4,30 @@ title: The GNU ARM Eclipse Windows Build Tools
 permalink: /windows-build-tools/
 
 date: 2015-09-04 17:02:00
-last_modified_at: 2015-09-15 13:38:00
+last_modified_at: 2015-09-16 09:48:00
 ---
 
 ## Contents
 
 * [Overview](#overview)
 * [Benefits](#benefits)
-* [Forward vs. Back-slashes](forward-vs-back-slashes)
+* [Forward vs. Back-slashes](#forward-vs-back-slashes)
 * [Download](#download)
 * [Install](#install)
 * [Updates](#updates)
 * [Change log](#change-log)
 * [Build details](#build-details)
+* [Releases](#releases)
+
+## Quicklinks
+
+If you know all about the Windows Build Tools, and all you need is how to install/build/etc, the direct links are below.
+
+* [Windows Build Tools Install]({{ site.baseurl }}/windows-build-tools/install)
+* [Support](https://github.com/gnuarmeclipse/windows-build-tools/issues/1)  (using the GitHub Issues)
+* [How to build]({{ site.baseurl }}/windows-build-tools/build-procedure) (using Docker containers)
+* [Change log]({{ site.baseurl }}/windows-build-tools/change-log)
+* [Releases]({{ site.baseurl }}/windows-build-tools/releases)
 
 ## Overview
 
@@ -65,3 +76,5 @@ The change log is available as a separate [Change log]({{ site.baseurl }}/window
 ## Build details
 
 For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/windows-build-tools/build-procedure) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).
+
+## [Releases]({{ site.baseurl }}/windows-build-tools/releases)

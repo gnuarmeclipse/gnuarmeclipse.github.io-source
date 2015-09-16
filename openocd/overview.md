@@ -4,7 +4,7 @@ title: The GNU ARM Eclipse OpenOCD
 permalink: /openocd/
 
 date: 2015-09-04 17:02:00
-last_modified_at: 2015-09-15 13:36:00
+last_modified_at: 2015-09-16 18:28:00
 
 ---
 
@@ -17,13 +17,18 @@ last_modified_at: 2015-09-15 13:36:00
 * [Updates](#updates)
 * [Change log](#change-log)
 * [Build details](#build-details)
+* [Releases](#releases)
 
 ## Quicklinks
 
 If you already know the general facts about OpenOCD, you can directly skip to:
 
-* [OpenOCD install]({{ site.baseurl }}/openocd/install)
-* [OpenOCD plug-in usage]()
+* [Install]({{ site.baseurl }}/openocd/install)
+* [Eclipse plug-in]({{ site.baseurl }}/debug/openocd)
+* [Support](https://github.com/gnuarmeclipse/openocd/issues/1)
+* [How to build]({{ site.baseurl }}/openocd/build-procedure) (using Docker containers)
+* [Change log]({{ site.baseurl }}/openocd/change-log)
+* [Releases]({{ site.baseurl }}/openocd/releases)
 
 ## Overview
 
@@ -68,3 +73,5 @@ The change log is available as a separate [Change log]({{ site.baseurl }}/openoc
 ## Build details
 
 For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/openocd/build-procedure) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).
+
+## [Releases]({{ site.baseurl }}/openocd/releases)

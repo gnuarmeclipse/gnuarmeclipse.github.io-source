@@ -4,7 +4,7 @@ title: The GNU ARM Eclipse QEMU
 permalink: /qemu/
 
 date: 2015-09-07 21:31:00
-last_modified_at: 2015-09-15 13:36:00
+last_modified_at: 2015-09-16 18:33:00
 
 ---
 
@@ -23,13 +23,19 @@ last_modified_at: 2015-09-15 13:36:00
 * [Updates](#updates)
 * [Change log](#change-log)
 * [Build details](#build-details)
+* [Releases](#releases)
+* [Other links](#other-links)
 
 ## Quicklinks
 
 If you already know the general facts about QEMU, you can directly skip to:
 
-* [QEMU install]({{ site.baseurl }}/qemu/install)
-* [QEMU debugging plug-in]({{ site.baseurl }}/debug/qemu/#qemu-plug-in-usage)
+* [QEMU Install]({{ site.baseurl }}/qemu/install)
+* [Eclipse plug-in]({{ site.baseurl }}/debug/qemu)
+* [Support](https://github.com/gnuarmeclipse/qemu/issues/1) (using the GitHub Issues)
+* [How to build]({{ site.baseurl }}/qemu/build-procedure) (using Docker containers)
+* [Change log]({{ site.baseurl }}/qemu/change-log) ([2014]({{ site.baseurl }}/qemu/change-log/2014))
+* [Releases]({{ site.baseurl }}/qemu/releases)
 
 ## Why QEMU?
 
@@ -160,3 +166,11 @@ The change log is available as a separate [Change log]({{ site.baseurl }}/qemu/c
 ## Build details
 
 For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/qemu/build-procedure) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).
+
+## [Releases]({{ site.baseurl }}/qemu/releases)
+
+## Other links
+
+* [QEMU Binaries for Windows](http://qemu.weilnetz.de)
+* the original [QEMU Windows build page](http://wiki.qemu.org/Hosts/W32)
+* [Docker images](https://registry.hub.docker.com/u/ilegeul/)

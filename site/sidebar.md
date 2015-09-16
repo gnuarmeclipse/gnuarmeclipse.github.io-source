@@ -64,7 +64,7 @@
 * [The QEMU plug-in]({{ site.baseurl }}/debug/qemu/)
 * [The peripheral registers view (CMSIS)]({{ site.baseurl }}/debug/peripheral-registers/)
 
-#### [GNU ARM QEMU Home]({{ site.baseurl }}/qemu/home/)
+#### [GNU ARM QEMU Home]({{ site.baseurl }}/qemu/)
 
 * [Overview]({{ site.baseurl }}/qemu/) (read me first!)
 * [QEMU Install]({{ site.baseurl }}/qemu/install/)
@@ -73,7 +73,7 @@
 * [Releases]({{ site.baseurl }}/qemu/releases/)
 * [Support](https://github.com/gnuarmeclipse/qemu/issues/1/) (report issue)
 
-#### [GNU ARM OpenOCD Home]({{ site.baseurl }}/openocd/home/)
+#### [GNU ARM OpenOCD Home]({{ site.baseurl }}/openocd/)
 
 * [Overview]({{ site.baseurl }}/openocd/) (read me first!)
 * [OpenOCD Install]({{ site.baseurl }}/openocd/install/)
@@ -82,7 +82,7 @@
 * [Releases]({{ site.baseurl }}/openocd/releases/)
 * [Support](https://github.com/gnuarmeclipse/openocd/issues/1/)  (report issue)
 
-#### [Windows Build Tools Home]({{ site.baseurl }}/windows-build-tools/home/)
+#### [Windows Build Tools Home]({{ site.baseurl }}/windows-build-tools/)
 
 * [Overview]({{ site.baseurl }}/windows-build-tools/) (read me first!)
 * [Windows Build Tools Install]({{ site.baseurl }}/windows-build-tools/install/)
