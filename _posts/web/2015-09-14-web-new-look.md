@@ -6,7 +6,7 @@ title: The GNU ARM Eclipse project has a new home and a new look
 author: Liviu Ionescu
 
 date: 2015-09-14 13:41:00
-last_modified_at: 2015-09-15 22:43:00
+last_modified_at: 2015-09-15 22:59:00
 
 categories:
   - news
@@ -52,11 +52,11 @@ The SourceForge trackers were replaced by the GitHub Issues trackers.
 
 The content of the old trackers was not moved to GitHub, since this is much too time consuming, but it is planned to still keep the old trackers themselves available, even if they are locked and new tickets cannot be created there. It is still possible to comment on existing tickets.
 
-### Notifications
+### Notifications as watched projects
 
 In the past, release notifications were handled by a WordPress plug-in, by subscribing to the project blog.
 
-Currently the only GitHub equivalent is to Watch projects, which will enable a notification for each project release.
+Currently the only GitHub equivalent is to **Watch** projects, which will enable a notification for each project release.
 
 For those interested in receiving notifications, the recommendation is to subscribe to GitHub, by clicking the **Watch** button and selecting **Watching**).
 
@@ -72,7 +72,7 @@ Since GitHub solution for providing documentation sites is [GitHub Pages](https:
 
 ![GNU ARM Eclipse Home Page]({{ site.baseurl }}/images/2015/github-io-gae-home.png)
 
-GitHub Pages uses [Jekyll](http://jekyllrb.com) to generate static web sites, and the most convenient input format for Jekyll is [markdown](http://daringfireball.net/projects/markdown/syntax), so the migration involved conversion from WordPress internal representation, to markdown. Given the differences, this conversion was not easy, and was done partly with scripts, partly manually. Similarly for MediaWiki, although the conversion from the MediaWiki format to mardown was easier.
+GitHub Pages uses [Jekyll](http://jekyllrb.com) to generate static web sites, and the most convenient input format for Jekyll is [markdown](http://daringfireball.net/projects/markdown/syntax), so the migration involved conversion from WordPress internal representation, to markdown. Given the differences, this conversion was not easy, and was done partly with scripts, partly manually. Similarly for MediaWiki, although the conversion from the MediaWiki format to markdown was easier.
 
 Given the complexity of this migration, we are aware that it is very likely that lots of mistakes are still present in the pages; we would appreciate any help in fixing them (use the [Web Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io/issues/1) tracker for this).
 
