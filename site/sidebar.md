@@ -12,13 +12,13 @@
 
 #### [Features]({{ site.baseurl }}/plugins/features/)
 
-#### Downloads
+#### [Downloads]({{ site.baseurl }}/downloads/)
 
 * [Overview]({{ site.baseurl }}/downloads/)
 * [Plug-ins]({{ site.baseurl }}/plugins/download/) ([releases]({{ site.baseurl }}/developer/releases/))
-* Windows Build Tools ([releases]({{ site.baseurl }}/windows-build-tools/releases/))
-* QEMU ([releases]({{ site.baseurl }}/qemu/releases/))
-* OpenOCD ([releases]({{ site.baseurl }}/openocd/releases/))
+* [Windows Build Tools]({{ site.baseurl }}/windows-build-tools/download/) ([releases]({{ site.baseurl }}/windows-build-tools/releases/))
+* [QEMU]({{ site.baseurl }}/qemu/download/) ([releases]({{ site.baseurl }}/qemu/releases/))
+* [OpenOCD]({{ site.baseurl }}/openocd/download/) ([releases]({{ site.baseurl }}/openocd/releases/))
 
 #### Install
 

@@ -5,29 +5,21 @@ title: Downloads
 author: Liviu Ionescu
 
 date: 2015-09-11 20:07:00
-last_modified_at: 2015-09-12 19:17:00
+last_modified_at: 2015-09-16 20:45:00
 
 ---
 
-### The SourceForge way
+## The Eclipse way
 
-All versions of the plug-in are available via the standard [SourceForge Files](http://sourceforge.net/projects/gnuarmeclipse/files/gnuarmeclipse/) facility. Just navigate to the [Current Releases](http://sourceforge.net/projects/gnuarmeclipse/files/Current%20Releases/) folder and select the 1.x folder. Then download the most recent archive, it should be a **zip** file with a long name like:
-  ilg.gnuarmeclipse.repository-1.1.0-201310161930.zip
+Installing Eclipse usually does not require to separately download any binary, since Eclipse provides a special mechanism to install and update plug-ins.
 
-
-Please be aware that the Source Forge link to the **latest version may not be up-to-date**, and it is better to check the [Current Releases](http://sourceforge.net/projects/gnuarmeclipse/files/Current%20Releases/) folder.
-
-Also please note that not all plug-in versions run on all Eclipse versions, and usually new plug-in versions may require new Eclipse versions, so better try to stay as up-to-date with the Eclipse as possible. (For Eclipse Kepler 4.3 and later, use versions 1.x; for older Eclipses, try the final 0.5.5 version, but keep in mind it is no longer maintained).
-
-### The Eclipse way
-
-Once you start using this plug-in, further updates are available via the Eclipse standard install/update mechanism, using the following URL:
+The GNU ARM Eclipse plug-ins update site URL is still on SourceForge:
 
 `http://gnuarmeclipse.sourceforge.net/updates`
 
-If after selecting the update site the Eclipse does not present any plug-in, you have to disable the **Group items by category**, and the **GNU ARM C/C++ Development Support** is shown.
+More details are available in the [Install](/plugins/install/) page.
 
-### Previews
+### Beta versions
 
 For previews, experimental releases are posted to a separate update site:
 
@@ -37,7 +29,16 @@ Sometimes you can use this site to test some features that are not completely im
 
 This site is not always updated; use it carefully, back up your workspace, and do not use it for production projects.
 
-### Rate and Review
+## The local archive way
 
-If you successfully installed and used this plug-in, we'd be honoured to receive ratings (in the main [Project page](http://sourceforge.net/projects/gnuarmeclipse)), and eventually a short review (in the main [Write a Review](http://sourceforge.net/projects/gnuarmeclipse/reviews/new) page).
+If, for any reasons, you need to revert to a specific version, or the Eclipse mechanism to install new software fails,  you can always download the desired version and manually install the plug-ins from the local archive.
 
+All versions of the plug-ins are available via the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page. For details how to reach it, see the [Downloads]({{ site.baseurl }}/downloads/) page.
+
+![Plug-ins Releases]({{ site.baseurl }}/images/2015/github-gae-plugins-releases.png)
+
+Just navigate to the [Latest release](https://github.com/gnuarmeclipse/plug-ins/releases/latest) page (or the desired version) and download the attached archive, it should be a **zip** file with a long name like:
+
+`ilg.gnuarmeclipse.repository-2.9.3-201508190739.zip`
+
+Please note that not all plug-in versions run on all Eclipse versions, and usually new plug-in versions may require new Eclipse versions, so better try to stay as up-to-date with the Eclipse as possible. (For Eclipse Kepler 4.3 and later, use versions 1.x; for older Eclipses, try the final 0.5.5 version, but keep in mind it is no longer maintained).

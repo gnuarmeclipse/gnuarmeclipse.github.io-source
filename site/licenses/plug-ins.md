@@ -6,6 +6,7 @@ author: Liviu Ionescu
 
 date: 2015-09-08 23:25:00
 last_modified_at: 2015-09-10 23:12:00
+
 ---
 
 ## Copyright owner
@@ -18,7 +19,7 @@ As the sole copyright owner, Liviu Ionescu released the GNU ARM Eclipse plug-ins
 
 ## Commercial Contributors
 
-For a sustainable project development, Commercial Contributors are welcomed to share part of the development costs by means of commercial contracts (for maintenance, integration support or developing new features) and/or by sponsorships/donations (generally compensating for pre-exisiting work included in their derivative work). 
+For a sustainable project development, Commercial Contributors are welcomed to share part of the development costs by means of commercial contracts (for maintenance, integration support or developing new features) and/or by sponsorships/donations (generally compensating for pre-exisiting work included in their derivative work).
 
 ## Dual license?
 
