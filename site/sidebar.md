@@ -115,7 +115,7 @@
 
 #### Licenses
 * [Eclipse plug-ins]({{ site.baseurl }}/licenses/plug-ins/)
-* Tools
+* [Tools]({{ site.baseurl }}/licenses/tools/)
 
 #### Finance
 * [Sponsorship]({{ site.baseurl }}/finance/sponsorship/)
