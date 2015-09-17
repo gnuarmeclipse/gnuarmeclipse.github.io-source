@@ -5,7 +5,7 @@ title: Build prerequisites
 author: Liviu Ionescu
 
 date: 2015-09-10 20:20:00
-last_modified_at: 2015-09-10 20:20:00
+last_modified_at: 2015-09-17 22:13:00
 
 ---
 
@@ -96,7 +96,7 @@ This separate instance of Eclipse will be used to test the plug-in.
 On Unix systems, the recommended method is using a command line:
 
     $ cd .../GNU ARM Eclipse
-    $ git clone https://github.com/gnuarmeclipse/gnuarmeclipse.git gnuarmeclipse.git
+    $ git clone https://github.com/gnuarmeclipse/plug-ins.git plug-ins.git
 
 On Windows, without a git command, you can use Eclipse to clone the Git repository
 
@@ -107,13 +107,13 @@ On Windows, without a git command, you can use Eclipse to clone the Git reposito
   * select **Clone URI**
   * click **Next**
 * Source Git Repository
-  * URI: https://github.com/gnuarmeclipse/gnuarmeclipse.git
+  * URI: https://github.com/gnuarmeclipse/plug-ins.git
   * click **Next**
 * Branch Selection
   * select all branches
   * click **Next**
 * Local Destination
-  * Directory: .../GNU ARM Eclipse/gnuarmeclipse.git
+  * Directory: .../GNU ARM Eclipse/plug-ins.git
   * Initial branch: stable (or devel, for the latest development version)
   * click **Next**
 * Select a wizard to use for importing projects
@@ -128,7 +128,7 @@ Import projects using Maven
   * Maven → **Existing Maven Projects**
   * click **Next**
 * Maven Projects
-  * Root Directory: .../GNU ARM Eclipse/gnuarmeclipse.git
+  * Root Directory: .../GNU ARM Eclipse/plug-ins.git
   * Add project(s) to working set: GNU ARM Eclipse
   * click **Finish**
 If doing this on a fresh Eclipse, accept to install **Tycho Project Configurators**.

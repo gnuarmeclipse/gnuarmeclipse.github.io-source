@@ -5,7 +5,7 @@ title: FAQ
 author: Liviu Ionescu
 
 date: 2015-09-11 20:28:00
-last_modified_at: 2015-09-15 13:36:00
+last_modified_at: 2015-09-17 22:15:00
 
 ---
 
@@ -109,7 +109,7 @@ As mentioned in the [Known issues][2], avoid changing settings for individual f
 
 ## I want to see the source code. How can I access the repository?
 
-Go to [GitHub](https://github.com/gnuarmeclipse/gnuarmeclipse).
+Go to [GitHub](https://github.com/gnuarmeclipse/plug-ins).
 
 ## The build generates a long console listing instead of creating the secondary targets
 
