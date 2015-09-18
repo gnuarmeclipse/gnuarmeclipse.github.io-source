@@ -5,7 +5,7 @@ title: How to install the GNU ARM Eclipse plug-ins
 author: Liviu Ionescu
 
 date: 2015-09-11 22:06:00
-last_modified_at: 2015-09-15 13:36:00
+last_modified_at: 2015-09-18 21:30:00
 
 ---
 
@@ -41,7 +41,7 @@ For example, on Ubuntu 12.04 LTS, you can install the OpenJDK run-time and test 
 	$ java -version
 	java version "1.7.0_55"
 	OpenJDK Runtime Environment (IcedTea 2.4.7) (7u55-2.4.7-1ubuntu1~0.12.04.2)
-	OpenJDK 64-Bit Server VM (build 24.51-b03, mixed mode)</pre>
+	OpenJDK 64-Bit Server VM (build 24.51-b03, mixed mode)
 
 ### Eclipse & CDT
 

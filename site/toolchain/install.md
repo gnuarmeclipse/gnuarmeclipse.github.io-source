@@ -5,7 +5,7 @@ title: Toolchain install
 author: Liviu Ionescu
 
 date: 2015-09-11 22:49:00
-last_modified_at: 2015-09-15 13:36:00
+last_modified_at: 2015-09-18 21:29:00
 
 ---
 
@@ -80,7 +80,7 @@ Note: It is highly recommended to **do not use a different install path**, sin
 
 	$ sudo mkdir -p /usr/local
 	$ cd /usr/local
-	$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q2-20140609-mac.tar.bz2</pre>
+	$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q2-20140609-mac.tar.bz2
 
 * the result should be a folder like **/usr/local/gcc-arm-none-eabi-4_8-2014q2**
 * test if the compiler is functional
@@ -122,7 +122,7 @@ The following steps were performed on **Ubuntu 14.04 LTSx64**. Please adjust the
 Note: It is highly recommended to **do not use a different install path**, since the plug-in tries to automatically discover the toolchain in this default location.
 
 	$ cd /usr/local
-	$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q1-20140314-linux.tar.bz2</pre>
+	$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q1-20140314-linux.tar.bz2
 
 * the result should be a folder like **/usr/local/gcc-arm-none-eabi-4_8-2014q1**
 * test if the compiler is functional
