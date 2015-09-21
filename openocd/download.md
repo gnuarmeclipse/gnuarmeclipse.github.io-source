@@ -1,11 +1,11 @@
 ---
 layout: page
 permalink: /openocd/download/
-title: How to download the GNU ARM Eclipse OpenOCD
+title: How to download the GNU ARM Eclipse OpenOCD?
 author: Liviu Ionescu
 
 date: 2015-09-16 20:39:00
-last_modified_at: 2015-09-16 20:45:00
+last_modified_at: 2015-09-21 19:08:00
 
 ---
 

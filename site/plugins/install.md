@@ -1,11 +1,11 @@
 ---
 layout: page
 permalink: /plugins/install/
-title: How to install the GNU ARM Eclipse plug-ins
+title: How to install the GNU ARM Eclipse plug-ins?
 author: Liviu Ionescu
 
 date: 2015-09-11 22:06:00
-last_modified_at: 2015-09-21 18:52:00
+last_modified_at: 2015-09-21 19:12:00
 
 ---
 

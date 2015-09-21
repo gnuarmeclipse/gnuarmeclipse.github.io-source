@@ -1,11 +1,11 @@
 ---
 layout: page
 permalink: /plugins/mbs/
-title: How to use the managed build plug-in
+title: How to use the managed build plug-ins?
 author: Liviu Ionescu
 
 date: 2015-09-11 23:07:00
-last_modified_at: 2015-09-21 18:52:00
+last_modified_at: 2015-09-21 19:13:00
 
 ---
 

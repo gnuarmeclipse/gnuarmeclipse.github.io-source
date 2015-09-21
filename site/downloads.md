@@ -1,11 +1,11 @@
 ---
 layout: page
 permalink: /downloads/
-title: How to download the binary files
+title: How to download the binary files?
 author: Liviu Ionescu
 
 date: 2015-09-10 19:54:00
-last_modified_at: 2015-09-21 18:52:00
+last_modified_at: 2015-09-21 19:12:00
 
 ---
 

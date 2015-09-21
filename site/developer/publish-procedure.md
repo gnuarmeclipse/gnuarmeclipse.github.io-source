@@ -1,11 +1,11 @@
 ---
 layout: page
 permalink: /developer/publish-procedure/
-title: How to publish
+title: How to publish the plug-ins?
 author: Liviu Ionescu
 
 date: 2015-09-10 21:07:00
-last_modified_at: 2015-09-14 19:14:00
+last_modified_at: 2015-09-21 19:12:00
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: How to install the OpenOCD binaries
+title: How to install the OpenOCD binaries?
 permalink: /openocd/install/
 
 date: 2015-09-09 19:43:00
-last_modified_at: 2015-09-21 18:52:00
+last_modified_at: 2015-09-21 19:09:00
 
 ---
 
