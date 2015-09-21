@@ -5,7 +5,7 @@ title: The QEMU debugging Eclipse plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 22:15:00
-last_modified_at: 2015-09-21 18:52:00
+last_modified_at: 2015-09-21 21:53:00
 
 ---
 
@@ -38,7 +38,7 @@ The presence of a GDB as part of a GNU toolchain is mandatory, and it is recomm
 
 Before starting work with QEMU, it is required to define the path to the QEMU folder.
 
-* in the *Eclipse* menu, go to **Preferences** → **Run/Debug** **→** **QEMU**
+* in the *Eclipse* menu, go to **Preferences** → **Run/Debug** → **QEMU**
 
   ![The QEMU preferences page]({{ site.baseurl }}/images/2015/04/QEMU_Preferences.png)
 
