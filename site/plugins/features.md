@@ -5,7 +5,7 @@ title: GNU ARM Eclipse Plug-ins Features
 author: Liviu Ionescu
 
 date: 2015-09-10 19:59:00
-last_modified_at: 2015-09-14 11:43:00
+last_modified_at: 2015-09-21 18:49:00
 
 ---
 
@@ -133,7 +133,7 @@ There are many debugging techniques and tools, but we recommend two solutions:
 * the [SEGGER J-Link](http://www.segger.com/jlink_base.html) probe with its integrated GDB server, via [the J-Link plug-in][7]
 * the [OpenOCD](http://openocd.sourceforge.net) GDB server for many other JTAG probes.
 
-  ![The J-Link Debugger tab.]({{ site.baseurl }}/images/2015/preferences-run-jlink-debugger-tab.png)
+  ![The J-Link Debugger tab.]({{ site.baseurl }}/images/2015/launch-jlink-debugger-tab.png)
 
 We also recommend the use of specific ARM debugging support, like tracing via the SWO output, with a second choice for semihosting output (both are supported by the J-Link plug-in).
 
