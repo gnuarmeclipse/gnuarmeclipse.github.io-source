@@ -5,7 +5,7 @@ title: Debugging
 author: Liviu Ionescu
 
 date: 2015-09-11 19:59:00
-last_modified_at: 2015-09-15 13:51:00
+last_modified_at: 2015-09-21 17:59:00
 
 ---
 
@@ -19,9 +19,9 @@ In short, for bare metal embedded development, we highly recommend solutions tha
 * [J-Link plug-in usage]({{ site.baseurl }}/debug/jlink/)
 * [OpenOCD install]({{ site.baseurl }}/openocd/install/)
 * [OpenOCD plug-in usage]({{ site.baseurl }}/debug/openocd/)
-* [QEMU install][1]
-* [QEMU plug-in usage][2]
-* [The Peripherals registers view][3]
+* [QEMU install]({{ site.baseurl }}/qemu/install/)
+* [QEMU plug-in usage]({{ site.baseurl }}/debug/qemu/)
+* [The Peripherals registers view]({{ site.baseurl }}/debug/peripheral-registers/)
 
 ## Overview
 
@@ -50,8 +50,16 @@ Collecting tracing messages and events, when used wisely, can be a valuable sour
 
 Recognising the importance of these methods, the designers of the ARM families added special support, like the **SWO** (Serial Wire Output) pin in Cortex-M processors, or even more elaborate interfaces for larger ARM processors.
 
-TODO: add more content
+## GDB
 
- [1]: {{ site.baseurl }}/qemu/install/ "QEMU Install"
- [2]: {{ site.baseurl }}/debug/qemu/ "The QEMU debugging Eclipse plug-in"
- [3]: {{ site.baseurl }}/debug/peripheral-registers/ "Peripheral registers view"
+The tool used by GNU ARM Eclipse plug-ins for debugging is the ARM version of GDB, the venerable GNU debugging tool.
+
+### No initialisation files
+
+For having a total control of the debugging session, the debugging plug-ins start the GDB client process with the `--nx` option, which prevents the execution of the commands found in any initialization file; none of the standard files (`system.gdbinit`, `~/.gdbinit`, `./.gdbinit`) are loaded.
+
+To add more commands to the GDB initialisation sequence, use the _Commands:_ field in the _GDB Client Setup_ section:
+
+![]({{ site.baseurl }}/images/2015/launch-jlink-debugger-client.png)
+
+All commands listed here are passed to the GDB client. By convention, commands prefixed with `mon` will be further passed from the GDB client to the GDB server.
