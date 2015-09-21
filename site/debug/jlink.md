@@ -5,7 +5,7 @@ title: The J-Link debugging Eclipse plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 21:15:00
-last_modified_at: 2015-09-21 18:08:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -52,7 +52,7 @@ Before starting work with the J-Link tools, it is required to define the path t
 
 * in the *Eclipse* menu, go to **Preferences** → **Run/Debug** → **SEGGER J-Link**
 
-  ![J-Link preferences page.]({{ site.baseurl }}/images/2015/03/JLinkPreferences.png)     
+  ![J-Link preferences page]({{ site.baseurl }}/images/2015/03/JLinkPreferences.png)     
 * click the **Restore Defaults** button
 * the plug-in will suggest the default values computed when Eclipse started; if a new version of SEGGER was installed while Eclipse was active, restart Eclipse and click again the Restore Defaults button
 * check the **Executable** field; it must define the name of the command line J-Link GDB server executable; in most cases it should be set correctly; if not, edit it to match the correct name;
@@ -66,7 +66,7 @@ By default, the GDB server is defined as **${jlink\_path}/${jlink\_gdbserver}**;
 
 Although not absolutely mandatory, it is recommended to associate a device to the project, so that creating the debugger launch configuration will automatically fill-in the device name.
 
-![Assigning a device to the project.]({{ site.baseurl }}/images/2013/10/Devices.png)
+![Assigning a device to the project]({{ site.baseurl }}/images/2013/10/Devices.png)
 
 Follow the steps in the separate page [Associate a device to the project]({{ site.baseurl }}/eclipse/project/assign-device/) and return to this page to continue.
 
@@ -88,7 +88,7 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 * a multi-tab page will be displayed;
 * if you started this procedure with the project selected and the project was previously built, the first tab, named **Main**, should be already filled in with the project name (for example blink1) and the application file name and location (for example Debug/blink1.elf).
 
-  ![The Main tab.]({{ site.baseurl }}/images/2013/12/DebugMainTab.png)
+  ![The Main tab]({{ site.baseurl }}/images/2013/12/DebugMainTab.png)
 
 * click the second tab, named **Debugger**, which contains the configuration options required to start the GDB server and the GDB client.
 
@@ -101,7 +101,7 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 * the **Connect to running target** option allow to start a debug session without performing any reset or program download, so that the target will continue to run unaffected, until explicitly halted by the debugger (Note: this option requires the latest plug-in and SEGGER versions);
 * click the third tab, named **Startup**, which contains specific J-Link options used to configure the debug session.
 
-  ![The J-Link Startup tab.]({{ site.baseurl }}/images/2013/12/JLingStartupTab.png)
+  ![The J-Link Startup tab]({{ site.baseurl }}/images/2013/12/JLingStartupTab.png)
 
 * if you built the project with retargetting support for ITM/SWO, enter the CPU frequency and the desired SWO sampling frequency; for this to work with J-Link, the SWO sampling frequency must be a submultiple of 6MHz (6000000, 3000000, 2000000, 1500000, 1000000, etc) and the CPU frequency must be a multiple of the SWO sampling frequency (these apparently very complicated requirements end up as a pre-scaler value in an ARM register);
 * for most applications running from flash, leave the **Pre-run reset and halt** enabled, this will issue a new reset after programming the flash and just before starting execution. Due to some complicated technical details, when the debugger tries to reset some cores, execution cannot be halted immediately, and part of the initialisation routine is executed. Then the flash is written with the new application, it is not correct to directly start execution, since part of a foreign initialisation sequence, that is not part of the current application, was executed; to be sure the application starts correctly, it is necessary to issue a new reset. Please note that this does **not** apply **for** applications **running from RAM**, since the reset may damage the RAM content;
@@ -111,13 +111,13 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
   * accept the current project name.
   * click the **Apply** button
 
-  ![Shared debug configuration.]({{ site.baseurl }}/images/2013/12/SharedDebug.png)
+  ![Shared debug configuration]({{ site.baseurl }}/images/2013/12/SharedDebug.png)
 
 * click the **Close** button
 
 With the above settings, the debug configuration will be saved in the project, not in the workspace storage.
 
-![Debug configuration stored in the project.]({{ site.baseurl }}/images/2013/12/ProjectSharedDebug.png)
+![Debug configuration stored in the project]({{ site.baseurl }}/images/2013/12/ProjectSharedDebug.png)
 
 ## Start a debug session
 
@@ -136,15 +136,15 @@ With all the above steps completed properly, you can start the debug session:
 
 Alternatively, on subsequent runs, you can use the bug specific icon. By default this will start the previously used debug launch configuration; to start a different configuration, use the down arrow button:
 
-![Down arrow debug.]({{ site.baseurl }}/images/2013/12/StartDebugArrow.png)
+![Down arrow debug]({{ site.baseurl }}/images/2013/12/StartDebugArrow.png)
 
 This will open a new window where you can select the desired debug configuration:
 
-![Select the debug configuration.]({{ site.baseurl }}/images/2013/12/DebugSelection.png)
+![Select the debug configuration]({{ site.baseurl }}/images/2013/12/DebugSelection.png)
 
 If everything is ok, after a few seconds required to start the server, to allow it to connect to the target, start the gdb client, download the application and start the debugging session, you should see something like this:
 
-![The new debug session, with three consoles.]({{ site.baseurl }}/images/2013/12/DebugSessionClient.png)
+![The new debug session, with three consoles]({{ site.baseurl }}/images/2013/12/DebugSessionClient.png)
 
 The new debug session, with three consoles.
 
@@ -173,11 +173,11 @@ Each debug process has a dedicated console, to display its standard output and 
 
 To see the console of any process, just select the process in the top left window. For example the server console might look like this:
 
-![The GDB server console.]({{ site.baseurl }}/images/2013/12/DebugSessionServer.png)
+![The GDB server console]({{ site.baseurl }}/images/2013/12/DebugSessionServer.png)
 
 Similarly for the tracing console:
 
-![The tracing console.]({{ site.baseurl }}/images/2013/12/DebugSessionSWO.png)
+![The tracing console]({{ site.baseurl }}/images/2013/12/DebugSessionSWO.png)
 
 ## Show console when standard out/error change
 
@@ -185,7 +185,7 @@ This is the default Eclipse behaviour when multiple consoles are active, to auto
 
 This mode can be identified by the status of the buttons on the right side of the Debugging view.
 
-![Show console when standard out/err changes.]({{ site.baseurl }}/images/2013/12/ShowConsole.png)
+![Show console when standard out/err changes]({{ site.baseurl }}/images/2013/12/ShowConsole.png)
 
 To make the display stable on the desired console, disable both buttons. To switch between consoles, select them either in the top left Debug view, or using the right button, as shown above.
 
@@ -193,7 +193,7 @@ To make the display stable on the desired console, disable both buttons. To swit
 
 Apparently not a big deal, but quite useful for repeated debug sessions, **the Restart button** can be used at any time during a debug session, and the result is that a reset is dispatched to the target board via the JTAG/SWD interface and the debug session is restarted.
 
-![The restart button.]({{ site.baseurl }}/images/2013/12/RestartButton.png)
+![The restart button]({{ site.baseurl }}/images/2013/12/RestartButton.png)
 
 Note: Due to some bugs in Eclipse, the implementation of his simple button has encountered several problems. Depending on the version you are using, the first time you click this button you might get a message box informing that the button was not enabled. Ignore this message, close the message box and click the button again, this time it'll be effective.
 
@@ -209,7 +209,7 @@ This is an advanced feature, allowing debugging of a target that was started out
 
 To make this possible, enable the **Connect to running target** option in the **Debugger** tab:
 
-![Connect to running target.]({{ site.baseurl }}/images/2015/03/ConnectToRunning.png)
+![Connect to running target]({{ site.baseurl }}/images/2015/03/ConnectToRunning.png)
 
 With this option, the J-Link plug-in will no longer reset the target and will no longer download the code into the target's memory, leaving the target virtually unaffected, even after the debug session is started.
 
@@ -231,7 +231,7 @@ All commands listed here are passed to the GDB client. By convention, commands p
 
 The first failure to start a debug session is missing to enter the J-Link path. Without it, the launching sequence will complain *Cannot run program "/JLinkGDBServer&"*.
 
-![Cannot run the JLinkGDBServer.]({{ site.baseurl }}/images/2013/12/JLinkCannotRun.png)
+![Cannot run the JLinkGDBServer]({{ site.baseurl }}/images/2013/12/JLinkCannotRun.png)
 
 Define the **jlink_path** as instructed above and the session should start properly.
 
@@ -239,7 +239,7 @@ Define the **jlink_path** as instructed above and the session should start prope
 
 If the devices that you selected in the plug-in does not match the device physically connected, the GDB server session fails and the entire debug session is cancelled. You can identify this case by studying the GDB server log.
 
-![Wrong device.]({{ site.baseurl }}/images/2013/12/WrongDevice.png)
+![Wrong device]({{ site.baseurl }}/images/2013/12/WrongDevice.png)
 
 Select the device properly and the session should start properly.
 

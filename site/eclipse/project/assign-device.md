@@ -5,9 +5,9 @@ title: Associate a device to the project
 author: Liviu Ionescu
 
 date: 2015-09-11 19:00:00
-last_modified_at: 2015-09-14 12:54:00
+last_modified_at: 2015-09-21 18:52:00
 
----    
+---
 
 ## Overview
 
@@ -19,7 +19,7 @@ One of the advantages of using the new packs technology is that the extra meta
 
 For the device list to be populated, it is required that the Packs plug-ins are first installed. To check this, use the **About Eclipse** menu and click the **Installation Details** button.
 
-![Check the presence of the Packs plug-ins.]({{ site.baseurl }}/images/2014/10/PacksFeature.png)
+![Check the presence of the Packs plug-ins]({{ site.baseurl }}/images/2014/10/PacksFeature.png)
 
 If not present, it is recommended to first read the [Packs manager]({{ site.baseurl }}/plugins/packs-manager/) documentation page where installation details are also provided.
 
@@ -45,7 +45,7 @@ To assign devices to projects:
 
 If you are using a development board, and this board has a corresponding definition in a package, it is recommended to associate the device below the board instead of the individual device from the Devices section, since this will also make available the board documentation files.
 
-![Assigning a device to the project.]({{ site.baseurl }}/images/2013/10/Devices.png)
+![Assigning a device to the project]({{ site.baseurl }}/images/2013/10/Devices.png)
 
 ## Benefits
 
@@ -58,4 +58,3 @@ The benefits of assigning a device to the project are:
 An even better packs integration (planned for the future release), will make this setting even more convenient, by starting the projects templates with this selection; it is also planned to use this extra data to automatically set the build ARM family.
 
 Accompanying the device there is also a set of definition for the memory map, which will be used in a future release to automatically generate the linker scripts.
-

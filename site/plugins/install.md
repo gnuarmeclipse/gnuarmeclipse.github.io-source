@@ -5,7 +5,7 @@ title: How to install the GNU ARM Eclipse plug-ins
 author: Liviu Ionescu
 
 date: 2015-09-11 22:06:00
-last_modified_at: 2015-09-18 21:30:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -63,7 +63,7 @@ As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C
 * select the **C/C++ Development Tools** feature
 * click the **Next** button and follow the usual installation procedure
 
-![CDT install.]({{ site.baseurl }}/images/2013/10/InstallCDT.png)
+![CDT install]({{ site.baseurl }}/images/2013/10/InstallCDT.png)
 
 ### Compatibility issues
 
@@ -99,7 +99,7 @@ Once you define the update site URL, further updates are greatly simplified (**H
 
 There are cases when the on-line access to the SourceForge mirror servers might not be reliable. In these cases the Eclipse update system may fail. For example:
 
-![Failed install.]({{ site.baseurl }}/images/2013/10/FailedInstall.png)
+![Failed install]({{ site.baseurl }}/images/2013/10/FailedInstall.png)
 
 If this happens, Eclipse remains in a confused state and rarely can recover itself.
 
@@ -107,7 +107,7 @@ The workaround is to remove the GNU ARM Eclipse update site from the available s
 
 For this go to Eclipse menu → **Preferences** → **Install/Update** → **Available Software Sites**:
 
-![Remove from available site list.]({{ site.baseurl }}/images/2013/10/AvailableSites.png)
+![Remove from available site list]({{ site.baseurl }}/images/2013/10/AvailableSites.png)
 
 
 If this still fails, the alternative method is to manually download the latest version archive and to perform the install from it, as presented below.
@@ -123,13 +123,13 @@ If, for any reason, you need to install a specific version of the plug-in, the s
 * click the OK button
 * follow the usual installation procedure
 
-![Add repository from archive.]({{ site.baseurl }}/images/2013/10/AddArchiveRepository.png)
+![Add repository from archive]({{ site.baseurl }}/images/2013/10/AddArchiveRepository.png)
 
 ## Off-line install
 
 If, for any reasons, you need to install the GNU ARM Eclipse plug-ins on a system without permanent Internet connection, and decide for the alternate way presented above, please be aware that the debug plug-ins require the presence of the **C/C++ GDB Hardware Debugging** plug-in. Usually this plug-in is not included in the standard package, but is present in the **CDT Optional Features** category, packed with the CDT archives available from the [CDT download site](https://www.eclipse.org/cdt/downloads.php). Download the desired archive, add it to your update sites, select the C/C++ GDB Hardware Debugging plug-in, restart as usual, and then install the GNU ARM Eclipse plug-ins from the local archive, as above.
 
-![Install the GDB Hardware.]({{ site.baseurl }}/images/2013/10/GDB_Hardware_Install.png)
+![Install the GDB Hardware]({{ site.baseurl }}/images/2013/10/GDB_Hardware_Install.png)
 
 Note: Attempts to install the GNU ARM Eclipse plug-ins off-line without having the C/C++ GDB Hardware Debugging installed fails with an error related to installing the *ilg.gnuarmeclipse.debug.gdbjtag.jlink.feature.group* and other debugging features.
 
@@ -141,11 +141,11 @@ One of the confusing details of the GNU ARM Eclipse plug-ins versioning system i
 
 The short answer is that the announced version refers to the update site, also packed as an archive, and available from SourceForge. The same version is also used for the **ilg.gnuarmeclipse.core** plug-in:
 
-![Installed plug-ins.]({{ site.baseurl }}/images/2013/10/Plugins.png)
+![Installed plug-ins]({{ site.baseurl }}/images/2013/10/Plugins.png)
 
 Although the core plug-in is referred by all features, this version number cannot be found in the list of the features:
 
-![Installed features.]({{ site.baseurl }}/images/2013/10/Features.png)
+![Installed features]({{ site.baseurl }}/images/2013/10/Features.png)
 
 However, the common point for all these magic numbers is the release date, *201502281154* in this case, which is identical for all plug-ins and features.
 

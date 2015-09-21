@@ -6,7 +6,7 @@ download_url: https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/
 author: Liviu Ionescu
 
 date:   2014-12-02 12:00:00
-last_modified_at: 2015-09-08 12:34:00
+last_modified_at: 2015-09-21 18:52:00
 
 categories:
   - releases
@@ -19,11 +19,11 @@ tags:
   - rm
 ---
 
-For your convenience, the [Windows Build Tools]({{ site.baseurl }}/windows-build-tools/) were repacked as a Windows setup. 
+For your convenience, the [Windows Build Tools]({{ site.baseurl }}/windows-build-tools/) were repacked as a Windows setup.
 
 [Binary files »]({{ page.download_url }})
 
-![Build Tools setup.]({{ site.baseurl }}/images/2015/win-build-tools-setup.png)
+![Build Tools setup]({{ site.baseurl }}/images/2015/win-build-tools-setup.png)
 
 Please note that the setup does not install any components outside the selected destination folder, and also includes an uninstall program, to completely remove the tools from the system.
 
@@ -42,4 +42,3 @@ The available files are:
 
 
 **Cross Build Tools.zip** is included for archiving purposes and is now considered DEPRECATE.
-

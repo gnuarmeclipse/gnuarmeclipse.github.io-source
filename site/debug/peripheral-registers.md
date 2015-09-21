@@ -5,7 +5,7 @@ title: The peripherals registers view
 author: Liviu Ionescu
 
 date: 2015-09-11 22:00:00
-last_modified_at: 2015-09-14 12:54:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -21,7 +21,7 @@ The GNU ARM Eclipse plug-in approach is a more integrated one, based on [CMSIS P
 
 The first thing required is the presence of the Packs plug-ins. To check if they are installed, use the **About Eclipse** menu and click the **Installation Details** button.
 
-![Check the presence of the Packs plug-ins.]({{ site.baseurl }}/images/2014/10/PacksFeature.png)
+![Check the presence of the Packs plug-ins]({{ site.baseurl }}/images/2014/10/PacksFeature.png)
 
 If not present, it is recommended to first read the [Packs manager][2] documentation page where installation details are also provided.
 
@@ -37,7 +37,7 @@ Even if a future release will automatically make this association via a wizard d
 
 For more details, please visit the [separate page][3].
 
-![Assigning a device to the project.]({{ site.baseurl }}/images/2013/10/Devices.png)
+![Assigning a device to the project]({{ site.baseurl }}/images/2013/10/Devices.png)
 
 ## The debug configuration
 
@@ -57,7 +57,7 @@ After starting the debug session, the typical **Debug** perspective is shown.
 
 New to this perspective is the **Peripherals** view, added to the right of the **Registers** view, in the same window with **Variables** and **Breakpoints**. If, for any reasons, this view is not shown, although the Packs plug-ins were installed, try to perform a **Reset** on the Debug perspective.
 
-![The peripheral registers view.]({{ site.baseurl }}/images/2013/10/PeripheralRegisters.png)
+![The peripheral registers view]({{ site.baseurl }}/images/2013/10/PeripheralRegisters.png)
 
 The **Peripherals** view lists all peripherals available in the device hardware description .SVD file provided by the silicon vendor.
 
@@ -107,7 +107,7 @@ Registers and fields are synchronised, editing the value of a field will also ch
 
 It is possible to filter the content of the peripheral monitor by register name. To enter the filtering conditions, right click anywhere in the monitor rendering window and select the **Add Filter...** action.
 
-![Peripheral monitor menu.]({{ site.baseurl }}/images/2014/10/PeripheralMenu.png)
+![Peripheral monitor menu]({{ site.baseurl }}/images/2014/10/PeripheralMenu.png)
 
 Note: In the initial release the functionality behind this menu needs more polishing...
 
@@ -134,4 +134,3 @@ The use of a memory monitor to view peripheral registers, and the look and feel 
  [1]: {{ site.baseurl }}/debug/jlink/ "The J-Link hardware debugging Eclipse plug-in"
  [2]: {{ site.baseurl }}/plugins/packs-manager/ "Packs manager"
  [3]: {{ site.baseurl }}/eclipse/project/assign-device/ "Associate a device to the project"
-

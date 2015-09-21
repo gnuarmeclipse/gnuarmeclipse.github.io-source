@@ -4,7 +4,7 @@ title: How to install the OpenOCD binaries
 permalink: /openocd/install/
 
 date: 2015-09-09 19:43:00
-last_modified_at: 2015-09-12 19:08:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -41,11 +41,11 @@ Select the win64 file for Windows x64 machines and the win32 file for Windows x
 
 Run the setup as usual.
 
-![The OpenOCD Setup.]({{ site.baseurl }}/images/2015/openocd-setup-wizard.png)
+![The OpenOCD Setup]({{ site.baseurl }}/images/2015/openocd-setup-wizard.png)
 
 It is recommended to keep the default install location:
 
-![Accept the default OpenOCD destination folder.](https://github.com/gnuarmeclipse/openocd/wiki/images/2015/openocd-setup-destination.png)
+![Accept the default OpenOCD destination folder](https://github.com/gnuarmeclipse/openocd/wiki/images/2015/openocd-setup-destination.png)
 
 The default install location is:
 
@@ -53,11 +53,11 @@ The default install location is:
 
 The result is a structure like:
 
-![The OpenOCD folders structure.]({{ site.baseurl }}/images/2015/windows-folders-openocd.png)
+![The OpenOCD folders structure]({{ site.baseurl }}/images/2015/windows-folders-openocd.png)
 
 To check if OpenOCD starts, use the following command:
 
-	C:>"C:\Program Files\GNU ARM Eclipse\OpenOCD\0.8.0-201503201840\bin\openocd" --version 
+	C:>"C:\Program Files\GNU ARM Eclipse\OpenOCD\0.8.0-201503201840\bin\openocd" --version
 	GNU ARM Eclipse 64-bit Open On-Chip Debugger 0.8.0-00036 (2015-03-20-18:40)
 
 
@@ -75,7 +75,7 @@ As for most Windows drivers, to complete the installation, a restart will help.
 
 Connect the ST-LINK/v2 or the DISCOVERY board and check in **Control Panel** → **System** → **Device Manager** if the JTAG is operational.
 
-![ST-LINK Windows device.]({{ site.baseurl }}/images/2015/windows-devices-stlink.png)
+![ST-LINK Windows device]({{ site.baseurl }}/images/2015/windows-devices-stlink.png)
 
 For other probes follow the manufacturer instructions.
 
@@ -97,7 +97,7 @@ As the name implies, this is an OS X package, that can be installed on any rec
 
 Run the install as usual.
 
-![Install the OS X package.]({{ site.baseurl }}/images/2015/openocd-mac-installer.png)
+![Install the OS X package]({{ site.baseurl }}/images/2015/openocd-mac-installer.png)
 
 The package is installed in:
 
@@ -149,7 +149,7 @@ To test if OpenOCD is able to connect to a specific board, you generally need to
 	GNU ARM Eclipse 64-bit Open On-Chip Debugger 0.8.0-00036-gb7535dd (2015-01-18-12:57)
 	Licensed under GNU GPL v2
 	For bug reports, read
-	
+
 	http://openocd.sourceforge.net/doc/doxygen/bugs.html
 
 	srst_only separate srst_nogate 	srst_open_drain connect_deassert_srst
@@ -163,4 +163,3 @@ To test if OpenOCD is able to connect to a specific board, you generally need to
 ## OpenOCD Debugging plug-ins
 
 The OpenOCD debugging **plug-ins are not included** in these packages, and need to be installed as usual.
-

@@ -5,7 +5,7 @@ title: How to install the ARM toolchain?
 author: Liviu Ionescu
 
 date: 2015-09-11 22:49:00
-last_modified_at: 2015-09-20 11:05:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -50,12 +50,12 @@ The following steps can be performed on Windows:
 
   > Note: It is highly recommended to **do not to change the install path**, since the plug-in tries to automatically discover the toolchain in this default location.
 
-  ![The destination folder.]({{ site.baseurl }}/images/2014/01/MS_destination_location.png)
+  ![The destination folder]({{ site.baseurl }}/images/2014/01/MS_destination_location.png)
 
 * wait a few moments for the installer to copy files
 * in the final window be sure you **disable adding the toolchain path to the environment**
 
-  ![Disable adding toolchain path to environment.]({{ site.baseurl }}/images/2014/01/MS_finish.png)
+  ![Disable adding toolchain path to environment]({{ site.baseurl }}/images/2014/01/MS_finish.png)
 
 * read the `readme.txt` file
 * test if the compiler is functional

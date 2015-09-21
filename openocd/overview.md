@@ -4,7 +4,7 @@ title: The GNU ARM Eclipse OpenOCD
 permalink: /openocd/
 
 date: 2015-09-04 17:02:00
-last_modified_at: 2015-09-16 18:28:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -40,7 +40,7 @@ For Windows and OS X users, the main advantage of using **GNU ARM Eclipse OpenO
 
   * the Windows version is distributed as a setup wizard that handles all install details, including adding the proper keys to the windows registry, that can help the plug-in to automatically discover the OpenOCD location;
   * the OS X version is distributed as a standard .pkg install package.
-  ![The OpenOCD Windows setup wizard.]({{ site.baseurl }}/images/2015/openocd-setup-wizard.png)
+  ![The OpenOCD Windows setup wizard]({{ site.baseurl }}/images/2015/openocd-setup-wizard.png)
 
 Although most GNU/Linux distributions already provide different versions, we also provide a Debian x64 version of OpenOCD, which, compared to the standard distribution, has the advantage that is a standalone package, that includes all required libraries and can be installed at any location.
 
@@ -54,7 +54,7 @@ Even more, the Windows version supports the same targets as the version distribu
 
 All **GNU ARM Eclipse OpenOCD** versions are available from the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page. Identify the **Latest release** entry and carefully read the release page.
 
-![The OpenOCD Releases page.]({{ site.baseurl }}/images/2015/github-gae-openocd-releases.png)
+![The OpenOCD Releases page]({{ site.baseurl }}/images/2015/github-gae-openocd-releases.png)
 
 ## Install
 

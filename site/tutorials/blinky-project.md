@@ -5,7 +5,7 @@ title: 'Tutorial: Create a Blinky ARM test project'
 author: Liviu Ionescu
 
 date: 2015-09-11 19:25:00
-last_modified_at: 2015-09-15 13:33:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -27,7 +27,7 @@ Note: the multi-LED template is currently available only for ST32F4, and only fo
 
 To create a new project, go to *Eclipse* menu, **File** → **New** (or the button in the upper left corner), and select the **C++ Project**:
 
-![Create a new C++ project.]({{ site.baseurl }}/images/2015/08/NewCppProject.png)
+![Create a new C++ project]({{ site.baseurl }}/images/2015/08/NewCppProject.png)
 
 In the **C++ Project** window:
 
@@ -36,7 +36,7 @@ In the **C++ Project** window:
 * in the *Toolchains:* section select **Cross ARM GCC**
 * click the **Next >** button
 
-![New C++ blinky project.]({{ site.baseurl }}/images/2015/08/NewCppBlinkyProject.png)
+![New C++ blinky project]({{ site.baseurl }}/images/2015/08/NewCppBlinkyProject.png)
 
 
 In the **Target processor settings** window be sure to:
@@ -51,11 +51,11 @@ In the **Target processor settings** window be sure to:
 
 In the **Folders** page leave the suggested folders unchanged and click the **Next >** button.
 
-![Blinky project folder settings.]({{ site.baseurl }}/images/2015/08/BlinkyFolderSettings.png)
+![Blinky project folder settings]({{ site.baseurl }}/images/2015/08/BlinkyFolderSettings.png)
 
 In the **Select Configurations** page leave the suggested Debug/Release configurations checked and click the **Next >** button.
 
-![Blinky project configurations.]({{ site.baseurl }}/images/2015/08/BlinkyConfigurations.png)
+![Blinky project configurations]({{ site.baseurl }}/images/2015/08/BlinkyConfigurations.png)
 
 In the **Cross GNU ARM Toolchain** window:
 
@@ -63,7 +63,7 @@ In the **Cross GNU ARM Toolchain** window:
 * browse for the **bin** folder within the toolchain folder; don't be afraid to use the absolute address, it is not stored in the project;
 * click the **Finish** button
 
-![Blinky toolchain and path selection.]({{ site.baseurl }}/images/2015/08/BlinkyToolchain.png)
+![Blinky toolchain and path selection]({{ site.baseurl }}/images/2015/08/BlinkyToolchain.png)
 
 Note 1: when selecting the path, be sure you select the **/bin** folder where the programs with long, prefixed names are stored, and not the inner /bin folder where the short name programs may be available.
 
@@ -73,7 +73,7 @@ Note 2: DO NOT SKIP this step, it is mandatory to have a correct toolchain path 
 
 The result of the wizard is a simple project, with a **main()** function printing a greeting on the standard output.
 
-![The new C++ project.]({{ site.baseurl }}/images/2015/08/BlinkyProject.png)
+![The new C++ project]({{ site.baseurl }}/images/2015/08/BlinkyProject.png)
 
 ## Build the project
 
@@ -86,7 +86,7 @@ To start the build:
 
 The build process should leave in the *Console* window a listing like this:
 
-![The build console.]({{ site.baseurl }}/images/2015/08/BlinkyProjectBuildConsole.png)
+![The build console]({{ site.baseurl }}/images/2015/08/BlinkyProjectBuildConsole.png)
 
 The files created by the build process are left in a folder named by the name of the configuration, for example *Debug* or *Release*.
 
@@ -132,17 +132,17 @@ As for any debugging plug-in,
 * check if the *Board name:* and *Device name:* are correctly filled-in; without assigning the board and device to the project, these fields must be filled in manually;
 * enable **Extra verbose**
 
-![The QEMU Debugger tab.]({{ site.baseurl }}/images/2015/08/BlinkyQEMUDebuggerTab.png)
+![The QEMU Debugger tab]({{ site.baseurl }}/images/2015/08/BlinkyQEMUDebuggerTab.png)
 
 When done, click the **Run** button.
 
 If you did not disable the graphic windows, an animated image of the board is shown, with the 4 LEDs blinking.
 
-![The STM32F4-Discovery 4 LEDs.]({{ site.baseurl }}/images/2015/08/STM32F4-Discovery-LEDs.png)
+![The STM32F4-Discovery 4 LEDs]({{ site.baseurl }}/images/2015/08/STM32F4-Discovery-LEDs.png)
 
 The QEMU process also displays some information in its console:
 
-![QEMU console with semihosting output.]({{ site.baseurl }}/images/2015/08/QEMUconsole.png)
+![QEMU console with semihosting output]({{ site.baseurl }}/images/2015/08/QEMUconsole.png)
 
 ## Semihosting
 
@@ -167,7 +167,7 @@ Set the toolchain path for all projects and workspaces.
 * a wrong or missing QEMU path; go to the project *Properties* → *Run/Debug* → *QEMU* and define the correct path;
 
 
-![The QEMU path.]({{ site.baseurl }}/images/2015/08/QEMUPath.png)
+![The QEMU path]({{ site.baseurl }}/images/2015/08/QEMUPath.png)
 
 
 ## Support

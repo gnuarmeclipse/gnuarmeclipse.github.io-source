@@ -5,7 +5,7 @@ title: 'Tutorial: Create a Hello ARM test project'
 author: Liviu Ionescu
 
 date: 2015-09-11 22:43:00
-last_modified_at: 2015-09-15 13:33:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -49,7 +49,7 @@ In the ** Target processor settings** window be sure to:
 
 In the **Folders** page leave the suggested folders unchanged and click the **Next >** button.
 
-![Define the project folders.]({{ site.baseurl }}/images/2013/10/HelloFolderSettings.png)
+![Define the project folders]({{ site.baseurl }}/images/2013/10/HelloFolderSettings.png)
 
 In the **Select Configurations** page leave the suggested Debug/Release configurations checked and click the **Next >** button.
 
@@ -118,7 +118,7 @@ The usual sources for build failures are:
 
 * a wrong or missing toolchain path; go to the project properties, C/C++ Build → Setting → the Toolchains tab and define the correct path;
 
-![Global Tools Paths.]({{ site.baseurl }}/images/2015/02/GlobalToolsPaths.png)
+![Global Tools Paths]({{ site.baseurl }}/images/2015/02/GlobalToolsPaths.png)
 
 * missing build tools (make & rm) on Windows; install the [build tools][7].
 

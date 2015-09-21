@@ -5,7 +5,7 @@ title: How to download the binary files
 author: Liviu Ionescu
 
 date: 2015-09-10 19:54:00
-last_modified_at: 2015-09-14 22:27:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -20,7 +20,7 @@ There are two methods:
 The Eclipse update site is currently hosted on SourceForge, to make use of the wide network of mirror sites SourceForge provides. The public URL is:
 - **http://gnuarmeclipse.sourceforge.net/updates**
 
-![GNU ARM Eclipse updates URL.]({{ site.baseurl }}/images/2015/install-new-software-updates-url.png)
+![GNU ARM Eclipse updates URL]({{ site.baseurl }}/images/2015/install-new-software-updates-url.png)
 
 ## GitHub Releases pages
 
@@ -30,7 +30,7 @@ For example, to access the QEMU binaries:
 - go to the **GNU ARM Eclipse QEMU** project at [gnuarmeclipse/qemu](https://github.com/gnuarmeclipse/qemu)
 - be sure you are in the **Code** view; if not, select the right side `<>` code icon
 - identify the [releases](https://github.com/gnuarmeclipse/qemu/releases) link in the upper line:
-  ![Code releases link.]({{ site.baseurl }}/images/2015/github-qemu-code-tab-releases.png)
+  ![Code releases link]({{ site.baseurl }}/images/2015/github-qemu-code-tab-releases.png)
 - click the releases link; this will show the Releases view, with the **Latest release** at the top of the page:
   ![The Latest release view. ]({{ site.baseurl }}/images/2015/github-qemu-code-tab-latest-release.png)
 - in the left side the release is identified by the associated Git tag and commit ID

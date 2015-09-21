@@ -5,7 +5,7 @@ title: How to install the SEGGER J-Link
 author: Liviu Ionescu
 
 date: 2015-09-11 20:50:00
-last_modified_at: 2015-09-16 21:28:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -46,7 +46,7 @@ The Windows file is a ZIP archive, named like **Setup\_JLinkARM\_V480.zip**. Af
 
 The result of the install is a folder (a new folder for each new version installed), and a set of driver files installed in the system folders, overwritten with each new install.
 
-![SEGGER Windows distribution.]({{ site.baseurl }}/images/2014/01/Segger-win.png)
+![SEGGER Windows distribution]({{ site.baseurl }}/images/2014/01/Segger-win.png)
 
 
 Please note that on Windows, SEGGER provides both graphical interface and **command line versions** (having the names suffixed with **CL**) for most of their tools. For the J-Link plug-in it is recommended to use only the command line version of the  J-Link GDB server (**JLinkGDBServerCL.exe**).
@@ -61,7 +61,7 @@ The OS X download is an OS X package installer, like **JLink\_MacOSX\_V480.pkg*
 
 The result of the install is a folder called **/Applications/SEGGER/JLink/** (the same folder for all versions) where all executables and libraries are stored; please note that, as for many OS X applications, no other driver files are installed in the system folders.
 
-![SEGGER OS X distribution.]({{ site.baseurl }}/images/2014/01/Segger-OSX.png)
+![SEGGER OS X distribution]({{ site.baseurl }}/images/2014/01/Segger-OSX.png)
 
 
 ### USB

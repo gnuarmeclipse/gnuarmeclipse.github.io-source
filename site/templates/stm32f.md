@@ -5,7 +5,7 @@ title: STM32Fxx templates
 author: Liviu Ionescu
 
 date: 2015-09-11 22:27:00
-last_modified_at: 2015-09-15 13:19:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -58,7 +58,7 @@ For more details, please visit the [separate page]({{ site.baseurl }}/eclipse/p
 
 
 
-![Assign a device to the project.]({{ site.baseurl }}/images/2013/10/Devices.png)
+![Assign a device to the project]({{ site.baseurl }}/images/2013/10/Devices.png)
 
 
 ## Build

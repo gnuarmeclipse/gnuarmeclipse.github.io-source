@@ -5,7 +5,7 @@ title: FAQ
 author: Liviu Ionescu
 
 date: 2015-09-11 20:28:00
-last_modified_at: 2015-09-17 22:15:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -123,7 +123,7 @@ Most probably you are running on Windows, and forgot to add the builder tools or
 
 You most probably did not configure properly the toolchain path, and CDT cannot start the discovery process. Check the path in the project **Properties** → **C/C++ Build** → **Settings** → **Toolchains** → **Path**.
 
-![Setting the toolchain path and preffx.]({{ site.baseurl }}/images/2013/10/SettingsPathPrefix.png)
+![Setting the toolchain path and preffx]({{ site.baseurl }}/images/2013/10/SettingsPathPrefix.png)
 
 
 ## Program "gcc" not found in PATH

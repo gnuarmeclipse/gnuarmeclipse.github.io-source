@@ -5,7 +5,7 @@ title: Support
 author: Liviu Ionescu
 
 date: 2015-09-11 22:32:00
-last_modified_at: 2015-09-12 14:51:00
+last_modified_at: 2015-09-21 18:52:00
 
 ---
 
@@ -21,5 +21,4 @@ There were several types of tickets, stored in separate trackers:
 
 To view **all** tickets, click the **All Public** button:
 
-![SourceForge Bugs Tracker.]({{ site.baseurl }}/images/2015/sourceforge-bugs-all-public.png)
-
+![SourceForge Bugs Tracker]({{ site.baseurl }}/images/2015/sourceforge-bugs-all-public.png)
