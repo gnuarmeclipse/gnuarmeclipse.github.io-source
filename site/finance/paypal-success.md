@@ -17,5 +17,3 @@ We promise it'll be used for the good cause of further developing the **GNU ARM 
 Thank you again for your support,
 
 The GNU ARM Eclipse team
-
-

@@ -3,6 +3,7 @@ layout: page
 title: How to build the OpenOCD binaries
 permalink: /openocd/build-procedure/
 
+date: 2015-09-04 17:02:00
 last_modified_at: 2015-09-10 19:36:00
 
 ---

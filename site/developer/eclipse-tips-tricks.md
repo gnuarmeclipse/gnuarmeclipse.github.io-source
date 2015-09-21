@@ -9,7 +9,7 @@ last_modified_at: 2015-09-10 22:58:00
 
 ---
 
-## Contents 
+## Contents
 * [Find project from configuration](#find-project-from-configuration)
 * [Display a message box from a non-UI thread](#display-a-message-box-from-a-non-ui-thread)
 * [Run code in UI thread](#run-code-in-ui-thread)

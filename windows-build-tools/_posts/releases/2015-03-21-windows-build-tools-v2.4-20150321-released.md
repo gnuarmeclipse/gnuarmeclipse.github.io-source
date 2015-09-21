@@ -18,6 +18,7 @@ tags:
   - make
   - rm
   - busybox
+  
 ---
 
 Version 2.4-201503212005 is a new release of the GNU ARM Eclipse Windows Build Tools.
@@ -42,10 +43,8 @@ Please note that it is no longer required to manually update the environment PAT
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page. 
+The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
 
 The available files are:
 
 	gnuarmeclipse-build-tools-win32-2.4-201503212005-setup.exe
-
-

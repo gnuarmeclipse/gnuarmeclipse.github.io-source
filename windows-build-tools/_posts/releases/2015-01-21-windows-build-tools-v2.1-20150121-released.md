@@ -17,6 +17,7 @@ tags:
   - build
   - make
   - rm
+  
 ---
 
 Version 2.1-201501221704 is a new repack of the previous version.
@@ -29,7 +30,7 @@ Version 2.1-201501221704 is a new repack of the previous version.
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page. 
+The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
 
 The available files are:
 

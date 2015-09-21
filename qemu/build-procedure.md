@@ -3,6 +3,7 @@ layout: page
 title: How to build the QEMU binaries
 permalink: /qemu/build-procedure/
 
+date: 2015-09-04 17:02:00
 last_modified_at: 2015-09-10 19:37:00
 
 ---
@@ -11,19 +12,19 @@ The latest version of the build script is a single run, multi-platform build, ge
 
 The script was developed on OS X, but it also runs on any recent GNU/Linux distribution (just that in this case it cannot generate the OS X package).
 
-## Prerequisites 
+## Prerequisites
 
 The main trick that made the multi-platform build possible is [Docker](https://www.docker.com).
 
 Containers based on three docker images are used, one packing MinGW-w64 in a Debian 8, and two packing the basic system (gcc & x11) in Debian 8 (separate 32/64-bits containers). The more conservative Debian was preferred to generate the GNU/Linux versions, to avoid problems when attempting to run the executables on older versions.
 
-### OS X 
+### OS X
 
-#### Install Docker 
+#### Install Docker
 
 On OS X, install **boot2docker**, following the official [Install Docker on Mac OS X](https://docs.docker.com/installation/mac/) instructions.
 
-#### Install the Command Line Tools 
+#### Install the Command Line Tools
 
 The OS X compiler and other development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](https://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
 
@@ -36,24 +37,24 @@ To test if the compiler is available, use:
 	Thread model: posix
 
 
-#### Install MacPorts 
+#### Install MacPorts
 
 The build procedure requires the presence of [MacPorts](http://www.macports.org). Install it according to the documentation.
 
-#### Install required MacPorts packages 
+#### Install required MacPorts packages
 
 Install the following packages:
 
 	sudo port install libtool automake autoconf pkgconfig
 	sudo port install texinfo texlive
 
-### GNU/Linux 
+### GNU/Linux
 
-#### Install Docker 
+#### Install Docker
 
 For any GNU/Linux distribution, follow the [specific instructions](https://docs.docker.com/installation/#installation).
 
-#### Configure Docker to run as regular user 
+#### Configure Docker to run as regular user
 
 To allow docker to run as a regular user, you need to be a member of the **docker** group.
 
@@ -63,17 +64,17 @@ To allow docker to run as a regular user, you need to be a member of the **docke
 
 To make these changes effective, logout and login.
 
-#### Install required packages 
+#### Install required packages
 
 Since most of the build is performed inside the Docker containers, there are not many requirements for the host, and most of the time these programs are in the standard distribution (**curl**, **git**, **automake**, **patch**, **tar**, **unzip**).
 
 The script checks for them; if the script fails, install them and re-run.
 
-### Docker images 
+### Docker images
 
 The Docker images are available from [Docker Hub](https://hub.docker.com/u/ilegeul/). They were build using the Dockerfiles available from [ilg-ul/docker](https://github.com/ilg-ul/docker) on GitHub.
 
-## Download the build script 
+## Download the build script
 
 The script is available from the GitHub and can be [viewed online](https://github.com/gnuarmeclipse/build-scripts/blob/master/scripts/build-qemu.sh).
 
@@ -82,11 +83,11 @@ To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/
 	curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh \
 	-o ~/Downloads/build-qemu.sh
 
-## Check the script 
+## Check the script
 
 The script creates a temporary build **Work/qemu** folder in the the user home. Although not recommended, if for any reasons you need to change this, you can redefine WORK_FOLDER variable before invoking the script.
 
-## Preload the Docker images 
+## Preload the Docker images
 
 Docker does not require to explicitly download new images, but does this automatically at first use.
 
@@ -105,7 +106,7 @@ The result should look similar to:
 	ilegeul/debian      8-gnuarm-gcc-x11    575a7f52cfcf        2 days ago          1.569 GB
 	hello-world         latest              e45a5af57b00        6 months ago        910 B
 
-## Build all distribution files 
+## Build all distribution files
 
 	bash ~/Downloads/build-qemu.sh --all
 
@@ -129,21 +130,21 @@ About half an hour later, the output of the build script is a set of 5 files in 
 	drwxr-xr-x  6 ilg  staff      204 May 12 21:26 win32
 	drwxr-xr-x  6 ilg  staff      204 May 12 21:04 win64
 
-## Subsequent runs 
+## Subsequent runs
 
-### Separate platform specific builds 
+### Separate platform specific builds
 
 Instead of **--all**, you can use any combination of:
 
 	--win32 --win64 --debian32 --debian64 --osx
 
-### clean 
+### clean
 
 To remove all build files, use:
 
 	bash ~/Downloads/build-qemu.sh clean
 
-## The Work folder 
+## The Work folder
 
 The entire build process is contained in a Work folder, located on the host and mounted in the Docker containers.
 
@@ -188,18 +189,18 @@ The build and include subfolders look like:
 	│   └── qemu
 	└── win64
 	    └── qemu
-	
+
 	22 directories, 0 files
 
-## Install procedure 
+## Install procedure
 
 The procedure to install GNU ARM Eclipse QEMU is platform specific, but relatively straight forward (a Windows setup, an OS X install or a TGZ archive on GNU/Linux). The setup/install asks no special questions, and the defaults are generally ok for most installations.
 
-## Install hierarchy 
+## Install hierarchy
 
 After install, the package should create a structure like this (only the first two depth levels are shown):
 
-	$ tree -L 2 /Applications/GNU\ ARM\ Eclipse/QEMU/2.3.50-201505141607-dev 
+	$ tree -L 2 /Applications/GNU\ ARM\ Eclipse/QEMU/2.3.50-201505141607-dev
 	/Applications/GNU\ ARM\ Eclipse/QEMU/2.3.50-201505141607-dev
 	├── INFO.txt
 	├── bin
@@ -234,18 +235,18 @@ After install, the package should create a structure like this (only the first t
 	│   └── man1
 	└── share
 	    └── qemu
-	
+
 	11 directories, 22 files
 
 No other files are installed in any system folders or other locations.
 
-## Uninstall 
+## Uninstall
 
 To uninstall QEMU from a Windows machine, use the **qemu-uninstall.exe** program.
 
 On OS X and GNU/Linux, the GNU ARM Eclipse QEMU install folder is self-contained and removing it is enough for completely removing the application.
 
-## Test 
+## Test
 
 A simple test is performed by the script at the end, by launching the executable to check if all shared/dynamic libraries are correctly used.
 
@@ -255,7 +256,7 @@ For a true test you need to first install the package and then run the program f
 	GNU ARM Eclipse QEMU 64-bits emulator version 2.2.91
 	Copyright (c) 2003-2008 Fabrice Bellard
 
-## Stop boot2docker 
+## Stop boot2docker
 
 On OS X, the build script automatically starts **boot2docker**, if needed.
 
@@ -263,6 +264,6 @@ When done, be sure you stop boot2docker, to free significant resources (a Virtua
 
 	boot2docker stop
 
-## More build details 
+## More build details
 
 The script is quite complex, and an attempt to explain its functionality would require some effort. For the final authoritative details, please refer to the comments available in the [script](https://github.com/gnuarmeclipse/build-scripts/blob/master/scripts/build-qemu.sh).

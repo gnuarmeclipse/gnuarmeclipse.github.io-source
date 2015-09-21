@@ -17,6 +17,7 @@ tags:
   - build
   - make
   - rm
+  
 ---
 
 Version 2.2-201501232303 is a maintenance release.
@@ -29,7 +30,7 @@ Version 2.2-201501232303 is a maintenance release.
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page. 
+The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
 
 
 The available files are:

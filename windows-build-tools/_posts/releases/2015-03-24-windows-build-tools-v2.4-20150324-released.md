@@ -18,6 +18,7 @@ tags:
   - make
   - rm
   - busybox
+  
 ---
 
 Version 2.4-201503242026 is a maintenance release, fixing the uninstall procedure.
@@ -32,9 +33,8 @@ Version 2.4-201503242026 is a maintenance release, fixing the uninstall procedur
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page. 
+The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
 
 The available files are:
 
 	gnuarmeclipse-build-tools-win32-2.4-201503242026-setup.exe
-

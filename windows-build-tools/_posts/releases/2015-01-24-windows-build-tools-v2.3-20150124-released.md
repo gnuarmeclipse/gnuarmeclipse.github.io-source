@@ -17,9 +17,10 @@ tags:
   - build
   - make
   - rm
+  
 ---
 
-Version 2.3-201501242223 is a new release of the GNU ARM Eclipse Windows Build Tools. 
+Version 2.3-201501242223 is a new release of the GNU ARM Eclipse Windows Build Tools.
 
 [Binary files »]({{ page.download_url }})
 
@@ -51,16 +52,15 @@ If needed, you can completely remove the package from your system by running the
 
 For more details please read the [Build Tools for Windows]({{ site.baseurl }}/windows-build-tools/) page.
 
- 
+
 ## Known problems
 
 * ?
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page. 
+The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
 
 The available files are:
 
 	gnuarmeclipse-build-tools-win32-2.3-201501242223-setup.exe
-

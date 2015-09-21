@@ -20,4 +20,3 @@ For testing the resulting plug-ins binaries on other platforms, I install them o
 -   Windows 7, 32-bits
 
 For the multi-platform builds I use [Docker](https://www.docker.com), which on OS X runs under Virtual Box. Running the builds in parallel with using other Parallels Desktop virtual machines is possible, but Virtual Box becomes painfully slow and generally should be avoided.
-

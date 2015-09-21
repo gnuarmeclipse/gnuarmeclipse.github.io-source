@@ -18,6 +18,7 @@ tags:
   - make
   - rm
   - busybox
+  
 ---
 
 Version v2.6-201507152002 is a new release of the GNU ARM Eclipse Windows Build Tools, adding support for Windows 64-bits.
@@ -42,6 +43,6 @@ The MD5 sums of the files are:
 
 	d52c5c3bedc8b34acdcb8384d8b2cfc3  
 	gnuarmeclipse-build-tools-win32-2.6-201507152002-setup.exe
-	
+
 	a47b0a38355ee9449cb3930beb303762  
 	gnuarmeclipse-build-tools-win64-2.6-201507152002-setup.exe
