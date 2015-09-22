@@ -1,13 +1,25 @@
 ---
 layout: page
 permalink: /finance/sponsorship/
-title: Sponsoring the GNU ARM Eclipse project
+title: Sponsorship & donations
 author: Liviu Ionescu
 
 date: 2015-09-09 13:09:00
-last_modified_at: 2015-09-20 22:16:00
+last_modified_at: 2015-09-22 12:28:00
 
 ---
+
+## Financial status
+
+Since September 2013, when a time tracking solution was put in place, **more than 2.800 development hours** were accounted, with the bulk of them being advanced by a single private person.
+
+Out of these, the following were covered by commercial contracts:
+
+* 400h by Infineon, for integrating the J-Link Debugging plug-in in DAVE and further developing the peripheral registers view
+
+The current financial status is a steady red <span style="color: red">**-2.400h**</span>.
+
+The situation is obviously not sustainable on long term, and, in order for the project to grow, further support is expected, especially from Commercial Contributors (see the [license]({{ site.baseurl }}/licenses/plug-ins/) page for details).
 
 ## Sponsorship opportunities
 
@@ -32,3 +44,4 @@ Many thanks to the following donors (in chronological order):
 * Rolf Segger, Germany
 * Erich Styger, Switzerland
 * Alan Adamson, USA
+* Vidar Berg, Norway

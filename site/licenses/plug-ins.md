@@ -5,7 +5,7 @@ title: The GNU ARM Eclipse plug-ins license
 author: Liviu Ionescu
 
 date: 2015-09-08 23:25:00
-last_modified_at: 2015-09-10 23:12:00
+last_modified_at: 2015-09-22 12:52:00
 
 ---
 
@@ -66,3 +66,7 @@ In other words, consider the sponsorship scheme as a warranty that you'll not ha
 In addition to becoming sponsors/donors, Commercial Contributors can also support the GNU ARM Eclipse project by paying commercial contracts to develop new features and releasing the results with the same Eclipse Public License.
 
 General purpose features will have higher priority then vendor specific features, and might also benefit from better rates.
+
+## Sponsorships & donations
+
+To prevent changing the license terms, this project will depend both on commercial contracts and on [sponsorships & donations]({{ site.baseurl }}/finance/sponsorship/).
