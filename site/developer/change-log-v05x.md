@@ -5,7 +5,7 @@ title: The GNU ARM Eclipse Plug-ins v0.5.x Change Log
 author: Liviu Ionescu
 
 date: 2015-09-10 20:29:00
-last_modified_at: 2015-09-10 20:28:00
+last_modified_at: 2015-09-23 00:33:00
 
 ---
 
@@ -116,7 +116,7 @@ Entries in this file are in direct chronological order.
 
 ### 2010-07-15
 
--   the Wiki page [How to build](/How_to_build "wikilink") and this page (Change log) were created from project text files.
+-   the Wiki page [How to build]({{ site.baseurl }}/developer/build-procedure/) and this page (Change log) were created from project text files.
 
 ### 2010-07-29
 
