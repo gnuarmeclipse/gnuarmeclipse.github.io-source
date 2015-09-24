@@ -6,7 +6,7 @@ title: The GNU ARM Eclipse project has a new home and a new look
 author: Liviu Ionescu
 
 date: 2015-09-14 13:41:00
-last_modified_at: 2015-09-15 22:59:00
+last_modified_at: 2015-09-24 21:55:00
 
 categories:
   - news
@@ -89,7 +89,7 @@ We are aware that a lot of links to the previous sites are in use. To avoid brea
 
 ## Old sites
 
-For a while, the previous WordPress and MediaWiki sites will be preserved, but at a slightly modified URL:
+The previous WordPress and MediaWiki sites were moved back to SourceForge and, for historical reasons, will be preserved there, but will no longer be maintained:
 
-* [`http://gnuarmeclipse-old.livius.net/blog`](http://gnuarmeclipse-old.livius.net/blog)
-* [`http://gnuarmeclipse-old.livius.net/wiki`](http://gnuarmeclipse-old.livius.net/wiki)
+* [`http://gnuarmeclipse.sourceforge.net/blog/`](http://gnuarmeclipse.sourceforge.net/blog/)
+* [`http://gnuarmeclipse.sourceforge.net/wiki/`](http://gnuarmeclipse.sourceforge.net/wiki/)
