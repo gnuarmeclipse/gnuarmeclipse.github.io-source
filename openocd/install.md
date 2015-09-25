@@ -4,7 +4,7 @@ title: How to install the OpenOCD binaries?
 permalink: /openocd/install/
 
 date: 2015-09-09 19:43:00
-last_modified_at: 2015-09-21 19:09:00
+last_modified_at: 2015-09-25 09:31:00
 
 ---
 
@@ -45,7 +45,7 @@ Run the setup as usual.
 
 It is recommended to keep the default install location:
 
-![Accept the default OpenOCD destination folder](https://github.com/gnuarmeclipse/openocd/wiki/images/2015/openocd-setup-destination.png)
+![Accept the default OpenOCD destination folder]({{ site.baseurl }}/images/2015/openocd-setup-destination.png)
 
 The default install location is:
 
