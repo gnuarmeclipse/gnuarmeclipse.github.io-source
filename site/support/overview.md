@@ -5,7 +5,7 @@ title: How to get support?
 author: Liviu Ionescu
 
 date: 2015-09-12 13:43:00
-last_modified_at: 2015-09-21 19:13:00
+last_modified_at: 2015-09-26 16:41:00
 
 ---
 
@@ -60,3 +60,7 @@ Please note that these trackers are mostly intended to the GNU ARM Eclipse speci
 If you discover problems in the content of these pages (typos, wrong phrasing, etc), or you have suggestions on how to improve them, you can use the [Web Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io/issues/1) tracker.
 
 > Note: the migration from WordPress/MediaWiki to GitHub Pages involved quite significant changes to the web pages, including conversion to [markdown](http://daringfireball.net/projects/markdown/syntax), which was done partly with scripts, partly manually; we are aware that it is very likely that lots of mistakes are still present in the pages; we would appreciate any help in fixing them.
+
+## Use of private eMail
+
+Please, please, please: do not use private eMail for support, since such messages will be replied with a link to this page. The reason for this rude behaviour is simply an attempt to efficiently use the time, since GitHub Issues are archived, and other people having similar problems might benefit from the answers.
