@@ -826,6 +826,11 @@ p.page-footer {
   font-size: 80%;
 }
 
+.inner h1 a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 /* #Media Queries
 ================================================== */
 
