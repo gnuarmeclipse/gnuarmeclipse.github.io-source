@@ -4,7 +4,6 @@ title: How to install the QEMU binaries?
 permalink: /qemu/install/
 
 date: 2015-09-04 17:03:00
-last_modified_at: 2015-09-21 19:10:00
 
 ---
 

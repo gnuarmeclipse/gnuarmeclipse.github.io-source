@@ -5,7 +5,6 @@ title: The GNU ARM Eclipse tools licenses
 author: Liviu Ionescu
 
 date: 2015-09-16 18:51:00
-last_modified_at: 2015-09-16 18:51:00
 
 ---
 

@@ -6,7 +6,6 @@ title: WordPress statistics
 author: Liviu Ionescu
 
 date: 2014-07-04 12:00:00
-last_modified_at: 2015-09-10 13:26:00
 
 categories:
   - news

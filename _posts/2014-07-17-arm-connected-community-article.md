@@ -6,7 +6,6 @@ title: ARM Connected Community article
 author: Liviu Ionescu
 
 date: 2014-07-17 12:00:00
-last_modified_at: 2015-09-12 19:25:00
 
 categories:
   - news
@@ -20,4 +19,3 @@ A presentation article was published on the [ARM Connected Community](http://com
 (for backup reasons, a [local][1] copy is also available).
 
  [1]: {{ site.baseurl }}/articles/arm-com-2014-07/ "GNU ARM Eclipse: open source tools with (experimental) CMSIS Pack support"
-

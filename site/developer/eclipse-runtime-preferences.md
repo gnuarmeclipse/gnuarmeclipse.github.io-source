@@ -5,7 +5,6 @@ title: How Eclipse runtime preferences and defaults work
 author: Liviu Ionescu
 
 date: 2015-09-10 18:37:00
-last_modified_at: 2015-09-10 22:51:00
 
 ---
 

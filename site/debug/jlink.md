@@ -5,7 +5,6 @@ title: The J-Link debugging Eclipse plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 21:15:00
-last_modified_at: 2015-09-21 18:52:00
 
 ---
 

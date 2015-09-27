@@ -6,7 +6,6 @@ download_url: https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/
 author: Liviu Ionescu
 
 date:   2015-03-24 12:00:00
-last_modified_at: 2015-09-08 12:49:00
 
 categories:
   - releases
@@ -18,7 +17,7 @@ tags:
   - make
   - rm
   - busybox
-  
+
 ---
 
 Version 2.4-201503242026 is a maintenance release, fixing the uninstall procedure.

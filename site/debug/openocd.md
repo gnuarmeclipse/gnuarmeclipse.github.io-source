@@ -5,7 +5,6 @@ title: The OpenOCD debugging Eclipse plug-in
 author: Liviu Ionescu
 
 date: 2015-09-11 21:41:00
-last_modified_at: 2015-09-21 21:53:00
 
 ---
 

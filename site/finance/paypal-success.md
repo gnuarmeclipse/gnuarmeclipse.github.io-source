@@ -6,7 +6,6 @@ permalink: /finance/paypal-success/
 author: Liviu Ionescu
 
 date: 2015-09-08 15:38:00
-last_modified_at: 2015-09-08 15:38:00
 
 ---
 

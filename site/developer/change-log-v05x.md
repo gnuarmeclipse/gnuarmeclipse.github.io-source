@@ -5,7 +5,6 @@ title: The GNU ARM Eclipse Plug-ins v0.5.x Change Log
 author: Liviu Ionescu
 
 date: 2015-09-10 20:29:00
-last_modified_at: 2015-09-23 00:33:00
 
 ---
 

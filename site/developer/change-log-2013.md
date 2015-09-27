@@ -5,7 +5,6 @@ title: The 2013 GNU ARM Eclipse Plug-ins Change Log
 author: Liviu Ionescu
 
 date: 2015-09-10 20:28:00
-last_modified_at: 2015-09-10 20:28:00
 
 ---
 

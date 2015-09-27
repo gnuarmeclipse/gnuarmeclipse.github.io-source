@@ -4,7 +4,6 @@ title: The 2014 QEMU Change Log
 permalink: /qemu/change-log/2014/
 
 date: 2015-09-04 17:02:00
-last_modified_at: 2015-09-07 21:31:00
 
 ---
 

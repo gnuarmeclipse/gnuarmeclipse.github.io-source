@@ -5,7 +5,6 @@ title: Templates
 author: Liviu Ionescu
 
 date: 2015-09-11 22:35:00
-last_modified_at: 2015-09-15 13:16:00
 
 ---
 

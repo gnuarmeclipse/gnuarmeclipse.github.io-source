@@ -5,7 +5,6 @@ title: The GNU ARM Eclipse plug-ins license
 author: Liviu Ionescu
 
 date: 2015-09-08 23:25:00
-last_modified_at: 2015-09-24 22:39:00
 
 ---
 

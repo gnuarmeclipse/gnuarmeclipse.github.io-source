@@ -6,7 +6,6 @@ title: The GNU ARM Eclipse Plug-in project has a new look
 author: Liviu Ionescu
 
 date: 2012-01-07 12:00:00
-last_modified_at: 2015-09-10 13:04:00
 
 categories:
   - news

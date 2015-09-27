@@ -5,7 +5,6 @@ title: Scriptable builds from the command line
 author: Liviu Ionescu
 
 date: 2015-09-11 20:32:00
-last_modified_at: 2015-09-11 23:30:00
 
 ---
 

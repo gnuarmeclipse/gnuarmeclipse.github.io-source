@@ -23,8 +23,9 @@ permalink: /:year/:month/:day/:title/
 markdown: kramdown
 
 gems:
+  - jekyll-last-modified-at
   - jekyll-sitemap
-  
+
 # Custom defs
 github-username:  ilg-ul
 

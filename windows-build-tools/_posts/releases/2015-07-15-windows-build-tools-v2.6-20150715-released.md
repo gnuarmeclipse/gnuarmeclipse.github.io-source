@@ -6,7 +6,6 @@ download_url: https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/
 author: Liviu Ionescu
 
 date:   2015-07-15 12:00:00
-last_modified_at: 2015-09-08 12:50:00
 
 categories:
   - releases
@@ -18,7 +17,7 @@ tags:
   - make
   - rm
   - busybox
-  
+
 ---
 
 Version v2.6-201507152002 is a new release of the GNU ARM Eclipse Windows Build Tools, adding support for Windows 64-bits.

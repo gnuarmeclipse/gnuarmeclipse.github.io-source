@@ -6,7 +6,6 @@ download_url: https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/
 author: Liviu Ionescu
 
 date:   2015-01-23 12:00:00
-last_modified_at: 2015-09-08 12:39:00
 
 categories:
   - releases
@@ -17,7 +16,7 @@ tags:
   - build
   - make
   - rm
-  
+
 ---
 
 Version 2.2-201501232303 is a maintenance release.

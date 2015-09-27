@@ -6,7 +6,6 @@ title: SourceForge featured projects, January 2014
 author: Liviu Ionescu
 
 date: 2014-01-22 12:00:00
-last_modified_at: 2015-09-10 15:11:00
 
 categories:
   - news
@@ -27,4 +26,3 @@ According to WordPress statistics, since October 2013 when the project was resta
 ![WP statistics 2014 01]({{ site.baseurl }}/images/2015/wp-statistics-2014-01.png)
 
 _**Many thanks to all those who downloaded the project!**_
-

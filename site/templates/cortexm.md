@@ -5,7 +5,6 @@ title: Generic Cortex-M template
 author: Liviu Ionescu
 
 date: 2015-09-11 19:44:00
-last_modified_at: 2015-09-14 12:54:00
 
 ---
 

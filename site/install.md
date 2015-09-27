@@ -5,7 +5,6 @@ title: How to install GNU ARM Eclipse?
 author: Liviu Ionescu
 
 date: 2015-09-16 20:56:00
-last_modified_at: 2015-09-21 19:12:00
 
 ---
 

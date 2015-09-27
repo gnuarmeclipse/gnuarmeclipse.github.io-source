@@ -6,7 +6,6 @@ title: The GNU ARM Eclipse project has a new home and a new look
 author: Liviu Ionescu
 
 date: 2015-09-14 13:41:00
-last_modified_at: 2015-09-24 21:55:00
 
 categories:
   - news

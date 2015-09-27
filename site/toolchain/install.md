@@ -5,7 +5,6 @@ title: How to install the ARM toolchain?
 author: Liviu Ionescu
 
 date: 2015-09-11 22:49:00
-last_modified_at: 2015-09-21 18:52:00
 
 ---
 

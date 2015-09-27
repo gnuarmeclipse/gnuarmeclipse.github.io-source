@@ -4,7 +4,6 @@ title: The 2015 OpenOCD Change Log
 permalink: /openocd/change-log/
 
 date: 2015-09-04 17:02:00
-last_modified_at: 2015-09-09 18:50:00
 
 ---
 

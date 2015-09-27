@@ -4,7 +4,6 @@ title: The 2015 Windows Build Tools Change Log
 permalink: /windows-build-tools/change-log/
 
 date: 2015-09-04 17:02:00
-last_modified_at: 2015-09-08 13:10:00
 
 ---
 

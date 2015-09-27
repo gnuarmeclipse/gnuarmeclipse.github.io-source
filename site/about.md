@@ -5,7 +5,6 @@ title: About
 author: Liviu Ionescu
 
 date: 2015-09-10 19:45:00
-last_modified_at: 2015-09-15 09:51:00
 
 ---
 

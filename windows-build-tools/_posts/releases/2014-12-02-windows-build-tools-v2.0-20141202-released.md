@@ -6,7 +6,6 @@ download_url: https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/
 author: Liviu Ionescu
 
 date:   2014-12-02 12:00:00
-last_modified_at: 2015-09-21 18:52:00
 
 categories:
   - releases
@@ -17,7 +16,7 @@ tags:
   - build
   - make
   - rm
-  
+
 ---
 
 For your convenience, the [Windows Build Tools]({{ site.baseurl }}/windows-build-tools/) were repacked as a Windows setup.

@@ -5,7 +5,6 @@ title: Using J-Link with the STM32 boards
 author: Liviu Ionescu
 
 date: 2015-09-10 18:31:00
-last_modified_at: 2015-09-10 18:31:00
 
 ---
 

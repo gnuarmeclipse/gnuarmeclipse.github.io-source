@@ -5,7 +5,6 @@ title: Sponsorship & donations
 author: Liviu Ionescu
 
 date: 2015-09-09 13:09:00
-last_modified_at: 2015-09-22 12:28:00
 
 ---
 

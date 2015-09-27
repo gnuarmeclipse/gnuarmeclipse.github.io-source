@@ -4,7 +4,6 @@ title: How to install the Windows Build Tools?
 permalink: /windows-build-tools/install/
 
 date: 2015-09-04 12:00:00
-last_modified_at: 2015-09-21 19:14:00
 
 ---
 
