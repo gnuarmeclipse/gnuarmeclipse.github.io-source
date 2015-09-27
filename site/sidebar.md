@@ -1,14 +1,12 @@
 
 #### [Latest News]({{ site.baseurl }}/news)
 
-
 {% for post in site.posts limit:5 %}* [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
 ---
 
 #### [GNU ARM Eclipse Home]({{ site.baseurl }}/)
-
 
 #### [Features]({{ site.baseurl }}/plugins/features/)
 
@@ -110,14 +108,21 @@
 * [Change log]({{ site.baseurl }}/developer/change-log)
 * [Contribute]({{ site.baseurl }}/developer/contribute/)
 
+#### Hardware
+
+* [J-Link and STM32 boards]({{ site.baseurl }}/developer/j-link-stm32-boards)
+
 #### Articles
+
 * [GNU ARM Eclipse: open source tools with (experimental) CMSIS Pack support]({{ site.baseurl }}/articles/arm-com-2014-07/)
 
 #### Licenses
+
 * [Eclipse plug-ins]({{ site.baseurl }}/licenses/plug-ins/)
 * [Tools]({{ site.baseurl }}/licenses/tools/)
 
 #### Finance
+
 * [Sponsorship]({{ site.baseurl }}/finance/sponsorship/)
 
 #### [About]({{ site.baseurl }}/about/)
