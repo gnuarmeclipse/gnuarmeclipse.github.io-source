@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% if page.title %}
+<h1 class="page-title">{{ page.title }}</h1>
+{% endif %}
+
+{{ content }}
+
+<hr/>
+<p class="page-footer">
+Page last updated on {{ page.last_modified_at | date: '%c %Z' }}.
+</p>

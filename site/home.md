@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main
 permalink: /
 title: Welcome to GNU ARM Eclipse!
 author: Liviu Ionescu
@@ -7,8 +7,6 @@ author: Liviu Ionescu
 date: 2015-09-07 18:31:00
 
 ---
-
-# Welcome to GNU ARM Eclipse!
 
 This site is dedicated to the **GNU ARM Eclipse** family of plug-ins and tools for embedded ARM development, based on GNU toolchains. This project is hosted on [GitHub](https://github.com/gnuarmeclipse) and [SourceForge](http://sourceforge.net/projects/gnuarmeclipse/).
 
