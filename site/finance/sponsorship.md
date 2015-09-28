@@ -44,3 +44,4 @@ Many thanks to the following donors (in chronological order):
 * Erich Styger, Switzerland
 * Alan Adamson, USA
 * Vidar Berg, Norway
+* Danilo Bessone, Italy
