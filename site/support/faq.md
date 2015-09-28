@@ -40,26 +40,23 @@ This is usually the effect of optimisations, if your function was not referred i
 
 ## How to single-step empty loops?
 
-
 > I'm trying to single-step a simple loop, but execution does not stop after a single iteration, the target runs continuously, with permanent interactions with the debugger.
 
-
-The current GDB has a problem with placing breakpoints **in simple loops**, and **single-stepping fails**. The problem was already reported ([bug 1401565](https://bugs.launchpad.net/gcc-arm-embedded/+bug/1401565)). If you rally need this, switch to assembly view and single-stepping is again functional.
-
+The current GDB has a problem with placing breakpoints **in simple loops**, and **single-stepping fails**. The problem was already reported ([bug 1401565](https://bugs.launchpad.net/gcc-arm-embedded/+bug/1401565)). If you really need this, switch to assembly view and single-stepping is again functional.
 
 ## Why the debugging flow with -Og is sometimes jumpy?
 
 > The manual suggests to use -Og for optimising programs for Debug, but when stepping loops the execution flow is sometimes quite jumpy, moving outside the loop and back.
 
-
 In GCC prior 4.9, the definition of **-Og** needs a small adjustment, also add the **-fno-move-loop-invariants** option to the Debug configuration; this will prevent the compiler to move some constant parts of the loop outside it and the execution flow will be more easy to follow. The problem was already reported ([bug 1395077](https://bugs.launchpad.net/gcc-arm-embedded/+bug/1395077)). Starting with 4.9, the -fno-move-loop-invariants is added automatically to -Og.
 
-
-## How can I add new tickets if no Create Ticket button is available?
+## How can I add new SourceForge tickets if no Create Ticket button is available?
 
 > Please excuse me for not using the support ticket tool you provided on sourceforge but I seem to be too incompetent to even spot some type of "add request" button.
 
-To be able to add new tickets to the SourceForge trackers, you need to log-in to SourceForge, and so the **Create Ticket** button will become visible.
+Following the migration to GitHub, the SourceForge ticketing system was configured as read-only, and new tickets can no longer be added.
+
+Please login to GitHub and use the GitHub Issues trackers.
 
 ## Plug-ins update from 0.5.x running on Juno to current version fails
 
@@ -78,7 +75,6 @@ This is absolutely normal for any application build with semihosting support. Th
 Update: M3/M4 projects generated with version 2.2.1-201404120702 or later check when not running under debugger and skip the trace call, so it is possible to run the application standalone.
 
 ## Unrecognized command line option "-std=gnu11" (or "-std=c++11")
-
 
 You are using an old toolchain, pre GCC 4.7. In older versions, the C11 and the C++11 standards were not available, and compilers did not allow to set this option.
 
@@ -123,7 +119,6 @@ Most probably you are running on Windows, and forgot to add the builder tools or
 You most probably did not configure properly the toolchain path, and CDT cannot start the discovery process. Check the path in the project **Properties** → **C/C++ Build** → **Settings** → **Toolchains** → **Path**.
 
 ![Setting the toolchain path and preffx]({{ site.baseurl }}/images/2013/10/SettingsPathPrefix.png)
-
 
 ## Program "gcc" not found in PATH
 
