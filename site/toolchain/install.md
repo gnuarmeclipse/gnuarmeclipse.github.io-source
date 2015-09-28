@@ -17,7 +17,7 @@ Please note the distinction between the **target platform** and the **host/devel
 * the target platform defines the environment where the application will be executed, and in general can be either a bare metal (the application sits directly on the hardware and has intimate control of it, usually including a form of scheduler to allow multiple threads to execute pseudo-simultaneously on the same processor), and applications that sit on top of an operating system, usually a distribution of GNU/Linux optimised for embedded environments
 * the host/development platform is the platform where the development tools are executed, usually as cross compilers, and can be, in our case, any platform that supports Eclipse, for example Windows, OS X, GNU/Linux, BSD, etc.
 
-Be sure you select the proper toolchain for the target platform, otherwise builds will not succeed, or the generated applications will fail to run. **Do not** try to use the GCC ARM Embedded to build  GNU/Linux applications, because the executables will not run on anything than bare metal, and **do not try to use the Linaro toolchains for bare metal applications**.
+> Note: Be sure you select the proper toolchain for the target platform, otherwise builds will not succeed, or the generated applications will fail to run. **Do not** try to use the GCC ARM Embedded to build  GNU/Linux applications, because the executables will not run on anything than bare metal, and **do not try to use the Linaro toolchains for bare metal applications**.
 
 The installation details described below assume the selection of the GCC ARM Embedded toolchain. For other toolchains, please follow the specific installation instructions.
 
