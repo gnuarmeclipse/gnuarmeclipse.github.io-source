@@ -115,7 +115,7 @@
 #### Articles
 
 * [GNU ARM Eclipse: open source tools with (experimental) CMSIS Pack support]({{ site.baseurl }}/articles/arm-com-2014-07/)
-* [GNU ARM Eclipse has a new look and a new home]({{ site.baseurl }}/articles/arm-com-2015-08/)
+* [GNU ARM Eclipse has a new look and a new home]({{ site.baseurl }}/articles/arm-com-2015-09/)
 
 #### Licenses
 

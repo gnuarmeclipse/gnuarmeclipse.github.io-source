@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: The GNU ARM Eclipse project has a new home and a new look
+title: The GNU ARM Eclipse project has a new home and a new look (GitHub)
 
 author: Liviu Ionescu
 
@@ -13,9 +13,11 @@ categories:
 
 ---
 
+The GNU ARM Eclipse project was migrated from [SourceForge](https://sourceforge.net/projects/gnuarmeclipse/) to [GitHub](https://github.com/gnuarmeclipse).
+
 ## Migration to GitHub
 
-The GNU ARM Eclipse project was migrated from [SourceForge](https://sourceforge.net/projects/gnuarmeclipse/) to [GitHub](https://github.com/gnuarmeclipse). There are many reasons behind this decision (GitHub looks definitely cool!), but the main one is probably to reduce dependencies on custom DNS domains, like `livius.net`, which might not be available on long term.
+There are many reasons behind this decision (GitHub looks definitely cool!), but the main one is probably to reduce dependencies on custom DNS domains, like `livius.net`, which might not be available on long term.
 
 ![GNU ARM Eclipse GitHub Home]({{ site.baseurl }}/images/2015/github-gae-header.png)
 

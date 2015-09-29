@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: The GNU ARM Eclipse Plug-in project has a new look
+title: The GNU ARM Eclipse Plug-in project has a new look (WordPress)
 
 author: Liviu Ionescu
 

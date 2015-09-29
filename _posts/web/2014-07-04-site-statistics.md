@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: WordPress statistics
+title: WordPress statistics, June 2014
 
 author: Liviu Ionescu
 
