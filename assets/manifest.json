@@ -1,0 +1,13 @@
+---
+---
+{
+ "name": "App",
+ "icons": [
+  {
+   "src": {{ "/android-icon-192x192.png" | prepend: site.baseurl }},
+   "sizes": "192x192",
+   "type": "image\/png",
+   "density": "4.0"
+  }
+ ]
+}

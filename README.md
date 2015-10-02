@@ -26,13 +26,13 @@ To be able to run the Jekyll build process, the `ruby` interpreter and the `gem`
 	...
 	$ jekyll --version
 	jekyll 2.5.3
-	
+
 
 In addition, the `jekyll-sitemap` specific gem is required:
 
 	$ sudo gem install jekyll-sitemap
 	... jekyll-sitemap-0.8.1
- 
+
 
 ## Clone Git
 
@@ -47,7 +47,7 @@ The current development cycle is edit-save-build-view.
 The build can be performed automatically by Jekyll when started in server mode.
 
 	cd gnuarmeclipse.github.io-source.git
-	jekyll server
+	jekyll serve --baseurl "" --trace
 
 To view the result, point the browser to `localhost:4000`.
 
@@ -63,19 +63,11 @@ To publish, just commit this Git and the new site will be automatically updated.
 
 ### Posts
 
-For grouping purposes, posts were stored in dedicated folders:
-
-* plugins/_posts/releases/
-* qemu/_posts/releases/
-* openocd/_posts/releases/
-* windows-build-tools/_posts/releases/
-* _posts/
-
-Although I could not find the behaviour documented, it seems the parent folder names are used as default categories.
+All blog posts are in the `_posts` folder, with specific pages in `qemu`, `openocd` and `windows-build-tools`.
 
 ### Pages
 
-Most of the web pages are in the `site` folder, with specific pages in `qemu`, `openocd` and `windows-build-tools`.
+All web pages are in the `pages` folder, with specific pages in `qemu`, `openocd` and `windows-build-tools`.
 
 ## 'last\_modified\_at:'
 
@@ -83,6 +75,4 @@ To maintain sitelink.xml usefulness, while maintaining pages and posts, it is ne
 
 ## Timezone
 
-As per `_config.yml`, the default timezone is Europe/Bucharest. For other timezones, set it explicitly as offset (+0300)
-
-
+As per `_config.yml`, the default timezone is UTC. For other timezones, set it explicitly as offset (+03:00)
