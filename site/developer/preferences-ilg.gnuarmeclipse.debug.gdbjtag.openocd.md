@@ -4,7 +4,7 @@ permalink: /developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.openocd/
 title: ilg.gnuarmeclipse.debug.gdbjtag.openocd - persistent values
 author: Liviu Ionescu
 
-date: 2015-09-10 21:03:00
+date: 2015-09-10 21:03:00 +03:00
 
 ---
 

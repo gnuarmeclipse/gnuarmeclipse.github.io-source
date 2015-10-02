@@ -4,7 +4,7 @@ permalink: /finance/sponsorship/
 title: Sponsorship & donations
 author: Liviu Ionescu
 
-date: 2015-09-09 13:09:00
+date: 2015-09-09 13:09:00 +03:00
 
 ---
 

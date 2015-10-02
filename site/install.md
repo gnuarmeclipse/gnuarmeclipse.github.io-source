@@ -4,7 +4,7 @@ permalink: /install/
 title: How to install GNU ARM Eclipse?
 author: Liviu Ionescu
 
-date: 2015-09-16 20:56:00
+date: 2015-09-16 20:56:00 +03:00
 
 ---
 

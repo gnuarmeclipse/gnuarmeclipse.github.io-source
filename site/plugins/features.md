@@ -4,7 +4,7 @@ permalink: /plugins/features/
 title: GNU ARM Eclipse Plug-ins Features
 author: Liviu Ionescu
 
-date: 2015-09-10 19:59:00
+date: 2015-09-10 19:59:00 +03:00
 
 ---
 
@@ -67,7 +67,7 @@ The build plug-in supports most existing toolchains currently available for both
 * **[Linaro][3] AArch64 Linux GNU** (aarch64-linux-gnu-*)
 * **[Linaro][3] AArch64 big-endian Linux GNU** (aarch64_be-linux-gnu-*)
 
-![The list of supported toolchains]({{ site.baseurl }}/images/2015/wizard-toolchains.png)
+![The list of supported toolchains]({{ site.baseurl }}/assets/images/2015/wizard-toolchains.png)
 
 ## Extra build steps
 
@@ -75,7 +75,7 @@ In addition to building the ELF file, the build plug-in can also create a binary
 
 Since resources are usually limited, the plug-in can also display the program size, and create a listing.
 
-![An example of how secondary targets are generated]({{ site.baseurl }}/images/2015/console-build-secondary.png)
+![An example of how secondary targets are generated]({{ site.baseurl }}/assets/images/2015/console-build-secondary.png)
 
 ## Discovery Options & Indexing
 
@@ -85,7 +85,7 @@ To understand **Discovery Options**, you need to understand what **Indexing** 
 
 This feature also provides a quick check if you configured properly your environment: after creating a new project, you should see the special folder **Includes** in the root of your project, containing the paths of the system include files used by your compiler. If you don't see this, you probably misconfigured the toolchain path.
 
-![Example of automatically detected include paths]({{ site.baseurl }}/images/2015/project-explorer-includes.png)
+![Example of automatically detected include paths]({{ site.baseurl }}/assets/images/2015/project-explorer-includes.png)
 
 ## Simplified multiple tools configurations
 
@@ -93,13 +93,13 @@ In addition to being tedious, setting options for each tool (C compiler, C++ com
 
 To minimise the risk of such errors, and to make the plug-in easier to use, unlike in most other CDT compiler settings plug-ins, special configuration entries were defined at toolchain level instead of specific tools. Options enabled at this level are used for all tools, without exception.
 
-![Example of common options used for all tools]({{ site.baseurl }}/images/2015/properties-c-settings-tool-optimization.png)
+![Example of common options used for all tools]({{ site.baseurl }}/assets/images/2015/properties-c-settings-tool-optimization.png)
 
 ## Fully configurable toolchains
 
 Toolchain definitions include most of the configurable details, not only the prefix and the path, allowing the use of almost any GNU compatible toolchain.
 
-![All toolchain details can be configured]({{ site.baseurl }}/images/2015/properties-c-settings-toolchains.png)
+![All toolchain details can be configured]({{ site.baseurl }}/assets/images/2015/properties-c-settings-toolchains.png)
 
 ## Advanced toolchain path management
 
@@ -119,7 +119,7 @@ For beginners, who need initial help to put all details together for their first
 
 The **Hello ****World **ARM Cortex-M3 C Project template was destined exactly for such cases; please see the [Tutorial: Create a test project][6] for more details.
 
-![The Cortex-M3 template project]({{ site.baseurl }}/images/2015/NewCM3ProjectResult.png)
+![The Cortex-M3 template project]({{ site.baseurl }}/assets/images/2015/NewCM3ProjectResult.png)
 
 Even more, specific templates are available for the STM families of processors **STM32F[01234]x**, and for some Freescale **KLxx** processors. They create the classical application that blinks a LED, and, specific for the Debug configuration, prints a string on the tracing (SWV or semi-hosting) output.
 
@@ -132,7 +132,7 @@ There are many debugging techniques and tools, but we recommend two solutions:
 * the [SEGGER J-Link](http://www.segger.com/jlink_base.html) probe with its integrated GDB server, via [the J-Link plug-in][7]
 * the [OpenOCD](http://openocd.sourceforge.net) GDB server for many other JTAG probes.
 
-  ![The J-Link Debugger tab]({{ site.baseurl }}/images/2015/launch-jlink-debugger-tab.png)
+  ![The J-Link Debugger tab]({{ site.baseurl }}/assets/images/2015/launch-jlink-debugger-tab.png)
 
 We also recommend the use of specific ARM debugging support, like tracing via the SWO output, with a second choice for semihosting output (both are supported by the J-Link plug-in).
 
@@ -144,11 +144,11 @@ Packages are a convenient way to distribute software components, hardware descri
 
 There are many packages available, mostly maintained by Keil, and in order to conveniently manage them a dedicated perspective was created, with filtering and outline capabilities.
 
-![The Packs perspective]({{ site.baseurl }}/images/2015/perspective-packs.png)
+![The Packs perspective]({{ site.baseurl }}/assets/images/2015/perspective-packs.png)
 
 Among other things, the packages metadata include a complete list of devices, grouped by vendor, family, sub-family, and a list of development boards. These extra data allow to easily associate additional properties (like device name) to projects, and later use these definition to automate other configurations, like debugging sessions.
 
-![Assigning a device and board to the project]({{ site.baseurl }}/images/2015/properties-c-settings-device-tab.png)
+![Assigning a device and board to the project]({{ site.baseurl }}/assets/images/2015/properties-c-settings-device-tab.png)
 
 ## Peripherals registers view in debug
 
@@ -156,7 +156,7 @@ One of the great features of CMSIS Packs is the availability of hardware descri
 
 These descriptions can be used to assist the debugger in examining and modifying memory mapped peripheral registers.
 
-![The peripheral registers view]({{ site.baseurl }}/images/2015/debug-view-peripheral-registers.png)
+![The peripheral registers view]({{ site.baseurl }}/assets/images/2015/debug-view-peripheral-registers.png)
 
 ## Device and board documentation files
 
@@ -166,7 +166,7 @@ The list of documentation files is shown in a separate view, located on the righ
 
 To open the individual documents, double click their names and specific viewers will open, generally outside Eclipse.
 
-![The documentation view]({{ site.baseurl }}/images/2015/view-documents.png)
+![The documentation view]({{ site.baseurl }}/assets/images/2015/view-documents.png)
 
  [1]: http://launchpad.net/gcc-arm-embedded
  [2]: http://launchpad.net/gcc-linaro

@@ -4,7 +4,7 @@ permalink: /developer/build-procedure/
 title: How to build the plug-ins?
 author: Liviu Ionescu
 
-date: 2015-09-10 20:22:00
+date: 2015-09-10 20:22:00 +03:00
 
 ---
 

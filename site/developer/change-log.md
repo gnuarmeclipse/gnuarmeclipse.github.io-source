@@ -4,7 +4,7 @@ permalink: /developer/change-log/
 title: The 2015 GNU ARM Eclipse Plug-ins Change Log
 author: Liviu Ionescu
 
-date: 2015-09-10 20:24:00
+date: 2015-09-10 20:24:00 +03:00
 
 ---
 

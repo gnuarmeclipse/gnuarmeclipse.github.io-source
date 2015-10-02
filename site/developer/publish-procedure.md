@@ -4,7 +4,7 @@ permalink: /developer/publish-procedure/
 title: How to publish the plug-ins?
 author: Liviu Ionescu
 
-date: 2015-09-10 21:07:00
+date: 2015-09-10 21:07:00 +03:00
 
 ---
 

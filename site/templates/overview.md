@@ -4,7 +4,7 @@ permalink: /templates/
 title: Templates
 author: Liviu Ionescu
 
-date: 2015-09-11 22:35:00
+date: 2015-09-11 22:35:00 +03:00
 
 ---
 
@@ -33,7 +33,7 @@ The template plug-ins are installed using the same procedure as the other plug-i
 * extend the **GNU ARM C/C++ Cross Development Tools**
 * be sure the desired **... Project Template** are selected
 
-![Install the template plug-ins]({{ site.baseurl }}/images/2014/02/InstallTemplatePlugins.png)
+![Install the template plug-ins]({{ site.baseurl }}/assets/images/2014/02/InstallTemplatePlugins.png)
 
 ## C vs C++
 
@@ -63,7 +63,7 @@ Once all details are understood, a real life application does not really need th
 
 Most generated projects share a common folders structure, similar to the following:
 
-![Project structure]({{ site.baseurl }}/images/2014/02/F4Project.png)
+![Project structure]({{ site.baseurl }}/assets/images/2014/02/F4Project.png)
 
 
 ### Application code

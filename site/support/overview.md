@@ -4,7 +4,7 @@ permalink: /support/
 title: How to get support?
 author: Liviu Ionescu
 
-date: 2015-09-12 13:43:00
+date: 2015-09-12 13:43:00 +03:00
 
 ---
 
@@ -20,7 +20,7 @@ In case you encounter problems while using the plug-ins, please consider the fol
 
 If you still could not find a solution, follow the recommendations in the GitHub Issues [tracker](https://github.com/gnuarmeclipse/plug-ins/issues/1) and add a new ticket.
 
-![GNU ARM Eclipse Issues]({{ site.baseurl }}/images/2015/github-gae-issues-welcome-new.png)
+![GNU ARM Eclipse Issues]({{ site.baseurl }}/assets/images/2015/github-gae-issues-welcome-new.png)
 
 The issues can be labeled as:
 
@@ -29,7 +29,7 @@ The issues can be labeled as:
 * **help wanted**
 * **question** - use them for support requests
 
-![Issue Labels]({{ site.baseurl }}/images/2015/github-gae-issues-welcome-labels.png)
+![Issue Labels]({{ site.baseurl }}/assets/images/2015/github-gae-issues-welcome-labels.png)
 
 ### Bugs
 

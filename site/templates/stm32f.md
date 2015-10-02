@@ -4,7 +4,7 @@ permalink: /templates/stm32f/
 title: STM32Fxx templates
 author: Liviu Ionescu
 
-date: 2015-09-11 22:27:00
+date: 2015-09-11 22:27:00 +03:00
 
 ---
 
@@ -19,33 +19,33 @@ The template can create both C and C++ projects. To create a new C++ project:
 * in the *Eclipse* menu, go to **File** → **New → C++ Project**
 * in the *Executables* group, select the **STM32F4xx C/C++ Project**
 
-![New STM32F4 project]({{ site.baseurl }}/images/2014/04/NewF4Project.png)
+![New STM32F4 project]({{ site.baseurl }}/assets/images/2014/04/NewF4Project.png)
 
 Select the MCU and various project settings:
 
-![Define MCU and project settings]({{ site.baseurl }}/images/2014/04/F4Target.png)
+![Define MCU and project settings]({{ site.baseurl }}/assets/images/2014/04/F4Target.png)
 
 
 Define the names of the destination folders:
 
-![Define destination folder names]({{ site.baseurl }}/images/2014/04/F4Folders.png)
+![Define destination folder names]({{ site.baseurl }}/assets/images/2014/04/F4Folders.png)
 
 
 Accept the default configuration names:
 
-![Build configurations]({{ site.baseurl }}/images/2014/04/Configurations.png)
+![Build configurations]({{ site.baseurl }}/assets/images/2014/04/Configurations.png)
 
 
 Define the toolchain name and path:
 
-![Toolchain path]({{ site.baseurl }}/images/2014/04/Toolchain.png)
+![Toolchain path]({{ site.baseurl }}/assets/images/2014/04/Toolchain.png)
 
 
 Note: DO NOT SKIP this step, it is mandatory to have a correct toolchain path defined in order for the build to complete correctly.
 
 The generated project has the following structure:
 
-![Project structure]({{ site.baseurl }}/images/2014/02/F4Project.png)
+![Project structure]({{ site.baseurl }}/assets/images/2014/02/F4Project.png)
 
 ### Associate a device to the project
 
@@ -57,7 +57,7 @@ For more details, please visit the [separate page]({{ site.baseurl }}/eclipse/p
 
 
 
-![Assign a device to the project]({{ site.baseurl }}/images/2013/10/Devices.png)
+![Assign a device to the project]({{ site.baseurl }}/assets/images/2013/10/Devices.png)
 
 
 ## Build

@@ -3,7 +3,7 @@ layout: page
 title: How to install the Windows Build Tools?
 permalink: /windows-build-tools/install/
 
-date: 2015-09-04 12:00:00
+date: 2015-09-04 12:00:00 +03:00
 
 ---
 
@@ -43,11 +43,11 @@ Otherwise, if you use other toolchains, like the recommended [**GNU Tools for 
 
 Run the setup with the default settings:
 
-![Windows Build Tools Setup]({{ site.baseurl }}/images/2015/win-build-tools-setup.png)
+![Windows Build Tools Setup]({{ site.baseurl }}/assets/images/2015/win-build-tools-setup.png)
 
 By default this will install the programs in the `C:\Program Files\GNU ARM Eclipse\Build Tools` folder:
 
-![Default install destination]({{ site.baseurl }}/images/2015/win-build-tools-setup-destination.png)
+![Default install destination]({{ site.baseurl }}/assets/images/2015/win-build-tools-setup-destination.png)
 
 ## Check version
 
@@ -65,7 +65,7 @@ Check if the tool is functional; go to the folder where you installed the tools
 
 If you installed the build tools as explained above, the setup already added a key to the Windows Registry and the plug-in can read it and automatically configure the PATH.
 
-![Global Tools Path]({{ site.baseurl }}/images/2015/win-preferences-c-build-global-tools-path.png)
+![Global Tools Path]({{ site.baseurl }}/assets/images/2015/win-preferences-c-build-global-tools-path.png)
 
 The above definition will make the build tools accessible to all projects in all workspaces.
 
@@ -73,7 +73,7 @@ If needed, you can define different paths per workspace (**Workspace Tools Paths
 
 To check if the paths definitions are effective, go to the project properties page and identify the **PATH** variable. Be sure the **Origin** column reads **BUILD SYSTEM**; if you manually edit it, the Origin will change and will read USER, but this is totally not recommended, since manually editing the path disables further automated updates of the path.
 
-![Environment PATH]({{ site.baseurl }}/images/2015/win-properties-c-environment.png)
+![Environment PATH]({{ site.baseurl }}/assets/images/2015/win-properties-c-environment.png)
 
 ## DO NOT update the user or system path!
 

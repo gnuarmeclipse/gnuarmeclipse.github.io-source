@@ -4,7 +4,7 @@ permalink: /developer/j-link-stm32-boards/
 title: Using J-Link with the STM32 boards
 author: Liviu Ionescu
 
-date: 2015-09-10 18:31:00
+date: 2015-09-10 18:31:00 +03:00
 
 ---
 

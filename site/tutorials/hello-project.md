@@ -4,7 +4,7 @@ permalink: /tutorials/hello-arm/
 title: 'Tutorial: Create a Hello ARM test project'
 author: Liviu Ionescu
 
-date: 2015-09-11 22:43:00
+date: 2015-09-11 22:43:00 +03:00
 
 ---
 
@@ -25,7 +25,7 @@ It is also recommended to [set the workspace preferences][2].
 
 To create a new project, go to *Eclipse* menu, **File** → **New** (or the button in the upper left corner), and select the **C Project**:
 
-![NewCProject]({{ site.baseurl }}/images/2013/10/NewCProject.png)
+![NewCProject]({{ site.baseurl }}/assets/images/2013/10/NewCProject.png)
 
 In the **C Project** window:
 
@@ -34,7 +34,7 @@ In the **C Project** window:
 * in the *Toolchains:* section select **Cross ARM GCC**
 * click the **Next >** button
 
-![]({{ site.baseurl }}/images/2013/10/NewCHelloProject1.png)
+![]({{ site.baseurl }}/assets/images/2013/10/NewCHelloProject1.png)
 
 In the ** Target processor settings** window be sure to:
 
@@ -44,15 +44,15 @@ In the ** Target processor settings** window be sure to:
 * for a more complete example, change the *Use system calls:* fields to **Semihosting (POSIX system calls via host)**
 * click the **Next >** button.
 
-![]({{ site.baseurl }}/images/2013/10/HelloProcessorSettings.png)
+![]({{ site.baseurl }}/assets/images/2013/10/HelloProcessorSettings.png)
 
 In the **Folders** page leave the suggested folders unchanged and click the **Next >** button.
 
-![Define the project folders]({{ site.baseurl }}/images/2013/10/HelloFolderSettings.png)
+![Define the project folders]({{ site.baseurl }}/assets/images/2013/10/HelloFolderSettings.png)
 
 In the **Select Configurations** page leave the suggested Debug/Release configurations checked and click the **Next >** button.
 
-![]({{ site.baseurl }}/images/2013/10/HelloConfigurations.png)
+![]({{ site.baseurl }}/assets/images/2013/10/HelloConfigurations.png)
 
 In the **Cross GNU ARM Toolchain** window:
 
@@ -60,17 +60,17 @@ In the **Cross GNU ARM Toolchain** window:
 * browse for the **bin** folder within the toolchain folder
 * click the **Finish** button
 
-![]({{ site.baseurl }}/images/2013/10/HelloToolchain.png)
+![]({{ site.baseurl }}/assets/images/2013/10/HelloToolchain.png)
 
 Note 1: when selecting the path, be sure you select the **/bin** folder where the programs with long, prefixed names are stored, and not the inner /bin folder where the short name programs may be available.
 
 Note 2: DO NOT SKIP this step, it is mandatory to have a correct toolchain path defined in order for the build to complete correctly.
 
-![]({{ site.baseurl }}/images/2013/10/HelloToolchainPath.png)
+![]({{ site.baseurl }}/assets/images/2013/10/HelloToolchainPath.png)
 
 The result of the wizard is a simple project, with a **main()** function printing a greeting on the standard output.
 
-![]({{ site.baseurl }}/images/2013/10/HelloProject.png)
+![]({{ site.baseurl }}/assets/images/2013/10/HelloProject.png)
 
 ## Build the project
 
@@ -79,15 +79,15 @@ To start the build:
 * select the new project in the *Project Explorer* section
 * click the **hammer** icon
 
-![]({{ site.baseurl }}/images/2013/10/HammerBuild1.png)
+![]({{ site.baseurl }}/assets/images/2013/10/HammerBuild1.png)
 
 The build process should leave in the *Console* window a listing like this:
 
-![]({{ site.baseurl }}/images/2013/10/HelloProjectBuildConsole.png)
+![]({{ site.baseurl }}/assets/images/2013/10/HelloProjectBuildConsole.png)
 
 The files created by the build process are left in a folder named by the name of the configuration, for example *Debug* or *Release*.
 
-![]({{ site.baseurl }}/images/2013/10/HelloBuildResult.png)
+![]({{ site.baseurl }}/assets/images/2013/10/HelloBuildResult.png)
 
 As seen above, the *Debug* folder is populated with
 
@@ -117,7 +117,7 @@ The usual sources for build failures are:
 
 * a wrong or missing toolchain path; go to the project properties, C/C++ Build → Setting → the Toolchains tab and define the correct path;
 
-![Global Tools Paths]({{ site.baseurl }}/images/2015/02/GlobalToolsPaths.png)
+![Global Tools Paths]({{ site.baseurl }}/assets/images/2015/02/GlobalToolsPaths.png)
 
 * missing build tools (make & rm) on Windows; install the [build tools][7].
 

@@ -4,7 +4,7 @@ permalink: /plugins/download/
 title: Downloads
 author: Liviu Ionescu
 
-date: 2015-09-11 20:07:00
+date: 2015-09-11 20:07:00 +03:00
 
 ---
 
@@ -34,7 +34,7 @@ If, for any reasons, you need to revert to a specific version, or the Eclipse me
 
 All versions of the plug-ins are available via the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page. For details how to reach it, see the [Downloads]({{ site.baseurl }}/downloads/) page.
 
-![Plug-ins Releases]({{ site.baseurl }}/images/2015/github-gae-plugins-releases.png)
+![Plug-ins Releases]({{ site.baseurl }}/assets/images/2015/github-gae-plugins-releases.png)
 
 Just navigate to the [Latest release](https://github.com/gnuarmeclipse/plug-ins/releases/latest) page (or the desired version) and download the attached archive, it should be a **zip** file with a long name like:
 

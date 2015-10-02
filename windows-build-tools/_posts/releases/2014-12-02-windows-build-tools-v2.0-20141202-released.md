@@ -23,7 +23,7 @@ For your convenience, the [Windows Build Tools]({{ site.baseurl }}/windows-build
 
 [Binary files »]({{ page.download_url }})
 
-![Build Tools setup]({{ site.baseurl }}/images/2015/win-build-tools-setup.png)
+![Build Tools setup]({{ site.baseurl }}/assets/images/2015/win-build-tools-setup.png)
 
 Please note that the setup does not install any components outside the selected destination folder, and also includes an uninstall program, to completely remove the tools from the system.
 

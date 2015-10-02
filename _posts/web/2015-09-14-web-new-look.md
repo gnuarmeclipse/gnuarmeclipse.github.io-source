@@ -5,7 +5,7 @@ title: The GNU ARM Eclipse project has a new home and a new look (GitHub)
 
 author: Liviu Ionescu
 
-date: 2015-09-14 13:41:00
+date: 2015-09-14 13:41:00 +03:00
 
 categories:
   - news
@@ -19,7 +19,7 @@ The GNU ARM Eclipse project was migrated from [SourceForge](https://sourceforge.
 
 There are many reasons behind this decision (GitHub looks definitely cool!), but the main one is probably to reduce dependencies on custom DNS domains, like `livius.net`, which might not be available on long term.
 
-![GNU ARM Eclipse GitHub Home]({{ site.baseurl }}/images/2015/github-gae-header.png)
+![GNU ARM Eclipse GitHub Home]({{ site.baseurl }}/assets/images/2015/github-gae-header.png)
 
 ### Repositories
 
@@ -33,7 +33,7 @@ The current project repositories are:
 * [qemu](https://github.com/gnuarmeclipse/qemu)
 * [build-scripts](https://github.com/gnuarmeclipse/build-scripts)
 
-![GNU ARM Eclipse GitHub Projects]({{ site.baseurl }}/images/2015/github-gae-projects.png)
+![GNU ARM Eclipse GitHub Projects]({{ site.baseurl }}/assets/images/2015/github-gae-projects.png)
 
 ### Binary files as Releases
 
@@ -45,7 +45,7 @@ Apart from the Eclipse update sites, all other binary files will be published as
 
 The archive of past releases was also migrated from SourceForge to GitHub.
 
-![GNU ARM Eclipse GitHub Releases]({{ site.baseurl }}/images/2015/github-gae-releases.png)
+![GNU ARM Eclipse GitHub Releases]({{ site.baseurl }}/assets/images/2015/github-gae-releases.png)
 
 ### Issues trackers
 
@@ -61,7 +61,7 @@ Currently the only GitHub equivalent is to **Watch** projects, which will enable
 
 For those interested in receiving notifications, the recommendation is to subscribe to GitHub, by clicking the **Watch** button and selecting **Watching**).
 
-![GNU ARM Eclipse GitHub Releases]({{ site.baseurl }}/images/2015/github-gae-releases.png)
+![GNU ARM Eclipse GitHub Releases]({{ site.baseurl }}/assets/images/2015/github-gae-releases.png)
 
 Be sure you subscribe to **Watch** the **gnuarmeclipse/gnuarmeclipse.github.io** project to receive notifications for Web posts.
 
@@ -71,7 +71,7 @@ Finally, the most delicate issue, was to migrate the old documentation sites fro
 
 Since GitHub solution for providing documentation sites is [GitHub Pages](https://pages.github.com), and this service makes the sites available in the `github.io` domain, it was considered acceptable to migrate the WordPress and MediaWiki sites to GitHub Pages.
 
-![GNU ARM Eclipse Home Page]({{ site.baseurl }}/images/2015/github-io-gae-home.png)
+![GNU ARM Eclipse Home Page]({{ site.baseurl }}/assets/images/2015/github-io-gae-home.png)
 
 GitHub Pages uses [Jekyll](http://jekyllrb.com) to generate static web sites, and the most convenient input format for Jekyll is [markdown](http://daringfireball.net/projects/markdown/syntax), so the migration involved conversion from WordPress internal representation, to markdown. Given the differences, this conversion was not easy, and was done partly with scripts, partly manually. Similarly for MediaWiki, although the conversion from the MediaWiki format to markdown was easier.
 

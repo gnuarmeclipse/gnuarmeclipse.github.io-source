@@ -3,7 +3,7 @@ layout: page
 title: The GNU ARM Eclipse QEMU
 permalink: /qemu/
 
-date: 2015-09-07 21:31:00
+date: 2015-09-07 21:31:00 +03:00
 
 ---
 
@@ -144,7 +144,7 @@ All provide a lot of information about QEMU, but do not go into much detail rela
 
 All **GNU ARM Eclipse QEMU** versions are available from the GitHub [QEMU Releases](https://github.com/gnuarmeclipse/qemu/releases) page. Identify the **Latest release** entry and carefully read the release page.
 
-![The QEMU Download section]({{ site.baseurl }}/images/2015/github-gae-qemu-releases.png)
+![The QEMU Download section]({{ site.baseurl }}/assets/images/2015/github-gae-qemu-releases.png)
 
 ## Install
 

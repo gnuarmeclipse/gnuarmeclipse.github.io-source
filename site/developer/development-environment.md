@@ -4,7 +4,7 @@ permalink: /developer/development-environment/
 title: The Build environment
 author: Liviu Ionescu
 
-date: 2015-09-10 18:32:00
+date: 2015-09-10 18:32:00 +03:00
 
 ---
 

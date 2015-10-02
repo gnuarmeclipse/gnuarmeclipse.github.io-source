@@ -35,7 +35,7 @@ For those interested in technical details, if **make** does not find a **/bin/sh
 
 For user convenience, an usual Windows setup wizard is provided.
 
-![Build Tools setup]({{ site.baseurl }}/images/2015/win-build-tools-setup.png)
+![Build Tools setup]({{ site.baseurl }}/assets/images/2015/win-build-tools-setup.png)
 
 After running the setup, the tools are installed in the `C:\Program Files\GNU ARM Eclipse\Build Tools` folder (for 32-bits machines), or in the `C:\Program Files (x86)\GNU ARM Eclipse\Build Tools` folder (for 64-bits machines).
 

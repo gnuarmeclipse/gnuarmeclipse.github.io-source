@@ -4,7 +4,7 @@ permalink: /debug/qemu/
 title: The QEMU debugging Eclipse plug-in
 author: Liviu Ionescu
 
-date: 2015-09-11 22:15:00
+date: 2015-09-11 22:15:00 +03:00
 
 ---
 
@@ -39,7 +39,7 @@ Before starting work with QEMU, it is required to define the path to the QEMU 
 
 * in the *Eclipse* menu, go to **Preferences** → **Run/Debug** → **QEMU**
 
-  ![The QEMU preferences page]({{ site.baseurl }}/images/2015/04/QEMU_Preferences.png)
+  ![The QEMU preferences page]({{ site.baseurl }}/assets/images/2015/04/QEMU_Preferences.png)
 
 * click the **Restore Defaults** button
 * the plug-in will suggest the default values computed when Eclipse started; if a new version of GNU ARM Eclipse QEMU was installed while Eclipse was active, restart Eclipse and click again the Restore Defaults button
@@ -53,7 +53,7 @@ By default, the GDB server is defined as `${qemu_path}/${qemu_executable}`; the
 
 Although not absolutely mandatory, it is recommended to associate a device to the project, so that creating the debugger launch configuration will automatically fill-in the device name.
 
-![Assigning a device to the project]({{ site.baseurl }}/images/2013/10/Devices.png)
+![Assigning a device to the project]({{ site.baseurl }}/assets/images/2013/10/Devices.png)
 
 Follow the steps in the separate page [Associate a device to the project]({{ site.baseurl }}/eclipse/project/assign-device/) and return to this page to continue.
 
@@ -66,20 +66,20 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 * expand either the Debug or the Release folder and select the executable you want to debug
 * in the *Eclipse* menu, go to **Run** → **Debug Configurations…** or select the down arrow at the right of the bug icon.
 
-  ![The build result]({{ site.baseurl }}/images/2013/10/HelloBuildResult.png)
+  ![The build result]({{ site.baseurl }}/assets/images/2013/10/HelloBuildResult.png)
 
 * double click the **GDB QEMU Debugging** group, or select it and click the top leftmost **New** button.
 
-  ![Create a new QEMU launch configuration]({{ site.baseurl }}/images/2015/04/QEMU_Debugging.png)
+  ![Create a new QEMU launch configuration]({{ site.baseurl }}/assets/images/2015/04/QEMU_Debugging.png)
 
 * a multi-tab page will be displayed;
 * if you started this procedure with the project selected and the project was previously built, the first tab, named **Main**, should be already filled in with the project name (for example hello) and the application file name and location (for example `Debug/hello.elf`).
 
-  ![The Main tab]({{ site.baseurl }}/images/2015/04/HelloMainTab.png)
+  ![The Main tab]({{ site.baseurl }}/assets/images/2015/04/HelloMainTab.png)
 
 * click the second tab, named **Debugger**, which contains the configuration options required to start QEMU as a GDB server and the GDB client.
 
-  ![The Debugger tab at first run]({{ site.baseurl }}/images/2015/04/HelloDebuggerTab.png)
+  ![The Debugger tab at first run]({{ site.baseurl }}/assets/images/2015/04/HelloDebuggerTab.png)
 
 * at your first run it is recommended to leave the Board name: field as it is, with a question mark, for the emulator to display the list of supported boards.
 * although not mandatory, it is recommended to change the location where the launcher file is stored; for this,
@@ -88,13 +88,13 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
   * accept the current project name.
   * click the **Apply** button
 
-  ![Store the debug configuration in the project]({{ site.baseurl }}/images/2015/04/HelloCommonTab.png)      
+  ![Store the debug configuration in the project]({{ site.baseurl }}/assets/images/2015/04/HelloCommonTab.png)      
 
 * click the **Close** button.
 
 With the above settings, the debug configuration will be saved in the project, not in the workspace storage.
 
-![The debug launch configuration stored in the project folder]({{ site.baseurl }}/images/2015/04/LauncherInProject.png)
+![The debug launch configuration stored in the project folder]({{ site.baseurl }}/assets/images/2015/04/LauncherInProject.png)
 
 ## Start a debug session
 
@@ -107,11 +107,11 @@ With all the above steps completed properly, you can start the debug session:
 
 Alternatively, on subsequent runs, you can use the bug specific icon. By default this will start the previously used debug launch configuration; to start a different configuration, use the down arrow button:
 
-![The debugger down arrow selection]({{ site.baseurl }}/images/2015/04/DebugDownArrow.png)
+![The debugger down arrow selection]({{ site.baseurl }}/assets/images/2015/04/DebugDownArrow.png)
 
 If everything is ok, after a few seconds required to start QEMU, you should see something like this:
 
-![The list of supported boards]({{ site.baseurl }}/images/2015/04/QEMU_FirstRun.png)
+![The list of supported boards]({{ site.baseurl }}/assets/images/2015/04/QEMU_FirstRun.png)
 
 This happened because by default the *Board name:* field contains a question mark.
 
@@ -123,19 +123,19 @@ Further configure the debug configuration
 * in the *Board name:* field, enter **STM32-H103** (a popular Olimex STM32F103 board)
 * in the Command line: field, after hello, add `3 2 1`, as an example
 
-  ![The Debugger tab with the board name filled-in]({{ site.baseurl }}/images/2015/04/HelloDebuggerTabH103.png)
+  ![The Debugger tab with the board name filled-in]({{ site.baseurl }}/assets/images/2015/04/HelloDebuggerTabH103.png)
 
 * click the Debug button
 
 If everything is ok, after a few seconds required to start the server, to allow it to connect to the target, start the gdb client, download the application and start the debugging session, you should see something like this:
 
-![The first debug]({{ site.baseurl }}/images/2015/04/HelloFirstDebug.png)
+![The first debug]({{ site.baseurl }}/assets/images/2015/04/HelloFirstDebug.png)
 
 Be sure you enable the Remember my decision check box, otherwise Eclipse will ask this question each and every time you launch this debug configuration. Then click the **Yes** button.
 
 If everything is ok, after a few seconds required to start QEMUt, start the gdb client, download the application and start the debugging session, you should see something like this:
 
-![Breakpoint in main()]({{ site.baseurl }}/images/2015/04/BreakpointInMain.png)
+![Breakpoint in main()]({{ site.baseurl }}/assets/images/2015/04/BreakpointInMain.png)
 
 Since the first breakpoint was set in the **Debugger** tab to **main**, the execution stopped right at the beginning of the `main()` function.
 
@@ -162,17 +162,17 @@ Each debug process has a dedicated console, to display its standard output and 
 
 To see the console of any process, just select the process in the top left window. For example the QEMU console will initially look like this:
 
-![The QEMU console]({{ site.baseurl }}/images/2015/04/QEMU_Console.png)
+![The QEMU console]({{ site.baseurl }}/assets/images/2015/04/QEMU_Console.png)
 
 select again the main thread in the debugged application (in the upper left window) and click several times the Step Over button, until you reach the `timer_start()` function.
 
-![Hello single steps]({{ site.baseurl }}/images/2015/04/HelloSingleSteps.png)
+![Hello single steps]({{ site.baseurl }}/assets/images/2015/04/HelloSingleSteps.png)
 
 The QEMU console should display the program arguments, passed via semihosting, then exercise various output functions.
 
 Click the **Resume** button and execution will resume. Watch the console. After three iterations, execution will complete and QEMU will quit with exit code 0 (success).
 
-![Run the application to completion]({{ site.baseurl }}/images/2015/04/HelloFinalRun.png)
+![Run the application to completion]({{ site.baseurl }}/assets/images/2015/04/HelloFinalRun.png)
 
 You can experiment with the first argument, which controls the number of iterations in the main loop; edit it to 7 and rerun the application.
 

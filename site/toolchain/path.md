@@ -4,7 +4,7 @@ permalink: /toolchain/path/
 title: Toolchain path management
 author: Liviu Ionescu
 
-date: 2015-09-11 23:00:00
+date: 2015-09-11 23:00:00 +03:00
 
 ---
 
@@ -40,7 +40,7 @@ This mechanism can be both flexible and a source of nuisance. When only a single
 
 However, when multiple toolchains are installed, the use of any global setting is strongly discouraged, since it soon leads to serious problems generally due to messing headers and executables between different toolchains. In this case the only recommended solution is to define the toolchain path for each build configuration.
 
-![Toolchain path in project environment]({{ site.baseurl }}/images/2014/02/ProjectEnvironment.png)
+![Toolchain path in project environment]({{ site.baseurl }}/assets/images/2014/02/ProjectEnvironment.png)
 
 ## CDT Cross build plug-in
 
@@ -60,11 +60,11 @@ To achieve this, the GNU ARM Eclipse cross build plug-in provides a large select
 
 The default (and the recommended) setting, is to use the global toolchain path.
 
-![]({{ site.baseurl }}/images/2014/02/ToolchainsProperties.png)
+![]({{ site.baseurl }}/assets/images/2014/02/ToolchainsProperties.png)
 
 The displayed path is associated with the selected toolchain. To change the toolchain path use the hyperlinks; it is recommended to use the global page, but, if needed, the toolchain path can also be configured per workspace or even per project.
 
-![Global Tools Paths]({{ site.baseurl }}/images/2015/02/GlobalToolsPaths.png)
+![Global Tools Paths]({{ site.baseurl }}/assets/images/2015/02/GlobalToolsPaths.png)
 
 Using the global toolchain path does not store any data in the project configuration files, but in the Eclipse folders, so the project portability is not affected.
 
@@ -74,7 +74,7 @@ Using the global toolchain path does not store any data in the project configur
 
 Forgetting to set the toolchain path, or setting a wrong value, is easy to diagnose, since the Eclipse editor will be full of red markers to all definitions related to system headers, and, even more explictly, the build will fail:
 
-![Missing or wrong path]({{ site.baseurl }}/images/2014/02/NoToolchainPath.png)
+![Missing or wrong path]({{ site.baseurl }}/assets/images/2014/02/NoToolchainPath.png)
 
 If so, enter the project **C/C++ Settings**, the **Toolchains** tab, and add/correct the toolchain path (see above).
 
@@ -86,7 +86,7 @@ If you are not sure that the plug-in selected the desired toolchain, you can ins
 
 The page to setup this is the project **Properties** → **C/C++ Build** → **Settings** → **Build Steps**:
 
-![Pre-build step to display compiler version]({{ site.baseurl }}/images/2014/02/PreBuildVersion.png)
+![Pre-build step to display compiler version]({{ site.baseurl }}/assets/images/2014/02/PreBuildVersion.png)
 
 ### The installer already updated the system path
 

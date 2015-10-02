@@ -3,7 +3,7 @@ layout: page
 title: The GNU ARM Eclipse Windows Build Tools
 permalink: /windows-build-tools/
 
-date: 2015-09-04 17:02:00
+date: 2015-09-04 17:02:00 +03:00
 
 ---
 
@@ -55,7 +55,7 @@ As such, the use of Windows specific backslash path separators cannot be properl
 
 All **GNU ARM Eclipse Windows Build Tools** versions are available from the [GitHub Releases](https://github.com/gnuarmeclipse/windows-build-tools/releases) page. Identify the **Latest release** entry and carefully read the release page.
 
-![The Windows Build Tools Releases page]({{ site.baseurl }}/images/2015/github-gae-build-tools-releases.png)
+![The Windows Build Tools Releases page]({{ site.baseurl }}/assets/images/2015/github-gae-build-tools-releases.png)
 
 ## Install
 

@@ -4,7 +4,7 @@ permalink: /toolchain/install/
 title: How to install the ARM toolchain?
 author: Liviu Ionescu
 
-date: 2015-09-11 22:49:00
+date: 2015-09-11 22:49:00 +03:00
 
 ---
 
@@ -27,10 +27,10 @@ Due to portability reasons, the GNU ARM Eclipse plug-ins do not include any tool
 
 Versions from 4.7 up to 4.9-2014-q4 were tested and are known to work properly.
 
-![Launchpad]({{ site.baseurl }}/images/2014/01/Launchpad.png)
+![Launchpad]({{ site.baseurl }}/assets/images/2014/01/Launchpad.png)
 
 
-![The launchpad download page]({{ site.baseurl }}/images/2014/01/LaunchpadDownloads.png)
+![The launchpad download page]({{ site.baseurl }}/assets/images/2014/01/LaunchpadDownloads.png)
 
 ## Windows
 
@@ -40,7 +40,7 @@ The following steps can be performed on Windows:
 * locate the file (usually in the `...\Downloads\`  folder) and double click it to start the installer
 * authenticate with the administrative password, to allow the installer write in system locations
 
-  ![MS_admin]({{ site.baseurl }}/images/2014/01/MS_admin.png)
+  ![MS_admin]({{ site.baseurl }}/assets/images/2014/01/MS_admin.png)
 
 * select the desired language
 * confirm that you want to install the toolchain
@@ -49,12 +49,12 @@ The following steps can be performed on Windows:
 
   > Note: It is highly recommended to **do not to change the install path**, since the plug-in tries to automatically discover the toolchain in this default location.
 
-  ![The destination folder]({{ site.baseurl }}/images/2014/01/MS_destination_location.png)
+  ![The destination folder]({{ site.baseurl }}/assets/images/2014/01/MS_destination_location.png)
 
 * wait a few moments for the installer to copy files
 * in the final window be sure you **disable adding the toolchain path to the environment**
 
-  ![Disable adding toolchain path to environment]({{ site.baseurl }}/images/2014/01/MS_finish.png)
+  ![Disable adding toolchain path to environment]({{ site.baseurl }}/assets/images/2014/01/MS_finish.png)
 
 * read the `readme.txt` file
 * test if the compiler is functional

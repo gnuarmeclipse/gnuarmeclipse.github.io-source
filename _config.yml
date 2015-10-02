@@ -1,29 +1,50 @@
-# Site settings
+# Site settings.
+
+# Without a clear rule enforced, both title and name are used.
 title: GNU ARM Eclipse
+name: GNU ARM Eclipse
 description: A family of Eclipse CDT extensions and tools for GNU ARM development
 email: il@livius.net
 
 destination: _site
 exclude:
   - README.md
-  - site/sidebar.md
 
-baseurl: "" # the subpath of your site, e.g. /blog/
+# The subpath of your site, e.g. /blog (note the leading slash and the
+# absence of a trailing slash).
+baseurl: ""
 
 # Used in sitemap.xml
 url: "http://gnuarmeclipse.github.io" # the base hostname & protocol for your site
 
-timezone: Europe/Bucharest
+# This timezone is used to display post dates and last modified messages.
+timezone: UTC
+
 encoding: utf-8
 
 # Default permalink used for posts
-permalink: /:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+
+redcarpet:
+  extensions: []
+
+# Warning: paginator retired in Jekyll 3!
+# Make this larger, probably 5 is a good choice.
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# The number of links added to the 'Latest news' box.
+latest-news-pages: 5
 
 gems:
   - jekyll-last-modified-at
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-feed
   - jekyll-sitemap
 
 # Custom defs
@@ -34,3 +55,6 @@ sourceforge-project-url: http://sourceforge.net/projects/gnuarmeclipse
 
 google-analytics-id: UA-16767008-16
 google-site-verification: NT_y3tqI_8mrd8gYA_FDWHT2-tkJExOC6KBkSnyZx6c
+
+# Content copyright. Update it to your needs.
+copyright-message: "© 2015 Liviu Ionescu"

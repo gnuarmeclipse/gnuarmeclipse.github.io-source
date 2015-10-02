@@ -4,7 +4,7 @@ permalink: /debug/openocd/
 title: The OpenOCD debugging Eclipse plug-in
 author: Liviu Ionescu
 
-date: 2015-09-11 21:41:00
+date: 2015-09-11 21:41:00 +03:00
 
 ---
 
@@ -47,7 +47,7 @@ Before starting work with OpenOCD, it is recommended to define a global variable
 * similarly for the `openocd_executable` variable, update it to match the name of the OpenOCD executable (usually the default `openocd` will do it)
 * click the **OK** button
 
-![]({{ site.baseurl }}/images/2013/12/OpenOCDPath.png)
+![]({{ site.baseurl }}/assets/images/2013/12/OpenOCDPath.png)
 
 It is recommended to define the path to the OpenOCD relative to this variable in all your debug configurations, to have a single place to update the path when you want to use another version of the OpenOCD tools installed in a different location.
 
@@ -61,22 +61,22 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 * in the *Eclipse* menu, go to **Run** → **Debug Configurations…** or select the down arrow at the right of the bug icon
 * double click on the **GDB OpenOCD Debugging** group, or select it and click the top leftmost **New** button
 
-  ![OpenOCD debug configurations]({{ site.baseurl }}/images/2013/12/OpenOCDDebugConfigs.png)
+  ![OpenOCD debug configurations]({{ site.baseurl }}/assets/images/2013/12/OpenOCDDebugConfigs.png)
 
 * a multi-tab page will be displayed
 * if you started this procedure with the executable file selected, the first tab, named **Main**, should be already filled in with the project name (for example blink1) and the application file name and location (for example `Debug/blink1.elf`).
 
-  ![The OpenOCD Main tab]({{ site.baseurl }}/images/2013/12/OpenOCDMainTab.png)
+  ![The OpenOCD Main tab]({{ site.baseurl }}/assets/images/2013/12/OpenOCDMainTab.png)
 
 * click the second tab, named **Debugger**, which contains the configuration options required to start the GDB server and the GDB client
 
-  ![OpenOCD Debugger tab]({{ site.baseurl }}/images/2013/12/OpenOCDDebuggerTab.png)
+  ![OpenOCD Debugger tab]({{ site.baseurl }}/assets/images/2013/12/OpenOCDDebuggerTab.png)
 
 * the only field that usually requires attention is the OpenOCD **Config options:**, where you should add one or more configuration scripts
 * Note: due to a platform specific issue, on Windows it is not possible to disable the *Allocate console for OpenOCD*
 * click the third tab, named **Startup**, which contains some specific OpenOCD options used to configure the debug session; defaults are generally enough
 
-  ![The OpenOCD Startup tab]({{ site.baseurl }}/images/2013/12/OpenOCDStartupTab.png)
+  ![The OpenOCD Startup tab]({{ site.baseurl }}/assets/images/2013/12/OpenOCDStartupTab.png)
 
 * the order of sections/fields reflect the order commands are sent to GDB; for example the above generates:
 
@@ -94,11 +94,11 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 
 * select the **Common** tab, set the *Save as:* field to **Shared file** and accept the current project name
 
-  ![Shared debug configuration]({{ site.baseurl }}/images/2013/12/OpenOCDCommonTab.png)
+  ![Shared debug configuration]({{ site.baseurl }}/assets/images/2013/12/OpenOCDCommonTab.png)
 
 * this will arrange for the debug configuration to be saved in the project, not in the workspace storage
 
-  ![Debug configuration stored in the project]({{ site.baseurl }}/images/2013/12/OpenOCDSharedDebug.png)
+  ![Debug configuration stored in the project]({{ site.baseurl }}/assets/images/2013/12/OpenOCDSharedDebug.png)
 
 * click the **Apply** button
 * click the **Close** button
@@ -120,15 +120,15 @@ With all the above steps completed properly, you can start the debug session:
 
 Alternatively, for later sessions, you can use the bug specific icon. Do not press it directly, since it will not behave as expected; instead, click the down arrow button:
 
-![Down arrow debug]({{ site.baseurl }}/images/2013/12/OpenOCDStartDebugArrow.png)
+![Down arrow debug]({{ site.baseurl }}/assets/images/2013/12/OpenOCDStartDebugArrow.png)
 
 This will open a new window where you can select the desired debug configuration:
 
-![Select the debug configuration]({{ site.baseurl }}/images/2013/12/DebugSelection.png)
+![Select the debug configuration]({{ site.baseurl }}/assets/images/2013/12/DebugSelection.png)
 
 If everything is ok, after a few seconds required to start the server, to allow it to connect to the target, start the gdb client, download the application and start the debugging session, you should see something like this:
 
-![The new debug session, with two consoles]({{ site.baseurl }}/images/2013/12/OpenOCDConsoles.png)
+![The new debug session, with two consoles]({{ site.baseurl }}/assets/images/2013/12/OpenOCDConsoles.png)
 
 Since the first breakpoint was set in the **Debugger** tab to **main**, the execution stopped right at the beginning of the `main()` function, which in this case is a tracing `printf()`.
 
@@ -155,11 +155,11 @@ Each debug process has a dedicated console, to display its standard output and 
 
 To see the console of any process, just select the process in the top left window. For example the gdb client console might look like this:
 
-![The GDB client console]({{ site.baseurl }}/images/2013/12/OpenOCDclientConsole.png)
+![The GDB client console]({{ site.baseurl }}/assets/images/2013/12/OpenOCDclientConsole.png)
 
 The semihosting tracing messages are displayed in the same window as the OpenOCD output:
 
-![The tracing console]({{ site.baseurl }}/images/2013/12/OpenOCDTraceConsole.png)
+![The tracing console]({{ site.baseurl }}/assets/images/2013/12/OpenOCDTraceConsole.png)
 
 ## Show console when standard out/error change
 
@@ -167,7 +167,7 @@ This is the default Eclipse behaviour when multiple consoles are active, to auto
 
 This mode can be identified by the status of the buttons on the right side of the Debugging view.
 
-![Show console when standard out/err changes]({{ site.baseurl }}/images/2013/12/OpenOCDShowConsole.png)
+![Show console when standard out/err changes]({{ site.baseurl }}/assets/images/2013/12/OpenOCDShowConsole.png)
 
 To make the display stable on the desired console, disable both buttons. To switch between consoles, select them either in the top left Debug view, or using the right button, as shown above.
 
@@ -175,7 +175,7 @@ To make the display stable on the desired console, disable both buttons. To swit
 
 Apparently not a big deal, but quite useful for repeated debug sessions, **the Restart button** can be used at any time during a debug session, and the result is that a reset is dispatched to the target board via the JTAG/SWD interface and the debug session is restarted.
 
-![The restart button]({{ site.baseurl }}/images/2013/12/RestartButton.png)
+![The restart button]({{ site.baseurl }}/assets/images/2013/12/RestartButton.png)
 
 Note: Due to some bugs in Eclipse, the implementation of his simple button has encountered several problems. Depending on the version you are using, the first time you click this button you might get a message box informing that the button was not enabled. Ignore this message, close the message box and click the button again, this time it'll be effective.
 
@@ -191,7 +191,7 @@ Then you must manually start the OpenOCD process on the remote machine and only 
 
 The first failure to start a debug session is missing to enter the OpenOCD path. Without it, the launching sequence will complain *Cannot run program "/openocd"*.
 
-![Cannot run OpenOCD]({{ site.baseurl }}/images/2013/12/OpenOCDCannotRun.png)
+![Cannot run OpenOCD]({{ site.baseurl }}/assets/images/2013/12/OpenOCDCannotRun.png)
 
 Define the **openocd_path** as instructed above and the session should start properly.
 

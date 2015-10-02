@@ -4,7 +4,7 @@ permalink: /developer/preferences/ilg.gnuarmeclipse.managedbuild.cross/
 title: ilg.gnuarmeclipse.managedbuild.cross - persistent values & toolchain ids
 author: Liviu Ionescu
 
-date: 2015-09-10 21:06:00
+date: 2015-09-10 21:06:00 +03:00
 
 ---
 

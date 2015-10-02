@@ -4,7 +4,7 @@ permalink: /developer/build-prerequisites/
 title: Build prerequisites
 author: Liviu Ionescu
 
-date: 2015-09-10 20:20:00
+date: 2015-09-10 20:20:00 +03:00
 
 ---
 

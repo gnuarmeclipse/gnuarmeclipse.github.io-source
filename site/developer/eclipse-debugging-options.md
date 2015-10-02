@@ -4,7 +4,7 @@ permalink: /developer/eclipse/debugging-options/
 title: Eclipse debugging options
 author: Liviu Ionescu
 
-date: 2015-09-10 18:33:00
+date: 2015-09-10 18:33:00 +03:00
 
 ---
 

@@ -4,7 +4,7 @@ permalink: /support/sourceforge/
 title: Support
 author: Liviu Ionescu
 
-date: 2015-09-11 22:32:00
+date: 2015-09-11 22:32:00 +03:00
 
 ---
 
@@ -20,4 +20,4 @@ There were several types of tickets, stored in separate trackers:
 
 To view **all** tickets, click the **All Public** button:
 
-![SourceForge Bugs Tracker]({{ site.baseurl }}/images/2015/sourceforge-bugs-all-public.png)
+![SourceForge Bugs Tracker]({{ site.baseurl }}/assets/images/2015/sourceforge-bugs-all-public.png)

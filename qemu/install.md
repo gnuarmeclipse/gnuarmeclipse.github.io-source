@@ -3,7 +3,7 @@ layout: page
 title: How to install the QEMU binaries?
 permalink: /qemu/install/
 
-date: 2015-09-04 17:03:00
+date: 2015-09-04 17:03:00 +03:00
 
 ---
 
@@ -15,7 +15,7 @@ The **GNU ARM Eclipse QEMU** is a fork of the public open-source [QEMU](http://w
 
 All **GNU ARM Eclipse QEMU** versions are available from the [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases) page.
 
-![The QEMU Releases page]({{ site.baseurl }}/images/2015/github-gae-qemu-release-2-3.png)
+![The QEMU Releases page]({{ site.baseurl }}/assets/images/2015/github-gae-qemu-release-2-3.png)
 
 ## Install
 
@@ -32,11 +32,11 @@ Select the win64 file for 64-bits machines and the win32 file for 32-bits machin
 
 Run the setup as usual.
 
-![QEMU Windows setup]({{ site.baseurl }}/images/2015/windows-setup.png)
+![QEMU Windows setup]({{ site.baseurl }}/assets/images/2015/windows-setup.png)
 
 It is recommended to keep the default install location:
 
-![The QEMU Windows default install folder]({{ site.baseurl }}/images/2015/windows-folder.png)
+![The QEMU Windows default install folder]({{ site.baseurl }}/assets/images/2015/windows-folder.png)
 
 The default install location is:
 
@@ -44,7 +44,7 @@ The default install location is:
 
 The result is a structure like:
 
-![QEMU Windows folders layout]({{ site.baseurl }}/images/2015/windows-install-folders.png)
+![QEMU Windows folders layout]({{ site.baseurl }}/assets/images/2015/windows-install-folders.png)
 
 To check if QEMU starts, use the following command:
 
@@ -65,7 +65,7 @@ As the name implies, this is an OS X package, that can be installed on any recen
 
 Run the install as usual.
 
-![The QEMU OS X Install page]({{ site.baseurl }}/images/2015/mac-install.png)
+![The QEMU OS X Install page]({{ site.baseurl }}/assets/images/2015/mac-install.png)
 
 The package is installed in:
 
@@ -73,7 +73,7 @@ The package is installed in:
 
 and the result is a folder structure similar to:
 
-![The QEMU OS X install folders](https://github.com/gnuarmeclipse/qemu/wiki/images/2015/mac-install-folders.png)
+![The QEMU OS X install folders](https://github.com/gnuarmeclipse/qemu/wiki/assets/images/2015/mac-install-folders.png)
 
 To check if QEMU starts, use:
 

@@ -4,7 +4,7 @@ permalink: /eclipse/project/portability/
 title: Project portability
 author: Liviu Ionescu
 
-date: 2015-09-11 22:12:00
+date: 2015-09-11 22:12:00 +03:00
 
 ---
 
@@ -32,16 +32,16 @@ The second common mistake that can compromise project portability is to add abso
 
 The recommended method to enter include path referring to local project folders is to use relative paths.
 
-![Define relative include paths]({{ site.baseurl }}/images/2014/02/IncludePath.png)
+![Define relative include paths]({{ site.baseurl }}/assets/images/2014/02/IncludePath.png)
 
 
 In most usual cases CDT is smart enough to know the environment where the build process is executed, to properly process these paths. For example when the build is started in the default Debug or Release folders, the actual paths to the include folders is one step up, so it is automatically prefixed with `../`.
 
-![Use of relative include paths]({{ site.baseurl }}/images/2014/02/UseRelativePaths.png)
+![Use of relative include paths]({{ site.baseurl }}/assets/images/2014/02/UseRelativePaths.png)
 
 An alternative solution is to use the CDT predefined macros, to create paths relative either to the current project folder, with ${ProjDirPath},
 
-![Use ProjDirPath for include paths]({{ site.baseurl }}/images/2014/02/UseProjDirPath.png)
+![Use ProjDirPath for include paths]({{ site.baseurl }}/assets/images/2014/02/UseProjDirPath.png)
 
 or something like `${workspace_loc:/other_proj/libs/misc/include}` relative to any project in the workspace.
 
@@ -49,15 +49,15 @@ or something like `${workspace_loc:/other_proj/libs/misc/include}` relative to a
 
 Similar solutions can be considered for entering linker scripts. The recommended method is to enter the script names without any path
 
-![Add script files by simple names]({{ site.baseurl }}/images/2014/02/ScriptFiles.png)
+![Add script files by simple names]({{ site.baseurl }}/assets/images/2014/02/ScriptFiles.png)
 
 and to define the path to the folder where they are located (usually named **ldscripts**).
 
-![Enter location for linker scripts]({{ site.baseurl }}/images/2014/02/ldscriptsFolder.png)
+![Enter location for linker scripts]({{ site.baseurl }}/assets/images/2014/02/ldscriptsFolder.png)
 
 As for the include paths, CDT is smart enough to make this definition relative to the build folder:
 
-![Relative linker scripts folder]({{ site.baseurl }}/images/2014/02/ldscriptsUsage.png)
+![Relative linker scripts folder]({{ site.baseurl }}/assets/images/2014/02/ldscriptsUsage.png)
 
 Alternate solutions are to use paths relative to ${ProjDirPath} or ${workspace_loc}.
 

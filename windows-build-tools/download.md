@@ -4,7 +4,7 @@ permalink: /windows-build-tools/download/
 title: How to download the GNU ARM Eclipse Windows Build Tools?
 author: Liviu Ionescu
 
-date: 2015-09-16 20:02:00
+date: 2015-09-16 20:02:00 +03:00
 
 ---
 
@@ -12,7 +12,7 @@ date: 2015-09-16 20:02:00
 
 All versions of the GNU ARM Eclipse Windows Build Tools are available via the [GitHub Releases](https://github.com/gnuarmeclipse/windows-build-tools/releases) page. For details how to reach it, see the [Downloads]({{ site.baseurl }}/downloads/) page.
 
-![Windows Build Tools Releases]({{ site.baseurl }}/images/2015/github-gae-build-tools-releases.png)
+![Windows Build Tools Releases]({{ site.baseurl }}/assets/images/2015/github-gae-build-tools-releases.png)
 
 ## 64/32-bits
 

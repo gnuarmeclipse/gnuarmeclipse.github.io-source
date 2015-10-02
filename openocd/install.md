@@ -3,7 +3,7 @@ layout: page
 title: How to install the OpenOCD binaries?
 permalink: /openocd/install/
 
-date: 2015-09-09 19:43:00
+date: 2015-09-09 19:43:00 +03:00
 
 ---
 
@@ -40,11 +40,11 @@ Select the win64 file for Windows x64 machines and the win32 file for Windows x
 
 Run the setup as usual.
 
-![The OpenOCD Setup]({{ site.baseurl }}/images/2015/openocd-setup-wizard.png)
+![The OpenOCD Setup]({{ site.baseurl }}/assets/images/2015/openocd-setup-wizard.png)
 
 It is recommended to keep the default install location:
 
-![Accept the default OpenOCD destination folder]({{ site.baseurl }}/images/2015/openocd-setup-destination.png)
+![Accept the default OpenOCD destination folder]({{ site.baseurl }}/assets/images/2015/openocd-setup-destination.png)
 
 The default install location is:
 
@@ -52,7 +52,7 @@ The default install location is:
 
 The result is a structure like:
 
-![The OpenOCD folders structure]({{ site.baseurl }}/images/2015/windows-folders-openocd.png)
+![The OpenOCD folders structure]({{ site.baseurl }}/assets/images/2015/windows-folders-openocd.png)
 
 To check if OpenOCD starts, use the following command:
 
@@ -74,7 +74,7 @@ As for most Windows drivers, to complete the installation, a restart will help.
 
 Connect the ST-LINK/v2 or the DISCOVERY board and check in **Control Panel** → **System** → **Device Manager** if the JTAG is operational.
 
-![ST-LINK Windows device]({{ site.baseurl }}/images/2015/windows-devices-stlink.png)
+![ST-LINK Windows device]({{ site.baseurl }}/assets/images/2015/windows-devices-stlink.png)
 
 For other probes follow the manufacturer instructions.
 
@@ -96,7 +96,7 @@ As the name implies, this is an OS X package, that can be installed on any rec
 
 Run the install as usual.
 
-![Install the OS X package]({{ site.baseurl }}/images/2015/openocd-mac-installer.png)
+![Install the OS X package]({{ site.baseurl }}/assets/images/2015/openocd-mac-installer.png)
 
 The package is installed in:
 
