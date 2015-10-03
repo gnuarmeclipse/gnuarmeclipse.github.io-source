@@ -39,12 +39,16 @@ paginate_path: "/blog/page:num/"
 # The number of links added to the 'Latest news' box.
 latest-news-pages: 5
 
+# Currently disabled, since it generates incomplete content.
+# Use manually written RSS feed.xml.
+#   - jekyll-feed
+# {% feed_meta %} in head.html
+
 gems:
   - jekyll-last-modified-at
   - jekyll-mentions
   - jemoji
   - jekyll-redirect-from
-  - jekyll-feed
   - jekyll-sitemap
 
 # Custom defs
