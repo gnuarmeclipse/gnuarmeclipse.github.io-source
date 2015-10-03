@@ -4,7 +4,7 @@ permalink: /plugins/download/
 title: Downloads
 author: Liviu Ionescu
 
-date: 2015-09-11 20:07:00 +03:00
+date: 2015-09-11 20:07:00 +0300
 
 ---
 

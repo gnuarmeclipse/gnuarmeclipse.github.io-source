@@ -5,7 +5,7 @@ permalink: /windows-build-tools/releases/
 
 author: Liviu Ionescu
 
-date: 2015-09-10 09:33:00 +03:00
+date: 2015-09-10 09:33:00 +0300
 
 ---
 

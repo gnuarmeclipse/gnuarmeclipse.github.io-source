@@ -4,7 +4,7 @@ permalink: /advanced/headless-builds/
 title: Scriptable builds from the command line
 author: Liviu Ionescu
 
-date: 2015-09-11 20:32:00 +03:00
+date: 2015-09-11 20:32:00 +0300
 
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: The 2015 Windows Build Tools Change Log
 permalink: /windows-build-tools/change-log/
 
-date: 2015-09-04 17:02:00 +03:00
+date: 2015-09-04 17:02:00 +0300
 
 ---
 

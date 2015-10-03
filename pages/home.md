@@ -4,7 +4,7 @@ permalink: /
 title: Welcome to GNU ARM Eclipse!
 author: Liviu Ionescu
 
-date: 2015-09-07 18:31:00 +03:00
+date: 2015-09-07 18:31:00 +0300
 
 ---
 

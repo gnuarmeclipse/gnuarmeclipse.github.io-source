@@ -4,7 +4,7 @@ permalink: /developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.qemu/
 title: ilg.gnuarmeclipse.debug.gdbjtag.qemu - persistent values
 author: Liviu Ionescu
 
-date: 2015-09-10 21:05:00 +03:00
+date: 2015-09-10 21:05:00 +0300
 
 ---
 

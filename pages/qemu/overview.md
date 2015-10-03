@@ -3,7 +3,7 @@ layout: page
 title: The GNU ARM Eclipse QEMU
 permalink: /qemu/
 
-date: 2015-09-07 21:31:00 +03:00
+date: 2015-09-07 21:31:00 +0300
 
 ---
 

@@ -4,7 +4,7 @@ permalink: /eclipse/project/portability/
 title: Project portability
 author: Liviu Ionescu
 
-date: 2015-09-11 22:12:00 +03:00
+date: 2015-09-11 22:12:00 +0300
 
 ---
 

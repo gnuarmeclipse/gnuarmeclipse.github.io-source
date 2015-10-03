@@ -4,7 +4,7 @@ permalink: /developer/eclipse/runtime-preferences/
 title: How Eclipse runtime preferences and defaults work
 author: Liviu Ionescu
 
-date: 2015-09-10 18:37:00 +03:00
+date: 2015-09-10 18:37:00 +0300
 
 ---
 

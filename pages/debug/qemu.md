@@ -4,7 +4,7 @@ permalink: /debug/qemu/
 title: The QEMU debugging Eclipse plug-in
 author: Liviu Ionescu
 
-date: 2015-09-11 22:15:00 +03:00
+date: 2015-09-11 22:15:00 +0300
 
 ---
 

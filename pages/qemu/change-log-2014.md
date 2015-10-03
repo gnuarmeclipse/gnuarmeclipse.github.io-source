@@ -3,7 +3,7 @@ layout: page
 title: The 2014 QEMU Change Log
 permalink: /qemu/change-log/2014/
 
-date: 2015-09-04 17:02:00 +03:00
+date: 2015-09-04 17:02:00 +0300
 
 ---
 

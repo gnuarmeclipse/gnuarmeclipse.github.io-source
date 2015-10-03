@@ -4,7 +4,7 @@ permalink: /debug/peripheral-registers/
 title: The peripherals registers view
 author: Liviu Ionescu
 
-date: 2015-09-11 22:00:00 +03:00
+date: 2015-09-11 22:00:00 +0300
 
 ---
 

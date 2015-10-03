@@ -28,10 +28,10 @@ To be able to run the Jekyll build process, the `ruby` interpreter and the `gem`
 	jekyll 2.5.3
 
 
-In addition, the `jekyll-sitemap` specific gem is required:
+In addition, the several specific gems are required:
 
-	$ sudo gem install jekyll-sitemap
-	... jekyll-sitemap-0.8.1
+	$ sudo gem install redcarpet jekyll-mentions jemoji jekyll-redirect-from jekyll-feed jekyll-sitemap jekyll-last-modified-at
+
 
 
 ## Clone Git
@@ -75,4 +75,4 @@ To maintain sitelink.xml usefulness, while maintaining pages and posts, it is ne
 
 ## Timezone
 
-As per `_config.yml`, the default timezone is UTC. For other timezones, set it explicitly as offset (+03:00)
+As per `_config.yml`, the default timezone is UTC. For other timezones, set it explicitly as offset (for example +0300)

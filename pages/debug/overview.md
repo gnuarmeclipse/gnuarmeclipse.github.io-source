@@ -4,7 +4,7 @@ permalink: /debug/
 title: Debugging
 author: Liviu Ionescu
 
-date: 2015-09-11 19:59:00 +03:00
+date: 2015-09-11 19:59:00 +0300
 
 ---
 

@@ -5,7 +5,7 @@ title: Packs manager
 author: Liviu Ionescu
 layout: page
 
-date: 2015-09-11 21:55:00 +03:00
+date: 2015-09-11 21:55:00 +0300
 
 ---
 

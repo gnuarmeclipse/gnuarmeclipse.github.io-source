@@ -4,7 +4,7 @@ permalink: /debug/jlink/install/
 title: How to install the SEGGER J-Link?
 author: Liviu Ionescu
 
-date: 2015-09-11 20:50:00 +03:00
+date: 2015-09-11 20:50:00 +0300
 
 ---
 

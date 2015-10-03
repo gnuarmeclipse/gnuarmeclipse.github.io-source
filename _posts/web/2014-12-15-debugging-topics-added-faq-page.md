@@ -5,7 +5,7 @@ title: Debugging topics added to the FAQ page
 
 author: Liviu Ionescu
 
-date: 2014-12-15 12:00:00 +03:00
+date: 2014-12-15 12:00:00 +0300
 
 
 categories:

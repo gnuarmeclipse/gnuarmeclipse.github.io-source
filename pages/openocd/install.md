@@ -3,7 +3,7 @@ layout: page
 title: How to install the OpenOCD binaries?
 permalink: /openocd/install/
 
-date: 2015-09-09 19:43:00 +03:00
+date: 2015-09-09 19:43:00 +0300
 
 ---
 

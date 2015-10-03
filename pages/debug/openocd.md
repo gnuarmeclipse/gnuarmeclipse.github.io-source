@@ -4,7 +4,7 @@ permalink: /debug/openocd/
 title: The OpenOCD debugging Eclipse plug-in
 author: Liviu Ionescu
 
-date: 2015-09-11 21:41:00 +03:00
+date: 2015-09-11 21:41:00 +0300
 
 ---
 

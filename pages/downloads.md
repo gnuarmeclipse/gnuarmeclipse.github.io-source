@@ -4,7 +4,7 @@ permalink: /downloads/
 title: How to download the binary files?
 author: Liviu Ionescu
 
-date: 2015-09-10 19:54:00 +03:00
+date: 2015-09-10 19:54:00 +0300
 
 ---
 

@@ -4,7 +4,7 @@ permalink: /templates/
 title: Templates
 author: Liviu Ionescu
 
-date: 2015-09-11 22:35:00 +03:00
+date: 2015-09-11 22:35:00 +0300
 
 ---
 

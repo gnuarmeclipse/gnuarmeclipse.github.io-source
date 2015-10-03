@@ -4,7 +4,7 @@ permalink: /debug/jlink/
 title: The J-Link debugging Eclipse plug-in
 author: Liviu Ionescu
 
-date: 2015-09-11 21:15:00 +03:00
+date: 2015-09-11 21:15:00 +0300
 
 ---
 

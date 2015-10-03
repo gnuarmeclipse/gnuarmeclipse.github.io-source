@@ -3,7 +3,7 @@ layout: page
 title: The GNU ARM Eclipse Windows Build Tools
 permalink: /windows-build-tools/
 
-date: 2015-09-04 17:02:00 +03:00
+date: 2015-09-04 17:02:00 +0300
 
 ---
 

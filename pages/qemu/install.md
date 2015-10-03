@@ -3,7 +3,7 @@ layout: page
 title: How to install the QEMU binaries?
 permalink: /qemu/install/
 
-date: 2015-09-04 17:03:00 +03:00
+date: 2015-09-04 17:03:00 +0300
 
 ---
 

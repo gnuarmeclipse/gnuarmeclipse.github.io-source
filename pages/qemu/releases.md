@@ -5,7 +5,7 @@ permalink: /qemu/releases/
 
 author: Liviu Ionescu
 
-date: 2015-09-10 09:08:00 +03:00
+date: 2015-09-10 09:08:00 +0300
 
 ---
 

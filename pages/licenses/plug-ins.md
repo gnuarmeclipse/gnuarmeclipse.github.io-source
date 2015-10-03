@@ -4,7 +4,7 @@ permalink: /licenses/plug-ins/
 title: The GNU ARM Eclipse plug-ins license
 author: Liviu Ionescu
 
-date: 2015-09-08 23:25:00 +03:00
+date: 2015-09-08 23:25:00 +0300
 
 ---
 

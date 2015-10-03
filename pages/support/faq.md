@@ -4,7 +4,7 @@ permalink: /support/faq/
 title: FAQ
 author: Liviu Ionescu
 
-date: 2015-09-11 20:28:00 +03:00
+date: 2015-09-11 20:28:00 +0300
 
 ---
 

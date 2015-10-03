@@ -4,7 +4,7 @@ permalink: /developer/
 title: GNU ARM Eclipse Developer page
 author: Liviu Ionescu
 
-date: 2015-09-10 18:31:00 +03:00
+date: 2015-09-10 18:31:00 +0300
 
 ---
 

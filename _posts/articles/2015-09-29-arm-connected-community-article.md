@@ -5,7 +5,7 @@ title: ARM Connected Community article, September 2015
 
 author: Liviu Ionescu
 
-date: 2015-09-29 16:51:00 +03:00
+date: 2015-09-29 16:51:00 +0300
 
 categories:
   - news

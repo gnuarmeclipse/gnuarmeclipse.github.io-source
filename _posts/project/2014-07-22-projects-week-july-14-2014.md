@@ -5,7 +5,7 @@ title: Projects of the week, July 14, 2014
 
 author: Liviu Ionescu
 
-date: 2014-07-22 12:00:00 +03:00
+date: 2014-07-22 12:00:00 +0300
 
 categories:
   - news

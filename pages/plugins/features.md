@@ -4,7 +4,7 @@ permalink: /plugins/features/
 title: GNU ARM Eclipse Plug-ins Features
 author: Liviu Ionescu
 
-date: 2015-09-10 19:59:00 +03:00
+date: 2015-09-10 19:59:00 +0300
 
 ---
 

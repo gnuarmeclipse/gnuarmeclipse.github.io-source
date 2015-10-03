@@ -4,7 +4,7 @@ permalink: /toolchain/install/
 title: How to install the ARM toolchain?
 author: Liviu Ionescu
 
-date: 2015-09-11 22:49:00 +03:00
+date: 2015-09-11 22:49:00 +0300
 
 ---
 
