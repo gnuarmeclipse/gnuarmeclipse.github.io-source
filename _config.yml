@@ -69,7 +69,7 @@ google-site-verification: NT_y3tqI_8mrd8gYA_FDWHT2-tkJExOC6KBkSnyZx6c
 
 # jekyll-toc-generator
 tocTopTag: h2
-minItemsToShowToc: 2
+minItemsToShowToc: 3
 
 # Content copyright. Update it to your needs.
 copyright-message: "© 2015 Liviu Ionescu"

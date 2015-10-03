@@ -1102,4 +1102,6 @@ freescale: PEx code moved to separate plug-in
 * STM sections.ld also defines __end, __end__, to make it build with newlib from 4.8
 * cross: FPU unit persistency fixed
 
-## [2013]({{ site.baseurl }}/developer/change-log/2013)
+## 2013
+
+See [2013]({{ site.baseurl }}/developer/change-log/2013).

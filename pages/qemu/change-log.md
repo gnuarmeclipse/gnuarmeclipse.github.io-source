@@ -485,4 +485,6 @@ date: 2015-09-04 17:02:00 +0300
 * kinetis header duplicate definition removed
 * debian build script functional
 
-## [2014]({{ site.baseurl }}/qemu/change-log/2014)
+## 2014
+
+See [2014]({{ site.baseurl }}/qemu/change-log/2014).

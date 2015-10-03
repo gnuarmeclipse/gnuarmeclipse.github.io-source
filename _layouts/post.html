@@ -10,9 +10,9 @@ layout: default
 {% if page.date %}Posted on {{ page.date | date: "%B %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}.{% endif %}
 </p>
 
-{{ content }}
+{{ content | toc_generate | replace_regexp: '\<\/code\>\n\<\/pre\>', '</code></pre>' }}
 
-<hr/>
+<hr class="post-footer"/>
 <p class="post-footer">
 {% if page.categories.size > 0 %}Posted in
 {% assign add_separator = false %}

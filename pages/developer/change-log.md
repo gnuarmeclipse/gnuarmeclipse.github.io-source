@@ -577,4 +577,6 @@ Entries in this file are in reverse chronological order.
 * qemu: machine & verbose added to tab Debugger
 * gdbjtag: null checks in dispose()
 
-## [2014]({{ site.baseurl }}/developer/change-log/2014)
+## 2014
+
+See [2014]({{ site.baseurl }}/developer/change-log/2014).

@@ -62,4 +62,6 @@ The change log is available as a separate [Change log]({{ site.baseurl }}/openoc
 
 For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/openocd/build-procedure) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).
 
-## [Releases]({{ site.baseurl }}/openocd/releases)
+## Releases
+
+See [Releases]({{ site.baseurl }}/openocd/releases).

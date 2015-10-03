@@ -148,7 +148,9 @@ The change log is available as a separate [Change log]({{ site.baseurl }}/qemu/c
 
 For those interested on the procedure used to build these packages, please read the [How to build]({{ site.baseurl }}/qemu/build-procedure) page. However, the ultimate source for details are the build scripts themselves, all available from the [build-scripts Git](https://github.com/gnuarmeclipse/build-scripts/tree/master/scripts).
 
-## [Releases]({{ site.baseurl }}/qemu/releases)
+## Releases
+
+See [Releases]({{ site.baseurl }}/qemu/releases).
 
 ## Other links
 
