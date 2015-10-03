@@ -8,6 +8,8 @@ date: 2015-09-11 20:28:00 +0300
 
 ---
 
+<div style="clear: both;"></div>
+
 ## Error: undefined reference to _function_
 
 > I created a simple STM32x project... I can call the functions in RCC and GPIO header files, but while calling functions in TIM header the linker reports an undefined reference.

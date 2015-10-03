@@ -8,21 +8,6 @@ date: 2015-09-10 19:59:00 +0300
 
 ---
 
-## Contents
-
-* [Main features](#main-features)
-* [Supported toolchains](#supported-toolchains)
-* [Extra build steps](#extra-build-steps)
-* [Discovery Options & Indexing](#discovery-options--indexing)
-* [Simplified multiple tools configurations](#simplified-multiple-tools-configurations)
-* [Fully configurable toolchains](#fully-configurable-toolchains)
-* [Advanced toolchain path management](#advanced-toolchain-path-management)
-* [Functional ready to run templates](#functional-ready-to-run-templates)
-* [Debugging support](#debugging-support)
-* [The packages manager perspective](#the-packages-manager-perspective)
-* [Peripherals registers view in debug](#peripherals-registers-view-in-debug)
-* [Device and board documentation files](#device-and-board-documentation-files)
-
 ## Main features
 
 The main features of the GNU ARM Eclipse family of plug-ins are:

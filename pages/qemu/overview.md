@@ -7,24 +7,6 @@ date: 2015-09-07 21:31:00 +0300
 
 ---
 
-## Contents
-
-* [Why QEMU?](#why-qemu)
-* [Why GNU ARM Eclipse QEMU?](#why-gnu-arm-eclipse-qemu)
-* [Overview](#overview)
-* [Benefits](#benefits)
-* [Supported boards and MCUs](#supported-boards-and-mcus)
-* [Limitations](#limitations)
-* [Documentation](#documentation)
-* [Download](#download)
-* [Install](#install)
-* [Testing](#testing)
-* [Updates](#updates)
-* [Change log](#change-log)
-* [Build details](#build-details)
-* [Releases](#releases)
-* [Other links](#other-links)
-
 ## Quicklinks
 
 If you already know the general facts about QEMU, you can directly skip to:

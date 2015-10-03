@@ -7,18 +7,6 @@ date: 2015-09-04 17:02:00 +0300
 
 ---
 
-## Contents
-
-* [Overview](#overview)
-* [Benefits](#benefits)
-* [Forward vs. Back-slashes](#forward-vs-back-slashes)
-* [Download](#download)
-* [Install](#install)
-* [Updates](#updates)
-* [Change log](#change-log)
-* [Build details](#build-details)
-* [Releases](#releases)
-
 ## Quicklinks
 
 If you know all about the Windows Build Tools, and all you need is how to install/build/etc, the direct links are below.

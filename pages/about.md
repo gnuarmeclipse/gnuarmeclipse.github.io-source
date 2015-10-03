@@ -8,18 +8,6 @@ date: 2015-09-10 19:45:00 +0300
 
 ---
 
-## Contents
-
-* [The project](#the-project)
-* [First edition](#first-edition)
-* [Second edition](#second-edition)
-* [Migration to GitHub](#migration-to-github)
-* [PAD file](#pad-file)
-* [Credits](#credits)
-* [This site](#this-site)
-* [The author](#the-author)
-
-
 ## The project
 
 The **GNU ARM Eclipse plug-in** project was registered on [SourceForge](http://sourceforge.net/projects/gnuarmeclipse/) in November 2006, and initially included an XML only plug-in definition; although functional, it was somehow limited.

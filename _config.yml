@@ -25,20 +25,6 @@ encoding: utf-8
 # Default permalink used for posts
 permalink: /blog/:year/:month/:day/:title/
 
-# Build settings
-markdown: redcarpet
-
-redcarpet:
-  extensions: []
-
-# Warning: paginator retired in Jekyll 3!
-# Make this larger, probably 5 is a good choice.
-paginate: 10
-paginate_path: "/blog/page:num/"
-
-# The number of links added to the 'Latest news' box.
-latest-news-pages: 5
-
 # Currently disabled, since it generates incomplete content.
 # Use manually written RSS feed.xml.
 #   - jekyll-feed
@@ -51,6 +37,27 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
 
+# Build settings
+markdown: redcarpet
+
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - tables
+    - fenced_code_blocks
+    - autolink
+    - strikethrough
+    - superscript
+    - highlight
+
+# Warning: paginator retired in Jekyll 3!
+# Make this larger, probably 5 is a good choice.
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# The number of links added to the 'Latest news' box.
+latest-news-pages: 5
+
 # Custom defs
 github-username:  ilg-ul
 
@@ -59,6 +66,10 @@ sourceforge-project-url: http://sourceforge.net/projects/gnuarmeclipse
 
 google-analytics-id: UA-16767008-16
 google-site-verification: NT_y3tqI_8mrd8gYA_FDWHT2-tkJExOC6KBkSnyZx6c
+
+# jekyll-toc-generator
+tocTopTag: h2
+minItemsToShowToc: 2
 
 # Content copyright. Update it to your needs.
 copyright-message: "© 2015 Liviu Ionescu"

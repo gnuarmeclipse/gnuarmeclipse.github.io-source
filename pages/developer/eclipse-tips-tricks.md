@@ -8,18 +8,6 @@ date: 2015-09-10 20:54:00 +0300
 
 ---
 
-## Contents
-* [Find project from configuration](#find-project-from-configuration)
-* [Display a message box from a non-UI thread](#display-a-message-box-from-a-non-ui-thread)
-* [Run code in UI thread](#run-code-in-ui-thread)
-* [Generate an unpacked plug-in](#generate-an-unpacked-plug-in)
-* [Get the path of folder where Eclipse is installed](#get-the-path-of-folder-where-eclipse-is-installed)
-* [Get the path of a resource in another plug-in](#get-the-path-of-a-resource-in-another-plug-in)
-* [Template shared defaults](#template-shared-defaults)
-* [Custom default files](#custom-default-files)
-* [Global markers](#global-markers)
-* [Configuration folders within PDE](#configuration-folders-within-pde)
-
 ## Find project from configuration
 
     IConfiguration config;

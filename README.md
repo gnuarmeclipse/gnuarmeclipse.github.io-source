@@ -38,7 +38,7 @@ In addition, the several specific gems are required:
 
 To manage the web site, a local copy of this repository is required.
 
-	git clone https://github.com/gnuarmeclipse/gnuarmeclipse.github.io-source.git gnuarmeclipse.github.io-source.git
+	$ git clone https://github.com/gnuarmeclipse/gnuarmeclipse.github.io-source.git gnuarmeclipse.github.io-source.git
 
 ## Development
 
@@ -46,8 +46,8 @@ The current development cycle is edit-save-build-view.
 
 The build can be performed automatically by Jekyll when started in server mode.
 
-	cd gnuarmeclipse.github.io-source.git
-	jekyll serve --baseurl "" --trace
+	$ cd gnuarmeclipse.github.io-source.git
+	$ jekyll serve --baseurl "" --trace
 
 To view the result, point the browser to `localhost:4000`.
 

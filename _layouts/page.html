@@ -6,7 +6,7 @@ layout: default
 <h1 class="page-title">{{ page.title }}</h1>
 {% endif %}
 
-{{ content }}
+{{ content | toc_generate | replace_regexp: '\<\/code\>\n\<\/pre\>', '</code></pre>' }}
 
 <hr/>
 <p class="page-footer">Last modified on {{ page.last_modified_at | date: '%c %Z' }}.</p>

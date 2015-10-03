@@ -8,17 +8,6 @@ date: 2015-09-10 18:37:00 +0300
 
 ---
 
-## Contents
-* [Overview](#overview)
-* [Multiple APIs](#multiple-apis)
-* [Scopes](#scopes)
-* [Eclipse preferences](#eclipse-preferences)
-* [JFace preferences](#jface-preferences)
-* [Persistent stores](#persistent-stores)
-* [Defaults](#defaults)
-* [Windows path syntax](#windows-path-syntax)
-* [References](#references)
-
 Overview
 --------
 

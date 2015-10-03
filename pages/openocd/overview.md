@@ -7,17 +7,6 @@ date: 2015-09-04 17:02:00 +0300
 
 ---
 
-## Contents
-* [Overview](#overview)
-* [Benefits](#benefits)
-* [Compatibility](#compatibility)
-* [Download](#download)
-* [Install](#install)
-* [Updates](#updates)
-* [Change log](#change-log)
-* [Build details](#build-details)
-* [Releases](#releases)
-
 ## Quicklinks
 
 If you already know the general facts about OpenOCD, you can directly skip to:

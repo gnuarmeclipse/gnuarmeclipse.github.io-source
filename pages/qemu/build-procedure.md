@@ -44,8 +44,8 @@ The build procedure requires the presence of [MacPorts](http://www.macports.org)
 
 Install the following packages:
 
-	sudo port install libtool automake autoconf pkgconfig
-	sudo port install texinfo texlive
+	$ sudo port install libtool automake autoconf pkgconfig
+	$ sudo port install texinfo texlive
 
 ### GNU/Linux
 
@@ -57,9 +57,9 @@ For any GNU/Linux distribution, follow the [specific instructions](https://docs.
 
 To allow docker to run as a regular user, you need to be a member of the **docker** group.
 
-	sudo groupadd docker
-	sudo gpasswd -a ${USER} docker
-	sudo service docker restart
+	$ sudo groupadd docker
+	$ sudo gpasswd -a ${USER} docker
+	$ sudo service docker restart
 
 To make these changes effective, logout and login.
 
@@ -79,7 +79,7 @@ The script is available from the GitHub and can be [viewed online](https://githu
 
 To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh) link. If the browser fails, use the following command in a terminal:
 
-	curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh \
+	$ curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh \
 	-o ~/Downloads/build-qemu.sh
 
 ## Check the script
@@ -92,7 +92,7 @@ Docker does not require to explicitly download new images, but does this automat
 
 However, since the images used for this build are relatively large, it is recommended to load them explicitly before starting the build:
 
-	bash ~/Downloads/build-qemu.sh preload-images
+	$ bash ~/Downloads/build-qemu.sh preload-images
 
 Please be patient, this will bring about 5 GB, which on a regular broadband line might take more than 30 minutes.
 
@@ -107,11 +107,11 @@ The result should look similar to:
 
 ## Build all distribution files
 
-	bash ~/Downloads/build-qemu.sh --all
+	$ bash ~/Downloads/build-qemu.sh --all
 
 On OS X, to prevent sleep, use:
 
-	caffeinate bash ~/Downloads/build-qemu.sh --all
+	$ caffeinate bash ~/Downloads/build-qemu.sh --all
 
 About half an hour later, the output of the build script is a set of 5 files in the output folder:
 
@@ -141,7 +141,7 @@ Instead of **--all**, you can use any combination of:
 
 To remove all build files, use:
 
-	bash ~/Downloads/build-qemu.sh clean
+	$ bash ~/Downloads/build-qemu.sh clean
 
 ## The Work folder
 
@@ -261,7 +261,7 @@ On OS X, the build script automatically starts **boot2docker**, if needed.
 
 When done, be sure you stop boot2docker, to free significant resources (a VirtualBox Ubuntu machine).
 
-	boot2docker stop
+	$ boot2docker stop
 
 ## More build details
 

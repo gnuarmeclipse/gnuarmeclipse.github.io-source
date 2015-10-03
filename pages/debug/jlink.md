@@ -51,7 +51,8 @@ Before starting work with the J-Link tools, it is required to define the path t
 
 * in the *Eclipse* menu, go to **Preferences** → **Run/Debug** → **SEGGER J-Link**
 
-  ![J-Link preferences page]({{ site.baseurl }}/assets/images/2015/03/JLinkPreferences.png)     
+  ![J-Link preferences page]({{ site.baseurl }}/assets/images/2015/03/JLinkPreferences.png)
+
 * click the **Restore Defaults** button
 * the plug-in will suggest the default values computed when Eclipse started; if a new version of SEGGER was installed while Eclipse was active, restart Eclipse and click again the Restore Defaults button
 * check the **Executable** field; it must define the name of the command line J-Link GDB server executable; in most cases it should be set correctly; if not, edit it to match the correct name;

@@ -7,18 +7,6 @@ date: 2015-09-04 12:00:00 +0300
 
 ---
 
-## Contents
-
-* [Overview](#overview)
-* [Mentor Sourcery CodeBench](#mentor-sourcery-codebench)
-* [Download the Build Tools setup](#download-the-build-tools-setup)
-* [Run the setup](#run-the-setup)
-* [Check version](#check-version)
-* [Check the global tools path](#check-the-global-tools-path)
-* [DO NOT update the user or system path!](#do-not-update-the-user-or-system-path)
-* [Uninstall](#uninstall)
-* [The echo command](#the-echo-command)
-
 ## Overview
 
 If your development platform is Windows, you need to install two additional command line programs, **make** and **rm**, required by the Eclipse external builder.

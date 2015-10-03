@@ -7,14 +7,6 @@ date: 2015-09-09 19:43:00 +0300
 
 ---
 
-## Contents
-* [Overview](#overview)
-* [Documentation](#documentation)
-* [Windows](#windows)
-* [OS X](#os-x)
-* [GNU/Linux](#gnulinux)
-* [Testing](#testing)
-
 ## Overview
 
 [OpenOCD](http://openocd.org) is an open source project hosted on [SourceForge](https://sourceforge.net/projects/openocd/), and project maintainers insist that all end-users should compile it from the latest version of the source code available from their repository. There are no special stable branches or tags and there are no clear release dates for future versions. On Windows you need to install MSYS2 and use the appropriate package build procedure.
@@ -133,9 +125,9 @@ To check if OpenOCD starts and is recent, use:
 
 For the JTAG probes implemented as USB devices (actually most of them), the last installation step on GNU/Linux is to configure the UDEV subsystem. OpenOCD provides an UDEV rules file defining all the supported IDs; to install it, just copy the file to /etc/udev/rules.d and eventually notify the daemon:
 
-	sudo cp /opt/gnuarmeclipse/openocd/0.8.0-201501181257/contrib/99-openocd.rules \
+	$ sudo cp /opt/gnuarmeclipse/openocd/0.8.0-201501181257/contrib/99-openocd.rules \
 	 /etc/udev/rules.d/
-	sudo udevadm control --reload-rules
+	$ sudo udevadm control --reload-rules
 
 Note: If you previously installed the J-Link binaries, the USB IDs were already added to UDEV. The above OpenOCD rules file also defines the J-Link ID. Apparently UDEV does not complain; if you encounter problems, just comment out the definition in the OpenOCD file.
 
