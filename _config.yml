@@ -9,6 +9,8 @@ email: il@livius.net
 destination: _site
 exclude:
   - README.md
+  - jekyll-build.command
+  - jekyll-serve.command
 
 # The subpath of your site, e.g. /blog (note the leading slash and the
 # absence of a trailing slash).
