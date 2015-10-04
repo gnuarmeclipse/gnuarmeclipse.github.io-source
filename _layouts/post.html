@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+<table id="post-navigation">
+  <tr>
+    <td>{% if page.previous %}<a href="{{ site.baseurl }}{{ page.previous.url }}">←</a>{% endif %}</td>
+    <td>{% if page.previous %}<a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.title }}</a>{% endif %}</td>
+    <td></td>
+    <td>{% if page.next %}<a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>{% endif %}</td>
+    <td>{% if page.next %}<a href="{{ site.baseurl }}{{ page.next.url }}">→</a>{% endif %}</td>
+  </tr>
+</table>
 
 {% if page.title %}
 <h1 class="post-title">{{ page.title }}</h1>
