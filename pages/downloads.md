@@ -11,13 +11,15 @@ date: 2015-09-10 19:54:00 +0300
 During the various install or update steps, it will be necessary to access the binary files with the new releases.
 
 There are two methods:
-- **automatic** downloads, via the Eclipse update mechanism, to install and update the Eclipse plug-ins
-- **manual** downloads, to install various tools (like OpenOCD/QEMU/Windows Build Tools/etc)
+
+* **automatic** downloads, via the Eclipse update mechanism, to install and update the Eclipse plug-ins
+* **manual** downloads, to install various tools (like OpenOCD/QEMU/Windows Build Tools/etc)
 
 ## Eclipse update site
 
 The Eclipse update site is currently hosted on SourceForge, to make use of the wide network of mirror sites SourceForge provides. The public URL is:
-- **http://gnuarmeclipse.sourceforge.net/updates**
+
+- `http://gnuarmeclipse.sourceforge.net/updates`
 
 ![GNU ARM Eclipse updates URL]({{ site.baseurl }}/assets/images/2015/install-new-software-updates-url.png)
 
@@ -26,6 +28,7 @@ The Eclipse update site is currently hosted on SourceForge, to make use of the w
 For all other manual downloads, the binary files are published as **GitHub Releases**, for each project.
 
 For example, to access the QEMU binaries:
+
 - go to the **GNU ARM Eclipse QEMU** project at [gnuarmeclipse/qemu](https://github.com/gnuarmeclipse/qemu)
 - be sure you are in the **Code** view; if not, select the right side `<>` code icon
 - identify the [releases](https://github.com/gnuarmeclipse/qemu/releases) link in the upper line:
