@@ -62,4 +62,4 @@ If you discover problems in the content of these pages (typos, wrong phrasing, e
 
 ## Use of private eMail
 
-Please, please, please: do not use private eMail for support, since such messages will be replied with a link to this page. The reason for this rude behaviour is simply an attempt to efficiently use the time, since GitHub Issues are archived, and other people having similar problems might benefit from the answers.
+Please, please, please: **do not use private eMail for support**, since such messages will be replied with a link to this page. The reason for this rude behaviour is simply an attempt to efficiently use the time, since GitHub Issues are archived, and other people having similar problems might benefit from the answers.
