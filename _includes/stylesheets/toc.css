@@ -9,7 +9,7 @@
 #toc h2, .toc h2 {
     border: medium none;
     display: inline;
-    font-size: 100%;
+    font-size: 15px;
     font-weight: bold;
     padding: 0;
 }
@@ -61,7 +61,7 @@
 }
 
 #toctitle h2 {
-  font-size: 100%;
+  font-size: 15px;
   /* font-family: inherit; */
 }
 
