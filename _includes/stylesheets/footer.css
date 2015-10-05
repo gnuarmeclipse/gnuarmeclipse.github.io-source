@@ -5,10 +5,12 @@
   line-height: 1.5;
   color: #767676;
   border-top: 1px solid #ddd;
+  vertical-align: middle;
 }
 
 .site-footer ul {
   padding: 0px;
+  vertical-align: middle;
 }
 
 .site-footer:before {
@@ -50,4 +52,8 @@
 }
 .left {
   float: left;
+}
+
+.site-footer img {
+  vertical-align: middle;
 }
