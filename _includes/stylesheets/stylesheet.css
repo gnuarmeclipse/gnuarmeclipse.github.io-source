@@ -720,6 +720,23 @@ form {
   color: #9ddcff;
 }
 
+#main-content pre {
+  background-color: #f2f8fc;
+}
+
+#main-content code {
+  color: #2879d0;
+  background-color: #f2f8fc;
+}
+
+#main-content p code {
+  border: solid 1px #f2f2f2;
+}
+
+#main-content li code {
+  border: solid 1px #f2f2f2;
+}
+
 p {
   margin-bottom: 20px;
 }
