@@ -1,0 +1,5 @@
+* [Home]({{ site.baseurl }}/)
+* [News]({{ site.baseurl }}/blog/)
+* [Downloads]({{ site.baseurl }}/downloads/)
+* [Support]({{ site.baseurl }}/support/)
+* [About]({{ site.baseurl }}/about/)

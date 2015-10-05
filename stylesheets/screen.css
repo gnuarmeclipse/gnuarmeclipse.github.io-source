@@ -1,7 +1,9 @@
 ---
 ---
 
-{% include stylesheets/stylesheet.css %}
-{% include stylesheets/mobile.css %}
 {% include stylesheets/github-light.css %}
+{% include stylesheets/octicons.css %}
+{% include stylesheets/stylesheet.css %}
+{% include stylesheets/footer.css %}
 {% include stylesheets/toc.css %}
+{% include stylesheets/mobile.css %}
