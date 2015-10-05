@@ -29,4 +29,5 @@ layout: default
 {% assign add_separator = false %}
 {% for item in page.tags %}{% if add_separator %}, {% else %}{% assign add_separator = true %}{% endif %}<strong>{{ item | downcase }}</strong>{% endfor %}{% endif %}.{% endif %}
 </br>Last modified on {{ page.last_modified_at | date: '%c %Z' }}.
+<div class="fb-share-button" data-href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" data-layout="button"></div>
 </p>
