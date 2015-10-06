@@ -8,7 +8,7 @@ date: 2015-09-07 18:31:00 +0300
 
 ---
 
-This site is dedicated to the **GNU ARM Eclipse** family of plug-ins and tools for embedded ARM development, based on GNU toolchains. This project is hosted on [GitHub](https://github.com/gnuarmeclipse) and [SourceForge](http://sourceforge.net/projects/gnuarmeclipse/).
+The **GNU ARM Eclipse** is an open source project that includes a family of Eclipse plug-ins and tools for multi-platorm embedded ARM development, based on GNU toolchains. This project is hosted on [GitHub](https://github.com/gnuarmeclipse) and [SourceForge](http://sourceforge.net/projects/gnuarmeclipse/).
 
 ## The GNU ARM Eclipse plug-ins
 
@@ -28,14 +28,23 @@ Apart from the main Eclipse plug-ins, this project also includes several additio
 
 * **GNU ARM Eclipse OpenOCD**
 
-  The **GNU ARM Eclipse OpenOCD** subproject is a new distribution of [OpenOCD](http://openocd.org/), customised for a better/more convenient integration with the **GNU ARM OpenOCD Debugging** plug-in.
+  The **GNU ARM Eclipse OpenOCD** subproject is a new distribution of [OpenOCD](http://openocd.org/), customised for a better/more convenient integration with the **GNU ARM OpenOCD Debugging** plug-in. Binaries for Windows, GNU/Linux and OS X are available.
 
 * **GNU ARM Eclipse QEMU**
 
-  The **GNU ARM Eclipse QEMU** subproject is a fork of [QEMU](http://wiki.qemu.org/Main_Page) (an open source machine emulator), intended to provide support for Cortex-M emulation in GNU ARM Eclipse.
+  The **GNU ARM Eclipse QEMU** subproject is a fork of [QEMU](http://wiki.qemu.org/Main_Page) (an open source machine emulator), intended to provide support for Cortex-M emulation in GNU ARM Eclipse. Binaries for Windows, GNU/Linux and OS X are available.
 
   ![The STM32F4-Discovery 4 LEDs]({{ site.baseurl }}/assets/images/2015/stm32f4-discovery-leds.png)
 
-## Enjoy!
+## Let us know if you enjoyed it!
 
-If you successfully installed and used this project, we’d be honoured to receive your **[GitHub Stars](https://github.com/gnuarmeclipse/plug-ins/stargazers)**, and eventually a short review in the main [SourceForge Project](http://sourceforge.net/projects/gnuarmeclipse) page.
+We definitely enjoyed working on the project; if you successfully installed GNU ARM Eclipse and enjoyed using it, please let us know; here are some advices:
+
+* the best praise would be to **donate** - if you want to speed up development and more great features to be added in future versions, please consider donnating; any contribution, small or generous, will be highly appreciated;
+* go to the project [Facebook page](https://www.facebook.com/gnuarmeclipse) and **Like** the project, write your opinion on the project wall, or share any of the posts and pages with your friends;
+* star the project using the [GitHub Stars](https://github.com/gnuarmeclipse/plug-ins/stargazers);
+* write a short review in the main [SourceForge Project](http://sourceforge.net/projects/gnuarmeclipse) page.
+
+Thank you,
+
+Liviu Ionescu
