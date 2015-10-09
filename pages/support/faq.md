@@ -10,6 +10,12 @@ date: 2015-09-11 20:28:00 +0300
 
 <div style="clear: both;"></div>
 
+## The **Devices** tab is not visible.
+
+> I installed GNU ARM Eclipse plug-ins in LPCXpresso. ... I can't see Devices tab in the Settings window of project Properties.
+
+Unfortunately it is not possible to assign devices/boards to projects created by other plug-ins, because they lack the mechanisms to handle such additional data. The **Devices** tab is  visible only for projects created by the GNU ARM Eclipse plug-ins.
+
 ## Error: undefined reference to _function_
 
 > I created a simple STM32x project... I can call the functions in RCC and GPIO header files, but while calling functions in TIM header the linker reports an undefined reference.
