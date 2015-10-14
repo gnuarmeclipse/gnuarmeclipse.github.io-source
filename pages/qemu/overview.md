@@ -43,7 +43,7 @@ The main benefits of using the **GNU ARM Eclipse QEMU** are:
 
 The boards currently supported by the GNU ARM Eclipse QEMU are:
 
-* **Mapple** – LeafLab Arduino-style STM32 microcontroller board
+* **Maple** – LeafLab Arduino-style STM32 microcontroller board
 * **NUCLEO-F103RB** – ST Nucleo Development Board for STM32 F1 series
 * **NetduinoGo** – Netduino GoBus Development Board with STM32F4
 * **NetduinoPlus2** – Netduino Development Board with STM32F4
@@ -79,7 +79,7 @@ Work to support for the following boards is under way, but no release date is se
 * NUCLEO-F411RE – ST Nucleo Development Board for STM32 F4 series
 * NUCLEO-L152RE – ST Nucleo Development Board with STM32L152RET6
 * Netduino2 – Netduino Development Board with STM32F2
-* OLIMEXINO-STM32 – Olimex Mapple (Arduino-like) Development Board
+* OLIMEXINO-STM32 – Olimex Maple (Arduino-like) Development Board
 * SAM3-H256 – Olimex Header Board for ATSAM3S4BA
 * STM32F0-Discovery – ST Discovery kit for STM32F051 line
 * STM32F3-Discovery – ST Discovery kit for STM32F303 line

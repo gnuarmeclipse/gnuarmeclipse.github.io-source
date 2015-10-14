@@ -16,12 +16,12 @@ date: 2015-09-04 17:02:00 +0300
 * nucleo-f411re board added
 * version 2.3.50-201508041609-dev released
   * Supported boards:
-    * Mapple - LeafLab Arduino-style STM32 microcontroller board (r5)
+    * Maple - LeafLab Arduino-style STM32 microcontroller board (r5)
     * NUCLEO-F103RB -  ST Nucleo Development Board for STM32 F1 series
     * NUCLEO-F411RE - ST Nucleo Development Board for STM32 F4 series
     * NetduinoGo  - Netduino GoBus Development Board with STM32F4
     * NetduinoPlus2 - Netduino Development Board with STM32F4
-    * OLIMEXINO-STM32 - Olimex Mapple (Arduino-like) Development Board
+    * OLIMEXINO-STM32 - Olimex Maple (Arduino-like) Development Board
     * STM32-E407 - Olimex Development Board for STM32F407ZGT6
     * STM32-H103 - Olimex Header Board for STM32F103RBT6
     * STM32-P103 - Olimex Prototype Board for STM32F103RBT6
@@ -43,11 +43,11 @@ date: 2015-09-04 17:02:00 +0300
 
 * version 2.3.50-201508012000-dev released
   * Supported boards:
-    * Mapple - LeafLab Arduino-style STM32 microcontroller board (r5)
+    * Maple - LeafLab Arduino-style STM32 microcontroller board (r5)
     * NUCLEO-F103RB -  ST Nucleo Development Board for STM32 F1 series
     * NetduinoGo  - Netduino GoBus Development Board with STM32F4
     * NetduinoPlus2 - Netduino Development Board with STM32F4
-    * OLIMEXINO-STM32 - Olimex Mapple (Arduino-like) Development Board
+    * OLIMEXINO-STM32 - Olimex Maple (Arduino-like) Development Board
     * STM32-E407 - Olimex Development Board for STM32F407ZGT6
     * STM32-H103 - Olimex Header Board for STM32F103RBT6
     * STM32-P103 - Olimex Prototype Board for STM32F103RBT6
