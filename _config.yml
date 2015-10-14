@@ -11,6 +11,8 @@ exclude:
   - README.md
   - jekyll-build.command
   - jekyll-serve.command
+  - atom.command
+  - localhost-4000.webloc
 
 # The subpath of your site, e.g. /blog (note the leading slash and the
 # absence of a trailing slash).
@@ -40,7 +42,11 @@ gems:
   - jekyll-sitemap
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
+# markdown: redcarpet
+
+kramdown:
+  input: GFM
 
 redcarpet:
   extensions:
@@ -51,6 +57,8 @@ redcarpet:
     - strikethrough
     - superscript
     - highlight
+    - with_toc_data
+    - safe_links_only
 
 # Warning: paginator retired in Jekyll 3!
 # Make this larger, probably 5 is a good choice.
@@ -75,6 +83,7 @@ google-site-verification: NT_y3tqI_8mrd8gYA_FDWHT2-tkJExOC6KBkSnyZx6c
 # jekyll-toc-generator
 tocTopTag: h2
 minItemsToShowToc: 3
+useExistingAnchors: true
 
 css-date: 201510051605
 

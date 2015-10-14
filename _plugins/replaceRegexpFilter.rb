@@ -1,5 +1,5 @@
 module Jekyll
-  module MyFilters
+  module ReplaceRegexpFilter
     def replace_regexp(input, string, replacement = ''.freeze)
       re = Regexp::new string.to_s
       input.to_s.gsub(re, replacement.to_s)
@@ -7,4 +7,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_filter(Jekyll::MyFilters)
+Liquid::Template.register_filter(Jekyll::ReplaceRegexpFilter)
