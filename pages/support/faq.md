@@ -10,6 +10,17 @@ date: 2015-09-11 20:28:00 +0300
 
 <div style="clear: both;"></div>
 
+## How to compile files excluded from build?
+
+> Why the default state for `system/src/.../xxx.c` is not enabled?
+
+Because during project creation the wizard was configured with **Exclude unused**.
+
+> How to enable them?
+
+Right click → **Resource Configurations** → **Exclude from build** → uncheck
+
+
 ## The **Devices** tab is not visible.
 
 > I installed GNU ARM Eclipse plug-ins in LPCXpresso. ... I can't see Devices tab in the Settings window of project Properties.
