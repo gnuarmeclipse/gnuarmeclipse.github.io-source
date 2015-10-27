@@ -58,7 +58,7 @@ The following steps can be performed on Windows:
 * read the `readme.txt` file
 * test if the compiler is functional
 
-```
+  ```
 C:\Users\Liviu Ionescu\>"C:\Program Files\GNU Tools ARM Embedded\4.8 2014q2\bin\arm-none-eabi-gcc.exe" --version
 arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]
 ```
@@ -80,7 +80,7 @@ The following steps can be performed on OS X:
 
   > Note: It is highly recommended to **do not use a different install path**, since the plug-in tries to automatically discover the toolchain in this default location.
 
-```
+  ```
 $ sudo mkdir -p /usr/local
 $ cd /usr/local
 $ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q2-20140609-mac.tar.bz2
@@ -89,7 +89,7 @@ $ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q2-20140609-mac.tar.bz2
 * the result should be a folder like `/usr/local/gcc-arm-none-eabi-4_8-2014q2`
 * test if the compiler is functional
 
-```
+  ```
 $ /usr/local/gcc-arm-none-eabi-4_8-2014q2/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]
 ```
@@ -110,19 +110,19 @@ The following steps were performed on **Ubuntu 14.04 LTSx64** (please adjust the
 
 * since the toolchain executables are 32-bits apps, when running on 64-bits machines, be sure you install the following 32-bits libraries (for different versions check the toolchain README for the actual list):
 
-```
+  ```
 $ sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0
 ```
 
 * on Ubuntu 15.04 the following libraries are required:
 
-```
+  ```
 $ sudo apt-get install lib32ncurses5
 ```
 
 * on Ubuntu 12 LTSx64 all 32-bits libraries were packed in ia32-libs, so you can also use, but be prepared to get a lot of useless libraries:
 
-```
+  ```
 $ sudo apt-get install ia32-libs
 ```
 
@@ -133,7 +133,7 @@ $ sudo apt-get install ia32-libs
 
   > Note: It is highly recommended to **do not use a different install path**, since the plug-in tries to automatically discover the toolchain in this default location.
 
-```
+  ```
 $ cd /usr/local
 $ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q1-20140314-linux.tar.bz2
 ```
@@ -141,7 +141,7 @@ $ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q1-20140314-linux.tar.bz2
 * the result should be a folder like `/usr/local/gcc-arm-none-eabi-4_8-2014q1`
 * test if the compiler is functional
 
-```
+  ```
 $ /usr/local/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.3 20140228 (release) [ARM/embedded-4_8-branch revision 208322]
 ```
