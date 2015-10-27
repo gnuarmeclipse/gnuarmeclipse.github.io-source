@@ -6,6 +6,9 @@ author: Liviu Ionescu
 
 date: 2015-09-11 22:49:00 +0300
 
+version-id: 4_9-2015q3
+version-date: 20150921
+
 ---
 
 ## Overview
@@ -25,7 +28,7 @@ The installation details described below assume the selection of the GCC ARM Em
 
 Due to portability reasons, the GNU ARM Eclipse plug-ins do not include any toolchain binaries, but they can be downloaded either from the [GCC ARM Embedded project page](http://launchpad.net/gcc-arm-embedded), or, even better, from the [All downloads](http://launchpad.net/gcc-arm-embedded/+download) page, where it is a bit easier to identify which file is required.
 
-Versions from 4.7 up to 4.9-2014-q4 were tested and are known to work properly.
+Versions from 4_7 up to {{ page.version-id }} were tested and are known to work properly.
 
 ![Launchpad]({{ site.baseurl }}/assets/images/2014/01/Launchpad.png)
 
@@ -35,7 +38,7 @@ Versions from 4.7 up to 4.9-2014-q4 were tested and are known to work properly.
 
 The following steps can be performed on Windows:
 
-* download the latest Windows installer **.exe** file (currently `gcc-arm-none-eabi-4_8-2014q2-20140609-win32.exe`, about 84MB)
+* download the latest Windows installer **.exe** file (currently `gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-win32.exe`, about 84 MB)
 * locate the file (usually in the `...\Downloads\`  folder) and double click it to start the installer
 * authenticate with the administrative password, to allow the installer write in system locations
 
@@ -73,7 +76,7 @@ If you'll ever need to remove the toolchain, there is an **uninstall.exe** progr
 
 The following steps can be performed on OS X:
 
-* download the latest OS X install tarball file (currently `gcc-arm-none-eabi-4_8-2014q2-20140609-mac.tar.bz2`, about 66MB)
+* download the latest OS X install tarball file (currently `gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-mac.tar.bz2`, about 66 MB)
 * locate the file (usually in the `$HOME/Downloads` folder)
 * decide on a location to install the toolchain; the recommended folder is `/usr/local/`
 * unpack the archive in the destination folder
@@ -83,14 +86,14 @@ The following steps can be performed on OS X:
   ```
 $ sudo mkdir -p /usr/local
 $ cd /usr/local
-$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q2-20140609-mac.tar.bz2
+$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-mac.tar.bz2
 ```
 
-* the result should be a folder like `/usr/local/gcc-arm-none-eabi-4_8-2014q2`
+* the result should be a folder like `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`
 * test if the compiler is functional
 
   ```
-$ /usr/local/gcc-arm-none-eabi-4_8-2014q2/bin/arm-none-eabi-gcc --version
+$ /usr/local/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]
 ```
 
@@ -98,7 +101,7 @@ arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (releas
 
 The complete toolchain documentation is available in the `.../share/doc/pdf/` folder.
 
-If you'll ever need to remove the toolchain, just remove the `/usr/local/gcc-arm-none-eabi-4_8-2014q2`, there are no other components stored in system folders.
+If you'll ever need to remove the toolchain, just remove the `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`, there are no other components stored in system folders.
 
 ### MacPorts
 
@@ -126,7 +129,10 @@ $ sudo apt-get install lib32ncurses5
 $ sudo apt-get install ia32-libs
 ```
 
-* download the latest Linux install tarball file (currently `gcc-arm-none-eabi-4_8-2014q1-20140314-linux.tar.bz2`, more than 60MB)
+* download the latest Linux install tarball file from [Launchpad](https://launchpad.net/gcc-arm-embedded/+download) (currently `gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-linux.tar.bz2`, more than 60 MB)
+
+  > Note: DO NOT install the ARM GCC package that comes with your distribution, especially if it is newer than the one provided by Launchpad, since generally it is not supported, and debugging sessions might fail.
+
 * locate the file (usually in the `$HOME/Downloads/`  folder)
 * decide on a location to install the toolchain; the recommended folder is `/usr/local/`
 * unpack the archive in the destination folder
@@ -135,7 +141,7 @@ $ sudo apt-get install ia32-libs
 
   ```
 $ cd /usr/local
-$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-4_8-2014q1-20140314-linux.tar.bz2
+$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-linux.tar.bz2
 ```
 
 * the result should be a folder like `/usr/local/gcc-arm-none-eabi-4_8-2014q1`
@@ -150,7 +156,7 @@ arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.3 20140228 (releas
 
 The complete toolchain documentation is available in the `.../share/doc/pdf/` folder.
 
-If you'll ever need to remove the toolchain, just remove the `/usr/local/gcc-arm-none-eabi-4_8-2014q1`, there are no other components stored in system folders.
+If you'll ever need to remove the toolchain, just remove the `/usr/local/gcc-arm-none-{{ page.version-id }}`, there are no other components stored in system folders.
 
 ## Toolchain path
 
