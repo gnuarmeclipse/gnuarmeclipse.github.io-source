@@ -72,6 +72,11 @@ To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/
     curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-openocd.sh \
     -o ~/Downloads/build-openocd.sh
 
+Alternatively, in a development environment, the entire `build-scripts.git` can be cloned, and a link to `Downloads` created:
+
+    ln -s /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/build-scripts.git/scripts/build-openocd.sh \
+    ~/Downloads/build-openocd.sh
+
 ## Check the script
 
 The script creates a temporary build **Work/openocd** folder in the the user home. Although not recommended, if for any reasons you need to change this, you can redefine WORK_FOLDER variable before invoking the script.
