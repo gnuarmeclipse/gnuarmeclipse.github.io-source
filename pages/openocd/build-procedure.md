@@ -79,7 +79,7 @@ Alternatively, in a development environment, the entire `build-scripts.git` can 
 
 ## Check the script
 
-The script creates a temporary build **Work/openocd** folder in the the user home. Although not recommended, if for any reasons you need to change this, you can redefine WORK_FOLDER variable before invoking the script.
+The script creates a temporary build `Work/openocd` folder in the the user home. Although not recommended, if for any reasons you need to change this, you can redefine `WORK_FOLDER` variable before invoking the script.
 
 ## Preload the Docker images
 
@@ -104,9 +104,9 @@ The result should look similar to:
 
 ## Build all distribution files
 
-    bash ~/Downloads/build-openocd.sh --all
+    caffeinate bash ~/Downloads/build-openocd.sh --all
 
-About half an hour later, the output of the build script is a set of 5 files in the output folder:
+About half an hour later (`caffeinate` is used to make sure the system does not go to sleep while left unattended), the output of the build script is a set of 5 files in the output folder:
 
     $ ls -l output
     total 105616
@@ -125,7 +125,7 @@ About half an hour later, the output of the build script is a set of 5 files in 
 
 ### Separate platform specific builds
 
-Instead of **--all**, you can use any combination of:
+Instead of `--all`, you can use any combination of:
 
     --win32 --win64 --debian32 --debian64 --osx
 
@@ -175,7 +175,7 @@ No other files are installed in any system folders or other locations.
 
 ## Uninstall
 
-To uninstall OpenOCD from a Windows machine, use the **openocd-uninstall.exe** program.
+To uninstall OpenOCD from a Windows machine, use the `openocd-uninstall.exe` program.
 
 On OS X and GNU/Linux, the GNU ARM Eclipse OpenOCD install folder is self-contained and removing it is enough for completely removing the application.
 
@@ -193,9 +193,9 @@ For a true test you need to first install the package and then run the program f
 
 ## Stop boot2docker
 
-On OS X, the build script automatically starts **boot2docker**, if needed.
+On OS X, the build script automatically starts `boot2docker`, if needed.
 
-When done, be sure you stop boot2docker, to free significant resources (a VirtualBox Ubuntu machine).
+When done, be sure you stop `boot2docker`, to free significant resources (a VirtualBox Ubuntu machine).
 
     boot2docker stop
 
