@@ -37,7 +37,7 @@ The presence of a GDB as part of a GNU toolchain is mandatory, and it is recomm
 
 Before starting work with QEMU, it is required to define the path to the QEMU folder.
 
-* in the *Eclipse* menu, go to **Preferences** → **Run/Debug** → **QEMU**
+* in the _Eclipse_ menu, go to **(Window →) Preferences** → **Run/Debug** → **QEMU**
 
   ![The QEMU preferences page]({{ site.baseurl }}/assets/images/2015/04/QEMU_Preferences.png)
 
@@ -64,7 +64,7 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 * select the project
 * build it and ensure the executable file is available
 * expand either the Debug or the Release folder and select the executable you want to debug
-* in the *Eclipse* menu, go to **Run** → **Debug Configurations…** or select the down arrow at the right of the bug icon.
+* in the _Eclipse_ menu, go to **Run** → **Debug Configurations…** or select the down arrow at the right of the bug icon.
 
   ![The build result]({{ site.baseurl }}/assets/images/2013/10/HelloBuildResult.png)
 
@@ -100,7 +100,7 @@ With the above settings, the debug configuration will be saved in the project, n
 
 With all the above steps completed properly, you can start the debug session:
 
-* in the *Eclipse* menu, go to **Run** → **Debug Configurations...**
+* in the _Eclipse_ menu, go to **Run** → **Debug Configurations...**
 * if necessary, expand the** GDB QEMU Debugging** group
 * select the newly defined **hello** configuration
 * click the bottom **Debug** button
@@ -117,7 +117,7 @@ This happened because by default the *Board name:* field contains a question mar
 
 Further configure the debug configuration
 
-* in the *Eclipse* menu, go to **Run** → **Debug Configurations...**
+* in the _Eclipse_ menu, go to **Run** → **Debug Configurations...**
 * select **hello**
 * select the **Debugger** tab
 * in the *Board name:* field, enter **STM32-H103** (a popular Olimex STM32F103 board)

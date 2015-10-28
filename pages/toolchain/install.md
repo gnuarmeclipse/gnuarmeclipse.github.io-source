@@ -114,19 +114,19 @@ The following steps were performed on **Ubuntu 14.04 LTSx64** (please adjust the
 * since the toolchain executables are 32-bits apps, when running on 64-bits machines, be sure you install the following 32-bits libraries (for different versions check the toolchain README for the actual list):
 
   ```
-$ sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0
+$ sudo apt-get -y install lib32z1 lib32ncurses5 lib32bz2-1.0
 ```
 
 * on Ubuntu 15.04 the following libraries are required:
 
   ```
-$ sudo apt-get install lib32ncurses5
+$ sudo apt-get -y install lib32ncurses5
 ```
 
 * on Ubuntu 12 LTSx64 all 32-bits libraries were packed in ia32-libs, so you can also use, but be prepared to get a lot of useless libraries:
 
   ```
-$ sudo apt-get install ia32-libs
+$ sudo apt-get -y install ia32-libs
 ```
 
 * download the latest Linux install tarball file from [Launchpad](https://launchpad.net/gcc-arm-embedded/+download) (currently `gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-linux.tar.bz2`, more than 60 MB)
@@ -144,7 +144,7 @@ $ cd /usr/local
 $ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-linux.tar.bz2
 ```
 
-* the result should be a folder like `/usr/local/gcc-arm-none-eabi-4_8-2014q1`
+* the result should be a folder like `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`
 * test if the compiler is functional
 
   ```

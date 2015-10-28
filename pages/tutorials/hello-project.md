@@ -23,7 +23,7 @@ It is also recommended to [set the workspace preferences][2].
 
 ## Create a new C project
 
-To create a new project, go to *Eclipse* menu, **File** → **New** (or the button in the upper left corner), and select the **C Project**:
+To create a new project, go to _Eclipse_ menu, **File** → **New** (or the button in the upper left corner), and select the **C Project**:
 
 ![NewCProject]({{ site.baseurl }}/assets/images/2013/10/NewCProject.png)
 

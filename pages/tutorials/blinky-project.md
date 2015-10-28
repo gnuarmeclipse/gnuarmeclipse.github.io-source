@@ -24,7 +24,7 @@ Note: the multi-LED template is currently available only for ST32F4, and only fo
 
 ## Create a new C++ project
 
-To create a new project, go to *Eclipse* menu, **File** → **New** (or the button in the upper left corner), and select the **C++ Project**:
+To create a new project, go to _Eclipse_ menu, **File** → **New** (or the button in the upper left corner), and select the **C++ Project**:
 
 ![Create a new C++ project]({{ site.baseurl }}/assets/images/2015/08/NewCppProject.png)
 

@@ -28,7 +28,7 @@ One of the main requirements is to build correctly, even if functionality is onl
 
 The template plug-ins are installed using the same procedure as the other plug-ins:
 
-* in the *Eclipse* menu, go to **Help** → **Install New Software**
+* in the _Eclipse_ menu, go to **Help** → **Install New Software**
 * select *Work with:* **GNU ARM Eclipse Plug-ins**
 * extend the **GNU ARM C/C++ Cross Development Tools**
 * be sure the desired **... Project Template** are selected

@@ -51,7 +51,7 @@ Probably the main purpose of this plug-in is to built executable applications, m
 
 ### Create a new C/C++ project
 
-To create a new project, go to *Eclipse* menu, **File** → **New** (or the button in the upper left corner), and select **C Project** or **C++ Project**:
+To create a new project, go to _Eclipse_ menu, **File** → **New** (or the button in the upper left corner), and select **C Project** or **C++ Project**:
 
 ![NewCProject]({{ site.baseurl }}/assets/images/2013/10/NewCProject.png)
 
@@ -121,7 +121,7 @@ In addition to executable applications, this plug-in can also be used to build l
 
 ### Static libraries
 
-To create a new project, go to *Eclipse* menu, **File** → **New** (or the button in the upper left corner), and select the **C Project** and in the C Project window:
+To create a new project, go to _Eclipse_ menu, **File** → **New** (or the button in the upper left corner), and select the **C Project** and in the C Project window:
 
 * in the *Project name:* field enter the name of the new project, for example **staticLib**
 * in the *Project type:* section expand the **Static Library** type and select **Empty Project**

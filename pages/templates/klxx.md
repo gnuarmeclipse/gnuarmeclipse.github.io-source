@@ -16,7 +16,7 @@ Functionality is similar across all families, so we'll describe in details only 
 
 ## Project creation
 
-To create a new, go to *Eclipse* menu, **File** → **New** (or the button in the upper left corner), and select **C Project** or **C++ Project**:
+To create a new, go to _Eclipse_ menu, **File** → **New** (or the button in the upper left corner), and select **C Project** or **C++ Project**:
 
 ![Create a new KL25 C++ project]({{ site.baseurl }}/assets/images/2014/02/KL25NewProject.png)
 

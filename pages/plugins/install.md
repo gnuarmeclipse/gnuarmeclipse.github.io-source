@@ -34,13 +34,14 @@ However please note that no support requests referring to Win XP 64 will be pro
 
 The recommended package is the official [Oracle **Java SE**](http://www.oracle.com/technetwork/java/javase/index.html). The **OpenJDK Java** used in Ubuntu is also fine. The minimum is JDK 1.7, or even JRE 1.7 (the Java Runtime Environment), but, as said before, better use the latest JDK. On OS X the last Apple Java implementation is 1.6, so it is required to use the Oracle 1.7 or later.
 
-For example, on Ubuntu 12.04 LTS, you can install the OpenJDK run-time and test if it was properly installed with the following commands:
+For example, on Ubuntu 14.04 LTS, you can install the OpenJDK run-time and test if it was properly installed with the following commands:
 
-    $ sudo apt-get install openjdk-7-jre
+    $ sudo apt-get -y install default-jdk
     $ java -version
-    java version "1.7.0_55"
-    OpenJDK Runtime Environment (IcedTea 2.4.7) (7u55-2.4.7-1ubuntu1~0.12.04.2)
-    OpenJDK 64-Bit Server VM (build 24.51-b03, mixed mode)
+    java version "1.7.0_85"
+    OpenJDK Runtime Environment (IcedTea 2.6.1) (7u85-2.6.1-5ubuntu0.14.04.1)
+    OpenJDK 64-Bit Server VM (build 24.85-b03, mixed mode)
+
 
 ### Eclipse & CDT
 
@@ -52,7 +53,7 @@ Just go to the [Eclipse download site](http://www.eclipse.org/downloads/) and 
 
 The minimum CDT version is 8.3. Do not try to use earlier versions, since either the install will fail, or it will not run properly.
 
-As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C++ Developers** for the cross ARM development projects. Even if you did so, but especially if you did not do so, it is a good idea to check if you really have the latest version available. For this, enter the *Eclipse* menu and go to **Help** → **Install New Software**
+As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C++ Developers** for the cross ARM development projects. Even if you did so, but especially if you did not do so, it is a good idea to check if you really have the latest version available. For this, enter the _Eclipse_ menu and go to **Help** → **Install New Software**
 
 ![Install new software]({{ site.baseurl }}/assets/images/2013/10/InstallNewSoftware.png)
 
@@ -76,7 +77,7 @@ The following samples are from Eclipse 4.3 Kepler on OS X. Other platforms may b
 
 ### The recommended way
 
-The recommended way to install these plug-ins is to use the Eclipse standard install/update mechanism: In the *Eclipse* menu: **Help** → **Install New Software...**
+The recommended way to install these plug-ins is to use the Eclipse standard install/update mechanism: In the _Eclipse_ menu → **Help** → **Install New Software...**
 
 * in the *Install* window, click the **Add...** button (on future updates, just select the URL in the **Work with:** combo)
 * fill in *Name:* with **GNU ARM Eclipse Plug-ins**
@@ -104,7 +105,7 @@ If this happens, Eclipse remains in a confused state and rarely can recover itse
 
 The workaround is to remove the GNU ARM Eclipse update site from the available sites, restart Eclipse and add it again.
 
-For this go to Eclipse menu → **Preferences** → **Install/Update** → **Available Software Sites**:
+For this go to _Eclipse_ menu → **(Window →) Preferences** → **Install/Update** → **Available Software Sites**:
 
 ![Remove from available site list]({{ site.baseurl }}/assets/images/2013/10/AvailableSites.png)
 
@@ -113,7 +114,7 @@ If this still fails, the alternative method is to manually download the latest
 
 ### The alternate way
 
-If, for any reason, you need to install a specific version of the plug-in, the solution is to download the archive from [SourceForge Files](http://sourceforge.net/projects/gnuarmeclipse/files/Current%20Releases/) and to point the Eclipse update mechanism to the local archive: In the* Eclipse* menu: **Help** → **Install New Software...**
+If, for any reason, you need to install a specific version of the plug-in, the solution is to download the archive from [SourceForge Files](http://sourceforge.net/projects/gnuarmeclipse/files/Current%20Releases/) and to point the Eclipse update mechanism to the local archive: In the* Eclipse* menu → **Help** → **Install New Software...**
 
 * in the *Install* window, click the **Add...** button
 * in the *Add Repository* window, click the **Archive...** button

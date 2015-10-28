@@ -33,7 +33,7 @@ This instance of Eclipse will be used for actual development.
 -   on GNU/Linux, create a link for eclipse, rename it **Eclipse 4.4 RCP CDT alias** and move it to a place of your choice
 -   start the new Eclipse
 -   create a new workspace, preferably in a separate folder, like **Eclipse Workspaces/workspace-44-rcp** (note: be sure you create the workspace where you need it to be, since moving later is generally not supported by Eclipse; if you need this, preferably create a new workspace)
--   check if you installed the right Eclipse; go to the Eclipse menu **Help** (**Eclipse** on OS X) → **About Eclipse** and the first line should read **Eclipse for RCP and RAP Developers**
+-   check if you installed the right Eclipse; go to the _Eclipse_ menu → **Help** (*_Eclipse_* on OS X) → **About Eclipse** and the first line should read **Eclipse for RCP and RAP Developers**
 -   **Help** → **Install New Software**
   * Work with: Luna - <http://download.eclipse.org/releases/luna>
     * In **Programming Languages**
@@ -51,7 +51,7 @@ This instance of Eclipse will be used for actual development.
   * go to <http://www.eclipse.org/cdt/downloads.php>, and download **cdt-master-8.3.0.zip** (required to keep compatibility with Kepler 4.3)
   * unpack the archive
   * move the new folder to in the Eclipses folder
-  * in Eclipse menu: **Preferences...** → **Plug-in Development** → **API Baselines**
+  * in _Eclipse_ menu → **(Window →) Preferences** → **Plug-in Development** → **API Baselines**
     * click the **Add Baseline...** button
       * set Name: to 8.3.0
       * browse Location: to .../GNU ARM Eclipse/cdt-master-8.3.0 (or set to this folder and click the **Reset** button)
@@ -62,7 +62,7 @@ This instance of Eclipse will be used for actual development.
 ### Create and configure the workspace
 
 -   change the workspace preferences
-  * go to Eclipse menu → **Preferences**
+  * go to _Eclipse_ menu → **(Window →) Preferences**
   * **General** → **Workspace**
     * disable **Build automatically**
     * enable **Refresh on access**
@@ -87,7 +87,7 @@ This separate instance of Eclipse will be used to test the plug-in.
 -   go to [Eclipse download site](http://www.eclipse.org/downloads/)
 -   download **Eclipse IDE for C/C++ Developers** (eclipse-cpp-luna-R-macosx-cocoa-x86_64.tar.gz)
 -   unpack the archive
--   rename **eclipse** to **eclipse-4.4-cdt-test**
+-   rename *_Eclipse_* to **eclipse-4.4-cdt-test**
 -   on Mac OS X, enter the folder, make a Finder alias of the **Eclipse.app**, rename it **Eclipse 4.4 CDT test alias** and move it to a place of your choice (the Desktop, for example)
 
 ## Clone the repository
@@ -99,7 +99,7 @@ On Unix systems, the recommended method is using a command line:
 
 On Windows, without a git command, you can use Eclipse to clone the Git repository
 
-* Eclipse Menu: **File** → **Import**
+* _Eclipse_ menu → **File** → **Import**
   * Git → **Projects from Git**
   * click **Next**
 * Select Repository Source
@@ -122,7 +122,7 @@ On Windows, without a git command, you can use Eclipse to clone the Git reposito
 
 Import projects using Maven
 
-* Eclipse Menu: **File** → **Import**
+* _Eclipse_ menu → **File** → **Import**
 * Select
   * Maven → **Existing Maven Projects**
   * click **Next**

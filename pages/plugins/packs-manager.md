@@ -51,7 +51,7 @@ The packs manager uses a separate perspective, with selection views and outline 
 
 Alternatively you can:
 
-* go to the _Eclipse_ menu **Window** → **Open Perspective** → **Other...**
+* go to the _Eclipse_ menu → **Window** → **Open Perspective** → **Other...**
 * select the Packs perspective in the list.
 
 The result is a window like this:

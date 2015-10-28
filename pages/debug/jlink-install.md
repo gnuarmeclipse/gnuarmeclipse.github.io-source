@@ -71,7 +71,7 @@ On OS X, the USB subsystem automatically identifies and allows access to USB dev
 
 There are multiple packages available for GNU/Linux on the SEGGER download site, built as Debian/Red Hat packages, in 32/64-bit versions, or plain TGZ archives. Select the one appropriate for you system and use the specific tools to install the package. For example, on Ubuntu, to install the 64-bit .deb file, use the following command:
 
-	$ sudo dpkg -i jlink_4.80_x86_64.deb
+	$ sudo dpkg -i ~/Downloads/jlink_5.2.7_x86_64.deb
 
 The J-Link executables are installed in **/usr/bin**.
 

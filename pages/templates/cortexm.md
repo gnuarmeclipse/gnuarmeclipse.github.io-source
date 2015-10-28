@@ -29,7 +29,7 @@ The first 3 files should be copied from the vendor specific package. Definitions
 
 The template can create both C and C++ projects. To create a new C++ project:
 
-* in the *Eclipse* menu, go to **File** → **New → C++ Project**
+* in the _Eclipse_ menu, go to **File** → **New → C++ Project**
 * in the *Executables* group, select the **Hello ARM Cortex-M C/C++ Project**
 
 ![New Cortex-M project]({{ site.baseurl }}/assets/images/2014/04/NewCMProject.png)

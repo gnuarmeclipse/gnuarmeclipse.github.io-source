@@ -108,22 +108,24 @@ As the name implies, these are Debian **tar.gz** archives, but can be executed 
 
 In case you use an older distribution and encounter difficulties to run **GNU ARM Eclipse OpenOCD**, you can also try to build it from sources on your machine. As a last resort, if your distribution includes an OpenOCD package, you can install it using the specific tools.
 
-To install this package, unpack the archive and copy it to:
+To install this package, unpack the archive and copy it to  `/opt/gnuarmeclipse/openocd/*`
 
-* `/opt/gnuarmeclipse/openocd/*`
+    sudo mkdir -p /opt/gnuarmeclipse
+    cd /opt/gnuarmeclipse
+    sudo tar xvf ~/Downloads/~/Downloads/gnuarmeclipse-openocd-debian64-0.10.0-201510281129-dev.tgz
 
 Note: although perfectly possible to install it in any location, it is recommended to use this location, since by default the plug-in searches for the executable in this location.
 
 To check if OpenOCD starts and is recent, use:
 
-	$ /opt/gnuarmeclipse/openocd/0.8.0-201501181257/bin/openocd --version
-	GNU ARM Eclipse 64-bit Open On-Chip Debugger 0.8.0-00036 (2015-01-18-12:57)
+	$ /opt/gnuarmeclipse/openocd/0.10.0-201510281129-dev/bin/openocd --version
+  GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.10.0-dev-00141-g09aeb96-dirty (2015-10-28-11:56)
 
 ### UDEV
 
 For the JTAG probes implemented as USB devices (actually most of them), the last installation step on GNU/Linux is to configure the UDEV subsystem. OpenOCD provides an UDEV rules file defining all the supported IDs; to install it, just copy the file to /etc/udev/rules.d and eventually notify the daemon:
 
-	$ sudo cp /opt/gnuarmeclipse/openocd/0.8.0-201501181257/contrib/99-openocd.rules \
+	$ sudo cp /opt/gnuarmeclipse/openocd/0.10.0-201510281129-dev/contrib/99-openocd.rules \
 	 /etc/udev/rules.d/
 	$ sudo udevadm control --reload-rules
 
