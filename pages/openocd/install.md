@@ -58,11 +58,9 @@ As usual on Windows, mastering drivers is a challenge and OpenOCD is no excepti
 
 #### ST-LINK/V2
 
-One example of compatible drivers are the ST-LINK/V2 USB drivers, from ST, available as part number [STSW-LINK003](http://www.st.com/web/catalog/tools/FM147/SC1887/PF258167) or [STSW-LINK006](http://www.st.com/web/catalog/tools/FM147/SC1887/PF259459) for Windows 8. Download the s-link\_v2\_usbdriver.zip archive and run the **st-link\_v2\_usbdriver.exe** with administrative privileges. By default, the package will install the drivers to:
+One example of compatible drivers are the ST-LINK/V2 USB drivers, from ST, available as part number [STSW-LINK009](http://www.st.com/web/en/catalog/tools/FM147/SC1887/PF260219). Download the `stsw-link009.zip` archive, extract its content to a separate folder, and run the `dpinst_amd64.exe` (or `dpinst_x86.exe`) with administrative privileges.
 
-*  `C:\Program Files\STMicroelectronics\st_toolset`
-
-As for most Windows drivers, to complete the installation, a restart will help.
+As for most Windows drivers, to complete the installation, a restart usually helps.
 
 Connect the ST-LINK/v2 or the DISCOVERY board and check in **Control Panel** → **System** → **Device Manager** if the JTAG is operational.
 
