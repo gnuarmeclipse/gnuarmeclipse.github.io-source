@@ -25,10 +25,10 @@ The details of installing the **GNU ARM Eclipse QEMU** on various platforms are 
 
 For user convenience, the Windows versions of **GNU ARM Eclipse QEMU** are packed as Windows setup wizards. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases) page and download the latest version named like:
 
-* gnuarmeclipse-qemu-win32-2.2.92-201504041652-dev-setup.exe
-* gnuarmeclipse-qemu-win64-2.2.92-201504041652-dev-setup.exe
+* `gnuarmeclipse-qemu-win32-2.2.92-201504041652-dev-setup.exe`
+* `gnuarmeclipse-qemu-win64-2.2.92-201504041652-dev-setup.exe`
 
-Select the win64 file for 64-bits machines and the win32 file for 32-bits machines.
+Select the `-win64-` file for 64-bits machines and the `-win32-` file for 32-bits machines.
 
 Run the setup as usual.
 
@@ -53,15 +53,16 @@ To check if QEMU starts, use the following command:
 	Copyright (c) 2003-2008 Fabrice Bellard
 
 #### Drivers
+
 For usual Cortex-M emulation, there are no special drivers required.
 
 ### OS X
 
 For user convenience, the OS X version of GNU ARM Eclipse QEMU is packed as an OS X install package. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases) page and download the latest version named like:
 
-* gnuarmeclipse-qemu-osx-2.2.92-201504041609-dev.pkg
+* `gnuarmeclipse-qemu-osx-2.2.92-201504041609-dev.pkg`
 
-As the name implies, this is an OS X package, that can be installed on any recent 64-bit OS X (it was tested on 10.10).
+As the name implies, this is an OS X package, that can be installed on any recent 64-bit OS X (the latest version was tested on 10.11).
 
 Run the install as usual.
 
@@ -85,16 +86,20 @@ To check if QEMU starts, use:
 
 The GNU/Linux versions of GNU ARM Eclipse QEMU are packed as TGZ archives. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases) page and download the latest version named like:
 
-* gnuarmeclipse-qemu-debian64-2.2.92-201504041716-dev.tgz
-* gnuarmeclipse-qemu-debian32-2.2.92-201504041746-dev.tgz
+* `gnuarmeclipse-qemu-debian64-2.2.92-201504041716-dev.tgz`
+* `gnuarmeclipse-qemu-debian32-2.2.92-201504041746-dev.tgz`
 
-As the name implies, these are Debian **tar.gz** archives, but can be executed on most recent GNU/Linux distributions (they were built on Debian 8 and were tested on Debian, Ubuntu, Manjaro, SuSE and Fedora). Select the debian64 file for 64-bits machines and the debian32 file for 32-bits machines.
+As the name implies, these are Debian `tar.gz` archives, but can be executed on most recent GNU/Linux distributions (they were built on Debian 8 and were tested on Debian, Ubuntu, Manjaro, SuSE and Fedora). Select the `-debian64-` file for 64-bits machines and the `-debian32-` file for 32-bits machines.
 
 Note: if your distribution already provides ready to run QEMU binaries, they currently cannot be used with the GNU ARM Eclipse plug-ins, because they lack the Cortex-M support; you need to install the **GNU ARM Eclipse QEMU**.
 
-To install this package, unpack the distribution archive and copy it to:
+To install this package, unpack the distribution archive and copy it to `/opt/gnuarmeclipse/qemu/${version}`
 
-* `/opt/gnuarmeclipse/qemu/${version}`
+```
+sudo mkdir -p /opt/gnuarmeclipse
+cd /opt/gnuarmeclipse
+sudo tar xvf ~/Downloads/gnuarmeclipse-qemu-debian64-2.4.50-201510290935-dev.tgz
+```
 
 Note: although perfectly possible to install it in any location, it is recommended to use this location, since by default the plug-in searches for the executable in this location.
 

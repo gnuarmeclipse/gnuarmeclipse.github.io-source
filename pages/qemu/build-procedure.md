@@ -21,7 +21,7 @@ Containers based on three docker images are used, one packing MinGW-w64 in a Deb
 
 #### Install Docker
 
-On OS X, install **boot2docker**, following the official [Install Docker on Mac OS X](https://docs.docker.com/installation/mac/) instructions.
+On OS X, install `boot2docker`, following the official [Install Docker on Mac OS X](https://docs.docker.com/installation/mac/) instructions.
 
 #### Install the Command Line Tools
 
@@ -55,7 +55,7 @@ For any GNU/Linux distribution, follow the [specific instructions](https://docs.
 
 #### Configure Docker to run as regular user
 
-To allow docker to run as a regular user, you need to be a member of the **docker** group.
+To allow docker to run as a regular user, you need to be a member of the `docker` group.
 
 	$ sudo groupadd docker
 	$ sudo gpasswd -a ${USER} docker
@@ -65,7 +65,7 @@ To make these changes effective, logout and login.
 
 #### Install required packages
 
-Since most of the build is performed inside the Docker containers, there are not many requirements for the host, and most of the time these programs are in the standard distribution (**curl**, **git**, **automake**, **patch**, **tar**, **unzip**).
+Since most of the build is performed inside the Docker containers, there are not many requirements for the host, and most of the time these programs are in the standard distribution (`curl`, `git`, `automake`, `patch`, `tar`, `unzip`).
 
 The script checks for them; if the script fails, install them and re-run.
 
@@ -82,9 +82,14 @@ To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/
 	$ curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh \
 	-o ~/Downloads/build-qemu.sh
 
+Alternatively, in a development environment, the entire `build-scripts.git` can be cloned, and a link to `Downloads` created:
+
+	ln -s /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/build-scripts.git/scripts/build-qemu.sh \
+	~/Downloads/build-qemu.sh
+
 ## Check the script
 
-The script creates a temporary build **Work/qemu** folder in the the user home. Although not recommended, if for any reasons you need to change this, you can redefine WORK_FOLDER variable before invoking the script.
+The script creates a temporary build `Work/qemu` folder in the the user home. Although not recommended, if for any reasons you need to change this, you can redefine WORK_FOLDER variable before invoking the script.
 
 ## Preload the Docker images
 
@@ -133,7 +138,7 @@ About half an hour later, the output of the build script is a set of 5 files in 
 
 ### Separate platform specific builds
 
-Instead of **--all**, you can use any combination of:
+Instead of `--all`, you can use any combination of:
 
 	--win32 --win64 --debian32 --debian64 --osx
 
@@ -241,7 +246,7 @@ No other files are installed in any system folders or other locations.
 
 ## Uninstall
 
-To uninstall QEMU from a Windows machine, use the **qemu-uninstall.exe** program.
+To uninstall QEMU from a Windows machine, use the `qemu-uninstall.exe` program.
 
 On OS X and GNU/Linux, the GNU ARM Eclipse QEMU install folder is self-contained and removing it is enough for completely removing the application.
 
@@ -257,9 +262,9 @@ For a true test you need to first install the package and then run the program f
 
 ## Stop boot2docker
 
-On OS X, the build script automatically starts **boot2docker**, if needed.
+On OS X, the build script automatically starts `boot2docker`, if needed.
 
-When done, be sure you stop boot2docker, to free significant resources (a VirtualBox Ubuntu machine).
+When done, be sure you stop it, to free significant resources (a VirtualBox Ubuntu machine).
 
 	$ boot2docker stop
 

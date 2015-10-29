@@ -11,7 +11,7 @@ date: 2015-09-09 19:43:00 +0300
 
 [OpenOCD](http://openocd.org) is an open source project hosted on [SourceForge](https://sourceforge.net/projects/openocd/), and project maintainers insist that all end-users should compile it from the latest version of the source code available from their repository. There are no special stable branches or tags and there are no clear release dates for future versions. On Windows you need to install MSYS2 and use the appropriate package build procedure.
 
-If you are like us and consider that professional solutions should include stable, hassle free binary distributions, you might be interested to know that a custom packed version of OpenOCD, based on the latest public version (0.8.0) was added to GNU ARM Eclipse, as **GNU ARM Eclipse OpenOCD**. It can be downloaded from the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page.
+If you are like us and consider that professional solutions should include stable, hassle free binary distributions, you might be interested to know that a custom packed version of OpenOCD, based on the latest public version (0.9.0) was added to GNU ARM Eclipse, as **GNU ARM Eclipse OpenOCD**. It can be downloaded from the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page.
 
 So, if you are not interested in building from sources, and appreciate a better integration with the Eclipse plug-in, please feel free to use the GNU ARM Eclipse OpenOCD binaries, and preferably install them in the default locations.
 
@@ -25,10 +25,10 @@ The OpenOCD documentation is available in the [Files](https://sourceforge.net/p
 
 For user convenience, the Windows versions of **GNU ARM Eclipse OpenOCD** are packed as Windows setup wizards. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page and download the latest version named like:
 
-  * **gnuarmeclipse-openocd-win64-0.8.0-*-setup.exe**
-  * **gnuarmeclipse-openocd-win32-0.8.0-*-setup.exe**
+  * `gnuarmeclipse-openocd-win64-0.8.0-*-setup.exe`
+  * `gnuarmeclipse-openocd-win32-0.8.0-*-setup.exe`
 
-Select the win64 file for Windows x64 machines and the win32 file for Windows x32 machines.
+Select the `-win64-` file for Windows x64 machines and the `-win32-` file for Windows x32 machines.
 
 Run the setup as usual.
 
@@ -54,7 +54,7 @@ To check if OpenOCD starts, use the following command:
 
 ### Drivers
 
-As usual on Windows, mastering drivers is a challenge and OpenOCD is no exceptions, so don't be surprised to encounter many incompatible drivers for various JTAG probes. The OpenOCD distribution includes some libusb drivers, and recommends to run the zadig.exe tool to activate them. Although this manoeuvre will make OpenOCD happy, it will most probably ruin other USB drivers you might have installed. Our strong recommendation is NOT to do this, and instead use the manufacturer drivers, when compatible with OpenOCD.
+As usual on Windows, mastering drivers is a challenge and OpenOCD is no exceptions, so don't be surprised to encounter many incompatible drivers for various JTAG probes. The OpenOCD distribution includes some libusb drivers, and recommends to run the `zadig.exe` tool to activate them. Although this manoeuvre will make OpenOCD happy, it will most probably ruin other USB drivers you might have installed. Our strong recommendation is NOT to do this, and instead use the manufacturer drivers, when compatible with OpenOCD.
 
 #### ST-LINK/V2
 
@@ -80,9 +80,9 @@ For some devices, for example [ARM-USB-OCD](https://www.olimex.com/Products/ARM
 
 For user convenience, the OS X version of **GNU ARM Eclipse OpenOCD** is packed as an OS X install package. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page and download the latest version named like:
 
-*  **gnuarmeclipse-openocd-osx-0.8.0-*.pkg**
+*  `gnuarmeclipse-openocd-osx-0.8.0-*.pkg`
 
-As the name implies, this is an OS X package, that can be installed on any recent 64-bit OS X (it was tested on 10.9 and 10.10).
+As the name implies, this is an OS X package, that can be installed on any recent 64-bit OS X (the latest version was tested on 10.9, 10.10, 10.11).
 
 Run the install as usual.
 
@@ -101,18 +101,18 @@ To check if OpenOCD starts, use:
 
 The GNU/Linux versions of **GNU ARM Eclipse OpenOCD** are packed as TGZ archives. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page and download the latest version named like:
 
-* **gnuarmeclipse-openocd-debian64-0.8.0-201501181055.tgz**
-* **gnuarmeclipse-openocd-debian32-0.8.0-201501181055.tgz**
+* `gnuarmeclipse-openocd-debian64-0.8.0-201501181055.tgz`
+* `gnuarmeclipse-openocd-debian32-0.8.0-201501181055.tgz`
 
-As the name implies, these are Debian **tar.gz** archives, but can be executed on most recent GNU/Linux distributions (they were tested on Debian, Ubuntu, Manjaro, SuSE and Fedora). Select the debian64 file for 64-bit machines and the debian32 file for 32-bit machines.
+As the name implies, these are Debian `tar.gz` archives, but can be executed on most recent GNU/Linux distributions (they were tested on Debian, Ubuntu, Manjaro, SuSE and Fedora). Select the `-debian64-` file for 64-bit machines and the `-debian32-` file for 32-bit machines.
 
 In case you use an older distribution and encounter difficulties to run **GNU ARM Eclipse OpenOCD**, you can also try to build it from sources on your machine. As a last resort, if your distribution includes an OpenOCD package, you can install it using the specific tools.
 
-To install this package, unpack the archive and copy it to  `/opt/gnuarmeclipse/openocd/*`
+To install this package, unpack the archive and copy it to  `/opt/gnuarmeclipse/openocd/${version}`
 
     sudo mkdir -p /opt/gnuarmeclipse
     cd /opt/gnuarmeclipse
-    sudo tar xvf ~/Downloads/~/Downloads/gnuarmeclipse-openocd-debian64-0.10.0-201510281129-dev.tgz
+    sudo tar xvf ~/Downloads/gnuarmeclipse-openocd-debian64-0.10.0-201510281129-dev.tgz
 
 Note: although perfectly possible to install it in any location, it is recommended to use this location, since by default the plug-in searches for the executable in this location.
 
@@ -123,7 +123,7 @@ To check if OpenOCD starts and is recent, use:
 
 ### UDEV
 
-For the JTAG probes implemented as USB devices (actually most of them), the last installation step on GNU/Linux is to configure the UDEV subsystem. OpenOCD provides an UDEV rules file defining all the supported IDs; to install it, just copy the file to /etc/udev/rules.d and eventually notify the daemon:
+For the JTAG probes implemented as USB devices (actually most of them), the last installation step on GNU/Linux is to configure the UDEV subsystem. OpenOCD provides an UDEV rules file defining all the supported IDs; to install it, just copy the file to `/etc/udev/rules.d` and eventually notify the daemon:
 
 	$ sudo cp /opt/gnuarmeclipse/openocd/0.10.0-201510281129-dev/contrib/99-openocd.rules \
 	 /etc/udev/rules.d/

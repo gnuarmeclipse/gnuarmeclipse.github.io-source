@@ -53,9 +53,19 @@ Install the following packages:
 
 For any GNU/Linux distribution, follow the [specific instructions](https://docs.docker.com/installation/#installation).
 
+#### Configure Docker to run as regular user
+
+To allow docker to run as a regular user, you need to be a member of the `docker` group.
+
+	$ sudo groupadd docker
+	$ sudo gpasswd -a ${USER} docker
+	$ sudo service docker restart
+
+To make these changes effective, logout and login.
+
 #### Install required packages
 
-Since most of the build is performed inside the Docker containers, there are not many requirements for the host, and most of the time these programs are in the standard distribution (**curl**, **git**, **automake**, **patch**, **tar**, **unzip**).
+Since most of the build is performed inside the Docker containers, there are not many requirements for the host, and most of the time these programs are in the standard distribution (`curl`, `git`, `automake`, `patch`, `tar`, `unzip`).
 
 The script checks for them; if the script fails, install them and re-run.
 
@@ -104,7 +114,11 @@ The result should look similar to:
 
 ## Build all distribution files
 
-    caffeinate bash ~/Downloads/build-openocd.sh --all
+    $ bash ~/Downloads/build-openocd.sh --all
+
+On OS X, to prevent sleep, use:
+
+    $ caffeinate bash ~/Downloads/build-openocd.sh --all
 
 About half an hour later (`caffeinate` is used to make sure the system does not go to sleep while left unattended), the output of the build script is a set of 5 files in the output folder:
 
@@ -195,7 +209,7 @@ For a true test you need to first install the package and then run the program f
 
 On OS X, the build script automatically starts `boot2docker`, if needed.
 
-When done, be sure you stop `boot2docker`, to free significant resources (a VirtualBox Ubuntu machine).
+When done, be sure you stop it, to free significant resources (a VirtualBox Ubuntu machine).
 
     boot2docker stop
 
