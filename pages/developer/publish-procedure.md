@@ -192,24 +192,27 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 -   move the latest archive to **released**
 -   move the other archives to **internal**
 
+## Merge develop into master
+
+* in SourceTree, switch to the **master** branch
+* merge the **develop** branch into **master**
+* switch to **develop**
+* push both branches to GitHub and SourceForge
+
 ## Create a new GitHub release
 
-*   go to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page
-*   click **Draft a new release**
+* go to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page
+* click **Draft a new release**
 * name the tag like **v2.9.3-201508190739**
-* select the commit
+* select the develop branch
 * name the release like **GNU ARM Eclipse plug-ins v2.9.3-201508190739**
-* as description, copy the first paragraph from the Wiki page
-* add a link to the Wiki page `[Continue reading »]()`
+* as description, copy the first paragraph from the Web release page
+* add a link to the Web page `[Continue reading »]()`
 * attach binaries (drag and drop from the archives folder will do it)
-*   click the **Publish Release** button
+* click the **Publish Release** button
 
 Note: at this moment the system should send a notification to all clients watching this project.
 
-## Update the Wiki page
+## Update the Web page
 
-Go to the Wiki [Releases](https://github.com/gnuarmeclipse/plug-ins/wiki/Releases) and update the page to include the link to the new Release.
-
-## Update the _latest release_ link
-
-In the [main Wiki](https://github.com/gnuarmeclipse/plug-ins/wiki) page, go to the Releases section and update the **latest release** link to point to the newly added Wiki page and release.
+Go to the Web page and update it to include the link to the new Release.
