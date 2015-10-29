@@ -25,6 +25,7 @@
 
 #### Important
 
+* [Install order]({{ site.baseurl }}/install/)
 * [Workspace preferences]({{ site.baseurl }}/eclipse/workspace/preferences/)
 * [Toolchain path]({{ site.baseurl }}/toolchain/path/)
 * [Project portability]({{ site.baseurl }}/eclipse/project/portability/)
