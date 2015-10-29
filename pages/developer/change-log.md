@@ -12,6 +12,140 @@ Entries in this file are in reverse chronological order.
 
 ## 2015
 
+### 2015-10-29
+
+* templates.ad: comment out pragma in cmsis_device.h
+* versions: mbs.cross 1.14.1, mbs.packs 1.3.1
+* version 2.10.1-201510291730 released
+  * features/ilg.gnuarmeclipse.codered_1.1.1.201510291730.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_3.2.1.201510291730.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_3.2.1.201510291730.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.qemu_2.1.2.201510291730.jar
+  * features/ilg.gnuarmeclipse.doc.user_1.1.1.201510291730.jar
+  * features/ilg.gnuarmeclipse.managedbuild.cross_1.15.1.201510291730.jar
+  * features/ilg.gnuarmeclipse.packs_2.2.2.201510291730.jar
+  * features/ilg.gnuarmeclipse.templates.ad_1.1.2.201510291730.jar
+  * features/ilg.gnuarmeclipse.templates.cortexm_1.3.1.201510291730.jar
+  * features/ilg.gnuarmeclipse.templates.freescale_2.2.7.201510291730.jar
+  * features/ilg.gnuarmeclipse.templates.stm_2.4.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.codered_1.1.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.core_2.10.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.debug.core_1.2.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.jlink_3.2.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.openocd_3.2.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.qemu_2.1.2.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.restart_1.3.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag_2.2.2.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.debug.packs_1.1.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.doc.user_1.1.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.managedbuild.cross_1.15.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.managedbuild.packs_1.3.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.packs.core_1.1.2.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.packs.data_1.2.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.packs.ui_1.2.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.packs_1.2.3.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.templates.ad_1.1.2.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.templates.core_2.5.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.templates.cortexm_1.3.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.templates.freescale.pe_1.2.1.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.templates.freescale_2.2.7.201510291730.jar
+  * plugins/ilg.gnuarmeclipse.templates.stm_2.4.1.201510291730.jar
+
+### 2015-10-28
+
+* templates.ad: fix extended gcc warnings
+
+### 2015-10-27
+
+* templates.freescale: vectors_*.c distribution
+* scripts: copy from micro, gcc/vectors_*.c
+* debug.gdbjtag: fix version comparison
+* debug.gdbjtag: version 2.2.2
+
+### 2015-10-26
+
+* mbs.cross: redraw Toolchains if toolchain changes
+* mbs.packs: fix tab Devices NPE
+* mbs.packs: make Devices visible for all projects
+
+### 2015-10-23
+
+* templates.stm: f7 inits comments & cosmetics
+* templates.stm: f7 add STM32F746_EVAL leds
+* templates.*: pass .md files too
+* templates.*: 'GNU ARM Eclipse distribution.'
+* templates.ad: fix warnings
+* templates.core: set VTOR for __ARM_ARCH_7EM__ too
+* templates.ad: version 1.1.2
+* templates.ad: fix cmsis_device.h include guards
+* templates.ad: fix upper case folder
+* shorten 'GNU ARM Eclipse Plug-ins'
+* update url to http://gnuarmeclipse.github.io/
+* templates.ad: Eclipse-BundleShape: dir
+* templates.cortexm: Eclipse-BundleShape: dir
+
+### 2015-10-22
+
+* template.stm: update F4 to hal 1.9.0
+* templates.core: rename to README_ARM_CMSIS.md
+* template.stm: use README_*.md files
+* templates.stm: add F7 cmsis * hal from xpack
+* templates.core: version 2.5.1
+* templates.stm: supplier="GNU ARM Eclipse"
+* templates.stm: update f4 hal_conf.h
+* templates.stm: add f7 template
+* templates.core: add local HAL_IncTick prototype
+* templates.stm: fix warnings in stm32f7xx.h
+* templates.stm: rework f7 initialize_hardware.c
+* templates.stm: f7 mem320.ld
+* templates.stm: f7 un-exclude
+* templates.stm: strict prototype for HAL_IncTick()
+* templates.stm: f7 .c led defs fixed
+* templates.stm: f7 .cpp led I1 definition fixed
+* templates.stm: f7 clock set at 192 MHz
+
+### 2015-10-21
+
+* template.stm: use hal 1.8, from xpacks
+
+### 2015-10-19
+
+* template.ad: version 1.1.1
+* template.stm: f4 with 1.8.0
+* scripts: remove formatter style xml
+* templates.cortexm: add CM7
+* templates.cortexm: version 1.3.1
+* templates.stm: version 2.4.1
+
+### 2015-10-17
+
+* templates.core: fix warnings in cm0, cm0plus, cm3
+* templates.ad: copy all cmsis headers
+
+### 2015-10-16
+
+* templates.core: updated to cmsis 4.4
+* templates.stm: remove README_CMSIS.txt
+* scripts: copy from micro-os separate cmsis
+* dos2unix on all files
+
+### 2015-10-15
+
+* template.ad: integrate from AD contribution; consistency tweaks
+* version 2.10.1
+
+### 2015-09-25
+
+* templates.stm: fix stm32f446xx.h apostrophe
+* templates.core: assert_failed() as weak
+* versions: templates.core 2.4.4, stm 2.3.3
+* version 2.9.4
+
+### 2015-08-28
+
+* logo folder added
+* pad.xml added
+
 ### 2015-08-19
 
 * qemu: cmsis both board&name (use persistent values only when both cmsis board and device are missing)
