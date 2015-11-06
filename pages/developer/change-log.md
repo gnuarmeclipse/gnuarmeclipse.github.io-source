@@ -12,6 +12,55 @@ Entries in this file are in reverse chronological order.
 
 ## 2015
 
+### 2015-11-06
+
+* templates.core: add __dso_handle to _syscalls.c
+* templates.core: version 2.5.2
+* version 2.10.2.201511061603 released
+  * features/ilg.gnuarmeclipse.codered_1.1.1.201511061603.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_3.2.1.201511061603.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_3.2.1.201511061603.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.qemu_2.1.2.201511061603.jar
+  * features/ilg.gnuarmeclipse.doc.user_1.1.1.201511061603.jar
+  * features/ilg.gnuarmeclipse.managedbuild.cross_1.15.2.201511061603.jar
+  * features/ilg.gnuarmeclipse.packs_2.2.2.201511061603.jar
+  * features/ilg.gnuarmeclipse.templates.ad_1.1.2.201511061603.jar
+  * features/ilg.gnuarmeclipse.templates.cortexm_1.3.1.201511061603.jar
+  * features/ilg.gnuarmeclipse.templates.freescale_2.2.7.201511061603.jar
+  * features/ilg.gnuarmeclipse.templates.stm_2.4.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.codered_1.1.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.core_2.10.2.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.debug.core_1.2.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.jlink_3.2.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.openocd_3.2.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.qemu_2.1.2.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.restart_1.3.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag_2.2.2.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.debug.packs_1.1.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.doc.user_1.1.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.managedbuild.cross_1.15.2.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.managedbuild.packs_1.3.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.packs.core_1.1.2.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.packs.data_1.2.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.packs.ui_1.2.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.packs_1.2.3.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.templates.ad_1.1.2.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.templates.core_2.5.2.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.templates.cortexm_1.3.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.templates.freescale.pe_1.2.1.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.templates.freescale_2.2.7.201511061603.jar
+  * plugins/ilg.gnuarmeclipse.templates.stm_2.4.1.201511061603.jar
+
+### 2015-11-03
+
+* mbs.cross: toolchain prefix changed from aarch64-none-elf- to aarch64-elf-
+
+### 2015-10-31
+
+* mbs.cross: add fpv5-d16 & fpv5-sp-d16 to the FPU selection dialog
+* mbs.cross: version 1.15.2
+* version 2.10.2
+
 ### 2015-10-29
 
 * templates.ad: comment out pragma in cmsis_device.h
