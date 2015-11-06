@@ -218,11 +218,30 @@ Note: at this moment the system should send a notification to all clients watchi
 * go back to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page and update the link to the blog post;
 * disable the pre-release flag.
 
+## Publish on SourceForge
+
+* go to [SourceForge Files](http://sourceforge.net/projects/gnuarmeclipse/files/Current%20Releases/)
+* select the folder corresponding to the latest version (currently **2.x**); create a new one if necessary
+* click the **Add File** button
+* drag and drop the file (for example ilg.gnuarmeclipse.repository-2.1.1-201402140758.zip) in the upload window and click the **Upload** button
+* click the Done button
+* check it the new file was published; click the info icon
+* enable the **Windows**, **OS X** and **Linux** buttons
+* after a while the new upload will be marked as latest version
+
 ## Share on Facebook
 
 * go to the new post and follow the Share link.
+* DO NOT select **On your own Timeline**, but **On a Page you manage**
+* select GNU ARM Eclipse
+* posting as GU ARM Eclipse
+* click **Share link**
 
 ## Update the Eclipse Marketplace records
+
+* go to [Eclipse Marketplace](https://marketplace.eclipse.org/content/gnu-arm-eclipse)
+* click Edit
+* update version number
 
 ## Merge develop into master
 
