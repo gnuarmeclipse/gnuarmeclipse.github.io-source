@@ -116,9 +116,9 @@ Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/deve
 
 Add an entry with the latest feature & plug-in versions, copied from the publish script output.
 
-## Prepare a new Wiki page to announce the release
+## Prepare a new blog post to announce the release
 
-Add a new page to the project web.
+Add a new file to the `_posts/plugins/releases`.
 
 Name the post like: *Release v2.9.3 201508190739*, title: *Version 2.2.1-201404120702 released*.
 
@@ -192,13 +192,6 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 -   move the latest archive to **released**
 -   move the other archives to **internal**
 
-## Merge develop into master
-
-* in SourceTree, switch to the **master** branch
-* merge the **develop** branch into **master**
-* switch to **develop**
-* push both branches to GitHub and SourceForge
-
 ## Create a new GitHub release
 
 * go to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page
@@ -209,10 +202,31 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 * as description, copy the first paragraph from the Web release page
 * add a link to the Web page `[Continue reading »]()`
 * attach binaries (drag and drop from the archives folder will do it)
+* mark it as a Pre-release
 * click the **Publish Release** button
 
 Note: at this moment the system should send a notification to all clients watching this project.
 
-## Update the Web page
+## Update the Web
 
-Go to the Web page and update it to include the link to the new Release.
+* go to the post and update the link to the new Release
+* Jekyll build
+* Git push
+
+## Update the GitHub release
+
+* go back to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page and update the link to the blog post;
+* disable the pre-release flag.
+
+## Share on Facebook
+
+* go to the new post and follow the Share link.
+
+## Update the Eclipse Marketplace records
+
+## Merge develop into master
+
+* in SourceTree, switch to the **master** branch
+* merge the **develop** branch into **master**
+* switch to **develop**
+* push both branches to GitHub and SourceForge.
