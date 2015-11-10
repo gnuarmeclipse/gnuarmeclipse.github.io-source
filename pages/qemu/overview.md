@@ -136,6 +136,12 @@ The details of installing the **GNU ARM Eclipse QEMU** on various platforms are
 
 The recommended method to test QEMU is using the new QEMU Debugging plug-in; create a test project using the [blinky]({{ site.baseurl }}/tutorials/blinky-arm/) **STM32F4xx C/C++ Project** template or even the **Hello World ARM Cortex-M C/C++ Project** template and run it as explained in the [QEMU debugging Eclipse plug-in]({{ site.baseurl }}/debug/qemu/) page.
 
+## Future development
+
+After the initial version proved that the idea to define peripheral register via tables is functional, it became obvious that these tables are not for humans to generate, but for machines. These definitions, in one way or another, are already available from the ARM SVD files (very large XMLs). So, for the use of QEMU, the next step is to process the SVD files and generate JSON files, with the peripheral registers, exactly as needed for a fast load by the emulator at startup. Then, from the JSON files, the run-time peripheral register objects can be generated.
+
+There is currently no ETA for these changes, but if anyone is interested to support development, priorities might be changed.
+
 ## Updates
 
 As a fork of the public open source project QEMU, it is planned that the **GNU ARM Eclipse QEMU** will follow the releases of QEMU and also follow the GNU ARM Eclipse release schedule, for the specific features.

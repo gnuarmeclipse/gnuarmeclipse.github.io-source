@@ -74,7 +74,7 @@ The package is installed in:
 
 and the result is a folder structure similar to:
 
-![The QEMU OS X install folders](https://github.com/gnuarmeclipse/qemu/wiki/assets/images/2015/mac-install-folders.png)
+![The QEMU OS X install folders]({{ site.baseurl }}/assets/images/2015/mac-install-folders.png)
 
 To check if QEMU starts, use:
 
@@ -114,6 +114,22 @@ To check if QEMU starts and is recent, use:
 
 For usual Cortex-M emulation, there are no special UDEV definitions or drivers required.
 
+## Update QEMU path
+
+Right after installing QEMU, or updating to a new version, it is necessary to inform Eclipse where the binaries were installed. If QEMU was installed in the default location, Eclipse has a mechanism to autodetect the most recent version, but this mechanism sometimes fails, and manual path setting is necessary.
+
+To set the path, first exit Eclipse, and start it again, to allow the autodetect mechanism to give it a try:
+
+* in the _Eclipse_ menu, go to **(Window →) Preferences** → **Run/Debug** → **QEMU**
+
+  ![The QEMU preferences page]({{ site.baseurl }}/assets/images/2015/04/QEMU_Preferences.png)
+
+* click the **Restore Defaults** button
+
+For more details please refer to the [QEMU plug-in]({{ site.baseurl }}/debug/qemu/#define-the-qemufolder-location) page, where the entire procedure is explained.
+
 ## QEMU Debugging plug-ins
 
-The QEMU debugging **plug-ins are not included** in these packages, and need to be installed as usual.
+The QEMU debugging **plug-ins are not included** in these packages, and need to be installed [as usual]({{ site.baseurl }}/plugins/install/). Just be sure that the **GNU ARM C/C++ QEMU Debugging** plug-ins are selected.
+
+![Install the QEMU plug-ins]({{ site.baseurl }}/assets/images/2015/install-new-software-updates-qemu.png)
