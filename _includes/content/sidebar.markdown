@@ -61,6 +61,7 @@
 * [Overview]({{ site.baseurl }}/qemu/) (read me first!)
 * [QEMU Install]({{ site.baseurl }}/qemu/install/)
 * [Eclipse plug-in]({{ site.baseurl }}/debug/qemu/)
+* [Command line options]({{ site.baseurl }}/qemu/options/)
 * [How to build]({{ site.baseurl }}/qemu/build-procedure/)
 * [Releases]({{ site.baseurl }}/qemu/releases/)
 * [Support](https://github.com/gnuarmeclipse/qemu/issues/1/) (report issue)
