@@ -207,6 +207,16 @@ Select the correct device and the session should start properly.
 
 If you still fail to configure the plug-in to start OpenOCD automatically, proceed as when using a remote GDB server, i.e. go to the Debugger tab and disable the **Start OpenOCD locally**, then start it manually in a separate terminal. Tweak the command line options until you get the right behaviour, and then retry the same options with the plug-in.
 
+### Quote the entire `echo` command
+
+The syntax required by the OpenOCD `echo` command is a single string, in other words both echo and the message must be in the same string. To achieve this in a shell, the string must be quoted:
+
+```
+-c 'echo "Started by GNU ARM Eclipse"'
+```
+
+Note: this command is used by the plug-in to detect when the GDB server is initialised and ready to receive commands. It is not necessary when starting OpenCOD manually.
+
 ### Chase for hanged OpenOCD processes
 
 One usual error case is to retry a debug session while a previous OpenOCD is still active (either running or hanged, started by a previous run of the plug-in or manually). In this case the new OpenOCD has no chance to work, and the plug-in will most certainly fail, sometimes even without clear error messages.

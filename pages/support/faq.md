@@ -10,6 +10,18 @@ date: 2015-09-11 20:28:00 +0300
 
 <div style="clear: both;"></div>
 
+## OpenOCD fails to start with `-c echo "Started by GNU ARM Eclipse"`
+
+> I'm trying to start OpenOCD in a terminal and it fails to execute the `echo` command...
+
+The syntax required by the OpenOCD `echo` command is a single string, in other words both echo and the message must be in the same string. To achieve this in a shell, the string must be quoted:
+
+```
+-c 'echo "Started by GNU ARM Eclipse"'
+```
+
+Please note that this command is used by the plug-in to detect when the GDB server is initialised and ready to receive commands; it is not necessary when starting OpenCOD manually.
+
 ## How to compile files excluded from build?
 
 > Why the default state for `system/src/.../xxx.c` is not enabled?
