@@ -35,16 +35,6 @@ When you're done:
 
 ![Preferences: Save automatically]({{ site.baseurl }}/assets/images/2014/06/PreferencesSave.png)
 
-## Use active build configuration for indexing
-
-Eclipse CDT has a very powerful indexer, which parses the source code on the fly and provides hints, auto-completion help, error reporting, etc while editing, without having to start the build process. For this indexer to be accurate, it must be in sync with the compiler, in terms of options and environment. For the indexer to automatically sync when changing from one configuration to another, check if the indexer was set to use the active configuration:
-
-* go to the _Eclipse_ menu → **(Windows →) Preferences** → **C/C++** → **Indexer**
-* enable **Use active build configuration**
-* click the **Apply** button
-
-![Indexer: Use active build configuration]({{ site.baseurl }}/assets/images/2014/06/PreferencesIndexer.png)
-
 ## Show line numbers
 
 Although not critical, while editing source files, it is useful to see the line numbers, and also a hint that the line may be too long:
@@ -57,6 +47,16 @@ Although not critical, while editing source files, it is useful to see the line 
 
 ![Editor preferences]({{ site.baseurl }}/assets/images/2014/06/PreferencesLineNumbers.png)
 
+## Use active build configuration for indexing
+
+Eclipse CDT has a very powerful indexer, which parses the source code on the fly and provides hints, auto-completion help, error reporting, etc while editing, without having to start the build process. For this indexer to be accurate, it must be in sync with the compiler, in terms of options and environment. For the indexer to automatically sync when changing from one configuration to another, check if the indexer was set to use the active configuration:
+
+* go to the _Eclipse_ menu → **(Windows →) Preferences** → **C/C++** → **Indexer**
+* enable **Use active build configuration**
+* click the **Apply** button
+
+![Indexer: Use active build configuration]({{ site.baseurl }}/assets/images/2014/06/PreferencesIndexer.png)
+
 ## Editor folding
 
 To better view the entire content of the source files, it is recommended to disable editor folding:
@@ -66,18 +66,6 @@ To better view the entire content of the source files, it is recommended to disa
 * click the **Apply** button
 
 ![Disable folding]({{ site.baseurl }}/assets/images/2014/06/PreferencesFolding.png)
-
-## Insert spaces for tabs
-
-Using real tabs has the big disadvantage that the text appearance depends on the viewer tab size settings, which sometimes can create major readability problems.
-
-To avoid all these, it is recommended to avoid using tabs, ad replace them with spaces.
-
-![Insert spaces for tabs]({{ site.baseurl }}/assets/images/2014/06/PreferencesSpaces.png)
-
-To check if the text indeed has spaces and not tabs, enable the **Show Whitespace Characters**:
-
-![Show whitespace characters]({{ site.baseurl }}/assets/images/2014/06/Show_white_spaces.png)
 
 ## Code formatter
 
@@ -108,6 +96,10 @@ To reformat a file:
 * go to the _Eclipse_ menu → **Source** → **Format**
 
 The same action can be triggered with a right click and a **Source** → **Format** or even easier, with a keyboard shortcut (**cmd+shift+F** on OS X).
+
+To check if the text indeed has spaces and not tabs, enable the **Show Whitespace Characters**:
+
+![Show whitespace characters]({{ site.baseurl }}/assets/images/2014/06/Show_white_spaces.png)
 
 ## Build console
 
