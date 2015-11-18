@@ -101,6 +101,8 @@ To check if the text indeed has spaces and not tabs, enable the **Show Whitespac
 
 ![Show whitespace characters]({{ site.baseurl }}/assets/images/2014/06/Show_white_spaces.png)
 
+> Note: the solution to configure the editor to enter spaces instead of Tabs prevents editing special files that mandates Tabs, like Make files.
+
 ## Build console
 
 The build console is the place where the progress of the build process is presented, and where the compile/link errors are shown.
