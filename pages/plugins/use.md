@@ -151,4 +151,4 @@ This feature is useful mainly to larger systems, that support shared libraries, 
  [1]: http://launchpad.net/gcc-arm-embedded
  [2]: http://launchpad.net/gcc-linaro
  [3]: {{ site.baseurl }}/windows-build-tools/ "Build tools (make & rm) on Windows"
- [4]: {{ site.baseurl }}/tutorials/hello-arm/ "Create a test project tutorial"
+ [4]: {{ site.baseurl }}/tutorials/blinky-arm/ "Create a test project tutorial"

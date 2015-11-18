@@ -47,6 +47,8 @@ For example, on Ubuntu 14.04 LTS, you can install the OpenJDK run-time and test 
 
 The oldest Eclipse supported by the plug-ins is Eclipse 4.3 Kepler (CDT 8.3), and the recommended version is 4.4 SR2. Do not try to install them on Juno, Indigo, or older versions, since the install will fail.
 
+The plug-ins also run on Eclipse 4.5 Mars, but there might be some small problems, for example the Restart button in the Debug view seems not working at all.
+
 Just go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bit version. Unpack it at a place of your choice and start using it.
 
 ### CDT
@@ -56,7 +58,6 @@ The minimum CDT version is 8.3. Do not try to use earlier versions, since either
 As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C++ Developers** for the cross ARM development projects. Even if you did so, but especially if you did not do so, it is a good idea to check if you really have the latest version available. For this, enter the _Eclipse_ menu and go to **Help** → **Install New Software**
 
 ![Install new software]({{ site.baseurl }}/assets/images/2013/10/InstallNewSoftware.png)
-
 
 * select *Work with:* **Kepler**
 * if the *Group items by category *is enabled, expand the **Programming Languages** group
@@ -177,5 +178,5 @@ If you encountered any problems when installing the plug-ins, pleas refer to the
  [4]: {{ site.baseurl }}/debug/ "Debugging"
  [5]: {{ site.baseurl }}/plugins/packs-manager/ "Packs manager"
  [6]: {{ site.baseurl }}/debug/peripheral-registers/ "The peripherals registers view"
- [7]: {{ site.baseurl }}/tutorials/hello-arm/ "Tutorial: Create a test project"
+ [7]: {{ site.baseurl }}/tutorials/blinky-arm/ "Tutorial: Create a test project"
  [8]: {{ site.baseurl }}/support/

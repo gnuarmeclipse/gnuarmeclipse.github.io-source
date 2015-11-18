@@ -102,7 +102,7 @@ Project portability is essential for team collaboration, when multiple developer
 
 For beginners, who need initial help to put all details together for their first project, a complete sample, with startup code, linker scripts, semi-hosting enabled and all necessary options already set, can be a major time saver.
 
-The **Hello ****World **ARM Cortex-M3 C Project template was destined exactly for such cases; please see the [Tutorial: Create a test project][6] for more details.
+The **Hello World ARM Cortex-M3 C Project** template was destined exactly for such cases; please see the [Tutorial: Create a test project][6] for more details.
 
 ![The Cortex-M3 template project]({{ site.baseurl }}/assets/images/2015/NewCM3ProjectResult.png)
 
