@@ -77,6 +77,19 @@ How to build the plug-ins from sources and publish them.
 
 - [Getting Started With STM32 Nucleo Development](http://www.amazon.com/Getting-Started-STM32-Nucleo-Development-ebook/dp/B00WBU4BPW)
 
+### Sites for articles
+
+* [ARMConnected Community](https://community.arm.com/welcome) - write a new blog post, A place's blog, Software Development Tools
+* [Element14](http://www.element14.com/community/groups/open-source-software) - the Open Source Software; Write a blog post
+* [EmbDev](https://embdev.net/user/login) - New Topic to [Forum: ARM programming with GCC/GNU tools](https://embdev.net/forum/arm-gcc); no pictures; underline headers (no BBCs)
+* [EEVblog](http://www.eevblog.com/forum/login/) - New Topic to [Microcontrollers & FPGAs](http://www.eevblog.com/forum/microcontrollers/); bold titles; image links
+* [Arduino](http://stm32duino.com/viewforum.php?f=41) - 
+* [STM32 Software Tools and Firmware forum](https://my.st.com/public/STe2ecommunities/mcu/Lists/STM32Java/AllItems.aspx) - New Discussion (a real mess)
+
+BBC codes:
+- `[img width=30]http:⁄⁄wiki.simplemachines.org/smf/images/1/19/Button_media.png[/img]`
+- `[url=http://simplemachines.org]text or more BB Code[/url]`
+
 ## Releases
 
 * [latest release]({{ site.baseurl }}/2015/08/19/plugins-v2.9.3-201508190739-released/) [(download)](https://github.com/gnuarmeclipse/plug-ins/releases/tag/v2.9.3-201508190739)
