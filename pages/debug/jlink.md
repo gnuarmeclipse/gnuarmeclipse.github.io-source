@@ -215,6 +215,12 @@ With this option, the J-Link plug-in will no longer reset the target and will no
 
 To start interacting with the target, it must be halted, using the debugger's **Halt** command. After examining the target's memory, setting breakpoints, etc, execution can be resumed, and the debug session terminated, leaving the target running.
 
+## Using multiple J-Link probes at once
+
+For advanced applications it is sometimes required to start multiple debug sessions, with multiple J-Link probes, on the same computer. SEGGER J-Link is perfectly capable of doing this, both over USB or TCP/IP.
+
+For this, multiple instances of Eclipse are required, and each one must be configured with different TCP/IP ports for the GDB/SWO/Telnet services, and also each must be configured with the serial number of the specific J-Link probe, printed on the back of the probe. For TCP/IP connected J-Link, instead of the serial number, use the IP address.
+
 ## No GDB initialisation files loaded
 
 For having a total control of the debugging session, the debugging plug-ins start the GDB client process with the `--nx` option, which prevents the execution of the commands found in any initialization file; none of the standard files (`system.gdbinit`, `~/.gdbinit`, `./.gdbinit`) are loaded.
