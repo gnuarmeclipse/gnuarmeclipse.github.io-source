@@ -10,6 +10,23 @@ date: 2015-09-11 20:28:00 +0300
 
 <div style="clear: both;"></div>
 
+## I cannot install the plug-ins
+
+> I get the following when trying to install Cross Compiler
+
+```
+Cannot complete the install because one or more required items could not be found.
+Software being installed: GNU ARM C/C++ Cross Compiler 1.15.2.201511061603 (ilg.gnuarmeclipse.managedbuild.cross.feature.group 1.15.2.201511061603)
+```
+
+Your Eclipse does not include CDT. You need to install **Eclipse IDE for C/C++ Developers** or to manually add CDT to an existing Eclipse.
+
+## I installed Eclipse with Synaptics and I have problems to install the plug-ins
+
+On GNU/Linux, **DO NOT** install Eclipse with the system package manager, because usually it installs an older version, and CDT is not include.
+
+Instead, go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the proper **Eclipse IDE for C/C++ Developers**, preferably the 64-bit version. 
+
 ## OpenOCD fails to start with `-c echo "Started by GNU ARM Eclipse"`
 
 > I'm trying to start OpenOCD in a terminal and it fails to execute the `echo` command...

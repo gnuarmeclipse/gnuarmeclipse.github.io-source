@@ -22,7 +22,7 @@ If you still could not find a solution, follow the recommendations in the GitHub
 
 ![GNU ARM Eclipse Issues]({{ site.baseurl }}/assets/images/2015/github-gae-issues-welcome-new.png)
 
-The issues can be labeled as:
+After you submit them, the issues will be labeled as:
 
 * **bug** - use it for bug reports
 * **enhancement** - use it for feature requests
@@ -41,7 +41,7 @@ As for any open source project, feature requests will be more quickly processe
 
 ### Support requests
 
-For all other issues you have, that are not related to bugs or feature requests, you can use label your request as 'help wanted' or 'question'.
+For all other issues you have, that are not related to bugs or feature requests, your issues will be labeled as 'help wanted' or 'question'.
 
 ## Tools issues
 

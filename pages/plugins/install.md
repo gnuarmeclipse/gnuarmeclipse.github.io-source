@@ -51,6 +51,8 @@ The plug-ins also run on Eclipse 4.5 Mars, but there might be some small problem
 
 Just go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bit version. Unpack it at a place of your choice and start using it.
 
+> Note: on GNU/Linux be sure you manually install the Eclipse; **DO NOT** try to install it via the Synaptics package manager, or similar, since usually you get an older version and the CDT plug-ins are not included.
+
 ### CDT
 
 The minimum CDT version is 8.3. Do not try to use earlier versions, since either the install will fail, or it will not run properly.
