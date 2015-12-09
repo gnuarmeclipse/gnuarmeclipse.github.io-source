@@ -92,8 +92,9 @@ This should make Eclipse automatically contact the Marketplace and present a win
 
 ![Eclipse Marketplace Features]({{ site.baseurl }}/assets/images/2015/eclipse-marketplace-features.png)
 
-If, for any reason, this does not work for you, you can go to the _Eclipse_ menu → **Help** → **Eclipse Marketplace...**
+If, for any reason, this does not work, it is always possible to search the Eclipse Marketplace manually:
 
+* go to the _Eclipse_ menu → **Help** → **Eclipse Marketplace...**
 * in the Find field, enter GNU ARM Eclipse
 * click the Go button
 
