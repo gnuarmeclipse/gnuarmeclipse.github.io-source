@@ -11,7 +11,11 @@ date: 2015-09-11 22:06:00 +0300
 
 ## Quicklinks
 
-If you know what this is all about and you just need the update site details:
+If you know what this is all about, just drag-and-drop the **Install** button below to your running Eclipse workspace and follow the **Eclipse Marketplace** install/update steps.
+
+<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace to install GNU ARM Eclipse"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install GNU ARM Eclipse" /></a>
+
+If you want to do it manually, you just need the update site details:
 
 * name: **GNU ARM Eclipse Plug-ins**
 * URL: `http://gnuarmeclipse.sourceforge.net/updates`
@@ -72,15 +76,34 @@ As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C
 
 Please note that starting with 1.1.x, compatibility with Eclipses previous than 4.3 Kepler was no longer possible. If, for any reasons, you need a solution for older Eclipse versions, you can try the GNU ARM Eclipse Plug-in version 0.5.5, but please keep in mind that this old version is no longer maintained.
 
-## Plug-ins install
+## Plug-ins install/update
 
 The following samples are from Eclipse 4.3 Kepler on OS X. Other platforms may behave slightly different, but the idea is the same.
 
 **Warning:** Be sure your Eclipse is 4.3 or later, otherwise the plug-ins will refuse to install, claiming **Missing requirements** and **Cannot satisfy dependency**.
 
-### The recommended way
+### The Eclipse Marketplace way
 
-The recommended way to install these plug-ins is to use the Eclipse standard install/update mechanism: In the _Eclipse_ menu → **Help** → **Install New Software...**
+The easiest way to install/update the plug-ins is to drag-and-drop the **Install** button below to your running Eclipse workspace.
+
+<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace to install GNU ARM Eclipse"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install GNU ARM Eclipse" /></a>
+
+This should make Eclipse automatically contact the Marketplace and present a window with all GNU ARM Eclipse features:
+
+![Eclipse Marketplace Features]({{ site.baseurl }}/assets/images/2015/eclipse-marketplace-features.png)
+
+If, for any reason, this does not work for you, you can go to the _Eclipse_ menu → **Help** → **Eclipse Marketplace...**
+
+* in the Find field, enter GNU ARM Eclipse
+* click the Go button
+
+This should identify GNU ARM Eclipse and offer to Install/Update/Uninstall.
+
+![Eclipse Marketplace Search]({{ site.baseurl }}/assets/images/2015/eclipse-marketplace-search.png)
+
+### The Eclipse update site way
+
+The classical way to install the GNU ARM Eclipse plug-ins is to use the Eclipse standard install/update mechanism: In the _Eclipse_ menu → **Help** → **Install New Software...**
 
 * in the *Install* window, click the **Add...** button (on future updates, just select the URL in the **Work with:** combo)
 * fill in *Name:* with **GNU ARM Eclipse Plug-ins**
@@ -98,24 +121,7 @@ The recommended way to install these plug-ins is to use the Eclipse standard ins
 
 Once you define the update site URL, further updates are greatly simplified (**Help** → **Check For Updates**).
 
-### Installation problems
-
-There are cases when the on-line access to the SourceForge mirror servers might not be reliable. In these cases the Eclipse update system may fail. For example:
-
-![Failed install]({{ site.baseurl }}/assets/images/2013/10/FailedInstall.png)
-
-If this happens, Eclipse remains in a confused state and rarely can recover itself.
-
-The workaround is to remove the GNU ARM Eclipse update site from the available sites, restart Eclipse and add it again.
-
-For this go to _Eclipse_ menu → **(Window →) Preferences** → **Install/Update** → **Available Software Sites**:
-
-![Remove from available site list]({{ site.baseurl }}/assets/images/2013/10/AvailableSites.png)
-
-
-If this still fails, the alternative method is to manually download the latest version archive and to perform the install from it, as presented below.
-
-### The alternate way
+### The local archive way
 
 If, for any reason, you need to install a specific version of the plug-in, the solution is to download the archive from [SourceForge Files](http://sourceforge.net/projects/gnuarmeclipse/files/Current%20Releases/) and to point the Eclipse update mechanism to the local archive: In the* Eclipse* menu → **Help** → **Install New Software...**
 
@@ -137,6 +143,24 @@ If, for any reasons, you need to install the GNU ARM Eclipse plug-ins on a syste
 Note: Attempts to install the GNU ARM Eclipse plug-ins off-line without having the C/C++ GDB Hardware Debugging installed fails with an error related to installing the *ilg.gnuarmeclipse.debug.gdbjtag.jlink.feature.group* and other debugging features.
 
 On-line install do not have this problem since the Eclipse automatically downloads the C/C++ GDB Hardware Debugging plug-in from the CDT update site.
+
+## Troubleshooting
+
+There are cases when the on-line access to the SourceForge mirror servers might not be reliable. In these cases the Eclipse update system may fail. For example:
+
+![Failed install]({{ site.baseurl }}/assets/images/2013/10/FailedInstall.png)
+
+If this happens, Eclipse remains in a confused state and rarely can recover itself.
+
+The workaround is to remove the GNU ARM Eclipse update site from the available sites, restart Eclipse and add it again.
+
+For this go to _Eclipse_ menu → **(Window →) Preferences** → **Install/Update** → **Available Software Sites**:
+
+![Remove from available site list]({{ site.baseurl }}/assets/images/2013/10/AvailableSites.png)
+
+
+If this still fails, the alternative method is to manually download the latest version archive and to perform the install from it, as presented below.
+
 
 ## Plug-ins versions
 
