@@ -12,6 +12,33 @@ Entries in this file are in reverse chronological order.
 
 ## 2015
 
+### 2015-12-11 
+
+* mbs.cross: aarch64_be-none-elf- -> aarch64_be-elf-
+
+### 2015-12-04
+
+* templates/core: update cmsis-core to 4.5
+* templates.stm: update f[47]/hal & core from xPack
+* scripts/copy.sh: use xpacks_re tree
+
+### 2015-11-26
+
+* mbs.cross: add extension to define toolchains
+* mbs.cross: version 2.1.1
+* version: 2.11.1
+* mbs.cross: add cpp.linker.flags
+* templates.ad: fix package name (aducm36x, not ad)
+* templates.ad: version 1.1.3
+* templates.stm: f7 family default STM32F745xx
+* templates.stm: version 2.4.2
+
+### 2015-11-10
+
+* gdbjtag.qemu: add disableGraphics listener
+* gdbjtag.qemu: version 2.1.3
+* version 2.10.3
+
 ### 2015-11-06
 
 * templates.core: add __dso_handle to _syscalls.c
