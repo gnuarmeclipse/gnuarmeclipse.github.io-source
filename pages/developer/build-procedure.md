@@ -69,10 +69,18 @@ The result of a successful build looks like this:
   * Tab: **Plug-ins**
     * Launch with: 'all workspace and enabled plug-ins'
   * Tab: **Arguments**
-    * Program arguments: -consoleLog
-    * VM arguments: **-ea** (to enable assertions)
+    * Program arguments:
+      * `-consoleLog`
+      * `-debug /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/Eclipse\ Workspaces/debug.options`
+    * VM arguments:
+      * `-ea` (to enable assertions)
+      * `-Dorg.eclipse.swt.internal.carbon.smallFonts`
+      * `-Xdock:icon=../Resources/Eclipse.icns`
+    * enable `-XstartOnFirstThread`
   * click the **Apply** button
   * click the **Debug** button
+
+Be sure the target platform is the Running Platform, otherwise starting the debug session fails.
 
 The location of the new Eclipse folder is:
 
