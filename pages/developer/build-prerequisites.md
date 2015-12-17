@@ -24,18 +24,21 @@ Install Sun JDK 1.7 or later (required since Eclipse 4.4); JRE is not enough, wi
 This instance of Eclipse will be used for actual development.
 
 -   go to [Eclipse download site](http://www.eclipse.org/downloads/)
--   download **Eclipse for RCP and RAP Developers**, preferably the 64-bit version (for example eclipse-rcp-luna-R-macosx-cocoa-x86_64.tar.gz)
+-   download **Eclipse for RCP and RAP Developers**, preferably the 64-bit version (for example eclipse-rcp-mars-1-macosx-cocoa-x86_64.tar.gz)
 -   unpack the archive
--   rename eclipse to **eclipse-44-rcp-cdt**
+-   rename Eclipse.app to **Eclipse-45-rcp-cdt.app**
 -   move it to **.../GNU ARM Eclipse/Eclipses**
--   on Windows, create a shortcut for eclipse.exe, rename it **Eclipse 4.4 RCP CDT - Shortcut** and copy it to the desktop or a place of your choice
--   on OS X, create a Finder alias for Eclipse.app, rename it **Eclipse 4.4 RCP CDT alias** and move it to a place of your choice
--   on GNU/Linux, create a link for eclipse, rename it **Eclipse 4.4 RCP CDT alias** and move it to a place of your choice
--   start the new Eclipse
--   create a new workspace, preferably in a separate folder, like **Eclipse Workspaces/workspace-44-rcp** (note: be sure you create the workspace where you need it to be, since moving later is generally not supported by Eclipse; if you need this, preferably create a new workspace)
+- create shortcut to desktop:
+  -   on Windows, create a shortcut for eclipse.exe, rename it **Eclipse 4.5 RCP CDT** and copy it to the desktop or a place of your choice
+  -   on OS X, create a Finder alias for Eclipse.app, rename it **Eclipse 4.5 RCP CDT** and move it to a place of your choice
+  -   on GNU/Linux, create a link for eclipse, rename it **Eclipse 4.5 RCP CDT** and move it to a place of your choice
+
+###   Start the new Eclipse
+
+-   create a new workspace, preferably in a separate folder, like **Eclipse Workspaces/workspace-45-rcp** (note: be sure you create the workspace where you need it to be, since moving later is generally not supported by Eclipse; if you need this, preferably create a new workspace)
 -   check if you installed the right Eclipse; go to the _Eclipse_ menu → **Help** (*_Eclipse_* on OS X) → **About Eclipse** and the first line should read **Eclipse for RCP and RAP Developers**
 -   **Help** → **Install New Software**
-  * Work with: Luna - <http://download.eclipse.org/releases/luna>
+  * Work with: Mars - <http://download.eclipse.org/releases/mars>
     * In **Programming Languages**
       * select **C/C++ Development Tools**
       * select **C/C++ Development Tools SDK**
@@ -46,15 +49,25 @@ This instance of Eclipse will be used for actual development.
     * click the **Finish** button
   * wait for the new plug-ins to be installed
 -   restart
-  Note: without the CDT sources available in the SDK, the extension point schemas will not be available so attempts to add new elements to the extensions will not be possible, and only 'Generic' elements will be offered.
--   install base API
+  Note: without the CDT sources available in the SDK, the extension point schemas will not be available so attempts to add new elements to the extensions will not be possible, and only 'Generic' elements will be offered
+
+### Install base API
+
   * go to <http://www.eclipse.org/cdt/downloads.php>, and download **cdt-master-8.3.0.zip** (required to keep compatibility with Kepler 4.3)
   * unpack the archive
   * move the new folder to in the Eclipses folder
+  * in _Eclipse_ menu → **(Window →) Preferences** → **Plug-in Development** → **Target Platform**
+    * click Add
+    * Start with an empty target
+    * Next
+    * Add → Directory
+    * Browse → cdt-master-8.3.0
+    * Reload
+    * select Running Platform as Active (mandatory!)
+
   * in _Eclipse_ menu → **(Window →) Preferences** → **Plug-in Development** → **API Baselines**
     * click the **Add Baseline...** button
-      * set Name: to 8.3.0
-      * browse Location: to .../GNU ARM Eclipse/cdt-master-8.3.0 (or set to this folder and click the **Reset** button)
+      * select 8.3.0
       * click the **Finish** button
     * click the **OK** button
   * click the **OK** button
