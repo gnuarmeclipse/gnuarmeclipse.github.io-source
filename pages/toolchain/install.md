@@ -59,7 +59,7 @@ The following steps can be performed on Windows:
   ![Disable adding toolchain path to environment]({{ site.baseurl }}/assets/images/2014/01/MS_finish.png)
 
 * read the `readme.txt` file
-* test if the compiler is functional
+* test if the compiler is functional; use the actual install path:
 
   ```
 C:\Users\Liviu Ionescu\>"C:\Program Files\GNU Tools ARM Embedded\4.8 2014q2\bin\arm-none-eabi-gcc.exe" --version
@@ -90,7 +90,7 @@ $ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-{{ page.versi
 ```
 
 * the result should be a folder like `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`
-* test if the compiler is functional
+* test if the compiler is functional; use the actual install path:
 
   ```
 $ /usr/local/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc --version
@@ -145,7 +145,7 @@ $ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-{{ page.versi
 ```
 
 * the result should be a folder like `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`
-* test if the compiler is functional
+* test if the compiler is functional; use the actual install path:
 
   ```
 $ /usr/local/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc --version
