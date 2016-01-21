@@ -45,3 +45,4 @@ Many thanks to the following donors (in chronological order):
 * Alan Adamson, USA
 * Vidar Berg, Norway
 * Danilo Bessone, Italy
+* Stern Technologies, USA
