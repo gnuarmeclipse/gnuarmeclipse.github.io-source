@@ -47,16 +47,16 @@ For all other issues you have, that are not related to bugs or feature requests,
 
 Similarly, each tool project has a separate GitHub Issue tracker.
 
-* [QEMU Issues](https://github.com/gnuarmeclipse/qemu/issues/1/)
-* [OpenOCD Issues](https://github.com/gnuarmeclipse/openocd/issues/1/)
-* [Windows Build Tools Issues](https://github.com/gnuarmeclipse/windows-build-tools/issues/1/)
+* [QEMU Issues](https://github.com/gnuarmeclipse/qemu/issues/)
+* [OpenOCD Issues](https://github.com/gnuarmeclipse/openocd/issues/)
+* [Windows Build Tools Issues](https://github.com/gnuarmeclipse/windows-build-tools/issues/)
 
 Please note that these trackers are mostly intended to the GNU ARM Eclipse specifics of these tools (like packing, or specific changes), and for issues affecting the core functionality, the user will most probably be asked to refer to the tools trackers.
 
 
 ## Web pages issues
 
-If you discover problems in the content of these pages (typos, wrong phrasing, etc), or you have suggestions on how to improve them, you can use the [Web Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io/issues/1) tracker.
+If you discover problems in the content of these pages (typos, wrong phrasing, etc), or you have suggestions on how to improve them, you can use the [Web Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io/issues/) tracker.
 
 > Note: the migration from WordPress/MediaWiki to GitHub Pages involved quite significant changes to the web pages, including conversion to [markdown](http://daringfireball.net/projects/markdown/syntax), which was done partly with scripts, partly manually; we are aware that it is very likely that lots of mistakes are still present in the pages; we would appreciate any help in fixing them.
 
