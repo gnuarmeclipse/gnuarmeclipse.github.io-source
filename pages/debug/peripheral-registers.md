@@ -44,7 +44,7 @@ With the device associated to the build configuration, the debug configuration i
 
 * select the .elf file
 * right click, **Debug As** → **Debug Configurations...**
-* double click the **GDB SEGGER J-Link Debugging**
+* double click the **GDB SEGGER J-Link Debugging** (or OpenOCD, or QEMU)
 
 **Device name automatic configuration**
 
