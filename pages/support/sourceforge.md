@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /support/sourceforge/
-title: Support
+title: SourceForge tickets
 author: Liviu Ionescu
 
 date: 2015-09-11 22:32:00 +0300

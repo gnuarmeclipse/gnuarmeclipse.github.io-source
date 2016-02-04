@@ -93,6 +93,7 @@
 * [Known issues]({{ site.baseurl }}/support/known-issues/)
 * [FAQ]({{ site.baseurl }}/support/faq/)
 * [SourceForge tickets]({{ site.baseurl }}/support/sourceforge/)
+* [Forum]({{ site.baseurl }}/support/forum/)
 * [Report plug-ins issue](https://github.com/gnuarmeclipse/plug-ins/issues/1/)
 
 

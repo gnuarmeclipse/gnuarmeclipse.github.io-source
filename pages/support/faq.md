@@ -25,7 +25,7 @@ Your Eclipse does not include CDT. You need to install **Eclipse IDE for C/C++ D
 
 On GNU/Linux, **DO NOT** install Eclipse with the system package manager, because usually it installs an older version, and CDT is not include.
 
-Instead, go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the proper **Eclipse IDE for C/C++ Developers**, preferably the 64-bit version. 
+Instead, go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the proper **Eclipse IDE for C/C++ Developers**, preferably the 64-bit version.
 
 ## OpenOCD fails to start with `-c echo "Started by GNU ARM Eclipse"`
 
