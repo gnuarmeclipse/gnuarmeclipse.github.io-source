@@ -46,3 +46,4 @@ Many thanks to the following donors (in chronological order):
 * Vidar Berg, Norway
 * Danilo Bessone, Italy
 * Stern Technologies, USA
+* Alain Mosnier, Sweden
