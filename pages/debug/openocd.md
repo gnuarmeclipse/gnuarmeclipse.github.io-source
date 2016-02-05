@@ -43,7 +43,7 @@ Before starting work with OpenOCD, it is recommended to define the path to the f
 
 * in the _Eclipse_ menu, go to **(Window →) Preferences** → **Run/Debug** → **OpenOCD**
 
-  ![OpenOCD preferences page]({{ site.baseurl }}/assets/images/2015/03/preferences-run-openocd.png)
+  ![OpenOCD preferences page]({{ site.baseurl }}/assets/images/2015/preferences-run-openocd.png)
 
 * click the **Restore Defaults** button
 * the plug-in will suggest the default values computed when Eclipse started; if a new version of OpenOCD was installed while Eclipse was active, restart Eclipse and click again the Restore Defaults button
