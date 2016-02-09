@@ -139,6 +139,11 @@ Scan the [GitHub Issues](https://github.com/gnuarmeclipse/plug-ins/issues) and t
 
 Close issues on the way. Refer to them as **[Issue:#22]**. For SourceForge, refer to them as **[bugs:#98]**, **[feature-requests:#60]**, **[support-requests:#81]**.
 
+## Update the Web
+
+* Jekyll build
+* Git push
+
 ## Publish on the main SourceForge updates site
 
 When all ready, run the `scripts/publish-updates.command`:
@@ -201,22 +206,11 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 * name the release like **GNU ARM Eclipse plug-ins v2.9.3-201508190739**
 * as description, copy the first paragraph from the Web release page
 * add a link to the Web page `[Continue reading »]()`
+* get URL from web and update the above link
 * attach binaries (drag and drop from the archives folder will do it)
-* mark it as a Pre-release
 * click the **Publish Release** button
 
 Note: at this moment the system should send a notification to all clients watching this project.
-
-## Update the Web
-
-* go to the post and update the link to the new Release
-* Jekyll build
-* Git push
-
-## Update the GitHub release
-
-* go back to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page and update the link to the blog post;
-* disable the pre-release flag.
 
 ## Publish on SourceForge
 
@@ -224,7 +218,7 @@ Note: at this moment the system should send a notification to all clients watchi
 * select the folder corresponding to the latest version (currently **2.x**); create a new one if necessary
 * click the **Add File** button
 * drag and drop the file (for example ilg.gnuarmeclipse.repository-2.1.1-201402140758.zip) in the upload window and click the **Upload** button
-* click the Done button
+* click the **Done** button
 * check it the new file was published; click the info icon
 * enable the **Windows**, **OS X** and **Linux** buttons
 * after a while the new upload will be marked as latest version
@@ -234,13 +228,14 @@ Note: at this moment the system should send a notification to all clients watchi
 * go to the new post and follow the Share link.
 * DO NOT select **On your own Timeline**, but **On a Page you manage**
 * select GNU ARM Eclipse
-* posting as GU ARM Eclipse
+* posting as GNU ARM Eclipse
 * click **Share link**
 
 ## Update the Eclipse Marketplace records
 
 * go to [Eclipse Marketplace](https://marketplace.eclipse.org/content/gnu-arm-eclipse)
-* click Edit
+* log in
+* click **Edit**
 * update version number
 
 ## Merge develop into master
@@ -248,4 +243,4 @@ Note: at this moment the system should send a notification to all clients watchi
 * in SourceTree, switch to the **master** branch
 * merge the **develop** branch into **master**
 * switch to **develop**
-* push both branches to GitHub and SourceForge.
+* push both branches to GitHub.
