@@ -8,7 +8,7 @@ date: 2015-09-07 18:31:00 +0300
 
 ---
 
-The **GNU ARM Eclipse** is an open source project that includes a family of Eclipse plug-ins and tools for multi-platorm embedded ARM development, based on GNU toolchains. This project is hosted on [GitHub](https://github.com/gnuarmeclipse) and [SourceForge](http://sourceforge.net/projects/gnuarmeclipse/).
+The **GNU ARM Eclipse** is an open source project that includes a family of Eclipse plug-ins and tools for multi-platform embedded ARM development, based on GNU toolchains. This project is hosted on [GitHub](https://github.com/gnuarmeclipse) and [SourceForge](http://sourceforge.net/projects/gnuarmeclipse/).
 
 ## The GNU ARM Eclipse plug-ins
 
