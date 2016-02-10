@@ -127,11 +127,15 @@ The structure of the post should contain:
 * date, as _Aug 1, 2015_ (italics)
 * one intro paragraph with the summary of the changes
 * a link to `[Binary files »]()`, currently empty, to be filled with the release URL
-* ## New features
-* ## Addressed bugs
-* ## Template issues
-* ## Other changes
-* ## Known problems
+* headers like:
+
+```
+## New features
+## Addressed bugs
+## Template issues
+## Other changes
+## Known problems
+```
 
 An example would be the [2.9.1](https://github.com/gnuarmeclipse/plug-ins/wiki/Release-v2.9.1-201508011813) announcement.
 
@@ -230,6 +234,7 @@ Note: at this moment the system should send a notification to all clients watchi
 * select GNU ARM Eclipse
 * posting as GNU ARM Eclipse
 * click **Share link**
+* check the post in the [Facebook page](https://www.facebook.com/gnuarmeclipse)
 
 ## Update the Eclipse Marketplace records
 

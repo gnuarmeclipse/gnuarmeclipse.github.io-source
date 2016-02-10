@@ -97,5 +97,4 @@ BBC codes:
 
 ## Releases
 
-* [latest release]({{ site.baseurl }}/2015/08/19/plugins-v2.9.3-201508190739-released/) [(download)](https://github.com/gnuarmeclipse/plug-ins/releases/tag/v2.9.3-201508190739)
-* [older releases]({{ site.baseurl }}/developer/releases)
+* [releases]({{ site.baseurl }}/developer/releases)
