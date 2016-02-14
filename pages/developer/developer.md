@@ -80,11 +80,6 @@ How to build the plug-ins from sources and publish them.
 ### Sites for articles
 
 * [ARMConnected Community](https://community.arm.com/welcome) - login, Create a new Blog Post, A place's blog, Software Development Tools, copy/paste markup from site, H2, update links, enter tags
-```
-<p>The <a href="https://github.com/gnuarmeclipse">GNU ARM Eclipse project</a> includes a set of open source Eclipse plug-ins and tools to create/build/debug/manage <strong>ARM</strong> (32-bits) and <strong>AArch64</strong> (64-bits) applications and static/shared libraries, using the latest <strong>GNU ARM GCC</strong> toolchains.</p>
-
-<p>For more details about the <strong>GNU ARM Eclipse</strong> project, please refer to the project site <a href="http://gnuarmeclipse.github.io/">http://gnuarmeclipse.github.io/</a>.</p>
-```
 * [Element14](http://www.element14.com/community/groups/open-source-software) - login, the Open Source Software; Write a blog post, copy/paste from ARM, load images, enter tags
 * [EmbDev](https://embdev.net/user/login) - New Topic to [Forum: ARM programming with GCC/GNU tools](https://embdev.net/forum/arm-gcc); no pictures; underline headers (no BBCs)
 * [EEVblog](http://www.eevblog.com/forum/login/) - [Microcontrollers & FPGAs](http://www.eevblog.com/forum/microcontrollers/); New topic, BBC codes (bold titles, image links to web article), Notify
