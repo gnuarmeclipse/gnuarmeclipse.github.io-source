@@ -27,7 +27,7 @@ To have access to the new packs features, you need to install the **GNU ARM Ecli
 
 ## The Packs Support plug-in
 
-The GNU ARM Eclipse Packs Support plug-in is intended to manage (list/install/inspect/remove) packs from multiple sources. It currently implements the specifications of CMSIS Packs v1.2, as defined by ARM/Keil, with some extensions.
+The GNU ARM Eclipse Packs Support plug-in is intended to manage (list/install/inspect/remove) packs from multiple sources. It currently implements the specifications of **CMSIS Packs**, as defined by [ARM/Keil](http://www.keil.com/pack/doc/CMSIS/Pack/html/index.html), with some extensions.
 
 ## Configuration
 
