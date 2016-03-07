@@ -106,7 +106,7 @@ Note: although perfectly possible to install it in any location, it is recommend
 To check if QEMU starts and is recent, use:
 
 
-	$ /opt/gnuarmeclipse/qemu/debian64-2.2.92-201504041716-dev/bin/qemu-system-gnuarmeclipse.exe" --version
+	$ /opt/gnuarmeclipse/qemu/2.2.92-201504041716-dev/bin/qemu-system-gnuarmeclipse --version
 	GNU ARM Eclipse 64-bit QEMU emulator version 2.2.92
 	Copyright (c) 2003-2008 Fabrice Bellard
 
