@@ -170,3 +170,23 @@ For more details please refer to the [OpenOCD plug-in]({{ site.baseurl }}/debug/
 The OpenOCD debugging **plug-ins are not included** in these packages, and need to be installed [as usual]({{ site.baseurl }}/plugins/install/). Just be sure that the **GNU ARM C/C++ OpenOCD Debugging** plug-ins are selected.
 
 ![Install the OpenOCD plug-ins]({{ site.baseurl }}/assets/images/2015/install-new-software-updates-openocd.png)
+
+## Troubleshooting
+
+### USB access rights
+
+On some GNU/Linux distributions, the UDEV definitions are not enough,
+or are not effective, and when trying to access the JTAG probe,
+an error is issued:
+
+    libusb_open failed: LIBUSB_ERROR_ACCESS
+
+If this happens, first try to start openocd with sudo; if this works,
+for regular work you also need to grant your user permission to use the USB.
+
+For example, on Ubuntu 15.10 you need to issue something like:
+
+    usermod -aG plugdev $USER
+
+If you still have problems, check your distribution documentation and
+when you have a functional solution post it on the project forum.
