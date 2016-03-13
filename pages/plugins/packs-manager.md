@@ -59,7 +59,7 @@ The result is a window like this:
 ![The empty packs perspective]({{ site.baseurl }}/assets/images/2014/07/EmptyPacksPerspective.png)
 
 
-Initially all views are empty; to populate them, the plug-in needs to access external packs repositories; for this be sure the internet connection is active and click the yellow arrows **Refresh** button.
+Initially all views are empty; to populate them, the plug-in needs to access external packs repositories; for this be sure the internet connection is active and click the yellow arrows **Refresh** button. (Since at first this is a bit tricky to spot, it is marked with a red arrow on the above picture). 
 
 After a few minutes, the window will change and show the list of packages:
 

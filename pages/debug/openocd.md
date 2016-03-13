@@ -74,8 +74,11 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 
   ![OpenOCD Debugger tab]({{ site.baseurl }}/assets/images/2013/12/OpenOCDDebuggerTab.png)
 
-* the only field that usually requires attention is the OpenOCD **Config options:**, where you should add one or more configuration scripts
-* Note: due to a platform specific issue, on Windows it is not possible to disable the *Allocate console for OpenOCD*
+* the only field that usually requires attention is the OpenOCD Setup **Other options:**, where you should add one or more configuration scripts; for example, for the STM32F4DISCOVERY board, the field should read `-f board/stm32f4discovery.cfg`
+
+> Note: it is mandatory to enter a reference to a configuration script here, otherwise the debug session will not start. Use the OpenOCD documentation for details on how to start OpenOCD for various boards.
+
+* Windows notice: due to a platform specific issue, on Windows it is not possible to disable the *Allocate console for OpenOCD*
 * click the third tab, named **Startup**, which contains some specific OpenOCD options used to configure the debug session; defaults are generally enough
 
   ![The OpenOCD Startup tab]({{ site.baseurl }}/assets/images/2013/12/OpenOCDStartupTab.png)

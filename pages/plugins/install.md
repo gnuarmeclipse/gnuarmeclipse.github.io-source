@@ -11,7 +11,7 @@ date: 2015-09-11 22:06:00 +0300
 
 ## Quicklinks
 
-If you know what this is all about, just drag-and-drop the **Install** button below to your running Eclipse workspace and follow the **Eclipse Marketplace** install/update steps.
+If you know what this is all about, just drag-and-drop the **Install** button below **to your running Eclipse workspace** and follow the **Eclipse Marketplace** install/update steps.
 
 <a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace to install GNU ARM Eclipse"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install GNU ARM Eclipse" /></a>
 
@@ -49,13 +49,15 @@ For example, on Ubuntu 14.04 LTS, you can install the OpenJDK run-time and test 
 
 ### Eclipse & CDT
 
-The oldest Eclipse supported by the plug-ins is Eclipse 4.3 Kepler (CDT 8.3), and the recommended version is 4.4 SR2. Do not try to install them on Juno, Indigo, or older versions, since the install will fail.
+The oldest Eclipse supported by the plug-ins is Eclipse 4.3 Kepler (CDT 8.3), and the recommended version is 4.5 Mars. Do not try to install them on Juno, Indigo, or older versions, since the install will fail.
 
-The plug-ins also run on Eclipse 4.5 Mars, but there might be some small problems, for example the Restart button in the Debug view seems not working at all.
+Just go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bit version.
 
-Just go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bit version. Unpack it at a place of your choice and start using it.
+Eclipse does not need an installer, Eclipse is distributed as a plain archive. To install Eclipse, simply unpack the archive at a place of your choice and start using it.
 
-> Note: on GNU/Linux be sure you manually install the Eclipse; **DO NOT** try to install it via the Synaptics package manager, or similar, since usually you get an older version and the CDT plug-ins are not included.
+> Note 1: on GNU/Linux be sure you manually install the Eclipse; **DO NOT** try to install it via the Synaptics package manager, or similar, since usually you get an older version and the CDT plug-ins are not included.
+
+> Note 2: Contrary to other tools, Eclipse does not need administrative rights, does need not be installed in a system location, and does not need not be a single instance on a system. Actually you are encouraged to install multiple instances of Eclipse, possibly one for each project type, to avoid mixing plug-ins from different sources in case different project types.
 
 ### CDT
 
@@ -65,7 +67,7 @@ As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C
 
 ![Install new software]({{ site.baseurl }}/assets/images/2013/10/InstallNewSoftware.png)
 
-* select *Work with:* **Kepler**
+* select *Work with:* **Kepler** (or more recent)
 * if the *Group items by category *is enabled, expand the **Programming Languages** group
 * select the **C/C++ Development Tools** feature
 * click the **Next** button and follow the usual installation procedure
@@ -84,7 +86,7 @@ The following samples are from Eclipse 4.3 Kepler on OS X. Other platforms may b
 
 ### The Eclipse Marketplace way
 
-The easiest way to install/update the plug-ins is to drag-and-drop the **Install** button below to your running Eclipse workspace.
+The easiest way to install/update the plug-ins is to drag-and-drop the **Install** button below to your running Eclipse workspace (If you are still in the **Welcome screen**, click the **Workspace** link to switch to the workspace, the drag-and-drop does not work in the Welcome screen).
 
 <a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace to install GNU ARM Eclipse"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install GNU ARM Eclipse" /></a>
 
@@ -182,6 +184,12 @@ Thus, the recommended method to **identify plug-ins and features** is **by date,
 ## Set workspace preferences
 
 After completing the installation of the plug-ins it is recommended to [set the workspace preference][1].
+
+## Download CMSIS Packs
+
+Although support for CMSIS Packs is still experimental, the content of the packs can be used populate the Peripheral registers views during debug sessions, so it is recommended to install the packs for the processors in use.
+
+For this follow the steps in the [Packs manager]({{ site.baseurl }}/plugins/packs-manager/) page.
 
 ## Toolchain and debugging support
 

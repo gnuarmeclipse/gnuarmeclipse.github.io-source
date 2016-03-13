@@ -27,7 +27,13 @@ The J-Link was present on the JTAG market for many years, but, considering the i
 
 ## Overview
 
-J-Link comes not only with a GDB server, but with a complete set of drivers and utilities, packed by SEGGER separately for each platform. The same distribution includes drivers for all J-Link probes, so installation is quite simple. The J-Link binaries are available from the [SEGGER site](http://www.segger.com/jlink-software.html). Download the file appropriate for your development platform. Please note that you need to have the **J-Link serial number** at hand, since the download site will ask for it. You can still download the J-Link software if you do not have the serial number, but you have to pass a multiple step confirmations sequence stating that you are not using illegal clones.
+J-Link comes not only with a GDB server, but with a complete set of drivers and utilities, packed by SEGGER separately for each platform. The same distribution includes drivers for all J-Link probes, so installation is quite simple. The J-Link binaries are available from the [SEGGER site](http://www.segger.com/jlink-software.html).
+
+There are different sections, grouped by platform (Windows, Mac OS X, Linux, Linux ARM); go to the platform of your choice.
+
+Click the **Download** button close to the **Software and documentation pack** appropriate for your development platform. For Linux there are separate 32/64-bits versions, packed with different tools (DEB, RPM, TGZ); select the package that better matches your system.
+
+Accept the terms of the software agreement and download the software.
 
 ## Documentation
 
@@ -56,9 +62,15 @@ The OS X download is an OS X package installer, like **JLink\_MacOSX\_V480.pkg*
 
 * double click it to start the installation process
 * accept the license
-* enter the administrative password, required to write in the global /Applications folder
+* enter the administrative password, required to write in the global `/Applications` folder
 
 The result of the install is a folder called **/Applications/SEGGER/JLink/** (the same folder for all versions) where all executables and libraries are stored; please note that, as for many OS X applications, no other driver files are installed in the system folders.
+
+Personally I prefer to keep older versions around for a while, and for this I rename the JLink folder
+
+```
+sudo mv JLink JLink_V80
+```
 
 ![SEGGER OS X distribution]({{ site.baseurl }}/assets/images/2014/01/Segger-OSX.png)
 
@@ -69,7 +81,7 @@ On OS X, the USB subsystem automatically identifies and allows access to USB dev
 
 ## GNU/Linux
 
-There are multiple packages available for GNU/Linux on the SEGGER download site, built as Debian/Red Hat packages, in 32/64-bit versions, or plain TGZ archives. Select the one appropriate for you system and use the specific tools to install the package. For example, on Ubuntu, to install the 64-bit .deb file, use the following command:
+As already mentioned, there are multiple packages available for GNU/Linux on the SEGGER download site, built as Debian/Red Hat packages, in 32/64-bits versions, or plain TGZ archives. Select the one appropriate for you system and use the specific tools to install the package. For example, on Ubuntu, to install the 64-bit .deb file, use the following command:
 
 	$ sudo dpkg -i ~/Downloads/jlink_5.2.7_x86_64.deb
 
