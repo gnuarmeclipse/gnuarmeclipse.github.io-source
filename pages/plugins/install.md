@@ -11,7 +11,7 @@ date: 2015-09-11 22:06:00 +0300
 
 ## Quicklinks
 
-If you know what this is all about, just drag-and-drop the **Install** button below **to your running Eclipse workspace** and follow the **Eclipse Marketplace** install/update steps.
+If you know what this is all about, just drag-and-drop the **Install** button available below to your running Eclipse workspace and follow the **Eclipse Marketplace** install/update steps.
 
 <a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace to install GNU ARM Eclipse"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install GNU ARM Eclipse" /></a>
 
