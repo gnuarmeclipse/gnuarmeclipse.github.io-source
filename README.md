@@ -76,3 +76,9 @@ To maintain sitelink.xml usefulness, while maintaining pages and posts, it is ne
 ## Timezone
 
 As per `_config.yml`, the default timezone is UTC. For other timezones, set it explicitly as offset (for example +0300)
+
+## Contributing
+
+Contributions are welcome!
+
+Review the [Contributing Guidelines](CONTRIBUTING.md) for details.
