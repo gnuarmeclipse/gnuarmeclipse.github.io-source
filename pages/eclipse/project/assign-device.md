@@ -38,7 +38,7 @@ Please note that failure to do so will prevent the device selection window to ma
 
 > **Notice**: for an even higher flexibility, different devices can be assigned to different **build configuration**, so it is possible to have different devices for different configurations.
 
-One direct consequence is that you need to be careful to associate the appropriate devices to **all** configurations. The Eclipse interface allows to configure **All configurations** at a time, just select this option in the top selection.
+One direct consequence is that you need to be careful to associate the appropriate devices to **all** configurations. The Eclipse interface allows to configure **All configurations** at a time; select this option in the top selection.
 
 > **Notice**: The Devices tab is visible in the **Settings** properties page only for projects created by the GNU ARM Eclipse plug-ins.
 

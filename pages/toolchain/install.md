@@ -101,7 +101,7 @@ arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (releas
 
 The complete toolchain documentation is available in the `.../share/doc/pdf/` folder.
 
-If you'll ever need to remove the toolchain, just remove the `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`, there are no other components stored in system folders.
+If you'll ever need to remove the toolchain, only remove the `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`, there are no other components stored in system folders.
 
 ### MacPorts
 
@@ -156,7 +156,7 @@ arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.3 20140228 (releas
 
 The complete toolchain documentation is available in the `.../share/doc/pdf/` folder.
 
-If you'll ever need to remove the toolchain, just remove the `/usr/local/gcc-arm-none-{{ page.version-id }}`, there are no other components stored in system folders.
+If you'll ever need to remove the toolchain, only remove the `/usr/local/gcc-arm-none-{{ page.version-id }}`, there are no other components stored in system folders.
 
 ## Toolchain path
 

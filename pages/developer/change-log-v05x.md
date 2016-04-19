@@ -82,7 +82,7 @@ Entries in this file are in direct chronological order.
 
 ### 2010-01-15
 
--   no functional changes, just a clean repack of the update site and of the published archive.
+-   no functional changes, only a clean repack of the update site and of the published archive.
 
 ### 2010-04-20
 

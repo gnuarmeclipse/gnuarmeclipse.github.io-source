@@ -28,7 +28,7 @@ Eventually configure the folders where you want the projects to be stored:
 
 ![Configure the project folders]({{ site.baseurl }}/assets/images/2014/02/KL25Folders.png)
 
-As for all C/C++ projects configure (usually just accept the suggested) build configurations:
+As for all C/C++ projects configure (usually only accept the suggested) build configurations:
 
 ![Accept the build configurations]({{ site.baseurl }}/assets/images/2014/02/KL25Configs.png)
 

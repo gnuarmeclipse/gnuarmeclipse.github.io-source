@@ -10,7 +10,7 @@ date: 2015-09-11 22:35:00 +0300
 
 ## Quicklinks
 
-If you know what this is all about and you just need to go to specific templates:
+If you know what this is all about and you only need to go to specific templates:
 
 * [Cortex-M template][1]
 * [STM32Fxx templates][2]
@@ -72,7 +72,7 @@ The application code is located in the top level **src** and **include** folders
 
 ### Linker scripts
 
-The linker scripts are grouped in a **ldscripts** folder. For convenience, the definitions were split in separate files to define the memory map and the content of the sections, but any other structure is acceptable, just update the link configuration.
+The linker scripts are grouped in a **ldscripts** folder. For convenience, the definitions were split in separate files to define the memory map and the content of the sections, but any other structure is acceptable, only update the link configuration.
 
 ### Local libraries
 

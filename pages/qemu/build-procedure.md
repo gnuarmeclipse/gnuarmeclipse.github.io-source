@@ -9,7 +9,7 @@ date: 2015-09-04 17:02:00 +0300
 
 The latest version of the build script is a single run, multi-platform build, generating the Windows 32, Windows 64, GNU/Linux 32, GNU/Linux 64 and OS X distribution packages at once.
 
-The script was developed on OS X, but it also runs on any recent GNU/Linux distribution (just that in this case it cannot generate the OS X package).
+The script was developed on OS X, but it also runs on any recent GNU/Linux distribution (only that in this case it cannot generate the OS X package).
 
 ## Prerequisites
 

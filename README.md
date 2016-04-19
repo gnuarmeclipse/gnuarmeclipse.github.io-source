@@ -57,7 +57,7 @@ The build result is in the `_site` folder.
 
 This folder is configured as a submodule, linked to the [gnuarmeclipse.github.io](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io) project.
 
-To publish, just commit this Git and the new site will be automatically updated.
+To publish, commit this Git and the new site will be automatically updated.
 
 ## Folder structure
 
@@ -79,6 +79,6 @@ As per `_config.yml`, the default timezone is UTC. For other timezones, set it e
 
 ## Contributing
 
-Contributions are welcome!
+Contributions are welcomed!
 
-Review the [Contributing Guidelines](CONTRIBUTING.md) for details.
+Please review the [Contributing Guidelines](CONTRIBUTING.md) for details.

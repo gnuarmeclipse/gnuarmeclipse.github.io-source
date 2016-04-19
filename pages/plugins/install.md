@@ -11,11 +11,11 @@ date: 2015-09-11 22:06:00 +0300
 
 ## Quicklinks
 
-If you know what this is all about, just drag-and-drop the **Install** button available below to your running Eclipse workspace and follow the **Eclipse Marketplace** install/update steps.
+If you know what this is all about, drag-and-drop the **Install** button available below to your running Eclipse workspace and follow the **Eclipse Marketplace** install/update steps.
 
 <a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace to install GNU ARM Eclipse"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install GNU ARM Eclipse" /></a>
 
-If you want to do it manually, you just need the update site details:
+If you want to do it manually, you only need the update site details:
 
 * name: **GNU ARM Eclipse Plug-ins**
 * URL: `http://gnuarmeclipse.sourceforge.net/updates`
@@ -51,7 +51,7 @@ For example, on Ubuntu 14.04 LTS, you can install the OpenJDK run-time and test 
 
 The oldest Eclipse supported by the plug-ins is Eclipse 4.3 Kepler (CDT 8.3), and the recommended version is 4.5 Mars. Do not try to install them on Juno, Indigo, or older versions, since the install will fail.
 
-Just go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bit version.
+Go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bit version.
 
 Eclipse does not need an installer, Eclipse is distributed as a plain archive. To install Eclipse, simply unpack the archive at a place of your choice and start using it.
 
@@ -108,7 +108,7 @@ This should identify GNU ARM Eclipse and offer to Install/Update/Uninstall.
 
 The classical way to install the GNU ARM Eclipse plug-ins is to use the Eclipse standard install/update mechanism: In the _Eclipse_ menu → **Help** → **Install New Software...**
 
-* in the *Install* window, click the **Add...** button (on future updates, just select the URL in the **Work with:** combo)
+* in the *Install* window, click the **Add...** button (on future updates, select the URL in the **Work with:** combo)
 * fill in *Name:* with **GNU ARM Eclipse Plug-ins**
 * fill in *Location:* with **http://gnuarmeclipse.sourceforge.net/updates**
 * click the **OK** button

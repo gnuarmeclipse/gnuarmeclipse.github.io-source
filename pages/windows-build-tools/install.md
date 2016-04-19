@@ -25,7 +25,7 @@ So, if you use the CodeBench Lite (not recommended anyway), although you already
 
 ## Download the Windows Build Tools setup
 
-Otherwise, if you use other toolchains, like the recommended [**GNU Tools for ARM Embedded Processors**](http://launchpad.net/gcc-arm-embedded), for your convenience we prepared a small package with the required build tools; just download the most recent **gnuarmeclipse-build-tools-win32-2.\*-\*-setup.exe** file from the [SourceForge download area](https://sourceforge.net/projects/gnuarmeclipse/files/Build Tools/) and proceed with the setup.
+Otherwise, if you use other toolchains, like the recommended [**GNU Tools for ARM Embedded Processors**](http://launchpad.net/gcc-arm-embedded), for your convenience we prepared a small package with the required build tools; download the most recent **gnuarmeclipse-build-tools-win32-2.\*-\*-setup.exe** file from the [SourceForge download area](https://sourceforge.net/projects/gnuarmeclipse/files/Build Tools/) and proceed with the setup.
 
 ## Run the setup
 

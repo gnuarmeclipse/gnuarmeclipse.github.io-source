@@ -10,7 +10,7 @@ date: 2015-09-11 22:15:00 +0300
 
 ## Quicklinks
 
-If you already know what are the features of the new plug-in and just want to know how to install/use it, you can directly skip to:
+If you already know what are the features of the new plug-in and only want to know how to install/use it, you can directly skip to:
 
 * [QEMU install]({{ site.baseurl }}/qemu/install/)
 * [QEMU plug-in usage]({{ site.baseurl }}/debug/qemu/#qemu-plug-in-usage)
@@ -160,7 +160,7 @@ For more details please read the [Running and debugging projects](http://help.e
 
 Each debug process has a dedicated console, to display its standard output and standard error, or to get input for the standard input.
 
-To see the console of any process, just select the process in the top left window. For example the QEMU console will initially look like this:
+To see the console of any process, select the process in the top left window. For example the QEMU console will initially look like this:
 
 ![The QEMU console]({{ site.baseurl }}/assets/images/2015/04/QEMU_Console.png)
 

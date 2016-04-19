@@ -130,6 +130,6 @@ For more details please refer to the [QEMU plug-in]({{ site.baseurl }}/debug/qem
 
 ## QEMU Debugging plug-ins
 
-The QEMU debugging **plug-ins are not included** in these packages, and need to be installed [as usual]({{ site.baseurl }}/plugins/install/). Just be sure that the **GNU ARM C/C++ QEMU Debugging** plug-ins are selected.
+The QEMU debugging **plug-ins are not included** in these packages, and need to be installed [as usual]({{ site.baseurl }}/plugins/install/). Be sure that the **GNU ARM C/C++ QEMU Debugging** plug-ins are selected.
 
 ![Install the QEMU plug-ins]({{ site.baseurl }}/assets/images/2015/install-new-software-updates-qemu.png)

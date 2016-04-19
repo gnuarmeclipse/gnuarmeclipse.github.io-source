@@ -10,7 +10,7 @@ date: 2015-09-11 21:15:00 +0300
 
 ## Quicklinks
 
-If you already know what are the features of the new plug-in and just want to know how to install/use it, you can directly skip to:
+If you already know what are the features of the new plug-in and only want to know how to install/use it, you can directly skip to:
 
 * [J-Link install]({{ site.baseurl }}/debug/jlink/install/)
 * [J-Link plug-in usage]({{ site.baseurl }}/debug/jlink/#j-link-plug-in-use)
@@ -171,7 +171,7 @@ For more details please read the [Running and debugging projects](http://help.ec
 
 Each debug process has a dedicated console, to display its standard output and standard error, or to get input for the standard input.
 
-To see the console of any process, just select the process in the top left window. For example the server console might look like this:
+To see the console of any process, select the process in the top left window. For example the server console might look like this:
 
 ![The GDB server console]({{ site.baseurl }}/assets/images/2013/12/DebugSessionServer.png)
 

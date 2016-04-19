@@ -158,7 +158,7 @@ For more details please read the [Running and debugging projects](http://help.e
 
 Each debug process has a dedicated console, to display its standard output and standard error, or to get input for the standard input.
 
-To see the console of any process, just select the process in the top left window. For example the gdb client console might look like this:
+To see the console of any process, select the process in the top left window. For example the gdb client console might look like this:
 
 ![The GDB client console]({{ site.baseurl }}/assets/images/2013/12/OpenOCDclientConsole.png)
 

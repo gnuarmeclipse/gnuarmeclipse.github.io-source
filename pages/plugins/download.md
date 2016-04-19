@@ -36,7 +36,7 @@ All versions of the plug-ins are available via the [GitHub Releases](https://git
 
 ![Plug-ins Releases]({{ site.baseurl }}/assets/images/2015/github-gae-plugins-releases.png)
 
-Just navigate to the [Latest release](https://github.com/gnuarmeclipse/plug-ins/releases/latest) page (or the desired version) and download the attached archive, it should be a **zip** file with a long name like:
+Navigate to the [Latest release](https://github.com/gnuarmeclipse/plug-ins/releases/latest) page (or the desired version) and download the attached archive, it should be a **zip** file with a long name like:
 
 `ilg.gnuarmeclipse.repository-2.9.3-201508190739.zip`
 

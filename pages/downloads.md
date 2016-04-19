@@ -45,7 +45,7 @@ As per the GitHub paradigm, each new release is identified by a unique Git tag, 
 
 ## Partial releases
 
-Sometimes tools releases include fixes affecting only a limited number of platforms; to save space, binaries for the platforms that did not include changes are not duplicated, and should be searched for and downloaded from previous releases. Just scroll down the browser windows, possibly to the **Next** page and identify the release that provides the binaries for the desired platform.
+Sometimes tools releases include fixes affecting only a limited number of platforms; to save space, binaries for the platforms that did not include changes are not duplicated, and should be searched for and downloaded from previous releases. Scroll down the browser windows, possibly to the **Next** page and identify the release that provides the binaries for the desired platform.
 
 ![The Latest release view. ]({{ site.baseurl }}/assets/images/2015/github-qemu-code-tab-partial-release.png)
 
