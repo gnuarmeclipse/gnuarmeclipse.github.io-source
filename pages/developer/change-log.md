@@ -12,6 +12,59 @@ Entries in this file are in reverse chronological order.
 
 ## 2016
 
+### 2016-03-28
+
+* Merge pull request #107 from iulia-vasii/iulia-dev; allow Settings page to open in case toolchain is not defined
+
+### 2016-03-19
+
+* Merge pull request #103 from sukidog/issue102_pyocd; Fix issue #102. Do not prevent user from relying on gdbserver in PATH
+
+### 2016-03-15
+
+* Merge pull request #96 from marek-trmac/develop #94: Fixed access to local repository using file:/// schema
+* mbs.cross: v2.2.1
+* Merge pull request #99 from marek-trmac/develop; #95: Added support for file protocol used in URL
+* packs.data: Repos also convert spaces to _
+* packs.data: version 1.2.3
+
+### 2016-03-13
+
+* Merge pull request #93 from flit/develop; pyOCD plugin requested changes
+* Merge pull request #91 from iulia-vasii/iulia-dev; fix Apply button in Toolchains tab
+
+### 2016-02-22
+
+* enable per project formatter, Eclipse (built-in)
+* Merge pull request #86 from flit/develop; Fix remaining warnings in pyOCD plugin
+* Merge pull request #87 from flit/develop; More adjustments to pyOCD launch GUI as per Liviu's request
+* reformat
+
+### 2016-02-21
+
+* Merge pull request #84 from flit/pyocd-dev; Various improvements and fixes
+* gdbjtag.pyocd: silence warnings, reformat
+
+### 2016-02-15
+
+* Merge pull request #76 from sukidog/cleanup_warn3; templates.ad: fix wrong Activator class specification
+* Merge pull request #77 from sukidog/cleanup_warn4; Fix warnings with output specification in build.properties
+
+### 2016-02-14
+
+* core: fix sem ver parsing of short strings
+
+### 2016-02-13
+
+* core: add semVer library
+* packs.core: add properties access & alias
+* core: make semVer tolerant to partial version
+* packs.core: silence warning
+* packs.data: accept schema 1.4
+* packs.core: version 1.1.3
+* packs.data: version 1.2.2
+* version: 2.12.1
+
 ### 2016-02-10
 
 * version 2.11.3-201602101653 released
