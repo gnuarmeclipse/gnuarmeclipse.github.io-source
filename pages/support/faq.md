@@ -10,6 +10,12 @@ date: 2015-09-11 20:28:00 +0300
 
 <div style="clear: both;"></div>
 
+## I cannot install the plug-ins on Eclipse Neon
+
+Eclipse Neon uses CDT 9.x, which introduced some incompatible API changes. To accommodate these changes, a new major version was released (3.1.1), providing a solution that works on both the new API and the previous 8.x API (version 8.6 or higher).
+
+This change also raised the minimum supported version to Eclipse Luna SR2 and JavaSE-1.7. Eclipse Kepler and previous are no longer supported.
+
 ## I cannot install the plug-ins
 
 > I get the following when trying to install Cross Compiler
