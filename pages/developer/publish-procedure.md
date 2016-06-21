@@ -110,7 +110,7 @@ Test if the new build can be used as an update site, by installing from updates-
 
 ## Update the Change log
 
-Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/developer/change-log/), grouped by days.
+Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/developer/change-log/) (pages/developer/change-log.md), grouped by days.
 
     git log --pretty='%cd * %s' --since 2015-06-24 --reverse --date=short >~/Desktop/ChangeLog.txt
 
@@ -145,8 +145,9 @@ Close issues on the way. Refer to them as **[Issue:#22]**. For SourceForge, refe
 
 ## Update the Web
 
-* Jekyll build
-* Git push
+* Jekyll build the **gnuarmeclipse.github.io-source** project
+* Git Push & Sync the **gnuarmeclipse.github.io-source** project
+* Git Push & Sync the **gnuarmeclipse.github.io** project
 
 ## Publish on the main SourceForge updates site
 
@@ -201,8 +202,14 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 -   move the latest archive to **released**
 -   move the other archives to **internal**
 
+## Push the develop branch
+
+* in SourceTree, switch to the **develop** branch
+* push the **develop** branch to GitHub
+
 ## Create a new GitHub release
 
+* be sure the **develop** branch is up to date and set as default
 * go to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page
 * click **Draft a new release**
 * name the tag like **v2.9.3-201508190739**
@@ -219,9 +226,9 @@ Note: at this moment the system should send a notification to all clients watchi
 ## Publish on SourceForge
 
 * go to [SourceForge Files](http://sourceforge.net/projects/gnuarmeclipse/files/Current%20Releases/)
-* select the folder corresponding to the latest version (currently **2.x**); create a new one if necessary
+* select the folder corresponding to the latest version (currently **3.x**); create a new one if necessary
 * click the **Add File** button
-* drag and drop the file (for example ilg.gnuarmeclipse.repository-2.1.1-201402140758.zip) in the upload window and click the **Upload** button
+* drag and drop the file (for example ilg.gnuarmeclipse.repository-3.1.1-201606210758.zip) in the upload window and click the **Upload** button
 * click the **Done** button
 * check it the new file was published; click the info icon
 * enable the **Windows**, **OS X** and **Linux** buttons
@@ -241,7 +248,7 @@ Note: at this moment the system should send a notification to all clients watchi
 * go to [Eclipse Marketplace](https://marketplace.eclipse.org/content/gnu-arm-eclipse)
 * log in
 * click **Edit**
-* update version number
+* update version number, minimum Eclipse versions.
 
 ## Merge develop into master
 
