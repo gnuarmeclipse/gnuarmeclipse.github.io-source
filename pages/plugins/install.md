@@ -26,17 +26,17 @@ Since these are Eclipse plug-ins, they obviously require a functional Eclipse CD
 
 ### Win XP - a word of caution
 
-For the old-timers, a word of caution about Windows XP: recent Java distributions (from 7 up) are [no longer certified for XP](http://www.oracle.com/technetwork/java/javase/config-417990.html), so, even if they might seem to work, you are on thin ice. If possible, avoid using XP at all; otherwise use only the 32-bit version, with 32-bit Java and Eclipse.
+For the old-timers, a word of caution about Windows XP: recent Java distributions (from 7 up) are [no longer certified for XP](http://www.oracle.com/technetwork/java/javase/config-417990.html), so, even if they might seem to work, you are on thin ice. If possible, avoid using XP at all; otherwise use only the 32-bits version, with 32-bits Java and Eclipse.
 
 ### Win XP 64
 
-The warning is even more important for Win XP 64, which, in certain configurations, has difficulties to start 32-bit applications (like the JLink GDB Server or OpenOCD). Although generally Win XP 64 is not recommended at all, if you really need to use it, preferably experiment with a 32-bit Java and a 32-bit Eclipse.
+The warning is even more important for Win XP 64, which, in certain configurations, has difficulties to start 32-bits applications (like the JLink GDB Server or OpenOCD). Although generally Win XP 64 is not recommended at all, if you really need to use it, preferably experiment with a 32-bits Java and a 32-bits Eclipse.
 
 However please note that no support requests referring to Win XP 64 will be processed.
 
 ### Java
 
-The recommended package is the official [Oracle **Java SE**](http://www.oracle.com/technetwork/java/javase/index.html). The **OpenJDK Java** used in Ubuntu is also fine. The minimum is JDK 1.7, or even JRE 1.7 (the Java Runtime Environment), but, as said before, better use the latest JDK. On OS X the last Apple Java implementation is 1.6, so it is required to use the Oracle 1.7 or later.
+The recommended package is the official [Oracle **Java SE**](http://www.oracle.com/technetwork/java/javase/index.html). The **OpenJDK Java** used in Ubuntu is also fine. The minimum is JDK 1.7, or even JRE 1.7 (the Java Runtime Environment), but, as said before, better use the latest JDK. On macOS the last Apple Java implementation is 1.6, so it is required to use the Oracle 1.7 or later.
 
 For example, on Ubuntu 14.04 LTS, you can install the OpenJDK run-time and test if it was properly installed with the following commands:
 
@@ -44,14 +44,14 @@ For example, on Ubuntu 14.04 LTS, you can install the OpenJDK run-time and test 
     $ java -version
     java version "1.7.0_85"
     OpenJDK Runtime Environment (IcedTea 2.6.1) (7u85-2.6.1-5ubuntu0.14.04.1)
-    OpenJDK 64-Bit Server VM (build 24.85-b03, mixed mode)
+    OpenJDK 64-bits Server VM (build 24.85-b03, mixed mode)
 
 
 ### Eclipse & CDT
 
-The oldest Eclipse supported by the plug-ins is Eclipse 4.3 Kepler (CDT 8.3), and the recommended version is 4.5 Mars. Do not try to install them on Juno, Indigo, or older versions, since the install will fail.
+The oldest Eclipse supported by the plug-ins is Eclipse 4.4 Luna SR2 (CDT 8.6), and the recommended version is 4.5 Mars. Do not try to install them on Kepler, Juno, Indigo, or older versions, since the install will fail.
 
-Go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bit version.
+Go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bits version.
 
 Eclipse does not need an installer, Eclipse is distributed as a plain archive. To install Eclipse, simply unpack the archive at a place of your choice and start using it.
 
@@ -61,7 +61,7 @@ Eclipse does not need an installer, Eclipse is distributed as a plain archive. T
 
 ### CDT
 
-The minimum CDT version is 8.3. Do not try to use earlier versions, since either the install will fail, or it will not run properly.
+The minimum CDT version is 8.6. Do not try to use earlier versions, since either the install will fail, or it will not run properly.
 
 As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C++ Developers** for the cross ARM development projects. Even if you did so, but especially if you did not do so, it is a good idea to check if you really have the latest version available. For this, enter the _Eclipse_ menu and go to **Help** → **Install New Software**
 
@@ -76,13 +76,15 @@ As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C
 
 ### Compatibility issues
 
-Please note that starting with 1.1.x, compatibility with Eclipses previous than 4.3 Kepler was no longer possible. If, for any reasons, you need a solution for older Eclipse versions, you can try the GNU ARM Eclipse Plug-in version 0.5.5, but please keep in mind that this old version is no longer maintained.
+Please note that starting with 3.1.x, compatibility with Eclipses previous than 4.4 Luna was no longer possible. If, for any reason, you need a solution for Eclipse Kepler, you can try the GNU ARM Eclipse Plug-in version 2.12, but please keep in mind that this version is no longer maintained.
+
+Similarly, starting with 1.1.x, compatibility with Eclipses previous than 4.3 Kepler was no longer possible. If, for any reasons, you need a solution for older Eclipse versions, you can try the GNU ARM Eclipse Plug-in version 0.5.5, but please keep in mind that this old version is no longer maintained.
 
 ## Plug-ins install/update
 
-The following samples are from Eclipse 4.3 Kepler on OS X. Other platforms may behave slightly different, but the idea is the same.
+The following samples are from a slightly older Eclipse 4.3 Kepler on macOS. Other platforms may behave slightly different, but the idea is the same.
 
-**Warning:** Be sure your Eclipse is 4.3 or later, otherwise the plug-ins will refuse to install, claiming **Missing requirements** and **Cannot satisfy dependency**.
+**Warning:** Be sure your Eclipse is 4.4 Luna SR2 or later, otherwise the plug-ins will refuse to install, claiming **Missing requirements** and **Cannot satisfy dependency**.
 
 ### The Eclipse Marketplace way
 

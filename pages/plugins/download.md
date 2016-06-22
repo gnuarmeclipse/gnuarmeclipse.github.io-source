@@ -40,4 +40,4 @@ Navigate to the [Latest release](https://github.com/gnuarmeclipse/plug-ins/relea
 
 `ilg.gnuarmeclipse.repository-2.9.3-201508190739.zip`
 
-Please note that not all plug-in versions run on all Eclipse versions, and usually new plug-in versions may require new Eclipse versions, so better try to stay as up-to-date with the Eclipse as possible. (For Eclipse Kepler 4.3 and later, use versions 1.x; for older Eclipses, try the final 0.5.5 version, but keep in mind it is no longer maintained).
+Please note that not all plug-in versions run on all Eclipse versions, and usually new plug-in versions may require new Eclipse versions, so better try to stay as up-to-date with the Eclipse as possible. (For Eclipse Luna 4.4 and later, use versions 3.x; for Eclipse Kepler 4.3, use versions 2.x; for older Eclipses, try the final 0.5.5 version, but keep in mind it is no longer maintained).
