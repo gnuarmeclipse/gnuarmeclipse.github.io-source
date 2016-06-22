@@ -18,9 +18,9 @@ For embedded ARM projects, it is recommended to use the [GNU Tools for ARM Embe
 
 ### Build tools (make & rm)
 
-If you run on OS X or GNU/Linux, things are easier, since **rm** should already be part of the system, and **make**, if not already there, can be installed by adding the developer package.
+If you run on macOS or GNU/Linux, things are easier, since **rm** should already be part of the system, and **make**, if not already there, can be installed by adding the developer package.
 
-On OS X, this can be done by installing Xcode, which from version 5.x, automatically adds the required command line applications. (Older Xcode required a manual install of the Command Line Tools package, from within Xcode).
+On macOS, this can be done by installing Xcode, which from version 5.x, automatically adds the required command line applications. (Older Xcode required a manual install of the Command Line Tools package, from within Xcode).
 
 On GNU/Linux, depending on your distribution, **make** might be in the standard distribution, or you might need to install some specific developer packages.
 

@@ -24,19 +24,19 @@ Install Sun JDK 1.7 or later (required since Eclipse 4.4); JRE is not enough, wi
 This instance of Eclipse will be used for actual development.
 
 -   go to [Eclipse download site](http://www.eclipse.org/downloads/)
--   download **Eclipse for RCP and RAP Developers**, preferably the 64-bit version (for example eclipse-rcp-mars-1-macosx-cocoa-x86_64.tar.gz)
+-   download **Eclipse for RCP and RAP Developers**, preferably the 64-bits version (for example eclipse-rcp-mars-2-macosx-cocoa-x86_64.tar.gz)
 -   unpack the archive
 -   rename Eclipse.app to **Eclipse-45-rcp-cdt.app**
 -   move it to **.../GNU ARM Eclipse/Eclipses**
 - create shortcut to desktop:
   -   on Windows, create a shortcut for eclipse.exe, rename it **Eclipse 4.5 RCP CDT** and copy it to the desktop or a place of your choice
-  -   on OS X, create a Finder alias for Eclipse.app, rename it **Eclipse 4.5 RCP CDT** and move it to a place of your choice
+  -   on macOS, create a Finder alias for Eclipse.app, rename it **Eclipse 4.5 RCP CDT** and move it to a place of your choice
   -   on GNU/Linux, create a link for eclipse, rename it **Eclipse 4.5 RCP CDT** and move it to a place of your choice
 
 ###   Start the new Eclipse
 
 -   create a new workspace, preferably in a separate folder, like **Eclipse Workspaces/workspace-45-rcp** (note: be sure you create the workspace where you need it to be, since moving later is generally not supported by Eclipse; if you need this, preferably create a new workspace)
--   check if you installed the right Eclipse; go to the _Eclipse_ menu → **Help** (*_Eclipse_* on OS X) → **About Eclipse** and the first line should read **Eclipse for RCP and RAP Developers**
+-   check if you installed the right Eclipse; go to the _Eclipse_ menu → **Help** (*_Eclipse_* on macOS) → **About Eclipse** and the first line should read **Eclipse for RCP and RAP Developers**
 -   **Help** → **Install New Software**
   * Work with: Mars - <http://download.eclipse.org/releases/mars>
     * In **Programming Languages**
@@ -53,7 +53,7 @@ This instance of Eclipse will be used for actual development.
 
 ### Install base API
 
-  * go to <http://www.eclipse.org/cdt/downloads.php>, and download **cdt-master-8.3.0.zip** (required to keep compatibility with Kepler 4.3)
+  * go to <http://www.eclipse.org/cdt/downloads.php>, and download **cdt-master-8.6.0.zip** (required to keep compatibility with Eclipse 4.4 Luna SR2)
   * unpack the archive
   * move the new folder to in the Eclipses folder
   * in _Eclipse_ menu → **(Window →) Preferences** → **Plug-in Development** → **Target Platform**
@@ -61,13 +61,13 @@ This instance of Eclipse will be used for actual development.
     * Start with an empty target
     * Next
     * Add → Directory
-    * Browse → cdt-master-8.3.0
+    * Browse → cdt-master-8.6.0
     * Reload
     * select Running Platform as Active (mandatory!)
 
   * in _Eclipse_ menu → **(Window →) Preferences** → **Plug-in Development** → **API Baselines**
     * click the **Add Baseline...** button
-      * select 8.3.0
+      * select 8.6.0
       * click the **Finish** button
     * click the **OK** button
   * click the **OK** button
@@ -98,10 +98,10 @@ This instance of Eclipse will be used for actual development.
 This separate instance of Eclipse will be used to test the plug-in.
 
 -   go to [Eclipse download site](http://www.eclipse.org/downloads/)
--   download **Eclipse IDE for C/C++ Developers** (eclipse-cpp-luna-R-macosx-cocoa-x86_64.tar.gz)
+-   download **Eclipse IDE for C/C++ Developers** (eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz)
 -   unpack the archive
--   rename *_Eclipse_* to **eclipse-4.4-cdt-test**
--   on Mac OS X, enter the folder, make a Finder alias of the **Eclipse.app**, rename it **Eclipse 4.4 CDT test alias** and move it to a place of your choice (the Desktop, for example)
+-   rename *_Eclipse_* to **eclipse-4.5-cdt-test**
+-   on macOS, enter the folder, make a Finder alias of the **Eclipse.app**, rename it **Eclipse 4.5 CDT test alias** and move it to a place of your choice (the Desktop, for example)
 
 ## Clone the repository
 

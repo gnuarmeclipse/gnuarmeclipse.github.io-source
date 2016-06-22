@@ -12,7 +12,7 @@ This page explains how to build a cable to connect the J-Link to STM32 DISCOVERY
 
 ## Overview
 
-As most vendors do, ST also designed the cheap STM32 DISCOVERY and NUCLEO boards to include an on-board programmer. The protocol used by this programmer is ST-LINK/V2, an ST protocol. Unfortunately ST does not provide a portable GDB server to support the ST-LINK/V2 protocol, and using these STM32 boards out of the box on GNU/Linux or OS X is not possible.
+As most vendors do, ST also designed the cheap STM32 DISCOVERY and NUCLEO boards to include an on-board programmer. The protocol used by this programmer is ST-LINK/V2, an ST protocol. Unfortunately ST does not provide a portable GDB server to support the ST-LINK/V2 protocol, and using these STM32 boards out of the box on GNU/Linux or macOS is not possible.
 
 For a few limited tests, the OpenOCD plug-in can be used, but the reliability of OpenOCD is not appropriate for professional use.
 

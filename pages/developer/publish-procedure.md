@@ -16,7 +16,7 @@ The reason SourceForge is still used is that GitHub does not provide a convenien
 
 After each new build, to allow testing on various platforms, the plug-ins are published on the test site.
 
-For this, run the `scripts/publish-updates-test.command` (this is a script that can be executed directly in the OS X Finder).
+For this, run the `scripts/publish-updates-test.command` (this is a script that can be executed directly in the macOS Finder).
 
 A typical session looks like:
 
@@ -231,7 +231,7 @@ Note: at this moment the system should send a notification to all clients watchi
 * drag and drop the file (for example ilg.gnuarmeclipse.repository-3.1.1-201606210758.zip) in the upload window and click the **Upload** button
 * click the **Done** button
 * check it the new file was published; click the info icon
-* enable the **Windows**, **OS X** and **Linux** buttons
+* enable the **Windows**, **macOS** and **Linux** buttons
 * after a while the new upload will be marked as latest version
 
 ## Share on Facebook

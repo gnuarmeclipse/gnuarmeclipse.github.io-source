@@ -96,7 +96,7 @@ The GNU ARM Eclipse cross build plug-in provides advanced toolchain path managem
 
 Even more, for improved project portability, the toolchain path is stored in the workspace, in preference to the path stored in the project.
 
-Project portability is essential for team collaboration, when multiple developers use different platform to develop a single project. Without project portability, after a Windows machine would commit the project to a central repository, OS X or GNU/Linux users would have to manually adjust the path in their projects after each update, and the other way around; for more details, please read the separate [Project portability][5] page.
+Project portability is essential for team collaboration, when multiple developers use different platform to develop a single project. Without project portability, after a Windows machine would commit the project to a central repository, macOS or GNU/Linux users would have to manually adjust the path in their projects after each update, and the other way around; for more details, please read the separate [Project portability][5] page.
 
 ## Functional ready to run templates
 

@@ -56,7 +56,7 @@ Before starting work with the J-Link tools, it is required to define the path t
 * click the **Restore Defaults** button
 * the plug-in will suggest the default values computed when Eclipse started; if a new version of SEGGER was installed while Eclipse was active, restart Eclipse and click again the Restore Defaults button
 * check the **Executable** field; it must define the name of the command line J-Link GDB server executable; in most cases it should be set correctly; if not, edit it to match the correct name;
-* check the **Folder** field; it must point to the actual folder where the J-Link tools were installed on your platform, for example **/Applications/SEGGER/JLink** on OS X
+* check the **Folder** field; it must point to the actual folder where the J-Link tools were installed on your platform, for example **/Applications/SEGGER/JLink** on macOS
 * click the **OK** button
 * **Windows warning:** please note that on Windows there are two GDB server executables, one with a UI and one to be used as a command line (JLinkGDBServerCL.exe); you obviously need to configure the executable field to point to **JLinkGDBServerCL.exe**;
 

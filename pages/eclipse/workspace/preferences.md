@@ -14,7 +14,7 @@ Eclipse has some unusual defaults, and this is one of the reasons sometimes Ecli
 
 Eclipse has lots of settings, and they are a bit confusing for beginners. Apart form various objects **Properties**, accessible with **Right click** in most situations, there are settings that apply to the entire workspace, and these settings are named **Preferenceces**, accessible in the top menu.
 
-> Note: the Preferences menu has different locations on Windows/Linux (search for the last entry below the **Window** menu) and on OS X (below Eclipse, and it is shown as "Preferences..."", with three dots).
+> Note: the Preferences menu has different locations on Windows/Linux (search for the last entry below the **Window** menu) and on macOS (below Eclipse, and it is shown as "Preferences..."", with three dots).
 
 ## Save automatically and Text file encoding
 
@@ -100,7 +100,7 @@ To reformat a file:
 * select the file in the
 * go to the _Eclipse_ menu → **Source** → **Format**
 
-The same action can be triggered with a right click and a **Source** → **Format** or even easier, with a keyboard shortcut (**cmd+shift+F** on OS X).
+The same action can be triggered with a right click and a **Source** → **Format** or even easier, with a keyboard shortcut (**cmd+shift+F** on macOS).
 
 To check if the text indeed has spaces and not tabs, enable the **Show Whitespace Characters**:
 

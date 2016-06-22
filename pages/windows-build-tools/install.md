@@ -13,7 +13,7 @@ If your development platform is Windows, you need to install two additional comm
 
 Unfortunately, most current toolchains do not provide these two programs in their windows distribution.
 
-On OS X and GNU/Linux these programs are part of the standard distributions, either directly or in separate Developer packages, so the following steps do not apply.
+On macOS and GNU/Linux these programs are part of the standard distributions, either directly or in separate Developer packages, so the following steps do not apply.
 
 ## Mentor Sourcery CodeBench
 

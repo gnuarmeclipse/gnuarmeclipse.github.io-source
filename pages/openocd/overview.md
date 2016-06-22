@@ -24,10 +24,10 @@ The **GNU ARM Eclipse OpenOCD** is a new distribution of [OpenOCD](http://openoc
 
 ## Benefits
 
-For Windows and OS X users, the main advantage of using **GNU ARM Eclipse OpenOCD** is the convenient install/uninstall/upgrade procedure.
+For Windows and macOS users, the main advantage of using **GNU ARM Eclipse OpenOCD** is the convenient install/uninstall/upgrade procedure.
 
   * the Windows version is distributed as a setup wizard that handles all install details, including adding the proper keys to the windows registry, that can help the plug-in to automatically discover the OpenOCD location;
-  * the OS X version is distributed as a standard .pkg install package.
+  * the macOS version is distributed as a standard .pkg install package.
   ![The OpenOCD Windows setup wizard]({{ site.baseurl }}/assets/images/2015/openocd-setup-wizard.png)
 
 Although most GNU/Linux distributions already provide different versions, we also provide a Debian x64 version of OpenOCD, which, compared to the standard distribution, has the advantage that is a standalone package, that includes all required libraries and can be installed at any location.
@@ -36,7 +36,7 @@ Although most GNU/Linux distributions already provide different versions, we als
 
 Although it was designed with the GNU ARM Eclipse plug-ins in mind, it can easily be used with any other debugging environment, being fully compatible with the original distribution.
 
-Even more, the Windows version supports the same targets as the version distributed by Freddie Chopin. Similarly, the OS X and GNU/Linux versions support almost the same targets.
+Even more, the Windows version supports the same targets as the version distributed by Freddie Chopin. Similarly, the macOS and GNU/Linux versions support almost the same targets.
 
 ## Download
 

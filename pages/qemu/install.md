@@ -49,24 +49,24 @@ The result is a structure like:
 To check if QEMU starts, use the following command:
 
 	C:\>"\Program Files\GNU ARM Eclipse\QEMU\2.2.92-201504041652-dev\bin\qemu-system-gnuarmeclipse.exe" --version
-	GNU ARM Eclipse 32-bit QEMU emulator version 2.2.92
+	GNU ARM Eclipse 32-bits QEMU emulator version 2.2.92
 	Copyright (c) 2003-2008 Fabrice Bellard
 
 #### Drivers
 
 For usual Cortex-M emulation, there are no special drivers required.
 
-### OS X
+### macOS
 
-For user convenience, the OS X version of GNU ARM Eclipse QEMU is packed as an OS X install package. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases) page and download the latest version named like:
+For user convenience, the macOS version of GNU ARM Eclipse QEMU is packed as an macOS install package. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases) page and download the latest version named like:
 
 * `gnuarmeclipse-qemu-osx-2.2.92-201504041609-dev.pkg`
 
-As the name implies, this is an OS X package, that can be installed on any recent 64-bit OS X (the latest version was tested on 10.11).
+As the name implies, this is an macOS package, that can be installed on any recent 64-bits macOS (the latest version was tested on 10.11).
 
 Run the install as usual.
 
-![The QEMU OS X Install page]({{ site.baseurl }}/assets/images/2015/mac-install.png)
+![The QEMU macOS Install page]({{ site.baseurl }}/assets/images/2015/mac-install.png)
 
 The package is installed in:
 
@@ -74,12 +74,12 @@ The package is installed in:
 
 and the result is a folder structure similar to:
 
-![The QEMU OS X install folders]({{ site.baseurl }}/assets/images/2015/mac-install-folders.png)
+![The QEMU macOS install folders]({{ site.baseurl }}/assets/images/2015/mac-install-folders.png)
 
 To check if QEMU starts, use:
 
 	$ /Applications/GNU\ ARM\ Eclipse/QEMU/2.2.92-201504041609-dev/bin/qemu-system-gnuarmeclipse --version
-	GNU ARM Eclipse 64-bit QEMU emulator version 2.2.92
+	GNU ARM Eclipse 64-bits QEMU emulator version 2.2.92
 	Copyright (c) 2003-2008 Fabrice Bellard
 
 ### GNU/Linux
@@ -107,7 +107,7 @@ To check if QEMU starts and is recent, use:
 
 
 	$ /opt/gnuarmeclipse/qemu/2.2.92-201504041716-dev/bin/qemu-system-gnuarmeclipse --version
-	GNU ARM Eclipse 64-bit QEMU emulator version 2.2.92
+	GNU ARM Eclipse 64-bits QEMU emulator version 2.2.92
 	Copyright (c) 2003-2008 Fabrice Bellard
 
 #### UDEV & Drivers

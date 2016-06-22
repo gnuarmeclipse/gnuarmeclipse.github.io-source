@@ -470,7 +470,7 @@ date: 2015-09-04 17:02:00 +0300
 ### 2015-03-26
 * osx build ok
 * kinetis header redundancy fixed
-* debian 64/32-bit build ok
+* debian 64/32-bits build ok
 * add CONFIG_GNU_ARM_ECLIPSE
 
 ### 2015-01-25
@@ -479,9 +479,9 @@ date: 2015-09-04 17:02:00 +0300
 ### 2015-01-20
 * darwin pkgbuild added
 * add install-pdf to make install
-* add os x build script
-* os x build script, add dtc submodule
-* debian build: preliminary files (from os x files)
+* add macOS build script
+* macOS build script, add dtc submodule
+* debian build: preliminary files (from macOS files)
 * kinetis header duplicate definition removed
 * debian build script functional
 

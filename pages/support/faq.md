@@ -31,7 +31,7 @@ Your Eclipse does not include CDT. You need to install **Eclipse IDE for C/C++ D
 
 On GNU/Linux, **DO NOT** install Eclipse with the system package manager, because usually it installs an older version, and CDT is not include.
 
-Instead, go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the proper **Eclipse IDE for C/C++ Developers**, preferably the 64-bit version.
+Instead, go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the proper **Eclipse IDE for C/C++ Developers**, preferably the 64-bits version.
 
 ## OpenOCD fails to start with `-c echo "Started by GNU ARM Eclipse"`
 
@@ -136,7 +136,7 @@ Update your toolchain to a modern one, or, if this is not possible, change the *
 
 ## Program "echo" not found in PATH
 
-You are running on Windows, and did not install the full content of the archive described in the [Build Tools][1] page. The *echo* program is not used per se, it is only a workaround for a known CDT bug. On OS X and GNU/Linux the *echo* program is always present, being part of the standard configuration. On Windows it should be installed separately and, for convenience, it is provided in the Build Tools package.
+You are running on Windows, and did not install the full content of the archive described in the [Build Tools][1] page. The *echo* program is not used per se, it is only a workaround for a known CDT bug. On macOS and GNU/Linux the *echo* program is always present, being part of the standard configuration. On Windows it should be installed separately and, for convenience, it is provided in the Build Tools package.
 
 ## Installation problems on Eclipse 3.8
 

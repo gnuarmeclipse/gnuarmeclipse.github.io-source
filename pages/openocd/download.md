@@ -14,7 +14,7 @@ All versions of the GNU ARM Eclipse OpenOCD are available via the [GitHub Releas
 
 ![OpenOCD Releases]({{ site.baseurl }}/assets/images/2015/github-gae-openocd-releases.png)
 
-## Windows, GNU/Linux, OS X
+## Windows, GNU/Linux, macOS
 
 All major platforms are supported. However releases might not include binaries for all platforms, so navigate to the most recent release which includes support for your platform and download the desired binaries.
 
@@ -24,4 +24,4 @@ If running on a modern 64-bits system, it is highly recommended to download the 
 
 For Windows the recommendation stands even stronger, to reduce the risk of 32-bits DLL rebases.
 
-Note: For OS X only the 64-bits Intel binaries are available, and it is recommended to use a recent system.
+Note: For macOS only the 64-bits Intel binaries are available, and it is recommended to use a recent system.

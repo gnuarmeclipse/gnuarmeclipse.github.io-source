@@ -28,7 +28,7 @@ Preferably avoid using Win XP 64, as recommended below.
 
 If you are using Win XP 64 and, while starting J-Link or OpenOCD debug sessions, the launcher hangs at about 62%, you are facing an Eclipse+Java bug, not able to start external processes on Win XP 64.
 
-Generally **Win XP 64 is not recommended at all** and even Win XP 32 is no longer supported by newer Java releases; if you really need to use XP 64, preferably experiment with a 32-bit Java and a 32-bit Eclipse.
+Generally **Win XP 64 is not recommended at all** and even Win XP 32 is no longer supported by newer Java releases; if you really need to use XP 64, preferably experiment with a 32-bits Java and a 32-bits Eclipse.
 
 However please note that no support requests referring to Win XP 64 will be processed.
 
@@ -109,7 +109,7 @@ The linker **.map** and the assembler **.lst** files are not removed when runnin
 
 ### Win XP 64
 
-**Avoid using Win XP 64**, and even XP 32, they are no longer supported by newer Java version; if you really need to use them, for XP 64 preferably experiment with a 32-bit Java and a 32-bit Eclipse. Also please note that no support requests referring to Win XP 64 will be processed.
+**Avoid using Win XP 64**, and even XP 32, they are no longer supported by newer Java version; if you really need to use them, for XP 64 preferably experiment with a 32-bits Java and a 32-bits Eclipse. Also please note that no support requests referring to Win XP 64 will be processed.
 
 ## Fixed issues
 

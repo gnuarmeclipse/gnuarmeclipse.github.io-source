@@ -7,9 +7,9 @@ date: 2015-09-04 17:02:00 +0300
 
 ---
 
-The latest version of the build script is a single run, multi-platform build, generating the Windows 32, Windows 64, GNU/Linux 32, GNU/Linux 64 and OS X distribution packages at once.
+The latest version of the build script is a single run, multi-platform build, generating the Windows 32, Windows 64, GNU/Linux 32, GNU/Linux 64 and macOS distribution packages at once.
 
-The script was developed on OS X, but it also runs on any recent GNU/Linux distribution (only that in this case it cannot generate the OS X package).
+The script was developed on macOS, but it also runs on any recent GNU/Linux distribution (only that in this case it cannot generate the macOS package).
 
 ## Prerequisites
 
@@ -17,15 +17,15 @@ The main trick that made the multi-platform build possible is [Docker](https://w
 
 Containers based on three docker images are used, one packing MinGW-w64 in a Debian 8, and two packing the basic system (gcc & x11) in Debian 8 (separate 32/64-bits containers). The more conservative Debian was preferred to generate the GNU/Linux versions, to avoid problems when attempting to run the executables on older versions.
 
-### OS X
+### macOS
 
 #### Install Docker
 
-On OS X, install `boot2docker`, following the official [Install Docker on Mac OS X](https://docs.docker.com/installation/mac/) instructions.
+On macOS, install `boot2docker`, following the official [Install Docker on macOS](https://docs.docker.com/installation/mac/) instructions.
 
 #### Install the Command Line Tools
 
-The OS X compiler and other development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](https://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
+The macOS compiler and other development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](https://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
 
 To test if the compiler is available, use:
 
@@ -114,7 +114,7 @@ The result should look similar to:
 
 	$ bash ~/Downloads/build-qemu.sh --all
 
-On OS X, to prevent sleep, use:
+On macOS, to prevent sleep, use:
 
 	$ caffeinate bash ~/Downloads/build-qemu.sh --all
 
@@ -198,7 +198,7 @@ The build and include subfolders look like:
 
 ## Install procedure
 
-The procedure to install GNU ARM Eclipse QEMU is platform specific, but relatively straight forward (a Windows setup, an OS X install or a TGZ archive on GNU/Linux). The setup/install asks no special questions, and the defaults are generally ok for most installations.
+The procedure to install GNU ARM Eclipse QEMU is platform specific, but relatively straight forward (a Windows setup, an macOS install or a TGZ archive on GNU/Linux). The setup/install asks no special questions, and the defaults are generally ok for most installations.
 
 ## Install hierarchy
 
@@ -248,13 +248,13 @@ No other files are installed in any system folders or other locations.
 
 To uninstall QEMU from a Windows machine, use the `qemu-uninstall.exe` program.
 
-On OS X and GNU/Linux, the GNU ARM Eclipse QEMU install folder is self-contained and removing it is enough for completely removing the application.
+On macOS and GNU/Linux, the GNU ARM Eclipse QEMU install folder is self-contained and removing it is enough for completely removing the application.
 
 ## Test
 
 A simple test is performed by the script at the end, by launching the executable to check if all shared/dynamic libraries are correctly used.
 
-For a true test you need to first install the package and then run the program form the final location. For example on OS X the output should look like:
+For a true test you need to first install the package and then run the program form the final location. For example on macOS the output should look like:
 
 	$ /Applications/GNU\ ARM\ Eclipse/QEMU/2.2.91-201504021111-dev/bin/qemu-system-gnuarmeclipse --version
 	GNU ARM Eclipse QEMU 64-bits emulator version 2.2.91
@@ -262,7 +262,7 @@ For a true test you need to first install the package and then run the program f
 
 ## Stop boot2docker
 
-On OS X, the build script automatically starts `boot2docker`, if needed.
+On macOS, the build script automatically starts `boot2docker`, if needed.
 
 When done, be sure you stop it, to free significant resources (a VirtualBox Ubuntu machine).
 

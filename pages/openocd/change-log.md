@@ -50,7 +50,7 @@ date: 2015-09-04 17:02:00 +0300
 
 ### 2015-01-28
 
--   win build: 32/64-bit, libusb0 from sources
+-   win build: 32/64-bits, libusb0 from sources
 
 ### 2015-01-16
 

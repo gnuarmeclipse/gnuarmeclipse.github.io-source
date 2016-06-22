@@ -18,7 +18,7 @@ The build plug-in is highly configurable in terms of executable names and locati
 Please note the distinction between the **target platform** and the **host/development platform**.
 
 * the target platform defines the environment where the application will be executed, and in general can be either a bare metal (the application sits directly on the hardware and has intimate control of it, usually including a form of scheduler to allow multiple threads to execute pseudo-simultaneously on the same processor), and applications that sit on top of an operating system, usually a distribution of GNU/Linux optimised for embedded environments
-* the host/development platform is the platform where the development tools are executed, usually as cross compilers, and can be, in our case, any platform that supports Eclipse, for example Windows, OS X, GNU/Linux, BSD, etc.
+* the host/development platform is the platform where the development tools are executed, usually as cross compilers, and can be, in our case, any platform that supports Eclipse, for example Windows, macOS, GNU/Linux, BSD, etc.
 
 > Note: Be sure you select the proper toolchain for the target platform, otherwise builds will not succeed, or the generated applications will fail to run. **Do not** try to use the GCC ARM Embedded to build  GNU/Linux applications, because the executables will not run on anything than bare metal, and **do not try to use the Linaro toolchains for bare metal applications**.
 
@@ -72,11 +72,11 @@ The complete toolchain documentation is available in the `...\share\doc\pdf\` fo
 
 If you'll ever need to remove the toolchain, there is an **uninstall.exe** program available in the toolchain root folder.
 
-## OS X
+## macOS
 
-The following steps can be performed on OS X:
+The following steps can be performed on macOS:
 
-* download the latest OS X install tarball file (currently `gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-mac.tar.bz2`, about 66 MB)
+* download the latest macOS install tarball file (currently `gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-mac.tar.bz2`, about 66 MB)
 * locate the file (usually in the `$HOME/Downloads` folder)
 * decide on a location to install the toolchain; the recommended folder is `/usr/local/`
 * unpack the archive in the destination folder

@@ -25,7 +25,7 @@ Version 2.2-201501232303 is a maintenance release.
 
 ## Known problems
 
-* this version uses MSYS 32-bit DLLs, which might interfere with other DLLs.
+* this version uses MSYS 32-bits DLLs, which might interfere with other DLLs.
 
 ## Download
 

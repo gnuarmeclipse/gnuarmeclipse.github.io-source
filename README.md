@@ -16,7 +16,7 @@ The web site is generated off-line by [Jekyll](http://jekyllrb.com). It cannot b
 
 ## Prerequisites
 
-To be able to run the Jekyll build process, the `ruby` interpreter and the `gem` tool are required. In OS X 10.10.5, these tools are preinstalled, at least when the Developer Command Line tools are present.
+To be able to run the Jekyll build process, the `ruby` interpreter and the `gem` tool are required. In macOS 10.10.5, these tools are preinstalled, at least when the Developer Command Line tools are present.
 
 	$ ruby --version
 	ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin14]

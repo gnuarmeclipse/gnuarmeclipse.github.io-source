@@ -9,7 +9,7 @@ date: 2015-09-04 17:02:00 +0300
 
 The latest version of the build script is a single run, multi-platform build, generating the Windows 32, Windows 64 distribution packages at once.
 
-The script was developed on OS X, but it also runs on any recent GNU/Linux distribution.
+The script was developed on macOS, but it also runs on any recent GNU/Linux distribution.
 
 ## Prerequisites
 
@@ -17,15 +17,15 @@ The main trick that made the multi-platform build possible is [Docker](https://w
 
 The Windows build uses MinGW-w64 in a Debian 8 container.
 
-### OS X
+### macOS
 
 #### Install Docker
 
-On OS X, install **boot2docker**, following the official [Install Docker on Mac OS X](https://docs.docker.com/installation/mac/) instructions.
+On macOS, install **boot2docker**, following the official [Install Docker on macOS](https://docs.docker.com/installation/mac/) instructions.
 
 #### Install the Command Line Tools
 
-The OS X development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](https://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
+The macOS development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](https://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
 
 To test if git is available, use:
 
@@ -146,7 +146,7 @@ To uninstall the Build Tools from a Windows machine, use the **build-tools-unins
 
 ## Stop boot2docker
 
-On OS X, the build script automatically starts **boot2docker**, if needed.
+On macOS, the build script automatically starts **boot2docker**, if needed.
 
 When done, be sure you stop boot2docker, to free significant resources (a VirtualBox Ubuntu machine).
 

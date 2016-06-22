@@ -13,7 +13,7 @@ date: 2015-09-11 20:50:00 +0300
 In case you wonder why GNU ARM Eclipse decided to provide support to SEGGER J-Link, the short answer is: **because of [J-Link EDU](http://www.segger.com/j-link-edu.html) and of SWO.** The long answer may include the following:
 
 * **wide processor support** (there is probably no unsupported ARM processor in the entire galaxy, and if you find one in a remote quadrant, I'm pretty sure it'll be shortly added to the list)
-* it is a true **multi-platform** solution, providing drivers for **Windows**, **OS X** and **GNU/Linux**
+* it is a true **multi-platform** solution, providing drivers for **Windows**, **macOS** and **GNU/Linux**
 * it comes with a **standard GDB server** implementation, compatible with existing ARM toolchains
 * in addition to the classical **JTAG** protocol, it implements the new **SWD** protocol
 * when SWD is selected, it is capable to sample the **SWO** pin, for trace messages and other ARM specific debugging
@@ -29,7 +29,7 @@ The J-Link was present on the JTAG market for many years, but, considering the i
 
 J-Link comes not only with a GDB server, but with a complete set of drivers and utilities, packed by SEGGER separately for each platform. The same distribution includes drivers for all J-Link probes, so installation is quite simple. The J-Link binaries are available from the [SEGGER site](http://www.segger.com/jlink-software.html).
 
-There are different sections, grouped by platform (Windows, Mac OS X, Linux, Linux ARM); go to the platform of your choice.
+There are different sections, grouped by platform (Windows, macOS, Linux, Linux ARM); go to the platform of your choice.
 
 Click the **Download** button close to the **Software and documentation pack** appropriate for your development platform. For Linux there are separate 32/64-bits versions, packed with different tools (DEB, RPM, TGZ); select the package that better matches your system.
 
@@ -56,15 +56,15 @@ The result of the install is a folder (a new folder for each new version install
 
 Please note that on Windows, SEGGER provides both graphical interface and **command line versions** (having the names suffixed with **CL**) for most of their tools. For the J-Link plug-in it is recommended to use only the command line version of the  J-Link GDB server (**JLinkGDBServerCL.exe**).
 
-## OS X
+## macOS
 
-The OS X download is an OS X package installer, like **JLink\_MacOSX\_V480.pkg**.
+The macOS download is an macOS package installer, like **JLink\_MacOSX\_V480.pkg**.
 
 * double click it to start the installation process
 * accept the license
 * enter the administrative password, required to write in the global `/Applications` folder
 
-The result of the install is a folder called **/Applications/SEGGER/JLink/** (the same folder for all versions) where all executables and libraries are stored; please note that, as for many OS X applications, no other driver files are installed in the system folders.
+The result of the install is a folder called **/Applications/SEGGER/JLink/** (the same folder for all versions) where all executables and libraries are stored; please note that, as for many macOS applications, no other driver files are installed in the system folders.
 
 Personally I prefer to keep older versions around for a while, and for this I rename the JLink folder
 
@@ -72,22 +72,22 @@ Personally I prefer to keep older versions around for a while, and for this I re
 sudo mv JLink JLink_V80
 ```
 
-![SEGGER OS X distribution]({{ site.baseurl }}/assets/images/2014/01/Segger-OSX.png)
+![SEGGER macOS distribution]({{ site.baseurl }}/assets/images/2014/01/Segger-OSX.png)
 
 
 ### USB
 
-On OS X, the USB subsystem automatically identifies and allows access to USB devices, without the need to maintain a manual list similar to the one used by UDEV in GNU/Linux. No other drivers or system configurations are required.
+On macOS, the USB subsystem automatically identifies and allows access to USB devices, without the need to maintain a manual list similar to the one used by UDEV in GNU/Linux. No other drivers or system configurations are required.
 
 ## GNU/Linux
 
-As already mentioned, there are multiple packages available for GNU/Linux on the SEGGER download site, built as Debian/Red Hat packages, in 32/64-bits versions, or plain TGZ archives. Select the one appropriate for you system and use the specific tools to install the package. For example, on Ubuntu, to install the 64-bit .deb file, use the following command:
+As already mentioned, there are multiple packages available for GNU/Linux on the SEGGER download site, built as Debian/Red Hat packages, in 32/64-bits versions, or plain TGZ archives. Select the one appropriate for you system and use the specific tools to install the package. For example, on Ubuntu, to install the 64-bits .deb file, use the following command:
 
 	$ sudo dpkg -i ~/Downloads/jlink_5.2.7_x86_64.deb
 
 The J-Link executables are installed in **/usr/bin**.
 
-In case you have a 64-bit machine and install the 32-bit SEGGER package, you might need several 32-bit libraries, depending on distribution.
+In case you have a 64-bits machine and install the 32-bits SEGGER package, you might need several 32-bits libraries, depending on distribution.
 
 ### UDEV
 
@@ -95,7 +95,7 @@ The install procedure automatically adds **/etc/udev/rules.d/99-jlink.rules** 
 
 ## Testing
 
-To test if J-Link is able to connect to a specific board, you generally need to specify the interface (JTAG or SWD) and the device name. By default, J-Link GDBServer will try JTAG but if only SWD is wired (which is very common on custom hardware), you would need to specify the interface (-if SWD). The device name is needed for targets which require special handling on connect (e.g. due to silicon bugs which make auto-detection impossible). For a list of available device names, please refer to the SEGGER [Supported devices](http://www.segger.com/jlink_supported_devices.html) page. Below is an example how to test a JTAG connection to a STM32F103 evaluation board (-device STM32F103RB) on OS X.
+To test if J-Link is able to connect to a specific board, you generally need to specify the interface (JTAG or SWD) and the device name. By default, J-Link GDBServer will try JTAG but if only SWD is wired (which is very common on custom hardware), you would need to specify the interface (-if SWD). The device name is needed for targets which require special handling on connect (e.g. due to silicon bugs which make auto-detection impossible). For a list of available device names, please refer to the SEGGER [Supported devices](http://www.segger.com/jlink_supported_devices.html) page. Below is an example how to test a JTAG connection to a STM32F103 evaluation board (-device STM32F103RB) on macOS.
 
 	$ /Applications/SEGGER/JLink/JLinkGDBServer -if JTAG -device STM32F103RB
 	SEGGER J-Link GDB Server V4.80 Command Line Version
@@ -148,7 +148,7 @@ On Ubuntu the command is simple:
 	$ /usr/bin/JLinkGDBServer
 
 
-In all cases, the result should be similar to the one obtained on OS X.
+In all cases, the result should be similar to the one obtained on macOS.
 
 ## The J-Link plug-in
 

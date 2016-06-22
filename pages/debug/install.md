@@ -90,7 +90,7 @@ If portability is not your concern, and you prefer other GDB servers, please fee
 To save you time, we compiled a list of other GDB servers, with some of their features and  limitations:
 
 * the original **STM32 ST-Link Utility** software, available from STM as part number [STSW-LINK004][9], also implements a GDB server for the ST-LINK probes; runs on Windows only
-* the **stlink** GDB server from **texane**, a [GitHub][10] project, implements the ST-LINK protocol; can be compiled from sources on GNU/Linux and OS X; on Windows can be compiled using Cygwin
+* the **stlink** GDB server from **texane**, a [GitHub][10] project, implements the ST-LINK protocol; can be compiled from sources on GNU/Linux and macOS; on Windows can be compiled using Cygwin
 * the CooCox GDB server; supports multiple JTAG probes; runs on Windows only
 * the Atollic GDB server, part of the Atollic suite; the server seems to start separately, but attempts to connect to it fail, probably due to some protection checks
 

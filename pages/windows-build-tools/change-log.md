@@ -110,6 +110,6 @@ date: 2015-09-04 17:02:00 +0300
 
 ### 2015-05-10
 * scripts: openocd docker scripts
-  - build windows, debian & os x in one run
+  - build windows, debian & macOS in one run
 
 Note: Earlier versions were stored in QEMU & OpenOCD repositories.

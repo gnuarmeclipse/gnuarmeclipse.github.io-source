@@ -98,9 +98,9 @@ Entries in this file are in direct chronological order.
 
 ### 2010-07-06
 
--   development ported on Mac OS X, Eclipse 3.5.2
--   CodeSourcery added to Mac OS X
--   Mac OS X missing GNUARM configuration reference fixed
+-   development ported on macOS, Eclipse 3.5.2
+-   CodeSourcery added to macOS
+-   macOS missing GNUARM configuration reference fixed
 -   (\#3024374) individual properties processed; ITool.getParent() should climb up the hierarchy via getSuperClass(); this is also a better fix for \#3021757.
 -   (\#3024483) New Yagarto Toolchain uses EABI; Yagarto toolchain split from common Windows GCC configurations
 
@@ -169,7 +169,7 @@ version 0.5.3.201007311800 released
 
 ### 2012-01-24
 
--   (3475135) support for Mac OS X Yagarto was added
+-   (3475135) support for macOS Yagarto was added
 -   the scripts/publish-updates.sh was added, no need to commit binaries to SVN
 
 ### 2012-01-26
