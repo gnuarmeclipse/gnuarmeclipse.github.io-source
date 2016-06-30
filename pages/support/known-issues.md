@@ -12,7 +12,7 @@ date: 2015-09-11 21:35:00 +0300
 
 ### Editing the toolchain may damage the project
 
-In certain conditions,** changing the toolchain** for a project in the **C/C++ Build** → **Tool Chain Editor** page from another plug-in to GNU ARM Eclipse plug-in might not work; even worse, there are cases when the project is permanently damaged. There is not known way to repair such a broken project; you have to create a new project and copy the content (this is a CDT bug, not a plug-in bug).
+In certain conditions, **changing the toolchain** for a project in the **C/C++ Build** → **Tool Chain Editor** page from another plug-in to GNU ARM Eclipse plug-in might not work; even worse, there are cases when the project is permanently damaged. There is not known way to repair such a broken project; you have to create a new project and copy the content (this is a CDT bug, not a plug-in bug).
 
 ## Annoying bugs
 
