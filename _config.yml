@@ -40,25 +40,14 @@ gems:
   - jemoji
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-paginate
 
 # Build settings
 markdown: kramdown
-# markdown: redcarpet
 
 kramdown:
   input: GFM
-
-redcarpet:
-  extensions:
-    - no_intra_emphasis
-    - tables
-    - fenced_code_blocks
-    - autolink
-    - strikethrough
-    - superscript
-    - highlight
-    - with_toc_data
-    - safe_links_only
+  syntax_highlighter: rouge
 
 # Warning: paginator retired in Jekyll 3!
 # Make this larger, probably 5 is a good choice.
