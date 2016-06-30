@@ -192,6 +192,10 @@ The first option will be passed as argv[0], so it generally should reflect the a
 
 ### exit() code
 
-When started in semihosting mode, if the application's `main()` routine returns 0, QEMU will also return 0 to its parent process. This is particularly useful when running unit tests, since 0 means the test was successful. Unfortunately the semihosting specs do not allow to pass the full exit code, so for all other returned values, QEMU will return 1, which can be used as an indication of a failed test.
+When started in semihosting mode, if the application's `main()` routine returns 0 and the application is a fully semihosted one, QEMU will also return 0 to its parent process. This is particularly useful when running unit tests, since 0 means the test was successful. Unfortunately the semihosting specs do not allow to pass the full exit code, so for all other returned values, QEMU will return 1, which can be used as an indication of a failed test.
 
 This is not really a big limitation, since unit tests can be configured to write an XML file with the detailed test results, so the binary exit code is enough to represent the pass/fail, and Continuous Integration systems will generally process the XML file for details.
+
+## Fully semihosted applications
+
+When using QEMU for running unit tests, and expecting the exit code to reflect the test result, it is mandatory for the application to be compiled and linked as a **fully semihosted application**, in other words all system calls to be implemented using the semihosting interface. For the projects created by the GNU ARM Eclipse wizards, this is achieved by defining `OS_USE_SEMIHOSTING`; outside GNU ARM Eclipse it depends on the libraries used, for example newlib can be configured for semihosting by adding `--specs=rdimon.specs` to the linker options.
