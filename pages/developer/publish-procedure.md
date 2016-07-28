@@ -199,7 +199,7 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 ## Clean the mess in the local archive folder
 
 -   go to **.../GNU ARM Eclipse/archive**
--   move the latest archive to **released**
+-   move the latest archive to **releases/plug-ins**
 -   move the other archives to **internal**
 
 ## Push the develop branch
@@ -213,7 +213,7 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 * go to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page
 * click **Draft a new release**
 * name the tag like **v2.9.3-201508190739**
-* select the develop branch
+* select the **develop** branch
 * name the release like **GNU ARM Eclipse plug-ins v2.9.3-201508190739**
 * as description, copy the first paragraph from the Web release page
 * add a link to the Web page `[Continue reading »]()`

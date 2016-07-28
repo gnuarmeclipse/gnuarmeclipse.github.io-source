@@ -63,6 +63,7 @@
 * [Eclipse plug-in]({{ site.baseurl }}/debug/qemu/)
 * [Command line options]({{ site.baseurl }}/qemu/options/)
 * [How to build]({{ site.baseurl }}/qemu/build-procedure/)
+* [How to publish]({{ site.baseurl }}/qemu/publish-procedure/)
 * [Releases]({{ site.baseurl }}/qemu/releases/)
 * [Support](https://github.com/gnuarmeclipse/qemu/issues/1/) (report issue)
 
