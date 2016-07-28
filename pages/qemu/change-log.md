@@ -7,6 +7,36 @@ date: 2015-09-04 17:02:00 +0300
 
 ---
 
+## 2016
+
+### 2016-07-28
+
+- version 2.6.0-20160728 released on GitHub
+- fix half word writes (register_post_write_callback_t)
+- implement (minimally) the DHCSR register, for C_DEBUGEN
+- make BKPT interrupt the CPU while in DEBUG
+- consider BASEPRI for disabling interrupts
+- add more registers to GDB server (MSP, PSP, PRIMASK, BASEPRI, FAULTMASK, CONTROL)
+
+### 2016-07-19
+
+- peripheral-register: fix reset
+- add reset for all uarts
+
+### 2016-02-26
+
+- swap the LEDs on the OLIMEX STM32-P107 board
+
+### 2015-10-29
+
+- version 2.4.50-20151029, released on GitHub
+- fix rendering on OS X 10.11 (SDL)
+
+[2015-08-16]
+
+- version 2.3.50-20150816*-dev released
+- add build for Win64
+
 ## 2015
 
 ### 2015-08-04
