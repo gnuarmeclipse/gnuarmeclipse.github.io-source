@@ -47,4 +47,4 @@ If you discover problems in the content of these pages (typos, wrong phrasing, e
 
 ## Use of private e-mail
 
-Please, please, please: **do not use private e-mail for support**, since such messages will be replied with a link to this page. The reason for this rude behaviour is simply an attempt to efficiently use the time; since the forum posts are archived, other people having similar problems might benefit from the answers.
+Please, please, please: **do not use private e-mail for support**; such messages will be replied with a link to this page and the invitation to use the project forum. The reason for this rude behaviour is simply an attempt to use the time more efficiently; since the forum posts are public and archived, there is a chance that other people having similar problems will benefit from the answers.
