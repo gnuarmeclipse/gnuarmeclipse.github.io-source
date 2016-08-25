@@ -49,3 +49,4 @@ Many thanks to the following donors (in chronological order):
 * Robin Clark, UK
 * Alain Mosnier, Sweden
 * Philip Gruebele, USA
+* Lieven Merckx, Belgium
