@@ -51,3 +51,4 @@ Many thanks to the following donors (in chronological order):
 * Philip Gruebele, USA
 * Lieven Merckx, Belgium
 * Brinton Engineering, USA
+* Armin van der Togt, Holland
