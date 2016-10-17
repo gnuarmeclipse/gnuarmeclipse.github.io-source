@@ -29,12 +29,13 @@ The macOS compiler and other development tools are packed in a separate Xcode ad
 
 To test if the compiler is available, use:
 
-	$ gcc --version
-	Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-	Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)
-	Target: x86_64-apple-darwin14.3.0
-	Thread model: posix
-
+```
+$ gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.3.0
+Thread model: posix
+```
 
 #### Install MacPorts
 
@@ -44,8 +45,10 @@ The build procedure requires the presence of [MacPorts](http://www.macports.org)
 
 Install the following packages:
 
-	$ sudo port install libtool automake autoconf pkgconfig
-	$ sudo port install texinfo texlive
+```
+$ sudo port install libtool automake autoconf pkgconfig
+$ sudo port install texinfo texlive
+```
 
 ### GNU/Linux
 
@@ -57,9 +60,11 @@ For any GNU/Linux distribution, follow the [specific instructions](https://docs.
 
 To allow docker to run as a regular user, you need to be a member of the `docker` group.
 
-	$ sudo groupadd docker
-	$ sudo gpasswd -a ${USER} docker
-	$ sudo service docker restart
+```
+$ sudo groupadd docker
+$ sudo gpasswd -a ${USER} docker
+$ sudo service docker restart
+```
 
 To make these changes effective, logout and login.
 
@@ -79,13 +84,17 @@ The script is available from the GitHub and can be [viewed online](https://githu
 
 To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh) link. If the browser fails, use the following command in a terminal:
 
-	$ curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh \
+```
+$ curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh \
 	-o ~/Downloads/build-qemu.sh
+```
 
 Alternatively, in a development environment, the entire `build-scripts.git` can be cloned, and a link to `Downloads` created:
 
-	ln -s /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/build-scripts.git/scripts/build-qemu.sh \
+```
+ln -s /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/build-scripts.git/scripts/build-qemu.sh \
 	~/Downloads/build-qemu.sh
+```
 
 ## Check the script
 
@@ -97,42 +106,51 @@ Docker does not require to explicitly download new images, but does this automat
 
 However, since the images used for this build are relatively large, it is recommended to load them explicitly before starting the build:
 
-	$ bash ~/Downloads/build-qemu.sh preload-images
+```
+$ bash ~/Downloads/build-qemu.sh preload-images
+```
 
 Please be patient, this will bring about 5 GB, which on a regular broadband line might take more than 30 minutes.
 
 The result should look similar to:
 
-	$ docker images
-	REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
-	ilegeul/debian      8-gnuarm-mingw      1a8e62c2dd40        23 hours ago        2.486 GB
-	ilegeul/debian32    8-gnuarm-gcc-x11    a006ca3d3fe6        2 days ago          1.423 GB
-	ilegeul/debian      8-gnuarm-gcc-x11    575a7f52cfcf        2 days ago          1.569 GB
-	hello-world         latest              e45a5af57b00        6 months ago        910 B
+```
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+ilegeul/debian32    8-gnuarm-gcc-x11-v3   14a0dcce0dd7        11 months ago       1.633 GB
+ilegeul/debian      8-gnuarm-gcc-x11-v3   a461714e9b42        11 months ago       1.771 GB
+ilegeul/debian      8-gnuarm-mingw        1c04c24123c1        15 months ago       2.486 GB
+```
 
 ## Build all distribution files
 
-	$ bash ~/Downloads/build-qemu.sh --all
+```
+$ bash ~/Downloads/build-qemu.sh --all
+```
 
 On macOS, to prevent sleep, use:
 
-	$ caffeinate bash ~/Downloads/build-qemu.sh --all
+```
+$ caffeinate bash ~/Downloads/build-qemu.sh --all
+```
 
 About half an hour later, the output of the build script is a set of 5 files in the output folder:
 
-	$ ls -l output
-	total 105616
-	total 51336
-	drwxr-xr-x  6 ilg  staff      204 May 12 22:07 debian32
-	drwxr-xr-x  6 ilg  staff      204 May 12 21:43 debian64
-	-rw-r--r--  1 ilg  staff  4462782 May 12 22:30 gnuarmeclipse-qemu-debian32-2.3.50-201505121804-dev.tgz
-	-rw-r--r--  1 ilg  staff  4601903 May 12 22:06 gnuarmeclipse-qemu-debian64-2.3.50-201505121804-dev.tgz
-	-rw-r--r--  1 ilg  staff  5378788 May 12 22:34 gnuarmeclipse-qemu-osx-2.3.50-201505121804-dev.pkg
-	-rw-r--r--  1 ilg  staff  3257398 May 12 21:42 gnuarmeclipse-qemu-win32-2.3.50-201505121804-dev-setup.exe
-	-rw-r--r--  1 ilg  staff  3782102 May 12 21:25 gnuarmeclipse-qemu-win64-2.3.50-201505121804-dev-setup.exe
-	drwxr-xr-x  4 ilg  staff      136 May 12 22:35 osx
-	drwxr-xr-x  6 ilg  staff      204 May 12 21:26 win32
-	drwxr-xr-x  6 ilg  staff      204 May 12 21:04 win64
+```
+$ ls -l output
+total 105616
+total 51336
+drwxr-xr-x  6 ilg  staff      204 May 12 22:07 debian32
+drwxr-xr-x  6 ilg  staff      204 May 12 21:43 debian64
+-rw-r--r--  1 ilg  staff  4462782 May 12 22:30 gnuarmeclipse-qemu-debian32-2.3.50-201505121804-dev.tgz
+-rw-r--r--  1 ilg  staff  4601903 May 12 22:06 gnuarmeclipse-qemu-debian64-2.3.50-201505121804-dev.tgz
+-rw-r--r--  1 ilg  staff  5378788 May 12 22:34 gnuarmeclipse-qemu-osx-2.3.50-201505121804-dev.pkg
+-rw-r--r--  1 ilg  staff  3257398 May 12 21:42 gnuarmeclipse-qemu-win32-2.3.50-201505121804-dev-setup.exe
+-rw-r--r--  1 ilg  staff  3782102 May 12 21:25 gnuarmeclipse-qemu-win64-2.3.50-201505121804-dev-setup.exe
+drwxr-xr-x  4 ilg  staff      136 May 12 22:35 osx
+drwxr-xr-x  6 ilg  staff      204 May 12 21:26 win32
+drwxr-xr-x  6 ilg  staff      204 May 12 21:04 win64
+```
 
 ## Subsequent runs
 
@@ -140,13 +158,17 @@ About half an hour later, the output of the build script is a set of 5 files in 
 
 Instead of `--all`, you can use any combination of:
 
-	--win32 --win64 --debian32 --debian64 --osx
+```
+--win32 --win64 --debian32 --debian64 --osx
+```
 
 ### clean
 
 To remove all build files, use:
 
-	$ bash ~/Downloads/build-qemu.sh clean
+```
+$ bash ~/Downloads/build-qemu.sh clean
+```
 
 ## The Work folder
 
@@ -154,47 +176,50 @@ The entire build process is contained in a Work folder, located on the host and 
 
 A typical Work folder includes sub-folders for each project:
 
-
-	$ tree -L 1 qemu
-	qemu
-	├── README.txt
-	├── build
-	├── gnuarmeclipse-qemu.git
-	├── install
-	├── output
-	├── patches
-	├── scripts
-	└── xcode
+```
+$ tree -L 1 qemu
+qemu
+├── README.txt
+├── build
+├── gnuarmeclipse-qemu.git
+├── install
+├── output
+├── patches
+├── scripts
+└── xcode
+```
 
 The build and include subfolders look like:
 
-	$ tree -L 2 qemu/build/ qemu/install
-	qemu/build/
-	├── debian32
-	│   └── qemu
-	├── debian64
-	│   └── qemu
-	├── osx
-	│   └── qemu
-	├── win32
-	│   └── qemu
-	└── win64
-	    └── qemu
-	qemu/install
-	├── debian32
-	│   ├── archive
-	│   └── qemu
-	├── debian64
-	│   ├── archive
-	│   └── qemu
-	├── osx
-	│   └── qemu
-	├── win32
-	│   └── qemu
-	└── win64
-	    └── qemu
+```
+$ tree -L 2 qemu/build/ qemu/install
+qemu/build/
+├── debian32
+│   └── qemu
+├── debian64
+│   └── qemu
+├── osx
+│   └── qemu
+├── win32
+│   └── qemu
+└── win64
+	└── qemu
+qemu/install
+├── debian32
+│   ├── archive
+│   └── qemu
+├── debian64
+│   ├── archive
+│   └── qemu
+├── osx
+│   └── qemu
+├── win32
+│   └── qemu
+└── win64
+	└── qemu
 
-	22 directories, 0 files
+22 directories, 0 files
+```
 
 ## Install procedure
 
@@ -204,43 +229,45 @@ The procedure to install GNU ARM Eclipse QEMU is platform specific, but relative
 
 After install, the package should create a structure like this (only the first two depth levels are shown):
 
-	$ tree -L 2 /Applications/GNU\ ARM\ Eclipse/QEMU/2.3.50-201505141607-dev
-	/Applications/GNU\ ARM\ Eclipse/QEMU/2.3.50-201505141607-dev
-	├── INFO.txt
-	├── bin
-	│   ├── libffi.6.dylib
-	│   ├── libgmp.10.dylib
-	│   ├── libgnutls.28.dylib
-	│   ├── libhogweed.2.dylib
-	│   ├── libiconv.2.dylib
-	│   ├── libintl.8.dylib
-	│   ├── libnettle.4.dylib
-	│   ├── libp11-kit.0.dylib
-	│   ├── libtasn1.6.dylib
-	│   ├── libz.1.dylib
-	│   └── qemu-system-gnuarmeclipse
-	├── doc
-	│   ├── qemu-doc.html
-	│   ├── qemu-doc.pdf
-	│   ├── qemu-tech.html
-	│   ├── qemu-tech.pdf
-	│   └── qmp-commands.txt
-	├── etc
-	│   └── qemu
-	├── gnuarmeclipse
-	│   ├── BUILD.txt
-	│   ├── CHANGES.txt
-	│   ├── build-helper.sh
-	│   ├── build-qemu.sh
-	│   └── config.log
-	├── license
-	│   └── qemu-2.3.50
-	├── man
-	│   └── man1
-	└── share
-	    └── qemu
+```
+$ tree -L 2 /Applications/GNU\ ARM\ Eclipse/QEMU/2.3.50-201505141607-dev
+/Applications/GNU\ ARM\ Eclipse/QEMU/2.3.50-201505141607-dev
+├── INFO.txt
+├── bin
+│   ├── libffi.6.dylib
+│   ├── libgmp.10.dylib
+│   ├── libgnutls.28.dylib
+│   ├── libhogweed.2.dylib
+│   ├── libiconv.2.dylib
+│   ├── libintl.8.dylib
+│   ├── libnettle.4.dylib
+│   ├── libp11-kit.0.dylib
+│   ├── libtasn1.6.dylib
+│   ├── libz.1.dylib
+│   └── qemu-system-gnuarmeclipse
+├── doc
+│   ├── qemu-doc.html
+│   ├── qemu-doc.pdf
+│   ├── qemu-tech.html
+│   ├── qemu-tech.pdf
+│   └── qmp-commands.txt
+├── etc
+│   └── qemu
+├── gnuarmeclipse
+│   ├── BUILD.txt
+│   ├── CHANGES.txt
+│   ├── build-helper.sh
+│   ├── build-qemu.sh
+│   └── config.log
+├── license
+│   └── qemu-2.3.50
+├── man
+│   └── man1
+└── share
+    └── qemu
 
-	11 directories, 22 files
+11 directories, 22 files
+```
 
 No other files are installed in any system folders or other locations.
 
@@ -256,17 +283,11 @@ A simple test is performed by the script at the end, by launching the executable
 
 For a true test you need to first install the package and then run the program form the final location. For example on macOS the output should look like:
 
-	$ /Applications/GNU\ ARM\ Eclipse/QEMU/2.2.91-201504021111-dev/bin/qemu-system-gnuarmeclipse --version
-	GNU ARM Eclipse QEMU 64-bits emulator version 2.2.91
-	Copyright (c) 2003-2008 Fabrice Bellard
-
-## Stop boot2docker
-
-On macOS, the build script automatically starts `boot2docker`, if needed.
-
-When done, be sure you stop it, to free significant resources (a VirtualBox Ubuntu machine).
-
-	$ boot2docker stop
+```
+$ /Applications/GNU\ ARM\ Eclipse/QEMU/2.2.91-201504021111-dev/bin/qemu-system-gnuarmeclipse --version
+GNU ARM Eclipse QEMU 64-bits emulator version 2.2.91
+Copyright (c) 2003-2008 Fabrice Bellard
+```
 
 ## More build details
 

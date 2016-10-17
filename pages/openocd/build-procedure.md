@@ -57,11 +57,19 @@ For any GNU/Linux distribution, follow the [specific instructions](https://docs.
 
 To allow docker to run as a regular user, you need to be a member of the `docker` group.
 
-	$ sudo groupadd docker
-	$ sudo gpasswd -a ${USER} docker
-	$ sudo service docker restart
+```
+$ sudo groupadd docker
+$ sudo gpasswd -a ${USER} docker
+$ sudo service docker restart
+```
 
 To make these changes effective, logout and login.
+
+The above are for Ubuntu and the Debian family. For other distributions, the last line may differ, for example for Arch Linux use:
+
+```
+$ systemctl restart docker
+```
 
 #### Install required packages
 
@@ -79,13 +87,17 @@ The script is available from the SourceForge git repository and can be [viewed o
 
 To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-openocd.sh) link. If the browser fails, use the following command in a terminal:
 
-    curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-openocd.sh \
+```
+curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-openocd.sh \
     -o ~/Downloads/build-openocd.sh
+```
 
 Alternatively, in a development environment, the entire `build-scripts.git` can be cloned, and a link to `Downloads` created:
 
-    ln -s /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/build-scripts.git/scripts/build-openocd.sh \
+```
+ln -s /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/build-scripts.git/scripts/build-openocd.sh \
     ~/Downloads/build-openocd.sh
+```
 
 ## Check the script
 
@@ -97,43 +109,48 @@ Docker does not require to explicitly download new images, but does this automat
 
 However, since the images used for this build are relatively large, it is recommended to load them explicitly before starting the build:
 
-    bash ~/Downloads/build-openocd.sh preload-images
+```
+bash ~/Downloads/build-openocd.sh preload-images
+```
 
 The result should look similar to:
 
-    $ docker images
-    REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
-    ilegeul/debian      8-gnuarm-mingw      b8261b27add4        3 minutes ago       2.692 GB
-    ilegeul/debian      8-gnuarm-gcc        ba65c1716b6e        12 minutes ago      1.437 GB
-    ilegeul/debian      7-gnuarm-gcc        16b30d6a4244        32 minutes ago      1.6 GB
-    ilegeul/debian32    7-gnuarm-gcc        2e416e412fad        43 minutes ago      1.596 GB
-    ilegeul/debian      7                   a4ad8e2c6d76        4 days ago          96.13 MB
-    ilegeul/debian32    7                   64980af805ad        4 days ago          93.65 MB
-    debian              8                   65688f7c61c4        6 weeks ago         122.8 MB
-    hello-world         latest              e45a5af57b00        4 months ago        910 B
+```
+$ docker images
+REPOSITORY          TAG                   IMAGE ID            CREATED             SIZE
+ilegeul/debian32    8-gnuarm-gcc-x11-v3   14a0dcce0dd7        11 months ago       1.633 GB
+ilegeul/debian      8-gnuarm-gcc-x11-v3   a461714e9b42        11 months ago       1.771 GB
+ilegeul/debian      8-gnuarm-mingw        1c04c24123c1        15 months ago       2.486 GB
+```
 
 ## Build all distribution files
 
-    $ bash ~/Downloads/build-openocd.sh --all
+```
+$ bash ~/Downloads/build-openocd.sh --all
+```
 
 On macOS, to prevent sleep, use:
 
-    $ caffeinate bash ~/Downloads/build-openocd.sh --all
+```
+$ caffeinate bash ~/Downloads/build-openocd.sh --all
+```
 
 About half an hour later (`caffeinate` is used to make sure the system does not go to sleep while left unattended), the output of the build script is a set of 5 files in the output folder:
 
-    $ ls -l output
-    total 105616
-    drwxr-xr-x  8 ilg  staff      272 May 11 15:28 debian32
-    drwxr-xr-x  8 ilg  staff      272 May 11 15:20 debian64
-    -rw-r--r--  1 ilg  staff  2313130 May 10 11:41 gnuarmeclipse-openocd-debian32-0.8.0-201505100809.tgz
-    -rw-r--r--  1 ilg  staff  2313130 May 10 11:41 gnuarmeclipse-openocd-debian64-0.8.0-201505100809.tgz
-    -rw-r--r--  1 ilg  staff  2274022 May 10 11:45 gnuarmeclipse-openocd-osx-0.8.0-201505100809.pkg
-    -rw-r--r--  1 ilg  staff  2253926 May 10 11:29 gnuarmeclipse-openocd-win32-0.8.0-201505100809-setup.exe
-    -rw-r--r--  1 ilg  staff  2285654 May 10 11:20 gnuarmeclipse-openocd-win64-0.8.0-201505100809-setup.exe
-    drwxr-xr-x  8 ilg  staff      272 May 11 15:33 osx
-    drwxr-xr-x  8 ilg  staff      272 May 11 15:13 win32
-    drwxr-xr-x  8 ilg  staff      272 May 11 15:13 win64
+```
+$ ls -l output
+total 105616
+drwxr-xr-x  8 ilg  staff      272 May 11 15:28 debian32
+drwxr-xr-x  8 ilg  staff      272 May 11 15:20 debian64
+-rw-r--r--  1 ilg  staff  2313130 May 10 11:41 gnuarmeclipse-openocd-debian32-0.8.0-201505100809.tgz
+-rw-r--r--  1 ilg  staff  2313130 May 10 11:41 gnuarmeclipse-openocd-debian64-0.8.0-201505100809.tgz
+-rw-r--r--  1 ilg  staff  2274022 May 10 11:45 gnuarmeclipse-openocd-osx-0.8.0-201505100809.pkg
+-rw-r--r--  1 ilg  staff  2253926 May 10 11:29 gnuarmeclipse-openocd-win32-0.8.0-201505100809-setup.exe
+-rw-r--r--  1 ilg  staff  2285654 May 10 11:20 gnuarmeclipse-openocd-win64-0.8.0-201505100809-setup.exe
+drwxr-xr-x  8 ilg  staff      272 May 11 15:33 osx
+drwxr-xr-x  8 ilg  staff      272 May 11 15:13 win32
+drwxr-xr-x  8 ilg  staff      272 May 11 15:13 win64
+```
 
 ## Subsequent runs
 
@@ -141,13 +158,17 @@ About half an hour later (`caffeinate` is used to make sure the system does not 
 
 Instead of `--all`, you can use any combination of:
 
-    --win32 --win64 --debian32 --debian64 --osx
+```
+--win32 --win64 --debian32 --debian64 --osx
+```
 
 ### clean
 
 To remove all build files, use:
 
-    bash ~/Downloads/build-openocd.sh clean
+```
+bash ~/Downloads/build-openocd.sh clean
+```
 
 ## Install hierarchy
 
@@ -155,35 +176,37 @@ The procedure to install GNU ARM Eclipse OpenOCD is platform specific, but relat
 
 After install, this package should create structure like this (only the first two depth levels are shown):
 
-    $ tree -L 2 /Applications/GNU\ ARM\ Eclipse/OpenOCD
-    /Applications/GNU\ ARM\ Eclipse/OpenOCD
-    ├── bin
-    │   └── openocd
-    ├── doc
-    │   ├── openocd.html
-    │   └── openocd.pdf
-    ├── info
-    │   ├── BUILD.txt
-    │   ├── INFO.txt
-    │   └── build-openocd-osx.sh
-    ├── license
-    │   ├── hidapi
-    │   └── openocd
-    └── scripts
-        ├── bitsbytes.tcl
-        ├── board
-        ├── chip
-        ├── cpld
-        ├── cpu
-        ├── interface
-        ├── mem_helper.tcl
-        ├── memory.tcl
-        ├── mmr_helpers.tcl
-        ├── target
-        ├── test
-        └── tools
+```
+$ tree -L 2 /Applications/GNU\ ARM\ Eclipse/OpenOCD
+/Applications/GNU\ ARM\ Eclipse/OpenOCD
+├── bin
+│   └── openocd
+├── doc
+│   ├── openocd.html
+│   └── openocd.pdf
+├── info
+│   ├── BUILD.txt
+│   ├── INFO.txt
+│   └── build-openocd-osx.sh
+├── license
+│   ├── hidapi
+│   └── openocd
+└── scripts
+    ├── bitsbytes.tcl
+    ├── board
+    ├── chip
+    ├── cpld
+    ├── cpu
+    ├── interface
+    ├── mem_helper.tcl
+    ├── memory.tcl
+    ├── mmr_helpers.tcl
+    ├── target
+    ├── test
+    └── tools
 
-    16 directories, 9 files
+16 directories, 9 files
+```
 
 No other files are installed in any system folders or other locations.
 
@@ -199,19 +222,13 @@ A simple test is performed by the script at the end, by launching the executable
 
 For a true test you need to first install the package and then run the program form the final location. For example on macOS the output should look like:
 
-    $ /Applications/GNU\ ARM\ Eclipse/OpenOCD/bin/openocd --version
-    GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.8.0-00022-g2628c74 (2015-01-15-20:44)
-    Licensed under GNU GPL v2
-    For bug reports, read
-        http://openocd.sourceforge.net/doc/doxygen/bugs.html
-
-## Stop boot2docker
-
-On macOS, the build script automatically starts `boot2docker`, if needed.
-
-When done, be sure you stop it, to free significant resources (a VirtualBox Ubuntu machine).
-
-    boot2docker stop
+```
+$ /Applications/GNU\ ARM\ Eclipse/OpenOCD/bin/openocd --version
+GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.8.0-00022-g2628c74 (2015-01-15-20:44)
+Licensed under GNU GPL v2
+For bug reports, read
+    http://openocd.sourceforge.net/doc/doxygen/bugs.html
+```
 
 ## More build details
 

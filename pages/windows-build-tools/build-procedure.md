@@ -29,14 +29,34 @@ The macOS development tools are packed in a separate Xcode add-on. The best plac
 
 To test if git is available, use:
 
-    $ git --version
-    git version 2.3.2 (Apple Git-55)
+```
+$ git --version
+git version 2.3.2 (Apple Git-55)
+```
 
 ### GNU/Linux
 
 #### Install Docker
 
 For any GNU/Linux distribution, follow the [specific instructions](https://docs.docker.com/installation/#installation).
+
+#### Configure Docker to run as regular user
+
+To allow docker to run as a regular user, you need to be a member of the `docker` group.
+
+```
+$ sudo groupadd docker
+$ sudo gpasswd -a ${USER} docker
+$ sudo service docker restart
+```
+
+To make these changes effective, logout and login.
+
+The above are for Ubuntu and the Debian family. For other distributions, the last line may differ, for example for Arch Linux use:
+
+```
+$ systemctl restart docker
+```
 
 #### Install required packages
 
@@ -54,8 +74,10 @@ The script is available from the GitHub git repository and can be [viewed online
 
 To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-windows-build-tools.sh) link. If the browser fails, use the following command in a terminal:
 
-    curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-windows-build-tools.sh \
+```
+curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-windows-build-tools.sh \
     -o ~/Downloads/build-windows-build-tools.sh
+```
 
 ## Check the script
 
@@ -67,33 +89,34 @@ Docker does not require to explicitly download new images, but does this automat
 
 However, since the images used for this build are relatively large, it is recommended to load them explicitly before starting the build:
 
-    bash ~/Downloads/build-windows-build-tools.sh preload-images
+```
+bash ~/Downloads/build-windows-build-tools.sh preload-images
+```
 
 The result should look similar to:
 
-    $ docker images
-    REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
-    ilegeul/debian      8-gnuarm-mingw      b8261b27add4        3 minutes ago       2.692 GB
-    ilegeul/debian      8-gnuarm-gcc        ba65c1716b6e        12 minutes ago      1.437 GB
-    ilegeul/debian      7-gnuarm-gcc        16b30d6a4244        32 minutes ago      1.6 GB
-    ilegeul/debian32    7-gnuarm-gcc        2e416e412fad        43 minutes ago      1.596 GB
-    ilegeul/debian      7                   a4ad8e2c6d76        4 days ago          96.13 MB
-    ilegeul/debian32    7                   64980af805ad        4 days ago          93.65 MB
-    debian              8                   65688f7c61c4        6 weeks ago         122.8 MB
-    hello-world         latest              e45a5af57b00        4 months ago        910 B
+```
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+ilegeul/debian      8-gnuarm-mingw      b8261b27add4        3 minutes ago       2.692 GB
+```
 
 ## Build all distribution files
 
-    bash ~/Downloads/build-windows-build-tools.sh --all
+```
+bash ~/Downloads/build-windows-build-tools.sh --all
+```
 
 About half an hour later, the output of the build script is a set of 5 files in the output folder:
 
-    $ ls -l output
-    total 3680
-    -rw-r--r--   1 ilg  staff   685323 May 14 23:30 gnuarmeclipse-build-tools-win32-2.5-201505142015-setup.exe
-    -rw-r--r--   1 ilg  staff  1194597 May 14 23:23 gnuarmeclipse-build-tools-win64-2.5-201505142015-setup.exe
-    drwxr-xr-x  13 ilg  staff      442 May 14 23:24 win32
-    drwxr-xr-x  13 ilg  staff      442 May 14 23:17 win64
+```
+$ ls -l output
+total 3680
+-rw-r--r--   1 ilg  staff   685323 May 14 23:30 gnuarmeclipse-build-tools-win32-2.5-201505142015-setup.exe
+-rw-r--r--   1 ilg  staff  1194597 May 14 23:23 gnuarmeclipse-build-tools-win64-2.5-201505142015-setup.exe
+drwxr-xr-x  13 ilg  staff      442 May 14 23:24 win32
+drwxr-xr-x  13 ilg  staff      442 May 14 23:17 win64
+```
 
 ## Subsequent runs
 
@@ -101,13 +124,17 @@ About half an hour later, the output of the build script is a set of 5 files in 
 
 Instead of **--all**, you can use any combination of:
 
-    --win32 --win64
+```
+--win32 --win64
+```
 
 ### clean
 
 To remove all build files, use:
 
-    bash ~/Downloads/build-windows-build-tools.sh clean
+```
+bash ~/Downloads/build-windows-build-tools.sh clean
+```
 
 ## Install hierarchy
 
@@ -115,42 +142,36 @@ The procedure to install the GNU ARM Eclipse Build Tools is simple. The setup as
 
 After install, this package should create structure like this (only the first two depth levels are shown):
 
-    $ tree -L 2 Build\ Tools/bin/version
-    ├── COPYING
-    ├── INFO.txt
-    ├── bin
-    │   ├── busybox.exe
-    │   ├── echo.exe
-    │   ├── libiconv-2.dll
-    │   ├── libintl-8.dll
-    │   ├── make.exe
-    │   ├── rm.exe
-    │   └── sh.exe
-    ├── gnuarmeclipse
-    │   ├── BUILD.txt
-    │   ├── CHANGES.txt
-    │   ├── build-build-tools.sh
-    │   ├── build-helper.sh
-    │   └── config.log
-    └── license
-        ├── busybox
-        └── make-4.1
+```
+$ tree -L 2 Build\ Tools/bin/version
+├── COPYING
+├── INFO.txt
+├── bin
+│   ├── busybox.exe
+│   ├── echo.exe
+│   ├── libiconv-2.dll
+│   ├── libintl-8.dll
+│   ├── make.exe
+│   ├── rm.exe
+│   └── sh.exe
+├── gnuarmeclipse
+│   ├── BUILD.txt
+│   ├── CHANGES.txt
+│   ├── build-build-tools.sh
+│   ├── build-helper.sh
+│   └── config.log
+└── license
+    ├── busybox
+    └── make-4.1
 
-    5 directories, 14 files
+5 directories, 14 files
+```
 
 No other files are installed in any system folders or other locations.
 
 ## Uninstall
 
 To uninstall the Build Tools from a Windows machine, use the **build-tools-uninstall.exe** program.
-
-## Stop boot2docker
-
-On macOS, the build script automatically starts **boot2docker**, if needed.
-
-When done, be sure you stop boot2docker, to free significant resources (a VirtualBox Ubuntu machine).
-
-    boot2docker stop
 
 ## More build details
 
