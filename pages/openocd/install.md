@@ -151,6 +151,12 @@ To test if OpenOCD is able to connect to a specific board, you generally need to
 	Info : stm32f4x.cpu: hardware has 6 	breakpoints, 4 watchpoints
 	^C
 
+## OpenOCD Debugging plug-ins
+
+The OpenOCD debugging **plug-ins are not included** in these packages, and need to be installed [as usual]({{ site.baseurl }}/plugins/install/). Just be sure that the **GNU ARM C/C++ OpenOCD Debugging** plug-ins are selected.
+
+![Install the OpenOCD plug-ins]({{ site.baseurl }}/assets/images/2015/install-new-software-updates-openocd.png)
+
 ## Update OpenOCD path
 
 Right after installing OpenOCD, or updating to a new version, it is necessary to inform Eclipse where the binaries were installed. If OpenOCD was installed in the default location, Eclipse has a mechanism to autodetect the most recent version, but this mechanism sometimes fails, and manual path setting is necessary.
@@ -164,12 +170,6 @@ To set the path, first exit Eclipse, and start it again, to allow the autodetect
 * click the **Restore Defaults** button
 
 For more details please refer to the [OpenOCD plug-in]({{ site.baseurl }}/debug/qemu/#define-the-openocd-folder-location) page, where the entire procedure is explained.
-
-## OpenOCD Debugging plug-ins
-
-The OpenOCD debugging **plug-ins are not included** in these packages, and need to be installed [as usual]({{ site.baseurl }}/plugins/install/). Just be sure that the **GNU ARM C/C++ OpenOCD Debugging** plug-ins are selected.
-
-![Install the OpenOCD plug-ins]({{ site.baseurl }}/assets/images/2015/install-new-software-updates-openocd.png)
 
 ## Troubleshooting
 

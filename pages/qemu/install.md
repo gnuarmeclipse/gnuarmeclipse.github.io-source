@@ -114,6 +114,12 @@ To check if QEMU starts and is recent, use:
 
 For usual Cortex-M emulation, there are no special UDEV definitions or drivers required.
 
+## QEMU Debugging plug-ins
+
+The QEMU debugging **plug-ins are not included** in these packages, and need to be installed [as usual]({{ site.baseurl }}/plugins/install/). Be sure that the **GNU ARM C/C++ QEMU Debugging** plug-ins are selected.
+
+![Install the QEMU plug-ins]({{ site.baseurl }}/assets/images/2015/install-new-software-updates-qemu.png)
+
 ## Update QEMU path
 
 Right after installing QEMU, or updating to a new version, it is necessary to inform Eclipse where the binaries were installed. If QEMU was installed in the default location, Eclipse has a mechanism to autodetect the most recent version, but this mechanism sometimes fails, and manual path setting is necessary.
@@ -128,8 +134,3 @@ To set the path, first exit Eclipse, and start it again, to allow the autodetect
 
 For more details please refer to the [QEMU plug-in]({{ site.baseurl }}/debug/qemu/#define-the-qemufolder-location) page, where the entire procedure is explained.
 
-## QEMU Debugging plug-ins
-
-The QEMU debugging **plug-ins are not included** in these packages, and need to be installed [as usual]({{ site.baseurl }}/plugins/install/). Be sure that the **GNU ARM C/C++ QEMU Debugging** plug-ins are selected.
-
-![Install the QEMU plug-ins]({{ site.baseurl }}/assets/images/2015/install-new-software-updates-qemu.png)
