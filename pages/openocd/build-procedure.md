@@ -15,13 +15,9 @@ The script was developed on macOS, but it also runs on any recent GNU/Linux dist
 
 The main trick that made the multi-platform build possible is [Docker](https://www.docker.com).
 
-Containers based on three docker images are used, one packing MinGW-w64 in a Debian 8, and two packing the basic system in Debian 7 (separate 32/64-bits containers). The more conservative Debian 7 was preferred to generate the GNU/Linux versions, to avoid problems when attempting to run the executables on older versions.
+Containers based on three docker images are used, one packing MinGW-w64 in a Debian 8, and two packing the basic system in Debian 8 (separate 32/64-bits containers). The more conservative Debian was preferred to generate the GNU/Linux versions, to avoid problems when attempting to run the executables on older versions.
 
 ### macOS
-
-#### Install Docker
-
-On macOS, install the boot2docker, following the official [Install Docker on macOS](https://docs.docker.com/installation/mac/) instructions.
 
 #### Install the Command Line Tools
 
@@ -29,23 +25,29 @@ The macOS compiler and other development tools are packed in a separate Xcode ad
 
 To test if the compiler is available, use:
 
-    $ gcc --version
-    Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-    Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)
-    Target: x86_64-apple-darwin14.3.0
-    Thread model: posix
+```
+$ gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.3.0
+Thread model: posix
+```
 
-#### Install MacPorts
+#### Install a custom instance of Homebrew
 
-The build procedure requires the presence of [MacPorts](http://www.macports.org). Install it according to the documentation.
+The build process is quite complex, and requires tools not available in the standard Apple macOS distribution. These tools can be installed with Homebrew. To keep these tools separate, a custom instance of Homebrew is installed in `$HOME/opt/homebrew-gae`. Unfortunately, **MacTex** and **XQuartz** are not packed as Homebrew packages, but install as macOS packages and links to them are created (without adding them to the PATH).
 
-#### Install required MacPorts packages
+The entire process can be automatised with a script, available from a gist:
 
-Install the following packages:
+```
+$ git clone https://gist.github.com/46407a070844f764dec6f27bde385797.git ~/Downloads/install-homebrew.gist
+$ bash ~/Downloads/install-homebrew.gist/install-homebrew-gae.sh
+```
+The script runs most of the time with user credentials, but to install MacTex and XQuartz, temporary `sudo` access is required.
 
-    sudo port install libtool automake autoconf pkgconfig wget
-    sudo port install cmake boost libconfuse swig-python
-    sudo port install texinfo texlive
+#### Install Docker
+
+On macOS, Docker can be installed by following the official [Install Docker on macOS](https://docs.docker.com/installation/mac/) instructions.
 
 ### GNU/Linux
 
@@ -81,27 +83,19 @@ The script checks for them; if the script fails, install them and re-run.
 
 The Docker images are available from [Docker Hub](https://hub.docker.com/u/ilegeul/). They were build using the Dockerfiles available from [ilg-ul/docker on GitHub](https://github.com/ilg-ul/docker).
 
-## Download the build script
+## Download the build scripts repo
 
-The script is available from the SourceForge git repository and can be [viewed online](https://github.com/gnuarmeclipse/build-scripts/blob/master/scripts/build-openocd.sh).
+The build script is available from GitHub and can be [viewed online](https://github.com/gnuarmeclipse/build-scripts/blob/master/scripts/build-openocd.sh).
 
-To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-openocd.sh) link. If the browser fails, use the following command in a terminal:
-
-```
-curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-openocd.sh \
-    -o ~/Downloads/build-openocd.sh
-```
-
-Alternatively, in a development environment, the entire `build-scripts.git` can be cloned, and a link to `Downloads` created:
+To download it, clone the [gnuarmeclipse/build-scripts](https://github.com/gnuarmeclipse/build-scripts) Git repo. 
 
 ```
-ln -s /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/build-scripts.git/scripts/build-openocd.sh \
-    ~/Downloads/build-openocd.sh
+$ git clone https://github.com/gnuarmeclipse/build-scripts.git  ~/Downloads/build-scripts.git
 ```
 
 ## Check the script
 
-The script creates a temporary build `Work/openocd` folder in the the user home. Although not recommended, if for any reasons you need to change this, you can redefine `WORK_FOLDER` variable before invoking the script.
+The script creates a temporary build `Work/openocd` folder in the user home. Although not recommended, if for any reasons you need to change this, you can redefine `WORK_FOLDER` variable before invoking the script.
 
 ## Preload the Docker images
 
@@ -110,7 +104,7 @@ Docker does not require to explicitly download new images, but does this automat
 However, since the images used for this build are relatively large, it is recommended to load them explicitly before starting the build:
 
 ```
-bash ~/Downloads/build-openocd.sh preload-images
+$ bash ~/Downloads/build-scripts.git/build-openocd.sh preload-images
 ```
 
 The result should look similar to:
@@ -126,16 +120,10 @@ ilegeul/debian      8-gnuarm-mingw        1c04c24123c1        15 months ago     
 ## Build all distribution files
 
 ```
-$ bash ~/Downloads/build-openocd.sh --all
+$ bash ~/Downloads/build-scripts.git/build-openocd.sh --all
 ```
 
-On macOS, to prevent sleep, use:
-
-```
-$ caffeinate bash ~/Downloads/build-openocd.sh --all
-```
-
-About half an hour later (`caffeinate` is used to make sure the system does not go to sleep while left unattended), the output of the build script is a set of 5 files in the output folder:
+About half an hour later, the output of the build script is a set of 5 files in the output folder:
 
 ```
 $ ls -l output
@@ -167,7 +155,7 @@ Instead of `--all`, you can use any combination of:
 To remove all build files, use:
 
 ```
-bash ~/Downloads/build-openocd.sh clean
+$ bash ~/Downloads/build-scripts.git/build-openocd.sh clean
 ```
 
 ## Install hierarchy

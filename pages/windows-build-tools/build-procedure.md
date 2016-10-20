@@ -19,20 +19,35 @@ The Windows build uses MinGW-w64 in a Debian 8 container.
 
 ### macOS
 
-#### Install Docker
-
-On macOS, install **boot2docker**, following the official [Install Docker on macOS](https://docs.docker.com/installation/mac/) instructions.
-
 #### Install the Command Line Tools
 
-The macOS development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](https://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
+The macOS compiler and other development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](https://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
 
-To test if git is available, use:
+To test if the compiler is available, use:
 
 ```
-$ git --version
-git version 2.3.2 (Apple Git-55)
+$ gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.3.0
+Thread model: posix
 ```
+
+#### Install a custom instance of Homebrew
+
+The build process is quite complex, and requires tools not available in the standard Apple macOS distribution. These tools can be installed with Homebrew. To keep these tools separate, a custom instance of Homebrew is installed in `$HOME/opt/homebrew-gae`. Unfortunately, **MacTex** and **XQuartz** are not packed as Homebrew packages, but install as macOS packages and links to them are created (without adding them to the PATH).
+
+The entire process can be automatised with a script, available from a gist:
+
+```
+$ git clone https://gist.github.com/46407a070844f764dec6f27bde385797.git ~/Downloads/install-homebrew.gist
+$ bash ~/Downloads/install-homebrew.gist/install-homebrew-gae.sh
+```
+The script runs most of the time with user credentials, but to install MacTex and XQuartz, temporary `sudo` access is required.
+
+#### Install Docker
+
+On macOS, Docker can be installed by following the official [Install Docker on macOS](https://docs.docker.com/installation/mac/) instructions.
 
 ### GNU/Linux
 
@@ -68,15 +83,14 @@ The script checks for them; if the script fails, install them and re-run.
 
 The Docker images are available from [Docker Hub](https://hub.docker.com/u/ilegeul/). They were build using the Dockerfiles available from [ilg-ul/docker on GitHub](https://github.com/ilg-ul/docker).
 
-## Download the build script
+## Download the build scripts repo
 
-The script is available from the GitHub git repository and can be [viewed online](https://github.com/gnuarmeclipse/build-scripts/blob/master/scripts/build-windows-build-tools.sh).
+The build script is available from GitHub and can be [viewed online](https://github.com/gnuarmeclipse/build-scripts/blob/master/scripts/build-openocd.sh).
 
-To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-windows-build-tools.sh) link. If the browser fails, use the following command in a terminal:
+To download it, clone the [gnuarmeclipse/build-scripts](https://github.com/gnuarmeclipse/build-scripts) Git repo. 
 
 ```
-curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-windows-build-tools.sh \
-    -o ~/Downloads/build-windows-build-tools.sh
+$ git clone https://github.com/gnuarmeclipse/build-scripts.git  ~/Downloads/build-scripts.git
 ```
 
 ## Check the script
@@ -90,7 +104,7 @@ Docker does not require to explicitly download new images, but does this automat
 However, since the images used for this build are relatively large, it is recommended to load them explicitly before starting the build:
 
 ```
-bash ~/Downloads/build-windows-build-tools.sh preload-images
+$ bash ~/Downloads/build-scripts.git/build-windows-build-tools.sh preload-images
 ```
 
 The result should look similar to:
@@ -104,7 +118,7 @@ ilegeul/debian      8-gnuarm-mingw      b8261b27add4        3 minutes ago       
 ## Build all distribution files
 
 ```
-bash ~/Downloads/build-windows-build-tools.sh --all
+$ bash ~/Downloads/build-scripts.git/build-windows-build-tools.sh --all
 ```
 
 About half an hour later, the output of the build script is a set of 5 files in the output folder:
@@ -133,7 +147,7 @@ Instead of **--all**, you can use any combination of:
 To remove all build files, use:
 
 ```
-bash ~/Downloads/build-windows-build-tools.sh clean
+$ bash ~/Downloads/build-scripts.git/build-windows-build-tools.sh clean
 ```
 
 ## Install hierarchy

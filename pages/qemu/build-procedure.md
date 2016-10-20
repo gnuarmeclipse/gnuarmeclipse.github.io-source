@@ -19,10 +19,6 @@ Containers based on three docker images are used, one packing MinGW-w64 in a Deb
 
 ### macOS
 
-#### Install Docker
-
-On macOS, install `boot2docker`, following the official [Install Docker on macOS](https://docs.docker.com/installation/mac/) instructions.
-
 #### Install the Command Line Tools
 
 The macOS compiler and other development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](https://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
@@ -37,18 +33,21 @@ Target: x86_64-apple-darwin14.3.0
 Thread model: posix
 ```
 
-#### Install MacPorts
+#### Install a custom instance of Homebrew
 
-The build procedure requires the presence of [MacPorts](http://www.macports.org). Install it according to the documentation.
+The build process is quite complex, and requires tools not available in the standard Apple macOS distribution. These tools can be installed with Homebrew. To keep these tools separate, a custom instance of Homebrew is installed in `$HOME/opt/homebrew-gae`. Unfortunately, **MacTex** and **XQuartz** are not packed as Homebrew packages, but install as macOS packages and links to them are created (without adding them to the PATH).
 
-#### Install required MacPorts packages
-
-Install the following packages:
+The entire process can be automatised with a script, available from a gist:
 
 ```
-$ sudo port install libtool automake autoconf pkgconfig
-$ sudo port install texinfo texlive
+$ git clone https://gist.github.com/46407a070844f764dec6f27bde385797.git ~/Downloads/install-homebrew.gist
+$ bash ~/Downloads/install-homebrew.gist/install-homebrew-gae.sh
 ```
+The script runs most of the time with user credentials, but to install MacTex and XQuartz, temporary `sudo` access is required.
+
+#### Install Docker
+
+On macOS, Docker can be installed by following the official [Install Docker on macOS](https://docs.docker.com/installation/mac/) instructions.
 
 ### GNU/Linux
 
@@ -68,6 +67,12 @@ $ sudo service docker restart
 
 To make these changes effective, logout and login.
 
+The above are for Ubuntu and the Debian family. For other distributions, the last line may differ, for example for Arch Linux use:
+
+```
+$ systemctl restart docker
+```
+
 #### Install required packages
 
 Since most of the build is performed inside the Docker containers, there are not many requirements for the host, and most of the time these programs are in the standard distribution (`curl`, `git`, `automake`, `patch`, `tar`, `unzip`).
@@ -78,22 +83,14 @@ The script checks for them; if the script fails, install them and re-run.
 
 The Docker images are available from [Docker Hub](https://hub.docker.com/u/ilegeul/). They were build using the Dockerfiles available from [ilg-ul/docker](https://github.com/ilg-ul/docker) on GitHub.
 
-## Download the build script
+## Download the build scripts repo
 
-The script is available from the GitHub and can be [viewed online](https://github.com/gnuarmeclipse/build-scripts/blob/master/scripts/build-qemu.sh).
+The build script is available from GitHub and can be [viewed online](https://github.com/gnuarmeclipse/build-scripts/blob/master/scripts/build-openocd.sh).
 
-To download it use the [Raw](https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh) link. If the browser fails, use the following command in a terminal:
-
-```
-$ curl -L https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-qemu.sh \
-	-o ~/Downloads/build-qemu.sh
-```
-
-Alternatively, in a development environment, the entire `build-scripts.git` can be cloned, and a link to `Downloads` created:
+To download it, clone the [gnuarmeclipse/build-scripts](https://github.com/gnuarmeclipse/build-scripts) Git repo. 
 
 ```
-ln -s /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/build-scripts.git/scripts/build-qemu.sh \
-	~/Downloads/build-qemu.sh
+$ git clone https://github.com/gnuarmeclipse/build-scripts.git  ~/Downloads/build-scripts.git
 ```
 
 ## Check the script
@@ -107,7 +104,7 @@ Docker does not require to explicitly download new images, but does this automat
 However, since the images used for this build are relatively large, it is recommended to load them explicitly before starting the build:
 
 ```
-$ bash ~/Downloads/build-qemu.sh preload-images
+$ bash ~/Downloads/build-scripts.git/build-qemu.sh preload-images
 ```
 
 Please be patient, this will bring about 5 GB, which on a regular broadband line might take more than 30 minutes.
@@ -125,13 +122,13 @@ ilegeul/debian      8-gnuarm-mingw        1c04c24123c1        15 months ago     
 ## Build all distribution files
 
 ```
-$ bash ~/Downloads/build-qemu.sh --all
+$ bash ~/Downloads/build-scripts.git/build-qemu.sh --all
 ```
 
 On macOS, to prevent sleep, use:
 
 ```
-$ caffeinate bash ~/Downloads/build-qemu.sh --all
+$ caffeinate bash ~/Downloads/build-scripts.git/build-qemu.sh --all
 ```
 
 About half an hour later, the output of the build script is a set of 5 files in the output folder:
@@ -167,7 +164,7 @@ Instead of `--all`, you can use any combination of:
 To remove all build files, use:
 
 ```
-$ bash ~/Downloads/build-qemu.sh clean
+$ bash ~/Downloads/build-scripts.git/build-qemu.sh clean
 ```
 
 ## The Work folder
