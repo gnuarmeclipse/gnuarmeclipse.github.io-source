@@ -2,7 +2,7 @@
 
 cd "$(dirname "$0")"
 
-export PATH=/opt/homebrew-jekyll3/bin:$PATH
+export PATH="$HOME/opt/homebrew-jekyll/bin":$PATH
 jekyll build --destination ../gnuarmeclipse.github.io.git
 
 echo
