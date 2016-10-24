@@ -37,10 +37,11 @@ Thread model: posix
 
 The build process is quite complex, and requires tools not available in the standard Apple macOS distribution. These tools can be installed with Homebrew. To keep these tools separate, a custom instance of Homebrew is installed in `$HOME/opt/homebrew-gae`. Unfortunately, **MacTex** and **XQuartz** are not packed as Homebrew packages, but install as macOS packages and links to them are created (without adding them to the PATH).
 
-The entire process can be automatised with a script, available from a gist:
+The entire process can be automated with a script, available from Gist:
 
 ```
-$ git clone https://gist.github.com/46407a070844f764dec6f27bde385797.git ~/Downloads/install-homebrew.gist
+$ git clone https://gist.github.com/46407a070844f764dec6f27bde385797.git \
+  ~/Downloads/install-homebrew.gist
 $ bash ~/Downloads/install-homebrew.gist/install-homebrew-gae.sh
 ```
 The script runs most of the time with user credentials, but to install MacTex and XQuartz, temporary `sudo` access is required.
@@ -55,7 +56,7 @@ On macOS, Docker can be installed by following the official [Install Docker on m
 
 For any GNU/Linux distribution, follow the [specific instructions](https://docs.docker.com/installation/#installation).
 
-#### Configure Docker to run as regular user
+#### Configure Docker to run as a regular user
 
 To allow docker to run as a regular user, you need to be a member of the `docker` group.
 
@@ -90,7 +91,8 @@ The build script is available from GitHub and can be [viewed online](https://git
 To download it, clone the [gnuarmeclipse/build-scripts](https://github.com/gnuarmeclipse/build-scripts) Git repo. 
 
 ```
-$ git clone https://github.com/gnuarmeclipse/build-scripts.git  ~/Downloads/build-scripts.git
+$ git clone https://github.com/gnuarmeclipse/build-scripts.git \
+  ~/Downloads/build-scripts.git
 ```
 
 ## Check the script
@@ -104,7 +106,7 @@ Docker does not require to explicitly download new images, but does this automat
 However, since the images used for this build are relatively large, it is recommended to load them explicitly before starting the build:
 
 ```
-$ bash ~/Downloads/build-scripts.git/build-qemu.sh preload-images
+$ bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh preload-images
 ```
 
 Please be patient, this will bring about 5 GB, which on a regular broadband line might take more than 30 minutes.
@@ -122,13 +124,13 @@ ilegeul/debian      8-gnuarm-mingw        1c04c24123c1        15 months ago     
 ## Build all distribution files
 
 ```
-$ bash ~/Downloads/build-scripts.git/build-qemu.sh --all
+$ bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh --all
 ```
 
-On macOS, to prevent sleep, use:
+On macOS, to prevent entering sleep, use:
 
 ```
-$ caffeinate bash ~/Downloads/build-scripts.git/build-qemu.sh --all
+$ caffeinate bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh --all
 ```
 
 About half an hour later, the output of the build script is a set of 5 files in the output folder:
@@ -164,7 +166,7 @@ Instead of `--all`, you can use any combination of:
 To remove all build files, use:
 
 ```
-$ bash ~/Downloads/build-scripts.git/build-qemu.sh clean
+$ bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh clean
 ```
 
 ## The Work folder
