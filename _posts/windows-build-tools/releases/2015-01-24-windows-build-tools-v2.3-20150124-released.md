@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GNU ARM Eclipse Windows Build Tools v2.3-201501242223 released
+title:  GNU ARM Eclipse Windows Build Tools v2.3-20150124* released
 download_url: https://github.com/gnuarmeclipse/windows-build-tools/releases/tag/v2.3
 
 author: Liviu Ionescu
