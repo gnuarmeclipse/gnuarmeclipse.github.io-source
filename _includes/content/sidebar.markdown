@@ -73,6 +73,7 @@
 * [OpenOCD Install]({{ site.baseurl }}/openocd/install/)
 * [The OpenOCD plug-in]({{ site.baseurl }}/debug/openocd/)
 * [How to build]({{ site.baseurl }}/openocd/build-procedure/)
+* [How to publish]({{ site.baseurl }}/openocd/publish-procedure/)
 * [Releases]({{ site.baseurl }}/openocd/releases/)
 * [Support](https://github.com/gnuarmeclipse/openocd/issues/1/)  (report issue)
 
