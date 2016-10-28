@@ -38,17 +38,20 @@ For stable releases, with SourceTree
 - change to the **gnuarmeclipse** branch
 - merge **gnuarmeclipse-dev**.
 
-## Check build scripts
+## Check/clone/pull build scripts
 
 Be sure the scripts in the **build-scripts.git** are up to date.
+
+```
+$ git clone https://github.com/gnuarmeclipse/build-scripts.git \
+  ~/Downloads/build-scripts.git
+```
 
 ## Build
 
 ```
-$ bash ~/Downloads/build-qemu.sh clean
-$ rm -rf ~/Work/wemu/qemu/output
-$ caffeinate bash ~/Downloads/build-qemu.sh --all
-$ boot2docker stop
+$ bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh cleanall
+$ caffeinate bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh --all
 ```
 
 ## Update the release post with the MD5 sums
