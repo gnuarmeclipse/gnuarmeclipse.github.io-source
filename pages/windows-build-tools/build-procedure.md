@@ -3,6 +3,8 @@ layout: page
 title: How to build the Windows Build Tools binaries?
 permalink: /windows-build-tools/build-procedure/
 
+author: Liviu Ionescu
+
 date: 2015-09-04 17:02:00 +0300
 
 ---
