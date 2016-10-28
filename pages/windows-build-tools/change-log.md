@@ -3,113 +3,87 @@ layout: page
 title: The 2015 Windows Build Tools Change Log
 permalink: /windows-build-tools/change-log/
 
+author: Liviu Ionescu
+
 date: 2015-09-04 17:02:00 +0300
 
 ---
 
 ## 2015
 
-### 2015-08-30
+### 2015-10-28
 
-* files moved from gnuarmeclipse Git to a separate project
+- v2.7-20161028* released
 
-### 2015-08-16
+### 2015-10-20
 
-* build-qemu: debian rpath fix
-  - use chrpath to change elf and .so rpath
-  - use 8-gnuarm-gcc-x11-v2, which includes chrpath
-  - validate $ORIGIN in elf
+- **[Issue:[#2](https://github.com/gnuarmeclipse/windows-build-tools/issues/2)]** nsi file: add InstallDir; silent install should honour /D
+- update url to github.io
 
-### 2015-08-05
-* build-qemu.sh: add libwinpthread to win64
+### 2015-10-17
 
-### 2015-07-23
-* build-qemu: tar without j for .xz
-* build-quemu: clean fixed; non-win zlib fixed
-* build-qemu: libz, libjpg, libpixman
-  - no more pixman submodule
-  - use pkg-config-dbg everywhere
-  - use PKG_CONFIG_LIBDIR everywhere
-* build-helper: the linux functions renamed *_so
-
-### 2015-07-20
-* build-qemu: osx & debian functional
-  - --no-strip added
-  - libpng12 not 16
-  - copy more licences
-* build-helper: user libs no longer search system
-
-### 2015-07-19
-* build-qemu: most libs locally
-  - osx functional
-  - debian: crash in graphics
-  - windows: sdl displays nothing
-
-### 2015-07-18
-* build-qemu: debian with user sdl
-  - no pthreads
-* build-qemu: sdl compiled from sources for osx
-* build: debian64 functional
-  - requires libsdl1.2 and libsdl-image1.2
+- pre v2.7
 
 ### 2015-07-17
-* build-qemu.sh: new OSX build, with SDL
-  - copy board images
+
+- README.md added
 
 ### 2015-07-16
-* build-tools.sh: make it work for win64
-  - make mingw64_defconfig
-  - busybox 9fe16f6
 
-### 2015-06-10
-* build-qemu.sh: check docker only for win/deb
-  - in build-qemu.sh add prepare-docker
-  - use it conditionally
-
-
-### 2015-05-20
-* build qemu: show md5 sums
-  - reorder targets, move osx in front
-* build tools: md5sum -t fixed
-* qemu build: repo actions added
-* Docker folder moved to /Host/Work
-* md5sum -t explicitly
-
-### 2015-05-19
-* md5 sum computation for osx fixed
-  - openocd repo actions code added
-
-### 2015-05-15
-* build scripts: add md5
-* build QEMU: enable pixman submodule
+- v2.6-201507152002 released
+- support for 64-bits windows added (build scripts)
 
 ### 2015-05-14
-* build Build Tools: clean msys2
-* build openocd: cosmetics
-* build QEMU: fix DLL list
-* build-helper: include version in pkgbuild id
-  - to allow multiple instances
-* build Build Tools: copy DLLs
-* script to build windows Build Tools added
 
-### 2015-05-13
-* build use 8-gnuarm-mingw; preload-images
+- nsis build: add dlls
+- deprecate the Ubuntu build script
+- build updated for Docker; pre v2.5 (internal release)
 
+### 2015-03-24
 
-### 2015-05-12
-* qemu build script added
-  - openocd updated to use new helper
-  - qemu libs code moved to separate file
+- v2.4-201503242026 released
+- CHANGES updated
+- nsis add busybox to package; remove multiUser
 
-### 2015-05-11
-* build-openocd: WORK_FOLDER, build-images
-  - user can define custom WORK_FOLDER
-  - a build-images command builds all 3 Docker images
-* openocd build script: docker script uses helper
-  - move functions to build helper
+### 2015-03-21
 
-### 2015-05-10
-* scripts: openocd docker scripts
-  - build windows, debian & macOS in one run
+- v2.4-201503212005 released
+- add version to path; nsis updates from openocd
+
+### 2015-03-18
+
+- NOGLOB option should keep the default value; removed.
+
+### 2015-03-17
+
+- scripts location moved below gnuarmeclipse.
+- build script with more generic name, moved to scripts
+- pre 2.4 functional on 32-bit; sh.exe not functional on 64-bit
+- pre v2.4, 64-bit ready; multi-user added, not functional
+- original MultiUser.nsh file, without CR
+
+### 2015-01-25
+
+- v2.3-201501242223, with static apps, no dlls
+
+### 2015-01-24
+
+- v2.2-201501232303 released
+- use msys2
+
+### 2015-01-22
+
+- v2.1-201501221704 released
+- new version using msys
+
+## 2014
+
+### 2014-12-02
+
+- DLLs added. ASCII txt in Windows format.
+
+### 2014-12-01
+
+- v2.0 git clone command fixed in HOWTO
 
 Note: Earlier versions were stored in QEMU & OpenOCD repositories.
