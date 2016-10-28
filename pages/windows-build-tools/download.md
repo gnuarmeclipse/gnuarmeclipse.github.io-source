@@ -1,7 +1,8 @@
 ---
 layout: page
-permalink: /windows-build-tools/download/
 title: How to download the GNU ARM Eclipse Windows Build Tools?
+permalink: /windows-build-tools/download/
+
 author: Liviu Ionescu
 
 date: 2015-09-16 20:02:00 +0300
