@@ -3,7 +3,7 @@
 cd "$(dirname "$0")"
 
 export PATH="$HOME/opt/homebrew-jekyll/bin":$PATH
-jekyll build --destination ../gnuarmeclipse.github.io.git
+jekyll build --destination ../gnuarmeclipse.github.io.git --verbose
 
 echo
 echo "Done"
