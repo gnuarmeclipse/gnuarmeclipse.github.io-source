@@ -18,11 +18,6 @@ Close issues on the way. Refer to them as:
 
 - **[Issue:\[#22\]\(...\)]**.
 
-## Prepare a new blog post to announce the release
-
-- add a new file to `_posts/plugins/releases`.
-- name the post like: **GNU ARM Eclipse QEMU v2.6.0-20160728\*-dev released**. (do not close the post yet, to get the MD5 sums)
-
 ## Update the CHANGES.txt file
 
 Edit the `gnuarmeclipse/info/CHANGES.txt` file (copy the entries from the web change log).
@@ -53,6 +48,12 @@ $ git clone https://github.com/gnuarmeclipse/build-scripts.git \
 $ bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh cleanall
 $ caffeinate bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh --all
 ```
+
+## Prepare a new blog post to announce the release
+
+- add a new file to `_posts/plugins/releases`
+- name the file like `2016-07-28-qemu-v2-6-0-20160728-released.md`
+- name the post like: **GNU ARM Eclipse QEMU v2.6.0-20160728\*-dev released**.
 
 ## Update the release post with the MD5 sums
 
@@ -97,7 +98,7 @@ With SourceTree, push to the GitHub remote, the **gnuarmeclipse** and the **gnua
 - as description, copy the first paragraph from the Web release page
 - add a link to the Web page **\[Continue reading »\]\(\)**
 - get URL from web and update the above link
-- attach binaries (drag and drop from the archives folder will do it)
+- attach binaries and MD5 (drag and drop from the archives folder will do it)
 - click the **Publish Release** button
 
 Note: at this moment the system should send a notification to all clients watching this project.
@@ -105,7 +106,7 @@ Note: at this moment the system should send a notification to all clients watchi
 ## Copy binaries to the local archive folder
 
 -   go to `.../GNU ARM Eclipse/archive`
--   move the latest binaries to `releases/qemu`
+-   move the latest binaries and MD5 to `releases/qemu`
 
 ## Share on Facebook
 
@@ -113,5 +114,5 @@ Note: at this moment the system should send a notification to all clients watchi
 - DO NOT select **On your own Timeline**, but **On a Page you manage**
 - select GNU ARM Eclipse
 - posting as GNU ARM Eclipse
-- click **Share link**
+- click **Post to Facebook**
 - check the post in the [Facebook page](https://www.facebook.com/gnuarmeclipse)

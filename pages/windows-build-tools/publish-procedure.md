@@ -27,13 +27,6 @@ Edit the `gnuarmeclipse/info/CHANGES.txt` file (copy the entries from the web ch
 
 In the **gnuarmeclipse/windows-build-tools** project, commit all changes.
 
-## Prepare a new blog post to announce the release
-
-- add a new file to `_posts/windows-build-tools/releases`
-- named the file like `2016-10-28-windows-build-tools-v2.7-20161028-released.md`
-- name the post like: **GNU ARM Eclipse Windows Build Tools v2.7-201610281058 released** (do not close the post yet, to get the timestamp and the MD5 sums)
-
-
 ## Check/clone/pull build scripts
 
 Be sure the scripts in the **build-scripts.git** are up to date.
@@ -49,6 +42,12 @@ $ git clone https://github.com/gnuarmeclipse/build-scripts.git \
 $ bash ~/Downloads/build-scripts.git/scripts/build-windows-build-tools.sh cleanall
 $ caffeinate bash ~/Downloads/build-scripts.git/scripts/build-windows-build-tools.sh --all
 ```
+
+## Prepare a new blog post to announce the release
+
+- add a new file to `_posts/windows-build-tools/releases`
+- name the file like `2016-10-28-windows-build-tools-v2-7-20161028-released.md`
+- name the post like: **GNU ARM Eclipse Windows Build Tools v2.7-20161028* released**.
 
 ## Update the release post with the MD5 sums
 
@@ -84,7 +83,7 @@ With SourceTree, push to the GitHub remote, the **master** branche.
 - as description, copy the first paragraph from the Web release page
 - add a link to the Web page **\[Continue reading »\]\(\)**
 - get URL from web and update the above link
-- attach binaries (drag and drop from the archives folder will do it)
+- attach binaries and MD5 (drag and drop from the archives folder will do it)
 - click the **Publish Release** button
 
 Note: at this moment the system should send a notification to all clients watching this project.
@@ -92,7 +91,7 @@ Note: at this moment the system should send a notification to all clients watchi
 ## Copy binaries to the local archive folder
 
 -   go to `.../GNU ARM Eclipse/archive`
--   move the latest binaries to `releases/qemu`
+-   move the latest binaries and MD5 to `releases/build-tools`
 
 ## Share on Facebook
 
@@ -100,5 +99,5 @@ Note: at this moment the system should send a notification to all clients watchi
 - DO NOT select **On your own Timeline**, but **On a Page you manage**
 - select GNU ARM Eclipse
 - posting as GNU ARM Eclipse
-- click **Share link**
+- click **Post to Facebook**
 - check the post in the [Facebook page](https://www.facebook.com/gnuarmeclipse)
