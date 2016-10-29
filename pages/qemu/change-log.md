@@ -9,10 +9,28 @@ date: 2015-09-04 17:02:00 +0300
 
 ## 2016
 
+### 2016-10-29
+
+- version 2.7.0-20161029 released on GitHub
+
+### 2016-10-26
+
+- avoid `clock_gettime()` on Apple
+- fix `fix cm_cpu_generic_create()` bug
+
+### 2016-10-24
+
+- merge 2.7.0 into gnuarmeclipse-dev
+- add separate cortexm-bitband implementation
+
+### 2016-10-20
+
+- nsi file: add InstallDir
+
 ### 2016-07-28
 
 - version 2.6.0-20160728 released on GitHub
-- fix half word writes (register_post_write_callback_t)
+- fix half word writes (`register_post_write_callback_t`)
 - implement (minimally) the DHCSR register, for C_DEBUGEN
 - make BKPT interrupt the CPU while in DEBUG
 - consider BASEPRI for disabling interrupts
