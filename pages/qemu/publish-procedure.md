@@ -44,6 +44,8 @@ $ git clone https://github.com/gnuarmeclipse/build-scripts.git \
 
 ## Build
 
+Important note: Before starting the build, double check if the repository is clean (all changes were commited), otherwise the build version will be stamped with `-dirty`).
+
 ```
 $ bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh cleanall
 $ caffeinate bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh --all
