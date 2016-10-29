@@ -30,7 +30,7 @@ The GNU ARM Eclipse Build Tools v2.7 package includes the **version 4.1 of GNU m
 
 ## Changes
 
-The main functional improvement in v2.7 is a patch that allows silent setups to install in a custom location, using the `/D` command line switch.
+The main functional improvement in v2.7 is a patch that allows Windows silent setups to install in a custom location, using the `/D` command line switch.
 
 ## Known problems
 
