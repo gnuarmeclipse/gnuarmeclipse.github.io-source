@@ -17,16 +17,24 @@ So, if you are not interested in building from sources, and appreciate a better 
 
 **Warning:** OpenOCD is a very complex project, capable of working with many JTAG probes, but support for them must be explicitly included at build time, so be sure that support for your JTAG probe was included in the binaries you plan to use. The **GNU ARM Eclipse OpenOCD** includes support for most existing probes.
 
+## J-Link conversion
+
+If the only reason to run OpenOCD is to use the ST-LINK on-board programmer on STM Discovery or Nucleo boards, then, thanks to SEGGER, a better solution exists: it is possible to **upgrade the on-board programmer firmware to behave like a J-Link** lite, and then use the GNU ARM Eclipse J-Link plug-in. The conversion is reversible, you can return the board to ST-LINK at any time.
+
+Please follow the instructions on [Converting ST-LINK on-board into a J-Link](https://www.segger.com/jlink-st-link.html).
+
 ## Documentation
 
-The OpenOCD documentation is available in the [Files](https://sourceforge.net/projects/openocd/files/openocd/) section of the SourceForge project. For version 0.9.0, the manual is [openocd.pdf](http://sourceforge.net/projects/openocd/files/openocd/0.9.0/openocd.pdf/download).
+If you are using the GNU ARM Eclipse OpenOCD, the documentation is part of the installed package.
+
+Slightly older version are also available in the [Files](https://sourceforge.net/projects/openocd/files/openocd/) section of the SourceForge project. For version 0.9.0, the manual is [openocd.pdf](http://sourceforge.net/projects/openocd/files/openocd/0.9.0/openocd.pdf/download).
 
 ## Windows
 
 For user convenience, the Windows versions of **GNU ARM Eclipse OpenOCD** are packed as Windows setup wizards. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page and download the latest version named like:
 
-  * `gnuarmeclipse-openocd-win64-0.8.0-*-setup.exe`
-  * `gnuarmeclipse-openocd-win32-0.8.0-*-setup.exe`
+- `gnuarmeclipse-openocd-win64-0.10.0-*-setup.exe`
+- `gnuarmeclipse-openocd-win32-0.10.0-*-setup.exe`
 
 Select the `-win64-` file for Windows x64 machines and the `-win32-` file for Windows x32 machines.
 
@@ -40,7 +48,7 @@ It is recommended to keep the default install location:
 
 The default install location is:
 
-* `C:\Program Files\GNU ARM Eclipse\OpenOCD\*`
+- `C:\Program Files\GNU ARM Eclipse\OpenOCD\*`
 
 The result is a structure like:
 
@@ -48,13 +56,14 @@ The result is a structure like:
 
 To check if OpenOCD starts, use the following command:
 
-	C:>"C:\Program Files\GNU ARM Eclipse\OpenOCD\0.8.0-201503201840\bin\openocd" --version
-	GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.8.0-00036 (2015-03-20-18:40)
-
+```
+C:>"C:\Program Files\GNU ARM Eclipse\OpenOCD\0.8.0-201503201840\bin\openocd" --version
+GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.8.0-00036 (2015-03-20-18:40)
+```
 
 ### Drivers
 
-As usual on Windows, mastering drivers is a challenge and OpenOCD is no exceptions, so don't be surprised to encounter many incompatible drivers for various JTAG probes. The OpenOCD distribution includes some libusb drivers, and recommends to run the `zadig.exe` tool to activate them. Although this manoeuvre will make OpenOCD happy, it will most probably ruin other USB drivers you might have installed. Our strong recommendation is NOT to do this, and instead use the manufacturer drivers, when compatible with OpenOCD.
+As usual on Windows, mastering drivers is a challenge and OpenOCD is no exceptions, so don't be surprised to encounter many incompatible drivers for various JTAG probes. The OpenOCD distribution includes some libusb drivers, and recommends to run the `zadig.exe` tool to activate them. Although this manoeuvre will make OpenOCD happy, it will most probably ruin other USB drivers you might have installed. Our strong recommendation is to **NOT** do this, and instead use the manufacturer drivers, when compatible with OpenOCD.
 
 #### ST-LINK/V2
 
@@ -80,9 +89,9 @@ For some devices, for example [ARM-USB-OCD](https://www.olimex.com/Products/ARM
 
 For user convenience, the macOS version of **GNU ARM Eclipse OpenOCD** is packed as an macOS install package. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page and download the latest version named like:
 
-*  `gnuarmeclipse-openocd-osx-0.8.0-*.pkg`
+-  `gnuarmeclipse-openocd-osx-0.10.0-*.pkg`
 
-As the name implies, this is an macOS package, that can be installed on any recent 64-bits macOS (the latest version was tested on 10.9, 10.10, 10.11).
+As the name implies, this is an macOS package, that can be installed on any recent 64-bits macOS.
 
 Run the install as usual.
 
@@ -94,15 +103,17 @@ The package is installed in:
 
 To check if OpenOCD starts, use:
 
-	$ /Applications/GNU\ ARM\ Eclipse/OpenOCD/0.8.0-201501181257/bin/openocd --version
-	GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.8.0-00036 (2015-01-18-12:57)
+```
+$ /Applications/GNU\ ARM\ Eclipse/OpenOCD/0.8.0-201501181257/bin/openocd --version
+GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.8.0-00036 (2015-01-18-12:57)
+```
 
 ## GNU/Linux
 
 The GNU/Linux versions of **GNU ARM Eclipse OpenOCD** are packed as TGZ archives. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page and download the latest version named like:
 
-* `gnuarmeclipse-openocd-debian64-0.8.0-201501181055.tgz`
-* `gnuarmeclipse-openocd-debian32-0.8.0-201501181055.tgz`
+- `gnuarmeclipse-openocd-debian64-0.10.0-201501181055.tgz`
+- `gnuarmeclipse-openocd-debian32-0.10.0-201501181055.tgz`
 
 As the name implies, these are Debian `tar.gz` archives, but can be executed on most recent GNU/Linux distributions (they were tested on Debian, Ubuntu, Manjaro, SuSE and Fedora). Select the `-debian64-` file for 64-bits machines and the `-debian32-` file for 32-bits machines.
 
@@ -110,46 +121,78 @@ In case you use an older distribution and encounter difficulties to run **GNU A
 
 To install this package, unpack the archive and copy it to  `/opt/gnuarmeclipse/openocd/${version}`
 
-    sudo mkdir -p /opt/gnuarmeclipse
-    cd /opt/gnuarmeclipse
-    sudo tar xvf ~/Downloads/gnuarmeclipse-openocd-debian64-0.10.0-201510281129-dev.tgz
+```
+$ sudo mkdir -p /opt/gnuarmeclipse
+$ cd /opt/gnuarmeclipse
+$ sudo tar xvf ~/Downloads/gnuarmeclipse-openocd-debian64-0.10.0-201510281129-dev.tgz
+```
 
 Note: although perfectly possible to install it in any location, it is recommended to use this location, since by default the plug-in searches for the executable in this location.
 
 To check if OpenOCD starts and is recent, use:
 
-	$ /opt/gnuarmeclipse/openocd/0.10.0-201510281129-dev/bin/openocd --version
-  GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.10.0-dev-00141-g09aeb96-dirty (2015-10-28-11:56)
+```
+$ /opt/gnuarmeclipse/openocd/0.10.0-201510281129-dev/bin/openocd --version
+GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.10.0-dev-00141-g09aeb96-dirty (2015-10-28-11:56)
+```
 
 ### UDEV
 
-For the JTAG probes implemented as USB devices (actually most of them), the last installation step on GNU/Linux is to configure the UDEV subsystem. OpenOCD provides an UDEV rules file defining all the supported IDs; to install it, just copy the file to `/etc/udev/rules.d` and eventually notify the daemon:
+For the JTAG probes implemented as USB devices (actually most of them), the last installation step on GNU/Linux is to configure the **UDEV** subsystem. OpenOCD provides an UDEV rules file defining all the supported IDs; to install it, just copy the file to `/etc/udev/rules.d` and eventually notify the daemon:
 
-	$ sudo cp /opt/gnuarmeclipse/openocd/0.10.0-201510281129-dev/contrib/99-openocd.rules \
-	 /etc/udev/rules.d/
-	$ sudo udevadm control --reload-rules
+```
+$ sudo cp /opt/gnuarmeclipse/openocd/0.10.0-201510281129-dev/contrib/99-openocd.rules \
+  /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules
+```
 
 Note: If you previously installed the J-Link binaries, the USB IDs were already added to UDEV. The above OpenOCD rules file also defines the J-Link ID. Apparently UDEV does not complain; if you encounter problems, just comment out the definition in the OpenOCD file.
+
+### USB access rights
+
+On some GNU/Linux distributions, the UDEV definitions are not enough,
+or are not effective, and when trying to access the JTAG probe,
+an error is issued:
+
+```
+libusb_open failed: LIBUSB_ERROR_ACCESS
+```
+
+If this happens, first try to start openocd with sudo; if this works,
+for regular work you also need to grant your user permission to use the USB.
+
+For example, on Ubuntu 15.10 you need to issue something like:
+
+```
+sudo usermod -aG plugdev $USER
+```
+
+Then relogin or restart.
+
+If you still have problems, check your distribution documentation and
+when you have a functional solution post it on the project forum.
 
 ## Testing
 
 To test if OpenOCD is able to connect to a specific board, you generally need to select the interface and the processor. As a shortcut, for some well known boards, there are ready made configuration files to set both the interface and the processor. For example, on macOS, to test a connection via ST/LINK v2 to the STM32F4DISCOERY board, you can use the sample below:
 
-	$ /Applications/GNU\ ARM\ Eclipse/OpenOCD/0.8.0-201501181257/bin/openocd \
-	 -f board/stm32f4discovery.cfg
-	GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.8.0-00036-gb7535dd (2015-01-18-12:57)
-	Licensed under GNU GPL v2
-	For bug reports, read
+```
+$ /Applications/GNU\ ARM\ Eclipse/OpenOCD/0.8.0-201501181257/bin/openocd \
+  -f board/stm32f4discovery.cfg
+GNU ARM Eclipse 64-bits Open On-Chip Debugger 0.8.0-00036-gb7535dd (2015-01-18-12:57)
+Licensed under GNU GPL v2
+For bug reports, read
 
-	http://openocd.sourceforge.net/doc/doxygen/bugs.html
+http://openocd.sourceforge.net/doc/doxygen/bugs.html
 
-	srst_only separate srst_nogate 	srst_open_drain connect_deassert_srst
-	Info : This adapter doesn't support configurable speed
-	Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
-	Info : using stlink api v2
-	Info : Target voltage: 2.905638
-	Info : stm32f4x.cpu: hardware has 6 	breakpoints, 4 watchpoints
-	^C
+srst_only separate srst_nogate 	srst_open_drain connect_deassert_srst
+Info : This adapter doesn't support configurable speed
+Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
+Info : using stlink api v2
+Info : Target voltage: 2.905638
+Info : stm32f4x.cpu: hardware has 6 	breakpoints, 4 watchpoints
+^C
+```
 
 ## OpenOCD Debugging plug-ins
 
@@ -163,30 +206,12 @@ Right after installing OpenOCD, or updating to a new version, it is necessary to
 
 To set the path, first exit Eclipse, and start it again, to allow the autodetect mechanism to give it a try:
 
-* in the _Eclipse_ menu, go to **(Window →) Preferences** → **Run/Debug** → **OpenOCD**
+- in the _Eclipse_ menu, go to **(Window →) Preferences** → **Run/Debug** → **OpenOCD**
 
   ![OpenOCD preferences page]({{ site.baseurl }}/assets/images/2015/preferences-run-openocd.png)
 
-* click the **Restore Defaults** button
+- click the **Restore Defaults** button
 
 For more details please refer to the [OpenOCD plug-in]({{ site.baseurl }}/debug/qemu/#define-the-openocd-folder-location) page, where the entire procedure is explained.
 
-## Troubleshooting
 
-### USB access rights
-
-On some GNU/Linux distributions, the UDEV definitions are not enough,
-or are not effective, and when trying to access the JTAG probe,
-an error is issued:
-
-    libusb_open failed: LIBUSB_ERROR_ACCESS
-
-If this happens, first try to start openocd with sudo; if this works,
-for regular work you also need to grant your user permission to use the USB.
-
-For example, on Ubuntu 15.10 you need to issue something like:
-
-    usermod -aG plugdev $USER
-
-If you still have problems, check your distribution documentation and
-when you have a functional solution post it on the project forum.
