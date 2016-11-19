@@ -20,6 +20,8 @@ If you want to do it manually, you only need the update site details:
 * name: **GNU ARM Eclipse Plug-ins**
 * URL: `http://gnuarmeclipse.sourceforge.net/updates`
 
+It is recommended that you install the plug-ins after installing the [toolchain]({{ site.baseurl }}/toolchain/install), the [build tools]({{ site.baseurl }}/windows-build-tools/install/) (on Windows), and the [debugging binaries]({{ site.baseurl }}/debug/install/).
+
 ## Prerequisites
 
 Since these are Eclipse plug-ins, they obviously require a functional Eclipse CDT, which requires Java.
@@ -36,24 +38,35 @@ However please note that no support requests referring to Win XP 64 will be pro
 
 ### Java
 
-The recommended package is the official [Oracle **Java SE**](http://www.oracle.com/technetwork/java/javase/index.html). The **OpenJDK Java** used in Ubuntu is also fine. The minimum is JDK 1.7, or even JRE 1.7 (the Java Runtime Environment), but, as said before, better use the latest JDK. On macOS the last Apple Java implementation is 1.6, so it is required to use the Oracle 1.7 or later.
+The recommended package is the latest version from the official [Oracle **Java SE** page](http://www.oracle.com/technetwork/java/javase/index.html). The **OpenJDK Java** used in Ubuntu is also fine. The minimum is JDK 1.7, or even JRE 1.7 (the Java Runtime Environment), but, as said before, better use the latest JDK (currently 1.8). On macOS the last Apple Java implementation is 1.6, so it is required to use the Oracle version.
 
 For example, on Ubuntu 14.04 LTS, you can install the OpenJDK run-time and test if it was properly installed with the following commands:
 
-    $ sudo apt-get -y install default-jdk
-    $ java -version
-    java version "1.7.0_85"
-    OpenJDK Runtime Environment (IcedTea 2.6.1) (7u85-2.6.1-5ubuntu0.14.04.1)
-    OpenJDK 64-bits Server VM (build 24.85-b03, mixed mode)
-
+```
+$ sudo apt-get -y install default-jdk
+$ java -version
+java version "1.7.0_85"
+OpenJDK Runtime Environment (IcedTea 2.6.1) (7u85-2.6.1-5ubuntu0.14.04.1)
+OpenJDK 64-bits Server VM (build 24.85-b03, mixed mode)
+```
 
 ### Eclipse & CDT
 
-The oldest Eclipse supported by the plug-ins is Eclipse 4.4 Luna SR2 (CDT 8.6), and the recommended version is 4.5 Mars. Do not try to install them on Kepler, Juno, Indigo, or older versions, since the install will fail.
+The oldest Eclipse supported by the plug-ins is Eclipse 4.4 Luna SR2 (CDT 8.6), and the recommended version is **4.5 Mars SR2**. Do not try to install them on Kepler, Juno, Indigo, or older versions, since the install will fail.
 
-Go to the [Eclipse download site](http://www.eclipse.org/downloads/) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bits version.
+The plug-ins are also functional on Neon, but on macOS there is a bug in the Eclipse rendering code, and some fonts are not aligned properly; this is completely unrelated to GNU ARM Eclipse plug-ins.
 
-Eclipse does not need an installer, Eclipse is distributed as a plain archive. To install Eclipse, simply unpack the archive at a place of your choice and start using it.
+Go to the [Eclipse packages](http://www.eclipse.org/downloads/eclipse-packages) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bits version.
+
+Links to older versions are available in the **More Downloads** section, at the bottom.
+
+![Eclipse packages]({{ site.baseurl }}/assets/images/2016/eclipse-packages.png)
+
+In case you reached the main Eclipse downloads page, avoid the recommended download and follow the link to the Eclipse packages.
+
+![Eclipse packages]({{ site.baseurl }}/assets/images/2016/eclipse-downloads.png)
+
+Traditionally Eclipse does not need an installer, Eclipse is distributed as a plain archive. To install Eclipse, simply unpack the archive at a place of your choice and start using it.
 
 > Note 1: on GNU/Linux be sure you manually install the Eclipse; **DO NOT** try to install it via the Synaptics package manager, or similar, since usually you get an older version and the CDT plug-ins are not included.
 
@@ -61,18 +74,18 @@ Eclipse does not need an installer, Eclipse is distributed as a plain archive. T
 
 ### CDT
 
-The minimum CDT version is 8.6. Do not try to use earlier versions, since either the install will fail, or it will not run properly.
+The minimum CDT version is 8.6. Do not try to use earlier versions, since either the install will fail (with something like `... requires 'bundle org.eclipse.cdt 8.6.0' but it could not be found`), or it will not run properly.
 
 As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C++ Developers** for the cross ARM development projects. Even if you did so, but especially if you did not do so, it is a good idea to check if you really have the latest version available. For this, enter the _Eclipse_ menu and go to **Help** → **Install New Software**
 
-![Install new software]({{ site.baseurl }}/assets/images/2013/10/InstallNewSoftware.png)
+![Install new software]({{ site.baseurl }}/assets/images/2016/install-new-software.png)
 
-* select *Work with:* **Kepler** (or more recent)
+* select *Work with:* **Luna** (or more recent)
 * if the *Group items by category *is enabled, expand the **Programming Languages** group
 * select the **C/C++ Development Tools** feature
 * click the **Next** button and follow the usual installation procedure
 
-![CDT install]({{ site.baseurl }}/assets/images/2013/10/InstallCDT.png)
+![CDT install]({{ site.baseurl }}/assets/images/2016/install-cdt.png)
 
 ### Compatibility issues
 
@@ -149,7 +162,23 @@ Note: Attempts to install the GNU ARM Eclipse plug-ins off-line without having 
 
 On-line install do not have this problem since the Eclipse automatically downloads the C/C++ GDB Hardware Debugging plug-in from the CDT update site.
 
+## Check/set the global tools paths
+
+If you already installed the toolchain (and, on Windows, the build tools) in the default locations, as suggested in the above steps, the plug-ins might have automatically discovered them.
+
+![Global Tools Path]({{ site.baseurl }}/assets/images/2015/win-preferences-c-build-global-tools-path.png)
+
+The above definition will make the toolchain and build tools accessible to all projects in all workspaces.
+
+If needed, you can define different paths per workspace (**Workspace Tools Paths**) or even per project (**Tools Paths** in the project properties).
+
+To check if the paths definitions are effective, go to the project properties page and identify the **PATH** variable. Be sure the **Origin** column reads **BUILD SYSTEM**; if you manually edit it, the Origin will change and will read USER, but this is totally not recommended, since manually editing the path disables further automated updates of the path.
+
+![Environment PATH]({{ site.baseurl }}/assets/images/2015/win-properties-c-environment.png)
+
 ## Troubleshooting
+
+### SourceForge problems
 
 There are cases when the on-line access to the SourceForge mirror servers might not be reliable. In these cases the Eclipse update system may fail. For example:
 
@@ -166,6 +195,23 @@ For this go to _Eclipse_ menu → **(Window →) Preferences** → **Install/Up
 
 If this still fails, the alternative method is to manually download the latest version archive and to perform the install from it, as presented below.
 
+### Incomplete Eclipse
+
+If Eclipse complains that some required items could not be found, most probably you are trying to install the plug-ins on an older Eclipse, or on another Eclipse package than the recommended **Eclipse IDE for C/C++ Developers**.
+
+```
+Cannot complete the install because one or more required items could not be found.
+  Software being installed: GNU ARM C/C++ J-Link Debugging 4.1.1.201606210758 (ilg.gnuarmeclipse.debug.gdbjtag.jlink.feature.group 4.1.1.201606210758)
+  Missing requirement: GNU ARM C/C++ Core 3.1.1.201606210758 (ilg.gnuarmeclipse.core 3.1.1.201606210758) requires 'bundle org.eclipse.cdt 8.6.0' but it could not be found
+  Cannot satisfy dependency:
+    From: GNU ARM C/C++ J-Link Debugging 4.1.1.201606210758 (ilg.gnuarmeclipse.debug.gdbjtag.jlink 4.1.1.201606210758)
+    To: bundle ilg.gnuarmeclipse.core 0.0.0
+  Cannot satisfy dependency:
+    From: GNU ARM C/C++ J-Link Debugging 4.1.1.201606210758 (ilg.gnuarmeclipse.debug.gdbjtag.jlink.feature.group 4.1.1.201606210758)
+    To: ilg.gnuarmeclipse.debug.gdbjtag.jlink [4.1.1.201606210758]
+```
+
+Reinstall the correct Eclipse package, or add CDT to the existing Eclipse (**Programming Languages** → **C/C++ Development Tools**).
 
 ## Plug-ins versions
 
@@ -203,11 +249,13 @@ By completing the above steps, the Eclipse environment is ready, and you can sta
 
 It is also highly recommended to install the Packs plug-in, to switch to the Packs perspective and using the [Packs manager][5] to install the packages related to the devices in use. Even if Packs support is not complete yet, you still can benefit from the existing CMSIS Packs, for example by using the [peripherals registers view][6] in debug, the documentation view in the C/C++ perspective, etc.
 
+## Test project
+
 Follow the above steps and when everything is ready, proceed to [create and build a test project][7].
 
 ## Support
 
-If you encountered any problems when installing the plug-ins, pleas refer to the [Support][8] page and **do not** post comments to the blog pages containing support requests.
+If you encountered any problems when installing the plug-ins, pleas refer to the [Support][8] page and **do not** send private email.
 
  [1]: {{ site.baseurl }}/eclipse/workspace/preferences/ "Workspace preferences"
  [2]: {{ site.baseurl }}/toolchain/install/ "Toolchain install"

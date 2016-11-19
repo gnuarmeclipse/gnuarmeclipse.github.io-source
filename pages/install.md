@@ -58,6 +58,8 @@ More details are available in the [How to install the GNU ARM Eclipse plug-ins](
 
 Eclipse is the development platform where the GNU ARM Eclipse plug-ins run. Generally it is not available by default on most platforms and requires separate installation.
 
+Be sure you install the **Eclipse IDE for C/C++ Developers**, not other package, since otherwise you'll have to manually install CDT.
+
 More details are available in the [How to install the GNU ARM Eclipse plug-ins]({{ site.baseurl }}/plugins/install/) page.
 
 > Note: on GNU/Linux be sure you manually install the Eclipse; **DO NOT** try to install it via the Synaptics package manager, or similar, since usually you get an older version and the CDT plug-ins are not included.

@@ -14,14 +14,14 @@
 #### [Install]({{ site.baseurl }}/install/)
 
 * [Overview]({{ site.baseurl }}/install/)
-* [Eclipse plug-ins install]({{ site.baseurl }}/plugins/install/)
 * [Toolchain(s) install]({{ site.baseurl }}/toolchain/install/)
 * [Windows build tools (make & rm) install]({{ site.baseurl }}/windows-build-tools/install/)
-* [Debugging components]({{ site.baseurl }}/debug/install/)
+* [Debugging binaries]({{ site.baseurl }}/debug/install/)
   * [Overview]({{ site.baseurl }}/debug/install/)
   * [SEGGER J-Link install]({{ site.baseurl }}/debug/jlink/install/)
   * [OpenOCD install]({{ site.baseurl }}/openocd/install/)
   * [QEMU install]({{ site.baseurl }}/qemu/install/)
+* [Eclipse plug-ins install]({{ site.baseurl }}/plugins/install/)
 
 #### Important
 

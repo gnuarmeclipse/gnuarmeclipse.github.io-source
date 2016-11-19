@@ -51,20 +51,6 @@ Check if the tool is functional; go to the folder where you installed the tools
 	This is free software: you are free to change and redistribute it.
 	There is NO WARRANTY, to the extent permitted by law.
 
-## Check the global tools path
-
-If you installed the build tools as explained above, the setup already added a key to the Windows Registry and the plug-in can read it and automatically configure the PATH.
-
-![Global Tools Path]({{ site.baseurl }}/assets/images/2015/win-preferences-c-build-global-tools-path.png)
-
-The above definition will make the build tools accessible to all projects in all workspaces.
-
-If needed, you can define different paths per workspace (**Workspace Tools Paths**) or even per project (**Tools Paths** in the project properties).
-
-To check if the paths definitions are effective, go to the project properties page and identify the **PATH** variable. Be sure the **Origin** column reads **BUILD SYSTEM**; if you manually edit it, the Origin will change and will read USER, but this is totally not recommended, since manually editing the path disables further automated updates of the path.
-
-![Environment PATH]({{ site.baseurl }}/assets/images/2015/win-properties-c-environment.png)
-
 ## DO NOT update the user or system path!
 
 As recommended when installing the toolchain, it is recommended to keep this settings outside the user or system path. Microsoft did not provide these programs in their distribution, and it is better to keep it that way, when you need them just explicitly update the build path to use them.
