@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The 2015 Windows Build Tools Change Log
+title: The 2016 Windows Build Tools Change Log
 permalink: /windows-build-tools/change-log/
 
 author: Liviu Ionescu
@@ -9,20 +9,28 @@ date: 2015-09-04 17:02:00 +0300
 
 ---
 
-## 2015
+## 2016
 
-### 2015-10-28
+### 2016-11-22
+
+- v2.8-20161122* released
+- add mkdir.exe, as a copy of busybox.exe
+- use busybox rmyorston commit 9fa1e4990e655a85025c9d270a1606983e375e47
+
+### 2016-10-28
 
 - v2.7-20161028* released
 
-### 2015-10-20
+### 2016-10-20
 
 - **[Issue:[#2](https://github.com/gnuarmeclipse/windows-build-tools/issues/2)]** nsi file: add InstallDir; silent install should honour /D
 - update url to github.io
 
-### 2015-10-17
+### 2016-10-17
 
 - pre v2.7
+
+## 2015
 
 ### 2015-07-17
 
