@@ -9,6 +9,8 @@ date: 2015-09-04 17:02:00 +0300
 
 ---
 
+Entries in this file are in reverse chronological order.
+
 ## 2016
 
 ### 2016-11-22
