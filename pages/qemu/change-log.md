@@ -7,7 +7,78 @@ date: 2015-09-04 17:02:00 +0300
 
 ---
 
+Entries in this file are in reverse chronological order.
+
 ## 2016
+
+### 2016-11-28
+
+- exti: acknowledge interrupts
+- remove `armv7m_nvic.o` from the build
+- refer to `cortexm_nvic_*` in `helper.c`
+
+### 2016-11-26
+
+- rename `LOG_FUNC`, `LOG_MR`
+- gnuarmeclipse/docs: explain irq usage
+- rename peripheral `_add_properties_and_children`
+- change doxygen comments to normal C comments
+- peripheral: add `default_access_flags`
+- use it in all peripherals
+- graphic: move int i to begin
+
+### 2016-11-24
+
+- add support for buttons
+- stm32: add EXTI, SYSCFG
+- refurbish support for interrupts, add helpers
+- peripheral-register: add pre-write
+- peripheral: add alias property 'name'
+- stm32/capabilities: add IRQn defs
+- add `DEVICE_PATH_xxx`
+
+
+### 2016-11-18
+
+- user button triggers GPIO IDR changes
+- cortexm: move src vendor specific to folders
+- cortexm: move include stm32 to separate folder
+- cortexm/stm32/boards-discovery.c renamed
+
+### 2016-11-17
+
+- button-reset: actions functional
+- vl.c add `qemu_reset_halt_request()`
+- vl.c add `qemu_resume_request()`
+- cortexm: more detailed tracing in peripheral & reg
+- cortexm/graphic.c: more detailed tracing
+
+### 2016-11-16
+
+- cortexm/helper: add int properties
+- cortexm: add graphic buttons, reset & user; not linked to actions (yet)
+- rename `cortexm_graphic_enqueue_event()`
+
+### 2016-11-10
+
+- graphic: move start at initial place; use poll even on posix
+- arm-semi.c: conditional pragma clang
+- cortexm/headers: remove redundant `cortexm-` prefix
+- cortexm: rename `.c` without the `cortexm-` prefix
+- move gpio-led.h to cortexm
+- gpio-led.c: move to cortexm folder
+- cortexm headers: use `<...>` instead `"..."`
+
+### 2016-11-09
+
+- graphic: thread safe event loop
+- cortexm: remove `cm_object_get_machine()`,  replace with `cortexm_board_get()`
+- qemu-thread-posix: `PTHREAD_MUTEX_ERRORCHECK`
+- monitor.c: remove extra NL in `"Execute 'mon %s'.\n"` message
+
+### 2016-11-02
+
+- add support for both SDL1 and SDL2, configurable
 
 ### 2016-10-29
 
@@ -45,17 +116,18 @@ date: 2015-09-04 17:02:00 +0300
 
 - swap the LEDs on the OLIMEX STM32-P107 board
 
+## 2015
+
 ### 2015-10-29
 
 - version 2.4.50-20151029, released on GitHub
 - fix rendering on OS X 10.11 (SDL)
 
-[2015-08-16]
+### 2015-08-16
 
 - version 2.3.50-20150816*-dev released
 - add build for Win64
 
-## 2015
 
 ### 2015-08-04
 

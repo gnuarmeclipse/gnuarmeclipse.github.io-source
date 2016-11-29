@@ -24,7 +24,7 @@ Edit the `gnuarmeclipse/info/CHANGES.txt` file (copy the entries from the web ch
 
 ## Commit to the project git
 
-In the **gnuarmeclipse/qemu** project, commit all changes.
+In the **gnuarmeclipse/qemu** project, commit all changes; use something like _prepare v2.7.0-20161128* release_ as message.
 
 ## Merge stable release
 
@@ -47,8 +47,9 @@ $ git clone https://github.com/gnuarmeclipse/build-scripts.git \
 Important note: Before starting the build, double check if the repository is clean (all changes were commited), otherwise the build version will be stamped with `-dirty`).
 
 ```
+$ caffeinate bash
 $ bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh cleanall
-$ caffeinate bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh --all
+$ bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh --all
 ```
 
 ## Prepare a new blog post to announce the release
