@@ -54,7 +54,10 @@ OpenJDK 64-bits Server VM (build 24.85-b03, mixed mode)
 
 The oldest Eclipse supported by the plug-ins is Eclipse 4.4 Luna SR2 (CDT 8.6), and the recommended version is **4.5 Mars SR2**. Do not try to install them on Kepler, Juno, Indigo, or older versions, since the install will fail.
 
-The plug-ins are also functional on Neon, but on macOS there is a bug in the Eclipse rendering code, and some fonts are not aligned properly; this is completely unrelated to GNU ARM Eclipse plug-ins.
+**Neon** currently has several problems and is not-recommended:
+- on macOS there is a bug in the Eclipse rendering code, and some fonts are not aligned properly; this is completely unrelated to GNU ARM Eclipse plug-ins;
+- on Windows, the OpenOCD debugging hangs while starting
+- on all platforms, the debugging consoles do not show.
 
 Go to the [Eclipse packages](http://www.eclipse.org/downloads/eclipse-packages) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bits version.
 
