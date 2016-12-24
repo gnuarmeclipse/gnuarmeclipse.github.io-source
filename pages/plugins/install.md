@@ -13,7 +13,7 @@ date: 2015-09-11 22:06:00 +0300
 
 If you know what this is all about, drag-and-drop the **Install** button available below to your running Eclipse workspace and follow the **Eclipse Marketplace** install/update steps.
 
-<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace to install GNU ARM Eclipse"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install GNU ARM Eclipse" /></a>
+<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace."><img class="img-responsive" src="https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png" alt="Drag to your running Eclipse workspace." /></a>
 
 If you want to do it manually, you only need the update site details:
 
@@ -106,7 +106,7 @@ The following samples are from a slightly older Eclipse 4.3 Kepler on macOS. Oth
 
 The easiest way to install/update the plug-ins is to drag-and-drop the **Install** button below to your running Eclipse workspace (If you are still in the **Welcome screen**, click the **Workspace** link to switch to the workspace, the drag-and-drop does not work in the Welcome screen).
 
-<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace to install GNU ARM Eclipse"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install GNU ARM Eclipse" /></a>
+<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2593184" class="drag" title="Drag to your running Eclipse workspace."><img class="img-responsive" src="https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png" alt="Drag to your running Eclipse workspace." /></a>
 
 This should make Eclipse automatically contact the Marketplace and present a window with all GNU ARM Eclipse features:
 
