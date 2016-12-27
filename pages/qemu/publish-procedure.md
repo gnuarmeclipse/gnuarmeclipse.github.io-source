@@ -54,7 +54,7 @@ $ bash ~/Downloads/build-scripts.git/scripts/build-qemu.sh --all
 
 ## Prepare a new blog post to announce the release
 
-- add a new file to `_posts/plugins/releases`
+- add a new file to `_posts/qemu/releases`
 - name the file like `2016-07-28-qemu-v2-6-0-20160728-released.md`
 - name the post like: **GNU ARM Eclipse QEMU v2.6.0-20160728\*-dev released**.
 

@@ -11,6 +11,82 @@ Entries in this file are in reverse chronological order.
 
 ## 2016
 
+### 2016-12-27
+
+- vl.c: fix semihosting parsing of other opts
+
+### 2016-12-26
+
+- STM32-P407 with functional buttons
+- OLIMEXINO-STM32 with functional buttons
+- STM32-P107 with functional buttons
+- Netduino plus 2, Netduino Go & Maple with functional buttons
+- merge master 2.8.0
+
+### 2016-12-25
+
+- NUCLEO-F411RE with functional buttons
+- STM32-P103 with functional buttons
+
+### 2016-12-24
+
+- stm32/gpio: fix exti check
+- NUCLEO-F103RB with functional buttons 
+- stm32: afio & syscfg with enable bit
+
+### 2016-12-23
+
+- cortexm: rework led & button messages
+- add Eclipse-formatter.xml
+
+### 2016-12-22
+
+- stm32f429i-discovery with functional buttons 
+- cortexm/gpio-led: validate irq_name
+
+### 2016-12-18
+
+- stm32: rearrange the `realize()` logic
+- add `peripheral_create_memory_region()`
+- add `peripheral_prepare_registers()`
+
+### 2016-12-17
+
+- svd: generate separate files for peripherals
+- qemu.nsi: add devices folder to setup
+- stm32/flash (& timer) avoid c keywords
+
+### 2016-12-15
+
+- stm32/afio added; F1 gpio uses it
+- stm32 & cortexm reset all children devices
+- add scripts to process SVD files
+- STM32-H103 with functional buttons 
+
+### 2016-12-13
+
+- cortexm/stm32: use union to group families
+
+### 2016-12-12
+
+- stm32/gpio redefined with SVD values only
+
+### 2016-12-10
+
+- parent `realize()` on all objects
+- add SVD support for F40x
+- F051R8 redefined using SVD
+- F103RB redefined with SVD
+
+### 2016-12-03
+
+- rename images -> graphics
+- add preliminary json support
+
+### 2016-12-01
+
+- add STM32F0-Discovery, with buttons and leds
+
 ### 2016-11-28
 
 - exti: acknowledge interrupts
