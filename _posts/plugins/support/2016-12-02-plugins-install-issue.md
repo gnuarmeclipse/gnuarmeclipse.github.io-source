@@ -24,7 +24,7 @@ For historical reasons, the GNU ARM Eclipse update sites for installing new soft
 
 ## Problem
 
-Recently SourceForge did a change in the security settings used by their download servers and mirrors. For most of the users this was transparent, but for some, the result when trying to install new software, was the following:
+In Nov. 2016 SourceForge did a change in the security settings used by their download servers and mirrors. For most of the users this was transparent, but for some, the result when trying to install new software, was the following:
 
 ```
 An error occurred while collecting items to be installed
