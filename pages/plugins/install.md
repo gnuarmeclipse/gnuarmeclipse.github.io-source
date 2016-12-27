@@ -50,6 +50,8 @@ OpenJDK Runtime Environment (IcedTea 2.6.1) (7u85-2.6.1-5ubuntu0.14.04.1)
 OpenJDK 64-bits Server VM (build 24.85-b03, mixed mode)
 ```
 
+If you are behind a firewall, older Java virtual machines [fail to connect to SourceForge]({{ site.baseurl }}/blog/2016/12/02/plugins-install-issue/). Update your Java JDK to **8u101 or later** and retry to install the plug-ins.
+
 ### Eclipse & CDT
 
 The oldest Eclipse supported by the plug-ins is Eclipse 4.4 Luna SR2 (CDT 8.6), and the recommended version is **4.5 Mars SR2**. Do not try to install them on Kepler, Juno, Indigo, or older versions, since the install will fail.
@@ -180,6 +182,10 @@ To check if the paths definitions are effective, go to the project properties pa
 ![Environment PATH]({{ site.baseurl }}/assets/images/2015/win-properties-c-environment.png)
 
 ## Troubleshooting
+
+### Java security problems
+
+If you are behind a firewall, older Java virtual machines [fail to connect to SourceForge]({{ site.baseurl }}/blog/2016/12/02/plugins-install-issue/). Install the latest JDK and retry to install the plug-ins.
 
 ### SourceForge problems
 
