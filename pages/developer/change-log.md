@@ -10,7 +10,88 @@ date: 2016-02-09 12:48:00 +0300
 
 Entries in this file are in reverse chronological order.
 
+## 2017
+
+### 2017-01-14
+
+* version 3.2.1-201701141320 released
+  * features/ilg.gnuarmeclipse.codered_1.1.1.201701141320.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.2.201701141320.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.2.201701141320.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.1.201701141320.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.2.201701141320.jar
+  * features/ilg.gnuarmeclipse.doc.user_1.1.1.201701141320.jar
+  * features/ilg.gnuarmeclipse.managedbuild.cross_2.2.1.201701141320.jar
+  * features/ilg.gnuarmeclipse.packs_2.2.2.201701141320.jar
+  * features/ilg.gnuarmeclipse.templates.ad_1.1.3.201701141320.jar
+  * features/ilg.gnuarmeclipse.templates.cortexm_1.3.1.201701141320.jar
+  * features/ilg.gnuarmeclipse.templates.freescale_2.2.7.201701141320.jar
+  * features/ilg.gnuarmeclipse.templates.stm_2.6.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.codered_1.1.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.core_3.2.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.debug.core_1.2.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.2.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.2.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.2.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.restart_1.3.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag_3.1.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.debug.packs_1.1.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.doc.user_1.1.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.managedbuild.cross_2.2.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.managedbuild.packs_1.3.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.packs.core_1.1.3.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.packs.data_1.2.3.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.packs.ui_1.2.2.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.packs_1.2.3.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.templates.ad_1.1.3.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.templates.core_2.5.5.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.templates.cortexm_1.3.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.templates.freescale.pe_1.2.1.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.templates.freescale_2.2.7.201701141320.jar
+  * plugins/ilg.gnuarmeclipse.templates.stm_2.6.1.201701141320.jar
+* mbs.cross: `-include` headers used by scanner (#164)
+* mbs.cross: update `-march` & `-mtune`
+  * arch: armv8-m.base, armv8-m.main, armv8-m.main+dsp
+  * tune: cortex-a72, cortex-r8, exynos-m1, xgene1
+* mbs.cross: rename Cross ARM GNU C/C++ Compiler/Linker
+* mbs.cross: support cpp abi version 7,8,9
+* mbs.cross: support dwarf-5
+* mbs.cross: support up to c++1z
+
+### 2017-01-11
+
+* debug consoles: remove PROCESS\_TYPE\_CREATION\_ATTR; functional on Neon.2 
+
+### 2017-01-09
+
+* Merge pull request #109 from sukidog/fix_issue108
+* Merge pull request #128 from johnmoule/issue125
+
 ## 2016
+
+### 2016-11-03
+
+* packs: get PDSCs from folders, not from cache (#145)
+
+### 2016-09-04
+
+* packs.ui: fix update packs with errors; 
+  * do not return, log and ignore
+  * show line & column number for parser error
+* packs.ui: version 1.2.2
+
+### 2016-08-18
+
+* stm32f0: update from STM32F0xx\_StdPeriph\_Lib\_V1.5.0.zip
+* stm32f0: add 030xC, 070x6, 070xB, 091
+* stm32f4 & stm32f4-hal: update to cube 1.12.0
+* stm32f4: add 412Cx, 412Rx, 412Vx, 412Zx
+* fix Discovery LED names PD12-PD15
+* stm32f7 & stm32f7-hal: update to Cube V1.4.0
+* stm32f7: add 765x, 767xx, 769xx, 777xx, 779xx
+* jlink,openocd,qemu: validate fields only if start server
+* core v3.2.1, stm 2.6.1, template 2.5.5, jlink 4.1.2, openocd 4.1.2, qemu 3.1.2
 
 ### 2016-06-21
 
