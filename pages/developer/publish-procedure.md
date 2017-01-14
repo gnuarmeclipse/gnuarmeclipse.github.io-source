@@ -108,6 +108,10 @@ A typical session looks like:
 
 Test if the new build can be used as an update site, by installing from updates-test on a separate Eclipse (not the one used for development).
 
+## Create a new milestone
+
+Name it with the current version, like _v3.2.1_.
+
 ## Update the Change log
 
 Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/developer/change-log/) (pages/developer/change-log.md), grouped by days.
@@ -141,13 +145,13 @@ An example would be the [2.9.1](https://github.com/gnuarmeclipse/plug-ins/wiki/R
 
 Scan the [GitHub Issues](https://github.com/gnuarmeclipse/plug-ins/issues) and the [SourceForge trackers](https://sourceforge.net/p/gnuarmeclipse/_list/tickets) and add references to all tracked issues.
 
-Close issues on the way. Refer to them as **[Issue:#22]**. For SourceForge, refer to them as **[bugs:#98]**, **[feature-requests:#60]**, **[support-requests:#81]**.
+Mark all these issues as part of the current version milestone. Refer to them as **[Issue:#22]**. For SourceForge, refer to them as **[bugs:#98]**, **[feature-requests:#60]**, **[support-requests:#81]**.
 
 ## Update the Web
 
 * Jekyll build the **gnuarmeclipse.github.io-source** project
-* Git Push & Sync the **gnuarmeclipse.github.io-source** project
-* Git Push & Sync the **gnuarmeclipse.github.io** project
+* Git Push & Sync the **gnuarmeclipse.github.io-source** project; use something like `v3.2.1-201701141320 released` as message
+* Git Push & Sync the **gnuarmeclipse.github.io** project; use something like `v3.2.1-201701141320 released` as message
 
 ## Publish on the main SourceForge updates site
 
@@ -207,6 +211,17 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 * in SourceTree, switch to the **develop** branch
 * push the **develop** branch to GitHub
 
+## Merge develop into master
+
+* in SourceTree, switch to the **master** branch
+* merge the **develop** branch into **master**
+* switch to **develop**
+* push both branches to GitHub.
+
+## Close issues
+
+For all issues marked with the current version, close them with a message like _fixed in v3.2.1-201701141320_.
+
 ## Create a new GitHub release
 
 * be sure the **develop** branch is up to date and set as default
@@ -250,9 +265,3 @@ Note: at this moment the system should send a notification to all clients watchi
 * click **Edit**
 * update version number, minimum Eclipse versions.
 
-## Merge develop into master
-
-* in SourceTree, switch to the **master** branch
-* merge the **develop** branch into **master**
-* switch to **develop**
-* push both branches to GitHub.
