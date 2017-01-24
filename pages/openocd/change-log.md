@@ -9,6 +9,13 @@ date: 2015-09-04 17:02:00 +0300
 
 Entries in this file are in reverse chronological order.
 
+## 2017
+
+### 2017-01-24
+
+- v0.10.0-20170124* released (stable)
+- merge original 0.10.0, override local relative path processing
+
 ## 2016
 
 ### 2016-10-28
