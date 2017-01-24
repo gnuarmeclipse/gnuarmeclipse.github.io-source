@@ -84,7 +84,7 @@ How to build the plug-ins from sources and publish them.
 * [EmbDev](https://embdev.net/user/login) - New Topic to [Forum: ARM programming with GCC/GNU tools](https://embdev.net/forum/arm-gcc); no pictures; underline headers (no BBCs)
 * [EEVblog](http://www.eevblog.com/forum/login/) - [Microcontrollers & FPGAs](http://www.eevblog.com/forum/microcontrollers/); New topic, BBC codes (bold titles, image links to web article), Notify
 * [Arduino](http://stm32duino.com/viewforum.php?f=41) - New Topic, copy/paste content from EEVblog; disable signature, enable notifications
-* [STM32 Software Tools and Firmware forum](https://my.st.com/public/STe2ecommunities/mcu/Lists/STM32Java/AllItems.aspx) - Sign in to forum, New Discussion, copy/paste HTML from Arduino (a real mess)
+* [STM32 MCUs Community](https://community.st.com/community/stm32-community) - Sign in to forum, New Discussion, copy/paste HTML from Arduino (a real mess)
 
 BBC codes:
 - `[img width=30]http:⁄⁄wiki.simplemachines.org/smf/images/1/19/Button_media.png[/img]`
