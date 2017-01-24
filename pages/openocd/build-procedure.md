@@ -119,6 +119,28 @@ ilegeul/debian      8-gnuarm-gcc-x11-v3   a461714e9b42        11 months ago     
 ilegeul/debian      8-gnuarm-mingw        1c04c24123c1        15 months ago       2.486 GB
 ```
 
+## Select the stable or the development branch
+
+The repository has two branches; by default the development branch is used.
+
+To select the stable branch, use:
+
+```
+$ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh checkout-stable
+```
+
+To later switch back to the development branch, use:
+
+```
+$ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh checkout-dev
+```
+
+To pull new commits from the repository, use:
+
+```
+$ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh pull
+```
+
 ## Build all distribution files
 
 ```
@@ -160,10 +182,16 @@ Instead of `--all`, you can use any combination of:
 
 ### clean
 
-To remove all build files, use:
+To remove most build files, use:
 
 ```
 $ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh clean
+```
+
+To also remove the repository and the output files, use:
+
+```
+$ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh cleanall
 ```
 
 ## Install hierarchy

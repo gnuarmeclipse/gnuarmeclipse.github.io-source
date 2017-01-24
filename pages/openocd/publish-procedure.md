@@ -13,7 +13,8 @@ The OpenOCD binaries are published on GitHub  [Releases](https://github.com/gnua
 
 ## Update the Change log
 
-Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/openocd/change-log/) (`pages/openocd/change-log.md`), grouped by days.
+In the project git, scan the log.
+In the documentation git, add new entries to the [Change log]({{ site.baseurl }}/openocd/change-log/) (`pages/openocd/change-log.md`), grouped by days.
 
 Close issues on the way. Refer to them as:
 
@@ -21,7 +22,7 @@ Close issues on the way. Refer to them as:
 
 ## Update the CHANGES.txt file
 
-Edit the `gnuarmeclipse/info/CHANGES.txt` file (copy the entries from the web change log).
+In the project git, edit the `gnuarmeclipse/info/CHANGES.txt` file (copy the entries from the web change log).
 
 ## Commit to the project git
 
@@ -29,10 +30,14 @@ In the **gnuarmeclipse/openocd** project, commit all changes.
 
 ## Merge stable release
 
-For stable releases, with SourceTree
+For **stable releases**, with SourceTree
 
 - change to the **gnuarmeclipse** branch
 - merge **gnuarmeclipse-dev**.
+
+## Push the project git
+
+With SourceTree, push to the GitHub remote, the **gnuarmeclipse** and the **gnuarmeclipse-dev** branches.
 
 ## Check/clone/pull build scripts
 
@@ -49,10 +54,13 @@ Important note: Before starting the build, double check if the repository is cle
 
 ```
 $ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh cleanall
+$ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh checkout-stable
 $ caffeinate bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh --all
 ```
 
 ## Prepare a new blog post to announce the release
+
+In the documentation git:
 
 - add a new file to `_posts/openocd/releases`
 - name the file like `2016-01-11-openocd-v0-10-0-20160110-dev-released.md`
@@ -86,9 +94,6 @@ gnuarmeclipse-openocd-win64-0.10.0-201601101000-dev-setup.exe
 - commit the **gnuarmeclipse.github.io.git** project; use a message like **OpenOCD v0.10.0-20160110*-dev released**
 - push the **gnuarmeclipse.github.io.git** project
 
-## Push the project git
-
-With SourceTree, push to the GitHub remote, the **gnuarmeclipse** and the **gnuarmeclipse-dev** branches.
 
 ## Create the release
 
