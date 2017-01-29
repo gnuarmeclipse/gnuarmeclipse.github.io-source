@@ -101,7 +101,7 @@ gnuarmeclipse-openocd-win64-0.10.0-201601101000-dev-setup.exe
 - go to the [GitHub Releases](https://github.com/gnuarmeclipse/openocd/releases) page
 - click **Draft a new release**
 - name the tag like **gae-0.10.0-20160110**
-- select the **master** branch
+- select the**gnuarmeclipse** or **gnuarmeclipse-dev** branch
 - name the release like **GNU ARM Eclipse OpenOCD v0.10.0-201601101000-dev**
 - as description, copy the first paragraph from the Web release page
 - add a link to the Web page **\[Continue reading »\]\(\)**

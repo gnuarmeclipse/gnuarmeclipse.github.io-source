@@ -22,6 +22,10 @@ If you want to do it manually, you only need the update site details:
 
 It is recommended that you install the plug-ins after installing the [toolchain]({{ site.baseurl }}/toolchain/install), the [build tools]({{ site.baseurl }}/windows-build-tools/install/) (on Windows), and the [debugging binaries]({{ site.baseurl }}/debug/install/).
 
+> Important notes:
+> - if you use the Oracle JDK, starting with mid January, attempts to install from SourceForge [fail with handshake_error]({{ site.baseurl }}/blog/2017/01/29/plugins-install-issue/);
+> - if you are behind a firewall, older Java virtual machines [fail to connect to SourceForge]({{ site.baseurl }}/blog/2016/12/02/plugins-install-issue/).
+
 ## Prerequisites
 
 Since these are Eclipse plug-ins, they obviously require a functional Eclipse CDT, which requires Java.
@@ -185,7 +189,8 @@ To check if the paths definitions are effective, go to the project properties pa
 
 ### Java security problems
 
-If you are behind a firewall, older Java virtual machines [fail to connect to SourceForge]({{ site.baseurl }}/blog/2016/12/02/plugins-install-issue/). Install the latest JDK and retry to install the plug-ins.
+- if you use the Oracle JDK, starting with mid January, attempts to install from SourceForge [fail with handshake_error]({{ site.baseurl }}/blog/2017/01/29/plugins-install-issue/). Install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) and retry to install the plug-ins.
+- if you are behind a firewall, older Java virtual machines [fail to connect to SourceForge]({{ site.baseurl }}/blog/2016/12/02/plugins-install-issue/). Install the latest JDK and retry to install the plug-ins.
 
 ### SourceForge problems
 

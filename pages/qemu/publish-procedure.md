@@ -12,7 +12,7 @@ The QEMU binaries are published on GitHub  [Releases](https://github.com/gnuarme
 
 ## Update the Change log
 
-Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/qemu/change-log/) (`pages/qemu/change-log.md`), grouped by days.
+Scan the documentation Git log and add new entries to the [Change log]({{ site.baseurl }}/qemu/change-log/) (`pages/qemu/change-log.md`), grouped by days.
 
 Close issues on the way. Refer to them as:
 

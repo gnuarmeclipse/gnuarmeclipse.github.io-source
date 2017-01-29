@@ -10,6 +10,20 @@ date: 2015-09-11 20:28:00 +0300
 
 <div style="clear: both;"></div>
 
+## Receive fatal alert: handshake_failure
+
+![Handshake failure]({{ site.baseurl }}/assets/images/2017/handshake-failure.png)
+
+If you use the Oracle JDK, starting with mid January, attempts to install from SourceForge [fail with handshake_error]({{ site.baseurl }}/blog/2017/01/29/plugins-install-issue/). Install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) and retry to install the plug-ins.
+
+## GDB 7.12 fails on macOS
+
+Debug sessions fail to start on macOS; the reason is a bug in `arm-none-eabi-gdb` affecting the MI2 interface; the workaround is to use GDB 7.10, from GCC 5.4.
+
+## GDB 7.12 is not compatible with Neon.2
+
+In certain conditions, Neon.2 fails to suspend or to terminate a debug session when using GDB 7.12; as a workaround, use GDB 7.10.
+
 ## Unable to read repository
 
 If you are behind a firewall, older Java virtual machines [fail to connect to SourceForge]({{ site.baseurl }}/blog/2016/12/02/plugins-install-issue/). Install the latest JDK and retry to install the plug-ins.

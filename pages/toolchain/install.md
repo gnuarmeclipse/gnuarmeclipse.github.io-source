@@ -24,6 +24,10 @@ Please note the distinction between the **target platform** and the **host/devel
 
 The installation details described below assume the selection of the GCC ARM Embedded toolchain. For other toolchains, please follow the specific installation instructions.
 
+> Important notes:
+> `arm-none-eabi-gdb` 7.12 from GCC 6.2 crashes on macOS; as a workaround, use GDB 7.10;
+> in certain conditions, Neon.2 fails to suspend or to terminate a debug session when using GDB 7.12; as a workaround, use GDB 7.10.
+
 ## Download
 
 Due to portability reasons, the GNU ARM Eclipse plug-ins do not include any toolchain binaries, but they can be downloaded either from the [GCC ARM Embedded project page](http://launchpad.net/gcc-arm-embedded), or, even better, from the [All downloads](http://launchpad.net/gcc-arm-embedded/+download) page, where it is a bit easier to identify which file is required.
@@ -167,3 +171,17 @@ To be sure you did not miss this recommendation, here it is again:
 If there would be only one single version of one single toolchain in existence, then it wouldn't be a problem, but as soon as you start real world applications, you will face at least the need to keep multiple versions of the same toolchain installed, if not multiple toolchains, and this is when your trouble starts.
 
 The GNU ARM Eclipse plug-in has an advanced [toolchain path management]({{ site.baseurl }}/toolchain/path/) (presented in more detail in the separate page). Use it!
+
+## GDB 7.12
+
+GDB 7.12 distributed with GCC 6.2 (`gcc-arm-none-eabi-6_2-2016q4-20161216`) has several issues (crashes on macOS and is incompatible with Neon.2).
+
+The safe recommendation is to use GCC 5.4, but if, for any reasons, you need to use GCC 6.2, one possible workaround is to rename `arm-none-eabi-gdb` as `arm-none-eabi-gdb-7.12`, then copy or link `arm-none-eabi-gdb` from GCC 5.4 to GCC 6.2.
+
+To check if the workaround is functional, use:
+
+```
+$ gcc-arm-none-eabi-6_2-2016q4/bin/arm-none-eabi-gdb --version
+GNU gdb (GNU Tools for ARM Embedded Processors) 7.10.1.20160923-cvs
+...
+```

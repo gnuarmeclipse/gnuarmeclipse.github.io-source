@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GNU ARM Eclipse plug-ins sun.security.validator.ValidatorException
+title:  'GNU ARM Eclipse plug-ins: sun.security.validator.ValidatorException'
 
 author: Liviu Ionescu
 

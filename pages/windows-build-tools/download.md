@@ -18,3 +18,4 @@ All versions of the GNU ARM Eclipse Windows Build Tools are available via the [G
 ## 64/32-bits
 
 Starting with version v2.6 there are separate 64/32-bits binaries. If running a modern 64-bits Windows, it is highly recommended to download the 64-bits version, since it not only reduces the risk of 32-bits DLL rebases, but also the 64-bits `make` seems to run slightly faster.
+

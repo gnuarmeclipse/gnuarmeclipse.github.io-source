@@ -13,7 +13,7 @@ The Windows Build Tools binaries are published on GitHub  [Releases](https://git
 
 ## Update the Change log
 
-Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/windows-build-tools/change-log/) (`pages/windows-build-tools/change-log.md`), grouped by days.
+Scan the documentation Git log and add new entries to the [Change log]({{ site.baseurl }}/windows-build-tools/change-log/) (`pages/windows-build-tools/change-log.md`), grouped by days.
 
 Close issues on the way. Refer to them as:
 
