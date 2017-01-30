@@ -24,7 +24,7 @@ For historical reasons, the GNU ARM Eclipse update sites for installing new soft
 
 ## Problem
 
-In Jan. 2017 SourceForge did a change a second change in the security settings used by their download servers and mirrors. For some of the users this was transparent, but for some, the result when trying to install new software, was the following:
+In Jan. 2017 SourceForge did another change in the security settings used by their download servers and mirrors. For some of the users this was transparent, but for some, the result, when trying to install new software, was the following:
 
 ![Handshake failure]({{ site.baseurl }}/assets/images/2017/handshake-failure.png)
 
