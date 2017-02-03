@@ -11,6 +11,8 @@ exclude:
   - README.md
   - '*.command'
   - '*.webloc'
+  - vendor/
+  - scripts/
 
 # The subpath of your site, e.g. /blog (note the leading slash and the
 # absence of a trailing slash).
