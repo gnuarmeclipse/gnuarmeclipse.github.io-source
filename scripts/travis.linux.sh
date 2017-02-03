@@ -79,13 +79,14 @@ function do_script() {
 
   cd "${site}"
 
-  if [ "${TRAVIS_BRANCH}" != "master" ]; 
+  if [ "${TRAVIS_BRANCH}" != "master" ]
   then 
     echo "Not on master branch, skip deploy."
     return 0; 
   fi
 
-  if [ -z `git diff --exit-code` ]; then
+  if [ -z `git diff --exit-code` ]
+  then
     echo "No changes to the output on this push; skip deploy."
     exit 0
   fi
@@ -98,7 +99,7 @@ function do_script() {
   echo "Deploy to GitHub pages..."
 
   # Must be quiet and have no output, to not reveal the key.
-  git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_DEST_REPO}" master > /dev/null 2>&1
+  # git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_DEST_REPO}" master > /dev/null 2>&1
 
   return 0
 }
