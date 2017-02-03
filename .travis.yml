@@ -8,7 +8,7 @@ rvm:
   
 env:
   global:
-    - GITHUB_DEST_REPO="gnuarmeclipse/gnuarmeclipse.github.io-source"
+    - GITHUB_DEST_REPO="gnuarmeclipse/gnuarmeclipse.github.io"
     - GIT_COMMIT_USER_EMAIL="ilg@livius.net"
     - GIT_COMMIT_USER_NAME="Travis CI"
     - secure: "gwg5mtEcQ7j7CWU+Mk+hECj88Uv55WqS98MtSfD3nyoma2wx5CDtqqK5eodrUq0leW6wp9NpSoKNqyw7vlxYz6vEwm6Vx4Ds+AwYnhAl0NprmFXAg15CrvYezTKjbYcUJLfparGTDClGGGctzTXJlCJBHWEg6glt0PmnT+7A9T7+PvliMAp/UKtMN91HFtkLmXbtDbpQdmiFF6wCvTMXLcwSr2jAjRa+Rqqf78IFZ5qnTRvIjHx6QmwWZdX/1TzvgxWB5H9/eSaCReJ62a02Ej01ebaYqYiVkBlsyWz8ocarTLBz29+2OMjxa6UgTIyaCZAPb0/J0TRhI41wahx8eYLxoz1A2qFLqe+ELLfBT65LZAUCiw60mrXhGIlss4aR1AajaAmBjWBXGwtwH5IxeUhyi4bvrzsBVHno3dLwkKZ+Nc+lTN9nscqBDYq8CrXJyI2IqEPs/fzBJNyc60GMa97q3qQuG2z2RTMsI1nQpWoYN5py9pcS6XM+nqdtmHXKEGKIZN6nRX8dMS6rIth7NTZ0JRElgmyoCLvwzHpQbKPgTtVab95XqX/HDLZEYRk0OYT1fhyO87Vwf4sBoKJ8NVNpWmPlfnNEyc6yPTy6utU7XRp5F2HBKbpGLLwt67Ns0I6hTbAcxnNpmqZReRol6EaicL6GMn//jddg6vy4RrY="
