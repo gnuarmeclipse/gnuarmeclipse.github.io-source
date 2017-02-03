@@ -27,11 +27,14 @@ before_script:
 script:
   - bash scripts/travis.linux.sh script
 
-after_success:
-  - bash scripts/travis.linux.sh after_success
+# -----------------------------------------------------------------------------
+# Unused.
 
-after_failure:
-  - bash scripts/travis.linux.sh after_failure
+# after_success:
+#  - bash scripts/travis.linux.sh after_success
+
+# after_failure:
+#  - bash scripts/travis.linux.sh after_failure
 
 # Deploy via script not functional (or not understood).
 # deploy:
@@ -40,6 +43,5 @@ after_failure:
 #  on:
 #    branch: master
   
-after_script:
-  - bash scripts/travis.linux.sh after_script
-  
+# after_script:
+#  - bash scripts/travis.linux.sh after_script
