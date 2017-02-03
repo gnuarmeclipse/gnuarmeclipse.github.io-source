@@ -1,5 +1,6 @@
-# The GNU ARM Eclipse Web Site source
+[![Build Status](https://travis-ci.org/gnuarmeclipse/gnuarmeclipse.github.io-source.svg?branch=master)](https://travis-ci.org/gnuarmeclipse/gnuarmeclipse.github.io-source)
 
+# The GNU ARM Eclipse Web Site source
 
 ## Overview
 
