@@ -11,6 +11,8 @@ exclude:
   - README.md
   - '*.command'
   - '*.webloc'
+  - Gemfile
+  - Gemfile.lock
   - vendor/
   - scripts/
 
