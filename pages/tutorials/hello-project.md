@@ -34,7 +34,7 @@ In the **C Project** window:
 * in the *Toolchains:* section select **Cross ARM GCC**
 * click the **Next >** button
 
-![]({{ site.baseurl }}/assets/images/2013/10/NewCHelloProject1.png)
+![New C Hello Project]({{ site.baseurl }}/assets/images/2013/10/NewCHelloProject1.png)
 
 In the ** Target processor settings** window be sure to:
 
@@ -44,7 +44,7 @@ In the ** Target processor settings** window be sure to:
 * for a more complete example, change the *Use system calls:* fields to **Semihosting (POSIX system calls via host)**
 * click the **Next >** button.
 
-![]({{ site.baseurl }}/assets/images/2013/10/HelloProcessorSettings.png)
+![Hello Processor Settings]({{ site.baseurl }}/assets/images/2013/10/HelloProcessorSettings.png)
 
 In the **Folders** page leave the suggested folders unchanged and click the **Next >** button.
 
@@ -52,7 +52,7 @@ In the **Folders** page leave the suggested folders unchanged and click the **
 
 In the **Select Configurations** page leave the suggested Debug/Release configurations checked and click the **Next >** button.
 
-![]({{ site.baseurl }}/assets/images/2013/10/HelloConfigurations.png)
+![Hello Configurations]({{ site.baseurl }}/assets/images/2013/10/HelloConfigurations.png)
 
 In the **Cross GNU ARM Toolchain** window:
 
@@ -60,17 +60,17 @@ In the **Cross GNU ARM Toolchain** window:
 * browse for the **bin** folder within the toolchain folder
 * click the **Finish** button
 
-![]({{ site.baseurl }}/assets/images/2013/10/HelloToolchain.png)
+![Hello Toolchain]({{ site.baseurl }}/assets/images/2013/10/HelloToolchain.png)
 
 Note 1: when selecting the path, be sure you select the **/bin** folder where the programs with long, prefixed names are stored, and not the inner /bin folder where the short name programs may be available.
 
 Note 2: DO NOT SKIP this step, it is mandatory to have a correct toolchain path defined in order for the build to complete correctly.
 
-![]({{ site.baseurl }}/assets/images/2013/10/HelloToolchainPath.png)
+![Hello Tool chainPath]({{ site.baseurl }}/assets/images/2013/10/HelloToolchainPath.png)
 
 The result of the wizard is a simple project, with a **main()** function printing a greeting on the standard output.
 
-![]({{ site.baseurl }}/assets/images/2013/10/HelloProject.png)
+![Hello Project]({{ site.baseurl }}/assets/images/2013/10/HelloProject.png)
 
 ## Build the project
 
@@ -79,15 +79,15 @@ To start the build:
 * select the new project in the *Project Explorer* section
 * click the **hammer** icon
 
-![]({{ site.baseurl }}/assets/images/2013/10/HammerBuild1.png)
+![Hammer Build]({{ site.baseurl }}/assets/images/2013/10/HammerBuild1.png)
 
 The build process should leave in the *Console* window a listing like this:
 
-![]({{ site.baseurl }}/assets/images/2013/10/HelloProjectBuildConsole.png)
+![Hello Project Build Console]({{ site.baseurl }}/assets/images/2013/10/HelloProjectBuildConsole.png)
 
 The files created by the build process are left in a folder named by the name of the configuration, for example *Debug* or *Release*.
 
-![]({{ site.baseurl }}/assets/images/2013/10/HelloBuildResult.png)
+![Hello Build Result]({{ site.baseurl }}/assets/images/2013/10/HelloBuildResult.png)
 
 As seen above, the *Debug* folder is populated with
 

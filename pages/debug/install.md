@@ -92,7 +92,7 @@ The debugging plug-ins come together with the other GNU ARM Eclipse plug-ins, a
 
 Be sure you enable the entries named **GNU ARM C/C++ J-Link Debugging**, **GNU ARM C/C++ OpenOCD Debugging** and **GNU ARM C/C++ QEMU Debugging**.
 
-![]({{ site.baseurl }}/assets/images/2014/01/DebuggingPluginsInstall1.png)
+![Debugging Plugins Install]({{ site.baseurl }}/assets/images/2014/01/DebuggingPluginsInstall1.png)
 
 Specific plug-in usage documentation is available from separate pages:
 

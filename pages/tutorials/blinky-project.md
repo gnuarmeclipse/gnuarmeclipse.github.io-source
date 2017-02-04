@@ -46,7 +46,7 @@ In the **Target processor settings** window be sure to:
 * for a more complete example, change the *Use system calls:* fields to **Semihosting (POSIX system calls via host)**
 * click the **Next >** button.
 
-![]({{ site.baseurl }}/assets/images/2015/08/BlinkyProcessorSettings1.png)
+![Blinky processor settings]({{ site.baseurl }}/assets/images/2015/08/BlinkyProcessorSettings1.png)
 
 In the **Folders** page leave the suggested folders unchanged and click the **Next >** button.
 
@@ -68,7 +68,7 @@ Note 1: when selecting the path, be sure you select the **/bin** folder where 
 
 Note 2: DO NOT SKIP this step, it is mandatory to have a correct toolchain path defined in order for the build to complete correctly.
 
-![]({{ site.baseurl }}/assets/images/2013/10/HelloToolchainPath.png)
+![Toolchain path]({{ site.baseurl }}/assets/images/2013/10/HelloToolchainPath.png)
 
 The result of the wizard is a simple project, with a **main()** function printing a greeting on the standard output.
 
@@ -81,7 +81,7 @@ To start the build:
 * select the new project in the *Project Explorer* section
 * click the **hammer** icon
 
-![]({{ site.baseurl }}/assets/images/2013/10/HammerBuild1.png)
+![Hammer Build]({{ site.baseurl }}/assets/images/2013/10/HammerBuild1.png)
 
 The build process should leave in the *Console* window a listing like this:
 
@@ -89,7 +89,7 @@ The build process should leave in the *Console* window a listing like this:
 
 The files created by the build process are left in a folder named by the name of the configuration, for example *Debug* or *Release*.
 
-![]({{ site.baseurl }}/assets/images/2015/08/BlinkyBuildResult1.png)
+![Blinky Build Result]({{ site.baseurl }}/assets/images/2015/08/BlinkyBuildResult1.png)
 
 As seen above, the *Debug* folder is populated with:
 
@@ -157,7 +157,7 @@ The usual sources for build failures are:
 
 * a wrong or missing toolchain path; go to the project *Properties* → *C/C++ Build* → *Settings* → the *Toolchains* tab and define the correct path;
 
-![]({{ site.baseurl }}/assets/images/2015/08/GlobalToolsPath.png)
+![Global Tools Path]({{ site.baseurl }}/assets/images/2015/08/GlobalToolsPath.png)
 
 
 Set the toolchain path for all projects and workspaces.

@@ -79,7 +79,7 @@ Eclipse CDT has a very useful feature allowing to automatically reformat a piece
 * go to the _Eclipse_ menu → **(Window →) Preferences** → **C/C++** → **Code Style** → **Formatter**
 * in the **Active profile:** field, select **GNU [built-in]**
 
-![]({{ site.baseurl }}/assets/images/2014/06/PreferencesFormatter1.png)
+![Preferences Formatter]({{ site.baseurl }}/assets/images/2014/06/PreferencesFormatter1.png)
 
 Except very special company policies, it is generally recommended to NOT change the individual formatter style, and to apply the GNU format to all source files in a project before committing to the repository.
 

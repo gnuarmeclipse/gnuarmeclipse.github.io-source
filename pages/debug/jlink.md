@@ -79,7 +79,7 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 * expand either the Debug or the Release folder and select the executable you want to debug
 * in the _Eclipse_ menu, go to **Run** → **Debug Configurations...** or select the down arrow at the right of the bug icon.
 
-  ![]({{ site.baseurl }}/assets/images/2013/12/DebugConfigurations.png)
+  ![Debug Configurations]({{ site.baseurl }}/assets/images/2013/12/DebugConfigurations.png)
 
 * double click the** GDB SEGGER J-Link Debugging** group, or select it and click the top leftmost **New** button.
 
@@ -92,7 +92,7 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 
 * click the second tab, named **Debugger**, which contains the configuration options required to start the GDB server and the GDB client.
 
-  ![]({{ site.baseurl }}/assets/images/2013/12/JLinkDebuggerTab.png)
+  ![J-Link Debugger Tab]({{ site.baseurl }}/assets/images/2013/12/JLinkDebuggerTab.png)
 
 * the only field that usually requires attention is the **Device name**, which must identify the processor family; if you assigned the device to the project, this field is automatically filled-in; usually this name is the family name; if you do not know it for your processor, follow the link at the right and copy/paste the string from the [SEGGER web page](http://www.segger.com/supported-devices.html);
 * for portability reasons, the GDB server and GDB client executables are defined using variables; it is highly recommended to keep these definitions;
@@ -227,7 +227,7 @@ For having a total control of the debugging session, the debugging plug-ins star
 
 To add more commands to the GDB initialisation sequence, use the _Commands:_ field in the _GDB Client Setup_ section:
 
-![]({{ site.baseurl }}/assets/images/2015/launch-jlink-debugger-client.png)
+![Launch J-Link debugger client]({{ site.baseurl }}/assets/images/2015/launch-jlink-debugger-client.png)
 
 All commands listed here are passed to the GDB client. By convention, commands prefixed with `mon` will be further passed from the GDB client to the GDB server, in this case the J-Link GDB server.
 

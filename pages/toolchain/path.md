@@ -60,7 +60,7 @@ To achieve this, the GNU ARM Eclipse cross build plug-in provides a large select
 
 The default (and the recommended) setting, is to use the global toolchain path.
 
-![]({{ site.baseurl }}/assets/images/2014/02/ToolchainsProperties.png)
+![Toolchains Properties]({{ site.baseurl }}/assets/images/2014/02/ToolchainsProperties.png)
 
 The displayed path is associated with the selected toolchain. To change the toolchain path use the hyperlinks; it is recommended to use the global page, but, if needed, the toolchain path can also be configured per workspace or even per project.
 

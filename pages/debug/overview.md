@@ -59,6 +59,6 @@ For having a total control of the debugging session, the debugging plug-ins star
 
 To add more commands to the GDB initialisation sequence, use the _Commands:_ field in the _GDB Client Setup_ section:
 
-![]({{ site.baseurl }}/assets/images/2015/launch-jlink-debugger-client.png)
+![Launch J-Link debugger client]({{ site.baseurl }}/assets/images/2015/launch-jlink-debugger-client.png)
 
 All commands listed here are passed to the GDB client. By convention, commands prefixed with `mon` will be further passed from the GDB client to the GDB server.
