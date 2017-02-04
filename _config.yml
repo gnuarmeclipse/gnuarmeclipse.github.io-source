@@ -1,9 +1,10 @@
-# Site settings.
+# Site Jekyll settings.
 
 # Without a clear rule enforced, both title and name are used.
 title: GNU ARM Eclipse
 name: GNU ARM Eclipse
 description: A family of Eclipse CDT extensions and tools for GNU ARM development
+
 email: il@livius.net
 
 destination: _site
@@ -16,7 +17,7 @@ exclude:
   - vendor/
   - scripts/
 
-# The subpath of your site, e.g. /blog (note the leading slash and the
+# The subpath of the site, e.g. /blog (note the leading slash and the
 # absence of a trailing slash).
 baseurl: ""
 
@@ -28,7 +29,7 @@ timezone: UTC
 
 encoding: utf-8
 
-# Default permalink used for posts
+# Default permalink used for posts.
 permalink: /blog/:year/:month/:day/:title/
 
 # Currently disabled, since it generates incomplete content.
@@ -44,7 +45,7 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
 
-# Build settings
+# Build settings.
 markdown: kramdown
 
 kramdown:
@@ -59,7 +60,7 @@ paginate_path: "/blog/page:num/"
 # The number of links added to the 'Latest news' box.
 latest-news-pages: 5
 
-# Custom defs
+# Custom defs.
 github-username:  ilg-ul
 
 github-project-name: gnuarmeclipse
