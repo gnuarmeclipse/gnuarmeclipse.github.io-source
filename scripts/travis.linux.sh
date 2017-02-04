@@ -71,6 +71,9 @@ function do_script() {
   # Be sure the 'vendor/' folder is excluded, otherwise a strage error occurs.
   bundle exec jekyll build --destination "${site}"
 
+  # Temporary test the Apple URL, to help diagnose htmlproofer.
+  curl -L --url http://developer.apple.com/xcode/downloads/ --verbose
+
   # Mainly to validate the internal & external links.
   bundle exec htmlproofer "${site}"
 
