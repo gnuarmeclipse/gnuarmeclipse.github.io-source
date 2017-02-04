@@ -40,8 +40,8 @@ function do_before_install() {
 
   cd "${HOME}"
 
-  # gem install html-proofer
-  # htmlproofer --version
+  gem install html-proofer
+  htmlproofer --version
 
   return 0
 }
@@ -71,15 +71,12 @@ function do_script() {
   # Be sure the 'vendor/' folder is excluded, otherwise a strage error occurs.
   bundle exec jekyll build --destination "${site}"
 
-  # bundle exec htmlproofer "${site}"
+  # Mainly to validate the internal & external links.
+  bundle exec htmlproofer "${site}"
 
   # ---------------------------------------------------------------------------
   # The deployment code is present here not in after_success, 
   # to break the build if not successful.
-
-  # Temporarily disable deployment, due to inconsistent results from
-  # jekyll-last-modified-at.
-  return 0
 
   cd "${site}"
 
@@ -101,6 +98,10 @@ function do_script() {
   git commit -m "Travis CI Deploy of ${TRAVIS_COMMIT}" 
 
   # git status
+
+  # Temporarily disable deployment, due to inconsistent results from
+  # jekyll-last-modified-at.
+  return 0
 
   echo "Deploy to GitHub pages..."
 
