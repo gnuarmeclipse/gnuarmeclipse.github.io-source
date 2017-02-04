@@ -23,7 +23,7 @@ The Windows build uses MinGW-w64 in a Debian 8 container.
 
 #### Install the Command Line Tools
 
-The macOS compiler and other development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](https://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
+The macOS compiler and other development tools are packed in a separate Xcode add-on. The best place to get it is from the [Developer](http://developer.apple.com/xcode/downloads/) site, although this might require enrolling to the developer program (free of charge).
 
 To test if the compiler is available, use:
 
