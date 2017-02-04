@@ -43,7 +43,7 @@ Entries in this file are in reverse chronological order.
 ### 2015-05-19
 
 - v0.9.0-20150519*-dev released
-- remove @raggedright from openocd.texi
+- remove `@raggedright` from openocd.texi
 - update VERSON files for 0.9.0
 - merge 0.9.0 into gnuarmeclipse-dev
 - merge gnuarmeclipse-dev into gnuarmeclipse

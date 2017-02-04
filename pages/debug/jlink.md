@@ -13,7 +13,7 @@ date: 2015-09-11 21:15:00 +0300
 If you already know what are the features of the new plug-in and only want to know how to install/use it, you can directly skip to:
 
 * [J-Link install]({{ site.baseurl }}/debug/jlink/install/)
-* [J-Link plug-in usage]({{ site.baseurl }}/debug/jlink/#j-link-plug-in-use)
+* [J-Link plug-in usage]({{ site.baseurl }}/debug/jlink/#j-link-plug-in-usage)
 
 ## Why a new plug-in?
 

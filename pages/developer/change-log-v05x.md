@@ -49,7 +49,7 @@ Entries in this file are in direct chronological order.
 
 -   C Linker empty makefile bug fixed (spaces in secondaryOutputs/targetTool)
 -   about.\* files moved here from the feature project; the ARM icon is now visible in the Help -\> About window.
--   update site URL renamed from <http://gnuarmeclipse.sourceforge.net/update> to <http://gnuarmeclipse.sourceforge.net/updates>
+-   update site URL renamed from `http://gnuarmeclipse.sourceforge.net/update` to `http://gnuarmeclipse.sourceforge.net/updates`
 
 ### 2009-04-03
 

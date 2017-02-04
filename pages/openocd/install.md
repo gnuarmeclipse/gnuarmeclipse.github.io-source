@@ -212,6 +212,6 @@ To set the path, first exit Eclipse, and start it again, to allow the autodetect
 
 - click the **Restore Defaults** button
 
-For more details please refer to the [OpenOCD plug-in]({{ site.baseurl }}/debug/qemu/#define-the-openocd-folder-location) page, where the entire procedure is explained.
+For more details please refer to the [OpenOCD plug-in]({{ site.baseurl }}/debug/openocd/#define-the-openocd-folder-location) page, where the entire procedure is explained.
 
 

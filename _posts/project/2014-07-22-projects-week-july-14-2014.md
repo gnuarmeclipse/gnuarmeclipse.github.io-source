@@ -18,7 +18,7 @@ tags:
 
 ---
 
-For the [second time]({{ site.baseurl }}/2014/01/22/sourceforge-featured-projects-january-2014/), the **GNU ARM Eclipse** project was selected by SourceForge one of the 10 [projects of the week, July 14, 2014](http://sourceforge.net/blog/projects-of-the-week-july-14-2014/).
+For the [second time]({{ site.baseurl }}/blog/2014/01/22/sourceforge-featured-projects-january-2014/), the **GNU ARM Eclipse** project was selected by SourceForge one of the 10 [projects of the week, July 14, 2014](http://sourceforge.net/blog/projects-of-the-week-july-14-2014/).
 
 ![Projects of the Week, July 14, 2014]({{ site.baseurl }}/assets/images/2015/sourceforge-projects-week-2014-07.png)
 
