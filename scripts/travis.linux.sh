@@ -77,6 +77,10 @@ function do_script() {
   # The deployment code is present here not in after_success, 
   # to break the build if not successful.
 
+  # Temporarily disable deployment, due to inconsistent results from
+  # jekyll-last-modified-at.
+  return 0
+
   cd "${site}"
 
   if [ "${TRAVIS_BRANCH}" != "master" ]
