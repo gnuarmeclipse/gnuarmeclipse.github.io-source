@@ -53,3 +53,4 @@ Many thanks to the following donors (in chronological order):
 * Brinton Engineering, USA
 * Armin van der Togt, Holland
 * Kamil Rogozinski, Australia
+* Bjørn Forsman, Norway
