@@ -16,7 +16,7 @@ The GNU ARM Eclipse Plug-ins PAD file is publically available in the [project Gi
 
 ## How to edit
 
-Use the online [AppVisor](http://www.appvisor.com/)
+Use the online [AppVisor](http://appvisor.com/)
 
 Unfortunately it does not support long URLs and the GitHub Release URL cannot be entered.
 
