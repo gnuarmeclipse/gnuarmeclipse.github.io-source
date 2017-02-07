@@ -126,10 +126,6 @@ function do_script() {
 
   # git status
 
-  # Temporarily disable deployment, due to inconsistent results from
-  # jekyll-last-modified-at.
-  return 0
-
   echo "Deploy to GitHub pages..."
 
   # Must be quiet and have no output, to not reveal the key.
