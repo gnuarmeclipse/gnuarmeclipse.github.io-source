@@ -14,12 +14,10 @@ env:
     - GITHUB_DEST_REPO="gnuarmeclipse/gnuarmeclipse.github.io"
     - GIT_COMMIT_USER_EMAIL="ilg@livius.net"
     - GIT_COMMIT_USER_NAME="Travis CI"
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
     # The secure token is 'GITHUB_TOKEN=...' generated for 
     # gnuarmeclipse/gnuarmeclipse.github.io-source
     - secure: "NnTAoLFgs4Le3OOx4uvREYb3d6zVsu1VBXEaTg+5K+NflB8Lp2pDmqonyJGjMeO/Ylk6MijH26iKGsGTkNzhN9awpibRT+UgHXNXQOdmV4S1Mqu2aSS9pT4jdRMKAaCvTywHjxKEn2H5UpUPbfJBEaGt6TYb9SrApxxndygT9Xjq2eNYz7EFDegu9Zgd5JzPc+Mga0gPu20kRg24CcpagoNHBoJk75y+vpIEa8Ooxd5lSP9avzpH9FLI5cRgpP0fkRVU/XDO+EYvlZAuGtZdyaNO5ayjxa389anHikq/HsrroRMCJJhK7Yk3CY9ibkfGw+F0/IFHwwPglGKCjMv4Npr42k0ImkwLCuQDxHGz7rgDnRztc4c1hEdaErJ3fkFaE0uZ5N3K2y1oHSh9VKZgVfVSwU7VtWbSsEykV9QOiqFq1kFiNTrD7H5X+Se27BMPFTPxU8Sf26oUmALkp4ntgdjxLVfHKtONa2GL7quE+r4KfohDuizWsaVObltIz4ACi08B1c7wNd4EpJTwj/KRqwJYj18IA01hmaMzv3aJ/0qus7GjQBJUu4gUqp5hXdKYElw+zzlVwAEAqdkAHQtbOMNUxu068mQ0Z6SKL7tJ+2sO5lT53ZArRFdBnIS0+DnRme4LjoiadKZ5e5yHKVWdGre/lqMsN8XG7+u0o7Uoidw="
-
-# The above secure token is 'GITHUB_TOKEN=...' generated for 
-# gnuarmeclipse/gnuarmeclipse.github.io-source
 
 before_install:
   - bash scripts/travis.linux.sh before_install

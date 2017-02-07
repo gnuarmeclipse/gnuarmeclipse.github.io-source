@@ -21,11 +21,9 @@ IFS=$'\n\t'
 
 # https://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
 
-export build="${HOME}/build"
-export slug="${build}/${TRAVIS_REPO_SLUG}"
-
 # -----------------------------------------------------------------------------
 
+export slug="${TRAVIS_BUILD_DIR}-full"
 export site="${HOME}/out/${GITHUB_DEST_REPO}"
 
 # -----------------------------------------------------------------------------
@@ -64,6 +62,14 @@ function do_before_script() {
   do_run git config --global user.email "${GIT_COMMIT_USER_EMAIL}"
   do_run git config --global user.name "${GIT_COMMIT_USER_NAME}"
 
+  # Clone again the repository, without the 50 commit limit, 
+  # otherwise the last-modified-at will fail. (weird!)
+  do_run git clone --branch=${TRAVIS_BRANCH} https://github.com/${TRAVIS_REPO_SLUG}.git "${slug}"
+  cd "${slug}"
+  do_run git checkout -qf ${TRAVIS_COMMIT}
+  do_run git submodule update --init --recursive
+
+  # Clone the destination repo.
   do_run git clone --branch=master https://github.com/${GITHUB_DEST_REPO}.git "${site}"
 
   return 0
@@ -96,6 +102,12 @@ function do_script() {
   if [ "${TRAVIS_BRANCH}" != "master" ]
   then 
     echo "Not on master branch, skip deploy."
+    return 0; 
+  fi
+
+  if [ "${TRAVIS_PULL_REQUEST}" != "false" ]
+  then 
+    echo "A pull request, skip deploy."
     return 0; 
   fi
 
