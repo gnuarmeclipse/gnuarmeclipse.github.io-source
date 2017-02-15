@@ -77,7 +77,7 @@ In case you reached the main Eclipse downloads page, avoid the recommended downl
 
 Traditionally Eclipse does not need an installer, Eclipse is distributed as a plain archive. To install Eclipse, simply unpack the archive at a place of your choice and start using it.
 
-> Note 1: on GNU/Linux be sure you manually install the Eclipse; **DO NOT** try to install it via the Synaptics package manager, or similar, since usually you get an older version and the CDT plug-ins are not included.
+> Note 1: on GNU/Linux be sure you manually install the Eclipse; **DO NOT** try to install it via the **Synaptics** package manager, or similar, since usually you get an older version and the CDT plug-ins are not included.
 
 > Note 2: Contrary to other tools, Eclipse does not need administrative rights, does need not be installed in a system location, and does not need not be a single instance on a system. Actually you are encouraged to install multiple instances of Eclipse, possibly one for each project type, to avoid mixing plug-ins from different sources in case different project types.
 
@@ -226,6 +226,14 @@ Cannot complete the install because one or more required items could not be foun
 ```
 
 Reinstall the correct Eclipse package, or add CDT to the existing Eclipse (**Programming Languages** → **C/C++ Development Tools**).
+
+### Ubuntu GTK issue
+
+Eclipse is incompatible with the GTK version 3 distributed with Ubuntu (confirmed even with Ubuntu 16LTS). To overcome this, disable the use of GTK 3, by adding the following line to your environment:
+
+```
+export SWT_GTK3=0
+```
 
 ## Plug-ins versions
 
