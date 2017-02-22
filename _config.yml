@@ -77,7 +77,8 @@ tocTopTag: h2
 minItemsToShowToc: 3
 useExistingAnchors: true
 
-css-date: 201611191546
+# UTC time, YYYYMMDDHHmm (minutes)
+css-date: 201702222107
 
 # Content copyright. Update it to your needs.
 copyright-message: "© 2017 Liviu Ionescu"
