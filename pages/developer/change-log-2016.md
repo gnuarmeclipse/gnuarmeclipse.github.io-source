@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /developer/change-log/
+permalink: /developer/change-log/2016/
 title: The 2016 GNU ARM Eclipse Plug-ins Change Log
 author: Liviu Ionescu
 
