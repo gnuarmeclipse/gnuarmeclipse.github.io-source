@@ -150,7 +150,7 @@ Scan the [GitHub Issues](https://github.com/gnuarmeclipse/plug-ins/issues) and t
 
 Mark all these issues as part of the current version milestone. Refer to them as **[Issue:#22]**. For SourceForge, refer to them as **[bugs:#98]**, **[feature-requests:#60]**, **[support-requests:#81]**.
 
-## Test local versio of the Web
+## Test local version of the Web
 
 * build the local Jekyll **gnuarmeclipse.github.io-source** project
 * test it using the localhost:4000 address
@@ -210,9 +210,6 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 -   move the latest archive to **releases/plug-ins**
 -   move the other archives to **internal**
 
-## Push the develop branch
-
-
 ## Merge develop into master
 
 * in SourceTree, switch to the **develop** branch
@@ -239,19 +236,20 @@ Note: at this moment the system should send a notification to all clients watchi
 ## Publish the Web
 
 * Git Push & Sync the **gnuarmeclipse.github.io-source** project; use something like `v3.2.1-201701141320 released` as message
+* wait for the Travis build to complete; occasionally links to not work, and might need to restart the build
 
 Note: the release must exist, otherwise Travis will complain and do not publish the site to **gnuarmeclipse.github.io**.
 
 ## Update the release link
 
-In the releases page:
+In the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page:
 
 * add a link to the Web page `[Continue reading »]()`
 * get URL from web [Releases](http://gnuarmeclipse.github.io/developer/releases/) and update the above link
 
 ## Close issues
 
-For all issues marked with the current version, close them with a message like _fixed in v3.2.1-201701141320_.
+For all [GitHub issues](https://github.com/gnuarmeclipse/plug-ins/issues) marked with the current version, close them with a message like _fixed since v3.2.1-201701141320_.
 
 ## Publish on SourceForge
 
