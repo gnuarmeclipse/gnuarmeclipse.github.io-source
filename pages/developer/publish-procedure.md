@@ -110,13 +110,16 @@ Test if the new build can be used as an update site, by installing from updates-
 
 ## Create a new milestone
 
-Name it with the current version, like _v3.2.1_.
+In the [plug-ins issues](https://github.com/gnuarmeclipse/plug-ins/issues) page, click the [Milestones](https://github.com/gnuarmeclipse/plug-ins/milestones) button and add a [new](https://github.com/gnuarmeclipse/plug-ins/milestones/new) milestone. As title, use the current version, like _v3.2.1_.
 
 ## Update the Change log
 
 Scan the Git log and add new entries to the [Change log]({{ site.baseurl }}/developer/change-log/) (pages/developer/change-log.md), grouped by days.
 
-    git log --pretty='%cd * %s' --since 2015-06-24 --reverse --date=short >~/Desktop/ChangeLog.txt
+```
+$ git log --pretty='%cd * %s' --since 2015-06-24 \
+--reverse --date=short >~/Desktop/ChangeLog.txt
+```
 
 Add an entry with the latest feature & plug-in versions, copied from the publish script output.
 
@@ -147,9 +150,10 @@ Scan the [GitHub Issues](https://github.com/gnuarmeclipse/plug-ins/issues) and t
 
 Mark all these issues as part of the current version milestone. Refer to them as **[Issue:#22]**. For SourceForge, refer to them as **[bugs:#98]**, **[feature-requests:#60]**, **[support-requests:#81]**.
 
-## Update the Web
+## Test local versio of the Web
 
-* Jekyll build the **gnuarmeclipse.github.io-source** project
+* build the local Jekyll **gnuarmeclipse.github.io-source** project
+* test it using the localhost:4000 address
 * Git Push & Sync the **gnuarmeclipse.github.io-source** project; use something like `v3.2.1-201701141320 released` as message
 * Git Push & Sync the **gnuarmeclipse.github.io** project; use something like `v3.2.1-201701141320 released` as message
 
@@ -208,19 +212,15 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 
 ## Push the develop branch
 
-* in SourceTree, switch to the **develop** branch
-* push the **develop** branch to GitHub
 
 ## Merge develop into master
 
+* in SourceTree, switch to the **develop** branch
+* push the **develop** branch to GitHub
 * in SourceTree, switch to the **master** branch
 * merge the **develop** branch into **master**
+* push the **master** branch to GitHub
 * switch to **develop**
-* push both branches to GitHub.
-
-## Close issues
-
-For all issues marked with the current version, close them with a message like _fixed in v3.2.1-201701141320_.
 
 ## Create a new GitHub release
 
@@ -231,12 +231,27 @@ For all issues marked with the current version, close them with a message like _
 * select the **develop** branch
 * name the release like **GNU ARM Eclipse plug-ins v2.9.3-201508190739**
 * as description, copy the first paragraph from the Web release page
-* add a link to the Web page `[Continue reading »]()`
-* get URL from web and update the above link
 * attach binaries (drag and drop from the archives folder will do it)
 * click the **Publish Release** button
 
 Note: at this moment the system should send a notification to all clients watching this project.
+
+## Publish the Web
+
+* Git Push & Sync the **gnuarmeclipse.github.io-source** project; use something like `v3.2.1-201701141320 released` as message
+
+Note: the release must exist, otherwise Travis will complain and do not publish the site to **gnuarmeclipse.github.io**.
+
+## Update the release link
+
+In the releases page:
+
+* add a link to the Web page `[Continue reading »]()`
+* get URL from web [Releases](http://gnuarmeclipse.github.io/developer/releases/) and update the above link
+
+## Close issues
+
+For all issues marked with the current version, close them with a message like _fixed in v3.2.1-201701141320_.
 
 ## Publish on SourceForge
 

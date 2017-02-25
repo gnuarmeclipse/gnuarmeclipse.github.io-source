@@ -201,7 +201,7 @@ Without this option, Maven will issue many warnings, like:
 
 Unfortunately I did not find a way to pass this option in the pom files, and it must be passed only on the command line.
 
-To start the Maven build from Eclipse ... (TODO)
+To start the Maven build from Eclipse
 
 * select the **gnuarmeclipse-parent** project
 * _Eclipse_ menu → **Run** → **Run Configurations...**
