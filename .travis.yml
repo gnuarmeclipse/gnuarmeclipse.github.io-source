@@ -9,6 +9,7 @@ language: ruby
 rvm:
   - 2.3.1
 
+# all commits required for jekyll-last-modified-at
 git:
   depth: 999999999
 
