@@ -37,16 +37,21 @@ Thread model: posix
 
 #### Install a custom instance of Homebrew
 
-The build process is quite complex, and requires tools not available in the standard Apple macOS distribution. These tools can be installed with Homebrew. To keep these tools separate, a custom instance of Homebrew is installed in `$HOME/opt/homebrew-gae`. Unfortunately, **MacTex** and **XQuartz** are not packed as Homebrew packages, but install as macOS packages and links to them are created (without adding them to the PATH).
+The build process is quite complex, and requires tools not available in the standard Apple macOS distribution. These tools can be installed with Homebrew. To keep these tools separate, a custom instance of Homebrew is installed in `$HOME/opt/homebrew-gae`. 
 
-The entire process can be automated with a script, available from Gist:
+In a separate run, the **[MacTex](http://www.tug.org/mactex/)** tools are also installed in `${HOME}/opt/texlive`. Alternatively you can install MacTex in `/usr/local` using the official distribution, but this will add lots of programs to the system path, and this is a bad thing.
+
+The entire process can be automated with two scripts, available from GitHub:
 
 ```
-$ git clone https://gist.github.com/46407a070844f764dec6f27bde385797.git \
-  ~/Downloads/install-homebrew.gist
-$ bash ~/Downloads/install-homebrew.gist/install-homebrew-gae.sh
+$ mkdir -p ${HOME}/opt
+$ git clone https://github.com/ilg-ul/opt-install-scripts \
+    ${HOME}/opt/install-scripts.git
+$ bash ${HOME}/opt/install-scripts.git/install-homebrew-gae.sh
+$ bash ${HOME}/opt/install-scripts.git/install-texlive.sh
 ```
-The script runs most of the time with user credentials, but to install MacTex and XQuartz, temporary `sudo` access is required.
+
+The scripts run with user credentials, no `sudo` access is required.
 
 #### Install Docker
 
