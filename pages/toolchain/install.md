@@ -6,14 +6,19 @@ author: Liviu Ionescu
 
 date: 2015-09-11 22:49:00 +0300
 
-version-id: 4_9-2015q3
-version-date: 20150921
+version-id: 6-2017-q1-update
+version-date: 20170223
 
 ---
 
 ## Overview
 
-The build plug-in is highly configurable in terms of executable names and location, so you can use any 32/64-bits ARM GNU toolchain you preffer, but, for better results, the recommended toolchain for **bare metal** target applications is [**GCC ARM Embedded**](http://launchpad.net/gcc-arm-embedded) (formerly GNU Tools for ARM Embedded Processors); for **GNU/Linux** target applications, the **[Linaro](http://www.linaro.org/downloads/)** family of toolchains provides a large selection of choices, for various specific needs (little/big endian, 32/64-bits, etc).
+The build plug-in is highly configurable in terms of executable names and location, so you can use any 32/64-bits ARM GNU toolchain you preffer, but, for better results, the recommended toolchain for **bare metal** target applications is [**GCC ARM Embedded Toolchain**](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) (formerly GNU Tools for ARM Embedded Processors); for **GNU/Linux** target applications, the **[Linaro](http://www.linaro.org/downloads/)** family of toolchains provides a large selection of choices, for various specific needs (little/big endian, 32/64-bits, etc).
+
+> Important notes: 
+> GDB 7.12, distributed with GCC 6.x, requires Neon.3 or higher, otherwise the suspend and terminate buttons in the debug perspective are not functional. `arm-none-eabi-gdb` 7.12 from the initial `6_2-2016q4-20161216` crashes on macOS; use `6-2017-q1-update` or later.
+
+## Target vs host platform
 
 Please note the distinction between the **target platform** and the **host/development platform**.
 
@@ -24,25 +29,19 @@ Please note the distinction between the **target platform** and the **host/devel
 
 The installation details described below assume the selection of the GCC ARM Embedded toolchain. For other toolchains, please follow the specific installation instructions.
 
-> Important notes:
-> `arm-none-eabi-gdb` 7.12 from GCC 6.2 crashes on macOS; as a workaround, use GDB 7.10;
-> in certain conditions, Neon.2 fails to suspend or to terminate a debug session when using GDB 7.12; as a workaround, use GDB 7.10.
-
 ## Download
 
-Due to portability reasons, the GNU ARM Eclipse plug-ins do not include any toolchain binaries, but they can be downloaded either from the [GCC ARM Embedded project page](http://launchpad.net/gcc-arm-embedded), or, even better, from the [All downloads](http://launchpad.net/gcc-arm-embedded/+download) page, where it is a bit easier to identify which file is required.
+Due to portability reasons, the GNU ARM Eclipse plug-ins do not include any toolchain binaries, but they can be downloaded either from the [GNU ARM Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads).
 
-Versions from 4_7 up to {{ page.version-id }} were tested and are known to work properly.
+Versions from `4_7` up to `{{ page.version-id }}` were tested and are known to work properly.
 
-![Launchpad]({{ site.baseurl }}/assets/images/2014/01/Launchpad.png)
-
-![The launchpad download page]({{ site.baseurl }}/assets/images/2014/01/LaunchpadDownloads.png)
+![ARM Downloads]({{ site.baseurl }}/assets/images/2017/arm-downloads.png)
 
 ## Windows
 
 The following steps can be performed on Windows:
 
-* download the latest Windows installer **.exe** file (currently `gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-win32.exe`, about 84 MB)
+* download the latest Windows installer **.exe** file (currently `gcc-arm-none-eabi-{{ page.version-id }}-win32.exe`, about 84 MB)
 * locate the file (usually in the `...\Downloads\`  folder) and double click it to start the installer
 * authenticate with the administrative password, to allow the installer write in system locations
 
@@ -53,7 +52,7 @@ The following steps can be performed on Windows:
 * accept the terms of the license agreement
 * accept the destination folder, usually a version specific sub-folder of `C:\Program Files\`
 
-  > Note: It is highly recommended to **do not to change the install path**, since the plug-in tries to automatically discover the toolchain in this default location.
+  > Note: It is highly recommended to **do not to change the install path**, since the plug-in tries to automatically discover the toolchain by searching only a limited set of possible locations (`${user.home}/AppData/Local/Programs/GNU Tools ARM Embedded`, `${user.home}/local/GNU Tools ARM Embedded`, `${user.home}/local`, `C:/Program Files/GNU Tools ARM Embedded`, `C:/Program Files (x86)/GNU Tools ARM Embedded`, `D:/Program Files/GNU Tools ARM Embedded`, `D:/Program Files (x86)/GNU Tools ARM Embedded`)
 
   ![The destination folder]({{ site.baseurl }}/assets/images/2014/01/MS_destination_location.png)
 
@@ -65,7 +64,7 @@ The following steps can be performed on Windows:
 * read the `readme.txt` file
 * test if the compiler is functional; use the actual install path:
 
-  ```
+  ```bash
 C:\Users\Liviu Ionescu\>"C:\Program Files\GNU Tools ARM Embedded\4.8 2014q2\bin\arm-none-eabi-gcc.exe" --version
 arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]
 ```
@@ -80,24 +79,25 @@ If you'll ever need to remove the toolchain, there is an **uninstall.exe** progr
 
 The following steps can be performed on macOS:
 
-* download the latest macOS install tarball file (currently `gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-mac.tar.bz2`, about 66 MB)
-* locate the file (usually in the `$HOME/Downloads` folder)
-* decide on a location to install the toolchain; the recommended folder is `/usr/local/`
+* download the latest macOS install tarball file (currently `gcc-arm-none-eabi-{{ page.version-id }}-mac.tar.bz2`, about 99 MB)
+* locate the file (usually in the `${HOME}/Downloads` folder)
+* decide on a location to install the toolchain; the recommended folder is `${HOME}/opt/`
 * unpack the archive in the destination folder
 
-  > Note: It is highly recommended to **do not use a different install path**, since the plug-in tries to automatically discover the toolchain in this default location.
+  > Note: It is highly recommended to **do not to change the install path**, since the plug-in tries to automatically discover the toolchain by searching only a limited set of possible locations (`${HOME}/Applications/GNU Tools ARM Embedded`, `${HOME}/local/GNU Tools ARM Embedded`, `${HOME}/local`, `${HOME}/opt`, `/usr/local`).
 
-  ```
-$ sudo mkdir -p /usr/local
-$ cd /usr/local
-$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-mac.tar.bz2
+  ```bash
+$ sudo mkdir -p ${HOME}/opt
+$ cd ${HOME}/opt
+$ tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-mac.tar.bz2
+$ chmod -R -w ${HOME}/opt/gcc-arm-none-eabi-{{ page.version-id }}
 ```
 
-* the result should be a folder like `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`
+* the result should be a folder like `${HOME}/opt/gcc-arm-none-eabi-{{ page.version-id }}`
 * test if the compiler is functional; use the actual install path:
 
-  ```
-$ /usr/local/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc --version
+  ```bash
+$ ${HOME}/opt/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]
 ```
 
@@ -105,7 +105,7 @@ arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (releas
 
 The complete toolchain documentation is available in the `.../share/doc/pdf/` folder.
 
-If you'll ever need to remove the toolchain, only remove the `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`, there are no other components stored in system folders.
+If you'll ever need to remove the toolchain, only remove the `${HOME}/opt/gcc-arm-none-eabi-{{ page.version-id }}`, there are no other components stored in system folders.
 
 ### MacPorts
 
@@ -115,44 +115,48 @@ In case you have MacPorts installed, be sure you remove the MacPorts path from t
 
 The following steps were performed on **Ubuntu 14.04 LTSx64** (please adjust them accordingly for other distributions):
 
-* since the toolchain executables are 32-bits apps, when running on 64-bits machines, be sure you install the following 32-bits libraries (for different versions check the toolchain README for the actual list):
+* starting with version 6.x, GNU/Linux toolchains are 64-bits applications, and should work directly on most modern distributions;
 
-  ```
+* in older versions, the toolchain executables are 32-bits apps; when running on 64-bits machines, be sure you install the following 32-bits libraries (for different versions check the toolchain README for the actual list):
+
+  ```bash
 $ sudo apt-get -y install lib32z1 lib32ncurses5 lib32bz2-1.0
 ```
 
 * on Ubuntu 15.04 the following libraries are required:
 
-  ```
+  ```bash
 $ sudo apt-get -y install lib32ncurses5
 ```
 
 * on Ubuntu 12 LTSx64 all 32-bits libraries were packed in ia32-libs, so you can also use, but be prepared to get a lot of useless libraries:
 
-  ```
+  ```bash
 $ sudo apt-get -y install ia32-libs
 ```
 
-* download the latest Linux install tarball file from [Launchpad](https://launchpad.net/gcc-arm-embedded/+download) (currently `gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-linux.tar.bz2`, more than 60 MB)
+* download the latest Linux install tarball file from [ARMDeveloper](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads) (currently `gcc-arm-none-eabi-{{ page.version-id }}-linux.tar.bz2`, more than 95 MB)
 
   > Note: DO NOT install the ARM GCC package that comes with your distribution, especially if it is newer than the one provided by Launchpad, since generally it is not supported, and debugging sessions might fail.
 
-* locate the file (usually in the `$HOME/Downloads/`  folder)
-* decide on a location to install the toolchain; the recommended folder is `/usr/local/`
+* locate the file (usually in the `${HOME}/Downloads/`  folder)
+* decide on a location to install the toolchain; the recommended folder is `${HOME}/opt/`
 * unpack the archive in the destination folder
 
-  > Note: It is highly recommended to **do not use a different install path**, since the plug-in tries to automatically discover the toolchain in this default location.
+  > Note: It is highly recommended to **do not to change the install path**, since the plug-in tries to automatically discover the toolchain by searching only a limited set of possible locations (`${HOME}/local`, `${HOME}/opt`, `/usr/local`).
 
-  ```
-$ cd /usr/local
-$ sudo tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-{{ page.version-date }}-linux.tar.bz2
+  ```bash
+$ mkdir -p ${HOME}/opt
+$ cd ${HOME}/opt
+$ tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-linux.tar.bz2
+$ chmod -R -w ${HOME}/opt/gcc-arm-none-eabi-{{ page.version-id }}
 ```
 
-* the result should be a folder like `/usr/local/gcc-arm-none-eabi-{{ page.version-id }}`
+* the result should be a folder like `${HOME}/opt/gcc-arm-none-eabi-{{ page.version-id }}`
 * test if the compiler is functional; use the actual install path:
 
-  ```
-$ /usr/local/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc --version
+  ```bash
+$ ${HOME}/opt/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.3 20140228 (release) [ARM/embedded-4_8-branch revision 208322]
 ```
 
@@ -160,7 +164,7 @@ arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.3 20140228 (releas
 
 The complete toolchain documentation is available in the `.../share/doc/pdf/` folder.
 
-If you'll ever need to remove the toolchain, only remove the `/usr/local/gcc-arm-none-{{ page.version-id }}`, there are no other components stored in system folders.
+If you'll ever need to remove the toolchain, only remove the `${HOME}/opt/gcc-arm-none-{{ page.version-id }}`, there are no other components stored in system folders.
 
 ## Toolchain path
 
@@ -174,14 +178,7 @@ The GNU ARM Eclipse plug-in has an advanced [toolchain path management]({{ site.
 
 ## GDB 7.12
 
-GDB 7.12 distributed with GCC 6.2 (`gcc-arm-none-eabi-6_2-2016q4-20161216`) has several issues (crashes on macOS and is incompatible with Neon.2).
+GDB 7.12 distributed with the initial GCC 6.2 (`gcc-arm-none-eabi-6_2-2016q4-20161216`) has several issues (crashes on macOS and is incompatible with Neon.2).
 
-The safe recommendation is to use GCC 5.4, but if, for any reasons, you need to use GCC 6.2, one possible workaround is to rename `arm-none-eabi-gdb` as `arm-none-eabi-gdb-7.12`, then copy or link `arm-none-eabi-gdb` from GCC 5.4 to GCC 6.2.
+The recommendation is to use the update version `gcc-arm-none-eabi-6-2017-q1-update`, or later. If you prefer a safer setup, use GCC 5.4 from `gcc-arm-none-eabi-5_4-2016q3-20160926`.
 
-To check if the workaround is functional, use:
-
-```
-$ gcc-arm-none-eabi-6_2-2016q4/bin/arm-none-eabi-gdb --version
-GNU gdb (GNU Tools for ARM Embedded Processors) 7.10.1.20160923-cvs
-...
-```
