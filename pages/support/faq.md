@@ -16,13 +16,13 @@ date: 2015-09-11 20:28:00 +0300
 
 If you use the Oracle JDK, starting with mid January, attempts to install from SourceForge [fail with handshake_error]({{ site.baseurl }}/blog/2017/01/29/plugins-install-issue/). Install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) and retry to install the plug-ins.
 
-## GDB 7.12 fails on macOS
+## Initial GDB 7.12 fails on macOS
 
-Debug sessions fail to start on macOS; the reason is a bug in `arm-none-eabi-gdb` affecting the MI2 interface; the workaround is to use GDB 7.10, from GCC 5.4.
+When using `arm-none-eabi-gdb` 7.12 from the initial `6_2-2016q4-20161216`, the debug session fails to start on macOS; the reason is a bug in `arm-none-eabi-gdb` affecting the MI2 interface; the solution is to use a more recent version, `6-2017-q1-update` or later.
 
 ## GDB 7.12 is not compatible with Neon.2
 
-In certain conditions, Neon.2 fails to suspend or to terminate a debug session when using GDB 7.12; as a workaround, use GDB 7.10.
+Due to some CDT bugs, Neon.2 fails to suspend or to terminate a debug session when using GDB 7.12; the solution is to use Neon.3 or later.
 
 ## Unable to read repository
 
@@ -38,12 +38,16 @@ This change also raised the minimum supported version to Eclipse Luna SR2 and Ja
 
 > I get the following when trying to install Cross Compiler
 
-```
+```bash
 Cannot complete the install because one or more required items could not be found.
 Software being installed: GNU ARM C/C++ Cross Compiler 1.15.2.201511061603 (ilg.gnuarmeclipse.managedbuild.cross.feature.group 1.15.2.201511061603)
 ```
 
 Your Eclipse does not include CDT. You need to install **Eclipse IDE for C/C++ Developers** or to manually add CDT to an existing Eclipse.
+
+## I cannot connect via J-Link to my ST DISCOVERY or NUCLEO board
+
+If you try to connect via the SEGGER J-Link debug plug-in to a stock ST DISCOVERY or NUCLEO board and the JLinkGDBServer keeps refuses to connect (_'Connecting to J-Link failed. Connected correctly?'_), please note that the on-board programmer firmware on the ST boards is compatible with ST-LINK/v2, not J-Link. However, SEGGER provides an upgrade path, and most of the ST bemo boards can be converted to J-Link; please follow the SEGGER [Converting ST-LINK on-board into a J-Link](https://www.segger.com/jlink-st-link.html) page.
 
 ## I installed Eclipse with Synaptics and I have problems to install the plug-ins
 
@@ -57,7 +61,7 @@ Instead, go to the [Eclipse download site](http://www.eclipse.org/downloads/) an
 
 The syntax required by the OpenOCD `echo` command is a single string, in other words both echo and the message must be in the same string. To achieve this in a shell, the string must be quoted:
 
-```
+```bash
 -c 'echo "Started by GNU ARM Eclipse"'
 ```
 
@@ -214,17 +218,21 @@ If the compiler complains something like this, then it might be possible that pr
 
 If you have lots of folders and re-entereing them is tedious, you can try to manually edit the `.cproject` file. For this, first close Eclipse, and edit `.cproject` with a separate editor. Search for the lines with ".include.files"; if below them you see the list of folders, you don't have to re-enter them again; check if the `<option>` element has an `name=` attribute; if not, add it before the superClass attribute, with the following content:
 
-`<option id="...include.paths.NNN" name="Include paths (-I)" superClass="...">`
+```
+<option id="...include.paths.NNN" name="Include paths (-I)" superClass="...">
+```
 
 ## I tried to use Float ABI: hard on Cortex-M4, but the linker fails
 
-	Building target: test1.elf
-	Invoking: Cross ARM C++ Linker
-	/usr/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld: error: test1.elf uses VFP register arguments
-	/usr/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/libg.a(lib_a-impure.o) does not
-	/usr/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld: failed to merge target specific data of file
-	/usr/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/libg.a(lib_a-impure.o)
-	...
+```bash
+Building target: test1.elf
+Invoking: Cross ARM C++ Linker
+/usr/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld: error: test1.elf uses VFP register arguments
+/usr/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/libg.a(lib_a-impure.o) does not
+/usr/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld: failed to merge target specific data of file
+/usr/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/libg.a(lib_a-impure.o)
+...
+```
 
 Although on Cortex-M4 the only available FPU hardware is fpv4-sp-d16, the compiler does not have a default defined for this, and it is necessary to explicitly select **FPU Type: fpv4-sp-d16** in the C/C++ Settings page.
 
