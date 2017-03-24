@@ -60,7 +60,9 @@ In the J-Link or OpenOCD sessions, the Variables view does not allow to add glob
 
 ### The internal builder fails while generating the listing
 
-Due to a CDT bug, when using the Internal builder it is not possible to generate the additional program listing. If you need it, it is recommended to enable the **External builder** in the project **Properties** → **C/C++ Build** → **Builder Settings** tab → **Builder type**. The **Internal builder** can be used without any problems for projects that do not have secondary targets (like libraries).
+Due to a CDT bug, when using the Internal builder it is not possible to generate the additional program listing. If you need it, it is recommended to enable the **External builder** in the project **Properties** → **C/C++ Build** → **Builder Settings** tab → **Builder type**. 
+
+The **Internal builder** is long deprecated, it was no longer maintained by the CDT team for many years, and it is strongly recommended **not** to use it at all. 
 
 ### Conflict while editing tools
 
