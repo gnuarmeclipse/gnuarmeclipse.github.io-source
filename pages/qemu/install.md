@@ -48,9 +48,11 @@ The result is a structure like:
 
 To check if QEMU starts, use the following command:
 
-	C:\>"\Program Files\GNU ARM Eclipse\QEMU\2.2.92-201504041652-dev\bin\qemu-system-gnuarmeclipse.exe" --version
-	GNU ARM Eclipse 32-bits QEMU emulator version 2.2.92
-	Copyright (c) 2003-2008 Fabrice Bellard
+```bash
+C:\>"\Program Files\GNU ARM Eclipse\QEMU\2.2.92-201504041652-dev\bin\qemu-system-gnuarmeclipse.exe" --version
+GNU ARM Eclipse 32-bits QEMU emulator version 2.2.92
+Copyright (c) 2003-2008 Fabrice Bellard
+```
 
 #### Drivers
 
@@ -58,13 +60,31 @@ For usual Cortex-M emulation, there are no special drivers required.
 
 ### macOS
 
-For user convenience, the macOS version of GNU ARM Eclipse QEMU is packed as an macOS install package. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases) page and download the latest version named like:
+For user convenience, the macOS version of GNU ARM Eclipse QEMU is packed in two variants: a simple .tgz archive and a macOS install package. Go to the [GitHub Releases](https://github.com/gnuarmeclipse/qemu/releases) page and download the latest version named like:
 
-* `gnuarmeclipse-qemu-osx-2.2.92-201504041609-dev.pkg`
+* `gnuarmeclipse-qemu-osx-2.8.0-201703012029.tgz`
+* `gnuarmeclipse-qemu-osx-2.8.0-201703012029.pkg`
 
-As the name implies, this is an macOS package, that can be installed on any recent 64-bits macOS (the latest version was tested on 10.11).
+The recommended way is to unpack the archive in your home folder:
 
-Run the install as usual.
+```bash
+$ mkdir -p ${HOME}/opt
+$ cd ${HOME}/opt
+$ tar xvf ~/Downloads/gnuarmeclipse-qemu-osx-2.8.0-201703012029-head.tgz
+$ chmod -R -w ${HOME}/opt/gnuarmeclipse/qemu
+```
+
+To check if QEMU starts, use:
+
+```bash
+$ ${HOME}/opt/gnuarmeclipse/qemu/2.8.0-201703012029-head/bin/qemu-system-gnuarmeclipse --version
+GNU ARM Eclipse 64-bits QEMU emulator version 2.8.0 (v2.8.0-644-ge45e0e1)
+Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
+```
+
+Another version, deprecated now, is to use the package installer, that installs QEMU in the `/Applications` folder.
+
+After downloading the .pkg file, run the install as usual.
 
 ![The QEMU macOS Install page]({{ site.baseurl }}/assets/images/2015/mac-install.png)
 
@@ -78,9 +98,11 @@ and the result is a folder structure similar to:
 
 To check if QEMU starts, use:
 
-	$ /Applications/GNU\ ARM\ Eclipse/QEMU/2.2.92-201504041609-dev/bin/qemu-system-gnuarmeclipse --version
-	GNU ARM Eclipse 64-bits QEMU emulator version 2.2.92
-	Copyright (c) 2003-2008 Fabrice Bellard
+```bash
+$ /Applications/GNU\ ARM\ Eclipse/QEMU/2.2.92-201504041609-dev/bin/qemu-system-gnuarmeclipse --version
+GNU ARM Eclipse 64-bits QEMU emulator version 2.2.92
+Copyright (c) 2003-2008 Fabrice Bellard
+```
 
 ### GNU/Linux
 
@@ -95,20 +117,22 @@ Note: if your distribution already provides ready to run QEMU binaries, they cur
 
 To install this package, unpack the distribution archive and copy it to `/opt/gnuarmeclipse/qemu/${version}`
 
-```
-sudo mkdir -p /opt/gnuarmeclipse
-cd /opt/gnuarmeclipse
-sudo tar xvf ~/Downloads/gnuarmeclipse-qemu-debian64-2.4.50-201510290935-dev.tgz
+```bash
+$ mkdir -p ${HOME}/opt
+$ cd ${HOME}/opt
+$ tar xvf ~/Downloads/gnuarmeclipse-qemu-debian64-2.4.50-201510290935-dev.tgz
+$ chmod -R -w ${HOME}/opt/gnuarmeclipse/qemu
 ```
 
 Note: although perfectly possible to install it in any location, it is recommended to use this location, since by default the plug-in searches for the executable in this location.
 
 To check if QEMU starts and is recent, use:
 
-
-	$ /opt/gnuarmeclipse/qemu/2.2.92-201504041716-dev/bin/qemu-system-gnuarmeclipse --version
-	GNU ARM Eclipse 64-bits QEMU emulator version 2.2.92
-	Copyright (c) 2003-2008 Fabrice Bellard
+```bash
+$ ${HOME}/opt/gnuarmeclipse/qemu/2.2.92-201504041716-dev/bin/qemu-system-gnuarmeclipse --version
+GNU ARM Eclipse 64-bits QEMU emulator version 2.2.92
+Copyright (c) 2003-2008 Fabrice Bellard
+```
 
 #### UDEV & Drivers
 
