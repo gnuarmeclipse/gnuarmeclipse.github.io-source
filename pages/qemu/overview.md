@@ -160,6 +160,5 @@ See [Releases]({{ site.baseurl }}/qemu/releases).
 
 ## Other links
 
-* [QEMU Binaries for Windows](http://qemu.weilnetz.de)
 * the original [QEMU Windows build page](http://wiki.qemu.org/Hosts/W32)
 * [Docker images](https://registry.hub.docker.com/u/ilegeul/)
