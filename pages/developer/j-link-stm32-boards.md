@@ -16,9 +16,17 @@ As most vendors do, ST also designed the cheap STM32 DISCOVERY and NUCLEO boards
 
 For a few limited tests, the OpenOCD plug-in can be used, but the reliability of OpenOCD is not appropriate for professional use.
 
-Preferably the J-Link debug plug-in would be used, but, for costs reasons, ST did not provide the standard JTAG connector, so it is currently not possible to connect to these boards with J-Link.
+Preferably the J-Link debug plug-in would be used, but, for costs reasons, ST did not provide the standard JTAG connector, so it is currently not possible to connect to these boards with an external J-Link probe.
 
-## The J-Link to ST cable
+## Convert the ST-LINK on-board into a J-Link
+
+In a very inspired move to address this issue, SEGGER provided an upgrade path, and most of the ST bemo boards can now be converted to J-Link; please follow the SEGGER [Converting ST-LINK on-board into a J-Link](https://www.segger.com/jlink-st-link.html) page.
+
+After the firmware upgrade, you'll be able to connect the J-Link GDB server via the existing board USB port. However, please note that not all J-Link features are available via this solution, which is somehow a J-Link Lite version.
+
+For a fully featured J-Link solution, a little harware is required.
+
+## The custom J-Link to ST cable
 
 For those equipped with a soldering iron, it is relatively easy to adapt the existing 6-pin connector to J-Link.
 
@@ -74,4 +82,6 @@ The ST boards have a pair of jumpers, that need to be installed, for the program
 
 ## Conclusion
 
-With this cable it is now possible to connect to the ST board with an external J-Link probe, to program the flash and run debugging sessions.
+The recommended solution is to upgrade the flash, and you'll be able to connect the J-Link GDB server via the existing board USB port. 
+
+For those who need a full J-Link connection, with this cable it is possible to connect to the ST board with an external J-Link probe, to program the flash and run debugging sessions.
