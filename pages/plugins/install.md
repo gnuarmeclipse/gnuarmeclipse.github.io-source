@@ -44,7 +44,16 @@ However please note that no support requests referring to Win XP 64 will be pro
 
 The recommended package is the latest version from the official [Oracle **Java SE** page](http://www.oracle.com/technetwork/java/javase/index.html). The **OpenJDK Java** used in Ubuntu is also fine. The minimum is JDK 1.7, or even JRE 1.7 (the Java Runtime Environment), but, as said before, better use the latest JDK (currently 1.8). On macOS the last Apple Java implementation is 1.6, so it is required to use the Oracle version.
 
-For example, on Ubuntu 14.04 LTS, you can install the OpenJDK run-time and test if it was properly installed with the following commands:
+On some distributions, for example on Ubuntu 16.04 LTS, Java seems to be already installed in the standard distribution:
+
+```bash
+$ java -version
+openjdk version "1.8.0_121"
+OpenJDK Runtime Environment (build 1.8.0_121-8u121-b13-0ubuntu1.16.04.2-b13)
+OpenJDK 64-Bit Server VM (build 25.121-b13, mixed mode)
+```
+
+On other distributions, for example on Ubuntu 14.04 LTS, you can install the OpenJDK run-time and test if it was properly installed with the following commands:
 
 ```
 $ sudo apt-get -y install default-jdk
@@ -56,14 +65,15 @@ OpenJDK 64-bits Server VM (build 24.85-b03, mixed mode)
 
 If you are behind a firewall, older Java virtual machines [fail to connect to SourceForge]({{ site.baseurl }}/blog/2016/12/02/plugins-install-issue/). Update your Java JDK to **8u101 or later** and retry to install the plug-ins.
 
+### Java Cryptography Extension (JCE)
+
+If you use the Oracle JDK, starting with mid January 2017, attempts to install from SourceForge might [fail with handshake_error]({{ site.baseurl }}/blog/2017/01/29/plugins-install-issue/). Install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) and the installer should be able to reach the update site.
+
 ### Eclipse & CDT
 
 The oldest Eclipse supported by the plug-ins is Eclipse 4.4 Luna SR2 (CDT 8.6), and the recommended version is **4.5 Mars SR2**. Do not try to install them on Kepler, Juno, Indigo, or older versions, since the install will fail.
 
-**Neon** currently has several problems and is not-recommended:
-- on macOS there is a bug in the Eclipse rendering code, and some fonts are not aligned properly; this is completely unrelated to GNU ARM Eclipse plug-ins;
-- on Windows, the OpenOCD debugging hangs while starting
-- on all platforms, the debugging consoles do not show.
+**Neon** initially had several problems, but starting with **Neon.3** it finally seems fully functional. Avoid previous Neon versions, since they do not work properly. If you want to use GCC 6.x, you **need** Neon.3 (the compiler itself has no problems working with Mar, but GDB 7.12 is not supported on versions before Neon.3).
 
 Go to the [Eclipse packages](http://www.eclipse.org/downloads/eclipse-packages) and get the **Eclipse IDE for C/C++ Developers** archive appropriate for your platform, preferably the 64-bits version.
 
@@ -83,13 +93,13 @@ Traditionally Eclipse does not need an installer, Eclipse is distributed as a pl
 
 ### CDT
 
-The minimum CDT version is 8.6. Do not try to use earlier versions, since either the install will fail (with something like `... requires 'bundle org.eclipse.cdt 8.6.0' but it could not be found`), or it will not run properly.
+The minimum CDT version is 8.6. Do not try to use earlier versions, since either the install will fail (with something like _... requires 'bundle org.eclipse.cdt 8.6.0' but it could not be found_), or it will not run properly.
 
 As mentioned before, the recommended way is to use a fresh **Eclipse IDE for C/C++ Developers** for the cross ARM development projects. Even if you did so, but especially if you did not do so, it is a good idea to check if you really have the latest version available. For this, enter the _Eclipse_ menu and go to **Help** → **Install New Software**
 
 ![Install new software]({{ site.baseurl }}/assets/images/2016/install-new-software.png)
 
-* select *Work with:* **Luna** (or more recent)
+* select *Work with:* **Mars** (or more recent)
 * if the *Group items by category *is enabled, expand the **Programming Languages** group
 * select the **C/C++ Development Tools** feature
 * click the **Next** button and follow the usual installation procedure
@@ -163,11 +173,11 @@ If, for any reason, you need to install a specific version of the plug-in, the s
 
 ## Off-line install
 
-If, for any reasons, you need to install the GNU ARM Eclipse plug-ins on a system without permanent Internet connection, and decide for the alternate way presented above, please be aware that the debug plug-ins require the presence of the **C/C++ GDB Hardware Debugging** plug-in. Usually this plug-in is not included in the standard package, but is present in the **CDT Optional Features** category, packed with the CDT archives available from the [CDT download site](https://www.eclipse.org/cdt/downloads.php). Download the desired archive, add it to your update sites, select the C/C++ GDB Hardware Debugging plug-in, restart as usual, and then install the GNU ARM Eclipse plug-ins from the local archive, as above.
+If, for any reasons, you need to install the GNU ARM Eclipse plug-ins on a system without permanent Internet connection, and decide for the alternate way presented above, please be aware that the debug plug-ins require the presence of the **C/C++ GDB Hardware Debugging** plug-in. Usually this plug-in is not included in the standard package, but is present in the **CDT Optional Features** category, packed with the CDT archives available from the [CDT download site](https://www.eclipse.org/cdt/downloads.php). Download the desired archive, add it to your update sites, select the **C/C++ GDB Hardware Debugging** plug-in, restart as usual, and then install the GNU ARM Eclipse plug-ins from the local archive, as above.
 
 ![Install the GDB Hardware]({{ site.baseurl }}/assets/images/2013/10/GDB_Hardware_Install.png)
 
-Note: Attempts to install the GNU ARM Eclipse plug-ins off-line without having the C/C++ GDB Hardware Debugging installed fails with an error related to installing the *ilg.gnuarmeclipse.debug.gdbjtag.jlink.feature.group* and other debugging features.
+Note: Attempts to install the GNU ARM Eclipse plug-ins off-line without having the **C/C++ GDB Hardware Debugging** installed fails with an error related to installing the `ilg.gnuarmeclipse.debug.gdbjtag.jlink.feature.group` and other debugging features.
 
 On-line install do not have this problem since the Eclipse automatically downloads the C/C++ GDB Hardware Debugging plug-in from the CDT update site.
 
@@ -181,7 +191,7 @@ The above definition will make the toolchain and build tools accessible to all p
 
 If needed, you can define different paths per workspace (**Workspace Tools Paths**) or even per project (**Tools Paths** in the project properties).
 
-To check if the paths definitions are effective, go to the project properties page and identify the **PATH** variable. Be sure the **Origin** column reads **BUILD SYSTEM**; if you manually edit it, the Origin will change and will read USER, but this is totally not recommended, since manually editing the path disables further automated updates of the path.
+To check if the paths definitions are effective, go to the project properties page and identify the `PATH` variable. Be sure the **Origin** column reads `BUILD SYSTEM`; if you manually edit it, the Origin will change and will read `USER`, but this is totally not recommended, since manually editing the path disables further automated updates of the path.
 
 ![Environment PATH]({{ site.baseurl }}/assets/images/2015/win-properties-c-environment.png)
 
@@ -239,7 +249,7 @@ export SWT_GTK3=0
 
 One of the confusing details of the GNU ARM Eclipse plug-ins versioning system is matching the version from the release announcement (for example **Version 2.6.1-201502281154 released**) with existing plug-ins/features.
 
-The short answer is that the announced version refers to the update site, also packed as an archive, and available from SourceForge. The same version is also used for the **ilg.gnuarmeclipse.core** plug-in:
+The short answer is that the announced version refers to the update site, also packed as an archive, and available from SourceForge. The same version is also used for the `ilg.gnuarmeclipse.core` plug-in:
 
 ![Installed plug-ins]({{ site.baseurl }}/assets/images/2013/10/Plugins.png)
 
