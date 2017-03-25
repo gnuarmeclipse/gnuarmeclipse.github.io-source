@@ -41,12 +41,12 @@ The J-Link GDB server is documented in the [UM08001](https://www.segger.com/adm
 
 ## Windows
 
-The Windows file is a ZIP archive, named like **Setup\_JLinkARM\_V480.zip**. After unpacking it, a Windows executable file is obtained, named like **Setup\_JLinkARM\_V480.exe**.
+The Windows file is a ZIP archive, named like `Setup_JLinkARM_V480.zip`. After unpacking it, a Windows executable file is obtained, named like `Setup_JLinkARM_V480.exe`.
 
 * double click it to start the installation process
 * enter the administrative password
 * accept the license
-* accept the destination folder (C:\Program Files\SEGGER\JLinkARM_V480)
+* accept the destination folder (`C:\Program Files\SEGGER\JLinkARM_V480`)
 * accept the default USB driver
 
 The result of the install is a folder (a new folder for each new version installed), and a set of driver files installed in the system folders, overwritten with each new install.
@@ -54,23 +54,19 @@ The result of the install is a folder (a new folder for each new version install
 ![SEGGER Windows distribution]({{ site.baseurl }}/assets/images/2014/01/Segger-win.png)
 
 
-Please note that on Windows, SEGGER provides both graphical interface and **command line versions** (having the names suffixed with **CL**) for most of their tools. For the J-Link plug-in it is recommended to use only the command line version of the  J-Link GDB server (**JLinkGDBServerCL.exe**).
+Please note that on Windows, SEGGER provides both graphical interface and **command line versions** (having the names suffixed with `CL`) for most of their tools. For the J-Link plug-in it is recommended to use only the command line version of the  J-Link GDB server (`JLinkGDBServerCL.exe`).
 
 ## macOS
 
-The macOS download is an macOS package installer, like **JLink\_MacOSX\_V480.pkg**.
+The macOS download is an macOS package installer, like `JLink_MacOSX_V480.pkg`.
 
 * double click it to start the installation process
 * accept the license
 * enter the administrative password, required to write in the global `/Applications` folder
 
-The result of the install is a folder called **/Applications/SEGGER/JLink/** (the same folder for all versions) where all executables and libraries are stored; please note that, as for many macOS applications, no other driver files are installed in the system folders.
+The result of the install is a folder like `/Applications/SEGGER/JLink_V641b/` (a different folder for each version) where all executables and libraries are stored; please note that, as for many macOS applications, no other driver files are installed in the system folders, but some symbolic links are created in the `/usr/local/bin` folder.
 
-Personally I prefer to keep older versions around for a while, and for this I rename the JLink folder
-
-```
-sudo mv JLink JLink_V80
-```
+Be sure to update the path in Eclipse preferences page to point to the latest SEGGER J-Link software.
 
 ![SEGGER macOS distribution]({{ site.baseurl }}/assets/images/2014/01/Segger-OSX.png)
 
@@ -83,9 +79,11 @@ On macOS, the USB subsystem automatically identifies and allows access to USB de
 
 As already mentioned, there are multiple packages available for GNU/Linux on the SEGGER download site, built as Debian/Red Hat packages, in 32/64-bits versions, or plain TGZ archives. Select the one appropriate for you system and use the specific tools to install the package. For example, on Ubuntu, to install the 64-bits .deb file, use the following command:
 
-	$ sudo dpkg -i ~/Downloads/jlink_5.2.7_x86_64.deb
+```bash
+$ sudo dpkg -i ~/Downloads/jlink_5.2.7_x86_64.deb
+bash
 
-The J-Link executables are installed in **/usr/bin**.
+The J-Link executables are installed in `/usr/bin`.
 
 In case you have a 64-bits machine and install the 32-bits SEGGER package, you might need several 32-bits libraries, depending on distribution.
 
@@ -138,15 +136,15 @@ To test if J-Link is able to connect to a specific board, you generally need to 
 
 On Windows, to start the GDB server, use back-slashes in the path and the CL (command line) version:
 
-
-	C:>C:\Program Files\SEGGER\JLinkARM_V480\JLinkGDBServerCL
-
+```bash
+C:>C:\Program Files\SEGGER\JLinkARM_V480\JLinkGDBServerCL
+```
 
 On Ubuntu the command is simple:
 
-
-	$ /usr/bin/JLinkGDBServer
-
+```bash
+$ /usr/bin/JLinkGDBServer
+bash
 
 In all cases, the result should be similar to the one obtained on macOS.
 

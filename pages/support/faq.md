@@ -14,7 +14,7 @@ date: 2015-09-11 20:28:00 +0300
 
 ![Handshake failure]({{ site.baseurl }}/assets/images/2017/handshake-failure.png)
 
-If you use the Oracle JDK, starting with mid January, attempts to install from SourceForge [fail with handshake_error]({{ site.baseurl }}/blog/2017/01/29/plugins-install-issue/). Install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) and retry to install the plug-ins.
+If you use the Oracle JDK, starting with mid January 2017, attempts to install from SourceForge [fail with handshake_error]({{ site.baseurl }}/blog/2017/01/29/plugins-install-issue/). Install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) and retry to install the plug-ins.
 
 ## Initial GDB 7.12 fails on macOS
 

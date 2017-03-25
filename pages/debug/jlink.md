@@ -56,11 +56,11 @@ Before starting work with the J-Link tools, it is required to define the path t
 * click the **Restore Defaults** button
 * the plug-in will suggest the default values computed when Eclipse started; if a new version of SEGGER was installed while Eclipse was active, restart Eclipse and click again the Restore Defaults button
 * check the **Executable** field; it must define the name of the command line J-Link GDB server executable; in most cases it should be set correctly; if not, edit it to match the correct name;
-* check the **Folder** field; it must point to the actual folder where the J-Link tools were installed on your platform, for example **/Applications/SEGGER/JLink** on macOS
+* check the **Folder** field; it must point to the actual folder where the J-Link tools were installed on your platform, for example `/Applications/SEGGER/JLink_V614b` on macOS
 * click the **OK** button
-* **Windows warning:** please note that on Windows there are two GDB server executables, one with a UI and one to be used as a command line (JLinkGDBServerCL.exe); you obviously need to configure the executable field to point to **JLinkGDBServerCL.exe**;
+* **Windows warning:** please note that on Windows there are two GDB server executables, one with a UI and one to be used as a command line (`JLinkGDBServerCL.exe`); you obviously need to configure the executable field to point to `JLinkGDBServerCL.exe`.
 
-By default, the GDB server is defined as **${jlink\_path}/${jlink\_gdbserver}**; these two macros are automatically set by the above preference page; for portability reasons, it is recommended to keep this definition in all your debug configurations, and also to have a single place to update the path when a new version of the J-Link tools is released.
+By default, the GDB server is defined as `${jlink\_path}/${jlink\_gdbserver}`; these two macros are automatically set by the above preference page; for portability reasons, it is recommended to keep this definition in all your debug configurations, and also to have a single place to update the path when a new version of the J-Link tools is released.
 
 ### Associate a device to the project
 
@@ -86,7 +86,7 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
   ![J-Link Debug Configurations]({{ site.baseurl }}/assets/images/2013/12/JLinkDebugConfiguration.png)
 
 * a multi-tab page will be displayed;
-* if you started this procedure with the project selected and the project was previously built, the first tab, named **Main**, should be already filled in with the project name (for example blink1) and the application file name and location (for example Debug/blink1.elf).
+* if you started this procedure with the project selected and the project was previously built, the first tab, named **Main**, should be already filled in with the project name (for example blink1) and the application file name and location (for example `Debug/blink1.elf`).
 
   ![The Main tab]({{ site.baseurl }}/assets/images/2013/12/DebugMainTab.png)
 
@@ -96,7 +96,7 @@ Being a standard debugger, this plug-in also uses the Eclipse standard method of
 
 * the only field that usually requires attention is the **Device name**, which must identify the processor family; if you assigned the device to the project, this field is automatically filled-in; usually this name is the family name; if you do not know it for your processor, follow the link at the right and copy/paste the string from the [SEGGER web page](http://www.segger.com/supported-devices.html);
 * for portability reasons, the GDB server and GDB client executables are defined using variables; it is highly recommended to keep these definitions;
-* the **${cross_prefix}** and the **${cross_suffix}** variables are defined automatically using the toolchain definitions; unless you are debugging a project-less ELF, leave them as is;
+* the `${cross_prefix}` and the `${cross_suffix}` variables are defined automatically using the toolchain definitions; unless you are debugging a project-less ELF, leave them as is;
 * the values of the `${jlink_path}` and `${jlink_gdbserver}` can be manually edited in the _Eclipse_ menu → **(Window →) Preferences** → **Run/Debug** **→** **SEGGER J-Link** configuration page (if you do not find this page, upgrade the plug-ins);
 * the **Connect to running target** option allow to start a debug session without performing any reset or program download, so that the target will continue to run unaffected, until explicitly halted by the debugger (Note: this option requires the latest plug-in and SEGGER versions);
 * click the third tab, named **Startup**, which contains specific J-Link options used to configure the debug session.
@@ -148,11 +148,11 @@ If everything is ok, after a few seconds required to start the server, to allow 
 
 The new debug session, with three consoles.
 
-Since the first breakpoint was set in the **Debugger** tab to **main**, the execution stopped right at the beginning of the *main()* function, which in this case is a tracing *printf()*.
+Since the first breakpoint was set in the **Debugger** tab to **main**, the execution stopped right at the beginning of the `main()` function, which in this case is a tracing `printf()`.
 
 ## Debug operations
 
-Once the debug session started and execution stopped in the first breakpoint (by default set at the beginning of the **main()** function), you can perform any debug operation you need.
+Once the debug session started and execution stopped in the first breakpoint (by default set at the beginning of the `main()` function), you can perform any debug operation you need.
 
 The most common operations are:
 
@@ -259,11 +259,11 @@ Please be sure you disable the **Pre-run reset and halt** option in the **Sta
 
 ### Error while launching command: gdb --version
 
-If you kept the GDB client executable defined as **${cross\_prefix}gdb${cross\_suffix}**, the above error means that the macros could not be substituted with the correct prefix/suffix. There can be several reasons for this. One might be that you did not associate the debug launcher to a project. Check the **Main** tab and be sure the field **Project:** refer to the correct project. Next time when you create the debug configuration, be sure you follow the above suggestions (select .elf, **Debug Configurations**, double click on **GDB SEGGER J-Link Debugging**. Another reason is presented below.
+If you kept the GDB client executable defined as `${cross\_prefix}gdb${cross\_suffix}`, the above error means that the macros could not be substituted with the correct prefix/suffix. There can be several reasons for this. One might be that you did not associate the debug launcher to a project. Check the **Main** tab and be sure the field **Project:** refer to the correct project. Next time when you create the debug configuration, be sure you follow the above suggestions (select .elf, **Debug Configurations**, double click on **GDB SEGGER J-Link Debugging**. Another reason is presented below.
 
 ### Using a different build plug-in or not supported compiler
 
-Another reason for not being able to start the debug session is that your project was not build with the GNU ARM Eclipse managed build plug-in. If you are using another build plug-in, or an exotic/obsolete toolchain, you need to replace **${cross\_prefix}gdb${cross\_suffix}** with the actual name of the gdb client available in your toolchain, since the ${cross_*} macros are available only in projects managed by the GNU ARM Eclipse build plug-in.
+Another reason for not being able to start the debug session is that your project was not build with the GNU ARM Eclipse managed build plug-in. If you are using another build plug-in, or an exotic/obsolete toolchain, you need to replace `${cross\_prefix}gdb${cross\_suffix}` with the actual name of the gdb client available in your toolchain, since the `${cross_*}` macros are available only in projects managed by the GNU ARM Eclipse build plug-in.
 
 ## **More info**
 
