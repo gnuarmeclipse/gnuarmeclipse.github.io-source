@@ -10,13 +10,15 @@ date: 2015-09-09 13:09:00 +0300
 
 ## Financial status
 
-Since September 2013, when a time tracking solution was put in place, **more than 2.800 development hours** were accounted, with the bulk of them being advanced by a single private person.
+Since September 2013, when a time tracking solution was put in place, **more than 3.500 development hours** were accounted (including more than 800h for QEMU), with the bulk of them being advanced by a single private person.
+
+A similar effort, **more than 3.400 hours** were accounted for the syster projects **µOS++** (~2.900) and **xPack** (~500).
 
 Out of these, the following were covered by commercial contracts:
 
 * 400h by Infineon, for integrating the J-Link Debugging plug-in in DAVE and further developing the peripheral registers view
 
-The current financial status is a steady red <span style="color: red">**-2.400h**</span>.
+The current (April 2017) financial status is a steady red <span style="color: red">**-6.500h**</span>.
 
 The situation is obviously not sustainable on long term, and, in order for the project to grow, further support is expected, especially from Commercial Contributors (see the [license]({{ site.baseurl }}/licenses/plug-ins/) page for details).
 
