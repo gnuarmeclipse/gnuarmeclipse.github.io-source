@@ -41,7 +41,7 @@ Please note that these trackers are mostly intended to the GNU ARM Eclipse speci
 
 ## Web pages issues
 
-If you discover problems in the content of these pages (typos, wrong phrasing, etc), or you have suggestions on how to improve them, you can use the [Web Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io/issues/) tracker.
+If you discover problems in the content of these pages (typos, wrong phrasing, etc), or you have suggestions on how to improve them, you can use the [Web Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io-source/issues/) tracker.
 
 > Note: the migration from WordPress/MediaWiki to GitHub Pages involved quite significant changes to the web pages, including conversion to [markdown](http://daringfireball.net/projects/markdown/syntax), which was done partly with scripts, partly manually; we are aware that it is very likely that lots of mistakes are still present in the pages; we would appreciate any help in fixing them.
 

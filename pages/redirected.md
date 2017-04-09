@@ -18,4 +18,4 @@ In Sep 2015, the old documentation sites were migrated from WordPress & MediaWik
 
 Then notify the site that brought you here to update the links.
 
-If you cannot find the desired page, please let us know, using the [GitHub Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io/issues/1) tracker, and we'll investigate. Be sure you copy the last part of the current URL, after the `?`, since this is the offending URL.
+If you cannot find the desired page, please let us know, using the [GitHub Issues](https://github.com/gnuarmeclipse/gnuarmeclipse.github.io-source/issues) tracker, and we'll investigate. Be sure you copy the last part of the current URL, after the `?`, since this is the offending URL.
