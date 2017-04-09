@@ -87,7 +87,7 @@ The following steps can be performed on macOS:
   > Note: It is highly recommended to **do not to change the install path**, since the plug-in tries to automatically discover the toolchain by searching only a limited set of possible locations (`${HOME}/Applications/GNU Tools ARM Embedded`, `${HOME}/local/GNU Tools ARM Embedded`, `${HOME}/local`, `${HOME}/opt`, `/usr/local`).
 
   ```bash
-$ sudo mkdir -p ${HOME}/opt
+$ mkdir -p ${HOME}/opt
 $ cd ${HOME}/opt
 $ tar xjf ~/Downloads/gcc-arm-none-eabi-{{ page.version-id }}-mac.tar.bz2
 $ chmod -R -w ${HOME}/opt/gcc-arm-none-eabi-{{ page.version-id }}
@@ -97,8 +97,8 @@ $ chmod -R -w ${HOME}/opt/gcc-arm-none-eabi-{{ page.version-id }}
 * test if the compiler is functional; use the actual install path:
 
   ```bash
-$ ${HOME}/opt/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]
+$ ${HOME}/opt/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc --version
+arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors 6-2017-q1-update) 6.3.1 20170215 (release) [ARM/embedded-6-branch revision 245512
 ```
 
   > **DO NOT add the toolchain path to the user or system path!**
