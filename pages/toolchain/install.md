@@ -98,7 +98,7 @@ $ chmod -R -w ${HOME}/opt/gcc-arm-none-eabi-{{ page.version-id }}
 
   ```bash
 $ ${HOME}/opt/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors 6-2017-q1-update) 6.3.1 20170215 (release) [ARM/embedded-6-branch revision 245512
+arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors 6-2017-q1-update) 6.3.1 20170215 (release) [ARM/embedded-6-branch revision 245512]
 ```
 
   > **DO NOT add the toolchain path to the user or system path!**
