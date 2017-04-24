@@ -81,7 +81,7 @@ As already mentioned, there are multiple packages available for GNU/Linux on the
 
 ```bash
 $ sudo dpkg -i ~/Downloads/jlink_5.2.7_x86_64.deb
-bash
+```
 
 The J-Link executables are installed in `/usr/bin`.
 
@@ -95,6 +95,7 @@ The install procedure automatically adds **/etc/udev/rules.d/99-jlink.rules** 
 
 To test if J-Link is able to connect to a specific board, you generally need to specify the interface (JTAG or SWD) and the device name. By default, J-Link GDBServer will try JTAG but if only SWD is wired (which is very common on custom hardware), you would need to specify the interface (-if SWD). The device name is needed for targets which require special handling on connect (e.g. due to silicon bugs which make auto-detection impossible). For a list of available device names, please refer to the SEGGER [Supported devices](http://www.segger.com/jlink_supported_devices.html) page. Below is an example how to test a JTAG connection to a STM32F103 evaluation board (-device STM32F103RB) on macOS.
 
+```
 	$ /Applications/SEGGER/JLink/JLinkGDBServer -if JTAG -device STM32F103RB
 	SEGGER J-Link GDB Server V4.80 Command Line Version
 
@@ -133,6 +134,7 @@ To test if J-Link is able to connect to a specific board, you generally need to 
 	Connected to target
 	Waiting for GDB connection...
 	^C
+```
 
 On Windows, to start the GDB server, use back-slashes in the path and the CL (command line) version:
 
@@ -144,7 +146,7 @@ On Ubuntu the command is simple:
 
 ```bash
 $ /usr/bin/JLinkGDBServer
-bash
+```
 
 In all cases, the result should be similar to the one obtained on macOS.
 
