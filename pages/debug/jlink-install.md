@@ -96,50 +96,50 @@ The install procedure automatically adds **/etc/udev/rules.d/99-jlink.rules** 
 To test if J-Link is able to connect to a specific board, you generally need to specify the interface (JTAG or SWD) and the device name. By default, J-Link GDBServer will try JTAG but if only SWD is wired (which is very common on custom hardware), you would need to specify the interface (-if SWD). The device name is needed for targets which require special handling on connect (e.g. due to silicon bugs which make auto-detection impossible). For a list of available device names, please refer to the SEGGER [Supported devices](http://www.segger.com/jlink_supported_devices.html) page. Below is an example how to test a JTAG connection to a STM32F103 evaluation board (-device STM32F103RB) on macOS.
 
 ```
-	$ /Applications/SEGGER/JLink/JLinkGDBServer -if JTAG -device STM32F103RB
-	SEGGER J-Link GDB Server V4.80 Command Line Version
+$ /Applications/SEGGER/JLink/JLinkGDBServer -if JTAG -device STM32F103RB
+SEGGER J-Link GDB Server V4.80 Command Line Version
 
-	JLinkARM.dll V4.80 (DLL compiled Dec 20 2013 19:44:31)
+JLinkARM.dll V4.80 (DLL compiled Dec 20 2013 19:44:31)
 
-	-----GDB Server start settings-----
-	GDBInit file:                  none
-	GDB Server Listening port:     2331
-	SWO raw output listening port: 2332
-	Terminal I/O port:             2333
-	Accept remote connection:      yes
-	Generate logfile:              on
-	Verify download:               on
-	Init regs on start:            on
-	Silent mode:                   off
-	Single run mode:               off
-	------J-Link related settings------
-	J-Link script:                 none
-	Target interface:              JTAG
-	Host interface:                USB
-	Target endian:                 little
-	Target interface speed:        0kHz
+-----GDB Server start settings-----
+GDBInit file:                  none
+GDB Server Listening port:     2331
+SWO raw output listening port: 2332
+Terminal I/O port:             2333
+Accept remote connection:      yes
+Generate logfile:              on
+Verify download:               on
+Init regs on start:            on
+Silent mode:                   off
+Single run mode:               off
+------J-Link related settings------
+J-Link script:                 none
+Target interface:              JTAG
+Host interface:                USB
+Target endian:                 little
+Target interface speed:        0kHz
 
-	Connecting to J-Link...
-	J-Link is connected.
-	Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
-	Hardware: V8.00
-	S/N: XXXXXXXXX
-	OEM: SEGGER-EDU
-	Feature(s): FlashBP, GDB
-	Checking target voltage...
-	Listening on TCP/IP port 2331
-	Connecting to target...
-	J-Link found 2 JTAG devices, Total IRLen = 9
-	JTAG ID: 0x3BA00477 (Cortex-M3)
-	Connected to target
-	Waiting for GDB connection...
-	^C
+Connecting to J-Link...
+J-Link is connected.
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+S/N: XXXXXXXXX
+OEM: SEGGER-EDU
+Feature(s): FlashBP, GDB
+Checking target voltage...
+Listening on TCP/IP port 2331
+Connecting to target...
+J-Link found 2 JTAG devices, Total IRLen = 9
+JTAG ID: 0x3BA00477 (Cortex-M3)
+Connected to target
+Waiting for GDB connection...
+^C
 ```
 
 On Windows, to start the GDB server, use back-slashes in the path and the CL (command line) version:
 
 ```bash
-C:>C:\Program Files\SEGGER\JLinkARM_V480\JLinkGDBServerCL
+C:\>C:\Program Files\SEGGER\JLinkARM_V480\JLinkGDBServerCL
 ```
 
 On Ubuntu the command is simple:

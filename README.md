@@ -66,6 +66,12 @@ To publish, commit this Git and the new site will be automatically updated.
 
 All blog posts are in the `_posts` folder, with specific pages in `qemu`, `openocd` and `windows-build-tools`.
 
+### Drafts
+
+Drafts are posts you’re still working on and don’t want to publish yet. They are stored in the `_drafts` folder and later moved to `_posts` when ready.
+
+To preview your site with drafts, simply run jekyll with the `--drafts` switch.
+
 ### Pages
 
 All web pages are in the `pages` folder, with specific pages in `qemu`, `openocd` and `windows-build-tools`.

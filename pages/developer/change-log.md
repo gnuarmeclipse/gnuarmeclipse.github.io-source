@@ -12,6 +12,92 @@ Entries in this file are in reverse chronological order.
 
 ## 2017
 
+### 2017-04-25
+
+* version 3.4.1.201704251808 released
+  * features/ilg.gnuarmeclipse.codered_1.1.1.201704251808.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.4.201704251808.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.4.201704251808.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.3.201704251808.jar
+  * features/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.4.201704251808.jar
+  * features/ilg.gnuarmeclipse.doc.user_1.1.1.201704251808.jar
+  * features/ilg.gnuarmeclipse.managedbuild.cross_2.4.1.201704251808.jar
+  * features/ilg.gnuarmeclipse.packs_2.2.2.201704251808.jar
+  * features/ilg.gnuarmeclipse.templates.ad_1.1.4.201704251808.jar
+  * features/ilg.gnuarmeclipse.templates.cortexm_1.4.2.201704251808.jar
+  * features/ilg.gnuarmeclipse.templates.freescale_2.2.8.201704251808.jar
+  * features/ilg.gnuarmeclipse.templates.stm_2.6.2.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.codered_1.1.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.core_3.4.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.debug.core_1.2.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.4.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.4.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.3.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.4.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag.restart_1.3.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.debug.gdbjtag_3.2.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.debug.packs_1.1.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.doc.user_1.1.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.managedbuild.cross_2.4.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.managedbuild.packs_1.3.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.packs.core_1.1.3.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.packs.data_1.3.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.packs.ui_1.2.4.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.packs_1.2.4.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.templates.ad_1.1.4.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.templates.core_2.5.6.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.templates.cortexm_1.4.2.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.templates.freescale.pe_1.2.1.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.templates.freescale_2.2.8.201704251808.jar
+  * plugins/ilg.gnuarmeclipse.templates.stm_2.6.2.201704251808.jar
+
+### 2017-04-24
+
+* [#199] packs.data: parse index.pidx files, convert old index.idx to pidx internally
+* packs.data: version 1.3.1
+* [#200] packs.ui/PacksView: use semver, order versions by full semver
+* packs.ui/update: explicit malformed index message
+* [#153] templates.core: make raise() & kill() weak
+* debug.gdbjtag: peripheralAddressOffset, PeripheralTreeVMNode.java: getPeripheralBigAddressOffset() cumulates this offset with parent peripheral offset
+* debug.gdbjtag: register array address, PeripheralRegisterArrayVMNode.java no longer needs getBigAbsoluteAddress(), parent is good for all nodes
+* [#150] debug.gdbjtag: cluster addressOffset, SvdClusterDMNode.java get offset from property
+* [#144] gdbjtag.jlink: make windows scrolable
+* gdbjtag.openocd,pyocd,qemu scrollable windows; same medicine as for jlink
+* [#137] SAX line & column; print details for SAX parse error
+* [#25] avoid multiple defs in devices/boards/books; use a Set instead of a list to collect installed packages
+* version: gdbjtag 3.2.1, packs[.ui] 1.2.4
+
+### 2017-04-23
+
+* core/StringUtils: add compareSimpleVersion
+* packs.ui/PacksView: compare numeric versions
+* packs.ui: version 1.2.3
+* ISSUE_TEMPLATE: fix typos, add reference to crypto extensions
+* add UNUSED pack type for disabling repos
+
+### 2017-04-04
+
+* publish-updates.sh: publish to bintray
+
+### 2017-04-03
+
+* templates.*: explicit MIT license
+* versions: templates.core 2.5.6, tempaltes.ad 1.1.4, templates.cortexm 1.4.2,
+ templates.freescale 2.2.8, templates.stm 2.6.2
+
+### 2017-03-24
+
+* [#185] cross.mbs: mcu default back to m3
+* versions: cross.mbs 2.4.1
+* [#183] templates.cortexm: add m23, m33 to list
+* versions: templates.cortexm 1.4.1
+
+### 2017-02-26
+
+* gdbjtag.*: add explicit tests for isWindows() when checking registry
+* versions: jlink,openocd 4.1.4, qemu 3.1.4, pyocd 1.1.3
+* publish-update.sh: compute SHA, relative archive foder
+
 ### 2017-02-25
 
 * version 3.3.1-201702251311 released

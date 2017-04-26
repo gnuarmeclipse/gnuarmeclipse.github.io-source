@@ -20,89 +20,230 @@ For this, run the `scripts/publish-updates-test.command` (this is a script that 
 
 A typical session looks like:
 
-    $ /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/gnuarmeclipse-se.git/scripts/publish-updates-test.command ; exit;
-    Updating Eclipse/updates-test
-    Rsync-ing SourceForge Eclipse/updates-test site (-vrCt --exclude=scripts --exclude=.* --delete --checksum)
-    Password:
-    building file list ... done
-    deleting features/ilg.gnuarmeclipse.templates.stm_2.3.1.201507311003.jar
-    deleting features/ilg.gnuarmeclipse.templates.freescale_2.2.6.201507311003.jar
-    deleting features/ilg.gnuarmeclipse.templates.cortexm_1.2.6.201507311003.jar
-    deleting features/ilg.gnuarmeclipse.packs_2.2.2.201507311003.jar
-    deleting features/ilg.gnuarmeclipse.managedbuild.cross_1.14.1.201507311003.jar
-    deleting features/ilg.gnuarmeclipse.doc.user_1.1.1.201507311003.jar
-    deleting features/ilg.gnuarmeclipse.debug.gdbjtag.qemu_2.1.1.201507311003.jar
-    deleting features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_3.2.1.201507311003.jar
-    deleting features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_3.2.1.201507311003.jar
-    deleting features/ilg.gnuarmeclipse.codered_1.1.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.templates.stm_2.3.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.templates.freescale_2.2.6.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.templates.freescale.pe_1.2.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.templates.cortexm_1.2.6.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.templates.core_2.4.2.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.packs_1.2.3.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.packs.ui_1.2.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.packs.data_1.2.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.packs.core_1.1.2.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.managedbuild.packs_1.2.2.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.managedbuild.cross_1.14.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.doc.user_1.1.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.debug.packs_1.1.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag_2.2.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag.restart_1.3.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag.qemu_2.1.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag.openocd_3.2.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag.jlink_3.2.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.debug.core_1.2.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.core_2.9.1.201507311003.jar
-    deleting plugins/ilg.gnuarmeclipse.codered_1.1.1.201507311003.jar
-    ./
-    artifacts.jar
-    content.jar
-    features/
-    features/ilg.gnuarmeclipse.codered_1.1.1.201508011813.jar
-    features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_3.2.1.201508011813.jar
-    features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_3.2.1.201508011813.jar
-    features/ilg.gnuarmeclipse.debug.gdbjtag.qemu_2.1.1.201508011813.jar
-    features/ilg.gnuarmeclipse.doc.user_1.1.1.201508011813.jar
-    features/ilg.gnuarmeclipse.managedbuild.cross_1.14.1.201508011813.jar
-    features/ilg.gnuarmeclipse.packs_2.2.2.201508011813.jar
-    features/ilg.gnuarmeclipse.templates.cortexm_1.2.6.201508011813.jar
-    features/ilg.gnuarmeclipse.templates.freescale_2.2.6.201508011813.jar
-    features/ilg.gnuarmeclipse.templates.stm_2.3.1.201508011813.jar
-    plugins/
-    plugins/ilg.gnuarmeclipse.codered_1.1.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.core_2.9.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.debug.core_1.2.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.debug.gdbjtag.jlink_3.2.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.debug.gdbjtag.openocd_3.2.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.debug.gdbjtag.qemu_2.1.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.debug.gdbjtag.restart_1.3.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.debug.gdbjtag_2.2.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.debug.packs_1.1.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.doc.user_1.1.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.managedbuild.cross_1.14.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.managedbuild.packs_1.2.2.201508011813.jar
-    plugins/ilg.gnuarmeclipse.packs.core_1.1.2.201508011813.jar
-    plugins/ilg.gnuarmeclipse.packs.data_1.2.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.packs.ui_1.2.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.packs_1.2.3.201508011813.jar
-    plugins/ilg.gnuarmeclipse.templates.core_2.4.2.201508011813.jar
-    plugins/ilg.gnuarmeclipse.templates.cortexm_1.2.6.201508011813.jar
-    plugins/ilg.gnuarmeclipse.templates.freescale.pe_1.2.1.201508011813.jar
-    plugins/ilg.gnuarmeclipse.templates.freescale_2.2.6.201508011813.jar
-    plugins/ilg.gnuarmeclipse.templates.stm_2.3.1.201508011813.jar
+```
+$ /Users/ilg/My\ Files/MacBookPro\ Projects/GNU\ ARM\ Eclipse/plug-ins.git/scripts/publish-updates-test.command ; exit;
+Updating Eclipse/updates-test
 
-    sent 5124827 bytes  received 890 bytes  330691.42 bytes/sec
-    total size is 5120410  speedup is 1.00
-    Published on the test site.
-    ilg.gnuarmeclipse.repository-2.9.1-SNAPSHOT.zip -> /Users/ilg/My Files/MacBookPro Projects/GNU ARM Eclipse/archive/ilg.gnuarmeclipse.repository-2.9.1-201508011813.zip
-    When final, don't forget to publish the archive too!
-    It is available from /Users/ilg/My Files/MacBookPro Projects/GNU ARM Eclipse/archive/ilg.gnuarmeclipse.repository-2.9.1-201508011813.zip
-    Install new software from http://gnuarmeclipse.sourceforge.net/updates-test
-    logout
+User: ilg-ul
+API key: XXXXXXXXXXXX
+Owner: gnuarmeclipse
+Create version 'updates-test/p2/3.4.1.201704251808'
+######################################################################## 100.0%
+Created.
 
-    [Process completed]
+Upload 'artifacts.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'artifacts.xml.xz' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'content.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'content.xml.xz' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'p2.index' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.codered_1.1.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.3.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.doc.user_1.1.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.managedbuild.cross_2.4.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.packs_2.2.2.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.templates.ad_1.1.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.templates.cortexm_1.4.2.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.templates.freescale_2.2.8.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'features/ilg.gnuarmeclipse.templates.stm_2.6.2.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.codered_1.1.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.core_3.4.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.debug.core_1.2.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.3.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.debug.gdbjtag.restart_1.3.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.debug.gdbjtag_3.2.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.debug.packs_1.1.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.doc.user_1.1.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.managedbuild.cross_2.4.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.managedbuild.packs_1.3.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.packs.core_1.1.3.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.packs.data_1.3.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.packs.ui_1.2.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.packs_1.2.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.templates.ad_1.1.4.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.templates.core_2.5.6.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.templates.cortexm_1.4.2.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.templates.freescale.pe_1.2.1.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.templates.freescale_2.2.8.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Upload 'plugins/ilg.gnuarmeclipse.templates.stm_2.6.2.201704251808.jar' to '/updates-test/p2/3.4.1.201704251808/'
+######################################################################## 100.0%
+Uploaded.
+Publish 'updates-test/p2/3.4.1.201704251808'
+{"files":35}
+
+Rsync-ing SourceForge Eclipse/updates-test site (-vrCt --exclude=scripts --exclude=.* --delete --checksum)
+Password: 
+building file list ... done
+deleting features/ilg.gnuarmeclipse.templates.stm_2.6.2.201704242117.jar
+deleting features/ilg.gnuarmeclipse.templates.freescale_2.2.8.201704242117.jar
+deleting features/ilg.gnuarmeclipse.templates.cortexm_1.4.2.201704242117.jar
+deleting features/ilg.gnuarmeclipse.templates.ad_1.1.4.201704242117.jar
+deleting features/ilg.gnuarmeclipse.packs_2.2.2.201704242117.jar
+deleting features/ilg.gnuarmeclipse.managedbuild.cross_2.4.1.201704242117.jar
+deleting features/ilg.gnuarmeclipse.doc.user_1.1.1.201704242117.jar
+deleting features/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.4.201704242117.jar
+deleting features/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.3.201704242117.jar
+deleting features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.4.201704242117.jar
+deleting features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.4.201704242117.jar
+deleting features/ilg.gnuarmeclipse.codered_1.1.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.templates.stm_2.6.2.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.templates.freescale_2.2.8.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.templates.freescale.pe_1.2.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.templates.cortexm_1.4.2.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.templates.core_2.5.6.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.templates.ad_1.1.4.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.packs_1.2.3.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.packs.ui_1.2.3.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.packs.data_1.3.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.packs.core_1.1.3.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.managedbuild.packs_1.3.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.managedbuild.cross_2.4.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.doc.user_1.1.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.debug.packs_1.1.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag_3.1.2.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag.restart_1.3.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.4.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.3.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.4.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.4.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.debug.core_1.2.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.core_3.4.1.201704242117.jar
+deleting plugins/ilg.gnuarmeclipse.codered_1.1.1.201704242117.jar
+./
+artifacts.jar
+artifacts.xml.xz
+content.jar
+content.xml.xz
+p2.index
+features/
+features/ilg.gnuarmeclipse.codered_1.1.1.201704251808.jar
+features/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.4.201704251808.jar
+features/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.4.201704251808.jar
+features/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.3.201704251808.jar
+features/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.4.201704251808.jar
+features/ilg.gnuarmeclipse.doc.user_1.1.1.201704251808.jar
+features/ilg.gnuarmeclipse.managedbuild.cross_2.4.1.201704251808.jar
+features/ilg.gnuarmeclipse.packs_2.2.2.201704251808.jar
+features/ilg.gnuarmeclipse.templates.ad_1.1.4.201704251808.jar
+features/ilg.gnuarmeclipse.templates.cortexm_1.4.2.201704251808.jar
+features/ilg.gnuarmeclipse.templates.freescale_2.2.8.201704251808.jar
+features/ilg.gnuarmeclipse.templates.stm_2.6.2.201704251808.jar
+plugins/
+plugins/ilg.gnuarmeclipse.codered_1.1.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.core_3.4.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.debug.core_1.2.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.debug.gdbjtag.jlink_4.1.4.201704251808.jar
+plugins/ilg.gnuarmeclipse.debug.gdbjtag.openocd_4.1.4.201704251808.jar
+plugins/ilg.gnuarmeclipse.debug.gdbjtag.pyocd_1.1.3.201704251808.jar
+plugins/ilg.gnuarmeclipse.debug.gdbjtag.qemu_3.1.4.201704251808.jar
+plugins/ilg.gnuarmeclipse.debug.gdbjtag.restart_1.3.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.debug.gdbjtag_3.2.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.debug.packs_1.1.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.doc.user_1.1.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.managedbuild.cross_2.4.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.managedbuild.packs_1.3.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.packs.core_1.1.3.201704251808.jar
+plugins/ilg.gnuarmeclipse.packs.data_1.3.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.packs.ui_1.2.4.201704251808.jar
+plugins/ilg.gnuarmeclipse.packs_1.2.4.201704251808.jar
+plugins/ilg.gnuarmeclipse.templates.ad_1.1.4.201704251808.jar
+plugins/ilg.gnuarmeclipse.templates.core_2.5.6.201704251808.jar
+plugins/ilg.gnuarmeclipse.templates.cortexm_1.4.2.201704251808.jar
+plugins/ilg.gnuarmeclipse.templates.freescale.pe_1.2.1.201704251808.jar
+plugins/ilg.gnuarmeclipse.templates.freescale_2.2.8.201704251808.jar
+plugins/ilg.gnuarmeclipse.templates.stm_2.6.2.201704251808.jar
+
+sent 8222123 bytes  received 1158 bytes  213591.71 bytes/sec
+total size is 8216700  speedup is 1.00
+Published on the test site.
+Archive available from "/Users/ilg/My Files/MacBookPro Projects/GNU ARM Eclipse/archive/internal/ilg.gnuarmeclipse.repository-3.4.1-201704251808.zip"
+When final, don't forget to publish the archive too!
+Install new software from http://gnuarmeclipse.sourceforge.net/updates-test
+logout
+```
 
 ## Install on a separate Eclipse
 
@@ -125,7 +266,7 @@ Add an entry with the latest feature & plug-in versions, copied from the publish
 
 ## Prepare a new blog post to announce the release
 
-Add a new file to the `_posts/plugins/releases`.
+Add a new file to the `_drafts` and later moved to `_posts/plugins/releases`.
 
 Name the post like: *Release v2.9.3 201508190739*, title: *Version 2.2.1-201404120702 released*.
 
@@ -251,7 +392,7 @@ In the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) pag
 
 For all [GitHub issues](https://github.com/gnuarmeclipse/plug-ins/issues) marked with the current version, close them with a message like _fixed since v3.2.1-201701141320_.
 
-## Publish on SourceForge
+## Publish on SourceForge ()
 
 * go to [SourceForge Files](http://sourceforge.net/projects/gnuarmeclipse/files/Current%20Releases/)
 * select the folder corresponding to the latest version (currently **3.x**); create a new one if necessary
