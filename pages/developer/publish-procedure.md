@@ -365,11 +365,11 @@ Do not close the terminal before copy/paste the list to the ChangeLog page!.
 * be sure the **develop** branch is up to date and set as default
 * go to the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) page
 * click **Draft a new release**
-* name the tag like **v2.9.3-201508190739**
+* name the tag like **v2.9.3-201508190739** (mind the `-` in the middle!)
 * select the **develop** branch
-* name the release like **GNU ARM Eclipse plug-ins v2.9.3-201508190739**
+* name the release like **GNU ARM Eclipse plug-ins v2.9.3-201508190739**  (mind the `-` in the middle!)
 * as description, copy the first paragraph from the Web release page
-* attach binaries (drag and drop from the archives folder will do it)
+* **attach binaries** (drag and drop from the archives folder will do it)
 * click the **Publish Release** button
 
 Note: at this moment the system should send a notification to all clients watching this project.
@@ -387,6 +387,14 @@ In the [GitHub Releases](https://github.com/gnuarmeclipse/plug-ins/releases) pag
 
 * add a link to the Web page `[Continue reading »]()`
 * get URL from web [Releases](http://gnuarmeclipse.github.io/developer/releases/) and update the above link
+
+## Add the release downloads badge
+
+The code looks like this:
+
+```
+[![Github Releases (by Release)](https://img.shields.io/github/downloads/gnuarmeclipse/plug-ins/v3.4.1-201704251808/total.svg)](http://gnuarmeclipse.github.io/blog/2017/02/25/plugins-v3.4.1-201704251808-released/)
+```
 
 ## Close issues
 
