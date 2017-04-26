@@ -1,10 +1,17 @@
 # Travis CI configuration file to validate and deploy 
 # the GNU ARM Eclipse Jekyll site.
+# https://docs.travis-ci.com/user/getting-started/
 
+# https://docs.travis-ci.com/user/multi-os/
+os:
+  - linux
+
+# https://docs.travis-ci.com/user/trusty-ci-environment/
 # Use the new Debian 14 containers.
 dist: trusty
 sudo: false
 
+# https://docs.travis-ci.com/user/languages/ruby/
 language: ruby
 rvm:
   - 2.3.1
@@ -28,6 +35,11 @@ notifications:
     on_success: always # default: change
     on_failure: always # default: always
     
+cache: 
+  bundler: true
+
+# -----------------------------------------------------------------------------
+
 before_install:
   - bash scripts/travis.linux.sh before_install
 
@@ -55,3 +67,5 @@ script:
   
 # after_script:
 #  - bash scripts/travis.linux.sh after_script
+
+# -----------------------------------------------------------------------------
