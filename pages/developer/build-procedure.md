@@ -120,11 +120,21 @@ To run a debug session using the GNU ARM Eclipse plug-ins:
 
 Be sure the target platform is the Running Platform, otherwise starting the debug session fails.
 
-The location of the new Eclipse folder is:
+## Debug options
+
+as seen before, the debug options are grouped in a file and passed to Eclipse using the `-debug <name>` option.
+
+## Plug-ins cache
+
+When starting debug sessions from within Eclipse, a copy of the run-time is kept under 
 
 ```
 ${workspace_loc}/.metadata/.plugins/org.eclipse.pde.core/Eclipse GNU ARM Plug-ins
 ```
+
+For unknown reasons, some changes in the source code (like changing properties files) do not trigger a rebuild, and it is normally not possible to test these changes.
+
+The workaround I found was to remove this folder, and Eclipse will recreate it before the next run.
 
 ## Debug with CDT sources
 
