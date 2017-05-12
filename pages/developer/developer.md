@@ -14,6 +14,7 @@ date: 2015-09-10 18:31:00 +0300
 
 * [How Eclipse runtime preferences and defaults work]({{ site.baseurl }}/developer/eclipse/runtime-preferences)
 * [ilg.gnuarmeclipse.managedbuild.cross]({{ site.baseurl }}/developer/preferences/ilg.gnuarmeclipse.managedbuild.cross) persistent values & toolchain ids
+* [ilg.gnumcueclipse.managedbuild.cross.riscv]({{ site.baseurl }}/developer/preferences/ilg.gnumcueclipse.managedbuild.cross.riscv) persistent values & toolchain ids
 * [ilg.gnuarmeclipse.debug.gdbjtag.jlink]({{ site.baseurl }}/developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.jlink) persistent values (workspace)
 * [ilg.gnuarmeclipse.debug.gdbjtag.openocd]({{ site.baseurl }}/developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.openocd) persistent values (workspace)
 * [ilg.gnuarmeclipse.debug.gdbjtag.qemu]({{ site.baseurl }}/developer/preferences/ilg.gnuarmeclipse.debug.gdbjtag.qemu) persistent values (workspace)
