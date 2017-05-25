@@ -86,7 +86,7 @@ This extension point is implemented one in **ilg.gnumcueclipse.managedbuild.cros
 </extension>
 ```
 
-The data manager created by this factory is [ilg.gnumcueclipse.managedbuild.cross.xpi/CProjectExtraDataManager.java](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.managedbuild.cross/src/ilg/gnuarmeclipse/managedbuild/cross/xpi/CProjectExtraDataManager.java) which returns the entire map of extra properties associated with GNU ARM Eclipse projects, stored in .cproject:
+The data manager created by this factory is [ilg.gnumcueclipse.managedbuild.cross.xpi/CProjectExtraDataManager.java](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.managedbuild.cross/src/ilg/gnumcueclipse/managedbuild/cross/xpi/CProjectExtraDataManager.java) which returns the entire map of extra properties associated with GNU ARM Eclipse projects, stored in .cproject:
 
 ```xml
 <storageModule moduleId="ilg.gnumcueclipse.managedbuild.packs">
