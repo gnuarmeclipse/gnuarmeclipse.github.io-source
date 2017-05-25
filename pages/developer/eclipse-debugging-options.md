@@ -16,13 +16,13 @@ To start Eclipse with all tracing messages enabled, add `-debug <file>` to the c
 .../Eclipse.app/Contents/MacOS/eclipse -debug https://github.com/gnuarmeclipse/plug-ins/raw/develop/debug.options
 ```
 
-Alternatively, you can copy the files locally, edit it and point Eclipse to it:
+Alternatively, you can copy the file locally, edit it and point Eclipse to it:
 
 ```
 .../Eclipse.app/Contents/MacOS/eclipse -debug ${HOME}/tmp/debug.options
 ```
 
-For convenience, you can also copy the file as `Eclipse.app/Contents/MacOS/.options` and start Eclipse without the file name:
+For convenience, you can also copy into the Eclipse folder (for example as `Eclipse.app/Contents/MacOS/.options`) and start Eclipse without the file name:
 
 ```
 .../Eclipse.app/Contents/MacOS/eclipse -debug
@@ -32,7 +32,9 @@ For convenience, you can also copy the file as `Eclipse.app/Contents/MacOS/.opti
 
 Individual Eclipse plug-ins check various properties to display debugging trace messages.
 
-The default properties are defined in **.options** files located in each plug-in folder.
+### Default debug values
+
+The properties not defined in the file given to `-debug` (or in Eclipse `.options`) default to the values defined in **.options** files located in each plug-in folder (generally set to `false`).
 
 ```
 org.eclipse.cdt.core/debug=false
@@ -40,6 +42,8 @@ org.eclipse.cdt.core/debug=false
 # ASTCache debugging
 org.eclipse.cdt.core/debug/ASTCache=false
 ```
+
+### Programatic access
 
 The actual values of the debug options are programatically available via:
 
