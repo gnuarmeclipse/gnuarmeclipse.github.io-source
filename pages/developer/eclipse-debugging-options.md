@@ -8,23 +8,51 @@ date: 2015-09-10 18:33:00 +0300
 
 ---
 
-Eclipse plug-ins check various properties to display debugging trace messages.
+## Start Eclipse in debugging mode
+
+To start Eclipse with all tracing messages enabled, add `-debug <file>` to the command line:
+
+```
+.../Eclipse.app/Contents/MacOS/eclipse -debug https://github.com/gnuarmeclipse/plug-ins/raw/develop/debug.options
+```
+
+Alternatively, you can copy the files locally, edit it and point Eclipse to it:
+
+```
+.../Eclipse.app/Contents/MacOS/eclipse -debug ${HOME}/tmp/debug.options
+```
+
+For convenience, you can also copy the file as `Eclipse.app/Contents/MacOS/.options` and start Eclipse without the file name:
+
+```
+.../Eclipse.app/Contents/MacOS/eclipse -debug
+```
+
+## How Eclipse tracing works?
+
+Individual Eclipse plug-ins check various properties to display debugging trace messages.
 
 The default properties are defined in **.options** files located in each plug-in folder.
 
-    org.eclipse.cdt.core/debug=false
+```
+org.eclipse.cdt.core/debug=false
 
-    # ASTCache debugging
-    org.eclipse.cdt.core/debug/ASTCache=false
+# ASTCache debugging
+org.eclipse.cdt.core/debug/ASTCache=false
+```
 
-The debug options are available via:
+The actual values of the debug options are programatically available via:
 
-    String Platform.getDebugOption(String name);
+```java
+String Platform.getDebugOption(String name);
+```
 
 Example:
 
-    private static final boolean DEBUG= "true".equalsIgnoreCase(Platform.getDebugOption("org.eclipse.cdt.core/debug/ASTCache"));
-    ...
-    if (DEBUG) {
-      System.out.println("message");
-    }
+```java
+private static final boolean DEBUG= "true".equalsIgnoreCase(Platform.getDebugOption("org.eclipse.cdt.core/debug/ASTCache"));
+...
+if (DEBUG) {
+    System.out.println("message");
+}
+```

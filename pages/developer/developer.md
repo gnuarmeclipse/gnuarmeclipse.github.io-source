@@ -22,7 +22,7 @@ date: 2015-09-10 18:31:00 +0300
 ### Debugging options
 
 * [How Eclipse debugging options work]({{ site.baseurl }}/developer/eclipse/debugging-options)
-* [Platform tracing facility](https://wiki.eclipse.org/FAQ_How_do_I_use_the_platform_debug_tracing_facility)
+* [Eclipse platform tracing facility](https://wiki.eclipse.org/FAQ_How_do_I_use_the_platform_debug_tracing_facility)
 
 ### GNU ARM Eclipse extension points
 
@@ -40,8 +40,8 @@ The GNU ARM Eclipse plug-ins define several custom extension points, to facilita
 
 How to build the plug-ins from sources and publish them.
 
-* [Prerequisites]({{ site.baseurl }}/developer/build-prerequisites)
-* [How to build]({{ site.baseurl }}/developer/build-procedure)
+* [Prerequisites]({{ site.baseurl }}/developer/build-prerequisites) ([v4]({{ site.baseurl }}/developer/build-prerequisites-v4))
+* [How to build]({{ site.baseurl }}/developer/build-procedure) ([v4]({{ site.baseurl }}/developer/build-procedure-v4))
 * [How to publish]({{ site.baseurl }}/developer/publish-procedure)
 * [Development environment]({{ site.baseurl }}/developer/development-environment)
 * [Change log]({{ site.baseurl }}/developer/change-log) ([2014]({{ site.baseurl }}/developer/change-log/2014)) ([2013]({{ site.baseurl }}/developer/change-log/2013)) ([v0.5.x]({{ site.baseurl }}/developer/change-log/v05x))
