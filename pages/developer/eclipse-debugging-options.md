@@ -22,7 +22,7 @@ Alternatively, you can copy the file locally, edit it and point Eclipse to it:
 .../Eclipse.app/Contents/MacOS/eclipse -debug ${HOME}/tmp/debug.options
 ```
 
-For convenience, you can also copy into the Eclipse folder (for example as `Eclipse.app/Contents/MacOS/.options`) and start Eclipse without the file name:
+For convenience, you can also copy into the file as `.options` Eclipse folder (for example as `Eclipse.app/Contents/MacOS/.options`) and start Eclipse without the file name:
 
 ```
 .../Eclipse.app/Contents/MacOS/eclipse -debug
@@ -54,7 +54,7 @@ String Platform.getDebugOption(String name);
 Example:
 
 ```java
-private static final boolean DEBUG= "true".equalsIgnoreCase(Platform.getDebugOption("org.eclipse.cdt.core/debug/ASTCache"));
+private static final boolean DEBUG = "true".equalsIgnoreCase(Platform.getDebugOption("org.eclipse.cdt.core/debug/ASTCache"));
 ...
 if (DEBUG) {
     System.out.println("message");
