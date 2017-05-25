@@ -60,3 +60,11 @@ if (DEBUG) {
     System.out.println("message");
 }
 ```
+
+A more elaborated solution is to derive the `Activator` class from `ilg.gnumcueclipse.core.AbstractUIActivator` and use the `isDebugging()` method:
+
+```
+if (Activator.getInstance().isDebugging()) {
+	System.out.println("message");
+}
+```
