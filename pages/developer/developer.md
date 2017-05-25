@@ -28,8 +28,8 @@ date: 2015-09-10 18:31:00 +0300
 
 The GNU ARM Eclipse plug-ins define several custom extension points, to facilitate the integration with third-party plug-ins.
 
-* [ilg.gnuarmeclipse.debug.core.cprojectExtra]({{ site.baseurl }}/developer/extension/ilg.gnuarmeclipse.debug.core.cprojectextra) (C Project Extra Data Manager)
-* [ilg.gnuarmeclipse.debug.core.svdPath]({{ site.baseurl }}/developer/extension/ilg.gnuarmeclipse.debug.core.svdpath) (SVD Path Manager)
+* [ilg.gnumcueclipse.debug.core.cprojectExtra]({{ site.baseurl }}/developer/extension/ilg.gnumcueclipse.debug.core.cprojectextra) (C Project Extra Data Manager)
+* [ilg.gnumcueclipse.debug.core.svdPath]({{ site.baseurl }}/developer/extension/ilg.gnumcueclipse.debug.core.svdpath) (SVD Path Manager)
 
 ## Miscellaneous
 
