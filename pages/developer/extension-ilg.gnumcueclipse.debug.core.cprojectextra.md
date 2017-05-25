@@ -23,7 +23,7 @@ The Eclipse definition of this extension point is in [ilg.gnumcueclipse.debug.co
 
 ## API
 
-The extension point refers to a factory that creates a class that must implement [ICProjectExtraDataManager](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.debug.core/src/ilg/gnuarmeclipse/debug/core/data/ICProjectExtraDataManager.java).
+The extension point refers to a factory that creates a class that must implement [ICProjectExtraDataManager](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.debug.core/src/ilg/gnumcueclipse/debug/core/data/ICProjectExtraDataManager.java).
 
 The only function required is:
 
@@ -33,7 +33,7 @@ public Map<String, String> getExtraProperties(IConfiguration config);
 
 ## Where is this extension point used?
 
-The [ilg.gnumcueclipse.debug.gdbjtag.data/CProjectExtraDataManagerProxy.java](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.debug.gdbjtag/src/ilg/gnuarmeclipse/debug/gdbjtag/data/CProjectExtraDataManagerProxy.java) class enumerates all **cprojectExtra** extension points and returns the first one that can provide data for the requested configuration.
+The [ilg.gnumcueclipse.debug.gdbjtag.data/CProjectExtraDataManagerProxy.java](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.debug.gdbjtag/src/ilg/gnumcueclipse/debug/gdbjtag/data/CProjectExtraDataManagerProxy.java) class enumerates all **cprojectExtra** extension points and returns the first one that can provide data for the requested configuration.
 
 This `CProjectExtraDataManagerProxy.getExtraProperties(config)` is called from `PeripheralsService.etPeripherals(IContainerDMContext containerDMContext, DataRequestMonitor<IPeripheralDMContext[]> drm)`:
 

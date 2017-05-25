@@ -23,7 +23,7 @@ The Eclipse definition of this extension point is in [ilg.gnumcueclipse.debug.co
 
 ## API
 
-The extension point refers to a factory that creates a class that must implement [ISVDPathManager](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.debug.core/src/ilg/gnuarmeclipse/debug/core/data/ISVDPathManager.java).
+The extension point refers to a factory that creates a class that must implement [ISVDPathManager](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.debug.core/src/ilg/gnumcueclipse/debug/core/data/ISVDPathManager.java).
 
 The only function required is:
 
@@ -33,7 +33,7 @@ public IPath getSVDAbsolutePath(String deviceVendorId, String deviceName);
 
 ## Where is this extension point used?
 
-The svdPath extension point is used in [ilg.gnumcueclipse.debug.gdbjtag.data/SVDPathManagerProxy.java](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.debug.gdbjtag/src/ilg/gnuarmeclipse/debug/gdbjtag/data/SVDPathManagerProxy.java), called from `SVDUtils.getTree(String deviceVendorId, String deviceName)`:
+The svdPath extension point is used in [ilg.gnumcueclipse.debug.gdbjtag.data/SVDPathManagerProxy.java](https://github.com/gnuarmeclipse/plug-ins/blob/develop/ilg.gnumcueclipse.debug.gdbjtag/src/ilg/gnumcueclipse/debug/gdbjtag/data/SVDPathManagerProxy.java), called from `SVDUtils.getTree(String deviceVendorId, String deviceName)`:
 
 ```java
 // Try to get the SVD from a custom provider, like in DAVE.
