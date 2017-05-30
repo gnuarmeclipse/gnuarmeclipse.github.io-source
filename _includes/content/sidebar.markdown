@@ -102,6 +102,7 @@
 
 #### [Developer]({{ site.baseurl }}/developer/)
 
+* [Overview]({{ site.baseurl }}/developer/)
 * [How to build]({{ site.baseurl }}/developer/build-procedure/)
 * [How to publish]({{ site.baseurl }}/developer/publish-procedure/)
 * [Change log]({{ site.baseurl }}/developer/change-log)
