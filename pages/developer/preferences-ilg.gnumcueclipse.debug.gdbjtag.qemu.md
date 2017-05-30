@@ -35,6 +35,8 @@ The persistent properties are:
     gdb.server.doStart=true
     gdb.server.executable=${qemu_path}/${qemu_executable}
     gdb.server.other=
+    install.folder=...
+    executable.name=qemu-system-gnuarmeclipse
 
 
 ## Launcher defaults
@@ -48,7 +50,7 @@ Defining these properties will provide the desired default values to the **Debug
 
     ilg.gnumcueclipse.debug.gdbjtag.qemu/tab.main.checkProgram=false
 
-Setting **tab.main.checkProgram** to true will check the program name field and disable the Debug button if the program name is not valid.
+Setting `tab.main.checkProgram` to true will check the program name field and disable the Debug button if the program name is not valid.
 
 ## Install defaults
 
@@ -56,19 +58,19 @@ Defining these two properties will provide default values to the corresponding f
 
 ### The executable name
 
-The plug-in will use this definition as default for **${qemu_executable}**.
+The plug-in will use this definition as default for `${qemu_executable}`.
 
     ilg.gnumcueclipse.debug.gdbjtag.qemu/executable.name=qemu-system-gnuarmeclipse
 
 ### The executable location
 
-The plug-in will take a best effort approach to find a location to be used as default for **${qemu_path}**.
+The plug-in will take a best effort approach to find a location to be used as default for `${qemu_path}`.
 
     ilg.gnumcueclipse.debug.gdbjtag.qemu/install.folder=/Applications/GNU ARM Eclipse/QEMU/2.2.92-201504041609-dev/bin
 
 If this preference is defined and the executable is there, the plug-in will use it.
 
-if not, the Windows Registry will be searched. If the **InstallFolder** key is found below the **\\GNU ARM Eclipse\\QEMU** subkey, and the executable is found there, the plug-in will use it.
+if not, the Windows Registry will be searched. If the `InstallFolder` key is found below the `\\GNU ARM Eclipse\\QEMU` subkey, and the executable is found there, the plug-in will use it.
 
 Otherwise the plug-in will try a folder search.
 
@@ -80,8 +82,8 @@ Otherwise the plug-in will try a folder search.
     /opt/local:\
     /usr/local
 
-If this preference is defined, the plug-in will use it as search path, otherwise the specific platform defaults available in the **preferences.ini** file are used.
+If this preference is defined, the plug-in will use it as search path, otherwise the specific platform defaults available in the `preferences.ini` file are used.
 
-For each folder in the path, the plug-in tries to identify subfolders which look like **folder/\*/bin/${qemu_executable}**; if multiple such subfolders are found (in case multiple versions), the list of names is ordered lexicographically and the last one is used.
+For each folder in the path, the plug-in tries to identify subfolders which look like `folder/\*/bin/${qemu_executable}`; if multiple such subfolders are found (in case multiple versions), the list of names is ordered lexicographically and the last one is used.
 
-If not found, another test for **folder/bin/${qemu_executable}** is made.
+If not found, another test for `folder/bin/${qemu_executable}` is made.

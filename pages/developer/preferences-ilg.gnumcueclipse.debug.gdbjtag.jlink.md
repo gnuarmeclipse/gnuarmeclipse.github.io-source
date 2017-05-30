@@ -47,6 +47,8 @@ The J-Link preferences define the device name and all other J-Link related setti
     gdb.server.interface=swd
     gdb.server.other=-singlerun -strict -timeout 0
     gdb.server.speed=1000
+    install.folder=...
+    executable.name=JLinkGDBServer
 
 ## Launcher defaults
 
@@ -66,7 +68,7 @@ Defining these properties will provide the desired default values to the **Debug
 
     ilg.gnumcueclipse.debug.gdbjtag.jlink/tab.main.checkProgram=false
 
-Setting **tab.main.checkProgram** to true will check the program name field and disable the Debug button if the program name is not valid.
+Setting `tab.main.checkProgram` to true will check the program name field and disable the Debug button if the program name is not valid.
 
 ## Install defaults
 
@@ -74,19 +76,19 @@ Defining these two properties will provide default values to the corresponding f
 
 ### The executable name
 
-The plug-in will use this definition as default for **\${jlink_gdbserver}**.
+The plug-in will use this definition as default for `${jlink_gdbserver}`.
 
     ilg.gnumcueclipse.debug.gdbjtag.jlink/executable.name=JLinkGDBServer
 
 ### The executable location
 
-The plug-in will take a best effort approach to find a location to be used as default for **\{jlink_path}**.
+The plug-in will take a best effort approach to find a location to be used as default for `${jlink_path}`.
 
     ilg.gnumcueclipse.debug.gdbjtag.jlink/install.folder=/Applications/SEGGER/Jlink
 
 If this preference is defined and the executable is there, the plug-in will use it.
 
-if not, the Windows Registry will be searched. If the **InstallFolder** key is found below the **\\SEGGER\\J-Link** subkey, and the executable is found there, the plug-in will use it.
+if not, the Windows Registry will be searched. If the `InstallFolder` key is found below the `\\SEGGER\\J-Link` subkey, and the executable is found there, the plug-in will use it.
 
 Otherwise the plug-in will try a folder search.
 
@@ -94,8 +96,8 @@ Otherwise the plug-in will try a folder search.
     ${user.home}/Applications/SEGGER:\
     /Applications/SEGGER
 
-If this preference is defined, the plug-in will use it as search path, otherwise the specific platform defaults available in the **preferences.ini** file are used.
+If this preference is defined, the plug-in will use it as search path, otherwise the specific platform defaults available in the `preferences.ini` file are used.
 
-For each folder in the path, the plug-in tries to identify subfolders which look like **folder/\*/${jlink_gdbserver}**; if multiple such subfolders are found (in case multiple versions, like J-Link_V494, J-Link_V496), the list of names is ordered lexicographically and the last one is used.
+For each folder in the path, the plug-in tries to identify subfolders which look like `folder/*/${jlink_gdbserver}`; if multiple such subfolders are found (in case multiple versions, like J-Link\_V494, J-Link\_V496), the list of names is ordered lexicographically and the last one is used.
 
-If not found, another test for **folder/${jlink_gdbserver}** is made.
+If not found, another test for `folder/${jlink_gdbserver}` is made.
