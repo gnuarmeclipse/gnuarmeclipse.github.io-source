@@ -77,6 +77,13 @@ In addition to becoming sponsors/donors, Commercial Contributors can also suppor
 
 General purpose features will have higher priority than vendor specific features, and might also benefit from better rates.
 
+Some credit for supporting the development of new features in GNU ARM Eclipse project goes to (in chronological order):
+
+- Infineon Technologies AG
+- Analog Devices GmbH
+- Dialog Semiconductor BV
+- SiFive Inc
+
 ## Sponsorship opportunities
 
 Companies interested in supporting the GNU ARM Eclipse project and seeing their logo in the project web, can apply for various levels of sponsorship.
