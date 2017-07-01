@@ -55,7 +55,8 @@ Important note: Before starting the build, double check if the repository is cle
 ```
 $ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh cleanall
 $ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh checkout-stable
-$ caffeinate bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh --all
+$ caffeinate bash 
+$ bash ~/Downloads/build-scripts.git/scripts/build-openocd.sh --all
 ```
 
 ## Prepare a new blog post to announce the release
@@ -123,4 +124,4 @@ Note: at this moment the system should send a notification to all clients watchi
 - select GNU ARM Eclipse
 - posting as GNU ARM Eclipse
 - click **Post to Facebook**
-- check the post in the [Facebook page](https://www.facebook.com/gnuarmeclipse)
+- check the post in the [Facebook page](https://www.facebook.com/gnumcueclipse)

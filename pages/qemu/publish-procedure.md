@@ -118,4 +118,4 @@ Note: at this moment the system should send a notification to all clients watchi
 - select GNU ARM Eclipse
 - posting as GNU ARM Eclipse
 - click **Post to Facebook**
-- check the post in the [Facebook page](https://www.facebook.com/gnuarmeclipse)
+- check the post in the [Facebook page](https://www.facebook.com/gnumcueclipse)

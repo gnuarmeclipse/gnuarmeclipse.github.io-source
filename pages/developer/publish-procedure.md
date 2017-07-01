@@ -418,7 +418,7 @@ For all [GitHub issues](https://github.com/gnuarmeclipse/plug-ins/issues) marked
 * select GNU ARM Eclipse
 * posting as GNU ARM Eclipse
 * click **Share link**
-* check the post in the [Facebook page](https://www.facebook.com/gnuarmeclipse)
+* check the post in the [Facebook page](https://www.facebook.com/gnumcueclipse)
 
 ## Update the Eclipse Marketplace records
 

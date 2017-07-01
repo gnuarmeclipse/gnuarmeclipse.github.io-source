@@ -40,7 +40,8 @@ $ git clone https://github.com/gnuarmeclipse/build-scripts.git \
 
 ```
 $ bash ~/Downloads/build-scripts.git/scripts/build-windows-build-tools.sh cleanall
-$ caffeinate bash ~/Downloads/build-scripts.git/scripts/build-windows-build-tools.sh --all
+$ caffeinate bash 
+$ bash ~/Downloads/build-scripts.git/scripts/build-windows-build-tools.sh --all
 ```
 
 ## Prepare a new blog post to announce the release
@@ -100,4 +101,4 @@ Note: at this moment the system should send a notification to all clients watchi
 - select GNU ARM Eclipse
 - posting as GNU ARM Eclipse
 - click **Post to Facebook**
-- check the post in the [Facebook page](https://www.facebook.com/gnuarmeclipse)
+- check the post in the [Facebook page](https://www.facebook.com/gnumcueclipse)
