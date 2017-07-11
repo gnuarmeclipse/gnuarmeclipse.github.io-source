@@ -8,6 +8,7 @@ date: 2015-09-11 22:49:00 +0300
 
 version-id: 6-2017-q1-update
 version-date: 20170223
+custom-redirect-url: /toolchain/arm/install/
 
 ---
 

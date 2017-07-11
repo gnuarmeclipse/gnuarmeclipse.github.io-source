@@ -24,6 +24,12 @@
 {% if site.google-site-verification %}
   <meta name="google-site-verification" content="{{ site.google-site-verification }}" />{% endif %}
 
+{% if page.custom-redirect-url %}
+  <meta http-equiv="refresh" content="0; url=https://gnu-mcu-eclipse.github.io{{ page.custom-redirect-url }}">
+{% else %}
+  <meta http-equiv="refresh" content="0; url=https://gnu-mcu-eclipse.github.io{{ page.url }}">
+{% endif %}
+
   <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/screen.css?{{ site.css-date }}" media="screen">
