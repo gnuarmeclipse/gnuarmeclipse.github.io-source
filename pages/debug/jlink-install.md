@@ -37,7 +37,7 @@ Accept the terms of the software agreement and download the software.
 
 ## Documentation
 
-The J-Link GDB server is documented in the [UM08001](https://www.segger.com/admin/uploads/productDocs/UM08001_JLink.pdf) manual, available from the [SEGGER J-Link page](http://www.segger.com/jlink-software.html).
+The J-Link GDB server is documented in the [UM08001](https://www.segger.com/downloads/jlink/UM08001_JLink.pdf) manual, available from the [SEGGER J-Link page](http://www.segger.com/jlink-software.html).
 
 ## Windows
 
