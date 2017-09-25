@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /developer/build-prerequisites/
-title: Build prerequisites
+permalink: /developer/build-prerequisites-v4/
+title: Build prerequisites v4
 author: Liviu Ionescu
 
 date: 2015-09-10 20:20:00 +0300
@@ -16,7 +16,7 @@ Install Sun JDK 1.8 or later (required since Eclipse 4.6); JRE is not enough, wi
 
 ### Prepare folders
 
-*   in a place of you choice, create a folder `GNU ARM Eclipse`
+*   in a place of you choice, create a folder `GNU MCU Eclipse`
 *   inside it create two more folders, `Eclipses` and `Eclipse Workspaces`
 
 ### Install Eclipse IDE for Eclipse Commiters
@@ -24,18 +24,18 @@ Install Sun JDK 1.8 or later (required since Eclipse 4.6); JRE is not enough, wi
 This instance of Eclipse will be used for actual development.
 
 -   go to [Eclipse download site](http://www.eclipse.org/downloads/) and follow the [download packages](https://www.eclipse.org/downloads/eclipse-packages/) link
--   download **Eclipse IDE for Eclipse Committers**, preferably the 64-bits version (for example eclipse-committers-neon-2-macosx-cocoa-x86_64.tar.gz)
+-   download **Eclipse IDE for Eclipse Committers**, preferably the 64-bits version (for example eclipse-committers-neon-3-macosx-cocoa-x86_64.tar.gz)
 -   unpack the archive
 -   rename `Eclipse.app` to `Eclipse-com-cdt-46.app`
--   move it to `.../GNU ARM Eclipse/Eclipses`
+-   move it to `.../GNU MCU Eclipse/Eclipses`
 - create shortcut to desktop:
-  -   on Windows, create a shortcut for `eclipse.exe`, rename it `E46 GAE.lnk` and copy it to the desktop or a place of your choice
-  -   on macOS, create a Finder alias for `Eclipse.app`, rename it `E46 GAE` and move it to a place of your choice
-  -   on GNU/Linux, create a link for `eclipse`, rename it `E46 GAE` and move it to a place of your choice
+  -   on Windows, create a shortcut for `eclipse.exe`, rename it `E46 GME.lnk` and copy it to the desktop or a place of your choice
+  -   on macOS, create a Finder alias for `Eclipse.app`, rename it `E46 GME` and move it to a place of your choice
+  -   on GNU/Linux, create a link for `eclipse`, rename it `E46 GME` and move it to a place of your choice
 
 ###   Start the new Eclipse
 
--   create a new workspace, preferably in a separate folder, like `Eclipse Workspaces/w-gae-46` (note: be sure you create the workspace where you need it to be, since moving later is generally not supported by Eclipse; if you need this, preferably create a new workspace)
+-   create a new workspace, preferably in a separate folder, like `Eclipse Workspaces/w-gme-46` (note: be sure you create the workspace where you need it to be, since moving later is generally not supported by Eclipse; if you need this, preferably create a new workspace)
 -   check if you installed the right Eclipse; go to the _Eclipse_ menu → **Help** (*_Eclipse_* on macOS) → **About Eclipse** and the first line should read **Eclipse IDE for Eclipse Committers**
 -   **Help** → **Install New Software**
   * Work with: `Neon - http://download.eclipse.org/releases/neon`
@@ -59,7 +59,7 @@ Note: without the CDT sources available in the SDK, the extension point schemas 
 
 ### Install base API
 
-* go to <http://www.eclipse.org/cdt/downloads.php>, and download `cdt-8.6.0.zip` (required to keep compatibility with Eclipse 4.4 Luna SR2)
+* go to <http://www.eclipse.org/cdt/downloads.php>, and download `cdt-9.2.1.zip` (for compatibility with Ecipse 4.6 Neon.3)
 * unpack the archive
 * move the new folder to in the Eclipses folder
 * in the _Eclipse_ menu → **(Window →) Preferences** → **Plug-in Development** → **Target Platform**
@@ -68,7 +68,7 @@ Note: without the CDT sources available in the SDK, the extension point schemas 
   * Next
     * Enter name: **8.6.0 Luna**
     * click **Add** → **Directory**
-    * click **Browse** → `cdt-8.6.0`
+    * click **Browse** → `cdt-9.2.1`
     * click the **Finish** button
   * click the **Reload** button
   * click the **Finish**
@@ -80,8 +80,8 @@ Selecting the running platform is required when starting Eclipse to Run or Debug
 * in the _Eclipse_ menu → **(Window →) Preferences** → **Plug-in Development** → **API Baselines**
   * click the **Add Baseline...** button
   * select **A target platform**
-    * Enter name: 8.6.0 Luna
-    * select 8.6.0 Luna
+    * Enter name: 9.2.1 Neon
+    * select 9.2.1 Neon
     * click the **Refresh** button
     * click the **Finish** button
   * click the **OK** button
@@ -101,7 +101,10 @@ Selecting the running platform is required when starting Eclipse to Run or Debug
     * enable **Show Print Margin** (80)
     * enable **Show Line Numbers**
     * click the **Apply** button
-    * click the **OK** button
+  * **General** → **Editors** → **File Associations**
+    * click **Add** and add *.inf, *.sh, *.command, *.ini
+    * for each, click the **Add** button in the Associate editors area
+    * associate with the Text Editor
     * click the **Apply** button
   * **Run/Debug** → **Console**
     * disable Limit console output
@@ -110,6 +113,15 @@ Selecting the running platform is required when starting Eclipse to Run or Debug
     * disable **Header Comments**
     * disable **Imports**
     * click the **Apply** button
+  * **XML** → **XML Editor** → **Editor**
+    * Line width 72
+    * enable **Split multiple attributes...**
+    * disable **Align final bracket...**
+    * enable **Preserve whitespace..**
+    * enable **Clear all blank lines**
+    * disable **Format commnetnts**
+    * enable Insert whitespace before closing..**
+    * enable **Indent using tabs**
   * click the **OK** button
 
 ### Install several Eclipse CDT instances
@@ -118,34 +130,20 @@ These separate instances of Eclipse will be used to test the plug-in.
 
 Go to [Eclipse download site](http://www.eclipse.org/downloads/) and follow the [download packages](https://www.eclipse.org/downloads/eclipse-packages/) link
 
-#### Eclipse 4.6 Neon
+#### Eclipse 4.6 Neon.3
 
--   download **Eclipse IDE for C/C++ Developers** (`eclipse-cpp-neon-2-macosx-cocoa-x86_64.tar.gz`)
+-   download **Eclipse IDE for C/C++ Developers** (`eclipse-cpp-neon-3-macosx-cocoa-x86_64.tar.gz`)
 -   unpack the archive
 -   rename *_Eclipse_* to **eclipse-cdt-test-46**
 -   on macOS, make a Finder alias of the **Eclipse.app**, rename it **E46 CDT test** and move it to a place of your choice (the Desktop, for example)
-
-#### Eclipse 4.5 Mars
-
--   download **Eclipse IDE for C/C++ Developers** (`eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz`)
--   unpack the archive
--   rename *_Eclipse_* to **eclipse-cdt-test-45**
--   on macOS, make a Finder alias of the **Eclipse.app**, rename it **E45 CDT test** and move it to a place of your choice (the Desktop, for example)
-
-#### Eclipse 4.4 Luna
-
--   download **Eclipse IDE for C/C++ Developers** (`eclipse-cpp-luna-SR2-macosx-cocoa-x86_64.tar.gz`)
--   unpack the archive
--   rename *_Eclipse_* to **eclipse-cdt-test-44**
--   on macOS, make a Finder alias of the **Eclipse.app**, rename it **E44 CDT test** and move it to a place of your choice (the Desktop, for example)
 
 ## Clone the repository
 
 On Unix systems, the recommended method is using a command line:
 
 ```
-$ cd .../GNU ARM Eclipse
-$ git clone https://github.com/gnuarmeclipse/plug-ins.git plug-ins.git
+$ cd .../GNU MCU Eclipse
+$ git clone https://github.com/gnumcueclipse/plug-ins.git plug-ins.git
 ```
 
 On Windows, the `git` command is available in the [Git for Windows](https://git-scm.com/download/win) package.
@@ -156,27 +154,26 @@ Import projects using the Maven importer:
 
 * _Eclipse_ menu → **File** → **Import**
 * Select
-  * Maven → **Existing Maven Projects**
+  * General → **Existing Projects into Workspace**
   * click **Next**
-* Maven Projects
-  * Root Directory: `.../GNU ARM Eclipse/plug-ins.git`
-  * keep all selected
-  * Add project(s) to working set: GNU ARM Eclipse
+* Import Projects
+  * Root Directory: `.../GNU MCU Eclipse/plug-ins.git`
+  * disable Add project(s) to working set
   * click **Finish**
-If doing this on a fresh Eclipse
-  * accept m23 settings
-  * accept to install **Tycho Project Configurators**
-  * click **Finish**
-* Restart
 
 ## Configure the working sets
+
+Create Workspace Sets (for example one for plug-ins, one for features, one for repositories and one for the parent project).
 
 In the Package Explorer:
 
 * click the down pointing triangle icon and select **Configure Working Sets**.
-  * select GNU ARM Eclipse and click the **Edit...** button
-  * click the **Select All** button
+  * click the **New** button
+  * click the **Resource** category
+  * Give the set a name (for example GNU MCU Eclipse plug-ins)
+  * select the desired projects
   * click the **Finish** button
+  * repeat for all desires sets
 * click the **OK** button
 
 ## Create the Maven run configuration
@@ -187,23 +184,23 @@ To ensure that Maven considers only the desired plugin versions during the build
 -Dtycho.localArtifacts=ignore
 ``` 
 
-Without this option, Maven will issue many warnings, like:
+Without this option, Maven might issue many warnings, like:
 
 ```
-[INFO] Resolving dependencies of MavenProject: ilg.gnuarmeclipse:ilg.gnuarmeclipse.core:3.3.1-SNAPSHOT @ /Users/ilg/My Files/MacBookPro Projects/GNU ARM Eclipse/plug-ins.git/ilg.gnuarmeclipse.core/pom.xml
+[INFO] Resolving dependencies of MavenProject: ilg.gnumcueclipse:ilg.gnumcueclipse.core:3.3.1-SNAPSHOT @ /Users/ilg/My Files/MacBookPro Projects/GNU MCU Eclipse/plug-ins.git/ilg.gnumcueclipse.core/pom.xml
 [WARNING] The following locally built units have been used to resolve project dependencies:
 [WARNING]   org.eclipse.cdt.make.core/7.3.0.201702180936
 [WARNING]   org.eclipse.cdt/9.2.0.201702180936
 [WARNING]   org.eclipse.cdt.core.native/5.10.0.201702180936
 [WARNING]   org.eclipse.cdt.managedbuilder.core/8.4.0.201702180936
-[INFO] Resolving class path of MavenProject: ilg.gnuarmeclipse:ilg.gnuarmeclipse.core:3.3.1-SNAPSHOT @ /Users/ilg/My Files/MacBookPro Projects/GNU ARM Eclipse/plug-ins.git/ilg.gnuarmeclipse.core/pom.xml
+[INFO] Resolving class path of MavenProject: ilg.gnumcueclipse:ilg.gnumcueclipse.core:3.3.1-SNAPSHOT @ /Users/ilg/My Files/MacBookPro Projects/GNU ARM Eclipse/plug-ins.git/ilg.gnumcueclipse.core/pom.xml
 ```
 
 Unfortunately I did not find a way to pass this option in the pom files, and it must be passed only on the command line.
 
 To start the Maven build from Eclipse
 
-* select the **gnuarmeclipse-parent** project
+* select the **gnumcueclipse-parent** project
 * _Eclipse_ menu → **Run** → **Run Configurations...**
 * double click the **Maven Build** enty
 * in the Main tab
