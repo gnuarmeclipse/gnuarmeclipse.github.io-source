@@ -10,9 +10,9 @@ date: 2015-09-10 20:22:00 +0300
 
 ## Build
 
--   select the **ilg.gnuarmeclipse.parent** project
--   right click, select **Run As** → **Maven install**
--   wait a while for Maven to load all required modules
+*   select the **gnumcueclipse-plugins** parent project
+*   right click, select **Run As** → **Run configurations...** → **GME clean verify** (be sure you do not run the **install** goal, it'll pollute the cache)
+*   wait a while for Maven to load all required modules
 
 The result of a successful build looks like this:
 
@@ -67,53 +67,34 @@ The result of a successful build looks like this:
 [INFO] ------------------------------------------------------------------------
 ```
 
-The build result is in the `ilg.gnuarmeclipse.repository` project
-* the `target/ilg.gnuarmeclipse.repository-3.3.1-SNAPSHOT.zip` file
-* the `target/repository` folder, with the p2 update site
+The result are two p2 repositories:
+
+* `repositories/ilg.gnumcueclipse.repository/target/repository`
+* `repositories/ilg.gnumcueclipse.riscv.repository/target/repository`
 
 ## Debug
 
-Create a file `Eclipse Workspaces/debug.options` with the following content:
-
-```
-ilg.gnuarmeclipse.core/debug=true
-
-ilg.gnuarmeclipse.managedbuild.cross/debug=true
-#ilg.gnuarmeclipse.managedbuild.packs/debug=true
-
-ilg.gnuarmeclipse.debug.core/debug=true
-ilg.gnuarmeclipse.debug.gdbjtag/debug=true
-
-ilg.gnuarmeclipse.debug.gdbjtag.jlink/debug=true
-ilg.gnuarmeclipse.debug.gdbjtag.openocd/debug=true
-ilg.gnuarmeclipse.debug.gdbjtag.qemu/debug=true
-
-#ilg.gnuarmeclipse.packs/debug=true
-#ilg.gnuarmeclipse.packs.core/debug=true
-#ilg.gnuarmeclipse.packs.data/debug=true
-#ilg.gnuarmeclipse.packs.ui/debug=true
-
-ilg.gnuarmeclipse.codered/debug=true
-```
+Download the `debug.options` file from https://github.com/gnu-mcu-eclipse/eclipse-plugins/blob/develop/debug.options into a local `Eclipse Workspaces/debug.options` and, if needed, edit it.
 
 To run a debug session using the GNU ARM Eclipse plug-ins:
 
--   **Run** → **Debug Configurations**
+-   **Run** → **Debug Configurations...**
   * select **Eclipse Application**
   * click **New**
-    * Name: **Eclipse GNU ARM Plug-ins**
-    * Location: `${workspace_loc}/../runtime-Eclipse46`
+    * Name: `Eclipse GNU MCU Plug-ins`
+    * Location: `${workspace_loc}/../runtime-e46`
   * Tab: **Plug-ins**
     * Launch with: **plug-ins selected below**; the Workspace list should include all `ilg.gnuarmeclipse.*` plug-ins; the Target Platform list should include all Eclipse, not only CDT, plug-ins; if the Eclipse plug-ins are not in the list, then the Preferences → Plug-in Development -> Target Platform is not Running Platform, and must be changed. The alternative to use **all workspace and enabled plug-ins** might work in some configurations, and can also be used, but if dependencies are not met, manual selection is required.
     * click the **Validate Plug-ins** button; most probably the `org.apache.xmlrpc` plug-in will complain about `javax.xml.bind`; either install it, or disable the plug-in; validate again and disable a few more plug-ins (`org.eclipse.mylyn.bugzilla.core`, `org.eclipse.mylyn.bugzilla.ui` and `org.eclipse.mylyn.commons.xmlrpc`).
+  * click **Apply**
   * Tab: **Arguments**
     * Program arguments:
       * `-consoleLog`
-      * `-debug` `.../GNU\ ARM\ Eclipse/Eclipse\ Workspaces/debug.options`
+      * `../` `../../Eclipse\ Workspaces/debug.options` (`"..\..\Eclipse Workspaces\debug.options"` on Windows)
     * VM arguments:
       * `-ea` (to enable assertions)
       * `-Dorg.eclipse.swt.internal.carbon.smallFonts` (only on macOS)
-      * `-Xdock:icon=../Resources/Eclipse.icns`
+      * `-Xdock:icon=../Resources/Eclipse.icns` (only on macOS)
     * enable **Use the -XstartOnFirstThread argument when launching with SWT**
   * click the **Apply** button
   * click the **Debug** button
@@ -142,8 +123,8 @@ A more elaborated configuration is required when willing to run debug sessions u
 
 Clone the CDT repository:
 
-```
-git clone git://git.eclipse.org/gitroot/cdt/org.eclipse.cdt.git org.eclipse.cdt.git
+```bash
+$ git clone git://git.eclipse.org/gitroot/cdt/org.eclipse.cdt.git org.eclipse.cdt.git
 ```
 
 Create a new working set named **CDT**
@@ -151,26 +132,27 @@ Create a new working set named **CDT**
 * in the Package Explorer view, click the down pointing triangle, 
 * select **Configure Working Sets...** 
   * click the **New...** button
+  * select the Resource category
   * fill in the **Working set name:** with CDT
   * click the **Finish** button
+  * click the **OK** button
   
 Import all CDT projects
 
-* in the _Eclipse_ menu → **File** → **Import...** → **Existing Maven Projects**
+* in the _Eclipse_ menu → **File** → **Import...** → General → **Existing Projects into Workspace**
 * click the **Next >** button
 * browse for the `org.eclipse.cdt.git` folder
-* keep all projects selected
+* deselect some projects selected
 * enable **Add projects(s) to working set** and enter CDT
 * click the **Finish** button
-* accept the **Discover m2e connectors** dependency to `tycho-eclipserun-plugin` and click the **Finish** button
 
 Create a new debug configuration
 
 * in the _Eclipse_ menu → **Run** → **Debug Configurations...**
-* duplicate 'Eclipse GNU ARM Plug-ins' into 'Eclipse GNU ARM Plug-ins CDT'
+* duplicate 'Eclipse GNU MCU Plug-ins' into 'Eclipse GNU MCU Plug-ins with CDT'
+* click the **Add Working Sets..** 
+  * select the CDT set
+  * click the **OK** button
 * using the **Validate Plug-ins** button, disable unwanted plug-ins until the validation passes
 * click the **Apply** button
 * click the **Debug** buton to start a debug session
-
-
-
