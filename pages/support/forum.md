@@ -30,7 +30,7 @@ The forum type is open, and anyone can contribute. Access is free, based on regi
 
 The element14 Community Group is actually more than a simple forum, it is also a blog, it can manage polls, calendar events, and many more.
 
-For common usage, to start a new discussion, use the top right link [Start a discussion](https://www.element14.com/community/discussion/create.jspa?containerID=2436&containerType=700).
+For common usage, to start a new discussion, use the top right link _Start a discussion_.
 
 ## No support for markdown
 
